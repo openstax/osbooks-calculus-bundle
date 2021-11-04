@@ -1,0 +1,941 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+<title>Improper Integrals</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53686</md:content-id>
+  <md:title>Improper Integrals</md:title>
+  <md:abstract><list>
+<item>Evaluate an integral over an infinite interval.</item>
+<item>Evaluate an integral over a closed interval with an infinite discontinuity within the interval.</item>
+<item>Use the comparison theorem to determine whether a definite integral is convergent.</item>
+</list></md:abstract>
+  <md:uuid>96de064c-dd8d-466b-b416-d6939c577e55</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-id1165043353000">Is the area between the graph of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac></m:mrow></m:math> and the <emphasis effect="italics">x</emphasis>-axis over the interval <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> finite or infinite? If this same region is revolved about the <emphasis effect="italics">x</emphasis>-axis, is the volume finite or infinite? Surprisingly, the area of the region described is infinite, but the volume of the solid obtained by revolving this region about the <emphasis effect="italics">x</emphasis>-axis is finite.</para>
+<para id="fs-id1165042370314">In this section, we define integrals over an infinite interval as well as integrals of functions containing a discontinuity on the interval. Integrals of these types are called improper integrals. We examine several techniques for evaluating improper integrals, all of which involve taking limits.</para>
+<section id="fs-id1165043219173">
+<title>Integrating over an Infinite Interval</title>
+<para id="fs-id1165043161272">How should we go about defining an integral of the type <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>?</m:mo></m:mrow></m:math> We can integrate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> for any value of <m:math><m:mrow><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> so it is reasonable to look at the behavior of this integral as we substitute larger values of <m:math><m:mrow><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math> <link target-id="CNX_Calc_Figure_07_07_001"/> shows that <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> may be interpreted as area for various values of <m:math><m:mrow><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math> In other words, we may define an improper integral as a limit, taken as one of the limits of integration increases or decreases without bound.</para>
+<figure id="CNX_Calc_Figure_07_07_001">
+<media id="fs-id1165042883093" alt="This figure has three graphs. All the graphs have the same curve, which is f(x). The curve is non-negative, only in the first quadrant, and decreasing. Under all three curves is a shaded region bounded by a on the x-axis an t on the x-axis. The region in the first curve is small, and progressively gets wider under the second and third graph as t moves further to the right away from a on the x-axis.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_07_07_001.jpg"/>
+</media>
+<caption>To integrate a function over an infinite interval, we consider the limit of the integral as the upper limit increases without bound.</caption>
+</figure>
+<note id="fs-id1165043423093">
+<title>Definition</title>
+<list id="fs-id1165042516485" list-type="enumerated" number-style="arabic">
+<item>Let <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> be continuous over an interval of the form <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> Then<newline/>
+<equation id="fs-id1165043372378"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></equation><newline/>
+provided this limit exists.</item>
+<item>Let <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> be continuous over an interval of the form <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo></m:mrow></m:math> Then<newline/>
+<equation id="fs-id1165043086270"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>t</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></equation><newline/>
+provided this limit exists.<newline/>
+In each case, if the limit exists, then the <term>improper integral</term> is said to converge. If the limit does not exist, then the improper integral is said to diverge.</item>
+<item>Let <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> be continuous over <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mi>∞</m:mi><m:mo>,</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> Then<newline/>
+<equation id="fs-id1165042478832"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mn>0</m:mn></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></equation><newline/>
+provided that <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mn>0</m:mn></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> and <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> both converge. If either one or both of these two integrals diverge, then <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> diverges. (It can be shown that, in fact, <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mi>a</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> for any value of <m:math><m:mrow><m:mi>a</m:mi><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math></item>
+</list>
+</note>
+<para id="fs-id1165043014225">In our first example, we return to the question we posed at the start of this section: Is the area between the graph of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac></m:mrow></m:math> and the <m:math><m:mi>x</m:mi></m:math>-axis over the interval <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> finite or infinite?</para>
+<example id="fs-id1165043428127">
+<exercise id="fs-id1165043001948">
+<problem id="fs-id1165043085741">
+<title>Finding an Area</title>
+<para id="fs-id1165043346878">Determine whether the area between the graph of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac></m:mrow></m:math> and the <emphasis effect="italics">x</emphasis>-axis over the interval <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is finite or infinite.</para>
+</problem>
+<solution id="fs-id1165042330814">
+<para id="fs-id1165043350067">We first do a quick sketch of the region in question, as shown in the following graph.</para>
+<figure id="CNX_Calc_Figure_07_07_002">
+<media id="fs-id1165042375645" alt="This figure is the graph of the function y = 1/x. It is a decreasing function with a vertical asymptote at the y-axis. In the first quadrant there is a shaded region under the curve bounded by x = 1 and x = 4.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_07_07_002.jpg"/>
+</media>
+<caption>We can find the area between the curve <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>x</m:mi></m:mrow></m:math> and the <emphasis effect="italics">x</emphasis>-axis on an infinite interval.</caption>
+</figure>
+<para id="fs-id1165042925668">We can see that the area of this region is given by <m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> Then we have</para>
+<equation id="fs-id1165043131589" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>A</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd/><m:mtd/><m:mtd/></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mi>t</m:mi></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Rewrite the improper integral as a limit.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>|</m:mo></m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:msubsup><m:mrow/><m:mtable><m:mtr><m:mtd><m:mrow/></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>1</m:mn></m:mtd></m:mtr></m:mtable><m:mtable><m:mtr><m:mtd><m:mi>t</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow/></m:mtd></m:mtr></m:mtable></m:msubsup></m:mrow></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Find the antiderivative.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mi>t</m:mi><m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Evaluate the antiderivative.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi><m:mo>.</m:mo></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Evaluate the limit.</m:mtext></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1165043117138">Since the improper integral diverges to <m:math><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo></m:mrow></m:math> the area of the region is infinite.</para>
+</solution>
+</exercise>
+</example>
+<example id="fs-id1165042988868">
+<exercise id="fs-id1165042514822">
+<problem id="fs-id1165042925771">
+<title>Finding a Volume</title>
+<para id="fs-id1165042677398">Find the volume of the solid obtained by revolving the region bounded by the graph of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac></m:mrow></m:math> and the <emphasis effect="italics">x</emphasis>-axis over the interval <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> about the <m:math><m:mi>x</m:mi></m:math>-axis.</para>
+</problem>
+<solution id="fs-id1165042582834">
+<para id="fs-id1165042978442">The solid is shown in <link target-id="CNX_Calc_Figure_07_07_003"/>. Using the disk method, we see that the volume <emphasis effect="italics">V</emphasis> is</para>
+<equation id="fs-id1165042321060" class="unnumbered"><label/><m:math><m:mrow><m:mi>V</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+<figure id="CNX_Calc_Figure_07_07_003">
+<media id="fs-id1165042835112" alt="This figure is the graph of the function y = 1/x. It is a decreasing function with a vertical asymptote at the y-axis. The graph shows a solid that has been generated by rotating the curve in the first quadrant around the x-axis.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_07_07_003.jpg"/>
+</media>
+<caption>The solid of revolution can be generated by rotating an infinite area about the <emphasis effect="italics">x</emphasis>-axis.</caption>
+</figure>
+<para id="fs-id1165043112190">Then we have</para>
+<equation id="fs-id1165043259904" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>V</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mi>π</m:mi><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd/><m:mtd/><m:mtd/></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mi>π</m:mi><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mi>t</m:mi></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Rewrite as a limit.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mi>π</m:mi><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac><m:mrow><m:mo>|</m:mo><m:mrow><m:msubsup><m:mrow/><m:mtable><m:mtr><m:mtd><m:mrow/></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>1</m:mn></m:mtd></m:mtr></m:mtable><m:mtable><m:mtr><m:mtd><m:mi>t</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow/></m:mtd></m:mtr></m:mtable></m:msubsup></m:mrow></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Find the antiderivative.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mi>π</m:mi><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mn>1</m:mn><m:mi>t</m:mi></m:mfrac><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Evaluate the antiderivative.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mi>π</m:mi><m:mo>.</m:mo></m:mtd><m:mtd/><m:mtd/><m:mtd/></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1165042788783">The improper integral converges to <m:math><m:mrow><m:mi>π</m:mi><m:mo>.</m:mo></m:mrow></m:math> Therefore, the volume of the solid of revolution is <m:math><m:mrow><m:mi>π</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+</example>
+<para id="fs-id1165043348520">In conclusion, although the area of the region between the <emphasis effect="italics">x</emphasis>-axis and the graph of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>x</m:mi></m:mrow></m:math> over the interval <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is infinite, the volume of the solid generated by revolving this region about the <emphasis effect="italics">x</emphasis>-axis is finite. The solid generated is known as <term class="no-emphasis"><emphasis effect="italics">Gabriel’s Horn</emphasis></term>.</para>
+<note id="fs-id1165043122367" class="media-2">
+<para id="fs-id1165043182674">Visit this <link url="http://www.openstax.org/l/20_GabrielsHorn">website</link> to read more about Gabriel’s Horn.</para>
+</note>
+<example id="fs-id1165043021843">
+<exercise id="fs-id1165043066947">
+<problem id="fs-id1165043135013">
+<title>Chapter Opener: Traffic Accidents in a City</title>
+<figure id="CNX_Calc_Figure_07_07_006">
+<media id="fs-id1165042376643" alt="This is a picture of a city street with a traffic signal. The picture has very busy lanes of traffic in both directions.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_07_07_006.jpg"/>
+</media>
+<caption>(credit: modification of work by David McKelvey, Flickr)</caption>
+</figure>
+<para id="fs-id1165043019959">In the chapter opener, we stated the following problem: Suppose that at a busy intersection, <term class="no-emphasis">traffic accidents</term> occur at an average rate of one every three months. After residents complained, changes were made to the traffic lights at the intersection. It has now been eight months since the changes were made and there have been no accidents. Were the changes effective or is the 8-month interval without an accident a result of chance?</para>
+<para id="fs-id1165043385401">Probability theory tells us that if the average time between events is <m:math><m:mrow><m:mi>k</m:mi><m:mo>,</m:mo></m:mrow></m:math> the <term class="no-emphasis">probability</term> that <m:math><m:mrow><m:mi>X</m:mi><m:mo>,</m:mo></m:mrow></m:math> the time between events, is between <m:math><m:mi>a</m:mi></m:math> and <m:math><m:mi>b</m:mi></m:math> is given by</para>
+<equation id="fs-id1165043119986" class="unnumbered"><label/><m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mspace width="0.2em"/><m:mtext>where</m:mtext><m:mspace width="0.2em"/><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mtext>if</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mi>k</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>k</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mtext>if</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn></m:mrow></m:mtd></m:mtr></m:mtable><m:mo>.</m:mo></m:mrow></m:mrow></m:mrow></m:math></equation>
+<para id="fs-id1165042947829">Thus, if accidents are occurring at a rate of one every 3 months, then the probability that <m:math><m:mrow><m:mi>X</m:mi><m:mo>,</m:mo></m:mrow></m:math> the time between accidents, is between <m:math><m:mi>a</m:mi></m:math> and <m:math><m:mi>b</m:mi></m:math> is given by</para>
+<equation id="fs-id1165043072778" class="unnumbered"><label/><m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mspace width="0.2em"/><m:mtext>where</m:mtext><m:mspace width="0.2em"/><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mtext>if</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>3</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mtext>if</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn></m:mrow></m:mtd></m:mtr></m:mtable><m:mo>.</m:mo></m:mrow></m:mrow></m:mrow></m:math></equation>
+<para id="fs-id1165043225622">To answer the question, we must compute <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>X</m:mi><m:mo>≥</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>8</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mn>3</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> and decide whether it is likely that 8 months could have passed without an accident if there had been no improvement in the traffic situation.</para>
+</problem>
+<solution id="fs-id1165043431382">
+<para id="fs-id1165042709787">We need to calculate the probability as an improper integral:</para>
+<equation id="fs-id1165043423045" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>X</m:mi><m:mo>≥</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>8</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mn>3</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>8</m:mn><m:mi>t</m:mi></m:msubsup><m:mrow><m:mn>3</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:msubsup><m:mrow><m:mrow><m:mtext>−</m:mtext><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow><m:mo>|</m:mo></m:mrow><m:mn>8</m:mn><m:mi>t</m:mi></m:msubsup></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−24</m:mn></m:mrow></m:msup><m:mo stretchy="false">)</m:mo></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>≈</m:mo><m:mn>3.8</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mn>10</m:mn><m:mrow><m:mn>−11</m:mn></m:mrow></m:msup><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1165042479655">The value <m:math><m:mrow><m:mn>3.8</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−11</m:mn></m:mrow></m:msup></m:mrow></m:math> represents the probability of no accidents in 8 months under the initial conditions. Since this value is very, very small, it is reasonable to conclude the changes were effective.</para>
+</solution>
+</exercise>
+</example>
+<example id="fs-id1165042804162">
+<exercise id="fs-id1165043109202">
+<problem id="fs-id1165042988255">
+<title>Evaluating an Improper Integral over an Infinite Interval</title>
+<para id="fs-id1165043373560">Evaluate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mn>0</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> State whether the improper integral converges or diverges.</para>
+</problem>
+<solution id="fs-id1165043097500">
+<para id="fs-id1165042534998">Begin by rewriting <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mn>0</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> as a limit using <link target-id="fs-id1165043086270"/> from the definition. Thus,</para>
+<equation id="fs-id1165042316105" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mn>0</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>t</m:mi><m:mn>0</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Rewrite as a limit.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/>
+
+<m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mrow><m:mtext>tan</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mfrac><m:mi>x</m:mi><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>|</m:mo><m:mrow><m:msubsup><m:mrow/><m:mtable><m:mtr><m:mtd><m:mrow/></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>t</m:mi></m:mtd></m:mtr></m:mtable><m:mtable><m:mtr><m:mtd><m:mn>0</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow/></m:mtd></m:mtr></m:mtable></m:msubsup></m:mrow></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Find the antiderivative.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/>
+
+<m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mo stretchy="false">(</m:mo><m:msup><m:mrow><m:mtext>tan</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mn>0</m:mn><m:mo>−</m:mo><m:msup><m:mrow><m:mtext>tan</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mfrac><m:mi>t</m:mi><m:mn>2</m:mn></m:mfrac><m:mo stretchy="false">)</m:mo></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Evaluate the antiderivative.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/>
+
+<m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>.</m:mo></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Evaluate the limit and simplify.</m:mtext></m:mtd></m:mtr></m:mtable></m:math></equation><para id="fs-id1165043422657">The improper integral converges to <m:math><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para></solution>
+</exercise>
+</example>
+<example id="fs-id1165042508139">
+<exercise id="fs-id1165042608025">
+<problem id="fs-id1165042608027">
+<title>Evaluating an Improper Integral on <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mi>∞</m:mi><m:mo>,</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></title>
+<para id="fs-id1165042318435">Evaluate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> State whether the improper integral converges or diverges.</para>
+</problem>
+<solution id="fs-id1165042960104">
+<para id="fs-id1165042705512">Start by splitting up the integral:</para>
+<equation id="fs-id1165042705515" class="unnumbered"><label/><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mn>0</m:mn></m:msubsup><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1165042519801">If either <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mn>0</m:mn></m:msubsup><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> or <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> diverges, then <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> diverges. Compute each integral separately. For the first integral,</para>
+<equation id="fs-id1165039560750" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mn>0</m:mn></m:msubsup><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>t</m:mi><m:mn>0</m:mn></m:msubsup><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Rewrite as a limit.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:msubsup><m:mrow/><m:mtable><m:mtr><m:mtd><m:mrow/></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>t</m:mi></m:mtd></m:mtr></m:mtable><m:mtable><m:mtr><m:mtd><m:mn>0</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow/></m:mtd></m:mtr></m:mtable></m:msubsup></m:mrow></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtable><m:mtr><m:mtd columnalign="left"><m:mtext>Use integration by parts to find the</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>antiderivative. (Here</m:mtext><m:mspace width="0.2em"/><m:mi>u</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi><m:mi>dx</m:mi></m:msup><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>−</m:mo><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Evaluate the antiderivative.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>−1</m:mn><m:mo>.</m:mo></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtable><m:mtr><m:mtd columnalign="left"><m:mtext>Evaluate the limit. </m:mtext><m:mspace width="0.2em"/><m:mtext mathvariant="italic">Note:</m:mtext><m:mspace width="0.2em"/><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mspace width="0.2em"/><m:mtext>is</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>indeterminate of the form</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>·</m:mo><m:mi>∞</m:mi><m:mo>.</m:mo><m:mspace width="0.2em"/><m:mtext>Thus,</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mi>t</m:mi><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:mn>−1</m:mn></m:mrow><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mtext>by</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>L’Hôpital’s Rule.</m:mtext></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr></m:mtable></m:math></equation><para id="fs-id1165043354391">The first improper integral converges. For the second integral,</para>
+<equation id="fs-id1165043354394" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Rewrite as a limit.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:msubsup><m:mrow/><m:mtable><m:mtr><m:mtd><m:mrow/></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>0</m:mn></m:mtd></m:mtr></m:mtable><m:mtable><m:mtr><m:mtd><m:mi>t</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow/></m:mtd></m:mtr></m:mtable></m:msubsup></m:mrow></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Find the antiderivative.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Evaluate the antiderivative.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Rewrite.</m:mtext><m:mspace width="0.2em"/><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mspace width="0.2em"/><m:mtext>is indeterminate.)</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi><m:mo>.</m:mo></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Evaluate the limit.</m:mtext></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1165042910269">Thus, <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> diverges. Since this integral diverges, <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> diverges as well.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1165043096729" class="checkpoint">
+<exercise id="fs-id1165043096733">
+<problem id="fs-id1165043103020">
+<para id="fs-id1165043103022">Evaluate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> State whether the improper integral converges or diverges.</para>
+</problem>
+<solution id="fs-id1165042355763">
+<para id="fs-id1165042355765"><m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mn>3</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> converges</para>
+</solution>
+<commentary id="fs-id1165043272721" type="hint">
+<title>Hint</title>
+<para id="fs-id1165042706105"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>−3</m:mn></m:mrow><m:mi>t</m:mi></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</commentary>
+</exercise>
+</note>
+</section>
+<section id="fs-id1165042543169">
+<title>Integrating a Discontinuous Integrand</title>
+<para id="fs-id1165042543174">Now let’s examine integrals of functions containing an infinite discontinuity in the interval over which the integration occurs. Consider an integral of the form <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> where <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is continuous over <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and discontinuous at <m:math><m:mrow><m:mi>b</m:mi><m:mo>.</m:mo></m:mrow></m:math> Since the function <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is continuous over <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>t</m:mi><m:mo stretchy="false">]</m:mo></m:mrow></m:math> for all values of <m:math><m:mi>t</m:mi></m:math> satisfying <m:math><m:mrow><m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>t</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi><m:mo>,</m:mo></m:mrow></m:math> the integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> is defined for all such values of <m:math><m:mrow><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math> Thus, it makes sense to consider the values of <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> as <m:math><m:mi>t</m:mi></m:math> approaches <m:math><m:mi>b</m:mi></m:math> for <m:math><m:mrow><m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>t</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi><m:mo>.</m:mo></m:mrow></m:math> That is, we define <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:msup><m:mi>b</m:mi><m:mo>−</m:mo></m:msup></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> provided this limit exists. <link target-id="CNX_Calc_Figure_07_07_004"/> illustrates <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> as areas of regions for values of <m:math><m:mi>t</m:mi></m:math> approaching <m:math><m:mrow><m:mi>b</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<figure id="CNX_Calc_Figure_07_07_004">
+<media id="fs-id1165042476001" alt="This figure has three graphs. All the graphs have the same curve, which is f(x). The curve is non-negative, only in the first quadrant, and increasing. Under all three curves is a shaded region bounded by a on the x-axis an t on the x-axis. There is also a vertical asymptote at x = b. The region in the first curve is small, and progressively gets wider under the second and third graph as t gets further from a, and closer to b on the x-axis.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_07_07_004.jpg"/>
+</media>
+<caption>As <emphasis effect="italics">t</emphasis> approaches <emphasis effect="italics">b</emphasis> from the left, the value of the area from <emphasis effect="italics">a</emphasis> to <emphasis effect="italics">t</emphasis> approaches the area from <emphasis effect="italics">a</emphasis> to <emphasis effect="italics">b</emphasis>.</caption>
+</figure>
+<para id="fs-id1165043094066">We use a similar approach to define <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> where <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is continuous over <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">]</m:mo></m:mrow></m:math> and discontinuous at <m:math><m:mrow><m:mi>a</m:mi><m:mo>.</m:mo></m:mrow></m:math> We now proceed with a formal definition.</para>
+<note id="fs-id1165042333401">
+<title>Definition</title>
+<list id="fs-id1165042333405" list-type="enumerated" number-style="arabic">
+<item>Let <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> be continuous over <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> Then,<newline/>
+<equation id="fs-id1165042617693"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:msup><m:mi>b</m:mi><m:mo>−</m:mo></m:msup></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation></item>
+<item>Let <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> be continuous over <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo></m:mrow></m:math> Then,<newline/>
+<equation id="fs-id1165042506827"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:msup><m:mi>a</m:mi><m:mo>+</m:mo></m:msup></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>t</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+In each case, if the limit exists, then the improper integral is said to converge. If the limit does not exist, then the improper integral is said to diverge.</item>
+<item>If <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is continuous over <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">]</m:mo></m:mrow></m:math> except at a point <m:math><m:mi>c</m:mi></m:math> in <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> then<newline/>
+<equation id="fs-id1165043378015"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>c</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>c</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></equation><newline/>
+provided both <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>c</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> and <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>c</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> converge. If either of these integrals diverges, then <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> diverges.</item>
+</list>
+</note>
+<para id="fs-id1165043257647">The following examples demonstrate the application of this definition.</para>
+<example id="fs-id1165043257650">
+<exercise id="fs-id1165043257652">
+<problem id="fs-id1165043257655">
+<title>Integrating a Discontinuous Integrand</title>
+<para id="fs-id1165043119755">Evaluate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>4</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> if possible. State whether the integral converges or diverges.</para>
+</problem>
+<solution id="fs-id1165042364402">
+<para id="fs-id1165042364404">The function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math> is continuous over <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and discontinuous at 4. Using <link target-id="fs-id1165042617693"/> from the definition, rewrite <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>4</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> as a limit:</para>
+<equation id="fs-id1165043373976" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>4</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:msup><m:mn>4</m:mn><m:mo>−</m:mo></m:msup></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>t</m:mi></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Rewrite as a limit.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:msup><m:mn>4</m:mn><m:mo>−</m:mo></m:msup></m:mrow></m:munder><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:msqrt><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow></m:msqrt></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:msubsup><m:mrow/><m:mtable><m:mtr><m:mtd><m:mrow/></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>0</m:mn></m:mtd></m:mtr></m:mtable><m:mtable><m:mtr><m:mtd><m:mi>t</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow/></m:mtd></m:mtr></m:mtable></m:msubsup></m:mrow></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Find the antiderivative.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:msup><m:mn>4</m:mn><m:mo>−</m:mo></m:msup></m:mrow></m:munder><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:msqrt><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mi>t</m:mi></m:mrow></m:msqrt><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Evaluate the antiderivative.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>.</m:mo></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Evaluate the limit.</m:mtext></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1165043173672">The improper integral converges.</para>
+</solution>
+</exercise>
+</example>
+<example id="fs-id1165043173678">
+<exercise id="fs-id1165043173681">
+<problem id="fs-id1165042375631">
+<title>Integrating a Discontinuous Integrand</title>
+<para id="fs-id1165042375636">Evaluate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> State whether the integral converges or diverges.</para>
+</problem>
+<solution id="fs-id1165042538864">
+<para id="fs-id1165042538867">Since <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow></m:math> is continuous over <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">]</m:mo></m:mrow></m:math> and is discontinuous at zero, we can rewrite the integral in limit form using <link target-id="fs-id1165042506827"/>:</para>
+<equation id="fs-id1165042865839" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:msup><m:mn>0</m:mn><m:mo>+</m:mo></m:msup></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>t</m:mi><m:mn>2</m:mn></m:msubsup><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Rewrite as a limit.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:msup><m:mn>0</m:mn><m:mo>+</m:mo></m:msup></m:mrow></m:munder><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:msubsup><m:mrow/><m:mtable><m:mtr><m:mtd><m:mrow/></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>t</m:mi></m:mtd></m:mtr></m:mtable><m:mtable><m:mtr><m:mtd><m:mn>2</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow/></m:mtd></m:mtr></m:mtable></m:msubsup></m:mrow></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtable><m:mtr><m:mtd columnalign="left"><m:mtext>Evaluate</m:mtext><m:mspace width="0.2em"/><m:msup><m:mstyle mathsize="140%" displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mi>d</m:mi><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>using integration by parts</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>with</m:mtext><m:mspace width="0.2em"/><m:mi>u</m:mi><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>dx</m:mi><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:msup><m:mn>0</m:mn><m:mo>+</m:mo></m:msup></m:mrow></m:munder><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Evaluate the antiderivative.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtable><m:mtr><m:mtd columnalign="left"><m:mtext>Evaluate the limit.</m:mtext><m:mspace width="0.2em"/><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:msup><m:mn>0</m:mn><m:mo>+</m:mo></m:msup></m:mrow></m:munder><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mspace width="0.2em"/><m:mtext>is indeterminate.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>To evaluate it, rewrite as a quotient and apply</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>L’Hôpital’s rule.</m:mtext></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1165043423544">The improper integral converges.</para>
+</solution>
+</exercise>
+</example>
+<example id="fs-id1165043423550">
+<exercise id="fs-id1165043423552">
+<problem id="fs-id1165042396199">
+<title>Integrating a Discontinuous Integrand</title>
+<para id="fs-id1165042396204">Evaluate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mn>1</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> State whether the improper integral converges or diverges.</para>
+</problem>
+<solution id="fs-id1165042321413">
+<para id="fs-id1165042321415">Since <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:math> is discontinuous at zero, using <link target-id="fs-id1165043378015"/>, we can write</para>
+<equation id="fs-id1165042713598" class="unnumbered"><label/><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mn>1</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mn>0</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1165042985556">If either of the two integrals diverges, then the original integral diverges. Begin with <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mn>0</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>:</m:mo></m:mrow></m:math></para>
+<equation id="fs-id1165042645708" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mn>0</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:msup><m:mn>0</m:mn><m:mo>−</m:mo></m:msup></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mi>t</m:mi></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Rewrite as a limit.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:msup><m:mn>0</m:mn><m:mo>−</m:mo></m:msup></m:mrow></m:munder><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:msubsup><m:mrow/><m:mtable><m:mtr><m:mtd><m:mrow/></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>−1</m:mn></m:mrow></m:mtd></m:mtr></m:mtable><m:mtable><m:mtr><m:mtd><m:mi>t</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow/></m:mtd></m:mtr></m:mtable></m:msubsup></m:mrow></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Find the antiderivative.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:msup><m:mn>0</m:mn><m:mo>−</m:mo></m:msup></m:mrow></m:munder><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>2</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Evaluate the antiderivative.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mtext>+</m:mtext><m:mi>–∞</m:mi><m:mo>.</m:mo></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>Evaluate the limit.</m:mtext></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1165043430752">Therefore, <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mn>0</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> diverges. Since <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mn>0</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> diverges, <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mn>1</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> diverges.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1165042376188" class="checkpoint">
+<exercise id="fs-id1165042376192">
+<problem id="fs-id1165042376194">
+<para id="fs-id1165042376196">Evaluate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> State whether the integral converges or diverges.</para>
+</problem>
+<solution id="fs-id1165042422640">
+<para id="fs-id1165042422642"><m:math><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo></m:mrow></m:math> diverges</para>
+</solution>
+<commentary id="fs-id1165042422655" type="hint">
+<title>Hint</title>
+<para id="fs-id1165042708426">Write <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> in limit form using <link target-id="fs-id1165042506827"/>.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+<section id="fs-id1165043273047">
+<title>A Comparison Theorem</title>
+<para id="fs-id1165043273053">It is not always easy or even possible to evaluate an improper integral directly; however, by comparing it with another carefully chosen integral, it may be possible to determine its convergence or divergence. To see this, consider two continuous functions <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> satisfying <m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≤</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> for <m:math><m:mrow><m:mi>x</m:mi><m:mo>≥</m:mo><m:mi>a</m:mi></m:mrow></m:math> (<link target-id="CNX_Calc_Figure_07_07_005"/>). In this case, we may view integrals of these functions over intervals of the form <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>t</m:mi><m:mo stretchy="false">]</m:mo></m:mrow></m:math> as areas, so we have the relationship</para>
+<equation id="fs-id1165043385358" class="unnumbered"><label/><m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>≤</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mspace width="0.2em"/><m:mtext>for</m:mtext><m:mspace width="0.2em"/><m:mi>t</m:mi><m:mo>≥</m:mo><m:mi>a</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation>
+<figure id="CNX_Calc_Figure_07_07_005">
+<media id="fs-id1165043388548" alt="This figure has two graphs. The graphs are f(x) and g(x). The first graph f(x) is a decreasing, non-negative function with a horizontal asymptote at the x-axis. It has a sharper bend in the curve compared to g(x). The graph of g(x) is a decreasing, non-negative function with a horizontal asymptote at the x-axis.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_07_07_005.jpg"/>
+</media>
+<caption>If <m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≤</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> for <m:math><m:mrow><m:mi>x</m:mi><m:mo>≥</m:mo><m:mi>a</m:mi><m:mo>,</m:mo></m:mrow></m:math> then for <m:math><m:mrow><m:mi>t</m:mi><m:mo>≥</m:mo><m:mi>a</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>≤</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></caption>
+</figure>
+<para id="fs-id1165042706165">Thus, if</para>
+<equation id="fs-id1165042706168" class="unnumbered"><label/><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi><m:mo>,</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></equation>
+<para id="fs-id1165042359605">then</para>
+<para id="fs-id1165042359608"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> as well. That is, if the area of the region between the graph of <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and the <emphasis effect="italics">x</emphasis>-axis over <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is infinite, then the area of the region between the graph of <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and the <emphasis effect="italics">x</emphasis>-axis over <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is infinite too.</para>
+<para id="fs-id1165042387260">On the other hand, if</para>
+<para id="fs-id1165042387263"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>L</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> for some real number <m:math><m:mrow><m:mi>L</m:mi><m:mo>,</m:mo></m:mrow></m:math> then</para>
+<para id="fs-id1165043314585"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> must converge to some value less than or equal to <m:math><m:mrow><m:mi>L</m:mi><m:mo>,</m:mo></m:mrow></m:math> since <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> increases as <m:math><m:mi>t</m:mi></m:math> increases and <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>≤</m:mo><m:mi>L</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> for all <m:math><m:mrow><m:mi>t</m:mi><m:mo>≥</m:mo><m:mi>a</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1165042851612">If the area of the region between the graph of <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and the <emphasis effect="italics">x</emphasis>-axis over <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is finite, then the area of the region between the graph of <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and the <emphasis effect="italics">x</emphasis>-axis over <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is also finite.</para>
+<para id="fs-id1165043207372">These conclusions are summarized in the following theorem.</para>
+<note id="fs-id1165043207376" class="theorem">
+<title>A Comparison Theorem</title>
+<para id="fs-id1165043207383">Let <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> be continuous over <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> Assume that <m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≤</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> for <m:math><m:mrow><m:mi>x</m:mi><m:mo>≥</m:mo><m:mi>a</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<list id="fs-id1165042558470" list-type="enumerated" number-style="lower-roman">
+<item>If <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>If <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>L</m:mi><m:mo>,</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> where <m:math><m:mi>L</m:mi></m:math> is a real number, then <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>M</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> for some real number <m:math><m:mrow><m:mi>M</m:mi><m:mo>≤</m:mo><m:mi>L</m:mi><m:mo>.</m:mo></m:mrow></m:math></item>
+</list>
+</note>
+<example id="fs-id1165039554188">
+<exercise id="fs-id1165039554190">
+<problem id="fs-id1165039554192">
+<title>Applying the Comparison Theorem</title>
+<para id="fs-id1165039554198">Use a comparison to show that <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> converges.</para>
+</problem>
+<solution id="fs-id1165039554239">
+<para id="fs-id1165039554241">We can see that</para>
+<equation id="fs-id1165039554244" class="unnumbered"><label/><m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup></m:mrow></m:mfrac><m:mo>≤</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1165042859832">so if <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> converges, then so does <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> To evaluate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> first rewrite it as a limit:</para>
+<equation id="fs-id1165042634862" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>x</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mi>t</m:mi></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mtable><m:mtr><m:mtd><m:mi>t</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>1</m:mn></m:mtd></m:mtr></m:mtable></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mn>–1</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mn>–1</m:mn></m:msup><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1165043188461">Since <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> converges, so does <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+</example>
+<example id="fs-id1165042601863">
+<exercise id="fs-id1165042601865">
+<problem id="fs-id1165042601868">
+<title>Applying the Comparison Theorem</title>
+<para id="fs-id1165042601873">Use the comparison theorem to show that <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mi>p</m:mi></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> diverges for all <m:math><m:mrow><m:mi>p</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042601923">
+<para id="fs-id1165042601925">For <m:math><m:mrow><m:mi>p</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mo stretchy="false">(</m:mo><m:msup><m:mi>x</m:mi><m:mi>p</m:mi></m:msup><m:mo stretchy="false">)</m:mo></m:mrow></m:math> over <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> In <link target-id="fs-id1165043428127"/>, we showed that <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> Therefore, <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mi>p</m:mi></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> diverges for all <m:math><m:mrow><m:mi>p</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1165042832398" class="checkpoint">
+<exercise id="fs-id1165042832401">
+<problem id="fs-id1165042832403">
+<para id="fs-id1165042832405">Use a comparison to show that <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>e</m:mi><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow><m:mi>x</m:mi></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> diverges.</para>
+</problem>
+<solution id="fs-id1165042832444">
+<para id="fs-id1165042832446">Since <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>e</m:mi><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>e</m:mi><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow><m:mi>x</m:mi></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> diverges.</para>
+</solution>
+<commentary id="fs-id1165042640918" type="hint">
+<title>Hint</title>
+<para id="fs-id1165042640926"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac><m:mo>≤</m:mo><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow><m:mi>x</m:mi></m:mfrac></m:mrow></m:math> on <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>e</m:mi><m:mo>,</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</commentary>
+</exercise>
+</note>
+<note id="fs-id1165042854858" class="project">
+<title>Laplace Transforms</title>
+<para id="fs-id1165042854865">In the last few chapters, we have looked at several ways to use integration for solving real-world problems. For this next project, we are going to explore a more advanced application of integration: integral transforms. Specifically, we describe the <term class="no-emphasis">Laplace transform</term> and some of its properties. The Laplace transform is used in engineering and physics to simplify the computations needed to solve some problems. It takes functions expressed in terms of time and <emphasis effect="italics">transforms</emphasis> them to functions expressed in terms of frequency. It turns out that, in many cases, the computations needed to solve problems in the frequency domain are much simpler than those required in the time domain.</para>
+<para id="fs-id1165042854884">The Laplace transform is defined in terms of an integral as</para>
+<equation id="fs-id1165042854888" class="unnumbered"><label/><m:math><m:mrow><m:mi>L</m:mi><m:mrow><m:mo>{</m:mo><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>=</m:mo><m:mi>F</m:mi><m:mo stretchy="false">(</m:mo><m:mi>s</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1165043389093">Note that the input to a Laplace transform is a function of time, <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> and the output is a function of frequency, <m:math><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">(</m:mo><m:mi>s</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> Although many real-world examples require the use of complex numbers (involving the imaginary number <m:math><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>−1</m:mn></m:mrow></m:msqrt><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> in this project we limit ourselves to functions of real numbers.</para>
+<para id="fs-id1165043389151">Let’s start with a simple example. Here we calculate the Laplace transform of <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi></m:mrow></m:math>. We have</para><equation id="fs-id1165039566620" class="unnumbered"><label/><m:math><m:mrow><m:mi>L</m:mi><m:mrow><m:mo>{</m:mo><m:mi>t</m:mi><m:mo>}</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1165039566673">This is an improper integral, so we express it in terms of a limit, which gives</para>
+<equation id="fs-id1165039566676" class="unnumbered"><label/><m:math><m:mrow><m:mi>L</m:mi><m:mrow><m:mo>{</m:mo><m:mi>t</m:mi><m:mo>}</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>z</m:mi></m:msubsup><m:mrow><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1165039566031">Now we use integration by parts to evaluate the integral. Note that we are integrating with respect to <emphasis effect="italics">t</emphasis>, so we treat the variable <emphasis effect="italics">s</emphasis> as a constant. We have</para>
+<equation id="fs-id1165039566045" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>u</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>t</m:mi></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="right"><m:mi>d</m:mi><m:mi>v</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>t</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>d</m:mi><m:mi>u</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>d</m:mi><m:mi>t</m:mi></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="right"><m:mi>v</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>s</m:mi></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1165042323365">Then we obtain</para>
+<equation id="fs-id1165042672302" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>z</m:mi></m:msubsup><m:mrow><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>[</m:mo><m:mrow><m:msubsup><m:mrow><m:mrow><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mi>t</m:mi><m:mi>s</m:mi></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow><m:mn>0</m:mn><m:mi>z</m:mi></m:msubsup><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>s</m:mi></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>z</m:mi></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow><m:mo>]</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>[</m:mo><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mi>z</m:mi><m:mi>s</m:mi></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>z</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mfrac><m:mn>0</m:mn><m:mi>s</m:mi></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−0</m:mn><m:mi>s</m:mi></m:mrow></m:msup></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>s</m:mi></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>z</m:mi></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow><m:mo>]</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>[</m:mo><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mi>z</m:mi><m:mi>s</m:mi></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>z</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mn>0</m:mn></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>s</m:mi></m:mfrac><m:msubsup><m:mrow><m:mrow><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mi>s</m:mi></m:mfrac></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow><m:mn>0</m:mn><m:mi>z</m:mi></m:msubsup></m:mrow><m:mo>]</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>[</m:mo><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mi>z</m:mi><m:mi>s</m:mi></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>z</m:mi></m:mrow></m:msup></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mrow><m:mo>[</m:mo><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>z</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>[</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mi>z</m:mi><m:mrow><m:mi>s</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>s</m:mi><m:mi>z</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>−</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>[</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mi>s</m:mi><m:mi>z</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>+</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>−</m:mo><m:mn>0</m:mn><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<list id="fs-id1165042659369" list-type="enumerated" number-style="arabic">
+<item>Calculate the Laplace transform of <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>Calculate the Laplace transform of <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>Calculate the Laplace transform of <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> (Note, you will have to integrate by parts twice.)<newline/>
+Laplace transforms are often used to solve differential equations. Differential equations are not covered in detail until later in this book; but, for now, let’s look at the relationship between the Laplace transform of a function and the Laplace transform of its derivative.<newline/>
+Let’s start with the definition of the Laplace transform. We have<newline/>
+<equation id="fs-id1165042692735" class="unnumbered"><label/><m:math><m:mrow><m:mi>L</m:mi><m:mrow><m:mo>{</m:mo><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>z</m:mi></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation></item>
+<item>Use integration by parts to evaluate <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>z</m:mi></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> (Let <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math><newline/>
+After integrating by parts and evaluating the limit, you should see that<newline/>
+<equation id="fs-id1165039566792" class="unnumbered"><label/><m:math><m:mrow><m:mi>L</m:mi><m:mrow><m:mo>{</m:mo><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mi>s</m:mi></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>s</m:mi></m:mfrac><m:mrow><m:mo>[</m:mo><m:mrow><m:mi>L</m:mi><m:mrow><m:mo>{</m:mo><m:mrow><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Then,<newline/>
+<equation id="fs-id1165042467980" class="unnumbered"><label/><m:math><m:mrow><m:mi>L</m:mi><m:mrow><m:mo>{</m:mo><m:mrow><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>=</m:mo><m:mi>s</m:mi><m:mi>L</m:mi><m:mrow><m:mo>{</m:mo><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>−</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Thus, differentiation in the time domain simplifies to multiplication by <emphasis effect="italics">s</emphasis> in the frequency domain.<newline/>
+The final thing we look at in this project is how the Laplace transforms of <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and its antiderivative are related. Let <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>t</m:mi></m:msubsup><m:mi>f</m:mi></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>u</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>u</m:mi><m:mo>.</m:mo></m:mrow></m:math> Then,<newline/>
+<equation id="fs-id1165039564752" class="unnumbered"><label/><m:math><m:mrow><m:mi>L</m:mi><m:mrow><m:mo>{</m:mo><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>z</m:mi></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation></item>
+<item>Use integration by parts to evaluate <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>z</m:mi></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> (Let <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math> Note, by the way, that we have defined <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math><newline/>
+As you might expect, you should see that<newline/>
+<equation id="fs-id1165042657860" class="unnumbered"><label/><m:math><m:mrow><m:mi>L</m:mi><m:mrow><m:mo>{</m:mo><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>s</m:mi></m:mfrac><m:mo>·</m:mo><m:mi>L</m:mi><m:mrow><m:mo>{</m:mo><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Integration in the time domain simplifies to division by <emphasis effect="italics">s</emphasis> in the frequency domain.</item>
+</list>
+</note>
+</section>
+<section id="fs-id1165042657932" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id1165042390874" list-type="bulleted" bullet-style="bullet">
+<item>Integrals of functions over infinite intervals are defined in terms of limits.</item>
+<item>Integrals of functions over an interval for which the function has a discontinuity at an endpoint may be defined in terms of limits.</item>
+<item>The convergence or divergence of an improper integral may be determined by comparing it with the value of an improper integral for which the convergence or divergence is known.</item>
+</list>
+</section>
+<section id="fs-id1165042390895" class="key-equations">
+<title>Key Equations</title>
+<table id="eip-515" summary="." class="unnumbered unstyled">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><emphasis effect="bold">Improper integrals</emphasis></entry>
+    <entry><m:math><m:mtable><m:mtr><m:mtd columnalign="left"><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>t</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mn>0</m:mn></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr></m:mtable></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</section>
+<section id="fs-id1165042505590" class="section-exercises">
+<para id="fs-id1165042505594">Evaluate the following integrals. If the integral is not convergent, answer “divergent.”</para>
+<exercise id="fs-id1165042505599">
+<problem id="fs-id1165042505601">
+<para id="fs-id1165042505603"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165039562380">
+<para id="fs-id1165039562382">divergent</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165039562388">
+<problem id="fs-id1165039562390">
+<para id="fs-id1165039562392"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165039562444">
+<problem id="fs-id1165039562446">
+<para id="fs-id1165039562448"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165039562488">
+<para id="fs-id1165039562491"><m:math><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042505658">
+<problem id="fs-id1165042505660">
+<para id="fs-id1165042505662"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042505703">
+<problem id="fs-id1165042505706">
+<para id="fs-id1165042505708"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042505743">
+<para id="fs-id1165042505745"><m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mi>e</m:mi></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042505756">
+<problem id="fs-id1165042505759">
+<para id="fs-id1165042505761"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042925136">
+<problem id="fs-id1165042925138">
+<para id="fs-id1165042925140">Without integrating, determine whether the integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> converges or diverges by comparing the function <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math> with <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165039563788">
+<para id="fs-id1165039563791">Converges</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165039563796">
+<problem id="fs-id1165039563798">
+<para id="fs-id1165039563800">Without integrating, determine whether the integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> converges or diverges.</para>
+</problem>
+</exercise>
+<para id="fs-id1165039563847">Determine whether the improper integrals converge or diverge. If possible, determine the value of the integrals that converge.</para>
+<exercise id="fs-id1165039563851">
+<problem id="fs-id1165039563853">
+<para id="fs-id1165039563856"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042816071">
+<para id="fs-id1165042816074">Converges to 1/2.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042816079">
+<problem id="fs-id1165042816081">
+<para id="fs-id1165042816083"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow><m:mi>x</m:mi></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042816123">
+<problem id="fs-id1165042816126">
+<para id="fs-id1165042816128"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow><m:mrow><m:msqrt><m:mi>x</m:mi></m:msqrt></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042816163">
+<para id="fs-id1165042816165">−4</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042816170">
+<problem id="fs-id1165042816172">
+<para id="fs-id1165042816174"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042542782">
+<problem id="fs-id1165042542784">
+<para id="fs-id1165042542786"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042542828">
+<para id="fs-id1165042542830"><m:math><m:mi>π</m:mi></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042542837">
+<problem id="fs-id1165042542839">
+<para id="fs-id1165042542842"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mn>5</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042542885">
+<problem id="fs-id1165042542887">
+<para id="fs-id1165042542889"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mn>2</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042448033">
+<para id="fs-id1165042448035">diverges</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042448040">
+<problem id="fs-id1165042448042">
+<para id="fs-id1165042448044"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042448085">
+<problem id="fs-id1165042448087">
+<para id="fs-id1165042448089"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042448117">
+<para id="fs-id1165042668702">diverges</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042668707">
+<problem id="fs-id1165042668709">
+<para id="fs-id1165042668711"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042668774">
+<problem id="fs-id1165042668776">
+<para id="fs-id1165042668778"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:mroot><m:mi>x</m:mi><m:mn>3</m:mn></m:mroot></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042668811">
+<para id="fs-id1165042668813">1.5</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042668819">
+<problem id="fs-id1165042668821">
+<para id="fs-id1165042668823"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042327517">
+<problem id="fs-id1165042327520">
+<para id="fs-id1165042327522"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mn>2</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042327556">
+<para id="fs-id1165042327558">diverges</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042327563">
+<problem id="fs-id1165042327565">
+<para id="fs-id1165042327567"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042660242">
+<problem id="fs-id1165042660244">
+<para id="fs-id1165042660246"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>3</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042660281">
+<para id="fs-id1165042660283">diverges</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042660288">
+<problem id="fs-id1165042660290">
+<para id="fs-id1165042660293"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mn>5</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042660340">
+<problem id="fs-id1165042660342">
+<para id="fs-id1165042660345"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>3</m:mn><m:mn>5</m:mn></m:msubsup><m:mrow><m:mfrac><m:mn>5</m:mn><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042925341">
+<para id="fs-id1165042925343">diverges</para>
+</solution>
+</exercise>
+<para id="fs-id1165042925348">Determine the convergence of each of the following integrals by comparison with the given integral. If the integral converges, find the number to which it converges.</para>
+<exercise id="fs-id1165042925353">
+<problem id="fs-id1165042925355">
+<para id="fs-id1165042925357"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mo>;</m:mo></m:mrow></m:math> compare with <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165043205690">
+<problem id="fs-id1165043205692">
+<para id="fs-id1165043205694"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msqrt><m:mi>x</m:mi></m:msqrt><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mo>;</m:mo></m:mrow></m:math> compare with <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>2</m:mn><m:msqrt><m:mi>x</m:mi></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165043205764">
+<para id="fs-id1165043205766">Both integrals diverge.</para>
+</solution>
+</exercise>
+<para id="fs-id1165043205772">Evaluate the integrals. If the integral diverges, answer “diverges.”</para>
+<exercise id="fs-id1165043205776">
+<problem id="fs-id1165043205778">
+<para id="fs-id1165043205780"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mi>e</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042315414">
+<problem id="fs-id1165042315416">
+<para id="fs-id1165042315418"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mi>π</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042315451">
+<para id="fs-id1165042315453">diverges</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042315458">
+<problem id="fs-id1165042315460">
+<para id="fs-id1165042315462"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042315506">
+<problem id="fs-id1165042315508">
+<para id="fs-id1165042315510"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165043377689">
+<para id="fs-id1165043377691">diverges</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165043377697">
+<problem id="fs-id1165043377699">
+<para id="fs-id1165043377701"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mn>0</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165043377754">
+<problem id="fs-id1165043377756">
+<para id="fs-id1165043377758"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mn>1</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165043377799">
+<para id="fs-id1165043377801"><m:math><m:mi>π</m:mi></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165043377808">
+<problem id="fs-id1165043377810">
+<para id="fs-id1165043377812"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow><m:mi>x</m:mi></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042549195">
+<problem id="fs-id1165042549197">
+<para id="fs-id1165042549199"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>e</m:mi></m:msubsup><m:mrow><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042549236">
+<para id="fs-id1165042549238">0.0</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042549244">
+<problem id="fs-id1165042549246">
+<para id="fs-id1165042549248"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042549290">
+<problem id="fs-id1165042549292">
+<para id="fs-id1165042549294"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042633933">
+<para id="fs-id1165042633935">0.0</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042633941">
+<problem id="fs-id1165042633943">
+<para id="fs-id1165042633945"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1165042633985">Evaluate the improper integrals. Each of these integrals has an infinite discontinuity either at an endpoint or at an interior point of the interval.</para>
+<exercise id="fs-id1165042633990">
+<problem id="fs-id1165042633992">
+<para id="fs-id1165042633994"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>9</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042634030">
+<para id="fs-id1165042634032">6.0</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042634037">
+<problem id="fs-id1165042634040">
+<para id="fs-id1165042634042"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>−27</m:mn></m:mrow><m:mn>1</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mrow><m:mn>2</m:mn><m:mtext>/</m:mtext><m:mn>3</m:mn></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165043229073">
+<problem id="fs-id1165043229075">
+<para id="fs-id1165043229077"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>3</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165043229116">
+<para id="fs-id1165043229119"><m:math><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165043229130">
+<problem id="fs-id1165043229132">
+<para id="fs-id1165043229135"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>6</m:mn><m:mrow><m:mn>24</m:mn></m:mrow></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow><m:mrow><m:mi>t</m:mi><m:msqrt><m:mrow><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>36</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042836158">
+<problem id="fs-id1165042836160">
+<para id="fs-id1165042836162"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>4</m:mn></m:msubsup><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042836203">
+<para id="fs-id1165042836206"><m:math><m:mrow><m:mn>8</m:mn><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>16</m:mn><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042836231">
+<problem id="fs-id1165042836233">
+<para id="fs-id1165042836235"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>3</m:mn></m:msubsup><m:mrow><m:mfrac><m:mi>x</m:mi><m:mrow><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042836283">
+<problem id="fs-id1165042836285">
+<para id="fs-id1165042836287">Evaluate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>.5</m:mn></m:mrow><m:mn>1</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> (Be careful!) (Express your answer using three decimal places.)</para>
+</problem>
+<solution id="fs-id1165042461143">
+<para id="fs-id1165042461145"><m:math><m:mrow><m:mn>1.047</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042461154">
+<problem id="fs-id1165042461156">
+<para id="fs-id1165042461158">Evaluate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> (Express the answer in exact form.)</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042461225">
+<problem id="fs-id1165042461227">
+<para id="fs-id1165042461229">Evaluate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>2</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mrow><m:mn>3</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165043205179">
+<para id="fs-id1165043205181"><m:math><m:mrow><m:mn>−1</m:mn><m:mo>+</m:mo><m:mfrac><m:mn>2</m:mn><m:mrow><m:msqrt><m:mn>3</m:mn></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165043205200">
+<problem id="fs-id1165043205202">
+<para id="fs-id1165043205204">Find the area of the region in the first quadrant between the curve <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−6</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> and the <emphasis effect="italics">x</emphasis>-axis.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165043205243">
+<problem id="fs-id1165043205245">
+<para id="fs-id1165043205247">Find the area of the region bounded by the curve <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>7</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> the <emphasis effect="italics">x</emphasis>-axis, and on the left by <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165043205287">
+<para id="fs-id1165043205289">7.0</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165043205294">
+<problem id="fs-id1165043205296">
+<para id="fs-id1165043205298">Find the area under the curve <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mrow><m:mn>3</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> bounded on the left by <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042512532">
+<problem id="fs-id1165042512534">
+<para id="fs-id1165042512536">Find the area under <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math> in the first quadrant.</para>
+</problem>
+<solution id="fs-id1165042512562">
+<para id="fs-id1165042512564"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>π</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042512579">
+<problem id="fs-id1165042512581">
+<para id="fs-id1165042512583">Find the volume of the solid generated by revolving about the <emphasis effect="italics">x</emphasis>-axis the region under the curve <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>3</m:mn><m:mi>x</m:mi></m:mfrac></m:mrow></m:math> from <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> to <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>∞</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042693399">
+<problem id="fs-id1165042693402">
+<para id="fs-id1165042693404">Find the volume of the solid generated by revolving about the <emphasis effect="italics">y</emphasis>-axis the region under the curve <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> in the first quadrant.</para>
+</problem>
+<solution id="fs-id1165042693431">
+<para id="fs-id1165042693433"><m:math><m:mrow><m:mn>3</m:mn><m:mi>π</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042693444">
+<problem id="fs-id1165042693446">
+<para id="fs-id1165042693448">Find the volume of the solid generated by revolving about the <emphasis effect="italics">x</emphasis>-axis the area under the curve <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> in the first quadrant.</para>
+</problem>
+</exercise>
+<para id="fs-id1165042693493">The <term class="no-emphasis">Laplace transform</term> of a continuous function over the interval <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is defined by <m:math><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">(</m:mo><m:mi>s</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>s</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> (see the Student Project). This definition is used to solve some important initial-value problems in differential equations, as discussed later. The domain of <emphasis effect="italics">F</emphasis> is the set of all real numbers <emphasis effect="italics">s</emphasis> such that the improper integral converges. Find the Laplace transform <emphasis effect="italics">F</emphasis> of each of the following functions and give the domain of <emphasis effect="italics">F</emphasis>.</para>
+<exercise id="fs-id1165042508346">
+<problem id="fs-id1165042508348">
+<para id="fs-id1165042508350"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042508372">
+<para id="fs-id1165042508374"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>s</m:mi></m:mfrac><m:mo>,</m:mo><m:mi>s</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042508394">
+<problem id="fs-id1165042508396">
+<para id="fs-id1165042508399"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042508447">
+<problem id="fs-id1165042508450">
+<para id="fs-id1165042778780"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042778815">
+<para id="fs-id1165042778817"><m:math><m:mrow><m:mfrac><m:mi>s</m:mi><m:mrow><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mi>s</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042778846">
+<problem id="fs-id1165042778848">
+<para id="fs-id1165042778850"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>a</m:mi><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042778907">
+<problem id="fs-id1165042778909">
+<para id="fs-id1165042778911">Use the formula for arc length to show that the circumference of the circle <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> is <m:math><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042649106">
+<para id="fs-id1165042649108">Answers will vary.</para>
+</solution>
+</exercise>
+<para id="fs-id1165042649114">A non-negative function is a <term class="no-emphasis">probability density function</term> if it satisfies the following definition: <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi></m:mrow><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> The probability that a random variable <emphasis effect="italics">x</emphasis> lies between <emphasis effect="italics">a</emphasis> and <emphasis effect="italics">b</emphasis> is given by <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+<exercise id="fs-id1165042649241">
+<problem id="fs-id1165042649243">
+<para id="fs-id1165042649245">Show that <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mspace width="0.1em"/><m:mtext>if</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>7</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−7</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mtext>if</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:mrow></m:mrow></m:math> is a probability density function.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042796871">
+<problem id="fs-id1165042796873">
+<para id="fs-id1165042796875">Find the probability that <emphasis effect="italics">x</emphasis> is between 0 and 0.3. (Use the function defined in the preceding problem.) Use four-place decimal accuracy.</para>
+</problem>
+<solution id="fs-id1165042796886">
+<para id="fs-id1165042796888">0.8775</para>
+</solution>
+</exercise>
+</section>
+<section id="fs-id1165042796894" class="review-exercises">
+<title>Chapter Review Exercises</title>
+<para id="fs-id1165042796902">For the following exercises, determine whether the statement is true or false. Justify your answer with a proof or a counterexample.</para>
+<exercise id="fs-id1165042796906">
+<problem id="fs-id1165042796908">
+<para id="fs-id1165042796910"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> cannot be integrated by parts.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165043173806">
+<problem id="fs-id1165043173808">
+<para id="fs-id1165043173810"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> cannot be integrated using partial fractions.</para>
+</problem>
+<solution id="fs-id1165043173842">
+<para id="fs-id1165043173844">False</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165043173849">
+<problem id="fs-id1165043173851">
+<para id="fs-id1165043173853">In numerical integration, increasing the number of points decreases the error.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165043173865">
+<problem id="fs-id1165043173867">
+<para id="fs-id1165043173869">Integration by parts can always yield the integral.</para>
+</problem>
+<solution id="fs-id1165043173874">
+<para id="fs-id1165043173876">False</para>
+</solution>
+</exercise>
+<para id="fs-id1165043173881">For the following exercises, evaluate the integral using the specified method.</para>
+<exercise id="fs-id1165043173884">
+<problem id="fs-id1165043173886">
+<para id="fs-id1165043173889"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> using integration by parts</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165043258858">
+<problem id="fs-id1165043258860">
+<para id="fs-id1165043258862"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>16</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> using trigonometric substitution</para>
+</problem>
+<solution id="fs-id1165043258903">
+<para id="fs-id1165043258905"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>16</m:mn></m:mrow></m:msqrt></m:mrow><m:mrow><m:mn>16</m:mn><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165043258937">
+<problem id="fs-id1165043258939">
+<para id="fs-id1165043258942"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msqrt><m:mi>x</m:mi></m:msqrt><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> using integration by parts</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042468092">
+<problem id="fs-id1165042468094">
+<para id="fs-id1165042468096"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> using partial fractions</para>
+</problem>
+<solution id="fs-id1165042468149">
+<para id="fs-id1165042468151"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>5</m:mn><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mn>9</m:mn><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042658860">
+<problem id="fs-id1165042658863">
+<para id="fs-id1165042658865"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>5</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mrow><m:mn>5</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> using trigonometric substitution</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042648934">
+<problem id="fs-id1165042648936">
+<para id="fs-id1165042648939"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:msqrt><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:msqrt></m:mrow><m:mrow><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> using a table of integrals or a CAS</para>
+</problem>
+<solution id="fs-id1165042649014">
+<para id="fs-id1165042649016"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:msqrt><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:msqrt></m:mrow><m:mrow><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mi>x</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1165042649076">For the following exercises, integrate using whatever method you choose.</para>
+<exercise id="fs-id1165042649079">
+<problem id="fs-id1165042649081">
+<para id="fs-id1165042649083"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:msup><m:mrow><m:mtext>cos</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165039519266">
+<problem id="fs-id1165039519268">
+<para id="fs-id1165039519270"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:msqrt><m:mspace width="0.1em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165039519304">
+<para id="fs-id1165039519306"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mrow><m:mn>3</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165043388657">
+<problem id="fs-id1165043388659">
+<para id="fs-id1165043388661"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165043311717">
+<problem id="fs-id1165043311720">
+<para id="fs-id1165043311722"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165043311754">
+<para id="fs-id1165043311757"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac><m:msup><m:mrow><m:mtext>tan</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac><m:msup><m:mrow><m:mtext>tan</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042863870">
+<problem id="fs-id1165042863872">
+<para id="fs-id1165042863874"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:msqrt><m:mrow><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>16</m:mn><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup></m:mrow></m:msqrt></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1165042864000">For the following exercises, approximate the integrals using the midpoint rule, trapezoidal rule, and Simpson’s rule using four subintervals, rounding to three decimals.</para>
+<exercise id="fs-id1165042864005">
+<problem id="fs-id1165042864007">
+<para id="fs-id1165042864009"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mn>2</m:mn></m:msubsup><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>5</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:msqrt></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042455064">
+<para id="fs-id1165042455066"><m:math><m:mrow><m:msub><m:mtext>M</m:mtext><m:mn>4</m:mn></m:msub><m:mo>=</m:mo><m:mn>3.312</m:mn><m:mo>,</m:mo><m:msub><m:mtext>T</m:mtext><m:mn>4</m:mn></m:msub><m:mo>=</m:mo><m:mn>3.354</m:mn><m:mo>,</m:mo><m:msub><m:mi>S</m:mi><m:mn>4</m:mn></m:msub><m:mo>=</m:mo><m:mn>3.326</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042455105">
+<problem id="fs-id1165042455107">
+<para id="fs-id1165042455110"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:msqrt><m:mi>π</m:mi></m:msqrt></m:mrow></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mtext>sin</m:mtext><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:msup></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042455203">
+<problem id="fs-id1165042455205">
+<para id="fs-id1165042455207"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>x</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>x</m:mi></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042561170">
+<para id="fs-id1165042561172"><m:math><m:mrow><m:msub><m:mtext>M</m:mtext><m:mn>4</m:mn></m:msub><m:mo>=</m:mo><m:mn>−0.982</m:mn><m:mo>,</m:mo><m:msub><m:mtext>T</m:mtext><m:mn>4</m:mn></m:msub><m:mo>=</m:mo><m:mn>−0.917</m:mn><m:mo>,</m:mo><m:msub><m:mi>S</m:mi><m:mn>4</m:mn></m:msub><m:mo>=</m:mo><m:mn>−0.952</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1165042561212">For the following exercises, evaluate the integrals, if possible.</para>
+<exercise id="fs-id1165042561215">
+<problem id="fs-id1165042561217">
+<para id="fs-id1165042561219"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> for what values of <m:math><m:mi>n</m:mi></m:math> does this integral converge or diverge?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042561277">
+<problem id="fs-id1165042561279">
+<para id="fs-id1165042561281"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup></m:mrow><m:mi>x</m:mi></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165043338973">
+<para id="fs-id1165043338975">approximately 0.2194</para>
+</solution>
+</exercise>
+<para id="fs-id1165043338981">For the following exercises, consider the gamma function given by <m:math><m:mrow><m:mtext>Γ</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>∞</m:mi></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>y</m:mi></m:mrow></m:msup><m:msup><m:mi>y</m:mi><m:mrow><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+<exercise id="fs-id1165043339041">
+<problem id="fs-id1165043339043">
+<para id="fs-id1165043339045">Show that <m:math><m:mrow><m:mtext>Γ</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mtext>Γ</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165043339101">
+<problem id="fs-id1165043339103">
+<para id="fs-id1165043339105">Extend to show that <m:math><m:mrow><m:mtext>Γ</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext><m:mo>,</m:mo></m:mrow></m:math> assuming <m:math><m:mi>a</m:mi></m:math> is a positive integer.</para>
+<para id="fs-id1165043284952">The fastest car in the world, the Bugati Veyron, can reach a top speed of 408 km/h. The graph represents its velocity.</para>
+<media id="fs-id1165043284957" alt="This figure has a graph in the first quadrant. It increases to where x is approximately 03:00 mm:ss and then drops off steep. The maximum height of the graph, here the drop occurs is approximately 420 km/h.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_07_07_201.jpg"/>
+</media>
+</problem>
+</exercise>
+<exercise id="fs-id1165043284972">
+<problem id="fs-id1165043284974">
+<para id="fs-id1165043284976"><emphasis effect="bold">[T]</emphasis> Use the graph to estimate the velocity every 20 sec and fit to a graph of the form <m:math><m:mrow><m:mi>v</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mspace width="0.1em"/><m:msup><m:mrow><m:mtext>exp</m:mtext></m:mrow><m:mrow><m:mi>b</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>c</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>d</m:mi><m:mo>.</m:mo></m:mrow></m:math> (<emphasis effect="italics">Hint:</emphasis> Consider the time units.)</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165043285096">
+<problem id="fs-id1165043285098">
+<para id="fs-id1165043285100"><emphasis effect="bold">[T]</emphasis> Using your function from the previous problem, find exactly how far the Bugati Veyron traveled in the 1 min 40 sec included in the graph.</para>
+</problem>
+<solution id="fs-id1165043285110">
+<para id="fs-id1165043285112">Answers may vary. Ex: <m:math><m:mrow><m:mn>9.405</m:mn></m:mrow></m:math> km</para>
+</solution>
+</exercise>
+</section>
+ </content>
+<glossary>
+<definition id="fs-id1165039564320">
+<term>improper integral</term>
+<meaning id="fs-id1165039564326">an integral over an infinite interval or an integral of a function containing an infinite discontinuity on the interval; an improper integral is defined in terms of a limit. The improper integral converges if this limit is a finite real number; otherwise, the improper integral diverges</meaning>
+</definition>
+</glossary>
+</document>

@@ -1,0 +1,746 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Integration by Parts</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53656</md:content-id>
+  <md:title>Integration by Parts</md:title>
+  <md:abstract><list>
+<item>Recognize when to use integration by parts.</item>
+<item>Use the integration-by-parts formula to solve integration problems.</item>
+<item>Use the integration-by-parts formula for definite integrals.</item>
+</list></md:abstract>
+  <md:uuid>080f1438-5c27-4d04-93ef-719f643e2833</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-id1165042230487">By now we have a fairly thorough procedure for how to evaluate many basic integrals. However, although we can integrate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> by using the substitution, <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> something as simple looking as <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> defies us. Many students want to know whether there is a product rule for integration. There isn’t, but there is a technique based on the product rule for differentiation that allows us to exchange one integral for another. We call this technique <term>integration by parts</term>.</para>
+<section id="fs-id1165042124390">
+<title>The Integration-by-Parts Formula</title>
+<para id="fs-id1165041979164">If, <m:math><m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> then by using the product rule, we obtain <m:math><m:mrow><m:msup><m:mi>h</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msup><m:mi>g</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> Although at first it may seem counterproductive, let’s now integrate both sides of this equation: <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>h</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:msup><m:mi>g</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+<para id="fs-id1165042262165">This gives us</para>
+<equation id="fs-id1165042041848" class="unnumbered"><label/><m:math><m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:msup><m:mi>g</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></equation>
+<para id="fs-id1165041955261">Now we solve for <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:msup><m:mi>g</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>:</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+<equation id="fs-id1165042235539" class="unnumbered"><label/><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:msup><m:mi>g</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></equation>
+<para id="fs-id1165042135462">By making the substitutions <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> which in turn make <m:math><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:msup><m:mi>g</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> we have the more compact form</para>
+<equation id="fs-id1165041813626" class="unnumbered"><label/><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>u</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:mi>u</m:mi><m:mi>v</m:mi><m:mo>−</m:mo></m:mrow></m:mrow></m:mstyle><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>v</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>u</m:mi><m:mo>.</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></equation>
+<note id="fs-id1165042235552" class="theorem">
+<title>Integration by Parts</title>
+<para id="fs-id1165042089614">Let <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> be functions with continuous derivatives. Then, the integration-by-parts formula for the integral involving these two functions is:</para>
+<equation id="fs-id1165042232372" class="numbered"><label/><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>u</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:mi>u</m:mi><m:mi>v</m:mi><m:mo>−</m:mo><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>v</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+</note>
+<para id="fs-id1165041841895">The advantage of using the integration-by-parts formula is that we can use it to exchange one integral for another, possibly easier, integral. The following example illustrates its use.</para>
+<example id="fs-id1165041832973">
+<exercise id="fs-id1165041816966">
+<problem id="fs-id1165042126072">
+<title>Using Integration by Parts</title>
+<para id="fs-id1165041832755">Use integration by parts with <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math> to evaluate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165041792874">
+<para id="fs-id1165042089552">By choosing <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> we have <m:math><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> Since <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> we get <m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> It is handy to keep track of these values as follows:</para>
+<equation id="fs-id1165041792867" class="unnumbered"><label/><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mi>u</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>x</m:mi></m:mtd><m:mtd/><m:mtd columnalign="right"><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>1</m:mn><m:mi>d</m:mi><m:mi>x</m:mi></m:mtd><m:mtd/><m:mtd columnalign="right"><m:mrow><m:mi>v</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+<para id="fs-id1165040681626">Applying the integration-by-parts formula results in</para>
+<equation id="fs-id1165041985992" class="unnumbered"><label/><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mi>d</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd/><m:mtd columnalign="left"><m:mrow><m:mtext>Substitute</m:mtext><m:mo>.</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mrow><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mtd><m:mtd/><m:mtd columnalign="left"><m:mrow><m:mtext>Simplify</m:mtext><m:mo>.</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mrow><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi><m:mo>.</m:mo></m:mrow></m:mtd><m:mtd/><m:mtd columnalign="left"><m:mrow><m:mtext>Use</m:mtext><m:mspace width="0.2em"/><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi><m:mo>.</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+</solution>
+<commentary id="fs-id1165041893024">
+<title>Analysis</title>
+<para id="fs-id1165041973005">At this point, there are probably a few items that need clarification. First of all, you may be curious about what would have happened if we had chosen <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> If we had done so, then we would have <m:math><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mi>dx</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> Thus, after applying integration by parts, we have <m:math><m:mrow><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> Unfortunately, with the new integral, we are in no better position than before. It is important to keep in mind that when we apply integration by parts, we may need to try several choices for <m:math><m:mi>u</m:mi></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi></m:mrow></m:math> before finding a choice that works.</para>
+<para id="fs-id1165042098353">Second, you may wonder why, when we find <m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> we do not use <m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>K</m:mi><m:mo>.</m:mo></m:mrow></m:math> To see that it makes no difference, we can rework the problem using <m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>K</m:mi><m:mtext>:</m:mtext></m:mrow></m:math></para>
+<equation id="fs-id1165042094536" class="unnumbered"><label/><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="left"><m:mrow><m:msup><m:mstyle mathsize="140%" displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mspace width="0.2em"/></m:msup><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mrow><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>K</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:msup><m:mstyle mathsize="140%" displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mspace width="0.2em"/></m:msup><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>K</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mi>d</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mrow/></m:mtd><m:mtd columnalign="left"><m:mrow><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>K</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mstyle mathsize="140%" displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mspace width="0.2em"/></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:msup><m:mstyle mathsize="140%" displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mspace width="0.2em"/></m:msup><m:mi>K</m:mi><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mrow/></m:mtd><m:mtd columnalign="left"><m:mrow><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mo>+</m:mo><m:mi>K</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>K</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mrow/></m:mtd><m:mtd columnalign="left"><m:mrow><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi><m:mo>.</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+<para id="fs-id1165042136113">As you can see, it makes no difference in the final solution.</para>
+<para id="fs-id1165041759254">Last, we can check to make sure that our antiderivative is correct by differentiating <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi><m:mtext>:</m:mtext></m:mrow></m:math></para>
+<equation id="fs-id1165041952373" class="unnumbered"><label/><m:math display="block"><m:mrow><m:mtable><m:mtr><m:mtd columnalign="left"><m:mrow><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd><m:mtd columnalign="left"><m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mrow/></m:mtd><m:mtd columnalign="left"><m:mrow><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+<para id="fs-id1165040665697">Therefore, the antiderivative checks out.</para>
+</commentary>
+</exercise>
+</example>
+<note id="fs-id1165040639604" class="media-2">
+<para id="fs-id1165040639608">Watch this <link url="http://www.openstax.org/l/20_intbyparts1">video</link> and visit this <link url="http://www.openstax.org/l/20_intbyparts2">website</link> for examples of integration by parts.</para>
+</note>
+<note id="fs-id1165042127896" class="checkpoint">
+<exercise id="fs-id1165042127899">
+<problem id="fs-id1165040747248">
+<para id="fs-id1165040747250">Evaluate <m:math><m:mrow><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math> using the integration-by-parts formula with <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165040642767">
+<para id="fs-id1165043352090"><m:math><m:mrow><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1165042051378" type="hint">
+<title>Hint</title>
+<para id="fs-id1165040681938">Find <m:math><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>v</m:mi><m:mo>,</m:mo></m:mrow></m:math> and use the previous example as a guide.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1165041887549">The natural question to ask at this point is: How do we know how to choose <m:math><m:mi>u</m:mi></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>?</m:mo></m:mrow></m:math> Sometimes it is a matter of trial and error; however, the acronym LIATE can often help to take some of the guesswork out of our choices. This acronym stands for <emphasis effect="bold">L</emphasis>ogarithmic Functions, <emphasis effect="bold">I</emphasis>nverse Trigonometric Functions, <emphasis effect="bold">A</emphasis>lgebraic Functions, <emphasis effect="bold">T</emphasis>rigonometric Functions, and <emphasis effect="bold">E</emphasis>xponential Functions. This mnemonic serves as an aid in determining an appropriate choice for <m:math><m:mrow><m:mi>u</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1165040744404">The type of function in the integral that appears first in the list should be our first choice of <m:math><m:mrow><m:mi>u</m:mi><m:mo>.</m:mo></m:mrow></m:math> For example, if an integral contains a <term class="no-emphasis">logarithmic function</term> and an <term class="no-emphasis">algebraic function</term>, we should choose <m:math><m:mi>u</m:mi></m:math> to be the logarithmic function, because L comes before A in LIATE. The integral in <link target-id="fs-id1165041832973"/> has a trigonometric function <m:math><m:mrow><m:mrow><m:mtext>(</m:mtext><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow><m:mtext>)</m:mtext></m:mrow></m:mrow></m:math> and an algebraic function <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Because A comes before T in LIATE, we chose <m:math><m:mi>u</m:mi></m:math> to be the algebraic function. When we have chosen <m:math><m:mrow><m:mi>u</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi></m:mrow></m:math> is selected to be the remaining part of the function to be integrated, together with <m:math><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1165040676764">Why does this mnemonic work? Remember that whatever we pick to be <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi></m:mrow></m:math> must be something we can integrate. Since we do not have integration formulas that allow us to integrate simple logarithmic functions and inverse trigonometric functions, it makes sense that they should not be chosen as values for <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>.</m:mo></m:mrow></m:math> Consequently, they should be at the head of the list as choices for <m:math><m:mrow><m:mi>u</m:mi><m:mo>.</m:mo></m:mrow></m:math> Thus, we put LI at the beginning of the mnemonic. (We could just as easily have started with IL, since these two types of functions won’t appear together in an integration-by-parts problem.) The exponential and trigonometric functions are at the end of our list because they are fairly easy to integrate and make good choices for <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>.</m:mo></m:mrow></m:math> Thus, we have TE at the end of our mnemonic. (We could just as easily have used ET at the end, since when these types of functions appear together it usually doesn’t really matter which one is <m:math><m:mi>u</m:mi></m:math> and which one is <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math> Algebraic functions are generally easy both to integrate and to differentiate, and they come in the middle of the mnemonic.</para>
+<example id="fs-id1165042015633">
+<exercise id="fs-id1165042015635">
+<problem id="fs-id1165042231844">
+<title>Using Integration by Parts</title>
+<para id="fs-id1165042231849">Evaluate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042042007">
+<para id="fs-id1165042042010">Begin by rewriting the integral:</para>
+<equation id="fs-id1165042008468" class="unnumbered"><label/><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:msup><m:mi>x</m:mi><m:mrow><m:mn>−3</m:mn></m:mrow></m:msup><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1165042127807">Since this integral contains the algebraic function <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mrow><m:mn>−3</m:mn></m:mrow></m:msup></m:mrow></m:math> and the logarithmic function <m:math><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> choose <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> since L comes before A in LIATE. After we have chosen <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> we must choose <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mrow><m:mn>−3</m:mn></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1165042127784">Next, since <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> we have <m:math><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> Also, <m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:msup><m:mi>x</m:mi><m:mrow><m:mn>−3</m:mn></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mrow><m:mn>−2</m:mn></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math> Summarizing,</para>
+<equation id="fs-id1165042109999" class="unnumbered"><label/><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mi>u</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mtd><m:mtd/><m:mtd columnalign="right"><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msup><m:mi>x</m:mi><m:mrow><m:mn>−3</m:mn></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mtd><m:mtd/><m:mtd columnalign="right"><m:mrow><m:mi>v</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:msup><m:mi>x</m:mi><m:mrow><m:mn>−3</m:mn></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mrow><m:mn>−2</m:mn></m:mrow></m:msup><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+<para id="fs-id1165042128802">Substituting into the integration-by-parts formula (<link target-id="fs-id1165042232372"/>) gives</para>
+<equation id="fs-id1165042128805" class="unnumbered"><label/><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:msup><m:mi>x</m:mi><m:mrow><m:mn>−3</m:mn></m:mrow></m:msup><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mrow><m:mn>−2</m:mn></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mrow><m:mn>−2</m:mn></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mtd><m:mtd/><m:mtd/><m:mtd/></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mrow><m:mn>−2</m:mn></m:mrow></m:msup><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mrow><m:mn>−3</m:mn></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mrow><m:mtext>Simplify</m:mtext><m:mo>.</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mrow><m:mn>−2</m:mn></m:mrow></m:msup><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mrow><m:mn>−2</m:mn></m:mrow></m:msup><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mrow><m:mtext>Integrate</m:mtext><m:mo>.</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>C</m:mi><m:mo>.</m:mo></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mrow><m:mtext>Rewrite with positive integers.</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1165042127888" class="checkpoint">
+<exercise id="fs-id1165041899921">
+<problem id="fs-id1165041899924">
+<para id="fs-id1165041899926">Evaluate <m:math><m:mrow><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165040747233">
+<para id="fs-id1165043331164"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1165041864895" type="hint">
+<title>Hint</title>
+<para id="fs-id1165041864902">Use <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1165041948188">In some cases, as in the next two examples, it may be necessary to apply integration by parts more than once.</para>
+<example id="fs-id1165041948192">
+<exercise id="fs-id1165041948195">
+<problem id="fs-id1165042015541">
+<title>Applying Integration by Parts More Than Once</title>
+<para id="fs-id1165042015546">Evaluate <m:math><m:mrow><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165040637308">
+<para id="fs-id1165040637310">Using LIATE, choose <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> Thus, <m:math><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> Therefore,</para>
+<equation id="fs-id1165040740033" class="unnumbered"><label/><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mi>u</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mtd><m:mtd/><m:mtd columnalign="right"><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>2</m:mn><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mtd><m:mtd/><m:mtd columnalign="right"><m:mrow><m:mi>v</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+<para id="fs-id1165042240114">Substituting into <link target-id="fs-id1165042232372"/> produces</para>
+<equation id="fs-id1165042240117" class="unnumbered"><label/><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1165040756177">We still cannot integrate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> directly, but the integral now has a lower power on <m:math><m:mrow><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> We can evaluate this new integral by using integration by parts again. To do this, choose <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> Thus, <m:math><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> Now we have</para>
+<equation id="fs-id1165042002748" class="unnumbered"><label/><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mi>u</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>x</m:mi></m:mtd><m:mtd/><m:mtd columnalign="right"><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>d</m:mi><m:mi>x</m:mi></m:mtd><m:mtd/><m:mtd columnalign="right"><m:mrow><m:mi>v</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>9</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+<para id="fs-id1165040757531">Substituting back into the previous equation yields</para>
+<equation id="fs-id1165040757534" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>9</m:mn></m:mfrac><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mfrac><m:mn>2</m:mn><m:mn>9</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1165042110524">After evaluating the last integral and simplifying, we obtain</para>
+<equation id="fs-id1165042110527" class="unnumbered"><label/><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>9</m:mn></m:mfrac><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mfrac><m:mn>2</m:mn><m:mrow><m:mn>27</m:mn></m:mrow></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mi>C</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation>
+</solution>
+</exercise>
+</example>
+<example id="fs-id1165042132627">
+<exercise id="fs-id1165042132629">
+<problem id="fs-id1165042132631">
+<title>Applying Integration by Parts When LIATE Doesn’t Quite Work</title>
+<para id="fs-id1165042132636">Evaluate <m:math><m:mrow><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:msup><m:mi>t</m:mi><m:mn>3</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042132671">
+<para id="fs-id1165042132674">If we use a strict interpretation of the mnemonic LIATE to make our choice of <m:math><m:mrow><m:mi>u</m:mi><m:mo>,</m:mo></m:mrow></m:math> we end up with <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:msup><m:mi>t</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math> Unfortunately, this choice won’t work because we are unable to evaluate <m:math><m:mrow><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math> However, since we can evaluate <m:math><m:mrow><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> we can try choosing <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math> With these choices we have</para>
+<equation id="fs-id1165040715819" class="unnumbered"><label/><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mi>u</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mtd><m:mtd/><m:mtd columnalign="right"><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup><m:mi>d</m:mi><m:mi>t</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>2</m:mn><m:mi>t</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>t</m:mi></m:mtd><m:mtd/><m:mtd columnalign="right"><m:mrow><m:mi>v</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+<para id="fs-id1165042013342">Thus, we obtain</para>
+<equation id="fs-id1165042013345" class="unnumbered"><label/><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="left"><m:mrow><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mspace width="0.2em"/></m:msup><m:msup><m:mi>t</m:mi><m:mn>3</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mtd><m:mtd columnalign="left"><m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup><m:mo>−</m:mo><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup><m:mn>2</m:mn><m:mi>t</m:mi><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mrow/></m:mtd><m:mtd columnalign="left"><m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup><m:mo>+</m:mo><m:mi>C</m:mi><m:mo>.</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+</solution>
+</exercise>
+</example>
+<example id="fs-id1165042035446">
+<exercise id="fs-id1165042035448">
+<problem id="fs-id1165042035450">
+<title>Applying Integration by Parts More Than Once</title>
+<para id="fs-id1165042035456">Evaluate <m:math><m:mrow><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042035489">
+<para id="fs-id1165042035491">This integral appears to have only one function—namely, <m:math><m:mrow><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> —however, we can always use the constant function 1 as the other function. In this example, let’s choose <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> (The decision to use <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is easy. We can’t choose <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math> because if we could integrate it, we wouldn’t be using integration by parts in the first place!) Consequently, <m:math><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mn>1</m:mn><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> After applying integration by parts to the integral and simplifying, we have</para>
+<equation id="fs-id1165042257200" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1165042110018">Unfortunately, this process leaves us with a new integral that is very similar to the original. However, let’s see what happens when we apply integration by parts again. This time let’s choose <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> making <m:math><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mn>1</m:mn><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> Substituting, we have</para>
+<equation id="fs-id1165042110131" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>—</m:mo><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mo>−</m:mo><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1165040741882">After simplifying, we obtain</para>
+<equation id="fs-id1165040741886" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1165040741980">The last integral is now the same as the original. It may seem that we have simply gone in a circle, but now we can actually evaluate the integral. To see how to do this more clearly, substitute <m:math><m:mrow><m:mi>I</m:mi><m:mo>=</m:mo><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> Thus, the equation becomes</para>
+<equation id="fs-id1165040742019" class="unnumbered"><label/><m:math><m:mrow><m:mi>I</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mi>I</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1165040742068">First, add <m:math><m:mi>I</m:mi></m:math> to both sides of the equation to obtain</para>
+<equation id="fs-id1165040742075" class="unnumbered"><label/><m:math><m:mrow><m:mn>2</m:mn><m:mi>I</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1165042266548">Next, divide by 2:</para>
+<equation id="fs-id1165042266551" class="unnumbered"><label/><m:math><m:mrow><m:mi>I</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1165042266606">Substituting <m:math><m:mrow><m:mi>I</m:mi><m:mo>=</m:mo><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math> again, we have</para>
+<equation id="fs-id1165042266641" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1165042266721">From this we see that <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is an antiderivative of <m:math><m:mrow><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> For the most general antiderivative, add <m:math><m:mrow><m:mo>+</m:mo><m:mi>C</m:mi><m:mtext>:</m:mtext></m:mrow></m:math></para>
+<equation id="fs-id1165042001966" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>C</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation>
+</solution>
+<commentary id="fs-id1165042002057">
+<title>Analysis</title>
+<para id="fs-id1165042002062">If this method feels a little strange at first, we can check the answer by differentiation:</para>
+<equation id="fs-id1165042002066" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="left"><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr/><m:mtr><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo stretchy="false">(</m:mo><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>·</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>·</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+</commentary>
+</exercise>
+</example>
+<note id="fs-id1165042295952" class="checkpoint">
+<exercise id="fs-id1165042295956">
+<problem id="fs-id1165042295958">
+<para id="fs-id1165042295960">Evaluate <m:math><m:mrow><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042230965">
+<para id="fs-id1165042407711"><m:math><m:mrow><m:mtext>−</m:mtext><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1165042231011" type="hint">
+<title>Hint</title>
+<para id="fs-id1165042231018">This is similar to <link target-id="fs-id1165041948192"/>.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+<section id="fs-id1165042231026">
+<title>Integration by Parts for Definite Integrals</title>
+<para id="fs-id1165042231031">Now that we have used integration by parts successfully to evaluate <term class="no-emphasis">indefinite integrals</term>, we turn our attention to definite integrals. The integration technique is really the same, only we add a step to evaluate the integral at the upper and lower limits of integration.</para>
+<note id="fs-id1165042231041" class="theorem">
+<title>Integration by Parts for Definite Integrals</title>
+<para id="fs-id1165042231049">Let <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> be functions with continuous derivatives on <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo></m:mrow></m:math> Then</para>
+<equation id="fs-id1165042231112" class="numbered"><label/><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>u</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>v</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:msubsup><m:mrow><m:mrow><m:mrow><m:mi>u</m:mi><m:mi>v</m:mi></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mo>−</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>v</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+</note>
+<example id="fs-id1165042231180">
+<exercise id="fs-id1165042231182">
+<problem id="fs-id1165042231184">
+<title>Finding the Area of a Region</title>
+<para id="fs-id1165042237852">Find the area of the region bounded above by the graph of <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mrow><m:mtext>tan</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mi>x</m:mi></m:mrow></m:math> and below by the <m:math><m:mi>x</m:mi></m:math>-axis over the interval <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042237897">
+<para id="fs-id1165042237899">This region is shown in <link target-id="CNX_Calc_Figure_07_01_001"/>. To find the area, we must evaluate <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mn>0</m:mn><m:mn>1</m:mn></m:munderover><m:msup><m:mrow><m:mtext>tan</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<figure id="CNX_Calc_Figure_07_01_001">
+<media id="fs-id1165042237940" alt="This figure is the graph of the inverse tangent function. It is an increasing function that passes through the origin. In the first quadrant there is a shaded region under the graph, above the x-axis. The shaded area is bounded to the right at x = 1.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_07_01_001.jpg"/>
+</media>
+<caption>To find the area of the shaded region, we have to use integration by parts.</caption>
+</figure>
+<para id="fs-id1165042237957">For this integral, let’s choose <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:msup><m:mrow><m:mtext>tan</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mi>x</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> thereby making <m:math><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> After applying the integration-by-parts formula (<link target-id="fs-id1165042231112"/>) we obtain</para>
+<equation id="fs-id1165042238034" class="unnumbered"><label/><m:math><m:mrow><m:mtext>Area</m:mtext><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.1em"/><m:msup><m:mrow><m:mtext>tan</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:msubsup><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup></m:mrow><m:mo>−</m:mo><m:mstyle displaystyle="true"><m:mrow><m:munderover><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>1</m:mn></m:munderover><m:mrow><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:mrow></m:mstyle></m:math></equation>
+<para id="fs-id1165042304278">Use <emphasis effect="italics">u</emphasis>-substitution to obtain</para>
+<equation id="fs-id1165042304286" class="unnumbered"><label/><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:munderover><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>1</m:mn></m:munderover><m:mrow><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>+</m:mo><m:mn>1</m:mn><m:msubsup><m:mrow><m:mo>|</m:mo></m:mrow><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup><m:mo>.</m:mo></m:mrow></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></equation>
+<para id="fs-id1165042304368">Thus,</para>
+<equation id="fs-id1165042304371" class="unnumbered"><label/><m:math><m:mtext>Area</m:mtext><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.2em"/><m:msup><m:mi>tan</m:mi><m:mrow><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mi>x</m:mi><m:msubsup><m:mstyle mathsize="140%" displaystyle="true"><m:mo>|</m:mo></m:mstyle><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>ln</m:mi><m:mrow><m:mo>|</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>|</m:mo><m:msubsup><m:mrow><m:mo>|</m:mo></m:mrow><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>ln</m:mi><m:mspace width="0.2em"/><m:mn>2.</m:mn></m:math></equation>
+<para id="fs-id1165042304463">At this point it might not be a bad idea to do a “reality check” on the reasonableness of our solution. Since <m:math><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mn>2</m:mn><m:mo>≈</m:mo><m:mn>0.4388</m:mn><m:mo>,</m:mo></m:mrow></m:math> and from <link target-id="CNX_Calc_Figure_07_01_001"/> we expect our area to be slightly less than 0.5, this solution appears to be reasonable.</para>
+</solution>
+</exercise>
+</example>
+<example id="fs-id1165042058871">
+<exercise id="fs-id1165042058873">
+<problem id="fs-id1165042058875">
+<title>Finding a Volume of Revolution</title>
+<para id="fs-id1165042058881">Find the volume of the solid obtained by revolving the region bounded by the graph of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mo>,</m:mo></m:mrow></m:math> the <emphasis effect="italics">x</emphasis>-axis, the <emphasis effect="italics">y</emphasis>-axis, and the line <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> about the <emphasis effect="italics">y</emphasis>-axis.</para>
+</problem>
+<solution id="fs-id1165042058936">
+<para id="fs-id1165042058938">The best option to solving this problem is to use the shell method. Begin by sketching the region to be revolved, along with a typical rectangle (see the following graph).</para>
+<figure id="CNX_Calc_Figure_07_01_002">
+<media id="fs-id1165042058947" alt="This figure is the graph of the function e^-x. It is an increasing function on the left side of the y-axis and decreasing on the right side of the y-axis. The curve also comes to a point on the y-axis at y=1. Under the curve there is a shaded rectangle in the first quadrant. There is also a cylinder under the graph, formed by revolving the rectangle around the y-axis.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_07_01_002.jpg"/>
+</media>
+<caption>We can use the shell method to find a volume of revolution.</caption>
+</figure>
+<para id="fs-id1165042058966">To find the volume using shells, we must evaluate <m:math><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> To do this, let <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math> These choices lead to <m:math><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mtext>−</m:mtext><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math> Substituting into <link target-id="fs-id1165042231112"/>, we obtain</para>
+<equation id="fs-id1165042281368" class="unnumbered"><label/><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mtext>Volume</m:mtext></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:munderover><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mn>0</m:mn><m:mn>1</m:mn></m:munderover><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mrow><m:msubsup><m:mrow><m:mo>|</m:mo></m:mrow><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup></m:mrow><m:mo>+</m:mo><m:munderover><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mn>0</m:mn><m:mn>1</m:mn></m:munderover><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mtd><m:mtd/><m:mtd columnalign="left"><m:mrow><m:mtext>Use integration by parts</m:mtext><m:mo>.</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mrow><m:mo>=</m:mo><m:mn>−2</m:mn><m:mi>π</m:mi><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mrow><m:msubsup><m:mrow><m:mo>|</m:mo></m:mrow><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup></m:mrow></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mrow><m:msubsup><m:mrow><m:mo>|</m:mo></m:mrow><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup></m:mrow></m:mtd><m:mtd/><m:mtd columnalign="left"><m:mrow><m:mtext>Evaluate</m:mtext><m:mspace width="0.2em"/><m:munderover><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mn>0</m:mn><m:mn>1</m:mn></m:munderover><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mrow><m:msubsup><m:mrow><m:mo>|</m:mo></m:mrow><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup></m:mrow></m:mrow><m:mo>.</m:mo></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>4</m:mn><m:mi>π</m:mi></m:mrow><m:mi>e</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:mtd><m:mtd/><m:mtd columnalign="left"><m:mrow><m:mtext>Evaluate and simplify</m:mtext><m:mo>.</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></equation>
+</solution>
+<commentary id="fs-id1165042071427">
+<title>Analysis</title>
+<para id="fs-id1165042071432">Again, it is a good idea to check the reasonableness of our solution. We observe that the solid has a volume slightly less than that of a cylinder of radius <m:math><m:mn>1</m:mn></m:math> and height of <m:math><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>e</m:mi></m:mrow></m:math> added to the volume of a cone of base radius <m:math><m:mn>1</m:mn></m:math> and height of <m:math><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>e</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> Consequently, the solid should have a volume a bit less than</para>
+<equation id="fs-id1165042071470" class="unnumbered"><label/><m:math><m:mrow><m:mi>π</m:mi><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mfrac><m:mn>1</m:mn><m:mi>e</m:mi></m:mfrac><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>3</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>e</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mrow><m:mn>3</m:mn><m:mi>e</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>3</m:mn></m:mfrac><m:mo>≈</m:mo><m:mn>1.8177</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1165042071569">Since <m:math><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>4</m:mn><m:mi>π</m:mi></m:mrow><m:mi>e</m:mi></m:mfrac><m:mo>≈</m:mo><m:mn>1.6603</m:mn><m:mo>,</m:mo></m:mrow></m:math> we see that our calculated volume is reasonable.</para>
+</commentary>
+</exercise>
+</example>
+<note id="fs-id1165042299594" class="checkpoint">
+<exercise id="fs-id1165042299598">
+<problem id="fs-id1165042299600">
+<para id="fs-id1165042299602">Evaluate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msubsup><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042299639">
+<para id="fs-id1165042583725"><m:math><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1165042299659" type="hint">
+<title>Hint</title>
+<para id="fs-id1165042299667">Use <link target-id="fs-id1165042231112"/> with <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</commentary>
+</exercise>
+</note>
+</section>
+<section id="fs-id1165042299703" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id1165042299710" list-type="bulleted" bullet-style="bullet">
+<item>The integration-by-parts formula allows the exchange of one integral for another, possibly easier, integral.</item>
+<item>Integration by parts applies to both definite and indefinite integrals.</item>
+</list>
+</section>
+<section id="fs-id1165042299726" class="key-equations">
+<title>Key Equations</title>
+<table id="eip-511" summary="." class="unnumbered unstyled">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><emphasis effect="bold">Integration by parts formula</emphasis></entry>
+    <entry><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>u</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:mi>u</m:mi><m:mi>v</m:mi><m:mo>−</m:mo><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>v</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry><emphasis effect="bold">Integration by parts for definite integrals</emphasis></entry>
+    <entry><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>u</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>v</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:msubsup><m:mrow><m:mrow><m:mrow><m:mi>u</m:mi><m:mi>v</m:mi></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mo>−</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>v</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</section>
+<section id="fs-id1165040642423" class="section-exercises">
+<para id="fs-id1165040642427">In using the technique of integration by parts, you must carefully choose which expression is <emphasis effect="italics">u.</emphasis> For each of the following problems, use the guidelines in this section to choose <emphasis effect="italics">u.</emphasis> Do <emphasis effect="bold">not</emphasis> evaluate the integrals.</para>
+<exercise id="fs-id1165040642447">
+<problem id="fs-id1165040642449">
+<para id="fs-id1165040642451"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165040642482">
+<para id="fs-id1165040642484"><m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165040642500">
+<problem id="fs-id1165040642502">
+<para id="fs-id1165040642505"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165040642565">
+<problem id="fs-id1165040642567">
+<para id="fs-id1165040642569"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165040642596">
+<para id="fs-id1165040642598"><m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165041787435">
+<problem id="fs-id1165041787437">
+<para id="fs-id1165041787439"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mtext>arctan</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165041787483">
+<problem id="fs-id1165041787485">
+<para id="fs-id1165041787487"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165041787527">
+<para id="fs-id1165041787529"><m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1165041787554">Find the integral by using the simplest method. Not all problems require integration by parts.</para>
+<exercise id="fs-id1165041787559">
+<problem id="fs-id1165041787561">
+<para id="fs-id1165041787563"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>v</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>v</m:mi><m:mi>d</m:mi><m:mi>v</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165041787622">
+<problem id="fs-id1165041787624">
+<para id="fs-id1165041787626"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> (<emphasis effect="italics">Hint:</emphasis> <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> is equivalent to <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>1</m:mn><m:mo>·</m:mo><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165041848554">
+<para id="fs-id1165041848556"><m:math><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165041848579">
+<problem id="fs-id1165041848581">
+<para id="fs-id1165041848584"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165041848632">
+<problem id="fs-id1165041848635">
+<para id="fs-id1165041848637"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mrow><m:mtext>tan</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165041848663">
+<para id="fs-id1165041848665"><m:math><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:msup><m:mtext>tan</m:mtext><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165041848718">
+<problem id="fs-id1165041848721">
+<para id="fs-id1165041848723"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mstyle><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042279525">
+<problem id="fs-id1165042279527">
+<para id="fs-id1165042279529"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042279563">
+<para id="fs-id1165042279565"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042279619">
+<problem id="fs-id1165042279621">
+<para id="fs-id1165042279623"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>4</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042279694">
+<problem id="fs-id1165042279696">
+<para id="fs-id1165042279698"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165040739093">
+<para id="fs-id1165040739095"><m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165040739127">
+<problem id="fs-id1165040739129">
+<para id="fs-id1165040739131"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mn>3</m:mn><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165040739210">
+<problem id="fs-id1165040739212">
+<para id="fs-id1165040739214"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mstyle><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165040739241">
+<para id="fs-id1165040739243"><m:math><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165040739285">
+<problem id="fs-id1165040739287">
+<para id="fs-id1165040739289"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042106390">
+<problem id="fs-id1165042106392">
+<para id="fs-id1165042106394"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042106429">
+<para id="fs-id1165042106431"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>+</m:mo><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042106492">
+<problem id="fs-id1165042106494">
+<para id="fs-id1165042106496"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mn>4</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165040696935">
+<problem id="fs-id1165040696937">
+<para id="fs-id1165040696939"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165040696966">
+<para id="fs-id1165040696968"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165040697008">
+<problem id="fs-id1165040697010">
+<para id="fs-id1165040697013"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165040697080">
+<problem id="fs-id1165040697082">
+<para id="fs-id1165040697084"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165040697115">
+<para id="fs-id1165040697117"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165040697146">
+<problem id="fs-id1165040697148">
+<para id="fs-id1165040697150"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042110324">
+<problem id="fs-id1165042110326">
+<para id="fs-id1165042110329"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042110371">
+<para id="fs-id1165042110373"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mrow><m:mo>[</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mrow><m:mo>[</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042110449">
+<problem id="fs-id1165042110451">
+<para id="fs-id1165042110453"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>c</m:mi><m:mi>o</m:mi><m:mi>s</m:mi><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042071182">
+<problem id="fs-id1165042071184">
+<para id="fs-id1165042071186"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042071219">
+<para id="fs-id1165042071221"><m:math><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>x</m:mi><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042071268">
+<problem id="fs-id1165042071270">
+<para id="fs-id1165042071272"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042071342">
+<problem id="fs-id1165042071344">
+<para id="fs-id1165042071346"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042230007">
+<para id="fs-id1165042230009"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mn>9</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042230055">
+<problem id="fs-id1165042230057">
+<para id="fs-id1165042230059"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042230128">
+<problem id="fs-id1165042230130">
+<para id="fs-id1165042230132"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mrow><m:mtext>cos</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042230169">
+<para id="fs-id1165042230171"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>+</m:mo><m:mi>x</m:mi><m:mspace width="0.2em"/><m:msup><m:mtext>cos</m:mtext><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042273608">
+<problem id="fs-id1165042273610">
+<para id="fs-id1165042273612"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>arctan</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042273684">
+<problem id="fs-id1165042273686">
+<para id="fs-id1165042273688"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042273714">
+<para id="fs-id1165042273717"><m:math><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042273760">
+<problem id="fs-id1165042273762">
+<para id="fs-id1165042273765"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042233474">
+<problem id="fs-id1165042233476">
+<para id="fs-id1165042233478"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042233505">
+<para id="fs-id1165042233507"><m:math><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−6</m:mn><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042233567">
+<problem id="fs-id1165042233569">
+<para id="fs-id1165042233571"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042233649">
+<problem id="fs-id1165042233651">
+<para id="fs-id1165042233653"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:msup><m:mrow><m:mtext>sec</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042233682">
+<para id="fs-id1165042233684"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>·</m:mo><m:msup><m:mrow><m:mtext>sec</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165040754517">
+<problem id="fs-id1165040754519">
+<para id="fs-id1165040754521"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:msup><m:mrow><m:mtext>sec</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165040754583">
+<problem id="fs-id1165040754585">
+<para id="fs-id1165040754587"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cosh</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165040754610">
+<para id="fs-id1165040754612"><m:math><m:mrow><m:mtext>−</m:mtext><m:mtext>cosh</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sinh</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1165040754638">Compute the definite integrals. Use a graphing utility to confirm your answers.</para>
+<exercise id="fs-id1165040754641">
+<problem id="fs-id1165040754643">
+<para id="fs-id1165040754646"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>e</m:mi></m:mrow><m:mn>1</m:mn></m:msubsup><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165040754696">
+<problem id="fs-id1165040754698">
+<para id="fs-id1165040754700"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> (Express the answer in exact form.)</para>
+</problem>
+<solution id="fs-id1165042231953">
+<para id="fs-id1165042231955"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>4</m:mn><m:msup><m:mtext>e</m:mtext><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042231980">
+<problem id="fs-id1165042231983">
+<para id="fs-id1165042231985"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:msqrt><m:mi>x</m:mi></m:msqrt></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>let</m:mtext><m:mspace width="0.2em"/><m:mi>u</m:mi><m:mo>=</m:mo><m:msqrt><m:mi>x</m:mi></m:msqrt></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042232041">
+<problem id="fs-id1165042232043">
+<para id="fs-id1165042232045"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>1</m:mn><m:mi>e</m:mi></m:msubsup><m:mrow><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042232083">
+<para id="fs-id1165042232085">2</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042232091">
+<problem id="fs-id1165042232093">
+<para id="fs-id1165042232095"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>π</m:mi></m:msubsup><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042232131">
+<problem id="fs-id1165042232133">
+<para id="fs-id1165042232135"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>π</m:mi></m:mrow><m:mi>π</m:mi></m:msubsup><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> (Express the answer in exact form.)</para>
+</problem>
+<solution id="fs-id1165041917938">
+<para id="fs-id1165041917940"><m:math><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165041917951">
+<problem id="fs-id1165041917953">
+<para id="fs-id1165041917955"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>3</m:mn></m:msubsup><m:mrow><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> (Express the answer in exact form.)</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165041918039">
+<problem id="fs-id1165041918042">
+<para id="fs-id1165041918044"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:msubsup><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> (Express the answer in exact form.)</para>
+</problem>
+<solution id="fs-id1165041918083">
+<para id="fs-id1165041918085"><m:math><m:mrow><m:mn>−2</m:mn><m:mo>+</m:mo><m:mi>π</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165041918098">
+<problem id="fs-id1165041918100">
+<para id="fs-id1165041918102"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup><m:mrow><m:mi>x</m:mi><m:msup><m:mn>5</m:mn><m:mi>x</m:mi></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> (Express the answer using five significant digits.)</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165041918142">
+<problem id="fs-id1165041918145">
+<para id="fs-id1165041918147">Evaluate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165040756738">
+<para id="fs-id1165040756740"><m:math><m:mrow><m:mtext>−</m:mtext><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mtext>ln</m:mtext><m:mrow><m:mo>[</m:mo><m:mrow><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>]</m:mo></m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1165040756793">Derive the following formulas using the technique of integration by parts. Assume that <emphasis effect="italics">n</emphasis> is a positive integer. These formulas are called <emphasis effect="italics">reduction formulas</emphasis> because the exponent in the <emphasis effect="italics">x</emphasis> term has been reduced by one in each case. The second integral is simpler than the original integral.</para>
+<exercise id="fs-id1165040756812">
+<problem id="fs-id1165040756815">
+<para id="fs-id1165040756817"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mi>n</m:mi></m:msup><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mi>n</m:mi></m:msup><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mo>−</m:mo><m:mi>n</m:mi><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165040756896">
+<problem id="fs-id1165040756899">
+<para id="fs-id1165040756901"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mi>n</m:mi></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mi>n</m:mi></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>n</m:mi><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165040722171">
+<para id="fs-id1165040722174">Answers vary</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165040722179">
+<problem id="fs-id1165040722181">
+<para id="fs-id1165040722183"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mi>n</m:mi></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:munder accentunder="true"><m:mo stretchy="true">______</m:mo></m:munder></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165040722280">
+<problem id="fs-id1165040722283">
+<para id="fs-id1165040722285">Integrate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:msqrt></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math> using two methods:</para>
+<list id="fs-id1165040722318" list-type="enumerated" number-style="lower-alpha">
+<item>Using parts, letting <m:math><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:msqrt><m:mspace width="0.1em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math></item>
+<item>Substitution, letting <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:math></item>
+</list>
+</problem>
+<solution id="fs-id1165040722371">
+<para id="fs-id1165040722373">a. <m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>3</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math> b. <m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>3</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1165042276352">State whether you would use integration by parts to evaluate the integral. If so, identify <emphasis effect="italics">u</emphasis> and <emphasis effect="italics">dv</emphasis>. If not, describe the technique used to perform the integration without actually doing the problem.</para>
+<exercise id="fs-id1165042276367">
+<problem id="fs-id1165042276370">
+<para id="fs-id1165042276372"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042276432">
+<problem id="fs-id1165042276434">
+<para id="fs-id1165042276436"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mtext>ln</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>x</m:mi></m:mrow><m:mi>x</m:mi></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042276468">
+<para id="fs-id1165042276470">Do not use integration by parts. Choose <emphasis effect="italics">u</emphasis> to be <m:math><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> and the integral is of the form <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>u</m:mi><m:mn>2</m:mn></m:msup><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165042276512">
+<problem id="fs-id1165042276514">
+<para id="fs-id1165042276516"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165040741668">
+<problem id="fs-id1165040741670">
+<para id="fs-id1165040741673"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165040741706">
+<para id="fs-id1165040741708">Do not use integration by parts. Let <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow></m:math> and the integral can be put into the form <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>e</m:mi><m:mi>u</m:mi></m:msup><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165040741753">
+<problem id="fs-id1165040741756">
+<para id="fs-id1165040741758"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165040741825">
+<problem id="fs-id1165040741827">
+<para id="fs-id1165040741829"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1165042271650">
+<para id="fs-id1165042271652">Do not use integration by parts. Choose <emphasis effect="italics">u</emphasis> to be <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:math> and the integral can be put into the form <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>u</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1165042271710">Sketch the region bounded above by the curve, the <emphasis effect="italics">x</emphasis>-axis, and <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> and find the area of the region. Provide the exact form or round answers to the number of places indicated.</para>
+<exercise id="fs-id1165042271731">
+<problem id="fs-id1165042271733">
+<para id="fs-id1165042271735"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> (Approximate answer to four decimal places.)</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165042271779">
+<problem id="fs-id1165042271781">
+<para id="fs-id1165042271783"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>π</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> (Approximate answer to five decimal places.)</para>
+</problem>
+<solution id="fs-id1165042271817">
+<para id="fs-id1165042271819">The area under graph is 0.39535.<newline/>
+<media id="fs-id1165042271823" alt="This figure is the graph of y=e^-x sin(pi*x). The curve begins in the third quadrant at x=0.5, increases through the origin, reaches a high point between 0.5 and 0.75, then decreases, passing through x=1.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_07_01_202.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<para id="fs-id1165042271838">Find the volume generated by rotating the region bounded by the given curves about the specified line. Express the answers in exact form or approximate to the number of decimal places indicated.</para>
+<exercise id="fs-id1165042271843">
+<problem id="fs-id1165042271845">
+<para id="fs-id1165042271847"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>π</m:mi></m:mrow></m:math> about the y-axis (Express the answer in exact form.)</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165040671747">
+<problem id="fs-id1165040671749">
+<para id="fs-id1165040671751"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo></m:mrow></m:math> about <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> (Express the answer in exact form.)</para>
+</problem>
+<solution id="fs-id1165040671805">
+<para id="fs-id1165040671808"><m:math><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi><m:mi>e</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165040671820">
+<problem id="fs-id1165040671822">
+<para id="fs-id1165040671825">A particle moving along a straight line has a velocity of <m:math><m:mrow><m:mi>v</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math> after <emphasis effect="italics">t</emphasis> sec. How far does it travel in the first 2 sec? (Assume the units are in feet and express the answer in exact form.)</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165040671890">
+<problem id="fs-id1165040671893">
+<para id="fs-id1165040671895">Find the area under the graph of <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mrow><m:mtext>sec</m:mtext></m:mrow><m:mn>3</m:mn></m:msup><m:mi>x</m:mi></m:mrow></m:math> from <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mspace width="0.1em"/><m:mtext>to</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> (Round the answer to two significant digits.)</para>
+</problem>
+<solution id="fs-id1165040671935">
+<para id="fs-id1165040671937">2.05</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165040671943">
+<problem id="fs-id1165040671945">
+<para id="fs-id1165040671947">Find the area between <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup></m:mrow></m:math> and the <emphasis effect="italics">x-</emphasis>axis from <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> to <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>.</m:mo></m:mrow></m:math> (Express the answer in exact form.)</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165040665848">
+<problem id="fs-id1165040665851">
+<para id="fs-id1165040665853">Find the area of the region enclosed by the curve <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow></m:math> and the <emphasis effect="italics">x</emphasis>-axis for</para>
+<para id="fs-id1165040665875"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn><m:mi>π</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mfrac><m:mrow><m:mn>13</m:mn><m:mi>π</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> (Express the answer in exact form.)</para>
+</problem>
+<solution id="fs-id1165040665907">
+<para id="fs-id1165040665909"><m:math><m:mrow><m:mn>12</m:mn><m:mi>π</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165040665920">
+<problem id="fs-id1165040665922">
+<para id="fs-id1165040665924">Find the volume of the solid generated by revolving the region bounded by the curve <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> the <emphasis effect="italics">x</emphasis>-axis, and the vertical line <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> about the <emphasis effect="italics">x</emphasis>-axis. (Express the answer in exact form.)</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165040665996">
+<problem id="fs-id1165040665998">
+<para id="fs-id1165040666000">Find the volume of the solid generated by revolving the region bounded by the curve <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow></m:math> and the <emphasis effect="italics">x</emphasis>-axis, <m:math><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>π</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> about the <emphasis effect="italics">x</emphasis>-axis. (Express the answer in exact form.)</para>
+</problem>
+<solution id="fs-id1165040639252">
+<para id="fs-id1165040639254"><m:math><m:mrow><m:mn>8</m:mn><m:msup><m:mi>π</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1165040639268">
+<problem id="fs-id1165040639270">
+<para id="fs-id1165040639272">Find the volume of the solid generated by revolving the region in the first quadrant bounded by <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup></m:mrow></m:math> and the <emphasis effect="italics">x</emphasis>-axis, from <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> to <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> about the <emphasis effect="italics">y-</emphasis>axis. (Express the answer in exact form.)</para>
+</problem>
+</exercise>
+</section>
+ </content>
+<glossary>
+<definition id="fs-id1165040639374"><term>integration by parts</term> <meaning id="fs-id1165040639379">a technique of integration that allows the exchange of one integral for another using the formula <m:math><m:mrow><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mi>u</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>v</m:mi><m:mo>=</m:mo><m:mi>u</m:mi><m:mi>v</m:mi><m:mo>−</m:mo><m:msup><m:mstyle displaystyle="true"><m:mo stretchy="false">∫</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mi>v</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow></m:math></meaning></definition>
+</glossary>
+</document>

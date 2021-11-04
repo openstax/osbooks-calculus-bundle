@@ -1,0 +1,21 @@
+<document xmlns="http://cnx.rice.edu/cnxml" class="introduction">
+<title>Introduction</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53907</md:content-id>
+  <md:title>Introduction</md:title>
+  <md:abstract/>
+  <md:uuid>faa5cb5a-48ee-4cdf-9127-957df9c318c3</md:uuid>
+</metadata>
+
+<content>
+<figure id="CNX_Calc_Figure_13_00_001" class="splash">
+<media id="fs-id1169739110645" alt="This is a picture of Halley’s Comet. It is a bright ball of light towards the right of the picture with a tail of trailing light. There are also stars throughout the picture.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_13_00_001.jpg"/>
+</media>
+<caption>Halley’s Comet appeared in view of Earth in 1986 and will appear again in 2061.</caption>
+</figure>
+<para id="fs-id1169739199619">In 1705, using Sir Isaac Newton’s new laws of motion, the astronomer Edmond Halley made a prediction. He stated that comets that had appeared in 1531, 1607, and 1682 were actually the same comet and that it would reappear in 1758. Halley was proved to be correct, although he did not live to see it. However, the comet was later named in his honor.</para>
+<para id="fs-id1169739303448">Halley’s Comet follows an elliptical path through the solar system, with the Sun appearing at one focus of the ellipse. This motion is predicted by Johannes Kepler’s first law of planetary motion, which we mentioned briefly in the <link document="m53831">Introduction to Parametric Equations and Polar Coordinates</link>. In <link target-id="fs-id1169737857156" document="m53930"/>, we show how to use Kepler’s third law of planetary motion along with the calculus of vector-valued functions to find the average distance of Halley’s Comet from the Sun.</para>
+<para id="fs-id1169739202521">Vector-valued functions provide a useful method for studying various curves both in the plane and in three-dimensional space. We can apply this concept to calculate the velocity, acceleration, arc length, and curvature of an object’s trajectory. In this chapter, we examine these methods and show how they are used.</para>
+ </content>
+</document>

@@ -1,0 +1,22 @@
+<document xmlns="http://cnx.rice.edu/cnxml" class="introduction">
+
+<title>Introduction</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53929</md:content-id>
+  <md:title>Introduction</md:title>
+  <md:abstract/>
+  <md:uuid>65c5e1d9-872e-4319-831f-1c0fca58586a</md:uuid>
+</metadata>
+
+<content>
+<figure id="CNX_Calc_Figure_14_00_001" class="splash">
+<media id="fs-id1167793363288" alt="A photo of many golf balls.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_00_001.jpg"/>
+</media>
+<caption>Americans use (and lose) millions of golf balls a year, which keeps golf ball manufacturers in business. In this chapter, we study a profit model and learn methods for calculating optimal production levels for a typical golf ball manufacturing company. (credit: modification of work by oatsy40, Flickr)</caption>
+</figure>
+<para id="fs-id1167793961034">In <link document="m53602">Introduction to Applications of Derivatives</link>, we studied how to determine the maximum and minimum of a function of one variable over a closed interval. This function might represent the temperature over a given time interval, the position of a car as a function of time, or the altitude of a jet plane as it travels from New York to San Francisco. In each of these examples, the function has one independent variable.</para>
+<para id="fs-id1167793951043">Suppose, however, that we have a quantity that depends on more than one variable. For example, temperature can depend on location and the time of day, or a company’s profit model might depend on the number of units sold and the amount of money spent on advertising. In this chapter, we look at a company that produces golf balls. We develop a profit model and, under various restrictions, we find that the optimal level of production and advertising dollars spent determines the maximum possible profit. Depending on the nature of the restrictions, both the method of solution and the solution itself changes (see <link document="m53942" target-id="fs-id1167793423548"/>).</para>
+<para id="fs-id1167794047323">When dealing with a function of more than one independent variable, several questions naturally arise. For example, how do we calculate limits of functions of more than one variable? The definition of <emphasis effect="italics">derivative</emphasis> we used before involved a limit. Does the new definition of derivative involve limits as well? Do the rules of differentiation apply in this context? Can we find relative extrema of functions using derivatives? All these questions are answered in this chapter.</para>
+ </content>
+</document>

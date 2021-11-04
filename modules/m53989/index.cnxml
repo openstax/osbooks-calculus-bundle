@@ -1,0 +1,996 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Vector Fields</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53989</md:content-id>
+  <md:title>Vector Fields</md:title>
+  <md:abstract><list>
+<item>Recognize a vector field in a plane or in space.</item>
+<item>Sketch a vector field from a given equation.</item>
+<item>Identify a conservative field and its associated potential function.</item>
+</list></md:abstract>
+  <md:uuid>4ea1e6ac-b330-4b3a-a84a-b899b4fc0de5</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-id1167793287533">Vector fields are an important tool for describing many physical concepts, such as gravitation and electromagnetism, which affect the behavior of objects over a large region of a plane or of space. They are also useful for dealing with large-scale behavior such as atmospheric storms or deep-sea ocean currents. In this section, we examine the basic definitions and graphs of vector fields so we can study them in more detail in the rest of this chapter.</para>
+<section id="fs-id1167793470654">
+<title>Examples of Vector Fields</title>
+<para id="fs-id1167793638685">How can we model the gravitational force exerted by multiple astronomical objects? How can we model the velocity of water particles on the surface of a river? <link target-id="CNX_Calc_Figure_16_01_001"/> gives visual representations of such phenomena.</para>
+<para id="fs-id1167793299474"><link target-id="CNX_Calc_Figure_16_01_001"/>(a) shows a gravitational field exerted by two astronomical objects, such as a star and a planet or a planet and a moon. At any point in the figure, the vector associated with a point gives the net gravitational force exerted by the two objects on an object of unit mass. The vectors of largest magnitude in the figure are the vectors closest to the larger object. The larger object has greater mass, so it exerts a gravitational force of greater magnitude than the smaller object.</para>
+<para id="fs-id1167794209630"><link target-id="CNX_Calc_Figure_16_01_001"/>(b) shows the velocity of a river at points on its surface. The vector associated with a given point on the river’s surface gives the velocity of the water at that point. Since the vectors to the left of the figure are small in magnitude, the water is flowing slowly on that part of the surface. As the water moves from left to right, it encounters some rapids around a rock. The speed of the water increases, and a whirlpool occurs in part of the rapids.</para>
+<figure id="CNX_Calc_Figure_16_01_001">
+<media id="fs-id1167793511175" alt="Two images, labeled A and B. Image A shows the gravitational field exerted by two astronomical bodies on a small object. The earth is on the left, and the moon is on the right. The earth is surrounded by long arrows pointing towards its center arranged in concentric circles. There is a break in the circle on the right, across from the moon. The moon is surrounded by smaller arrows that curve out and to the right. Image B shows the vector velocity field of water on the surface of a river with a large rock in the middle. The arrows tend to point at the same angle as the riverbank. Where the river meets the rock, the arrows point around the rock. After the rock, the some arrows point forward, and others turn back to the rock. The water flows fastest towards the middle of the river and around the rock and slowest along the riverbank.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_016.jpg"/>
+</media>
+<caption>(a) The gravitational field exerted by two astronomical bodies on a small object. (b) The vector velocity field of water on the surface of a river shows the varied speeds of water. Red indicates that the magnitude of the vector is greater, so the water flows more quickly; blue indicates a lesser magnitude and a slower speed of water flow.</caption>
+</figure>
+<para id="fs-id1167794060800">Each figure illustrates an example of a vector field. Intuitively, a vector field is a map of vectors. In this section, we study vector fields in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+<note id="fs-id1167793270756">
+<title>Definition</title>
+<para id="fs-id1167794293131">A <term>vector field</term> <m:math><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:math> in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup></m:mrow></m:math> is an assignment of a two-dimensional vector <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> to each point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> of a subset <emphasis effect="italics">D</emphasis> of <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> The subset <emphasis effect="italics">D</emphasis> is the <term class="no-emphasis">domain</term> of the vector field.</para>
+<para id="fs-id1167794328312">A vector field <emphasis effect="bold">F</emphasis> in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup></m:mrow></m:math> is an assignment of a three-dimensional vector <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> to each point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> of a subset <emphasis effect="italics">D</emphasis> of <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> The subset <emphasis effect="italics">D</emphasis> is the domain of the vector field.</para>
+</note>
+<section id="fs-id1167793384605">
+<title>Vector Fields in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup></m:mrow></m:math></title>
+<para id="fs-id1167793929736">A vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup></m:mrow></m:math> can be represented in either of two equivalent ways. The first way is to use a vector with components that are two-variable functions:</para>
+<equation id="fs-id1167793951458"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mi>Q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167794036424">The second way is to use the standard unit vectors:</para>
+<equation id="fs-id1167793252274"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>Q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793620042">A vector field is said to be <emphasis effect="italics">continuous</emphasis> if its component functions are continuous.</para>
+<example id="fs-id1167794027862">
+<exercise id="fs-id1167794164163">
+<problem id="fs-id1167793926474">
+<title>Finding a Vector Associated with a Given Point</title>
+<para id="fs-id1167793887505">Let <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math> be a vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> Note that this is an example of a continuous vector field since both component functions are continuous. What vector is associated with point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>?</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793883674">
+<para id="fs-id1167794135008">Substitute the point values for <emphasis effect="italics">x</emphasis> and <emphasis effect="italics">y</emphasis>:</para>
+<equation id="fs-id1167793956309" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>−1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>−2</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167793374731" class="checkpoint">
+<exercise id="fs-id1167793363371">
+<problem id="fs-id1167793425005">
+<para id="fs-id1167794142209">Let <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math> be a vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> What vector is associated with the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>?</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794062403">
+<para id="fs-id1167793291632"><m:math><m:mrow><m:mn>12</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1167793979832" type="hint">
+<title>Hint</title>
+<para id="fs-id1167793804583">Substitute the point values into the vector function.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+</section>
+<section id="fs-id1167793970839">
+<title>Drawing a Vector Field</title>
+<para id="fs-id1167794094176">We can now represent a vector field in terms of its components of functions or unit vectors, but representing it visually by sketching it is more complex because the domain of a vector field is in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> as is the range. Therefore the “graph” of a vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup></m:mrow></m:math> lives in four-dimensional space. Since we cannot represent four-dimensional space visually, we instead draw vector fields in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup></m:mrow></m:math> in a plane itself. To do this, draw the vector associated with a given point at the point in a plane. For example, suppose the vector associated with point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is <m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Then, we would draw vector <m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> at point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793267239">We should plot enough vectors to see the general shape, but not so many that the sketch becomes a jumbled mess. If we were to plot the image vector at each point in the region, it would fill the region completely and is useless. Instead, we can choose points at the intersections of grid lines and plot a sample of several vectors from each quadrant of a rectangular coordinate system in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167794064980">There are two types of vector fields in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup></m:mrow></m:math> on which this chapter focuses: radial fields and rotational fields. Radial fields model certain gravitational fields and energy source fields, and rotational fields model the movement of a fluid in a vortex. In a <term>radial field</term>, all vectors either point directly toward or directly away from the origin. Furthermore, the magnitude of any vector depends only on its distance from the origin. In a radial field, the vector located at point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is perpendicular to the circle centered at the origin that contains point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> and all other vectors on this circle have the same magnitude.</para>
+<example id="fs-id1167794336014">
+<exercise id="fs-id1167794146043">
+<problem id="fs-id1167793414136">
+<title>Drawing a Radial Vector Field</title>
+<para id="fs-id1167793952729">Sketch the vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mi>x</m:mi><m:mn>2</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mfrac><m:mi>y</m:mi><m:mn>2</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794126569">
+<para id="fs-id1167793617583">To sketch this vector field, choose a sample of points from each quadrant and compute the corresponding vector. The following table gives a representative sample of points in a plane and the corresponding vectors.</para>
+<table id="fs-id1167793952941" class="unnumbered" summary="A table with six columns and five rows. The first row has the values (x,y), F(x,y), (x,y), F(x,y), (x,y), and F(x,y). The second row has the values (1,0), &lt;1/2,0&gt;, (2,0), &lt;1,0&gt;, (1,1), &lt;1/2,1/2&gt;. The third row has the values (0,1), &lt;0,1/2&gt;, (0,2), &lt;0,1&gt;, (-1,1), &lt;-1/2,1/2&gt;. The fourth row has the values (-1,0), &lt;-1/2,0&gt;, (-2,0), &lt;-1,0&gt;, (-1,-1), &lt;-1/2,-1/2&gt;. The fifth row has the values (0,-1), &lt;0,-1/2&gt;, (0,-2), &lt;0,-1&gt;, (1,-1), &lt;1/2,-1/2&gt;.">
+<label/>
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<tbody>
+<row valign="top">
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="fs-id1167794329899"><link target-id="CNX_Calc_Figure_16_01_002"/>(a) shows the vector field. To see that each vector is perpendicular to the corresponding circle, <link target-id="CNX_Calc_Figure_16_01_002"/>(b) shows circles overlain on the vector field.</para>
+<figure id="CNX_Calc_Figure_16_01_002">
+<media id="fs-id1167793287457" alt="Visual representations of a radial vector field on a coordinate field. The arrows are stretching away from the origin in a radial pattern. The magnitudes increase the further the arrows are from the origin, so the lines are longer. The second version shows concentric circles around the origin to highlight the radial pattern.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_003.jpg"/>
+</media>
+<caption>(a) A visual representation of the radial vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mi>x</m:mi><m:mn>2</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mfrac><m:mi>y</m:mi><m:mn>2</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> (b) The radial vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mi>x</m:mi><m:mn>2</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mfrac><m:mi>y</m:mi><m:mn>2</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math> with overlaid circles. Notice that each vector is perpendicular to the circle on which it is located.</caption>
+</figure>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167794188673" class="checkpoint">
+<exercise id="fs-id1167794188677">
+<problem id="fs-id1167793944345">
+<para id="fs-id1167793944347">Draw the radial field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mi>x</m:mi><m:mn>3</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:mfrac><m:mi>y</m:mi><m:mn>3</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793925697"><para id="fs-id1167793925698"><newline/>
+<media id="fs-id1167793925702" alt="A visual representation of the given radial field in a coordinate plane. The magnitudes increase further from the origin. The arrow seem to be stretching away from the origin in a rectangular shape.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_004.jpg"/>
+</media></para>
+</solution>
+<commentary id="fs-id1167793504526" type="hint">
+<title>Hint</title>
+<para id="fs-id1167793940919">Sketch enough vectors to get an idea of the shape.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1167793950148">In contrast to radial fields, in a <term>rotational field</term>, the vector at point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is tangent (not perpendicular) to a circle with radius <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>.</m:mo></m:mrow></m:math> In a standard rotational field, all vectors point either in a clockwise direction or in a counterclockwise direction, and the magnitude of a vector depends only on its distance from the origin. Both of the following examples are clockwise rotational fields, and we see from their visual representations that the vectors appear to rotate around the origin.</para>
+<example id="fs-id1167793958705">
+<exercise id="fs-id1167793958707">
+<problem id="fs-id1167793958709">
+<title>Chapter Opener: Drawing a Rotational Vector Field</title>
+<figure id="CNX_Calc_Figure_16_01_017"><media id="fs-id1167793965191" alt="A photograph of a hurricane, showing the rotation around its eye.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_017.jpg"/>
+</media>
+
+<caption>(credit: modification of work by NASA)</caption></figure><para id="fs-id1167793640589">Sketch the vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793510587">
+<para id="fs-id1167794060214">Create a table (see the one that follows) using a representative sample of points in a plane and their corresponding vectors. <link target-id="CNX_Calc_Figure_16_01_005"/> shows the resulting vector field.</para>
+<table id="fs-id1167794034119" class="unnumbered" summary="A table with six columns and five rows. The first row has the values (x,y), F(x,y), (x,y), F(x,y), (x,y), and F(x,y). The second row has the values (1,0), &lt;0,-1&gt;, (2,0), &lt;0,-2&gt;, (1,1), &lt;1,-1&gt;. The third row has the values (0,1), &lt;1,0&gt;, (0,2), &lt;2,0&gt;, (-1,1), &lt;1,1&gt;. The fourth row has the values (-1,0), &lt;0,1&gt;, (-2,0), &lt;0,2&gt;, (-1,-1), &lt;-1,1&gt;. The fifth row has the values (0,-1), &lt;-1,0&gt;, (0,-2), &lt;-2,0&gt;, (1,-1), &lt;-1,-1&gt;.">
+<label/>
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<tbody>
+<row valign="top">
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<figure id="CNX_Calc_Figure_16_01_004">
+<media id="fs-id1167793929139" alt="A visual representation of the given vector field in a coordinate plane with two additional diagrams with notation. The first representation shows the vector field. The arrows are circling the origin in a clockwise motion. The second representation shows concentric circles, highlighting the radial pattern. The The third representation shows the concentric circles. It also shows arrows for the radial vector &lt;a,b&gt; for all points (a,b). Each is perpendicular to the arrows in the given vector field.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_006.jpg"/>
+</media>
+<caption>(a) A visual representation of vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> (b) Vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> with circles centered at the origin. (c) Vector <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is perpendicular to radial vector <m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> at point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></caption>
+</figure>
+</solution>
+<commentary id="fs-id1167793395575">
+<title>Analysis</title>
+<para id="fs-id1167793932094">Note that vector <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>b</m:mi><m:mo>,</m:mo><m:mtext>−</m:mtext><m:mi>a</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> points clockwise and is perpendicular to radial vector <m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> (We can verify this assertion by computing the dot product of the two vectors: <m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>·</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>a</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>a</m:mi><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math> Furthermore, vector <m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>b</m:mi><m:mo>,</m:mo><m:mtext>−</m:mtext><m:mi>a</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> has length <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>.</m:mo></m:mrow></m:math> Thus, we have a complete description of this rotational vector field: the vector associated with point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is the vector with length <emphasis effect="italics">r</emphasis> tangent to the circle with radius <emphasis effect="italics">r</emphasis>, and it points in the clockwise direction.</para>
+<para id="fs-id1167793931853">Sketches such as that in <link target-id="CNX_Calc_Figure_16_01_005"/> are often used to analyze major storm systems, including <term class="no-emphasis">hurricanes</term> and cyclones. In the northern hemisphere, storms rotate counterclockwise; in the southern hemisphere, storms rotate clockwise. (This is an effect caused by Earth’s rotation about its axis and is called the Coriolis Effect.)</para>
+</commentary>
+</exercise>
+</example>
+<example id="fs-id1167794216020">
+<exercise id="fs-id1167794216022">
+<problem id="fs-id1167794216024">
+<title>Sketching a Vector Field</title>
+<para id="fs-id1167793279285">Sketch vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mi>y</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793452929">
+<para id="fs-id1167793452931">To visualize this vector field, first note that the dot product <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mo>·</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>b</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is zero for any point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Therefore, each vector is tangent to the circle on which it is located. Also, as <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo stretchy="false">→</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> the magnitude of <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> goes to infinity. To see this, note that</para>
+<equation id="fs-id1167794126769" class="unnumbered"><label/><m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow><m:mo>.</m:mo></m:math></equation>
+<para id="fs-id1167793640346">Since <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:math> as <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo stretchy="false">→</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:math> as <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo stretchy="false">→</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> This vector field looks similar to the vector field in <link target-id="fs-id1167793958705"/>, but in this case the magnitudes of the vectors close to the origin are large. The table below shows a sample of points and the corresponding vectors, and <link target-id="CNX_Calc_Figure_16_01_005"/> shows the vector field. Note that this vector field models the whirlpool motion of the river in <link target-id="CNX_Calc_Figure_16_01_001"/>(b). The domain of this vector field is all of <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup></m:mrow></m:math> except for point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para><table id="fs-id1167793610554" class="unnumbered" summary="A table with six columns and five rows. The first row has the values (x,y), F(x,y), (x,y), F(x,y), (x,y), and F(x,y). The second row has the values (1,0), &lt;0,-1&gt;, (2,0), &lt;0,-1/2&gt;, (1,1), &lt;1/2, -1/2&gt;. The third row has the values (0,1), &lt;1,0&gt;, (0,2), &lt;1/2, 0&gt;, (-1,1), &lt;1/2,1/2&gt;. The fourth row has the values (-1,0), &lt;0,1&gt;, (-2,0), &lt;0,1/2&gt;, (-1,-1), &lt;-1/2,1/2&gt;. The fifth row has the values (0,-1), &lt;-1,0&gt;, (0,-2), &lt;-1/2,0&gt;, (1,-1), &lt;-1/2,-1/2&gt;.">
+<label/>
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<tbody>
+<row valign="top">
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<figure id="CNX_Calc_Figure_16_01_005">
+<media id="fs-id1167793261704" alt="A visual representation of the given vector field in a coordinate plane. The magnitude is larger closer to the origin. The arrows are rotating the origin clockwise. It could be use to model whirlpool motion of a fluid.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_007.jpg"/>
+</media>
+<caption>A visual representation of vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mi>y</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> This vector field could be used to model whirlpool motion of a fluid.</caption>
+</figure>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167793445710" class="checkpoint">
+<exercise id="fs-id1167793445715">
+<problem id="fs-id1167793445717">
+<para id="fs-id1167793445719">Sketch vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>−2</m:mn><m:mi>y</m:mi><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Is the vector field radial, rotational, or neither?</para>
+</problem>
+<solution id="fs-id1167793886368">
+<para id="fs-id1167793886370">Rotational<newline/>
+<media id="fs-id1167793886374" alt="A visual representation of a rotational vector field in a coordinate plane. The arrows circle the origin in a counterclockwise manner.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_008.jpg"/>
+</media></para>
+</solution>
+<commentary id="fs-id1167793378805" type="hint">
+<title>Hint</title>
+<para id="fs-id1167793455583">Substitute enough points into <emphasis effect="bold">F</emphasis> to get an idea of the shape.</para>
+</commentary>
+</exercise>
+</note>
+<example id="fs-id1167793363040">
+<exercise id="fs-id1167793363042">
+<problem id="fs-id1167793363044">
+<title>Velocity Field of a Fluid</title>
+<para id="fs-id1167793363049">Suppose that <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>y</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math> is the velocity field of a fluid. How fast is the fluid moving at point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>?</m:mo></m:mrow></m:math> (Assume the units of speed are meters per second.)</para>
+</problem>
+<solution id="fs-id1167793420546">
+<para id="fs-id1167793420548">To find the velocity of the fluid at point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> substitute the point into <emphasis effect="bold">v</emphasis>:</para>
+<equation id="fs-id1167794221133" class="unnumbered"><label/><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793559136">The speed of the fluid at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is the magnitude of this vector. Therefore, the speed is <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mo>|</m:mo><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>|</m:mo></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:math> m/sec.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167794136723" class="checkpoint">
+<exercise id="fs-id1167794136726">
+<problem id="fs-id1167794136728">
+<para id="fs-id1167794136730">Vector field <m:math><m:mrow><m:mi>v</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>4</m:mn><m:mrow><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>|</m:mo></m:mrow><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> models the velocity of water on the surface of a river. What is the speed of the water at point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>?</m:mo></m:mrow></m:math> Use meters per second as the units.</para>
+</problem>
+<solution id="fs-id1167793278262">
+<para id="fs-id1167794052806"><m:math><m:mrow><m:msqrt><m:mrow><m:mn>65</m:mn></m:mrow></m:msqrt></m:mrow></m:math> m/sec</para>
+</solution>
+<commentary id="fs-id1167794052817" type="hint">
+<title>Hint</title>
+<para id="fs-id1167794329282">Remember, speed is the magnitude of velocity.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1167794329288">We have examined vector fields that contain vectors of various magnitudes, but just as we have unit vectors, we can also have a unit vector field. A vector field <emphasis effect="bold">F</emphasis> is a <term>unit vector field</term> if the magnitude of each vector in the field is 1. In a unit vector field, the only relevant information is the direction of each vector.</para>
+<example id="fs-id1167793940891">
+<exercise id="fs-id1167793940893">
+<problem id="fs-id1167793940896">
+<title>A Unit Vector Field</title>
+<para id="fs-id1167793939636">Show that vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mfrac><m:mi>y</m:mi><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> is a unit vector field.</para>
+</problem>
+<solution id="fs-id1167793936276">
+<para id="fs-id1167793936279">To show that <emphasis effect="bold">F</emphasis> is a unit field, we must show that the magnitude of each vector is 1. Note that</para>
+<equation id="fs-id1167793936286" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:msqrt><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>y</m:mi><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>1.</m:mn></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1167793371583">Therefore, <emphasis effect="bold">F</emphasis> is a unit vector field.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167793950924" class="checkpoint">
+<exercise id="fs-id1167793950928">
+<problem id="fs-id1167793950930">
+<para id="fs-id1167793950932">Is vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>x</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> a unit vector field?</para>
+</problem>
+<solution id="fs-id1167793276861">
+<para id="fs-id1167793276863">No.</para>
+</solution>
+<commentary id="fs-id1167793276867" type="hint">
+<title>Hint</title>
+<para id="fs-id1167793371812">Calculate the magnitude of <emphasis effect="bold">F</emphasis> at an arbitrary point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1167793290986">Why are unit vector fields important? Suppose we are studying the flow of a fluid, and we care only about the direction in which the fluid is flowing at a given point. In this case, the speed of the fluid (which is the magnitude of the corresponding velocity vector) is irrelevant, because all we care about is the direction of each vector. Therefore, the unit vector field associated with velocity is the field we would study.</para>
+<para id="fs-id1167793926293">If <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mo>,</m:mo><m:mi>Q</m:mi><m:mo>,</m:mo><m:mi>R</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> is a vector field, then the corresponding unit vector field is <m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mfrac><m:mi>P</m:mi><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mrow><m:mo>|</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>|</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mi>Q</m:mi><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mrow><m:mo>|</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>|</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mi>R</m:mi><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mrow><m:mo>|</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>|</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Notice that if <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> is the vector field from <link target-id="fs-id1167793958705"/>, then the magnitude of <emphasis effect="bold">F</emphasis> is <m:math><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>,</m:mo></m:mrow></m:math> and therefore the corresponding unit vector field is the field <emphasis effect="bold">G</emphasis> from the previous example.</para>
+<para id="fs-id1167793355186">If <emphasis effect="bold">F</emphasis> is a vector field, then the process of dividing <emphasis effect="bold">F</emphasis> by its magnitude to form unit vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mtext>/</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mrow><m:mo>|</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>|</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math> is called <emphasis effect="italics">normalizing</emphasis> the field <emphasis effect="bold">F</emphasis>.</para>
+<section id="fs-id1167794210544">
+<title>Vector Fields in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup></m:mrow></m:math></title>
+<para id="fs-id1167793640104">We have seen several examples of vector fields in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup><m:mo>;</m:mo></m:mrow></m:math> let’s now turn our attention to vector fields in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> These vector fields can be used to model gravitational or electromagnetic fields, and they can also be used to model fluid flow or heat flow in three dimensions. A two-dimensional vector field can really only model the movement of water on a two-dimensional slice of a river (such as the river’s surface). Since a river flows through three spatial dimensions, to model the flow of the entire depth of the river, we need a vector field in three dimensions.</para>
+<para id="fs-id1167793518838">The extra dimension of a three-dimensional field can make vector fields in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup></m:mrow></m:math> more difficult to visualize, but the idea is the same. To visualize a vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> plot enough vectors to show the overall shape. We can use a similar method to visualizing a vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup></m:mrow></m:math> by choosing points in each octant.</para>
+<para id="fs-id1167794137223">Just as with vector fields in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> we can represent vector fields in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup></m:mrow></m:math> with component functions. We simply need an extra component function for the extra dimension. We write either</para>
+<equation id="fs-id1167793948412"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mi>R</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></equation>
+<para id="fs-id1167793977401">or</para>
+<equation id="fs-id1167793977405"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>R</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+<example id="fs-id1167793404656">
+<exercise id="fs-id1167793404658">
+<problem id="fs-id1167793404660">
+<title>Sketching a Vector Field in Three Dimensions</title>
+<para id="fs-id1167793221724">Describe vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793620010">
+<para id="fs-id1167793620012">For this vector field, the <emphasis effect="italics">x</emphasis> and <emphasis effect="italics">y</emphasis> components are constant, so every point in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup></m:mrow></m:math> has an associated vector with <emphasis effect="italics">x</emphasis> and <emphasis effect="italics">y</emphasis> components equal to one. To visualize <emphasis effect="bold">F</emphasis>, we first consider what the field looks like in the <emphasis effect="italics">xy</emphasis>-plane. In the <emphasis effect="italics">xy</emphasis>-plane, <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> Hence, each point of the form <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> has vector <m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> associated with it. For points not in the <emphasis effect="italics">xy</emphasis>-plane but slightly above it, the associated vector has a small but positive <emphasis effect="italics">z</emphasis> component, and therefore the associated vector points slightly upward. For points that are far above the <emphasis effect="italics">xy</emphasis>-plane, the <emphasis effect="italics">z</emphasis> component is large, so the vector is almost vertical. <link target-id="CNX_Calc_Figure_16_01_007"/> shows this vector field.</para>
+<figure id="CNX_Calc_Figure_16_01_007">
+<media id="fs-id1167793931454" alt="A visual representation of the given vector field in three dimensions. The arrows always have x and y components of 1. The z component changes according to the height. The closer z comes to 0, the smaller the z component becomes, and the further away z is from 0, the larger the z component becomes.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_009.jpg"/>
+</media>
+<caption>A visual representation of vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></caption>
+</figure>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167794226027" class="checkpoint">
+<exercise id="fs-id1167794226031">
+<problem id="fs-id1167794226034">
+<para id="fs-id1167793953353">Sketch vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mfrac><m:mi>z</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793952375"><para id="fs-id1167793952376"><newline/>
+<media id="fs-id1167793952379" alt="A visual representation of the given vector field in three dimensions. The x and z components are always 2 and 1, respectively. The y component is z/2. The closer z comes to zero, the smaller the y component is, and the further away z is from zero, the larger the y component is.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_010.jpg"/>
+</media></para>
+</solution>
+<commentary id="fs-id1167793541257" type="hint">
+<title>Hint</title>
+<para id="fs-id1167793541264">Substitute enough points into the vector field to get an idea of the general shape.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1167793541271">In the next example, we explore one of the classic cases of a three-dimensional vector field: a gravitational field.</para>
+<example id="fs-id1167793354224">
+<exercise id="fs-id1167793354226">
+<problem id="fs-id1167793354228">
+<title>Describing a Gravitational Vector Field</title>
+<para id="fs-id1167793354234">Newton’s law of gravitation states that <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>G</m:mi><m:mspace width="0.1em"/><m:mfrac><m:mrow><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>m</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mstyle mathvariant="bold" mathsize="normal"><m:mover accent="true"><m:mi>r</m:mi><m:mo>^</m:mo></m:mover></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> where <emphasis effect="italics">G</emphasis> is the universal gravitational constant. It describes the gravitational field exerted by an object (object 1) of mass <m:math><m:mrow><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> located at the origin on another object (object 2) of mass <m:math><m:mrow><m:msub><m:mi>m</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> located at point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Field <emphasis effect="bold">F</emphasis> denotes the gravitational force that object 1 exerts on object 2, <emphasis effect="italics">r</emphasis> is the distance between the two objects, and <m:math><m:mstyle mathvariant="bold" mathsize="normal"><m:mover accent="true"><m:mi>r</m:mi><m:mo>^</m:mo></m:mover></m:mstyle></m:math> indicates the unit vector from the first object to the second. The minus sign shows that the gravitational force attracts toward the origin; that is, the force of object 1 is attractive. Sketch the vector field associated with this equation.</para>
+</problem>
+<solution id="fs-id1167794222793">
+<para id="fs-id1167794222795">Since object 1 is located at the origin, the distance between the objects is given by <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>.</m:mo></m:mrow></m:math> The unit vector from object 1 to object 2 is <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mover accent="true"><m:mi>r</m:mi><m:mo>^</m:mo></m:mover></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> and hence <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mover accent="true"><m:mi>r</m:mi><m:mo>^</m:mo></m:mover></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mfrac><m:mi>x</m:mi><m:mi>r</m:mi></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mi>y</m:mi><m:mi>r</m:mi></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mi>z</m:mi><m:mi>r</m:mi></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Therefore, gravitational vector field <emphasis effect="bold">F</emphasis> exerted by object 1 on object 2 is</para>
+<equation id="fs-id1167793931832" class="unnumbered"><label/><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>G</m:mi><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>m</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>〈</m:mo><m:mrow><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mi>y</m:mi><m:mrow><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mi>z</m:mi><m:mrow><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793268303">This is an example of a radial vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793409039"><link target-id="CNX_Calc_Figure_16_01_009"/> shows what this gravitational field looks like for a large mass at the origin. Note that the magnitudes of the vectors increase as the vectors get closer to the origin.</para>
+<figure id="CNX_Calc_Figure_16_01_009">
+<media id="fs-id1167793409051" alt="A visual representation of the given gravitational vector field in three dimensions. The magnitudes of the vectors increase as the vectors get closer to the origin. The arrows point in, towards the mass at the origin.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_011.jpg"/>
+</media>
+<caption>A visual representation of gravitational vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>G</m:mi><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>m</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>〈</m:mo><m:mrow><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mi>y</m:mi><m:mrow><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mi>z</m:mi><m:mrow><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> for a large mass at the origin.</caption>
+</figure>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167793522401" class="checkpoint">
+<exercise id="fs-id1167793522405">
+<problem id="fs-id1167793522407">
+<para id="fs-id1167793522409">The mass of asteroid 1 is 750,000 kg and the mass of asteroid 2 is 130,000 kg. Assume asteroid 1 is located at the origin, and asteroid 2 is located at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>15</m:mn><m:mo>,</m:mo><m:mn>−5</m:mn><m:mo>,</m:mo><m:mn>10</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> measured in units of 10 to the eighth power kilometers. Given that the universal gravitational constant is <m:math><m:mrow><m:mi>G</m:mi><m:mo>=</m:mo><m:mn>6.67384</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−11</m:mn></m:mrow></m:msup><m:msup><m:mrow><m:mspace width="0.2em"/><m:mtext>m</m:mtext></m:mrow><m:mn>3</m:mn></m:msup><m:msup><m:mrow><m:mtext>kg</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:msup><m:mtext>s</m:mtext><m:mrow><m:mn>−2</m:mn></m:mrow></m:msup><m:mo>,</m:mo></m:mrow></m:math> find the gravitational force vector that asteroid 1 exerts on asteroid 2.</para>
+</problem>
+<solution id="fs-id1167793629403">
+<para id="fs-id1167793629405"><m:math><m:mrow><m:mn>1.49063</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−18</m:mn></m:mrow></m:msup><m:mo>,</m:mo><m:mn>4.96876</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−19</m:mn></m:mrow></m:msup><m:mo>,</m:mo><m:mn>9.93752</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−19</m:mn></m:mrow></m:msup><m:mtext>N</m:mtext></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1167793626542" type="hint">
+<title>Hint</title>
+<para id="fs-id1167793626549">Follow <link target-id="fs-id1167793354224"/> and first compute the distance between the asteroids.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+</section>
+<section id="fs-id1167793939440">
+<title>Gradient Fields</title>
+<para id="fs-id1167793939446">In this section, we study a special kind of vector field called a gradient field or a <term>conservative field</term>. These vector fields are extremely important in physics because they can be used to model physical systems in which energy is conserved. Gravitational fields and electric fields associated with a static charge are examples of gradient fields.</para>
+<para id="fs-id1167793939454">Recall that if <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> is a (scalar) function of <emphasis effect="italics">x</emphasis> and <emphasis effect="italics">y</emphasis>, then the gradient of <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> is</para>
+<equation id="fs-id1167793270510" class="unnumbered"><label/><m:math><m:mrow><m:mtext>grad</m:mtext><m:mspace width="0.2em"/><m:mi>f</m:mi><m:mo>=</m:mo><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>=</m:mo><m:msub><m:mi>f</m:mi><m:mi>x</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:msub><m:mi>f</m:mi><m:mi>y</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793697779">We can see from the form in which the gradient is written that <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi></m:mrow></m:math> is a vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> Similarly, if <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> is a function of <emphasis effect="italics">x</emphasis>, <emphasis effect="italics">y</emphasis>, and <emphasis effect="italics">z</emphasis>, then the gradient of <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> is</para>
+<equation id="fs-id1167793462831" class="unnumbered"><label/><m:math><m:mrow><m:mtext>grad</m:mtext><m:mspace width="0.2em"/><m:mi>f</m:mi><m:mo>=</m:mo><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>=</m:mo><m:msub><m:mi>f</m:mi><m:mi>x</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:msub><m:mi>f</m:mi><m:mi>y</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:msub><m:mi>f</m:mi><m:mi>z</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793450778">The gradient of a three-variable function is a vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793266860">A gradient field is a vector field that can be written as the gradient of a function, and we have the following definition.</para>
+<note id="fs-id1167793266865">
+<title>Definition</title>
+<para id="fs-id1167793266869">A vector field <m:math><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:math> in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup></m:mrow></m:math> or in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup></m:mrow></m:math> is a <term>gradient field</term> if there exists a scalar function <m:math><m:mi>f</m:mi></m:math> such that <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</note>
+<example id="fs-id1167793374719">
+<exercise id="fs-id1167793374722">
+<problem id="fs-id1167793374724">
+<title>Sketching a Gradient Vector Field</title>
+<para id="fs-id1167794005293">Use technology to plot the gradient vector field of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para></problem>
+<solution id="fs-id1167793543915">
+<para id="fs-id1167793543917">The gradient of <m:math><m:mi>f</m:mi></m:math> is <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> To sketch the vector field, use a computer algebra system such as Mathematica. <link target-id="CNX_Calc_Figure_16_01_010"/> shows <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>.</m:mo></m:mrow></m:math></para><figure id="CNX_Calc_Figure_16_01_010">
+<media id="fs-id1167794054294" alt="A visual representation of the given gradient vector field in two dimensions. The arrows point up above the x axis and down below the x axis, and they point left on the left side of the y axis and to the right on the right side of the y axis. The further the arrows are from zero, the more vertical they are, and the closer the arrows are to zero, the more horizontal they are.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_012.jpg"/>
+</media>
+<caption>The gradient vector field is <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></caption>
+</figure>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167793941506" class="checkpoint">
+<exercise id="fs-id1167793941510">
+<problem id="fs-id1167793941512">
+<para id="fs-id1167793941514">Use technology to plot the gradient vector field of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793472243"><para id="fs-id1167793472244"><newline/>
+<media id="fs-id1167793472247" alt="A visual representation of the given given vector in two dimensions. The arrows seem to be forming several ovals. The first is around the origin, where the arrows curve to the right above and below the x axis. The closer the arrows are to the x axis, the flatter they are. There appear to be six other ovals, three on either side of the central one. The vectors get longer as they get farther from the origin, and then they start to get shorter again.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_013.jpg"/>
+</media></para>
+</solution>
+<commentary id="fs-id1167793933063" type="hint">
+<title>Hint</title>
+<para id="fs-id1167793933071">Find the gradient of <m:math><m:mrow><m:mi>f</m:mi></m:mrow><m:mo>.</m:mo></m:math></para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1167793384700">Consider the function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> from <link target-id="fs-id1167793374719"/>. <link target-id="CNX_Calc_Figure_16_01_013"/> shows the level curves of this function overlaid on the function’s gradient vector field. The gradient vectors are perpendicular to the level curves, and the magnitudes of the vectors get larger as the level curves get closer together, because closely grouped level curves indicate the graph is steep, and the magnitude of the gradient vector is the largest value of the directional derivative. Therefore, you can see the local steepness of a graph by investigating the corresponding function’s gradient field.</para>
+<figure id="CNX_Calc_Figure_16_01_012"><media id="fs-id1167794054416" alt="A visual representation of the given gradient field. The arrows are flatter the closer they are to the x axis and more vertical the further they are from the x axis. The arrows point left to the left of the y axis, and they point to the right to the right of the y axis. They point up above the x axis and down below the x axis. Several level curves are drawn, each asymptotically approaching the axes. As the level curves get closer together, the magnitude of the gradient vectors increases.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_014.jpg"/>
+</media>
+
+<caption>The gradient field of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> and several level curves of <m:math><m:mrow><m:mi>f</m:mi><m:mo>.</m:mo></m:mrow></m:math> Notice that as the level curves get closer together, the magnitude of the gradient vectors increases.</caption></figure><para id="fs-id1167793662272">As we learned earlier, a vector field <m:math><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:math> is a conservative vector field, or a gradient field if there exists a scalar function <m:math><m:mi>f</m:mi></m:math> such that <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> In this situation, <m:math><m:mi>f</m:mi></m:math> is called a <term>potential function</term> for <m:math><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>.</m:mo></m:math> Conservative vector fields arise in many applications, particularly in physics. The reason such fields are called <emphasis effect="italics">conservative</emphasis> is that they model forces of physical systems in which energy is conserved. We study conservative vector fields in more detail later in this chapter.</para>
+<para id="fs-id1167793776652">You might notice that, in some applications, a potential function <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> for <emphasis effect="bold">F</emphasis> is defined instead as a function such that <m:math><m:mrow><m:mtext>−</m:mtext><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> This is the case for certain contexts in physics, for example.</para>
+<example id="fs-id1167793619914">
+<exercise id="fs-id1167793619916">
+<problem id="fs-id1167793619919">
+<title>Verifying a Potential Function</title>
+<para id="fs-id1167793465191">Is <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mi>z</m:mi><m:mo>−</m:mo><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> a potential function for vector field</para>
+<equation id="fs-id1167793271692" class="unnumbered"><label/><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi><m:mo>−</m:mo><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>?</m:mo></m:mrow></m:math></equation>
+</problem>
+<solution id="fs-id1167793498626">
+<para id="fs-id1167793498628">We need to confirm whether <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> We have</para>
+<equation id="fs-id1167793930897" class="unnumbered"><label/><m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:msub><m:mi>f</m:mi><m:mi>y</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi><m:mo>−</m:mo><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:msub><m:mi>f</m:mi><m:mi>z</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793469788">Therefore, <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:mrow></m:math> and <m:math><m:mi>f</m:mi></m:math> is a potential function for <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167793568775" class="checkpoint">
+<exercise id="fs-id1167793568779">
+<problem id="fs-id1167793568781">
+<para id="fs-id1167793568783">Is <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> a potential function for <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mtext>−</m:mtext><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>?</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793949042">
+<para id="fs-id1167793949044">No</para>
+</solution>
+<commentary id="fs-id1167793355027" type="hint">
+<title>Hint</title>
+<para id="fs-id1167793355034">Compute the gradient of <m:math><m:mrow><m:mi>f</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</commentary>
+</exercise>
+</note>
+<example id="fs-id1167793355046">
+<exercise id="fs-id1167793355048">
+<problem id="fs-id1167793355050">
+<title>Verifying a Potential Function</title>
+<para id="fs-id1167793355055">The velocity of a fluid is modeled by field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>−</m:mo><m:mi>y</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Verify that <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> is a potential function for <emphasis effect="bold">v</emphasis>.</para>
+</problem>
+<solution id="fs-id1167794121470">
+<para id="fs-id1167794121472">To show that <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> is a potential function, we must show that <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> Note that <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mi>y</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>.</m:mo></m:mrow></m:math> Therefore, <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>−</m:mo><m:mi>y</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> is a potential function for v (<link target-id="CNX_Calc_Figure_16_01_013"/>).</para>
+<figure id="CNX_Calc_Figure_16_01_013">
+<media id="fs-id1167793248744" alt="A visual representation of the given directional field in two dimensions. The arrows in quadrant 1point to the right. Closer to the y axis, they point down, but they quickly cuve and soon point up at at roughly 90-degree angle. The closer the arrows are to the x axis, the more vertical they are. Quadrant 2 is a reflection of quadrant 1. In quadrant 3, the arrows are more vertical the closer they are to the x and y axes. They point up and to the right. The further they are from the axes, the closer the arrows are to a 90-degree angle. Quadrant 4 is a reflection of quadrant 3.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_015.jpg"/>
+</media>
+<caption>Velocity field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> has a potential function and is a conservative field.</caption>
+</figure>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167793725921" class="checkpoint">
+<exercise id="fs-id1167793725925">
+<problem id="fs-id1167793725927">
+<para id="fs-id1167793725929">Verify that <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow></m:math> is a potential function for velocity field <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtext mathvariant="bold">v</m:mtext><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>⟨</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>⟩</m:mo></m:mrow><m:mo>.</m:mo></m:math></para>
+</problem>
+<solution id="fs-id1167793599514">
+<para id="fs-id1167793599516"><m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1167793599535" type="hint">
+<title>Hint</title>
+<para id="fs-id1167794165405">Calculate the gradient.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1167794165412">If <emphasis effect="bold">F</emphasis> is a conservative vector field, then there is at least one potential function <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> such that <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> But, could there be more than one potential function? If so, is there any relationship between two potential functions for the same vector field? Before answering these questions, let’s recall some facts from single-variable calculus to guide our intuition. Recall that if <m:math><m:mrow><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is an integrable function, then <emphasis effect="italics">k</emphasis> has infinitely many antiderivatives. Furthermore, if <emphasis effect="italics">F</emphasis> and <emphasis effect="italics">G</emphasis> are both antiderivatives of <emphasis effect="italics">k</emphasis>, then <emphasis effect="italics">F</emphasis> and <emphasis effect="italics">G</emphasis> differ only by a constant. That is, there is some number <emphasis effect="italics">C</emphasis> such that <m:math><m:mrow><m:mi>F</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>G</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>C</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793419791">Now let <m:math><m:mi mathvariant="bold">F</m:mi></m:math> be a conservative vector field and let <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> and <emphasis effect="italics">g</emphasis> be potential functions for <m:math><m:mi mathvariant="bold">F</m:mi></m:math>. Since the gradient is like a derivative, <m:math><m:mi mathvariant="bold">F</m:mi></m:math> being conservative means that <m:math><m:mi mathvariant="bold">F</m:mi></m:math> is “integrable” with “antiderivatives” <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> and <emphasis effect="italics">g</emphasis>. Therefore, if the analogy with single-variable calculus is valid, we expect there is some constant <emphasis effect="italics">C</emphasis> such that <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>C</m:mi><m:mo>.</m:mo></m:mrow></m:math> The next theorem says that this is indeed the case.</para>
+<para id="fs-id1167793551157">To state the next theorem with precision, we need to assume the domain of the vector field is connected and open. To be connected means if <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> are any two points in the domain, then you can walk from <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> to <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> along a path that stays entirely inside the domain.</para>
+<note id="fs-id1167794097175" class="theorem">
+<title>Uniqueness of Potential Functions</title>
+<para id="fs-id1167794097181">Let <emphasis effect="bold">F</emphasis> be a conservative vector field on an open and connected domain and let <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> and <emphasis effect="italics">g</emphasis> be functions such that <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:mrow></m:math> and <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>g</m:mi><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> Then, there is a constant <emphasis effect="italics">C</emphasis> such that <m:math><m:mrow><m:mi>f</m:mi><m:mo>=</m:mo><m:mi>g</m:mi><m:mo>+</m:mo><m:mi>C</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</note>
+<section id="fs-id1167793249867">
+<title>Proof</title>
+<para id="fs-id1167793249873">Since <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> and <emphasis effect="italics">g</emphasis> are both potential functions for <emphasis effect="bold">F</emphasis>, then <m:math><m:mrow><m:mtext>∇</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>f</m:mi><m:mo>−</m:mo><m:mi>g</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>−</m:mo><m:mtext>∇</m:mtext><m:mi>g</m:mi><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>−</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> Let <m:math><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo>−</m:mo><m:mi>g</m:mi><m:mo>,</m:mo></m:mrow></m:math> then we have <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> We would like to show that <emphasis effect="italics">h</emphasis> is a constant function.</para><para id="fs-id1167793720015">Assume <emphasis effect="italics">h</emphasis> is a function of <emphasis effect="italics">x</emphasis> and <emphasis effect="italics">y</emphasis> (the logic of this proof extends to any number of independent variables). Since <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> we have <m:math><m:mrow><m:msub><m:mi>h</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>h</m:mi><m:mi>y</m:mi></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> The expression <m:math><m:mrow><m:msub><m:mi>h</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> implies that <emphasis effect="italics">h</emphasis> is a constant function with respect to <emphasis effect="italics">x—</emphasis>that is, <m:math><m:mrow><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>k</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> for some function <emphasis effect="italics">k<sub>1</sub></emphasis>. Similarly, <m:math><m:mrow><m:msub><m:mi>h</m:mi><m:mi>y</m:mi></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> implies <m:math><m:mrow><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>k</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> for some function <emphasis effect="italics">k<sub>2</sub></emphasis>. Therefore, function <emphasis effect="italics">h</emphasis> depends only on <emphasis effect="italics">y</emphasis> and also depends only on <emphasis effect="italics">x</emphasis>. Thus, <m:math><m:mrow><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>C</m:mi></m:mrow></m:math> for some constant <emphasis effect="italics">C</emphasis> on the connected domain of <emphasis effect="bold">F</emphasis>. Note that we really do need connectedness at this point; if the domain of <emphasis effect="bold">F</emphasis> came in two separate pieces, then <emphasis effect="italics">k</emphasis> could be a constant <emphasis effect="italics">C<sub>1</sub></emphasis> on one piece but could be a different constant <emphasis effect="italics">C<sub>2</sub></emphasis> on the other piece. Since <m:math><m:mrow><m:mi>f</m:mi><m:mo>−</m:mo><m:mi>g</m:mi><m:mo>=</m:mo><m:mi>h</m:mi><m:mo>=</m:mo><m:mi>C</m:mi><m:mo>,</m:mo></m:mrow></m:math> we have that <m:math><m:mrow><m:mi>f</m:mi><m:mo>=</m:mo><m:mi>g</m:mi><m:mo>+</m:mo><m:mi>C</m:mi><m:mo>,</m:mo></m:mrow></m:math> as desired.</para><para id="fs-id1167793616550">□</para>
+<para id="fs-id1167793616553">Conservative vector fields also have a special property called the <term class="no-emphasis"><emphasis effect="italics">cross-partial property</emphasis></term>. This property helps test whether a given vector field is conservative.</para>
+<note id="fs-id1167794327427" class="theorem">
+<title>The Cross-Partial Property of Conservative Vector Fields</title>
+<para id="fs-id1167794327434">Let <emphasis effect="bold">F</emphasis> be a vector field in two or three dimensions such that the component functions of <emphasis effect="bold">F</emphasis> have continuous second-order mixed-partial derivatives on the domain of <emphasis effect="bold">F</emphasis>.</para>
+<para id="fs-id1167794327453">If <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mi>Q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> is a conservative vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>Q</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> If <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mi>R</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> is a conservative vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> then</para>
+<equation id="fs-id1167793705647" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>Q</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>Q</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>z</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>R</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>R</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>z</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation>
+</note>
+</section>
+<section id="fs-id1167793584394">
+<title>Proof</title>
+<para id="fs-id1167793584400">Since <emphasis effect="bold">F</emphasis> is conservative, there is a function <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> such that <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> Therefore, by the definition of the gradient, <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:mi>P</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mi>y</m:mi></m:msub><m:mo>=</m:mo><m:mi>Q</m:mi><m:mo>.</m:mo></m:mrow></m:math> By Clairaut’s theorem, <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>f</m:mi><m:mrow><m:mi>y</m:mi><m:mi>x</m:mi></m:mrow></m:msub><m:mo>,</m:mo></m:mrow></m:math> But, <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mrow><m:mi>y</m:mi><m:mi>x</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>,</m:mo></m:mrow></m:math> and thus <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793378934">□</para>
+<para id="fs-id1167793378938"><term class="no-emphasis">Clairaut’s theorem</term> gives a fast proof of the cross-partial property of conservative vector fields in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> just as it did for vector fields in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793541422"><link target-id="fs-id1167794327427"/> shows that most vector fields are not conservative. The cross-partial property is difficult to satisfy in general, so most vector fields won’t have equal cross-partials.</para>
+<example id="fs-id1167793541431">
+<exercise id="fs-id1167793541433">
+<problem id="fs-id1167793541435">
+<title>Showing a Vector Field Is Not Conservative</title>
+<para id="fs-id1167793541441">Show that rotational vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> is not conservative.</para>
+</problem>
+<solution id="fs-id1167793498674">
+<para id="fs-id1167793498676">Let <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>y</m:mi><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> If <emphasis effect="bold">F</emphasis> is conservative, then the cross-partials would be equal—that is, <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub></m:mrow></m:math> would equal <m:math><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:msub></m:mrow></m:math> Therefore, to show that <emphasis effect="bold">F</emphasis> is not conservative, check that <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub><m:mo>≠</m:mo><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>.</m:mo></m:mrow></m:math> Since <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the vector field is not conservative.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167793609893" class="checkpoint">
+<exercise id="fs-id1167793609897">
+<problem id="fs-id1167793609899">
+<para id="fs-id1167793609901">Show that vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math> is not conservative.</para>
+</problem>
+<solution id="fs-id1167793446149">
+<para id="fs-id1167793446151"><m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>≠</m:mo><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:mn>−2</m:mn><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1167793495816" type="hint">
+<title>Hint</title>
+<para id="fs-id1167793495824">Check the cross-partials.</para>
+</commentary>
+</exercise>
+</note>
+<example id="fs-id1167793495830">
+<exercise id="fs-id1167793495832">
+<problem id="fs-id1167793495834">
+<title>Showing a Vector Field Is Not Conservative</title>
+<para id="fs-id1167793495840">Is vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>7</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> conservative?</para>
+</problem>
+<solution id="fs-id1167794005203">
+<para id="fs-id1167794005206">Let <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>Q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> If <emphasis effect="bold">F</emphasis> is conservative, then all three cross-partial equations will be satisfied—that is, if <emphasis effect="bold">F</emphasis> is conservative, then <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub></m:mrow></m:math> would equal <m:math><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>,</m:mo><m:msub><m:mi>Q</m:mi><m:mi>z</m:mi></m:msub></m:mrow></m:math> would equal <m:math><m:mrow><m:msub><m:mi>R</m:mi><m:mi>y</m:mi></m:msub><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>R</m:mi><m:mi>x</m:mi></m:msub></m:mrow></m:math> would equal <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mi>z</m:mi></m:msub><m:mo>.</m:mo></m:mrow></m:math> Note that <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>R</m:mi><m:mi>y</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>Q</m:mi><m:mi>z</m:mi></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> so the first two necessary equalities hold. However, <m:math><m:mrow><m:msub><m:mi>R</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mi>z</m:mi></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> so <m:math><m:mrow><m:msub><m:mi>R</m:mi><m:mi>x</m:mi></m:msub><m:mo>≠</m:mo><m:msub><m:mi>P</m:mi><m:mi>z</m:mi></m:msub><m:mo>.</m:mo></m:mrow></m:math> Therefore, <m:math><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:math> is not conservative.</para></solution>
+</exercise>
+</example>
+<note id="fs-id1167793514863" class="checkpoint">
+<exercise id="fs-id1167793514867">
+<problem id="fs-id1167793514869">
+<para id="fs-id1167793514871">Is vector field <m:math><m:mrow><m:mi>G</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> conservative?</para>
+</problem>
+<solution id="fs-id1167793294051">
+<para id="fs-id1167793294053">No</para>
+</solution>
+<commentary id="fs-id1167793294057" type="hint">
+<title>Hint</title>
+<para id="fs-id1167794335706">Check the cross-partials.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1167794335713">We conclude this section with a word of warning: <link target-id="fs-id1167794327427"/> says that if <emphasis effect="bold">F</emphasis> is conservative, then <emphasis effect="bold">F</emphasis> has the cross-partial property. The theorem does <emphasis effect="italics">not</emphasis> say that, if <emphasis effect="bold">F</emphasis> has the cross-partial property, then <emphasis effect="bold">F</emphasis> is conservative (the converse of an implication is not logically equivalent to the original implication). In other words, <link target-id="fs-id1167794327427"/> can only help determine that a field is not conservative; it does not let you conclude that a vector field is conservative. For example, consider vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mn>3</m:mn></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> This field has the cross-partial property, so it is natural to try to use <link target-id="fs-id1167794327427"/> to conclude this vector field is conservative. However, this is a misapplication of the theorem. We learn later how to conclude that <emphasis effect="bold">F</emphasis> is conservative.</para>
+</section>
+</section>
+<section id="fs-id1167793378657" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id1167793378664" list-type="bulleted" bullet-style="bullet">
+<item>A vector field assigns a vector <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> to each point <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> in a subset <emphasis effect="italics">D</emphasis> of <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup><m:mspace width="0.2em"/><m:mtext>or</m:mtext><m:mspace width="0.2em"/><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> to each point <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> in a subset <emphasis effect="italics">D</emphasis> of <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>Vector fields can describe the distribution of vector quantities such as forces or velocities over a region of the plane or of space. They are in common use in such areas as physics, engineering, meteorology, oceanography.</item>
+<item>We can sketch a vector field by examining its defining equation to determine relative magnitudes in various locations and then drawing enough vectors to determine a pattern.</item>
+<item>A vector field <m:math><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:math> is called conservative if there exists a scalar function <m:math><m:mi>f</m:mi></m:math> such that <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></item>
+</list>
+</section>
+<section id="fs-id1167793719892" class="key-equations">
+<title>Key Equations</title>
+<table id="eip-556" summary="." class="unnumbered unstyled">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><emphasis effect="bold">Vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup></m:mrow></m:math></emphasis></entry>
+    <entry><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mi>Q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math><newline/>
+    or<newline/>
+    <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>Q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry><emphasis effect="bold">Vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup></m:mrow></m:math></emphasis></entry>
+    <entry><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mi>R</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math><newline/>
+    or<newline/>
+    <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>R</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</section>
+<section id="fs-id1167793753996" class="section-exercises">
+<exercise id="fs-id1167793754000">
+<problem id="fs-id1167793754002">
+<para id="fs-id1167793754004">The domain of vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is a set of points <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> in a plane, and the range of <emphasis effect="bold">F</emphasis> is a set of <emphasis effect="italics">what</emphasis> in the plane?</para>
+</problem>
+<solution id="fs-id1167793545479">
+<para id="fs-id1167793545482">Vectors</para>
+</solution>
+</exercise>
+<para id="fs-id1167793570047">For the following exercises, determine whether the statement is <emphasis effect="italics">true or false</emphasis>.</para><exercise id="fs-id1167793570059">
+<problem id="fs-id1167793570061">
+<para id="fs-id1167793570064">Vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> is a gradient field for both <m:math><m:mrow><m:msub><m:mi>ϕ</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>ϕ</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>100</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793325793">
+<problem id="fs-id1167793325795">
+<para id="fs-id1167793325798">Vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>x</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math> is constant in direction and magnitude on a unit circle.</para>
+</problem>
+<solution id="fs-id1167793545088">
+<para id="fs-id1167793545090">False</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167794121973">
+<problem id="fs-id1167794121975">
+<para id="fs-id1167794121977">Vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>x</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math> is neither a radial field nor a rotation.</para>
+</problem>
+</exercise>
+<para id="fs-id1167793977437">For the following exercises, describe each vector field by drawing some of its vectors.</para>
+<exercise id="fs-id1167793977440">
+<problem id="fs-id1167793977442">
+<para id="fs-id1167793977444"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793300333"><para id="fs-id1167793300334"><newline/>
+<media id="fs-id1167793300337" alt="A visual representation of a vector field in two dimensions. The arrows are larger the further they are from the origin. They stretch away from the origin in a radial pattern.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_201.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167794170760">
+<problem id="fs-id1167794170762">
+<para id="fs-id1167794170764"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793567017">
+<problem id="fs-id1167793567019">
+<para id="fs-id1167793584429"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793446085"><para id="fs-id1167793446086"><newline/>
+<media id="fs-id1167793446089" alt="A visual representation of a vector field in two dimensions. The arrows are larger the further they are from the origin and the further to the left and right they are from the y axis. The arrows asymptotically curve down and to the right in quadrant 1, down and to the left in quadrant 2, up and to the left in quadrant 3, and up and to the right in quadrant four.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_203.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793446106">
+<problem id="fs-id1167793446108">
+<para id="fs-id1167793446110"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793279191">
+<problem id="fs-id1167793279193">
+<para id="fs-id1167793279195"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793340076"><para id="fs-id1167793340077"><newline/>
+<media id="fs-id1167793340081" alt="A visual representation of a vector field in two dimensions. The arrows are larger the further away from the origin they are and, even more so, the further away from the y axis they are. They stretch out away from the origin in a radial manner.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_205.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793591240">
+<problem id="fs-id1167793591242">
+<para id="fs-id1167793591244"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793335528">
+<problem id="fs-id1167793335530">
+<para id="fs-id1167793335532"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793287088"><para id="fs-id1167793287089"><newline/>
+<media id="fs-id1167793287093" alt="A visual representation of a vector field in two dimensions. The arrows are larger the further away they are from the x axis. The arrows form two radial patterns, one on each side of the y axis. The patterns are clockwise.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_207.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793287108">
+<problem id="fs-id1167793287110">
+<para id="fs-id1167793287112"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167794145816">
+<problem id="fs-id1167794145819">
+<para id="fs-id1167794145821"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793444959"><para id="fs-id1167793444960"><newline/>
+<media id="fs-id1167793444964" alt="A visual representation of a vector field in three dimensions. The arrows seem to get smaller as both the z component gest close to zero and the x component gets larger, and as both the y and z components get larger. The arrows seem to converge in both of those directions as well.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_209.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793444980">
+<problem id="fs-id1167793444982">
+<para id="fs-id1167793444984"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mi>y</m:mi><m:mi>z</m:mi></m:mfrac><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:mfrac><m:mi>x</m:mi><m:mi>z</m:mi></m:mfrac><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1167793401861">For the following exercises, find the gradient vector field of each function <m:math><m:mrow><m:mi>f</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<exercise id="fs-id1167793401870">
+<problem id="fs-id1167793401872">
+<para id="fs-id1167793401874"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>+</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793624634">
+<para id="fs-id1167793624636"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>−</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793952118">
+<problem id="fs-id1167793952120">
+<para id="fs-id1167793952123"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>z</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793447627">
+<problem id="fs-id1167793447629">
+<para id="fs-id1167793447631"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794124340">
+<para id="fs-id1167794124342"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167794209661">
+<problem id="fs-id1167794209664">
+<para id="fs-id1167794209666"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793925436">
+<problem id="fs-id1167793925438">
+<para id="fs-id1167793925441"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794199123">
+<para id="fs-id1167794199125"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>4</m:mn><m:mi>y</m:mi></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793315617">
+<problem id="fs-id1167793315619">
+<para id="fs-id1167793315621"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>y</m:mi><m:mi>z</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793480301">
+<problem id="fs-id1167793662643">
+<para id="fs-id1167793662645">What is vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> with a value at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> that is of unit length and points toward <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>?</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793294448">
+<para id="fs-id1167793294450"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow><m:mrow><m:msqrt><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1167794122826">For the following exercises, write formulas for the vector fields with the given properties.</para>
+<exercise id="fs-id1167794122829">
+<problem id="fs-id1167794122831">
+<para id="fs-id1167794122833">All vectors are parallel to the <emphasis effect="italics">x</emphasis>-axis and all vectors on a vertical line have the same magnitude.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793501918">
+<problem id="fs-id1167793501920">
+<para id="fs-id1167793501922">All vectors point toward the origin and have constant length.</para>
+</problem>
+<solution id="fs-id1167793501927">
+<para id="fs-id1167793501929"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>-</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793501834">
+<problem id="fs-id1167793501836">
+<para id="fs-id1167793501838">All vectors are of unit length and are perpendicular to the position vector at that point.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793451716">
+<problem id="fs-id1167793451718">
+<para id="fs-id1167793451720">Give a formula <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>M</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math> for the vector field in a plane that has the properties that <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and that at any other point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> <emphasis effect="bold">F</emphasis> is tangent to circle <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> and points in the clockwise direction with magnitude <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794284461">
+<para id="fs-id1167794284463"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793777141">
+<problem id="fs-id1167793777143">
+<para id="fs-id1167793777146">Is vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mi>Q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math> a gradient field?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793607382">
+<problem id="fs-id1167793607384">
+<para id="fs-id1167793607386">Find a formula for vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>M</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math> given the fact that for all points <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> <emphasis effect="bold">F</emphasis> points toward the origin and <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793544419">
+<para id="fs-id1167793544422"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>−10</m:mn></m:mrow><m:msup><m:mrow><m:mo>(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>3</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1167793432372">For the following exercises, assume that an electric field in the <emphasis effect="italics">xy</emphasis>-plane caused by an infinite line of charge along the <emphasis effect="italics">x</emphasis>-axis is a gradient field with potential function <m:math><m:mrow><m:mi>V</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>c</m:mi><m:mspace width="0.2em"/><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>r</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>c</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math> is a constant and <m:math><m:mrow><m:msub><m:mi>r</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:math> is a reference distance at which the potential is assumed to be zero.</para>
+<exercise id="fs-id1167793495519">
+<problem id="fs-id1167793495521">
+<para id="fs-id1167793495523">Find the components of the electric field in the <emphasis effect="italics">x</emphasis>- and <emphasis effect="italics">y</emphasis>-directions, where <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>E</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mtext>∇</m:mtext><m:mi>V</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793500831">
+<problem id="fs-id1167793500833">
+<para id="fs-id1167793500835">Show that the electric field at a point in the <emphasis effect="italics">xy</emphasis>-plane is directed outward from the origin and has magnitude <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>E</m:mtext></m:mstyle><m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mi>c</m:mi><m:mi>r</m:mi></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794200668">
+<para id="fs-id1167794200670"><m:math><m:mrow><m:mi>E</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>c</m:mi><m:mrow><m:msup><m:mrow><m:mrow><m:mo>|</m:mo><m:mi>r</m:mi><m:mo>|</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>c</m:mi><m:mrow><m:mrow><m:mo>|</m:mo><m:mi>r</m:mi><m:mo>|</m:mo></m:mrow></m:mrow></m:mfrac><m:mspace width="0.2em"/><m:mfrac><m:mi>r</m:mi><m:mrow><m:mrow><m:mo>|</m:mo><m:mi>r</m:mi><m:mo>|</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1167793482836">A <term class="no-emphasis"><emphasis effect="italics">flow line</emphasis></term> (or <emphasis effect="italics">streamline</emphasis>) of a vector field <m:math><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:math> is a curve <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> such that <m:math><m:mrow><m:mi>d</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mtext>/</m:mtext><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> If <m:math><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:math> represents the velocity field of a moving particle, then the flow lines are paths taken by the particle. Therefore, flow lines are tangent to the vector field. For the following exercises, show that the given curve <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>c</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is a flow line of the given velocity vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<exercise id="fs-id1167793277912">
+<problem id="fs-id1167793277914">
+<para id="fs-id1167793277916"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>c</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>,</m:mo><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mi>t</m:mi><m:mo>|</m:mo></m:mrow><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>t</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mi>t</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>;</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>,</m:mo><m:mtext>−</m:mtext><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793419108">
+<problem id="fs-id1167793419110">
+<para id="fs-id1167793419113"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>c</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>t</m:mi><m:mo>,</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>t</m:mi><m:mo>,</m:mo><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794056757">
+<para id="fs-id1167794056759"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>c</m:mtext></m:mstyle><m:mtext>′</m:mtext><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>t</m:mi><m:mo>,</m:mo><m:mtext>−</m:mtext><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>t</m:mi><m:mo>,</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>c</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1167794054226">For the following exercises, let <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>H</m:mtext></m:mstyle><m:mo>=</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> Match <emphasis effect="bold">F</emphasis>, <emphasis effect="bold">G</emphasis>, and <emphasis effect="bold">H</emphasis> with their graphs.</para>
+<exercise id="fs-id1167793631744">
+<problem id="fs-id1167793631746">
+<media id="fs-id1167793631748" alt="A visual representation of a vector field in two dimensions. The arrows circle the origin in a counterclockwise manner. The arrows are larger the further they are from the origin.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_212.jpg"/>
+</media>
+</problem>
+</exercise>
+<exercise id="fs-id1167793584520">
+<problem id="fs-id1167793584522">
+<media id="fs-id1167793584524" alt="A visual representation of a vector field in two dimensions. The arrows are larger the further away from the origin they are, particularly to the left and right of the y axis. They point to the left and to the right on the left and right sides of the y axis, respectively. They point down above the x axis and up below the x axis. The closer to the x axis, the flatter they are. The closer to the y axis they are, the more vertical they are.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_213.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1167793584540">
+<para id="fs-id1167793584542"><emphasis effect="bold">H</emphasis></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793584551">
+<problem id="fs-id1167793584553">
+<media id="fs-id1167794288058" alt="A visual representation of a vector field in two dimensions. The arrows are larger the further away from the origin they are. They stretch out and away from the origin in a radial pattern.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_214.jpg"/>
+</media>
+</problem>
+</exercise>
+<para id="fs-id1167794288083">For the following exercises, let <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>H</m:mtext></m:mstyle><m:mo>=</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>–</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> Match the vector fields with their graphs in <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mtext>I</m:mtext><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>IV</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para><list id="fs-id1167794223613" list-type="enumerated" number-style="lower-alpha">
+<item><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>+</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>+</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>H</m:mtext></m:mstyle></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle><m:mo>+</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>H</m:mtext></m:mstyle></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mtext>−</m:mtext><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>+</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle></m:mrow></m:math></item>
+</list>
+<exercise id="fs-id1167793568655">
+<problem id="fs-id1167793568658">
+<media id="fs-id1167793568660" alt="A visual representation of a vector field in two dimensions. The arrows are larger the further away they are from the y axis. They curve in towards the orgin in a spiral pattern, with the arrows curving in from the right to the right of the y axis and curving in from the left to the left of the y axis. The arrows in quadrants 1 and 3 are flatter, and the arrows in quadrants 2 and 4 are more vertical.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_215.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1167793568676">
+<para id="fs-id1167793568678">d. <m:math><m:mrow><m:mtext>−</m:mtext><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>+</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793544993">
+<problem id="fs-id1167793544995">
+<media id="fs-id1167793544998" alt="A visual representation of a vector field in two dimensions. The arrows are larger the further away from the y axis they are. They are completely flat and point to the right on the right side of the y axis and point to the left on the left side of the y axis.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_216.jpg"/>
+</media>
+</problem>
+</exercise>
+<exercise id="fs-id1167794076400">
+<problem id="fs-id1167794076402">
+<media id="fs-id1167794076412" alt="A visual representation of a vector field in two dimensions. The arrows are larger the further away from y axis they are. The arrows are pointing out from the origin in a spiral shape. In quadrant 1, the arrows are more vertical and curve up. In quadrant 2, the arrows are more horizontal and curve down. In quadrant 3, the arrows are more vertical and curve down. In quadrant 4, the arrows are more horizontal and curve up. Each quadrant’s arrows merge into the two on either side of it.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_217.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1167794076421">
+<para id="fs-id1167794076423">a. <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>+</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793559362">
+<problem id="fs-id1167793559364">
+<media id="fs-id1167793559366" alt="A visual representation of a vector field in two dimensions. The arrows are larger the further away they are from the x axis and y axis in quadrants 2 and 4. The arrows are all at a roughly 90-degree angle. They point up on the right side of the y axis and down on the left side of the y axis.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_218.jpg"/>
+</media>
+</problem>
+</exercise>
+</section>
+ </content>
+<glossary>
+<definition id="fs-id1167793559412">
+<term>conservative field</term>
+<meaning id="fs-id1167793559417">a vector field for which there exists a scalar function <m:math><m:mi>f</m:mi></m:math> such that <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:mrow></m:math></meaning>
+</definition>
+<definition id="fs-id1167793735595">
+<term>gradient field</term>
+<meaning id="fs-id1167793735601">a vector field <m:math><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:math> for which there exists a scalar function <m:math><m:mi>f</m:mi></m:math> such that <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>;</m:mo></m:mrow></m:math> in other words, a vector field that is the gradient of a function; such vector fields are also called <emphasis effect="italics">conservative</emphasis></meaning>
+</definition>
+<definition id="fs-id1167793719942">
+<term>potential function</term>
+<meaning id="fs-id1167793719947">a scalar function <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> such that <m:math><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:mrow></m:math></meaning>
+</definition>
+<definition id="fs-id1167793719972">
+<term>radial field</term>
+<meaning id="fs-id1167793719978">a vector field in which all vectors either point directly toward or directly away from the origin; the magnitude of any vector depends only on its distance from the origin</meaning>
+</definition>
+<definition id="fs-id1167793719984">
+<term>rotational field</term>
+<meaning id="fs-id1167793776930">a vector field in which the vector at point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is tangent to a circle with radius <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>;</m:mo></m:mrow></m:math> in a rotational field, all vectors flow either clockwise or counterclockwise, and the magnitude of a vector depends only on its distance from the origin</meaning>
+</definition>
+<definition id="fs-id1167793776976">
+<term>unit vector field</term>
+<meaning id="fs-id1167793776981">a vector field in which the magnitude of every vector is 1</meaning>
+</definition>
+<definition id="fs-id1167793279228">
+<term>vector field</term>
+<meaning id="fs-id1167793279234">measured in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> an assignment of a vector <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> to each point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> of a subset <m:math><m:mi>D</m:mi></m:math> of <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup><m:mo>;</m:mo></m:mrow></m:math> in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> an assignment of a vector <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> to each point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> of a subset <m:math><m:mi>D</m:mi></m:math> of <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup></m:mrow></m:math></meaning>
+</definition>
+</glossary>
+</document>

@@ -1,0 +1,721 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+<title>Applications</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m54044</md:content-id>
+  <md:title>Applications</md:title>
+  <md:abstract><list>
+<item>Solve a second-order differential equation representing simple harmonic motion.</item>
+<item>Solve a second-order differential equation representing damped simple harmonic motion.</item>
+<item>Solve a second-order differential equation representing forced simple harmonic motion.</item>
+<item>Solve a second-order differential equation representing charge and current in an RLC series circuit.</item>
+</list></md:abstract>
+  <md:uuid>1f3e94ba-eee2-44b2-881a-5e5f8fe37136</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-id1170570994312">We saw in the chapter introduction that second-order linear differential equations are used to model many situations in physics and engineering. In this section, we look at how this works for systems of an object with mass attached to a vertical spring and an electric circuit containing a resistor, an inductor, and a capacitor connected in series. Models such as these can be used to approximate other more complicated situations; for example, bonds between atoms or molecules are often modeled as springs that vibrate, as described by these same differential equations.</para>
+<section id="fs-id1170573493514">
+<title>Simple Harmonic Motion</title>
+<para id="fs-id1170573390124">Consider a mass suspended from a spring attached to a rigid support. (This is commonly called a <term class="no-emphasis">spring-mass system</term>.) Gravity is pulling the mass downward and the restoring force of the spring is pulling the mass upward. As shown in <link target-id="CNX_Calc_Figure_17_03_001"/>, when these two forces are equal, the mass is said to be at the equilibrium position. If the mass is displaced from equilibrium, it oscillates up and down. This behavior can be modeled by a second-order constant-coefficient differential equation.</para>
+<figure id="CNX_Calc_Figure_17_03_001">
+<media id="fs-id1170573544483" alt="This figure has three images of springs. The first image is a vertical spring in its natural position with length L attached at the top to a fixed point. The second image shows a vertical spring with a mass m attached to the spring, stretching the spring distance s from L. The spring is in equilibrium. The third image is a vertical spring with mass m attached where the spring is in motion, distance x from equilibrium L + s.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_03_001.jpg"/>
+</media>
+<caption>A spring in its natural position (a), at equilibrium with a mass <emphasis effect="italics">m</emphasis> attached (b), and in oscillatory motion (c).</caption>
+</figure>
+<para id="fs-id1170573414989">Let <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> denote the displacement of the mass from equilibrium. Note that for spring-mass systems of this type, it is customary to adopt the convention that down is positive. Thus, a positive displacement indicates the mass is <emphasis effect="italics">below</emphasis> the equilibrium point, whereas a negative displacement indicates the mass is <emphasis effect="italics">above</emphasis> equilibrium. Displacement is usually given in feet in the English system or meters in the metric system.</para>
+<para id="fs-id1170571124578">Consider the forces acting on the mass. The force of gravity is given by <m:math><m:mrow><m:mi>m</m:mi><m:mi>g</m:mi><m:mtext>.</m:mtext></m:mrow></m:math> In the English system, mass is in slugs and the acceleration resulting from gravity is in feet per second squared. The acceleration resulting from gravity is constant, so in the English system, <m:math><m:mrow><m:mi>g</m:mi><m:mo>=</m:mo><m:mn>32</m:mn></m:mrow></m:math> ft/sec<sup>2</sup>. Recall that 1 slug-foot/sec<sup>2</sup> is a pound, so the expression <emphasis effect="italics">mg</emphasis> can be expressed in pounds. Metric system units are kilograms for mass and m/sec<sup>2</sup> for gravitational acceleration. In the metric system, we have <m:math><m:mrow><m:mi>g</m:mi><m:mo>=</m:mo><m:mn>9.8</m:mn></m:mrow></m:math> m/sec<sup>2</sup>.</para>
+<para id="fs-id1170571153397">According to <term class="no-emphasis">Hooke’s law</term>, the restoring force of the spring is proportional to the displacement and acts in the opposite direction from the displacement, so the restoring force is given by <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>s</m:mi><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> The spring constant is given in pounds per foot in the English system and in newtons per meter in the metric system.</para>
+<para id="fs-id1170573414070">Now, by Newton’s second law, the sum of the forces on the system (gravity plus the restoring force) is equal to mass times acceleration, so we have</para>
+<equation id="fs-id1170571219908" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>m</m:mi><m:mi>x</m:mi><m:mtext>″</m:mtext></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>s</m:mi><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>m</m:mi><m:mi>g</m:mi></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>k</m:mi><m:mi>s</m:mi><m:mo>−</m:mo><m:mi>k</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>m</m:mi><m:mi>g</m:mi><m:mtext>.</m:mtext></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170571237250">However, by the way we have defined our equilibrium position, <m:math><m:mrow><m:mi>m</m:mi><m:mi>g</m:mi><m:mo>=</m:mo><m:mi>k</m:mi><m:mi>s</m:mi><m:mo>,</m:mo></m:mrow></m:math> the differential equation becomes</para>
+<equation id="fs-id1170573449396" class="unnumbered"><label/><m:math><m:mrow><m:mi>m</m:mi><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>k</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571046694">It is convenient to rearrange this equation and introduce a new variable, called the <term class="no-emphasis">angular frequency</term>, <m:math><m:mrow><m:mi>ω</m:mi><m:mtext>.</m:mtext></m:mrow></m:math> Letting <m:math><m:mrow><m:mi>ω</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mrow><m:mi>k</m:mi><m:mtext>/</m:mtext><m:mi>m</m:mi></m:mrow></m:mrow></m:msqrt><m:mo>,</m:mo></m:mrow></m:math> we can write the equation as</para>
+<equation id="fs-id1170571069981"><m:math><m:mrow><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:msup><m:mi>ω</m:mi><m:mn>2</m:mn></m:msup><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571078041">This differential equation has the general solution</para>
+<equation id="fs-id1170570991733"><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571071180">which gives the position of the mass at any point in time. The motion of the mass is called <term>simple harmonic motion</term>. The period of this motion (the time it takes to complete one oscillation) is <m:math><m:mrow><m:mi>T</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mi>ω</m:mi></m:mfrac></m:mrow></m:math> and the frequency is <m:math><m:mrow><m:mi>f</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>T</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>ω</m:mi><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:mfrac></m:mrow></m:math> (<link target-id="CNX_Calc_Figure_17_03_002"/>).</para>
+<figure id="CNX_Calc_Figure_17_03_002">
+<media id="fs-id1170573501884" alt="This figure is the graph of f(t) = sin 2t. It is a periodic, oscillating graph. The period of the graph is represented with a line pointing from one peak to the next. It is labeled with the period  T = 2π/ω.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_03_002.jpg"/>
+</media>
+<caption>A graph of vertical displacement versus time for simple harmonic motion.</caption>
+</figure>
+<example id="fs-id1170573278589">
+<exercise id="fs-id1170573327326">
+<problem id="fs-id1170571204976">
+<title>Simple Harmonic Motion</title>
+<para id="fs-id1170571026440">Assume an object weighing 2 lb stretches a spring 6 in. Find the equation of motion if the spring is released from the equilibrium position with an upward velocity of 16 ft/sec. What is the period of the motion?</para>
+</problem>
+<solution id="fs-id1170573411865">
+<para id="fs-id1170573394062">We first need to find the spring constant. We have</para>
+<equation id="fs-id1170573389056" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>m</m:mi><m:mi>g</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>k</m:mi><m:mi>s</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>2</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>k</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>4</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170573732422">We also know that weight <emphasis effect="italics">W</emphasis> equals the product of mass <emphasis effect="italics">m</emphasis> and the acceleration due to gravity <emphasis effect="italics">g</emphasis>. In English units, the acceleration due to gravity is 32 ft/sec<sup>2</sup>.</para>
+<equation id="fs-id1170571189378" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>W</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>m</m:mi><m:mi>g</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>2</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>32</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>m</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170573413672">Thus, the differential equation representing this system is</para>
+<equation id="fs-id1170573362977" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573282144">Multiplying through by 16, we get <m:math><m:mrow><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>64</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> which can also be written in the form <m:math><m:mrow><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:msup><m:mn>8</m:mn><m:mn>2</m:mn></m:msup></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> This equation has the general solution</para>
+<equation id="fs-id1170573580471" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170570999591">The mass was released from the equilibrium position, so <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> and it had an initial upward velocity of 16 ft/sec, so <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−16</m:mn><m:mo>.</m:mo></m:mrow></m:math> Applying these initial conditions to solve for <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math> gives</para>
+<equation id="fs-id1170573401573" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−2</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>8</m:mn><m:mi>t</m:mi><m:mtext>.</m:mtext></m:mrow></m:math></equation>
+<para id="fs-id1170571100384">The period of this motion is <m:math><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mn>8</m:mn></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> sec.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170573411039" class="checkpoint">
+<exercise id="fs-id1170573236596">
+<problem id="fs-id1170573395827">
+<para id="fs-id1170573384481">A 200-g mass stretches a spring 5 cm. Find the equation of motion of the mass if it is released from rest from a position 10 cm below the equilibrium position. What is the frequency of this motion?</para>
+</problem>
+<solution id="fs-id1170573324545">
+<para id="fs-id1170571282454"><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.1</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>14</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> (in meters); frequency is <m:math><m:mrow><m:mfrac><m:mrow><m:mn>14</m:mn></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:mfrac></m:mrow></m:math> Hz.</para>
+</solution>
+<commentary id="fs-id1170573396177" type="hint">
+<title>Hint</title>
+<para id="fs-id1170571284891">First find the spring constant.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1170573334088">Writing the general solution in the form <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> has some advantages. It is easy to see the link between the differential equation and the solution, and the period and frequency of motion are evident. This form of the function tells us very little about the amplitude of the motion, however. In some situations, we may prefer to write the solution in the form</para>
+<equation id="fs-id1170573405218"><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>A</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>ϕ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573534117">Although the link to the differential equation is not as explicit in this case, the period and frequency of motion are still evident. Furthermore, the amplitude of the motion, <emphasis effect="italics">A</emphasis>, is obvious in this form of the function. The constant <m:math><m:mi>ϕ</m:mi></m:math> is called a <emphasis effect="italics">phase shift</emphasis> and has the effect of shifting the graph of the function to the left or right.</para>
+<para id="fs-id1170571284368">To convert the solution to this form, we want to find the values of <emphasis effect="italics">A</emphasis> and <m:math><m:mi>ϕ</m:mi></m:math> such that</para>
+<equation id="fs-id1170573425291" class="unnumbered"><label/><m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>A</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>ϕ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573442369">We first apply the trigonometric identity</para>
+<equation id="fs-id1170571285025" class="unnumbered"><label/><m:math><m:mrow><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>α</m:mi><m:mo>+</m:mo><m:mi>β</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>α</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>β</m:mi><m:mo>+</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>α</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>β</m:mi></m:mrow></m:math></equation>
+<para id="fs-id1170571306006">to get</para>
+<equation id="fs-id1170573421809" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mi>A</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>ϕ</m:mi><m:mo>+</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>ϕ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="right"><m:mo>=</m:mo><m:mi>A</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>ϕ</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>A</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>ϕ</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170573614029">Thus,</para>
+<equation id="fs-id1170571289022" class="unnumbered"><label/><m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mi>A</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>ϕ</m:mi><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mi>A</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>ϕ</m:mi><m:mtext>.</m:mtext></m:mrow></m:math></equation>
+<para id="fs-id1170571273697">If we square both of these equations and add them together, we get</para>
+<equation id="fs-id1170573360285" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:msubsup><m:mi>c</m:mi><m:mn>1</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mi>c</m:mi><m:mn>2</m:mn><m:mn>2</m:mn></m:msubsup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:msup><m:mi>A</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>2</m:mn></m:msup><m:mi>ϕ</m:mi><m:mo>+</m:mo><m:msup><m:mi>A</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mn>2</m:mn></m:msup><m:mi>ϕ</m:mi></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msup><m:mi>A</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>ϕ</m:mi><m:mo>+</m:mo><m:msup><m:mrow><m:mtext>cos</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>ϕ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msup><m:mi>A</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170571189536">Thus,</para>
+<equation id="fs-id1170573360129" class="unnumbered"><label/><m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:msubsup><m:mi>c</m:mi><m:mn>1</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mi>c</m:mi><m:mn>2</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow></m:msqrt><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573262990">Now, to find <m:math><m:mrow><m:mi>ϕ</m:mi><m:mo>,</m:mo></m:mrow></m:math> go back to the equations for <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>,</m:mo></m:mrow></m:math> but this time, divide the first equation by the second equation to get</para>
+<equation id="fs-id1170573362248" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mfrac></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>A</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>ϕ</m:mi></m:mrow><m:mrow><m:mi>A</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>ϕ</m:mi></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mtext>tan</m:mtext><m:mspace width="0.1em"/><m:mi>ϕ</m:mi><m:mtext>.</m:mtext></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170573279171">Then,</para>
+<equation id="fs-id1170573392828" class="unnumbered"><label/><m:math><m:mrow><m:mtext>tan</m:mtext><m:mspace width="0.1em"/><m:mi>ϕ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571031386">We summarize this finding in the following theorem.</para>
+<note id="fs-id1170573570772" class="theorem">
+<title>Solution to the Equation for Simple Harmonic Motion</title>
+<para id="fs-id1170573570316">The function <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> can be written in the form <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>A</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>ϕ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:msubsup><m:mi>c</m:mi><m:mn>1</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mi>c</m:mi><m:mn>2</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow></m:msqrt></m:mrow></m:math> and <m:math><m:mrow><m:mtext>tan</m:mtext><m:mspace width="0.1em"/><m:mi>ϕ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</note>
+<para id="fs-id1170573276679">Note that when using the formula <m:math><m:mrow><m:mtext>tan</m:mtext><m:mspace width="0.1em"/><m:mi>ϕ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mfrac></m:mrow></m:math> to find <m:math><m:mrow><m:mi>ϕ</m:mi><m:mo>,</m:mo></m:mrow></m:math> we must take care to ensure <m:math><m:mi>ϕ</m:mi></m:math> is in the right quadrant (<link target-id="CNX_Calc_Figure_17_03_015"/>).</para>
+<figure id="CNX_Calc_Figure_17_03_015">
+<media id="fs-id1170573356804" alt="This figure is the graph of f(t) = sin 2t. It is a periodic, oscillating graph. The period of the graph is represented with a line pointing from one peak to the next. It is labeled with the period T = 2π/ω. The graph has a phase shift of ϕ/ω so that the sine curve has the value zero to the left of the origin.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_03_015.jpg"/>
+</media>
+<caption>A graph of vertical displacement versus time for simple harmonic motion with a phase change.</caption>
+</figure>
+<example id="fs-id1170573762487">
+<exercise id="fs-id1170573425704">
+<problem id="fs-id1170573263415">
+<title>Expressing the Solution with a Phase Shift</title>
+<para id="fs-id1170573386766">Express the following functions in the form <m:math><m:mrow><m:mi>A</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>ϕ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> What is the frequency of motion? The amplitude?</para>
+<list id="fs-id1170573540766" list-type="enumerated" number-style="lower-alpha">
+<item><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></item>
+</list>
+</problem>
+<solution id="fs-id1170573298475">
+<list id="fs-id1170573371377" list-type="enumerated" number-style="lower-alpha">
+<item>We have<newline/>
+<equation id="fs-id1170573435827" class="unnumbered"><label/><m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:msubsup><m:mi>c</m:mi><m:mn>1</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mi>c</m:mi><m:mn>2</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mn>1</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mn>5</m:mn></m:msqrt></m:mrow></m:math></equation><newline/>
+and<newline/>
+<equation id="fs-id1170573392636" class="unnumbered"><label/><m:math><m:mrow><m:mtext>tan</m:mtext><m:mspace width="0.1em"/><m:mi>ϕ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>1</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Note that both <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> are positive, so <m:math><m:mi>ϕ</m:mi></m:math> is in the first quadrant. Thus,<newline/>
+<equation id="fs-id1170571102907" class="unnumbered"><label/><m:math><m:mrow><m:mi>ϕ</m:mi><m:mo>≈</m:mo><m:mn>1.107</m:mn><m:mspace width="0.2em"/><m:mtext>rad,</m:mtext></m:mrow></m:math></equation><newline/>
+so we have<newline/>
+<equation id="fs-id1170573267983" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mn>5</m:mn></m:msqrt><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1.107</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+The frequency is <m:math><m:mrow><m:mfrac><m:mi>ω</m:mi><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:mfrac><m:mo>≈</m:mo><m:mn>0.477</m:mn><m:mo>.</m:mo></m:mrow></m:math> The amplitude is <m:math><m:mrow><m:msqrt><m:mn>5</m:mn></m:msqrt><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>We have<newline/>
+<equation id="fs-id1170573569153" class="unnumbered"><label/><m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:msubsup><m:mi>c</m:mi><m:mn>1</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mi>c</m:mi><m:mn>2</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mn>3</m:mn><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>13</m:mn></m:mrow></m:msqrt></m:mrow></m:math></equation><newline/>
+and<newline/>
+<equation id="fs-id1170571169197" class="unnumbered"><label/><m:math><m:mrow><m:mtext>tan</m:mtext><m:mspace width="0.1em"/><m:mi>ϕ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>−2</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Note that <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> is positive but <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> is negative, so <m:math><m:mi>ϕ</m:mi></m:math> is in the fourth quadrant. Thus,<newline/>
+<equation id="fs-id1170573287469" class="unnumbered"><label/><m:math><m:mrow><m:mi>ϕ</m:mi><m:mo>≈</m:mo><m:mo>−</m:mo><m:mn>0.983</m:mn><m:mspace width="0.2em"/><m:mtext>rad,</m:mtext></m:mrow></m:math></equation><newline/>
+so we have<newline/>
+<equation id="fs-id1170573400272" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>13</m:mn></m:mrow></m:msqrt><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>0.983</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+The frequency is <m:math><m:mrow><m:mfrac><m:mi>ω</m:mi><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>2</m:mn><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:mfrac><m:mo>≈</m:mo><m:mn>0.318</m:mn><m:mo>.</m:mo></m:mrow></m:math> The amplitude is <m:math><m:mrow><m:msqrt><m:mrow><m:mn>13</m:mn></m:mrow></m:msqrt><m:mo>.</m:mo></m:mrow></m:math></item>
+</list>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170570982672" class="checkpoint">
+<exercise id="fs-id1170573581536">
+<problem id="fs-id1170573360398">
+<para id="fs-id1170573337947">Express the function <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>4</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> in the form <m:math><m:mrow><m:mi>A</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>ϕ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> What is the frequency of motion? The amplitude?</para>
+</problem>
+<solution id="fs-id1170573367906">
+<para id="fs-id1170573406260"><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>17</m:mn></m:mrow></m:msqrt><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>0.245</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mtext>frequency</m:mtext><m:mo>=</m:mo><m:mfrac><m:mn>4</m:mn><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:mfrac><m:mo>≈</m:mo><m:mn>0.637</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>17</m:mn></m:mrow></m:msqrt></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1170571073214" type="hint">
+<title>Hint</title>
+<para id="fs-id1170573406540">Use the process from the previous example.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170573417463">
+<title>Damped Vibrations</title>
+<para id="fs-id1170573402207">With the model just described, the motion of the mass continues indefinitely. Clearly, this doesn’t happen in the real world. In the real world, there is almost always some friction in the system, which causes the oscillations to die off slowly—an effect called <emphasis effect="italics">damping</emphasis>. So now let’s look at how to incorporate that damping force into our differential equation.</para>
+<para id="fs-id1170573427307">Physical spring-mass systems almost always have some damping as a result of friction, air resistance, or a physical damper, called a <emphasis effect="italics">dashpot</emphasis> (a pneumatic cylinder; see <link target-id="CNX_Calc_Figure_17_03_013"/>).</para>
+<figure id="CNX_Calc_Figure_17_03_013">
+<media id="fs-id1170573408989" alt="This figure is a pneumatic cylinder. The cylinder is clear, and the piston can be seen.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_03_013.jpg"/>
+</media>
+<caption>A dashpot is a pneumatic cylinder that dampens the motion of an oscillating system.</caption>
+</figure>
+<para id="fs-id1170573442120">Because damping is primarily a friction force, we assume it is proportional to the velocity of the mass and acts in the opposite direction. So the damping force is given by <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>b</m:mi><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup></m:mrow></m:math> for some constant <m:math><m:mrow><m:mi>b</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> Again applying Newton’s second law, the differential equation becomes</para>
+<equation id="fs-id1170571120492" class="unnumbered"><label/><m:math><m:mrow><m:mi>m</m:mi><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>k</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573623952">Then the associated characteristic equation is</para>
+<equation id="fs-id1170573551061" class="unnumbered"><label/><m:math><m:mrow><m:mi>m</m:mi><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>λ</m:mi><m:mo>+</m:mo><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571266797">Applying the quadratic formula, we have</para>
+<equation id="fs-id1170571033691" class="unnumbered"><label/><m:math><m:mrow><m:mi>λ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>−</m:mtext><m:mi>b</m:mi><m:mo>±</m:mo><m:msqrt><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>m</m:mi><m:mi>k</m:mi></m:mrow></m:msqrt></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>m</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571103549">Just as in <link document="m54040">Second-Order Linear Equations</link> we consider three cases, based on whether the characteristic equation has distinct real roots, a repeated real root, or complex conjugate roots.</para>
+<section id="fs-id1170570995822">
+<title>Case 1: <m:math><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:mo>&gt;</m:mo><m:mn>4</m:mn><m:mi>m</m:mi><m:mi>k</m:mi></m:mrow></m:math></title>
+<para id="fs-id1170573507842">In this case, we say the system is <term class="no-emphasis"><emphasis effect="italics">overdamped</emphasis></term>. The general solution has the form</para>
+<equation id="fs-id1170573422269" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>1</m:mn></m:msub><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>2</m:mn></m:msub><m:mi>t</m:mi></m:mrow></m:msup><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573413502">where both <m:math><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> are less than zero. Because the exponents are negative, the displacement decays to zero over time, usually quite quickly. Overdamped systems do not oscillate (no more than one change of direction), but simply move back toward the equilibrium position. <link target-id="CNX_Calc_Figure_17_03_003"/> shows what typical critically damped behavior looks like.</para>
+<figure id="CNX_Calc_Figure_17_03_003">
+<media id="fs-id1170573355619" alt="This figure has two graphs labeled (a) and (b). The first graph is a decreasing curve with the horizontal axis as a horizontal asymptote. The second graph initially is a decreasing function but becomes increasing below the horizontal axis. Then, the horizontal axis is also a horizontal asymptote.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_03_003.jpg"/>
+</media>
+<caption>Behavior of an overdamped spring-mass system, with no change in direction (a) and only one change in direction (b).</caption>
+</figure>
+<example id="fs-id1170573412417">
+<exercise id="fs-id1170571431419">
+<problem id="fs-id1170573507069">
+<title>Overdamped Spring-Mass System</title>
+<para id="fs-id1170573420780">A 16-lb mass is attached to a 10-ft spring. When the mass comes to rest in the equilibrium position, the spring measures 15 ft 4 in. The system is immersed in a medium that imparts a damping force equal to <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> times the instantaneous velocity of the mass. Find the equation of motion if the mass is pushed upward from the equilibrium position with an initial upward velocity of 5 ft/sec. What is the position of the mass after 10 sec? Its velocity?</para>
+</problem>
+<solution id="fs-id1170573415298">
+<para id="fs-id1170573512396">The mass stretches the spring 5 ft 4 in., or <m:math><m:mrow><m:mfrac><m:mrow><m:mn>16</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> ft. Thus, <m:math><m:mrow><m:mn>16</m:mn><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>16</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>k</m:mi><m:mo>,</m:mo></m:mrow></m:math> so <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math> We also have <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>16</m:mn></m:mrow><m:mrow><m:mn>32</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> so the differential equation is</para>
+<equation id="fs-id1170573435954" class="unnumbered"><label/><m:math><m:mrow><m:mstyle scriptlevel="+1"><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mstyle><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mstyle scriptlevel="+1"><m:mfrac><m:mn>5</m:mn><m:mn>2</m:mn></m:mfrac></m:mstyle><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573589723">Multiplying through by 2 gives <m:math><m:mrow><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>5</m:mn><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> which has the general solution</para>
+<equation id="fs-id1170573494039" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573493822">Applying the initial conditions, <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−5</m:mn><m:mo>,</m:mo></m:mrow></m:math> we get</para>
+<equation id="fs-id1170571302152" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−5</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mn>5</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573405304">After 10 sec the mass is at position</para>
+<equation id="fs-id1170573542360" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−5</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−20</m:mn></m:mrow></m:msup><m:mo>+</m:mo><m:mn>5</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−30</m:mn></m:mrow></m:msup><m:mo>≈</m:mo><m:mo>−</m:mo><m:mn>1.0305</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−8</m:mn></m:mrow></m:msup><m:mo>≈</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573569316">so it is, effectively, at the equilibrium position. We have <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>10</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mn>15</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>,</m:mo></m:mrow></m:math> so after 10 sec the mass is moving at a velocity of</para>
+<equation id="fs-id1170571284285" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>10</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−20</m:mn></m:mrow></m:msup><m:mo>−</m:mo><m:mn>15</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−30</m:mn></m:mrow></m:msup><m:mo>≈</m:mo><m:mn>2.061</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−8</m:mn></m:mrow></m:msup><m:mo>≈</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573380811">After only 10 sec, the mass is barely moving.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170571068258" class="checkpoint">
+<exercise id="fs-id1170573391017">
+<problem id="fs-id1170573351841">
+<para id="fs-id1170571069489">A 2-kg mass is attached to a spring with spring constant 24 N/m. The system is then immersed in a medium imparting a damping force equal to 16 times the instantaneous velocity of the mass. Find the equation of motion if it is released from rest at a point 40 cm below equilibrium.</para>
+</problem>
+<solution id="fs-id1170573575156">
+<para id="fs-id1170571096761"><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.6</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mn>0.2</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−6</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1170571083630" type="hint">
+<title>Hint</title>
+<para id="fs-id1170573273033">Follow the process from the previous example.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170571166885">
+<title>Case 2: <m:math><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>m</m:mi><m:mi>k</m:mi></m:mrow></m:math></title>
+<para id="fs-id1170573515105">In this case, we say the system is <emphasis effect="italics">critically damped</emphasis>. The general solution has the form</para>
+<equation id="fs-id1170573721516" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>1</m:mn></m:msub><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>1</m:mn></m:msub><m:mi>t</m:mi></m:mrow></m:msup><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573429477">where <m:math><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> is less than zero. The motion of a critically damped system is very similar to that of an overdamped system. It does not oscillate. However, with a critically damped system, if the damping is reduced even a little, oscillatory behavior results. From a practical perspective, physical systems are almost always either overdamped or underdamped (case 3, which we consider next). It is impossible to fine-tune the characteristics of a physical system so that <m:math><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:mn>4</m:mn><m:mi>m</m:mi><m:mi>k</m:mi></m:mrow></m:math> are exactly equal. <link target-id="CNX_Calc_Figure_17_03_004"/> shows what typical critically damped behavior looks like.</para>
+<figure id="CNX_Calc_Figure_17_03_004">
+<media id="fs-id1170571246752" alt="This figure has two graphs labeled (a) and (b). The first graph is in the first quadrant and is a decreasing curve with the horizontal axis as a horizontal asymptote. The second graph initially is a decreasing function but becomes increasing below the horizontal axis. Then, the horizontal axis is also a horizontal asymptote.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_03_004.jpg"/>
+</media>
+<caption>Behavior of a critically damped spring-mass system. The system graphed in part (a) has more damping than the system graphed in part (b).</caption>
+</figure>
+<example id="fs-id1170571412744">
+<exercise id="fs-id1170571412747">
+<problem id="fs-id1170571303674">
+<title>Critically Damped Spring-Mass System</title>
+<para id="fs-id1170571080261">A 1-kg mass stretches a spring 20 cm. The system is attached to a dashpot that imparts a damping force equal to 14 times the instantaneous velocity of the mass. Find the equation of motion if the mass is released from equilibrium with an upward velocity of 3 m/sec.</para>
+</problem>
+<solution id="fs-id1170571153382">
+<para id="fs-id1170571153385">We have <m:math><m:mrow><m:mi>m</m:mi><m:mi>g</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>9.8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.2</m:mn><m:mi>k</m:mi><m:mo>,</m:mo></m:mrow></m:math> so <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>49</m:mn><m:mo>.</m:mo></m:mrow></m:math> Then, the differential equation is</para>
+<equation id="fs-id1170573424174" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>14</m:mn><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>49</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573361626">which has general solution</para>
+<equation id="fs-id1170571160644" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−7</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−7</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573759877">Applying the initial conditions <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−3</m:mn></m:mrow></m:math> gives</para>
+<equation id="fs-id1170573369030" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−3</m:mn><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−7</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170573760699" class="checkpoint">
+<exercise id="fs-id1170573420229">
+<problem id="fs-id1170571108487">
+<para id="fs-id1170571108489">A 1-lb weight stretches a spring 6 in., and the system is attached to a dashpot that imparts a damping force equal to half the instantaneous velocity of the mass. Find the equation of motion if the mass is released from rest at a point 6 in. below equilibrium.</para>
+</problem>
+<solution id="fs-id1170571211628">
+<para id="fs-id1170571211630"><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−8</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−8</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1170571166007" type="hint">
+<title>Hint</title>
+<para id="fs-id1170571160810">First find the spring constant.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170571290364">
+<title>Case 3: <m:math><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:mo>&lt;</m:mo><m:mn>4</m:mn><m:mi>m</m:mi><m:mi>k</m:mi></m:mrow></m:math></title>
+<para id="fs-id1170571304968">In this case, we say the system is <emphasis effect="italics">underdamped</emphasis>. The general solution has the form</para>
+<equation id="fs-id1170573424608" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>α</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>β</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>β</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571122500">where <m:math><m:mi>α</m:mi></m:math> is less than zero. Underdamped systems do oscillate because of the sine and cosine terms in the solution. However, the exponential term dominates eventually, so the amplitude of the oscillations decreases over time. <link target-id="CNX_Calc_Figure_17_03_005"/> shows what typical underdamped behavior looks like.</para>
+<figure id="CNX_Calc_Figure_17_03_005">
+<media id="fs-id1170573619530" alt="This figure is an oscillating graph where the amplitude is decreasing. There are red dashed curves at the peaks of the amplitudes showing the pattern of a decreasing amplitude. As t increases, the horizontal axis becomes a horizontal asymptote.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_03_005.jpg"/>
+</media>
+<caption>Behavior of an underdamped spring-mass system.</caption>
+</figure>
+<para id="fs-id1170570982650">Note that for all damped systems, <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> The system always approaches the equilibrium position over time.</para>
+<example id="fs-id1170571078755">
+<exercise id="fs-id1170573416901">
+<problem id="fs-id1170573416903">
+<title>Underdamped Spring-Mass System</title>
+<para id="fs-id1170571371707">A 16-lb weight stretches a spring 3.2 ft. Assume the damping force on the system is equal to the instantaneous velocity of the mass. Find the equation of motion if the mass is released from rest at a point 9 in. below equilibrium.</para>
+</problem>
+<solution id="fs-id1170573581362">
+<para id="fs-id1170573306313">We have <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>16</m:mn></m:mrow><m:mrow><m:mn>3.2</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>16</m:mn></m:mrow><m:mrow><m:mn>32</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> so the differential equation is</para>
+<equation id="fs-id1170573593964" class="unnumbered"><label/><m:math><m:mrow><m:mstyle scriptlevel="+1"><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mstyle><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>or</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>10</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573387612">This equation has the general solution</para>
+<equation id="fs-id1170573386487" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571303728">Applying the initial conditions, <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> and <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> we get</para>
+<equation id="fs-id1170573398529" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170573626356" class="checkpoint">
+<exercise id="fs-id1170571483448">
+<problem id="fs-id1170571483450">
+<para id="fs-id1170571483452">A 1-kg mass stretches a spring 49 cm. The system is immersed in a medium that imparts a damping force equal to four times the instantaneous velocity of the mass. Find the equation of motion if the mass is released from rest at a point 24 cm above equilibrium.</para>
+</problem>
+<solution id="fs-id1170571293753">
+<para id="fs-id1170573426927"><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−0.24</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>0.12</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1170570990801" type="hint">
+<title>Hint</title>
+<para id="fs-id1170573439216">First find the spring constant.</para>
+</commentary>
+</exercise>
+</note>
+<example id="fs-id1170571139655">
+<exercise id="fs-id1170571139657">
+<problem id="fs-id1170573425878">
+<title>Chapter Opener: Modeling a Motorcycle Suspension System</title>
+<figure id="CNX_Calc_Figure_17_03_017">
+<media id="fs-id1170571139423" alt="This picture is a shock absorber on a motorcycle.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_03_017.jpg"/>
+</media>
+<caption>(credit: modification of work by nSeika, Flickr)</caption>
+</figure>
+<para id="fs-id1170573362832">For motocross riders, the suspension systems on their motorcycles are very important. The off-road courses on which they ride often include jumps, and losing control of the motorcycle when they land could cost them the race.</para>
+<para id="fs-id1170573507512">This suspension system can be modeled as a damped spring-mass system. We define our frame of reference with respect to the frame of the motorcycle. Assume the end of the shock absorber attached to the motorcycle frame is fixed. Then, the “mass” in our spring-mass system is the motorcycle wheel. We measure the position of the wheel with respect to the motorcycle frame. This may seem counterintuitive, since, in many cases, it is actually the motorcycle frame that moves, but this frame of reference preserves the development of the differential equation that was done earlier. As with earlier development, we define the downward direction to be positive.</para>
+<para id="fs-id1170573507516">When the motorcycle is lifted by its frame, the wheel hangs freely and the spring is uncompressed. This is the spring’s natural position. When the motorcycle is placed on the ground and the rider mounts the motorcycle, the spring compresses and the system is in the equilibrium position (<link target-id="CNX_Calc_Figure_17_03_014"/>).</para>
+<figure id="CNX_Calc_Figure_17_03_014">
+<media id="fs-id1170571286282" alt="This figure has two springs attached above at a fixed point. The first spring is labeled, “Natural Position,” and has an uncompressed spring hanging vertically. The second spring is labeled, “Equilibrium Position,” and has a compressed spring hanging vertically. The vertical difference between the two springs is labeled, “s.”">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_03_014.jpg"/>
+</media>
+<caption>We can use a spring-mass system to model a motorcycle suspension.</caption>
+</figure>
+<para id="fs-id1170571448549">This system can be modeled using the same differential equation we used before:</para>
+<equation id="fs-id1170571069579" class="unnumbered"><label/><m:math><m:mrow><m:mi>m</m:mi><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>k</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573441900">A motocross motorcycle weighs 204 lb, and we assume a rider weight of 180 lb. When the rider mounts the motorcycle, the suspension compresses 4 in., then comes to rest at equilibrium. The suspension system provides damping equal to 240 times the instantaneous vertical velocity of the motorcycle (and rider).</para>
+<list id="fs-id1170571324375" list-type="enumerated" number-style="lower-alpha">
+<item>Set up the differential equation that models the behavior of the motorcycle suspension system.</item>
+<item>We are interested in what happens when the motorcycle lands after taking a jump. Let time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> denote the time when the motorcycle first contacts the ground. If the motorcycle hits the ground with a velocity of 10 ft/sec downward, find the equation of motion of the motorcycle after the jump.</item>
+<item>Graph the equation of motion over the first second after the motorcycle hits the ground.</item>
+</list>
+</problem>
+<solution id="fs-id1170571105090">
+<list id="fs-id1170571105092" list-type="enumerated" number-style="lower-alpha">
+<item>We have defined equilibrium to be the point where <m:math><m:mrow><m:mi>m</m:mi><m:mi>g</m:mi><m:mo>=</m:mo><m:mi>k</m:mi><m:mi>s</m:mi><m:mo>,</m:mo></m:mrow></m:math> so we have<newline/>
+<equation id="fs-id1170573590121" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>m</m:mi><m:mi>g</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>k</m:mi><m:mi>s</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>384</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>k</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>1152</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+We also have<newline/>
+<equation id="fs-id1170571293823" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>W</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>m</m:mi><m:mi>g</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>384</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>32</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>m</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>12</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+Therefore, the differential equation that models the behavior of the motorcycle suspension is<newline/>
+<equation id="fs-id1170571118642" class="unnumbered"><label/><m:math><m:mrow><m:mn>12</m:mn><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>240</m:mn><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>1152</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Dividing through by 12, we get<newline/>
+<equation id="fs-id1170570976304" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>20</m:mn><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>96</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation></item>
+<item>The differential equation found in part a. has the general solution<newline/>
+<equation id="fs-id1170571227082" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−8</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−12</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Now, to determine our initial conditions, we consider the position and velocity of the motorcycle wheel when the wheel first contacts the ground. Since the motorcycle was in the air prior to contacting the ground, the wheel was hanging freely and the spring was uncompressed. Therefore the wheel is 4 in. <m:math><m:mrow><m:mo>(</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mspace width="0.2em"/><m:mtext>ft</m:mtext><m:mo>)</m:mo></m:mrow></m:math> below the equilibrium position (with respect to the motorcycle frame), and we have <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> According to the problem statement, the motorcycle has a velocity of 10 ft/sec downward when the motorcycle contacts the ground, so <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>.</m:mo></m:mrow></m:math> Applying these initial conditions, we get <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>7</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>19</m:mn></m:mrow><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> so the equation of motion is<newline/>
+<equation id="fs-id1170573760776" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>7</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−8</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>19</m:mn></m:mrow><m:mn>6</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−12</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation></item>
+<item>The graph is shown in <link target-id="CNX_Calc_Figure_17_03_012"/>.<newline/>
+<figure id="CNX_Calc_Figure_17_03_012">
+<media id="fs-id1170573569627" alt="This figure is the graph of the function f(x) = 7/2e^−8t −19/6e^−12t.  The vertical axis is scaled in increments of 0.05, and the horizontal axis is labeled, “t.” It is scaled in increments of tenths. The graph intersects the horizontal axis increasing, reaches a maximum, then decreases. The horizontal axis is a horizontal asymptote.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_03_012.jpg"/>
+</media>
+<caption>Graph of the equation of motion over a time of one second.</caption>
+</figure></item>
+</list>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170571273678" class="project">
+<title>Landing Vehicle</title>
+<para id="fs-id1170571169410">NASA is planning a mission to Mars. To save money, engineers have decided to adapt one of the moon landing vehicles for the new mission. However, they are concerned about how the different gravitational forces will affect the suspension system that cushions the craft when it touches down. The acceleration resulting from gravity on the moon is 1.6 m/sec<sup>2</sup>, whereas on Mars it is 3.7 m/sec<sup>2</sup>.</para>
+<para id="fs-id1170573577670">The suspension system on the craft can be modeled as a damped spring-mass system. In this case, the spring is below the moon lander, so the spring is slightly compressed at equilibrium, as shown in <link target-id="CNX_Calc_Figure_17_03_007"/>.</para>
+<figure id="CNX_Calc_Figure_17_03_007">
+<media id="fs-id1170571347894" alt="This figure has three images. The first is a picture of the Mars Lander landing on a surface. The second picture is a diagram of the Mars Lander at touchdown, with an uncompressed spring with length L between the Lander and the landing surface. The third image is a diagram of the Lander in equilibrium position after the Lander has landed. The spring is compressed a distance of s.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_03_007.jpg"/>
+</media>
+<caption>The landing craft suspension can be represented as a damped spring-mass system. (credit “lander”: NASA)</caption>
+</figure>
+<para id="fs-id1170573709032">We retain the convention that down is positive. Despite the new orientation, an examination of the forces affecting the lander shows that the same differential equation can be used to model the position of the landing craft relative to equilibrium:</para>
+<equation id="fs-id1170573516106" class="unnumbered"><label/><m:math><m:mrow><m:mi>m</m:mi><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>k</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573276551">where <emphasis effect="italics">m</emphasis> is the mass of the lander, <emphasis effect="italics">b</emphasis> is the damping coefficient, and <emphasis effect="italics">k</emphasis> is the spring constant.</para>
+<list id="fs-id1170573438811" list-type="enumerated" number-style="arabic">
+<item>The lander has a mass of 15,000 kg and the spring is 2 m long when uncompressed. The lander is designed to compress the spring 0.5 m to reach the equilibrium position under lunar gravity. The dashpot imparts a damping force equal to 48,000 times the instantaneous velocity of the lander. Set up the differential equation that models the motion of the lander when the craft lands on the moon.</item>
+<item>Let time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> denote the instant the lander touches down. The rate of descent of the lander can be controlled by the crew, so that it is descending at a rate of 2 m/sec when it touches down. Find the equation of motion of the lander on the moon.</item>
+<item>If the lander is traveling too fast when it touches down, it could fully compress the spring and “bottom out.” Bottoming out could damage the landing craft and must be avoided at all costs. Graph the equation of motion found in part 2. If the spring is 0.5 m long when fully compressed, will the lander be in danger of bottoming out?</item>
+<item>Assuming NASA engineers make no adjustments to the spring or the damper, how far does the lander compress the spring to reach the equilibrium position under Martian gravity?</item>
+<item>If the lander crew uses the same procedures on Mars as on the moon, and keeps the rate of descent to 2 m/sec, will the lander bottom out when it lands on Mars?</item>
+<item>What adjustments, if any, should the NASA engineers make to use the lander safely on Mars?</item>
+</list>
+</note>
+</section>
+</section>
+<section id="fs-id1170571124649">
+<title>Forced Vibrations</title>
+<para id="fs-id1170571026509">The last case we consider is when an external force acts on the system. In the case of the motorcycle suspension system, for example, the bumps in the road act as an external force acting on the system. Another example is a spring hanging from a support; if the support is set in motion, that motion would be considered an external force on the system. We model these forced systems with the nonhomogeneous differential equation</para>
+<equation id="fs-id1170573399103"><m:math><m:mrow><m:mi>m</m:mi><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>k</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573582925">where the external force is represented by the <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> term. As we saw in <link document="m54047">Nonhomogenous Linear Equations</link>, differential equations such as this have solutions of the form</para>
+<equation id="fs-id1170573386623" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msub><m:mi>x</m:mi><m:mi>p</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573362545">where <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is the general solution to the complementary equation and <m:math><m:mrow><m:msub><m:mi>x</m:mi><m:mi>p</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is a particular solution to the nonhomogeneous equation. If the system is damped, <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> Since these terms do not affect the long-term behavior of the system, we call this part of the solution the <term class="no-emphasis"><emphasis effect="italics">transient solution</emphasis></term><emphasis effect="bold">.</emphasis> The long-term behavior of the system is determined by <m:math><m:mrow><m:msub><m:mi>x</m:mi><m:mi>p</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> so we call this part of the solution the <term>steady-state solution</term>.</para>
+<note id="fs-id1170571123716" class="media-2">
+<para id="fs-id1170571123719">This <link url="http://www.openstax.org/l/20_Oscillations">website</link> shows a simulation of forced vibrations.</para>
+</note>
+<example id="fs-id1170571136987">
+<exercise id="fs-id1170571136990">
+<problem id="fs-id1170571136992">
+<title>Forced Vibrations</title>
+<para id="fs-id1170573246497">A mass of 1 slug stretches a spring 2 ft and comes to rest at equilibrium. The system is attached to a dashpot that imparts a damping force equal to eight times the instantaneous velocity of the mass. Find the equation of motion if an external force equal to <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>8</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is applied to the system beginning at time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> What is the transient solution? What is the steady-state solution?</para>
+</problem>
+<solution id="fs-id1170570978030">
+<para id="fs-id1170570978032">We have <m:math><m:mrow><m:mi>m</m:mi><m:mi>g</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>32</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>k</m:mi><m:mo>,</m:mo></m:mrow></m:math> so <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>16</m:mn></m:mrow></m:math> and the differential equation is</para>
+<equation id="fs-id1170573586148" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>8</m:mn><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>16</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170570995313">The general solution to the complementary equation is</para>
+<equation id="fs-id1170570995316" class="unnumbered"><label/><m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571227246">Assuming a particular solution of the form <m:math><m:mrow><m:msub><m:mi>x</m:mi><m:mi>p</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>A</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>B</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and using the method of undetermined coefficients, we find <m:math><m:mrow><m:msub><m:mi>x</m:mi><m:mi>p</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> so</para>
+<equation id="fs-id1170573757948" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571340436">At <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> the mass is at rest in the equilibrium position, so <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> Applying these initial conditions to solve for <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>,</m:mo></m:mrow></m:math> we get</para>
+<equation id="fs-id1170571303979" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573289060">The transient solution is <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math> The steady-state solution is <m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170571509350" class="checkpoint">
+<exercise id="fs-id1170571509354">
+<problem id="fs-id1170571509356">
+<para id="fs-id1170571281442">A mass of 2 kg is attached to a spring with constant 32 N/m and comes to rest in the equilibrium position. Beginning at time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> an external force equal to<m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>68</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is applied to the system. Find the equation of motion if there is no damping. What is the transient solution? What is the steady-state solution?</para>
+</problem>
+<solution id="fs-id1170571285877">
+<para id="fs-id1170571285879"><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>9</m:mn><m:mn>4</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math><newline/>
+<m:math><m:mrow><m:mtext>Transient solution:</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math><newline/>
+<m:math><m:mrow><m:mtext>Steady-state solution:</m:mtext><m:mspace width="0.2em"/><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>9</m:mn><m:mn>4</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1170573288977" type="hint">
+<title>Hint</title>
+<para id="fs-id1170571346052">Find the particular solution <emphasis effect="italics">before</emphasis> applying the initial conditions.</para>
+</commentary>
+</exercise>
+</note>
+<note id="fs-id1170571048093" class="project">
+<title>Resonance</title>
+<para id="fs-id1170571048100">Consider an undamped system exhibiting simple harmonic motion. In the real world, we never truly have an undamped system; –some damping always occurs. For theoretical purposes, however, we could imagine a spring-mass system contained in a vacuum chamber. With no air resistance, the mass would continue to move up and down indefinitely.</para>
+<para id="fs-id1170571048103">The frequency of the resulting motion, given by <m:math><m:mrow><m:mi>f</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>T</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>ω</m:mi><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> is called the <emphasis effect="italics">natural frequency of the system</emphasis>. If an external force acting on the system has a frequency close to the natural frequency of the system, a phenomenon called <term class="no-emphasis"><emphasis effect="italics">resonance</emphasis></term> results. The external force reinforces and amplifies the natural motion of the system.</para>
+<list id="fs-id1170573501535" list-type="enumerated" number-style="arabic">
+<item>Consider the differential equation <m:math><m:mrow><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> Find the general solution. What is the natural frequency of the system?</item>
+<item>Now suppose this system is subjected to an external force given by <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mtext>.</m:mtext></m:mrow></m:math> Solve the initial-value problem <m:math><m:mrow><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>Graph the solution. What happens to the behavior of the system over time?</item>
+<item>In the real world, there is always some damping. However, if the damping force is weak, and the external force is strong enough, real-world systems can still exhibit resonance. One of the most famous examples of resonance is the collapse of the <term class="no-emphasis">Tacoma Narrows Bridge</term> on November 7, 1940. The bridge had exhibited strange behavior ever since it was built. The roadway had a strange “bounce” to it. On the day it collapsed, a strong windstorm caused the roadway to twist and ripple violently. The bridge was unable to withstand these forces and it ultimately collapsed. Experts believe the windstorm exerted forces on the bridge that were very close to its natural frequency, and the resulting resonance ultimately shook the bridge apart.<newline/>
+<note id="fs-id1170571114072" class="media-2">
+<para id="fs-id1170571291310">This <link url="http://www.openstax.org/l/20_TacomaNarrow">website</link> contains more information about the collapse of the Tacoma Narrows Bridge.</para>
+</note>
+<note id="fs-id1170571291320" class="media-2">
+<para id="fs-id1170571260193">During the short time the Tacoma Narrows Bridge stood, it became quite a tourist attraction. Several people were on site the day the bridge collapsed, and one of them caught the collapse on film. Watch the <link url="http://www.openstax.org/l/20_TacomaNarro2">video</link> to see the collapse.</para>
+</note></item>
+<item>Another real-world example of resonance is a singer shattering a crystal wineglass when she sings just the right note. When someone taps a crystal wineglass or wets a finger and runs it around the rim, a tone can be heard. That note is created by the wineglass vibrating at its natural frequency. If a singer then sings that same note at a high enough volume, the glass shatters as a result of resonance.<newline/>
+<note id="fs-id1170571156487" class="media-2">
+<para id="fs-id1170571156490">The TV show <emphasis effect="italics">Mythbusters</emphasis> aired an episode on this phenomenon. Adam Savage described the experience. Watch this <link url="http://www.openstax.org/l/20_glass2">video</link> for his account.</para></note></item>
+</list>
+</note>
+</section>
+<section id="fs-id1170573519631">
+<title>The <emphasis effect="italics">RLC</emphasis> Series Circuit</title>
+<para id="fs-id1170571071163">Consider an electrical circuit containing a resistor, an inductor, and a capacitor, as shown in <link target-id="CNX_Calc_Figure_17_03_014"/>. Such a circuit is called an <term><emphasis effect="italics">RLC</emphasis> series circuit</term>. <emphasis effect="italics">RLC</emphasis> circuits are used in many electronic systems, most notably as tuners in AM/FM radios. The tuning knob varies the capacitance of the capacitor, which in turn tunes the radio. Such circuits can be modeled by second-order, constant-coefficient differential equations.</para>
+<para id="fs-id1170571448902">Let <m:math><m:mrow><m:mi>I</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> denote the current in the <emphasis effect="italics">RLC</emphasis> circuit and <m:math><m:mrow><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> denote the charge on the capacitor. Furthermore, let <emphasis effect="italics">L</emphasis> denote inductance in henrys (H), <emphasis effect="italics">R</emphasis> denote resistance in ohms <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mtext>Ω</m:mtext><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> and <emphasis effect="italics">C</emphasis> denote capacitance in farads (F). Last, let <m:math><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> denote electric potential in volts (V).</para>
+<para id="fs-id1170573581916">Kirchhoff’s voltage rule states that the sum of the voltage drops around any closed loop must be zero. So, we need to consider the voltage drops across the inductor (denoted <m:math><m:mrow><m:msub><m:mi>E</m:mi><m:mi>L</m:mi></m:msub></m:mrow></m:math>), the resistor (denoted <m:math><m:mrow><m:msub><m:mi>E</m:mi><m:mi>R</m:mi></m:msub></m:mrow></m:math>), and the capacitor (denoted <m:math><m:mrow><m:msub><m:mi>E</m:mi><m:mi>C</m:mi></m:msub></m:mrow></m:math>). Because the <emphasis effect="italics">RLC</emphasis> circuit shown in <link target-id="CNX_Calc_Figure_17_03_014"/> includes a voltage source, <m:math><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> which adds voltage to the circuit, we have <m:math><m:mrow><m:msub><m:mi>E</m:mi><m:mi>L</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>E</m:mi><m:mi>R</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>E</m:mi><m:mi>C</m:mi></m:msub><m:mo>=</m:mo><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170573515970">We present the formulas below without further development. Those of you interested in the derivation of these formulas should consult a physics text. Using Faraday’s law and Lenz’s law, the voltage drop across an inductor can be shown to be proportional to the instantaneous rate of change of current, with proportionality constant <emphasis effect="italics">L</emphasis>. Thus,</para>
+<equation id="fs-id1170571284146" class="unnumbered"><label/><m:math><m:mrow><m:msub><m:mi>E</m:mi><m:mi>L</m:mi></m:msub><m:mo>=</m:mo><m:mi>L</m:mi><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>I</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571131649">Next, according to Ohm’s law, the voltage drop across a resistor is proportional to the current passing through the resistor, with proportionality constant <emphasis effect="italics">R</emphasis>. Therefore,</para>
+<equation id="fs-id1170571118014" class="unnumbered"><label/><m:math><m:mrow><m:msub><m:mi>E</m:mi><m:mi>R</m:mi></m:msub><m:mo>=</m:mo><m:mi>R</m:mi><m:mi>I</m:mi><m:mtext>.</m:mtext></m:mrow></m:math></equation>
+<para id="fs-id1170571087077">Last, the voltage drop across a capacitor is proportional to the charge, <emphasis effect="italics">q</emphasis>, on the capacitor, with proportionality constant <m:math><m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>C</m:mi></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Thus,</para>
+<equation id="fs-id1170571115021" class="unnumbered"><label/><m:math><m:mrow><m:msub><m:mi>E</m:mi><m:mi>C</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>C</m:mi></m:mfrac><m:mi>q</m:mi><m:mtext>.</m:mtext></m:mrow></m:math></equation>
+<para id="fs-id1170571260221">Adding these terms together, we get</para>
+<equation id="fs-id1170571260224" class="unnumbered"><label/><m:math><m:mrow><m:mi>L</m:mi><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>I</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>R</m:mi><m:mi>I</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>C</m:mi></m:mfrac><m:mi>q</m:mi><m:mo>=</m:mo><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571042904">Noting that <m:math><m:mrow><m:mi>I</m:mi><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>d</m:mi><m:mi>q</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mtext>/</m:mtext><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mrow><m:mo>,</m:mo></m:mrow></m:math> this becomes</para>
+<equation id="fs-id1170571096072"><m:math><m:mrow><m:mi>L</m:mi><m:mfrac><m:mrow><m:msup><m:mi>d</m:mi><m:mn>2</m:mn></m:msup><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>R</m:mi><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>C</m:mi></m:mfrac><m:mi>q</m:mi><m:mo>=</m:mo><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571293694">Mathematically, this system is analogous to the spring-mass systems we have been examining in this section.</para>
+<figure id="CNX_Calc_Figure_17_03_010">
+<media id="fs-id1170571293702" alt="This figure is a diagram of a circuit. It has broken lines at the bottom labeled C. On the left side there is an open circle labeled E. The top has diagonal lines labeled R. The right side has little bumps labeled L.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_03_010.jpg"/>
+</media>
+<caption>An <emphasis effect="italics">RLC</emphasis> series circuit can be modeled by the same differential equation as a mass-spring system.</caption>
+</figure>
+<example id="fs-id1170570974718">
+<exercise id="fs-id1170570974720">
+<problem id="fs-id1170570974722">
+<title>The <emphasis effect="italics">RLC</emphasis> Series Circuit</title>
+<para id="fs-id1170573502117">Find the charge on the capacitor in an <emphasis effect="italics">RLC</emphasis> series circuit where <m:math><m:mrow><m:mi>L</m:mi><m:mo>=</m:mo><m:mrow><m:mn>5</m:mn><m:mtext>/</m:mtext><m:mn>3</m:mn></m:mrow></m:mrow></m:math> H, <m:math><m:mrow><m:mi>R</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mtext>Ω</m:mtext><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>C</m:mi><m:mo>=</m:mo><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mrow><m:mn>30</m:mn></m:mrow></m:mrow></m:mrow></m:math> F, and <m:math><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>300</m:mn></m:mrow></m:math> V. Assume the initial charge on the capacitor is 0 C and the initial current is 9 A. What happens to the charge on the capacitor over time?</para>
+</problem>
+<solution id="fs-id1170570995080">
+<para id="fs-id1170570995082">We have</para>
+<equation id="fs-id1170570995085" class="unnumbered"><label/><m:math><m:mtable><m:mtr/><m:mtr/><m:mtr><m:mtd columnalign="right"><m:mi>L</m:mi><m:mfrac><m:mrow><m:msup><m:mi>d</m:mi><m:mn>2</m:mn></m:msup><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>R</m:mi><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>C</m:mi></m:mfrac><m:mi>q</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mn>5</m:mn><m:mn>3</m:mn></m:mfrac><m:mspace width="0.2em"/><m:mfrac><m:mrow><m:msup><m:mi>d</m:mi><m:mn>2</m:mn></m:msup><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mn>10</m:mn><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mn>30</m:mn><m:mi>q</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>300</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mrow><m:msup><m:mi>d</m:mi><m:mn>2</m:mn></m:msup><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mn>6</m:mn><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mn>18</m:mn><m:mi>q</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>180</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170571483434">The general solution to the complementary equation is</para>
+<equation id="fs-id1170571483437" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573515927">Assume a particular solution of the form <m:math><m:mrow><m:msub><m:mi>q</m:mi><m:mi>p</m:mi></m:msub><m:mo>=</m:mo><m:mi>A</m:mi><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mi>A</m:mi></m:math> is a constant. Using the method of undetermined coefficients, we find <m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>.</m:mo></m:mrow></m:math> So,</para>
+<equation id="fs-id1170573409279" class="unnumbered"><label/><m:math><m:mrow><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>10</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571230479">Applying the initial conditions <m:math><m:mrow><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>i</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>d</m:mi><m:mi>q</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mtext>/</m:mtext><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>,</m:mo></m:mrow></m:math> we find <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>−10</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>−7</m:mn><m:mo>.</m:mo></m:mrow></m:math> So the charge on the capacitor is</para>
+<equation id="fs-id1170571046590" class="unnumbered"><label/><m:math><m:mrow><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−10</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>7</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>10</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571171130">Looking closely at this function, we see the first two terms will decay over time (as a result of the negative exponent in the exponential function). Therefore, the capacitor eventually approaches a steady-state charge of 10 C.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170570998337" class="checkpoint">
+<exercise id="fs-id1170570998340">
+<problem id="fs-id1170570998342">
+<para id="fs-id1170570998344">Find the charge on the capacitor in an <emphasis effect="italics">RLC</emphasis> series circuit where <m:math><m:mrow><m:mi>L</m:mi><m:mo>=</m:mo><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mn>5</m:mn></m:mrow></m:mrow></m:math> H, <m:math><m:mrow><m:mi>R</m:mi><m:mo>=</m:mo><m:mrow><m:mn>2</m:mn><m:mtext>/</m:mtext><m:mn>5</m:mn></m:mrow><m:mtext>Ω</m:mtext><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>C</m:mi><m:mo>=</m:mo><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:math> F, and <m:math><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>50</m:mn></m:mrow></m:math> V. Assume the initial charge on the capacitor is 0 C and the initial current is 4 A.</para>
+</problem>
+<solution id="fs-id1170573515542">
+<para id="fs-id1170571203607"><m:math><m:mrow><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−25</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>7</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>25</m:mn></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1170573542483" type="hint">
+<title>Hint</title>
+<para id="fs-id1170573524647">Remember, <m:math><m:mrow><m:msub><m:mi>E</m:mi><m:mi>L</m:mi></m:msub><m:mo>=</m:mo><m:mi>L</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>d</m:mi><m:mi>I</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mtext>/</m:mtext><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</commentary>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170573524722" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id1170573525682" list-type="bulleted" bullet-style="bullet">
+<item>Second-order constant-coefficient differential equations can be used to model spring-mass systems.</item>
+<item>An examination of the forces on a spring-mass system results in a differential equation of the form<newline/>
+<equation id="fs-id1170573525694" class="unnumbered"><label/><m:math><m:mrow><m:mi>m</m:mi><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>k</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math></equation><newline/>
+where <m:math><m:mi>m</m:mi></m:math> represents the mass, <m:math><m:mi>b</m:mi></m:math> is the coefficient of the damping force, <m:math><m:mi>k</m:mi></m:math> is the spring constant, and <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> represents any net external forces on the system.</item>
+<item>If <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> there is no damping force acting on the system, and simple harmonic motion results. If <m:math><m:mrow><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> the behavior of the system depends on whether <m:math><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>m</m:mi><m:mi>k</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>m</m:mi><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> or <m:math><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>m</m:mi><m:mi>k</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>If <m:math><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>m</m:mi><m:mi>k</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> the system is overdamped and does not exhibit oscillatory behavior.</item>
+<item>If <m:math><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>m</m:mi><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> the system is critically damped. It does not exhibit oscillatory behavior, but any slight reduction in the damping would result in oscillatory behavior.</item>
+<item>If <m:math><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>m</m:mi><m:mi>k</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> the system is underdamped. It exhibits oscillatory behavior, but the amplitude of the oscillations decreases over time.</item>
+<item>If <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> the solution to the differential equation is the sum of a transient solution and a steady-state solution. The steady-state solution governs the long-term behavior of the system.</item>
+<item>The charge on the capacitor in an <emphasis effect="italics">RLC</emphasis> series circuit can also be modeled with a second-order constant-coefficient differential equation of the form<newline/>
+<equation id="fs-id1170571073828" class="unnumbered"><label/><m:math><m:mrow><m:mi>L</m:mi><m:mfrac><m:mrow><m:msup><m:mi>d</m:mi><m:mn>2</m:mn></m:msup><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>R</m:mi><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>C</m:mi></m:mfrac><m:mi>q</m:mi><m:mo>=</m:mo><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math></equation><newline/>
+where <emphasis effect="italics">L</emphasis> is the inductance, <emphasis effect="italics">R</emphasis> is the resistance, <emphasis effect="italics">C</emphasis> is the capacitance, and <m:math><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is the voltage source.</item>
+</list>
+</section>
+<section id="fs-id1170571213212" class="key-equations">
+<title>Key Equations</title>
+<table id="eip-566" summary="." class="unnumbered unstyled">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><emphasis effect="bold">Equation of simple harmonic motion</emphasis></entry>
+    <entry><m:math><m:mrow><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:msup><m:mi>ω</m:mi><m:mn>2</m:mn></m:msup><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry><emphasis effect="bold">Solution for simple harmonic motion</emphasis></entry>
+    <entry><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry><emphasis effect="bold">Alternative form of solution for SHM</emphasis></entry>
+    <entry><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>A</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>ϕ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry><emphasis effect="bold">Forced harmonic motion</emphasis></entry>
+    <entry><m:math><m:mrow><m:mi>m</m:mi><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>k</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry><emphasis effect="bold">Charge in a</emphasis> <emphasis effect="bold"><emphasis effect="italics">RLC</emphasis></emphasis> <emphasis effect="bold">series circuit</emphasis></entry>
+    <entry><m:math><m:mrow><m:mi>L</m:mi><m:mfrac><m:mrow><m:msup><m:mi>d</m:mi><m:mn>2</m:mn></m:msup><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>R</m:mi><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>C</m:mi></m:mfrac><m:mi>q</m:mi><m:mo>=</m:mo><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</section>
+<section id="fs-id1170573754185" class="section-exercises">
+<exercise id="fs-id1170571079342">
+<problem id="fs-id1170571079344">
+<para id="fs-id1170571079346">A mass weighing 4 lb stretches a spring 8 in. Find the equation of motion if the spring is released from the equilibrium position with a downward velocity of 12 ft/sec. What is the period and frequency of the motion?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571412194">
+<problem id="fs-id1170571412196">
+<para id="fs-id1170571412198">A mass weighing 2 lb stretches a spring 2 ft. Find the equation of motion if the spring is released from 2 in. below the equilibrium position with an upward velocity of 8 ft/sec. What is the period and frequency of the motion?</para>
+</problem>
+<solution id="fs-id1170571412205">
+<para id="fs-id1170573713766"><m:math><m:mrow><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>16</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>,</m:mtext></m:mrow></m:math> period <m:math><m:mrow><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mtext>sec</m:mtext><m:mo>,</m:mo></m:mrow></m:math> frequency <m:math><m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>2</m:mn><m:mi>π</m:mi></m:mfrac><m:mspace width="0.1em"/><m:mtext>Hz</m:mtext></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571214796">
+<problem id="fs-id1170573726574">
+<para id="fs-id1170573726576">A 100-g mass stretches a spring 0.1 m. Find the equation of motion of the mass if it is released from rest from a position 20 cm below the equilibrium position. What is the frequency of this motion?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571098284">
+<problem id="fs-id1170571098286">
+<para id="fs-id1170571041486">A 400-g mass stretches a spring 5 cm. Find the equation of motion of the mass if it is released from rest from a position 15 cm below the equilibrium position. What is the frequency of this motion?</para>
+</problem>
+<solution id="fs-id1170571041492">
+<para id="fs-id1170571041494"><m:math><m:mrow><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>196</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.15</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>14</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>,</m:mtext></m:mrow></m:math> period <m:math><m:mrow><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>7</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mtext>sec</m:mtext><m:mo>,</m:mo></m:mrow></m:math> frequency <m:math><m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>7</m:mn><m:mi>π</m:mi></m:mfrac><m:mspace width="0.1em"/><m:mtext>Hz</m:mtext></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571138041">
+<problem id="fs-id1170571322041">
+<para id="fs-id1170571322043">A block has a mass of 9 kg and is attached to a vertical spring with a spring constant of 0.25 N/m. The block is stretched 0.75 m below its equilibrium position and released.</para>
+<list id="fs-id1170571322048" list-type="enumerated" number-style="lower-alpha">
+<item>Find the position function <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> of the block.</item>
+<item>Find the period and frequency of the vibration.</item>
+<item>Sketch a graph of <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>At what time does the block first pass through the equilibrium position?</item>
+</list>
+</problem>
+</exercise>
+<exercise id="fs-id1170571369053">
+<problem id="fs-id1170571369056">
+<para id="fs-id1170571369058">A block has a mass of 5 kg and is attached to a vertical spring with a spring constant of 20 N/m. The block is released from the equilibrium position with a downward velocity of 10 m/sec.</para>
+<list id="fs-id1170571340281" list-type="enumerated" number-style="lower-alpha">
+<item>Find the position function <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> of the block.</item>
+<item>Find the period and frequency of the vibration.</item>
+<item>Sketch a graph of <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>At what time does the block first pass through the equilibrium position?</item>
+</list>
+</problem>
+<solution id="fs-id1170571115914">
+<para id="fs-id1170571115916">a. <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math><newline/>b. period <m:math><m:mrow><m:mo>=</m:mo><m:mi>π</m:mi><m:mspace width="0.2em"/><m:mtext>sec</m:mtext><m:mo>,</m:mo></m:mrow></m:math> frequency <m:math><m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>π</m:mi></m:mfrac><m:mspace width="0.1em"/><m:mtext>Hz</m:mtext></m:mrow></m:math><newline/>c.<newline/>
+<media id="fs-id1170571131588" alt="This figure is the graph of a function. It is a periodic function with consistent amplitude. The horizontal axis is labeled in increments of 1. The vertical axis is labeled in increments of 1.5.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_03_202.jpg"/>
+</media><newline/>
+d. <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mtext>sec</m:mtext></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571066174">
+<problem id="fs-id1170571153076">
+<para id="fs-id1170571153078">A 1-kg mass is attached to a vertical spring with a spring constant of 21 N/m. The resistance in the spring-mass system is equal to 10 times the instantaneous velocity of the mass.</para>
+<list id="fs-id1170571153083" list-type="enumerated" number-style="lower-alpha">
+<item>Find the equation of motion if the mass is released from a position 2 m below its equilibrium position with a downward velocity of 2 m/sec.</item>
+<item>Graph the solution and determine whether the motion is overdamped, critically damped, or underdamped.</item>
+</list>
+</problem>
+</exercise>
+<exercise id="fs-id1170573739195">
+<problem id="fs-id1170573739197">
+<para id="fs-id1170573739199">An 800-lb weight (25 slugs) is attached to a vertical spring with a spring constant of 226 lb/ft. The system is immersed in a medium that imparts a damping force equal to 10 times the instantaneous velocity of the mass.</para>
+<list id="fs-id1170573739205" list-type="enumerated" number-style="lower-alpha">
+<item>Find the equation of motion if it is released from a position 20 ft below its equilibrium position with a downward velocity of 41 ft/sec.</item>
+<item>Graph the solution and determine whether the motion is overdamped, critically damped, or underdamped.</item>
+</list>
+</problem>
+<solution id="fs-id1170573759784">
+<para id="fs-id1170573759786">a. <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi><m:mtext>/</m:mtext><m:mn>5</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>20</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>15</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math><newline/>b. underdamped</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571041530">
+<problem id="fs-id1170571041532">
+<para id="fs-id1170571264084">A 9-kg mass is attached to a vertical spring with a spring constant of 16 N/m. The system is immersed in a medium that imparts a damping force equal to 24 times the instantaneous velocity of the mass.</para>
+<list id="fs-id1170571264089" list-type="enumerated" number-style="lower-alpha">
+<item>Find the equation of motion if it is released from its equilibrium position with an upward velocity of 4 m/sec.</item>
+<item>Graph the solution and determine whether the motion is overdamped, critically damped, or underdamped.</item>
+</list>
+</problem>
+</exercise>
+<exercise id="fs-id1170571021686">
+<problem id="fs-id1170571021688">
+<para id="fs-id1170571021690">A 1-kg mass stretches a spring 6.25 cm. The resistance in the spring-mass system is equal to eight times the instantaneous velocity of the mass.</para>
+<list id="fs-id1170571080053" list-type="enumerated" number-style="lower-alpha">
+<item>Find the equation of motion if the mass is released from a position 5 m below its equilibrium position with an upward velocity of 10 m/sec.</item>
+<item>Determine whether the motion is overdamped, critically damped, or underdamped.</item>
+</list>
+</problem>
+<solution id="fs-id1170571080067">
+<para id="fs-id1170571080069">a. <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mn>10</m:mn><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math><newline/>b. critically damped</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571041443">
+<problem id="fs-id1170571041445">
+<para id="fs-id1170571041447">A 32-lb weight (1 slug) stretches a vertical spring 4 in. The resistance in the spring-mass system is equal to four times the instantaneous velocity of the mass.</para>
+<list id="fs-id1170571325717" list-type="enumerated" number-style="lower-alpha">
+<item>Find the equation of motion if it is released from its equilibrium position with a downward velocity of 12 ft/sec.</item>
+<item>Determine whether the motion is overdamped, critically damped, or underdamped.</item>
+</list>
+</problem>
+</exercise>
+<exercise id="fs-id1170571227151">
+<problem id="fs-id1170571227153">
+<para id="fs-id1170571227155">A 64-lb weight is attached to a vertical spring with a spring constant of 4.625 lb/ft. The resistance in the spring-mass system is equal to the instantaneous velocity. The weight is set in motion from a position 1 ft below its equilibrium position with an upward velocity of 2 ft/sec. Is the mass above or below the equation position at the end of <m:math><m:mi>π</m:mi></m:math> sec? By what distance?</para>
+</problem>
+<solution id="fs-id1170571139272">
+<para id="fs-id1170571139274"><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>7</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>4</m:mn></m:mrow></m:msup></m:mrow><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> ft below</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571302938">
+<problem id="fs-id1170571302940">
+<para id="fs-id1170571302942">A mass that weighs 8 lb stretches a spring 6 inches. The system is acted on by an external force of <m:math><m:mrow><m:mn>8</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>8</m:mn><m:mi>t</m:mi></m:mrow></m:math> lb. If the mass is pulled down 3 inches and then released, determine the position of the mass at any time.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571027428">
+<problem id="fs-id1170571027430">
+<para id="fs-id1170571027432">A mass that weighs 6 lb stretches a spring 3 in. The system is acted on by an external force of <m:math><m:mrow><m:mn>8</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> lb. If the mass is pulled down 1 inch and then released, determine the position of the mass at any time.</para>
+</problem>
+<solution id="fs-id1170571253781">
+<para id="fs-id1170571111125"><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>32</m:mn></m:mrow><m:mn>9</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:msqrt><m:mrow><m:mn>128</m:mn></m:mrow></m:msqrt><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>16</m:mn></m:mrow><m:mrow><m:mn>9</m:mn><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:mfrac><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:msqrt><m:mrow><m:mn>128</m:mn></m:mrow></m:msqrt><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170573541683">
+<problem id="fs-id1170573541685">
+<para id="fs-id1170571491090">Find the charge on the capacitor in an <emphasis effect="italics">RLC</emphasis> series circuit where <m:math><m:mrow><m:mi>L</m:mi><m:mo>=</m:mo><m:mn>40</m:mn></m:mrow></m:math> H, <m:math><m:mrow><m:mi>R</m:mi><m:mo>=</m:mo><m:mn>30</m:mn><m:mtext>Ω</m:mtext><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>C</m:mi><m:mo>=</m:mo><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mrow><m:mn>200</m:mn></m:mrow></m:mrow></m:mrow></m:math> F, and <m:math><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>200</m:mn></m:mrow></m:math> V. Assume the initial charge on the capacitor is 7 C and the initial current is 0 A.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170573535625">
+<problem id="fs-id1170573535628">
+<para id="fs-id1170573535630">Find the charge on the capacitor in an <emphasis effect="italics">RLC</emphasis> series circuit where <m:math><m:mrow><m:mi>L</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> H, <m:math><m:mrow><m:mi>R</m:mi><m:mo>=</m:mo><m:mn>24</m:mn><m:mtext>Ω</m:mtext><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>C</m:mi><m:mo>=</m:mo><m:mn>0.005</m:mn></m:mrow></m:math> F, and <m:math><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>12</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>10</m:mn><m:mi>t</m:mi></m:mrow></m:math> V. Assume the initial charge on the capacitor is 0.001 C and the initial current is 0 A.</para>
+</problem>
+<solution id="fs-id1170573365652">
+<para id="fs-id1170573608058"><m:math><m:mrow><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−6</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0.051</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>0.03825</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>10</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571322031">
+<problem id="fs-id1170573612052">
+<para id="fs-id1170573612054">A series circuit consists of a device where <m:math><m:mrow><m:mi>L</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> H, <m:math><m:mrow><m:mi>R</m:mi><m:mo>=</m:mo><m:mn>20</m:mn><m:mtext>Ω</m:mtext><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>C</m:mi><m:mo>=</m:mo><m:mn>0.002</m:mn></m:mrow></m:math> F, and <m:math><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>12</m:mn></m:mrow></m:math> V. If the initial charge and current are both zero, find the charge and current at time <emphasis effect="italics">t</emphasis>.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571146379">
+<problem id="fs-id1170571146381">
+<para id="fs-id1170571146383">A series circuit consists of a device where <m:math><m:mrow><m:mi>L</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> H, <m:math><m:mrow><m:mi>R</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mtext>Ω</m:mtext><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>C</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>50</m:mn></m:mrow></m:mfrac></m:mrow></m:math> F, and <m:math><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>250</m:mn></m:mrow></m:math> V. If the initial charge on the capacitor is 0 C and the initial current is 18 A, find the charge and current at time <emphasis effect="italics">t</emphasis>.</para>
+</problem>
+<solution id="fs-id1170571080124">
+<para id="fs-id1170571080126"><m:math><m:mrow><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−10</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−32</m:mn><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext/><m:mspace width="0.2em"/><m:mi>I</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−10</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>160</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>9</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+</section>
+ </content>
+<glossary>
+<definition id="fs-id1170571169932">
+<term><emphasis effect="italics">RLC</emphasis> series circuit</term>
+<meaning id="fs-id1170571422504">a complete electrical path consisting of a resistor, an inductor, and a capacitor; a second-order, constant-coefficient differential equation can be used to model the charge on the capacitor in an <emphasis effect="italics">RLC</emphasis> series circuit</meaning>
+</definition>
+<definition id="fs-id1170571422515">
+<term>simple harmonic motion</term>
+<meaning id="fs-id1170571422520">motion described by the equation <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> as exhibited by an undamped spring-mass system in which the mass continues to oscillate indefinitely</meaning>
+</definition>
+<definition id="fs-id1170573544065">
+<term>steady-state solution</term>
+<meaning id="fs-id1170573544071">a solution to a nonhomogeneous differential equation related to the forcing function; in the long term, the solution approaches the steady-state solution</meaning>
+</definition>
+</glossary>
+</document>

@@ -1,0 +1,22 @@
+<document xmlns="http://cnx.rice.edu/cnxml" class="introduction">
+
+<title>Introduction</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53696</md:content-id>
+  <md:title>Introduction</md:title>
+  <md:abstract/>
+  <md:uuid>2b303c75-ae29-46fc-87c1-60627869475a</md:uuid>
+</metadata>
+
+<content>
+<figure id="CNX_BMath_Figure_08_00_001" class="splash">
+<media id="fs-id1170571454128" alt="This is a photograph of a deer.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_00_001.jpg"/>
+</media>
+<caption>The white-tailed deer (<emphasis effect="italics">Odocoileus virginianus</emphasis>) of the eastern United States. Differential equations can be used to study animal populations. (credit: modification of work by Rachel Kramer, Flickr)</caption>
+</figure>
+<para id="fs-id1170571322723">Many real-world phenomena can be modeled mathematically by using differential equations. Population growth, radioactive decay, predator-prey models, and spring-mass systems are four examples of such phenomena. In this chapter we study some of these applications.</para>
+<para id="fs-id1170573394470">Suppose we wish to study a population of deer over time and determine the total number of animals in a given area. We can first observe the population over a period of time, estimate the total number of deer, and then use various assumptions to derive a mathematical model for different scenarios. Some factors that are often considered are environmental impact, threshold population values, and predators. In this chapter we see how differential equations can be used to predict populations over time (see <link document="m53710" target-id="fs-id1170572203846"/>).</para>
+<para id="fs-id1170573591036">Another goal of this chapter is to develop solution techniques for different types of differential equations. As the equations become more complicated, the solution techniques also become more complicated, and in fact an entire course could be dedicated to the study of these equations. In this chapter we study several types of differential equations and their corresponding methods of solution.</para>
+ </content>
+</document>

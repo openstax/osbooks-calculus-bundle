@@ -1,0 +1,814 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Quadric Surfaces</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53874</md:content-id>
+  <md:title>Quadric Surfaces</md:title>
+  <md:abstract><list>
+<item>Identify a cylinder as a type of three-dimensional surface.</item>
+<item>Recognize the main features of ellipsoids, paraboloids, and hyperboloids.</item>
+<item>Use traces to draw the intersections of quadric surfaces with the coordinate planes.</item>
+</list></md:abstract>
+  <md:uuid>c6bfd10c-fbf4-4ebe-8e50-9b5aed4fcc9b</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-id1163723863143">We have been exploring vectors and vector operations in three-dimensional space, and we have developed equations to describe lines, planes, and spheres. In this section, we use our knowledge of planes and spheres, which are examples of three-dimensional figures called <emphasis effect="italics">surfaces</emphasis>, to explore a variety of other surfaces that can be graphed in a three-dimensional coordinate system.</para>
+<section id="fs-id1163723958933">
+<title>Identifying Cylinders</title>
+<para id="fs-id1163723183468">The first surface we’ll examine is the cylinder. Although most people immediately think of a hollow pipe or a soda straw when they hear the word <emphasis effect="italics">cylinder</emphasis>, here we use the broad mathematical meaning of the term. As we have seen, cylindrical surfaces don’t have to be circular. A rectangular heating duct is a cylinder, as is a rolled-up yoga mat, the cross-section of which is a spiral shape.</para>
+<para id="fs-id1163723994234">In the two-dimensional coordinate plane, the equation <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math> describes a circle centered at the origin with radius <m:math><m:mn>3</m:mn><m:mo>.</m:mo></m:math> In three-dimensional space, this same equation represents a surface. Imagine copies of a circle stacked on top of each other centered on the <emphasis effect="italics">z</emphasis>-axis (<link target-id="CNX_Calc_Figure_12_06_001"/>), forming a hollow tube. We can then construct a cylinder from the set of lines parallel to the <emphasis effect="italics">z</emphasis>-axis passing through circle <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math> in the <emphasis effect="italics">xy</emphasis>-plane, as shown in the figure. In this way, any curve in one of the coordinate planes can be extended to become a surface.</para>
+<figure id="CNX_Calc_Figure_12_06_001">
+<media id="fs-id1163723995911" alt="This figure a 3-dimensional coordinate system. It has a right circular center with the z-axis through the center. The cylinder also has points labeled on the x and y axis at (3, 0, 0) and (0, 3, 0).">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_001.jpg"/>
+</media>
+<caption>In three-dimensional space, the graph of equation <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math> is a cylinder with radius <m:math><m:mn>3</m:mn></m:math> centered on the <emphasis effect="italics">z</emphasis>-axis. It continues indefinitely in the positive and negative directions.</caption>
+</figure>
+<note id="fs-id1163724018283">
+<title>Definition</title>
+<para id="fs-id1163724084014">A set of lines parallel to a given line passing through a given curve is known as a cylindrical surface, or <term>cylinder</term>. The parallel lines are called <term>rulings</term>.</para>
+</note>
+<para id="fs-id1163723137888">From this definition, we can see that we still have a cylinder in three-dimensional space, even if the curve is not a circle. Any curve can form a cylinder, and the rulings that compose the cylinder may be parallel to any given line (<link target-id="CNX_Calc_Figure_12_06_002"/>).</para>
+<figure id="CNX_Calc_Figure_12_06_002">
+<media id="fs-id1163723110659" alt="This figure has a 3-dimensional surface that begins on the y-axis and curves upward. There is also the x and z axes labeled.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_002.jpg"/>
+</media>
+<caption>In three-dimensional space, the graph of equation <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:math> is a cylinder, or a cylindrical surface with rulings parallel to the <emphasis effect="italics">y</emphasis>-axis.</caption>
+</figure>
+<example id="fs-id1163723172006">
+<exercise id="fs-id1163724075630">
+<problem id="fs-id1163723242452">
+<title>Graphing Cylindrical Surfaces</title>
+<para id="fs-id1163723656797">Sketch the graphs of the following cylindrical surfaces.</para>
+<list id="fs-id1163724075529" list-type="enumerated" number-style="lower-alpha">
+<item><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>25</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mi>y</m:mi></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi></m:mrow></m:math></item>
+</list>
+</problem>
+<solution id="fs-id1163723281261">
+<list id="fs-id1163723864671" list-type="enumerated" number-style="lower-alpha"><item>The variable <m:math><m:mi>y</m:mi></m:math> can take on any value without limit. Therefore, the lines ruling this surface are parallel to the <emphasis effect="italics">y</emphasis>-axis. The intersection of this surface with the <emphasis effect="italics">xz</emphasis>-plane forms a circle centered at the origin with radius <m:math><m:mn>5</m:mn></m:math> (see the following figure).<newline/>
+<figure id="CNX_Calc_Figure_12_06_003">
+<media id="fs-id1163723500635" alt="This figure is the 3-dimensional coordinate system. It has a right circular cylinder on its side with the y-axis in the center. The cylinder intersects the x-axis at (5, 0, 0). It also has two points of intersection labeled on the z-axis at (0, 0, 5) and (0, 0, -5).">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_003.jpg"/>
+</media>
+<caption>The graph of equation <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>25</m:mn></m:mrow></m:math> is a cylinder with radius <m:math><m:mn>5</m:mn></m:math> centered on the <emphasis effect="italics">y</emphasis>-axis.</caption>
+</figure></item>
+<item>In this case, the equation contains all three variables <m:math><m:mrow><m:mo>—</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>—</m:mo></m:mrow></m:math> so none of the variables can vary arbitrarily. The easiest way to visualize this surface is to use a computer graphing utility (see the following figure).<newline/>
+<figure id="CNX_Calc_Figure_12_06_004">
+<media id="fs-id1163724075555" alt="This figure has a surface in the first octant. The cross section of the solid is a parabola.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_006.jpg"/>
+</media>
+</figure></item>
+<item>In this equation, the variable <emphasis effect="italics">z</emphasis> can take on any value without limit. Therefore, the lines composing this surface are parallel to the <emphasis effect="italics">z</emphasis>-axis. The intersection of this surface with the <emphasis effect="italics">xy</emphasis>-plane outlines curve <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi></m:mrow></m:math> (see the following figure).<newline/>
+<figure id="CNX_Calc_Figure_12_06_005">
+<media id="fs-id1163723961721" alt="This figure is a three dimensional surface. A cross section of the surface parallel to the x y plane would be the sine curve.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_005.jpg"/>
+</media>
+<caption>The graph of equation <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi></m:mrow></m:math> is formed by a set of lines parallel to the <emphasis effect="italics">z</emphasis>-axis passing through curve <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi></m:mrow></m:math> in the <emphasis effect="italics">xy</emphasis>-plane.</caption>
+</figure></item>
+</list></solution>
+</exercise>
+</example>
+<note id="fs-id1163723728063" class="checkpoint">
+<exercise id="fs-id1163723686564">
+<problem id="fs-id1163724085856">
+<para id="fs-id1163723110472">Sketch or use a graphing tool to view the graph of the cylindrical surface defined by equation <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163724041811"><para id="fs-id1163723947258"><newline/>
+<media id="fs-id1163723968845" alt="This figure is a surface above the x y plane. A cross section of this surface parallel to the y z plane would be a parabola. The surface sits on top of the x y plane.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_004.jpg"/>
+</media></para>
+</solution>
+<commentary id="fs-id1163724042733" type="hint">
+<title>Hint</title>
+<para id="fs-id1163723959747">The variable <m:math><m:mi>x</m:mi></m:math> can take on any value without limit.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1163724027414">When sketching surfaces, we have seen that it is useful to sketch the intersection of the surface with a plane parallel to one of the coordinate planes. These curves are called traces. We can see them in the plot of the cylinder in <link target-id="CNX_Calc_Figure_12_06_007"/>.</para>
+<note id="fs-id1163723674486">
+<title>Definition</title>
+<para id="fs-id1163724024018">The <term>traces</term> of a surface are the cross-sections created when the surface intersects a plane parallel to one of the coordinate planes.</para>
+</note>
+<figure id="CNX_Calc_Figure_12_06_007">
+<media id="fs-id1163724109848" alt="This figure has two images. The first image is a surface. A cross section of the surface parallel to the x z plane would be a sine curve. The second image is the sine curve in the x y plane.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_007.jpg"/>
+</media>
+<caption>(a) This is one view of the graph of equation <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> (b) To find the trace of the graph in the <emphasis effect="italics">xz</emphasis>-plane, set <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> The trace is simply a two-dimensional sine wave.</caption>
+</figure>
+<para id="fs-id1163723110833">Traces are useful in sketching cylindrical surfaces. For a cylinder in three dimensions, though, only one set of traces is useful. Notice, in <link target-id="CNX_Calc_Figure_12_06_007"/>, that the trace of the graph of <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi></m:mrow></m:math> in the <emphasis effect="italics">xz</emphasis>-plane is useful in constructing the graph. The trace in the <emphasis effect="italics">xy</emphasis>-plane, though, is just a series of parallel lines, and the trace in the <emphasis effect="italics">yz</emphasis>-plane is simply one line.</para>
+<para id="fs-id1163724054768">Cylindrical surfaces are formed by a set of parallel lines. Not all surfaces in three dimensions are constructed so simply, however. We now explore more complex surfaces, and traces are an important tool in this investigation.</para>
+</section>
+<section id="fs-id1163723956780">
+<title>Quadric Surfaces</title>
+<para id="fs-id1163723819227">We have learned about surfaces in three dimensions described by first-order equations; these are planes. Some other common types of surfaces can be described by second-order equations. We can view these surfaces as three-dimensional extensions of the conic sections we discussed earlier: the ellipse, the parabola, and the hyperbola. We call these graphs quadric surfaces.</para>
+<note id="fs-id1163723281295">
+<title>Definition</title>
+<para id="fs-id1163723748626"><term>Quadric surfaces</term> are the graphs of equations that can be expressed in the form</para>
+<equation id="fs-id1163723760071" class="unnumbered"><label/><m:math><m:mrow><m:mi>A</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>B</m:mi><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>C</m:mi><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>D</m:mi><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>E</m:mi><m:mi>x</m:mi><m:mi>z</m:mi><m:mo>+</m:mo><m:mi>F</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mo>+</m:mo><m:mi>G</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>H</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>J</m:mi><m:mi>z</m:mi><m:mo>+</m:mo><m:mi>K</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+</note>
+<para id="fs-id1163723799136">When a quadric surface intersects a coordinate plane, the trace is a conic section.</para>
+<para id="fs-id1163723948496">An <term>ellipsoid</term> is a surface described by an equation of the form <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Set <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> to see the trace of the ellipsoid in the <emphasis effect="italics">yz</emphasis>-plane. To see the traces in the <emphasis effect="italics">xy</emphasis>- and <emphasis effect="italics">xz</emphasis>-planes, set <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> respectively. Notice that, if <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>,</m:mo></m:mrow></m:math> the trace in the <emphasis effect="italics">xy</emphasis>-plane is a circle. Similarly, if <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>,</m:mo></m:mrow></m:math> the trace in the <emphasis effect="italics">xz</emphasis>-plane is a circle and, if <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>,</m:mo></m:mrow></m:math> then the trace in the <emphasis effect="italics">yz</emphasis>-plane is a circle. A sphere, then, is an ellipsoid with <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>.</m:mo></m:mrow></m:math></para><example id="fs-id1163723094633">
+<exercise id="fs-id1163723947564">
+<problem id="fs-id1163723872410">
+<title>Sketching an Ellipsoid</title>
+<para id="fs-id1163723296029">Sketch the ellipsoid <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>3</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>5</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163723686626">
+<para id="fs-id1163723884248">Start by sketching the traces. To find the trace in the <emphasis effect="italics">xy</emphasis>-plane, set <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mtext>:</m:mtext></m:mrow></m:math> <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>3</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> (see <link target-id="CNX_Calc_Figure_12_06_008"/>). To find the other traces, first set <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and then set <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<figure id="CNX_Calc_Figure_12_06_008">
+<media id="fs-id1163723696208" alt="This figure has three images. The first image is an oval centered around the origin of the rectangular coordinate system. It intersects the x axis at -2 and 2. It intersects the y-axis at -3 and 3. The second image is an oval centered around the origin of the rectangular coordinate system. It intersects the x-axis at -2 and 2 and the y-axis at -5 and 5. The third image is an oval centered around the origin of the rectangular coordinate system. It intersects the x-axis at -3 and 3 and the y-axis at -5 and 5.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_008.jpg"/>
+</media>
+<caption>(a) This graph represents the trace of equation <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>3</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>5</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> in the <emphasis effect="italics">xy</emphasis>-plane, when we set <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> (b) When we set <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> we get the trace of the ellipsoid in the <emphasis effect="italics">xz</emphasis>-plane, which is an ellipse. (c) When we set <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> we get the trace of the ellipsoid in the <emphasis effect="italics">yz</emphasis>-plane, which is also an ellipse.</caption>
+</figure>
+<para id="fs-id1163724052242">Now that we know what traces of this solid look like, we can sketch the surface in three dimensions (<link target-id="CNX_Calc_Figure_12_06_009"/>).</para>
+<figure id="CNX_Calc_Figure_12_06_009">
+<media id="fs-id1163723710564" alt="This figure has two images. The first image is a vertical ellipse. There two curves drawn with dashed lines around the center horizontally and vertically to give the image a 3-dimensional shape. The second image is a solid elliptical shape with the center at the origin of the 3-dimensional coordinate system.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_009.jpg"/>
+</media>
+<caption>(a) The traces provide a framework for the surface. (b) The center of this ellipsoid is the origin.</caption>
+</figure>
+</solution>
+</exercise>
+</example>
+<para id="fs-id1163723236850">The trace of an ellipsoid is an ellipse in each of the coordinate planes. However, this does not have to be the case for all quadric surfaces. Many quadric surfaces have traces that are different kinds of conic sections, and this is usually indicated by the name of the surface. For example, if a surface can be described by an equation of the form <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>z</m:mi><m:mi>c</m:mi></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> then we call that surface an <term>elliptic paraboloid</term>. The trace in the <emphasis effect="italics">xy</emphasis>-plane is an ellipse, but the traces in the <emphasis effect="italics">xz</emphasis>-plane and <emphasis effect="italics">yz</emphasis>-plane are parabolas (<link target-id="CNX_Calc_Figure_12_06_010"/>). Other elliptic paraboloids can have other orientations simply by interchanging the variables to give us a different variable in the linear term of the equation <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>y</m:mi><m:mi>b</m:mi></m:mfrac></m:mrow></m:math> or <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>x</m:mi><m:mi>a</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+<figure id="CNX_Calc_Figure_12_06_010">
+<media id="fs-id1163723103613" alt="This figure is the image of a surface. It is in the 3-dimensional coordinate system on top of the origin. A cross section of this surface parallel to the x y plane would be an ellipse.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_010.jpg"/>
+</media>
+<caption>This quadric surface is called an <emphasis effect="italics">elliptic paraboloid</emphasis>.</caption>
+</figure>
+<example id="fs-id1163724066636">
+<exercise id="fs-id1163723199257">
+<problem id="fs-id1163723686452">
+<title>Identifying Traces of Quadric Surfaces</title>
+<para id="fs-id1163723304172">Describe the traces of the elliptic paraboloid <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>z</m:mi><m:mn>5</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163724177522">
+<para id="fs-id1163723685562">To find the trace in the <emphasis effect="italics">xy</emphasis>-plane, set <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mtext>:</m:mtext></m:mrow></m:math> <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> The trace in the plane <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> is simply one point, the origin. Since a single point does not tell us what the shape is, we can move up the <emphasis effect="italics">z</emphasis>-axis to an arbitrary plane to find the shape of other traces of the figure.</para>
+<para id="fs-id1163724052111">The trace in plane <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math> is the graph of equation <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> which is an ellipse. In the <emphasis effect="italics">xz</emphasis>-plane, the equation becomes <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> The trace is a parabola in this plane and in any plane with the equation <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1163723759812">In planes parallel to the <emphasis effect="italics">yz</emphasis>-plane, the traces are also parabolas, as we can see in the following figure.</para>
+<figure id="CNX_Calc_Figure_12_06_011">
+<media id="fs-id1163723140883" alt="This figure has four images. The first image is the image of a surface. It is in the 3-dimensional coordinate system on top of the origin. A cross section of this surface parallel to the x y plane would be an ellipse. A cross section parallel to the x z plane would be a parabola. A cross section of the surface parallel to the y z plane would be a parabola. The second image is the cross section parallel to the x y plane and is an ellipse. The third image is the cross section parallel to the x z plane and is a parabola. The fourth image is the cross section parallel to the y z plane and is a parabola.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_011.jpg"/>
+</media>
+<caption>(a) The paraboloid <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>z</m:mi><m:mn>5</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> (b) The trace in plane <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>.</m:mo></m:mrow></m:math> (c) The trace in the <emphasis effect="italics">xz</emphasis>-plane. (d) The trace in the <emphasis effect="italics">yz</emphasis>-plane.</caption>
+</figure>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1163723093395" class="checkpoint">
+<exercise id="fs-id1163724017684">
+<problem id="fs-id1163723741848">
+<para id="fs-id1163723336165">A hyperboloid of one sheet is any surface that can be described with an equation of the form <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Describe the traces of the hyperboloid of one sheet given by equation <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>3</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>5</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163723193119">
+<para id="fs-id1163724104708">The traces parallel to the <emphasis effect="italics">xy</emphasis>-plane are ellipses and the traces parallel to the <emphasis effect="italics">xz</emphasis>- and <emphasis effect="italics">yz</emphasis>-planes are hyperbolas. Specifically, the trace in the <emphasis effect="italics">xy</emphasis>-plane is ellipse <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>3</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the trace in the <emphasis effect="italics">xz</emphasis>-plane is hyperbola <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>3</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>5</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> and the trace in the <emphasis effect="italics">yz</emphasis>-plane is hyperbola <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>5</m:mn><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> (see the following figure).<newline/>
+<media id="fs-id1163724075232" alt="This figure has four images. The first image is an ellipse centered at the origin of a rectangular coordinate system. It intersects the x axis at -3 and 3. It intersects the y axis at -2 and 2. The second image is the graph of a hyperbola. It is two curves one opening in the negative x direction and a symmetric one in the positive x direction. The third image is the graph of a hyperbola in the y z plane. It is opening in the negative y direction and a symmetric curve opening in the positive y direction. The fourth image is a 3-dimensional surface. It top and bottom cross sections would be circular. A vertical intersection would be a hyperbola.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_012.jpg"/>
+</media></para>
+</solution>
+<commentary id="fs-id1163723080312" type="hint">
+<title>Hint</title>
+<para id="fs-id1163723955383">To find the traces in the coordinate planes, set each variable to zero individually.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1163724097574">Hyperboloids of one sheet have some fascinating properties. For example, they can be constructed using straight lines, such as in the sculpture in <link target-id="CNX_Calc_Figure_12_06_013"/>(a). In fact, cooling towers for nuclear power plants are often constructed in the shape of a hyperboloid. The builders are able to use straight steel beams in the construction, which makes the towers very strong while using relatively little material (<link target-id="CNX_Calc_Figure_12_06_013"/>(b)).</para>
+<figure id="CNX_Calc_Figure_12_06_013">
+<media id="fs-id1163723947101" alt="This figure has two images. The first image is a sculpture made of parallel sticks, curved together in a circle with a hyperbolic cross section. The second image is a nuclear power plant. The towers are hyperbolic shaped.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_020.jpg"/>
+</media>
+<caption>(a) A sculpture in the shape of a hyperboloid can be constructed of straight lines. (b) Cooling towers for nuclear power plants are often built in the shape of a hyperboloid.</caption>
+</figure>
+<example id="fs-id1163723955608">
+<exercise id="fs-id1163723363450">
+<problem id="fs-id1163723967492">
+<title>Chapter Opener: Finding the Focus of a Parabolic Reflector</title>
+<para id="fs-id1163723336226">Energy hitting the surface of a parabolic reflector is concentrated at the focal point of the reflector (<link target-id="CNX_Calc_Figure_12_06_014"/>). If the surface of a parabolic reflector is described by equation <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>z</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> where is the focal point of the reflector?</para>
+<figure id="CNX_Calc_Figure_12_06_014">
+<media id="fs-id1163723325261" alt="This figure has two images. The first image is a picture of satellite dishes with parabolic reflectors. The second image is a parabolic curve on a line segment. The bottom of the curve is at point V. There is a line segment perpendicular to the other line segment through V. There is a point on this line segment labeled F. There are 3 lines from F to the parabola, intersecting at P sub 1, P sub 2, and P sub 3. There are also three vertical lines from P sub 1 to Q sub 1, from P sub 2 to Q sub 2, and from P sub 3 to Q sub 3.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_021.jpg"/>
+</media>
+<caption>Energy reflects off of the parabolic reflector and is collected at the focal point. (credit: modification of CGP Grey, Wikimedia Commons)</caption>
+</figure>
+</problem>
+<solution id="fs-id1163724073493">
+<para id="fs-id1163724031162">Since <emphasis effect="italics">z</emphasis> is the first-power variable, the axis of the reflector corresponds to the <emphasis effect="italics">z</emphasis>-axis. The coefficients of <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> are equal, so the cross-section of the paraboloid perpendicular to the <emphasis effect="italics">z</emphasis>-axis is a circle. We can consider a trace in the <emphasis effect="italics">xz</emphasis>-plane or the <emphasis effect="italics">yz</emphasis>-plane; the result is the same. Setting <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> the trace is a parabola opening up along the <emphasis effect="italics">z</emphasis>-axis, with standard equation <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>p</m:mi><m:mi>z</m:mi><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mi>p</m:mi></m:math> is the focal length of the parabola. In this case, this equation becomes <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>100</m:mn><m:mo>·</m:mo><m:mfrac><m:mi>z</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>p</m:mi><m:mi>z</m:mi></m:mrow></m:math> or <m:math><m:mrow><m:mn>25</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>p</m:mi><m:mo>.</m:mo></m:mrow></m:math> So <emphasis effect="italics">p</emphasis> is <m:math><m:mrow><m:mn>6.25</m:mn></m:mrow></m:math> m, which tells us that the focus of the paraboloid is <m:math><m:mrow><m:mn>6.25</m:mn></m:mrow></m:math> m up the axis from the vertex. Because the vertex of this surface is the origin, the focal point is <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>6.25</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+</example>
+<para id="fs-id1163724130437">Seventeen standard quadric surfaces can be derived from the general equation</para>
+<equation id="fs-id1163723955203" class="unnumbered"><label/><m:math><m:mrow><m:mi>A</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>B</m:mi><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>C</m:mi><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>D</m:mi><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>E</m:mi><m:mi>x</m:mi><m:mi>z</m:mi><m:mo>+</m:mo><m:mi>F</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mo>+</m:mo><m:mi>G</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>H</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>J</m:mi><m:mi>z</m:mi><m:mo>+</m:mo><m:mi>K</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1163723954966">The following figures summarizes the most important ones.</para>
+<figure id="CNX_Calc_Figure_12_06_022">
+<media id="fs-id1163723987199" alt="This figure is of a table with two columns and three rows. The three rows represent the first 6 quadric surfaces: ellipsoid, hyperboloid of one sheet, and hyperboloid of two sheets. The equations and traces are in the first column. The second column has the graphs of the surfaces. The ellipsoid graph is a vertical oblong round shape. The hyperboloid of one sheet is circular on the top and the bottom and narrow in the middle. The hyperboloid in two sheets has two parabolic domes opposite of each other.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_022.jpg"/>
+</media>
+<caption>Characteristics of Common Quadratic Surfaces: Ellipsoid, <term>Hyperboloid of One Sheet</term>, <term>Hyperboloid of Two Sheets</term>.</caption>
+</figure>
+<figure id="CNX_Calc_Figure_12_06_023">
+<media id="fs-id1163723955559" alt="This figure is of a table with two columns and three rows. The three rows represent the second 6 quadric surfaces: elliptic cone, elliptic paraboloid, and hyperbolic paraboloid. The equations and traces are in the first column. The second column has the graphs of the surfaces. The elliptic cone has two cones touching at the points. The elliptic paraboloid is similar to a cone but oblong. The hyperbolic paraboloid has a bend in the middle similar to a saddle.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_023.jpg"/>
+</media>
+<caption>Characteristics of Common Quadratic Surfaces: <term>Elliptic Cone</term>, <term>Elliptic Paraboloid</term>, Hyperbolic Paraboloid.</caption>
+</figure>
+<example id="fs-id1163724069408">
+<exercise id="fs-id1163723987244">
+<problem id="fs-id1163723987246">
+<title>Identifying Equations of Quadric Surfaces</title>
+<para id="fs-id1163723988223">Identify the surfaces represented by the given equations.</para>
+<list id="fs-id1163723987949" list-type="enumerated" number-style="lower-alpha">
+<item><m:math><m:mrow><m:mn>16</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>9</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>16</m:mn><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>144</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>18</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>16</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>36</m:mn><m:mi>z</m:mi><m:mo>+</m:mo><m:mn>25</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+</list>
+</problem>
+<solution id="fs-id1163723986379">
+<list id="fs-id1163723967396" list-type="enumerated" number-style="lower-alpha">
+<item>The <m:math><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mi>z</m:mi></m:math> terms are all squared, and are all positive, so this is probably an ellipsoid. However, let’s put the equation into the standard form for an ellipsoid just to be sure. We have<newline/>
+<equation id="fs-id1163723988061" class="unnumbered"><label/><m:math><m:mrow><m:mn>16</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>9</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>16</m:mn><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>144</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Dividing through by 144 gives<newline/>
+<equation id="fs-id1163723472259" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>9</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>9</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+So, this is, in fact, an ellipsoid, centered at the origin.</item>
+<item>We first notice that the <m:math><m:mi>z</m:mi></m:math> term is raised only to the first power, so this is either an elliptic paraboloid or a hyperbolic paraboloid. We also note there are <m:math><m:mi>x</m:mi></m:math> terms and <m:math><m:mi>y</m:mi></m:math> terms that are not squared, so this quadric surface is not centered at the origin. We need to complete the square to put this equation in one of the standard forms. We have<newline/>
+<equation id="fs-id1163723947136" class="unnumbered"><label/><m:math><m:mtable><m:mtr/><m:mtr><m:mtd columnalign="right"><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>18</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>16</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>36</m:mn><m:mi>z</m:mi><m:mo>+</m:mo><m:mn>25</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>0</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>18</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>16</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>25</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>36</m:mn><m:mi>z</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>9</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>25</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>36</m:mn><m:mi>z</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>9</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>25</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>36</m:mn><m:mi>z</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>9</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>9</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>16</m:mn><m:mo>+</m:mo><m:mn>25</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>36</m:mn><m:mi>z</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>9</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>36</m:mn><m:mi>z</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mn>9</m:mn></m:mfrac></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>z</m:mi><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+This is an elliptic paraboloid centered at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></item>
+</list>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1163723712163" class="checkpoint">
+<exercise id="fs-id1163723712166">
+<problem id="fs-id1163723299172">
+<para id="fs-id1163723299175">Identify the surface represented by equation <m:math><m:mrow><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>z</m:mi><m:mo>−</m:mo><m:mn>10</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163724018368">
+<para id="fs-id1163724018370">Hyperboloid of one sheet, centered at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1163724056603" type="hint">
+<title>Hint</title>
+<para id="fs-id1163723762923">Look at the signs and powers of the <m:math><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>z</m:mi></m:mrow></m:math> terms.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+<section id="fs-id1163723287175" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id1163723145121" list-type="bulleted" bullet-style="bullet">
+<item>A set of lines parallel to a given line passing through a given curve is called a <emphasis effect="italics">cylinder</emphasis>, or a <emphasis effect="italics">cylindrical surface</emphasis>. The parallel lines are called <emphasis effect="italics">rulings</emphasis>.</item>
+<item>The intersection of a three-dimensional surface and a plane is called a <emphasis effect="italics">trace</emphasis>. To find the trace in the <emphasis effect="italics">xy</emphasis>-, <emphasis effect="italics">yz</emphasis>-, or <emphasis effect="italics">xz</emphasis>-planes, set <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>or</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> respectively.</item>
+<item>Quadric surfaces are three-dimensional surfaces with traces composed of conic sections. Every quadric surface can be expressed with an equation of the form <m:math><m:mrow><m:mi>A</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>B</m:mi><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>C</m:mi><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>D</m:mi><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>E</m:mi><m:mi>x</m:mi><m:mi>z</m:mi><m:mo>+</m:mo><m:mi>F</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mo>+</m:mo><m:mi>G</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>H</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>J</m:mi><m:mi>z</m:mi><m:mo>+</m:mo><m:mi>K</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>To sketch the graph of a quadric surface, start by sketching the traces to understand the framework of the surface.</item>
+<item>Important quadric surfaces are summarized in <link target-id="CNX_Calc_Figure_12_06_022"/> and <link target-id="CNX_Calc_Figure_12_06_023"/>.</item>
+</list>
+</section>
+<section id="fs-id1163723720323" class="section-exercises">
+<para id="fs-id1163723474584">For the following exercises, sketch and describe the cylindrical surface of the given equation.</para>
+<exercise id="fs-id1163723474587">
+<problem id="fs-id1163723280743">
+<para id="fs-id1163723280746"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163723474397">
+<para id="fs-id1163723474399">The surface is a cylinder with the rulings parallel to the <emphasis effect="italics">y</emphasis>-axis.<newline/>
+<media id="fs-id1163723499798" alt="This figure is a circular cylinder inside of a box. The outside edges of the 3-dimensional box are scaled to represent the 3-dimensional coordinate system.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_219.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723154569">
+<problem id="fs-id1163724041884">
+<para id="fs-id1163724041886"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1163724059935">
+<problem id="fs-id1163724072758">
+<para id="fs-id1163724072760"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163723306338">
+<para id="fs-id1163723306340">The surface is a cylinder with rulings parallel to the <emphasis effect="italics">y</emphasis>-axis.<newline/>
+<media id="fs-id1163723281456" alt="This figure is a surface inside of a box. Its cross section parallel to the x z plane would be a cosine curve. The outside edges of the 3-dimensional box are scaled to represent the 3-dimensional coordinate system.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_202.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723641286">
+<problem id="fs-id1163723641289">
+<para id="fs-id1163723862328"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1163723168688">
+<problem id="fs-id1163723168690">
+<para id="fs-id1163723497801"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163724097665">
+<para id="fs-id1163723216779">The surface is a cylinder with rulings parallel to the <emphasis effect="italics">x</emphasis>-axis.<newline/>
+<media id="fs-id1163724079607" alt="This figure is a surface inside of a box. Its cross section parallel to the y z plane would be an upside down parabola. The outside edges of the 3-dimensional box are scaled to represent the 3-dimensional coordinate system.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_207.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723762986">
+<problem id="fs-id1163724075400">
+<para id="fs-id1163724075403"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1163724078828">For the following exercises, the graph of a quadric surface is given.</para>
+<list id="fs-id1163724078831" list-type="enumerated" number-style="lower-alpha">
+<item>Specify the name of the quadric surface.</item>
+<item>Determine the axis of symmetry of the quadric surface.</item>
+</list>
+<exercise id="fs-id1163723216727">
+<problem id="fs-id1163723853928">
+<media id="fs-id1163723853930" alt="This figure is a surface inside of a box. Its cross section parallel to the y z plane would be an upside down parabola. The outside edges of the 3-dimensional box are scaled to represent the 3-dimensional coordinate system.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_215.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1163724050543">
+<para id="fs-id1163724050546">a. Cylinder; b. The <emphasis effect="italics">x</emphasis>-axis</para>
+</solution>
+</exercise>
+<exercise id="fs-id1163724096365">
+<problem id="fs-id1163724096367">
+<media id="fs-id1163723171092" alt="This figure is a surface inside of a box. It is an elliptical cone. The outside edges of the 3-dimensional box are scaled to represent the 3-dimensional coordinate system.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_214.jpg"/>
+</media>
+</problem>
+</exercise>
+<exercise id="fs-id1163724069517">
+<problem id="fs-id1163724069520">
+<media id="fs-id1163724016358" alt="This figure is a surface in the 3-dimensional coordinate system. There are two conical shapes facing away from each other. They have the x axis through the center.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_221.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1163724042559">
+<para id="fs-id1163724084032">a. Hyperboloid of two sheets; b. The <emphasis effect="italics">x</emphasis>-axis</para>
+</solution>
+</exercise>
+<exercise id="fs-id1163724119424">
+<problem id="fs-id1163724119426">
+<media id="fs-id1163724119428" alt="This figure is a surface in the 3-dimensional coordinate system. It is a parabolic surface with the x axis through the center.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_222.jpg"/>
+</media>
+</problem>
+</exercise>
+<para id="fs-id1163724080906">For the following exercises, match the given quadric surface with its corresponding equation in standard form.</para>
+<list id="fs-id1163723199423" list-type="enumerated" number-style="lower-alpha">
+<item><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>9</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>9</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>9</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+</list>
+<exercise id="fs-id1163723752009">
+<problem id="fs-id1163723752011">
+<para id="fs-id1163724050947">Hyperboloid of two sheets</para>
+</problem>
+<solution id="fs-id1163724050951">
+<para id="fs-id1163723967334">b.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723967339">
+<problem id="fs-id1163723798419">
+<para id="fs-id1163723798421">Ellipsoid</para>
+</problem>
+</exercise>
+<exercise id="fs-id1163724047772">
+<problem id="fs-id1163724047774">
+<para id="fs-id1163723186170">Elliptic paraboloid</para>
+</problem>
+<solution id="fs-id1163723186174">
+<para id="fs-id1163723759292">d.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723759297">
+<problem id="fs-id1163724080509">
+<para id="fs-id1163724080511">Hyperbolic paraboloid</para>
+</problem>
+</exercise>
+<exercise id="fs-id1163723474947">
+<problem id="fs-id1163723474949">
+<para id="fs-id1163723199383">Hyperboloid of one sheet</para>
+</problem>
+<solution id="fs-id1163723199388">
+<para id="fs-id1163724054306">a.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1163724054311">
+<problem id="fs-id1163724138316">
+<para id="fs-id1163724138318">Elliptic cone</para>
+</problem>
+</exercise>
+<para id="fs-id1163723473634">For the following exercises, rewrite the given equation of the quadric surface in standard form. Identify the surface.</para>
+<exercise id="fs-id1163724130325">
+<problem id="fs-id1163724130327">
+<para id="fs-id1163724130329"><m:math><m:mrow><m:mtext>−</m:mtext><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>36</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>36</m:mn><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163723311206">
+<para id="fs-id1163723311209"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>9</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> hyperboloid of one sheet with the <emphasis effect="italics">x</emphasis>-axis as its axis of symmetry</para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723804078">
+<problem id="fs-id1163723492290">
+<para id="fs-id1163723492292"><m:math><m:mrow><m:mn>−4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>25</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>100</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1163724130345">
+<problem id="fs-id1163724130347">
+<para id="fs-id1163724035926"><m:math><m:mrow><m:mn>−3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>5</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>10</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163724052342">
+<para id="fs-id1163724052344"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> hyperboloid of two sheets with the <emphasis effect="italics">y</emphasis>-axis as its axis of symmetry</para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723237240">
+<problem id="fs-id1163723237242">
+<para id="fs-id1163723096903"><m:math><m:mrow><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>6</m:mn><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>18</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1163723140518">
+<problem id="fs-id1163723140520">
+<para id="fs-id1163723311192"><m:math><m:mrow><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163723739840">
+<para id="fs-id1163723739842"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>5</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>5</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> hyperbolic paraboloid with the <emphasis effect="italics">y</emphasis>-axis as its axis of symmetry</para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723299201">
+<problem id="fs-id1163723299203">
+<para id="fs-id1163723479676"><m:math><m:mrow><m:mn>8</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>5</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>10</m:mn><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1163723959366">
+<problem id="fs-id1163723959368">
+<para id="fs-id1163723959370"><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>5</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>15</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163723476050">
+<para id="fs-id1163723476052"><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>5</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> ellipsoid</para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723268306">
+<problem id="fs-id1163723268308">
+<para id="fs-id1163723268310"><m:math><m:mrow><m:mn>63</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>7</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>9</m:mn><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>63</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1163723268256">
+<problem id="fs-id1163723325321">
+<para id="fs-id1163723325324"><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>5</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>8</m:mn><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163723328151">
+<para id="fs-id1163723328153"><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>40</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>8</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>5</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> elliptic cone with the <emphasis effect="italics">z</emphasis>-axis as its axis of symmetry</para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723981603">
+<problem id="fs-id1163723981605">
+<para id="fs-id1163723981607"><m:math><m:mrow><m:mn>5</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>20</m:mn><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1163723094496">
+<problem id="fs-id1163723268231">
+<para id="fs-id1163723268233"><m:math><m:mrow><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163723210132">
+<para id="fs-id1163723334423"><m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> elliptic paraboloid with the <emphasis effect="italics">x</emphasis>-axis as its axis of symmetry</para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723216853">
+<problem id="fs-id1163723216855">
+<para id="fs-id1163723216857"><m:math><m:mrow><m:mn>49</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>7</m:mn><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1163723200806">For the following exercises, find the trace of the given quadric surface in the specified plane of coordinates and sketch it.</para>
+<exercise id="fs-id1163723200811">
+<problem id="fs-id1163723200813">
+<para id="fs-id1163723210184"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163723145020">
+<para id="fs-id1163724147344">Parabola <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math><newline/>
+<media id="fs-id1163724031167" alt="This figure is the graph of an upside down parabola with its highest point at the origin of a rectangular coordinate system.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_223.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723154595">
+<problem id="fs-id1163723154597">
+<para id="fs-id1163723154600"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1163723334535">
+<problem id="fs-id1163723334537">
+<para id="fs-id1163723334539"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mn>−4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>25</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>100</m:mn><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163724136272">
+<para id="fs-id1163723473623">Ellipse <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math><newline/>
+<media id="fs-id1163724027022" alt="This figure is the graph of an ellipse centered at the origin of a rectangular coordinate system.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_206.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1163724164435">
+<problem id="fs-id1163724164437">
+<para id="fs-id1163724078810"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mn>−4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>25</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>100</m:mn><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1163724069302">
+<problem id="fs-id1163724069304">
+<para id="fs-id1163724069306"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163724036525">
+<para id="fs-id1163724036528">Ellipse <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math><newline/>
+<media id="fs-id1163724087489" alt="This figure is the graph of an ellipse centered at the origin of a rectangular coordinate system.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_209.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1163724087465">
+<problem id="fs-id1163724087467">
+<para id="fs-id1163724087469"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1163724147260">
+<problem id="fs-id1163724147262">
+<para id="fs-id1163724147265">Use the graph of the given quadric surface to answer the questions.</para>
+<media id="fs-id1163724147268" alt="This figure is a surface inside of a box. It is an oval solid on its side. The outside edges of the 3-dimensional box are scaled to represent the 3-dimensional coordinate system.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_226.jpg"/>
+</media>
+<list id="fs-id1163723497683" list-type="enumerated" number-style="lower-alpha">
+<item>Specify the name of the quadric surface.</item>
+<item>Which of the equations—<m:math><m:mrow><m:mn>16</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>9</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>36</m:mn><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>3600</m:mn><m:mo>,</m:mo><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>36</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>16</m:mn><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>3600</m:mn><m:mo>,</m:mo></m:mrow></m:math> or <m:math><m:mrow><m:mn>36</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>9</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>16</m:mn><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>3600</m:mn></m:mrow></m:math>—corresponds to the graph?</item>
+<item>Use b. to write the equation of the quadric surface in standard form.</item>
+</list>
+</problem>
+<solution id="fs-id1163724059750">
+<para id="fs-id1163724059752">a. Ellipsoid; b. The third equation; c. <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>400</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>225</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723094512">
+<problem id="fs-id1163723110268">
+<para id="fs-id1163723110270">Use the graph of the given quadric surface to answer the questions.</para>
+<media id="fs-id1163723110274" alt="This figure is a surface inside of a box. It is a parabolic solid opening up vertically. The outside edges of the 3-dimensional box are scaled to represent the 3-dimensional coordinate system.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_227.jpg"/>
+</media>
+<list id="fs-id1163724069885" list-type="enumerated" number-style="lower-alpha">
+<item>Specify the name of the quadric surface.</item>
+<item>Which of the equations—<m:math><m:mrow><m:mn>36</m:mn><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>36</m:mn><m:mi>z</m:mi><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>or</m:mtext><m:mspace width="0.2em"/><m:mo>−</m:mo><m:mn>36</m:mn><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>−81</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>—corresponds to the graph above?</item>
+<item>Use b. to write the equation of the quadric surface in standard form.</item>
+</list>
+</problem>
+</exercise>
+<para id="fs-id1163724054288">For the following exercises, the equation of a quadric surface is given.</para>
+<list id="fs-id1163724054291" list-type="enumerated" number-style="lower-alpha">
+<item>Use the method of completing the square to write the equation in standard form.</item>
+<item>Identify the surface.</item>
+</list>
+<exercise id="fs-id1163723277869">
+<problem id="fs-id1163723277871">
+<para id="fs-id1163723277873"><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>8</m:mn><m:mi>z</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163723478153">
+<para id="fs-id1163723497934">a. <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>z</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mn>8</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo></m:mrow></m:math> b. Cylinder centered at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> with rulings parallel to the <emphasis effect="italics">y</emphasis>-axis</para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723473648">
+<problem id="fs-id1163723478299">
+<para id="fs-id1163723478301"><m:math><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>z</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1163723494800">
+<problem id="fs-id1163723494802">
+<para id="fs-id1163723494804"><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>16</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>16</m:mn><m:mi>z</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163724184907">
+<para id="fs-id1163723328264">a. <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>z</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo></m:mrow></m:math> b. Hyperboloid of one sheet centered at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> with the <emphasis effect="italics">z</emphasis>-axis as its axis of symmetry</para>
+</solution>
+</exercise>
+<exercise id="fs-id1163724126729">
+<problem id="fs-id1163723210147">
+<para id="fs-id1163723210149"><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1163724105823">
+<problem id="fs-id1163724105825">
+<para id="fs-id1163723995456"><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163723294865">
+<para id="fs-id1163723478248">a. <m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo></m:mrow></m:math> b. Elliptic cone centered at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> with the <emphasis effect="italics">z</emphasis>-axis as its axis of symmetry</para>
+</solution>
+</exercise>
+<exercise id="fs-id1163724116664">
+<problem id="fs-id1163724116666">
+<para id="fs-id1163724116691"><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>12</m:mn><m:mi>z</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>37</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1163723210201">
+<problem id="fs-id1163723210203">
+<para id="fs-id1163723210205">Write the standard form of the equation of the ellipsoid centered at the origin that passes through points <m:math><m:mrow><m:mi>A</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mi>B</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:msqrt><m:mrow><m:mn>11</m:mn></m:mrow></m:msqrt><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163724159028">
+<para id="fs-id1163724159030"><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723497654">
+<problem id="fs-id1163723497656">
+<para id="fs-id1163723497658">Write the standard form of the equation of the ellipsoid centered at point <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> that passes through points <m:math><m:mrow><m:mi>A</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mi>B</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1163723328216">
+<problem id="fs-id1163723328218">
+<para id="fs-id1163723328220">Determine the intersection points of elliptic cone <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> with the line of symmetric equations <m:math><m:mrow><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>=</m:mo><m:mi>z</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1163724027062">
+<para id="fs-id1163723474872"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>13</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723237181">
+<problem id="fs-id1163723237183">
+<para id="fs-id1163723237186">Determine the intersection points of parabolic hyperboloid <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> with the line of parametric equations <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>t</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>t</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>19</m:mn><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>t</m:mi><m:mo>∈</m:mo><m:mo>ℝ</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1163723171158">
+<problem id="fs-id1163724080792">
+<para id="fs-id1163724080794">Find the equation of the quadric surface with points <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> that are equidistant from point <m:math><m:mrow><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and plane of equation <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Identify the surface.</para>
+</problem>
+<solution id="fs-id1163724052080">
+<para id="fs-id1163724052083"><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> elliptic paraboloid</para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723501874">
+<problem id="fs-id1163723501876">
+<para id="fs-id1163723501878">Find the equation of the quadric surface with points <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> that are equidistant from point <m:math><m:mrow><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and plane of equation <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>.</m:mo></m:mrow></m:math> Identify the surface.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1163724026997">
+<problem id="fs-id1163724026999">
+<para id="fs-id1163724027001">If the surface of a parabolic reflector is described by equation <m:math><m:mrow><m:mn>400</m:mn><m:mi>z</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> find the focal point of the reflector.</para>
+</problem>
+<solution id="fs-id1163723096824">
+<para id="fs-id1163723321289"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>100</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1163724077517">
+<problem id="fs-id1163724077519">
+<para id="fs-id1163724077521">Consider the parabolic reflector described by equation <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>20</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>20</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> Find its focal point.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1163723348442">
+<problem id="fs-id1163723348445">
+<para id="fs-id1163723348447">Show that quadric surface <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>z</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mi>z</m:mi><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> reduces to two parallel planes.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1163724054232">
+<problem id="fs-id1163724054234">
+<para id="fs-id1163724054236">Show that quadric surface <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>z</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mi>z</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> reduces to two parallel planes passing.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1163723474847">
+<problem id="fs-id1163723474849">
+<para id="fs-id1163723474851"><emphasis effect="bold">[T]</emphasis> The intersection between cylinder <m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> and sphere <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math> is called a <emphasis effect="italics">Viviani curve</emphasis>.</para>
+<media id="fs-id1163723475558" alt="This figure is a surface inside of a box. It is a sphere with a right circular cylinder through the sphere vertically. The outside edges of the 3-dimensional box are scaled to represent the 3-dimensional coordinate system.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_228.jpg"/>
+</media>
+<list id="fs-id1163723475569" list-type="enumerated" number-style="lower-alpha">
+<item>Solve the system consisting of the equations of the surfaces to find the equation of the intersection curve. (<emphasis effect="italics">Hint:</emphasis> Find <m:math><m:mi>x</m:mi></m:math> and <m:math><m:mi>y</m:mi></m:math> in terms of <m:math><m:mrow><m:mi>z</m:mi><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math></item>
+<item>Use a computer algebra system (CAS) to visualize the intersection curve on sphere <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
+</list>
+</problem>
+<solution id="fs-id1163723494751">
+<para id="fs-id1163724016372">a. <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>±</m:mo><m:mfrac><m:mi>z</m:mi><m:mn>2</m:mn></m:mfrac><m:msqrt><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>z</m:mi><m:mo>∈</m:mo><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>;</m:mo></m:mrow></m:math><newline/>
+b.<newline/>
+<media id="fs-id1163723216891" alt="This figure is a surface inside of a box. It is a sphere with a figure eight curve on the side of the sphere. The outside edges of the 3-dimensional box are scaled to represent the 3-dimensional coordinate system.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_229.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723496852">
+<problem id="fs-id1163723496854">
+<para id="fs-id1163723496856">Hyperboloid of one sheet <m:math><m:mrow><m:mn>25</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>25</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>25</m:mn></m:mrow></m:math> and elliptic cone <m:math><m:mrow><m:mn>−25</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>75</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> are represented in the following figure along with their intersection curves. Identify the intersection curves and find their equations (<emphasis effect="italics">Hint:</emphasis> Find <emphasis effect="italics">y</emphasis> from the system consisting of the equations of the surfaces.)</para>
+<media id="fs-id1163723474734" alt="This figure is a surface inside of a box. It is a hyperbolic paraboloid with a hyperbola of two sheets intersecting. The outside edges of the 3-dimensional box are scaled to represent the 3-dimensional coordinate system.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_230.jpg"/>
+</media>
+</problem>
+</exercise>
+<exercise id="fs-id1163723211079">
+<problem id="fs-id1163723211081">
+<para id="fs-id1163723211083"><emphasis effect="bold">[T]</emphasis> Use a CAS to create the intersection between cylinder <m:math><m:mrow><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>18</m:mn></m:mrow></m:math> and ellipsoid <m:math><m:mrow><m:mn>36</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>16</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>9</m:mn><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>144</m:mn><m:mo>,</m:mo></m:mrow></m:math> and find the equations of the intersection curves.</para>
+</problem>
+<solution id="fs-id1163723995311"><para id="fs-id1163723995312"><newline/>
+<media id="fs-id1163723995315" alt="This figure is a surface inside of a box. It is a solid oval with an elliptical cylinder vertically intersecting. The outside edges of the 3-dimensional box are scaled to represent the 3-dimensional coordinate system.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_231.jpg"/>
+</media><newline/>
+two ellipses of equations <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mfrac><m:mn>9</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> in planes <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mtext>±</m:mtext><m:mn>2</m:mn><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1163724044853">
+<problem id="fs-id1163724044855">
+<para id="fs-id1163724044858"><emphasis effect="bold">[T]</emphasis> A spheroid is an ellipsoid with two equal semiaxes. For instance, the equation of a spheroid with the <emphasis effect="italics">z</emphasis>-axis as its axis of symmetry is given by <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mi>a</m:mi></m:math> and <m:math><m:mi>c</m:mi></m:math> are positive real numbers. The spheroid is called <emphasis effect="italics">oblate</emphasis> if <m:math><m:mrow><m:mi>c</m:mi><m:mo>&lt;</m:mo><m:mi>a</m:mi><m:mo>,</m:mo></m:mrow></m:math> and <emphasis effect="italics">prolate</emphasis> for <m:math><m:mrow><m:mi>c</m:mi><m:mo>&gt;</m:mo><m:mi>a</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<list id="fs-id1163723500509" list-type="enumerated" number-style="lower-alpha">
+<item>The eye cornea is approximated as a prolate spheroid with an axis that is the eye, where <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>8.7</m:mn><m:mspace width="0.2em"/><m:mtext>mm and</m:mtext><m:mspace width="0.2em"/><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>9.6</m:mn><m:mspace width="0.2em"/><m:mtext>mm</m:mtext><m:mo>.</m:mo></m:mrow></m:math> Write the equation of the spheroid that models the cornea and sketch the surface.</item>
+<item>Give two examples of objects with prolate spheroid shapes.</item>
+</list>
+</problem>
+</exercise>
+<exercise id="fs-id1163723498077">
+<problem id="fs-id1163723498079">
+<para id="fs-id1163723498081"><emphasis effect="bold">[T]</emphasis> In cartography, Earth is approximated by an oblate spheroid rather than a sphere. The radii at the equator and poles are approximately <m:math><m:mrow><m:mn>3963</m:mn></m:mrow></m:math> mi and <m:math><m:mrow><m:mn>3950</m:mn></m:mrow></m:math> mi, respectively.</para>
+<list id="fs-id1163723498100" list-type="enumerated" number-style="lower-alpha">
+<item>Write the equation in standard form of the ellipsoid that represents the shape of Earth. Assume the center of Earth is at the origin and that the trace formed by plane <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> corresponds to the equator.</item>
+<item>Sketch the graph.</item>
+<item>Find the equation of the intersection curve of the surface with plane <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1000</m:mn></m:mrow></m:math> that is parallel to the <emphasis effect="italics">xy</emphasis>-plane. The intersection curve is called a <emphasis effect="italics">parallel</emphasis>.</item>
+<item>Find the equation of the intersection curve of the surface with plane <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> that passes through the <emphasis effect="italics">z</emphasis>-axis. The intersection curve is called a <emphasis effect="italics">meridian</emphasis>.</item>
+</list>
+</problem>
+<solution id="fs-id1163723477604">
+<para id="fs-id1163724014636">a. <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mn>3963</m:mn></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mn>3963</m:mn></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mn>3950</m:mn></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo></m:mrow></m:math><newline/>
+b.<newline/>
+<media id="fs-id1163723477618" alt="This figure is a surface inside of a box. It is a sphere. The outside edges of the 3-dimensional box are scaled to represent the 3-dimensional coordinate system.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_233.jpg"/>
+</media>;<newline/>
+c. The intersection curve is the ellipse of equation <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mn>3963</m:mn></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mn>3963</m:mn></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2950</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4950</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:msup><m:mrow><m:mn>3950</m:mn></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> and the intersection is an ellipse.; d. The intersection curve is the ellipse of equation <m:math><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mn>3963</m:mn></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mn>3950</m:mn></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723981566">
+<problem id="fs-id1163724159067">
+<para id="fs-id1163724159069"><emphasis effect="bold">[T]</emphasis> A set of buzzing stunt magnets (or “rattlesnake eggs”) includes two sparkling, polished, superstrong spheroid-shaped magnets well-known for children’s entertainment. Each magnet is <m:math><m:mrow><m:mn>1.625</m:mn></m:mrow></m:math> in. long and <m:math><m:mrow><m:mn>0.5</m:mn></m:mrow></m:math> in. wide at the middle. While tossing them into the air, they create a buzzing sound as they attract each other.</para>
+<list id="fs-id1163724159090" list-type="enumerated" number-style="lower-alpha">
+<item>Write the equation of the prolate spheroid centered at the origin that describes the shape of one of the magnets.</item>
+<item>Write the equations of the prolate spheroids that model the shape of the buzzing stunt magnets. Use a CAS to create the graphs.</item>
+</list>
+</problem>
+</exercise>
+<exercise id="fs-id1163723089980">
+<problem id="fs-id1163723089982">
+<para id="fs-id1163723089984"><emphasis effect="bold">[T]</emphasis> A heart-shaped surface is given by equation <m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mfrac><m:mn>9</m:mn><m:mn>4</m:mn></m:mfrac><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>z</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mfrac><m:mn>9</m:mn><m:mrow><m:mn>80</m:mn></m:mrow></m:mfrac><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>z</m:mi><m:mn>3</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<list id="fs-id1163723473454" list-type="enumerated" number-style="lower-alpha">
+<item>Use a CAS to graph the surface that models this shape.</item>
+<item>Determine and sketch the trace of the heart-shaped surface on the <emphasis effect="italics">xz</emphasis>-plane.</item>
+</list>
+</problem>
+<solution id="fs-id1163723473476">
+<para id="fs-id1163723473478">a.<newline/>
+<media id="fs-id1163723477446" alt="This figure is a surface inside of a box. It is a heart. The outside edges of the 3-dimensional box are scaled to represent the 3-dimensional coordinate system.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_237.jpg"/>
+</media><newline/>
+b. The intersection curve is <m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>z</m:mi><m:mn>3</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math><newline/>
+<media id="fs-id1163723494109" alt="This figure is a curve on a rectangular coordinate system. It is the shape of a heart centered about the y-axis.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_238.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1163723494120">
+<problem id="fs-id1163723494123">
+<para id="fs-id1163723494125"><emphasis effect="bold">[T]</emphasis> The ring torus symmetric about the <emphasis effect="italics">z</emphasis>-axis is a special type of surface in topology and its equation is given by <m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>R</m:mi><m:mo>&gt;</m:mo><m:mi>r</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> The numbers <m:math><m:mi>R</m:mi></m:math> and <m:math><m:mi>r</m:mi></m:math> are called are the major and minor radii, respectively, of the surface. The following figure shows a ring torus for which <m:math><m:mrow><m:mi>R</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<media id="fs-id1163723479786" alt="This figure is a surface inside of a box. It is a torus, a doughnut shape. The outside edges of the 3-dimensional box are scaled to represent the 3-dimensional coordinate system.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_239.jpg"/>
+</media>
+<list id="fs-id1163723479796" list-type="enumerated" number-style="lower-alpha">
+<item>Write the equation of the ring torus with <m:math><m:mrow><m:mi>R</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> and use a CAS to graph the surface. Compare the graph with the figure given.</item>
+<item>Determine the equation and sketch the trace of the ring torus from a. on the <emphasis effect="italics">xy</emphasis>-plane.</item>
+<item>Give two examples of objects with ring torus shapes.</item>
+</list>
+</problem>
+</exercise>
+</section>
+ </content>
+<glossary>
+<definition id="fs-id1163723474257">
+<term>cylinder</term>
+<meaning id="fs-id1163723474262">a set of lines parallel to a given line passing through a given curve</meaning>
+</definition>
+<definition id="fs-id1163723474266">
+<term>ellipsoid</term>
+<meaning id="fs-id1163723474272">a three-dimensional surface described by an equation of the form <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo></m:mrow></m:math> all traces of this surface are ellipses</meaning>
+</definition>
+<definition id="fs-id1163723495793">
+<term>elliptic cone</term>
+<meaning id="fs-id1163723495798">a three-dimensional surface described by an equation of the form <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo></m:mrow></m:math> traces of this surface include ellipses and intersecting lines</meaning>
+</definition>
+<definition id="fs-id1163723497222">
+<term>elliptic paraboloid</term>
+<meaning id="fs-id1163723497227">a three-dimensional surface described by an equation of the form <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>;</m:mo></m:mrow></m:math> traces of this surface include ellipses and parabolas</meaning>
+</definition>
+<definition id="fs-id1163723494568">
+<term>hyperboloid of one sheet</term>
+<meaning id="fs-id1163723494573">a three-dimensional surface described by an equation of the form <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo></m:mrow></m:math> traces of this surface include ellipses and hyperbolas</meaning>
+</definition>
+<definition id="fs-id1163724080720">
+<term>hyperboloid of two sheets</term>
+<meaning id="fs-id1163724080725">a three-dimensional surface described by an equation of the form <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo></m:mrow></m:math> traces of this surface include ellipses and hyperbolas</meaning>
+</definition>
+<definition id="fs-id1163723500562">
+<term>quadric surfaces</term>
+<meaning id="fs-id1163723500568">surfaces in three dimensions having the property that the traces of the surface are conic sections (ellipses, hyperbolas, and parabolas)</meaning>
+</definition>
+<definition id="fs-id1163723500573">
+<term>rulings</term>
+<meaning id="fs-id1163723500579">parallel lines that make up a cylindrical surface</meaning>
+</definition>
+<definition id="fs-id1163723500583">
+<term>trace</term>
+<meaning id="fs-id1163723500588">the intersection of a three-dimensional surface with a coordinate plane</meaning>
+</definition>
+</glossary>
+</document>

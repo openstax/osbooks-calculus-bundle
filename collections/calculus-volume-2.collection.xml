@@ -1,0 +1,392 @@
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en">
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>col11965</md:content-id>
+  <md:title>Calculus Volume 2</md:title>
+  
+  
+  <md:license url="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike License 4.0</md:license>
+  <md:language>en</md:language>
+
+  
+
+  
+  
+  
+  
+  
+
+  <md:uuid>1d39a348-071f-4537-85b6-c98912458c3c</md:uuid>
+<md:slug>calculus-volume-2</md:slug>
+</metadata>
+
+  <col:content>
+    
+      <col:module document="m60028"/>
+        
+      
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Integration</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m53623"/>
+        
+      
+    
+    
+      <col:module document="m53624"/>
+        
+      
+    
+    
+      <col:module document="m53631"/>
+        
+      
+    
+    
+      <col:module document="m53632"/>
+        
+      
+    
+    
+      <col:module document="m53633"/>
+        
+      
+    
+    
+      <col:module document="m53634"/>
+        
+      
+    
+    
+      <col:module document="m53635"/>
+        
+      
+    
+    
+      <col:module document="m53636"/>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Applications of Integration</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m53638"/>
+        
+      
+    
+    
+      <col:module document="m53640"/>
+        
+      
+    
+    
+      <col:module document="m53642"/>
+        
+      
+    
+    
+      <col:module document="m53643"/>
+        
+      
+    
+    
+      <col:module document="m53644"/>
+        
+      
+    
+    
+      <col:module document="m53648"/>
+        
+      
+    
+    
+      <col:module document="m53649"/>
+        
+      
+    
+    
+      <col:module document="m53650"/>
+        
+      
+    
+    
+      <col:module document="m53651"/>
+        
+      
+    
+    
+      <col:module document="m53653"/>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Techniques of Integration</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m53654"/>
+        
+      
+    
+    
+      <col:module document="m53656"/>
+        
+      
+    
+    
+      <col:module document="m53657"/>
+        
+      
+    
+    
+      <col:module document="m53659"/>
+        
+      
+    
+    
+      <col:module document="m53681"/>
+        
+      
+    
+    
+      <col:module document="m53684"/>
+        
+      
+    
+    
+      <col:module document="m53685"/>
+        
+      
+    
+    
+      <col:module document="m53686"/>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Introduction to Differential Equations</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m53696"/>
+        
+      
+    
+    
+      <col:module document="m53697"/>
+        
+      
+    
+    
+      <col:module document="m53701"/>
+        
+      
+    
+    
+      <col:module document="m53704"/>
+        
+      
+    
+    
+      <col:module document="m53710"/>
+        
+      
+    
+    
+      <col:module document="m53713"/>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Sequences and Series</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m53756"/>
+        
+      
+    
+    
+      <col:module document="m53758"/>
+        
+      
+    
+    
+      <col:module document="m53739"/>
+        
+      
+    
+    
+      <col:module document="m53754"/>
+        
+      
+    
+    
+      <col:module document="m53751"/>
+        
+      
+    
+    
+      <col:module document="m53743"/>
+        
+      
+    
+    
+      <col:module document="m53747"/>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Power Series</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m53760"/>
+        
+      
+    
+    
+      <col:module document="m53761"/>
+        
+      
+    
+    
+      <col:module document="m53762"/>
+        
+      
+    
+    
+      <col:module document="m53817"/>
+        
+      
+    
+    
+      <col:module document="m53769"/>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Parametric Equations and Polar Coordinates</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m53831"/>
+        
+      
+    
+    
+      <col:module document="m53834"/>
+        
+      
+    
+    
+      <col:module document="m53850"/>
+        
+      
+    
+    
+      <col:module document="m53852"/>
+        
+      
+    
+    
+      <col:module document="m53840"/>
+        
+      
+    
+    
+      <col:module document="m53846"/>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      <col:module document="m54049"/>
+        
+      
+    
+    
+      <col:module document="m54050"/>
+        
+      
+    
+    
+      <col:module document="m54053"/>
+        
+      
+    
+  </col:content>
+</col:collection>

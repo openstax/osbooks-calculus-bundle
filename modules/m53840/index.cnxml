@@ -1,0 +1,642 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Area and Arc Length in Polar Coordinates</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53840</md:content-id>
+  <md:title>Area and Arc Length in Polar Coordinates</md:title>
+  <md:abstract><list>
+<item>Apply the formula for area of a region in polar coordinates.</item>
+<item>Determine the arc length of a polar curve.</item>
+</list></md:abstract>
+  <md:uuid>eabb66a7-67eb-4794-b0ac-754f1aedfbfd</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-id1167793900829">In the rectangular coordinate system, the definite integral provides a way to calculate the area under a curve. In particular, if we have a function <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> defined from <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:mrow></m:math> to <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>b</m:mi></m:mrow></m:math> where <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math> on this interval, the area between the curve and the <emphasis effect="italics">x</emphasis>-axis is given by <m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> This fact, along with the formula for evaluating this integral, is summarized in the Fundamental Theorem of Calculus. Similarly, the arc length of this curve is given by <m:math><m:mrow><m:mi>L</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> In this section, we study analogous formulas for area and arc length in the polar coordinate system.</para>
+<section id="fs-id1167794066096">
+<title>Areas of Regions Bounded by Polar Curves</title>
+<para id="fs-id1167794052239">We have studied the formulas for area under a curve defined in rectangular coordinates and parametrically defined curves. Now we turn our attention to deriving a formula for the area of a region bounded by a polar curve. Recall that the proof of the Fundamental Theorem of Calculus used the concept of a Riemann sum to approximate the area under a curve by using rectangles. For polar curves we use the Riemann sum again, but the rectangles are replaced by sectors of a circle.</para>
+<para id="fs-id1167794039944">Consider a curve defined by the function <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>α</m:mi><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mi>β</m:mi><m:mo>.</m:mo></m:mrow></m:math> Our first step is to partition the interval <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>α</m:mi><m:mo>,</m:mo><m:mi>β</m:mi><m:mo stretchy="false">]</m:mo></m:mrow></m:math> into <emphasis effect="italics">n</emphasis> equal-width subintervals. The width of each subinterval is given by the formula <m:math><m:mrow><m:mtext>Δ</m:mtext><m:mi>θ</m:mi><m:mo>=</m:mo><m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>β</m:mi><m:mo>−</m:mo><m:mi>α</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mtext>/</m:mtext><m:mi>n</m:mi></m:mrow><m:mo>,</m:mo></m:mrow></m:math> and the <emphasis effect="italics">i</emphasis>th partition point <m:math><m:mrow><m:msub><m:mi>θ</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:math> is given by the formula <m:math><m:mrow><m:msub><m:mi>θ</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:mi>α</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mtext>Δ</m:mtext><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow></m:math> Each partition point <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:msub><m:mi>θ</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:math> defines a line with slope <m:math><m:mrow><m:mtext>tan</m:mtext><m:msub><m:mi>θ</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:math> passing through the pole as shown in the following graph.</para>
+<figure id="CNX_Calc_Figure_11_04_001">
+<media id="fs-id1167793984088" alt="On the polar coordinate plane, a curve is drawn in the first quadrant, and there are rays from the origin that intersect this curve at a regular interval. Every time one of these rays intersects the curve, a perpendicular line is made from the ray to the next ray. The first instance of a ray-curve intersection is labeled θ = α; the last instance is labeled θ = β. The intervening ones are marked θ1, θ2, …, θn−1.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_11_04_001.jpg"/>
+</media>
+<caption>A partition of a typical curve in polar coordinates.</caption>
+</figure>
+<para id="fs-id1167793870040">The line segments are connected by arcs of constant radius. This defines sectors whose areas can be calculated by using a geometric formula. The area of each sector is then used to approximate the area between successive line segments. We then sum the areas of the sectors to approximate the total area. This approach gives a Riemann sum approximation for the total area. The formula for the area of a sector of a circle is illustrated in the following figure.</para>
+<figure id="CNX_Calc_Figure_11_04_002">
+<media id="fs-id1167794172549" alt="A circle is drawn with radius r and a sector of angle θ. It is noted that A = (1/2) θ r2.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_11_04_002.jpg"/>
+</media>
+<caption>The area of a sector of a circle is given by <m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>θ</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></caption>
+</figure>
+<para id="fs-id1167793268927">Recall that the area of a circle is <m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> When measuring angles in radians, 360 degrees is equal to <m:math><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:math> radians. Therefore a fraction of a circle can be measured by the central angle <m:math><m:mrow><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow></m:math> The fraction of the circle is given by <m:math><m:mrow><m:mfrac><m:mi>θ</m:mi><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> so the area of the sector is this fraction multiplied by the total area:</para>
+<equation id="fs-id1167793784066" class="unnumbered"><label/><m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>θ</m:mi><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mi>π</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>θ</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167794210718">Since the radius of a typical sector in <link target-id="CNX_Calc_Figure_11_04_001"/> is given by <m:math><m:mrow><m:msub><m:mi>r</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>θ</m:mi><m:mi>i</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> the area of the <emphasis effect="italics">i</emphasis>th sector is given by</para>
+<equation id="fs-id1167794097560" class="unnumbered"><label/><m:math><m:mrow><m:msub><m:mi>A</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>Δ</m:mtext><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>θ</m:mi><m:mi>i</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793834620">Therefore a Riemann sum that approximates the area is given by</para>
+<equation id="fs-id1167794146111" class="unnumbered"><label/><m:math><m:mrow><m:msub><m:mi>A</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>n</m:mi></m:munderover><m:mrow><m:msub><m:mi>A</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:mstyle><m:mo>≈</m:mo><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>n</m:mi></m:munderover><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>Δ</m:mtext><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>θ</m:mi><m:mi>i</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793822534">We take the limit as <m:math><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:math> to get the exact area:</para>
+<equation id="fs-id1167793983076" class="unnumbered"><label/><m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:msub><m:mi>A</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>α</m:mi><m:mi>β</m:mi></m:msubsup><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793901462">This gives the following theorem.</para>
+<note id="fs-id1167794048381" class="theorem">
+<title>Area of a Region Bounded by a Polar Curve</title>
+<para id="fs-id1167794045635">Suppose <m:math><m:mi>f</m:mi></m:math> is continuous and nonnegative on the interval <m:math><m:mrow><m:mi>α</m:mi><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mi>β</m:mi></m:mrow></m:math> with <m:math><m:mrow><m:mn>0</m:mn><m:mo>&lt;</m:mo><m:mi>β</m:mi><m:mo>−</m:mo><m:mi>α</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo></m:mrow></m:math> The area of the region bounded by the graph of <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> between the radial lines <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>α</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>β</m:mi></m:mrow></m:math> is</para>
+<equation id="fs-id1167793300455"><m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>α</m:mi><m:mi>β</m:mi></m:msubsup><m:mrow><m:msup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>α</m:mi><m:mi>β</m:mi></m:msubsup><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+</note>
+<example id="fs-id1167793900982">
+<exercise id="fs-id1167793905656">
+<problem id="fs-id1167794077086">
+<title>Finding an Area of a Polar Region</title>
+<para id="fs-id1167794054546">Find the area of one petal of the rose defined by the equation <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793966078">
+<para id="fs-id1167793970649">The graph of <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> follows.</para>
+<figure id="CNX_Calc_Figure_11_04_003">
+<media id="fs-id1167794201824" alt="A four-petaled rose with furthest extent 3 from the origin at π/4, 3π/4, 5π/4, and 7π/4.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_11_04_003.jpg"/>
+</media>
+<caption>The graph of <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></caption>
+</figure>
+<para id="fs-id1167793369342">When <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> we have <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> The next value for which <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> is <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math> This can be seen by solving the equation <m:math><m:mrow><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> for <m:math><m:mrow><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow></m:math> Therefore the values <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> to <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:math> trace out the first petal of the rose. To find the area inside this petal, use <link target-id="fs-id1167793300455"/> with <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>β</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn><m:mtext>:</m:mtext></m:mrow></m:math></para>
+<equation id="fs-id1167793990528" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>A</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>α</m:mi><m:mi>β</m:mi></m:msubsup><m:mrow><m:msup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:msubsup><m:mrow><m:msup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:msubsup><m:mrow><m:mn>9</m:mn><m:mspace width="0.2em"/><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1167794034637">To evaluate this integral, use the formula <m:math><m:mrow><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>α</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>α</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:math> with <m:math><m:mrow><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>θ</m:mi><m:mtext>:</m:mtext></m:mrow></m:math></para>
+<equation id="fs-id1167793876806" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>A</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:msubsup><m:mrow><m:mn>9</m:mn><m:mspace width="0.2em"/><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mn>9</m:mn><m:mn>2</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:mfrac><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mn>9</m:mn><m:mn>4</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:msubsup><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mn>9</m:mn><m:mn>4</m:mn></m:mfrac><m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mrow><m:mi>θ</m:mi><m:mo>−</m:mo><m:mfrac><m:mrow><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mrow><m:mn>0</m:mn><m:mrow><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:msubsup></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mn>9</m:mn><m:mn>4</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>9</m:mn><m:mn>4</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>−</m:mo><m:mfrac><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>9</m:mn><m:mi>π</m:mi></m:mrow><m:mn>8</m:mn></m:mfrac><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation></solution>
+</exercise>
+</example>
+<note id="fs-id1167794172661" class="checkpoint">
+<exercise id="fs-id1167793268934">
+<problem id="fs-id1167793270882">
+<para id="fs-id1167794332423">Find the area inside the cardioid defined by the equation <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793879578">
+<para id="fs-id1167793238053"><m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1167794002817" type="hint">
+<title>Hint</title>
+<para id="fs-id1167794288181">Use <link target-id="fs-id1167793300455"/>. Be sure to determine the correct limits of integration before evaluating.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1167794059915"><link target-id="fs-id1167793900982"/> involved finding the area inside one curve. We can also use <link target-id="fs-id1167794048381"/> to find the area between two polar curves. However, we often need to find the points of intersection of the curves and determine which function defines the outer curve or the inner curve between these two points.</para>
+<example id="fs-id1167793240668">
+<exercise id="fs-id1167793260217">
+<problem id="fs-id1167793261062">
+<title>Finding the Area between Two Polar Curves</title>
+<para id="fs-id1167794334368">Find the area outside the cardioid <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math> and inside the circle <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794038690">
+<para id="fs-id1167793969730">First draw a graph containing both curves as shown.</para>
+<figure id="CNX_Calc_Figure_11_04_004">
+<media id="fs-id1167793299712" alt="A cardioid with equation r = 2 + 2 sinθ is shown, so it has its upper heart part at the origin and the rest of the cardioid is pointed up. There is a circle with radius 6 centered at (3, π/2). The area above the cardioid but below the circle is shaded orange.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_11_04_004.jpg"/>
+</media>
+<caption>The region between the curves <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow></m:math></caption>
+</figure>
+<para id="fs-id1167793269240">To determine the limits of integration, first find the points of intersection by setting the two functions equal to each other and solving for <m:math><m:mrow><m:mi>θ</m:mi><m:mtext>:</m:mtext></m:mrow></m:math></para>
+<equation id="fs-id1167794188708" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mn>6</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>2</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1167793262008">This gives the solutions <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> and <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>π</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> which are the limits of integration. The circle <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math> is the red graph, which is the outer function, and the cardioid <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math> is the blue graph, which is the inner function. To calculate the area between the curves, start with the area inside the circle between <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> and <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>π</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> then subtract the area inside the cardioid between <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> and <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>π</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac><m:mtext>:</m:mtext></m:mrow></m:math></para>
+<equation id="fs-id1167794331207" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>A</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mtext>circle</m:mtext><m:mo>−</m:mo><m:mtext>cardioid</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>6</m:mn></m:mrow></m:mrow><m:mrow><m:mrow><m:mrow><m:mn>5</m:mn><m:mi>π</m:mi></m:mrow><m:mtext>/</m:mtext><m:mn>6</m:mn></m:mrow></m:mrow></m:msubsup><m:mrow><m:msup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>6</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>6</m:mn></m:mrow></m:mrow><m:mrow><m:mrow><m:mrow><m:mn>5</m:mn><m:mi>π</m:mi></m:mrow><m:mtext>/</m:mtext><m:mn>6</m:mn></m:mrow></m:mrow></m:msubsup><m:mrow><m:msup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>6</m:mn></m:mrow></m:mrow><m:mrow><m:mrow><m:mrow><m:mn>5</m:mn><m:mi>π</m:mi></m:mrow><m:mtext>/</m:mtext><m:mn>6</m:mn></m:mrow></m:mrow></m:msubsup><m:mrow><m:mn>36</m:mn><m:mspace width="0.2em"/><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>6</m:mn></m:mrow></m:mrow><m:mrow><m:mrow><m:mrow><m:mn>5</m:mn><m:mi>π</m:mi></m:mrow><m:mtext>/</m:mtext><m:mn>6</m:mn></m:mrow></m:mrow></m:msubsup><m:mrow><m:mo>[</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mspace width="0.2em"/><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>θ</m:mi><m:mo>]</m:mo><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>18</m:mn><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>6</m:mn></m:mrow></m:mrow><m:mrow><m:mrow><m:mrow><m:mn>5</m:mn><m:mi>π</m:mi></m:mrow><m:mtext>/</m:mtext><m:mn>6</m:mn></m:mrow></m:mrow></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:mfrac><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>−</m:mo><m:mn>2</m:mn><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>6</m:mn></m:mrow></m:mrow><m:mrow><m:mrow><m:mrow><m:mn>5</m:mn><m:mi>π</m:mi></m:mrow><m:mtext>/</m:mtext><m:mn>6</m:mn></m:mrow></m:mrow></m:msubsup><m:mrow><m:mo>[</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>]</m:mo><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>9</m:mn><m:msubsup><m:mrow><m:mo>[</m:mo><m:mrow><m:mi>θ</m:mi><m:mo>−</m:mo><m:mfrac><m:mrow><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>]</m:mo></m:mrow><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>6</m:mn></m:mrow><m:mrow><m:mn>5</m:mn><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>6</m:mn></m:mrow></m:msubsup><m:mo>−</m:mo><m:mn>2</m:mn><m:msubsup><m:mrow><m:mo>[</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>θ</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>−</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>−</m:mo><m:mfrac><m:mrow><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>]</m:mo></m:mrow><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>6</m:mn></m:mrow><m:mrow><m:mn>5</m:mn><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>6</m:mn></m:mrow></m:msubsup></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>9</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>π</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>9</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>6</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mspace width="0.4em"/><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>π</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>π</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mi>π</m:mi><m:mn>6</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>π</m:mi><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167793361537" class="checkpoint">
+<exercise id="fs-id1167793361540">
+<problem id="fs-id1167793361542">
+<para id="fs-id1167793361544">Find the area inside the circle <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math> and outside the circle <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794122477">
+<para id="fs-id1167794122480"><m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>4</m:mn><m:mi>π</m:mi></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>+</m:mo><m:mn>4</m:mn><m:msqrt><m:mn>3</m:mn></m:msqrt></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1167793240831" type="hint">
+<title>Hint</title>
+<para id="fs-id1167794125995">Use <link target-id="fs-id1167793300455"/> and take advantage of symmetry.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1167794126005">In <link target-id="fs-id1167793240668"/> we found the area inside the circle and outside the cardioid by first finding their intersection points. Notice that solving the equation directly for <m:math><m:mi>θ</m:mi></m:math> yielded two solutions: <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> and <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>π</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> However, in the graph there are three intersection points. The third intersection point is the origin. The reason why this point did not show up as a solution is because the origin is on both graphs but for different values of <m:math><m:mrow><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow></m:math> For example, for the cardioid we get</para>
+<equation id="fs-id1167793292188" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>0</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>−1</m:mn><m:mo>,</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1167794125633">so the values for <m:math><m:mi>θ</m:mi></m:math> that solve this equation are <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>π</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>n</m:mi><m:mi>π</m:mi><m:mo>,</m:mo></m:mrow></m:math> where <emphasis effect="italics">n</emphasis> is any integer. For the circle we get</para>
+<equation id="fs-id1167793369434" class="unnumbered"><label/><m:math><m:mrow><m:mn>6</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793369453">The solutions to this equation are of the form <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>π</m:mi></m:mrow></m:math> for any integer value of <emphasis effect="italics">n.</emphasis> These two solution sets have no points in common. Regardless of this fact, the curves intersect at the origin. This case must always be taken into consideration.</para>
+</section>
+<section id="fs-id1167793361828">
+<title>Arc Length in Polar Curves</title>
+<para id="fs-id1167793361833">Here we derive a formula for the arc length of a curve defined in polar coordinates.</para>
+<para id="fs-id1167793361836">In rectangular coordinates, the arc length of a parameterized curve <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mi>y</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> for <m:math><m:mrow><m:mi>a</m:mi><m:mo>≤</m:mo><m:mi>t</m:mi><m:mo>≤</m:mo><m:mi>b</m:mi></m:mrow></m:math> is given by</para>
+<equation id="fs-id1167793291969" class="unnumbered"><label/><m:math><m:mrow><m:mi>L</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:msqrt><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793370213">In polar coordinates we define the curve by the equation <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>α</m:mi><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mi>β</m:mi><m:mo>.</m:mo></m:mrow></m:math> In order to adapt the arc length formula for a polar curve, we use the equations</para>
+<equation id="fs-id1167793292257" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793366812">and we replace the parameter <emphasis effect="italics">t</emphasis> by <m:math><m:mrow><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow></m:math> Then</para>
+<equation id="fs-id1167793366827" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>−</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1167793287615">We replace <m:math><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:math> by <m:math><m:mrow><m:mi>d</m:mi><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow></m:math> and the lower and upper limits of integration are <m:math><m:mi>α</m:mi></m:math> and <m:math><m:mrow><m:mi>β</m:mi><m:mo>,</m:mo></m:mrow></m:math> respectively. Then the arc length formula becomes</para>
+<equation id="fs-id1167793301094" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>L</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:msqrt><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>α</m:mi><m:mi>β</m:mi></m:msubsup><m:mrow><m:msqrt><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>α</m:mi><m:mi>β</m:mi></m:msubsup><m:mrow><m:msqrt><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>−</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>α</m:mi><m:mi>β</m:mi></m:msubsup><m:mrow><m:msqrt><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mrow><m:mtext>cos</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>θ</m:mi><m:mo>+</m:mo><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mrow><m:mtext>cos</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>θ</m:mi><m:mo>+</m:mo><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:msqrt><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>α</m:mi><m:mi>β</m:mi></m:msubsup><m:mrow><m:msqrt><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>α</m:mi><m:mi>β</m:mi></m:msubsup><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>r</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1167793367209">This gives us the following theorem.</para>
+<note id="fs-id1167793367213" class="theorem">
+<title>Arc Length of a Curve Defined by a Polar Function</title>
+<para id="fs-id1167794122789">Let <m:math><m:mi>f</m:mi></m:math> be a function whose derivative is continuous on an interval <m:math><m:mrow><m:mi>α</m:mi><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mi>β</m:mi><m:mo>.</m:mo></m:mrow></m:math> The length of the graph of <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> from <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>α</m:mi></m:mrow></m:math> to <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>β</m:mi></m:mrow></m:math> is</para>
+<equation id="fs-id1167793300660"><m:math><m:mrow><m:mi>L</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>α</m:mi><m:mi>β</m:mi></m:msubsup><m:mrow><m:msqrt><m:mrow><m:msup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mi>d</m:mi><m:mi>θ</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>α</m:mi><m:mi>β</m:mi></m:msubsup><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>r</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mi>d</m:mi><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></equation>
+</note>
+<example id="fs-id1167793301176">
+<exercise id="fs-id1167793301178">
+<problem id="fs-id1167793301180">
+<title>Finding the Arc Length of a Polar Curve</title>
+<para id="fs-id1171359033356">Find the arc length of the cardioid <m:math>
+<m:mrow>
+<m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793300536">
+<para id="fs-id1167793300539">When <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mn>0</m:mn><m:mo>=</m:mo><m:mn>4.</m:mn></m:mrow></m:math> Furthermore, as <m:math><m:mrow><m:mi>θ</m:mi></m:mrow></m:math> goes from  <m:math><m:mrow><m:mn>0</m:mn></m:mrow></m:math> to <m:math><m:mrow><m:mn>2</m:mn><m:mtext mathvariant="italic">π</m:mtext><m:mtext>,</m:mtext></m:mrow></m:math> the cardioid is traced out exactly once. Therefore these are the limits of integration. Using <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>β</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mtext mathvariant="italic">π</m:mtext><m:mtext>,</m:mtext></m:mrow></m:math> <link target-id="fs-id1167793300660"/> becomes</para>
+<equation id="fs-id1171360536181" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>L</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>α</m:mi><m:mi>β</m:mi></m:msubsup><m:mrow><m:msqrt><m:mrow><m:msup><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mrow></m:mstyle><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>θ</m:mi></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msubsup><m:mrow><m:msqrt><m:mrow><m:msup><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>θ</m:mi></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mo>−</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>θ</m:mi></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mrow></m:mstyle><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>θ</m:mi></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msubsup><m:mrow><m:msqrt><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mspace width="0.1em"/><m:msup><m:mrow><m:mtext>cos</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mspace width="0.1em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mspace width="0.1em"/><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mspace width="0.1em"/><m:mi>θ</m:mi></m:mrow></m:msqrt></m:mrow></m:mrow></m:mstyle><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>θ</m:mi></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msubsup><m:mrow><m:msqrt><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mrow><m:mtext>cos</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mspace width="0.1em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mspace width="0.1em"/><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:msqrt></m:mrow></m:mrow></m:mstyle><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>θ</m:mi></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msubsup><m:mrow><m:msqrt><m:mrow><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>θ</m:mi></m:mrow></m:msqrt></m:mrow></m:mrow></m:mstyle><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>θ</m:mi></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>2</m:mn><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msubsup><m:mrow><m:msqrt><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>θ</m:mi></m:mrow></m:msqrt></m:mrow></m:mrow></m:mstyle><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>θ</m:mi><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1167794117765">Next, using the identity <m:math><m:mrow><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>α</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:msup><m:mrow><m:mtext>cos</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>α</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> add 1 to both sides and multiply by 2. This gives  <m:math><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>α</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.1em"/><m:msup><m:mrow><m:mtext>cos</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>α</m:mi><m:mo>.</m:mo></m:mrow></m:math> Substituting <m:math><m:mrow><m:mi>α</m:mi><m:mo>=</m:mo><m:mrow><m:mi>θ</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:math> gives <m:math><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.1em"/><m:msup><m:mrow><m:mtext>cos</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mo stretchy="false">(</m:mo><m:mrow><m:mi>θ</m:mi><m:mtext>/</m:mtext><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:mrow></m:mrow></m:math> so the integral becomes</para>
+<equation id="fs-id1167793278471" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>L</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>2</m:mn><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msubsup><m:mrow><m:msqrt><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:msqrt></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>θ</m:mi></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>2</m:mn><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msubsup><m:mrow><m:msqrt><m:mrow><m:mn>4</m:mn><m:mspace width="0.2em"/><m:msup><m:mrow><m:mtext>cos</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>θ</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:msqrt><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>2</m:mn><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msubsup><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>|</m:mo><m:mrow><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>θ</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><para id="fs-id1167794117725">The absolute value is necessary because the cosine is negative for some values in its domain. To resolve this issue, change the limits from <m:math><m:mn>0</m:mn></m:math> to <m:math><m:mi>π</m:mi></m:math> and double the answer. This strategy works because cosine is positive between <m:math><m:mn>0</m:mn></m:math> and <m:math><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> Thus,</para>
+<equation id="fs-id1167793366736" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>L</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>4</m:mn><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msubsup><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>θ</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>8</m:mn><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>π</m:mi></m:msubsup><m:mrow><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>θ</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>8</m:mn><m:msubsup><m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>θ</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>0</m:mn><m:mi>π</m:mi></m:msubsup></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>16.</m:mn></m:mtd></m:mtr></m:mtable></m:math></equation></solution>
+</exercise>
+</example>
+<note id="fs-id1167793241093" class="checkpoint">
+<exercise id="fs-id1167793241096">
+<problem id="fs-id1167793241098">
+<para id="fs-id1167793241100">Find the total arc length of <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793241119">
+<para id="fs-id1167793241122"><m:math><m:mrow><m:mi>s</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>π</m:mi></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1167793241135" type="hint">
+<title>Hint</title>
+<para id="fs-id1167793278108">Use <link target-id="fs-id1167793300660"/>. To determine the correct limits, make a table of values.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+<section id="fs-id1167793278119" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id1167793278125" list-type="bulleted" bullet-style="bullet">
+<item>The area of a region in polar coordinates defined by the equation <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> with <m:math><m:mrow><m:mi>α</m:mi><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mi>β</m:mi></m:mrow></m:math> is given by the integral <m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>α</m:mi><m:mi>β</m:mi></m:msubsup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:mrow></m:mstyle></m:mrow><m:mn>2</m:mn></m:msup><m:mi>d</m:mi><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>To find the area between two curves in the polar coordinate system, first find the points of intersection, then subtract the corresponding areas.</item>
+<item>The arc length of a polar curve defined by the equation <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> with <m:math><m:mrow><m:mi>α</m:mi><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mi>β</m:mi></m:mrow></m:math> is given by the integral <m:math><m:mrow><m:mi>L</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>α</m:mi><m:mi>β</m:mi></m:msubsup><m:mrow><m:msqrt><m:mrow><m:msup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mi>d</m:mi><m:mi>θ</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>α</m:mi><m:mi>β</m:mi></m:msubsup><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>r</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></item>
+</list>
+</section>
+<section id="fs-id1167794122731" class="key-equations">
+<title>Key Equations</title>
+<table id="eip-531" summary="." class="unnumbered unstyled">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><emphasis effect="bold">Area of a region bounded by a polar curve</emphasis></entry>
+    <entry><m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>α</m:mi><m:mi>β</m:mi></m:msubsup><m:mrow><m:msup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>α</m:mi><m:mi>β</m:mi></m:msubsup><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry><emphasis effect="bold">Arc length of a polar curve</emphasis></entry>
+    <entry><m:math><m:mrow><m:mi>L</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>α</m:mi><m:mi>β</m:mi></m:msubsup><m:mrow><m:msqrt><m:mrow><m:msup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>θ</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>α</m:mi><m:mi>β</m:mi></m:msubsup><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>r</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</section>
+<section id="fs-id1167793363487" class="section-exercises">
+<para id="fs-id1167793363490">For the following exercises, determine a definite integral that represents the area.</para>
+<exercise id="fs-id1167793363493">
+<problem id="fs-id1167793363495">
+<para id="fs-id1167793363497">Region enclosed by <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793361414">
+<problem id="fs-id1167793361416">
+<para id="fs-id1167793361418">Region enclosed by <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793361435">
+<para id="fs-id1167793361437"><m:math><m:mrow><m:mfrac><m:mn>9</m:mn><m:mn>2</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>π</m:mi></m:msubsup><m:mrow><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793363662">
+<problem id="fs-id1167793363664">
+<para id="fs-id1167793363666">Region in the first quadrant within the cardioid <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793363740">
+<problem id="fs-id1167793363742">
+<para id="fs-id1167793363744">Region enclosed by one petal of <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793369631">
+<para id="fs-id1167793369633"><m:math><m:mrow><m:mn>32</m:mn><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msubsup><m:mrow><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793369680">
+<problem id="fs-id1167793369682">
+<para id="fs-id1167793369684">Region enclosed by one petal of <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793366455">
+<problem id="fs-id1167793366457">
+<para id="fs-id1167793366459">Region below the polar axis and enclosed by <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793366478">
+<para id="fs-id1167793366481"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>π</m:mi><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msubsup><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793361609">
+<problem id="fs-id1167793361611">
+<para id="fs-id1167793361613">Region in the first quadrant enclosed by <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793361687">
+<problem id="fs-id1167793361689">
+<para id="fs-id1167793361691">Region enclosed by the inner loop of <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793367046">
+<para id="fs-id1167793367049"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mtext>/</m:mtext><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msubsup><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793367117">
+<problem id="fs-id1167793367119">
+<para id="fs-id1167793367121">Region enclosed by the inner loop of <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793362198">
+<problem id="fs-id1167793362200">
+<para id="fs-id1167793362202">Region enclosed by <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math> and outside the inner loop</para>
+</problem>
+<solution id="fs-id1167793362225">
+<para id="fs-id1167793362227"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>3</m:mn></m:mrow><m:mi>π</m:mi></m:msubsup><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mi>d</m:mi><m:mi>θ</m:mi><m:mo>−</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>3</m:mn></m:mrow></m:msubsup><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793363547">
+<problem id="fs-id1167793363550">
+<para id="fs-id1167793363552">Region common to <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793292298">
+<problem id="fs-id1167793292301">
+<para id="fs-id1167793292303">Region common to <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793292333">
+<para id="fs-id1167793292335"><m:math><m:mrow><m:mn>4</m:mn><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>3</m:mn></m:mrow></m:msubsup><m:mrow><m:mi>d</m:mi><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>16</m:mn><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>3</m:mn></m:mrow><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msubsup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mrow><m:mtext>cos</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793292410">
+<problem id="fs-id1167793292413">
+<para id="fs-id1167793292415">Region common to <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1167793366614">For the following exercises, find the area of the described region.</para>
+<exercise id="fs-id1167793366618">
+<problem id="fs-id1167793366620">
+<para id="fs-id1167793366622">Enclosed by <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793366639">
+<para id="fs-id1167793366641"><m:math><m:mrow><m:mn>9</m:mn><m:mi>π</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793366652">
+<problem id="fs-id1167793366654">
+<para id="fs-id1167793366656">Above the polar axis enclosed by <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793366697">
+<problem id="fs-id1167793366699">
+<para id="fs-id1167793366701">Below the polar axis and enclosed by <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793369802">
+<para id="fs-id1167793369804"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>9</m:mn><m:mi>π</m:mi></m:mrow><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793369819">
+<problem id="fs-id1167793369821">
+<para id="fs-id1167793369823">Enclosed by one petal of <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793369866">
+<problem id="fs-id1167793369869">
+<para id="fs-id1167793369871">Enclosed by one petal of <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793369897">
+<para id="fs-id1167793369899"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>9</m:mn><m:mi>π</m:mi></m:mrow><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793369914">
+<problem id="fs-id1167793369916">
+<para id="fs-id1167793369918">Enclosed by <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793277945">
+<problem id="fs-id1167793277947">
+<para id="fs-id1167793277949">Enclosed by the inner loop of <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793277971">
+<para id="fs-id1167793277973"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>18</m:mn><m:mi>π</m:mi><m:mo>−</m:mo><m:mn>27</m:mn><m:msqrt><m:mn>3</m:mn></m:msqrt></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793277995">
+<problem id="fs-id1167793277997">
+<para id="fs-id1167793278000">Enclosed by <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math> and outside the inner loop</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793278043">
+<problem id="fs-id1167793278045">
+<para id="fs-id1167793278047">Common interior of <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793278085">
+<para id="fs-id1167793278087"><m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>π</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:msqrt><m:mn>3</m:mn></m:msqrt></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793363232">
+<problem id="fs-id1167793363234">
+<para id="fs-id1167793363236">Common interior of <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793363296">
+<problem id="fs-id1167793363298">
+<para id="fs-id1167793363300">Common interior of <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793363330">
+<para id="fs-id1167793363332"><m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>π</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:msqrt><m:mn>3</m:mn></m:msqrt></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793363362">
+<problem id="fs-id1167793363364">
+<para id="fs-id1167793363366">Inside <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math> and outside <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793369082">
+<problem id="fs-id1167793369085">
+<para id="fs-id1167793369087">Common interior of <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793369125">
+<para id="fs-id1167793369127"><m:math><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1167793369142">For the following exercises, find a definite integral that represents the arc length.</para>
+<exercise id="fs-id1167793369145">
+<problem id="fs-id1167793369148">
+<para id="fs-id1167793369150"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>on the interval</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793369218">
+<problem id="fs-id1167793369220">
+<para id="fs-id1167793369223"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math> on the interval <m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793369257">
+<para id="fs-id1167793369259"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msubsup><m:mrow><m:msqrt><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mtext>cos</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>θ</m:mi></m:mrow></m:msqrt></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793376345">
+<problem id="fs-id1167793376347">
+<para id="fs-id1167793376349"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>sec</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>on the interval</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793376422">
+<problem id="fs-id1167793376424">
+<para id="fs-id1167793376426"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>θ</m:mi></m:msup><m:mtext>on the interval</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793376452">
+<para id="fs-id1167793376454"><m:math><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mn>1</m:mn></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mi>θ</m:mi></m:msup><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1167793376485">For the following exercises, find the length of the curve over the given interval.</para>
+<exercise id="fs-id1167793376488">
+<problem id="fs-id1167793376491">
+<para id="fs-id1167793376493"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mspace width="0.2em"/><m:mtext>on the interval</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793376532">
+<problem id="fs-id1167793376534">
+<para id="fs-id1167793376536"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>θ</m:mi></m:mrow></m:msup><m:mtext>on the interval</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793371699">
+<para id="fs-id1167793371701"><m:math><m:mrow><m:mfrac><m:mrow><m:msqrt><m:mrow><m:mn>10</m:mn></m:mrow></m:msqrt></m:mrow><m:mn>3</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>e</m:mi><m:mn>6</m:mn></m:msup><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793371732">
+<problem id="fs-id1167793371734">
+<para id="fs-id1167793371736"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>on the interval</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793371779">
+<problem id="fs-id1167793371781">
+<para id="fs-id1167793371783"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>on the interval</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mi>π</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793371814">
+<para id="fs-id1167793371817">32</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793371822">
+<problem id="fs-id1167793371824">
+<para id="fs-id1167793371826"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>on the interval</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1167793371867">For the following exercises, use the integration capabilities of a calculator to approximate the length of the curve.</para>
+<exercise id="fs-id1167793371871">
+<problem id="fs-id1167793371874">
+<para id="fs-id1167793371876"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>on the interval</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793371910">
+<para id="fs-id1167793371912">6.238</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793371918">
+<problem id="fs-id1167793371920">
+<para id="fs-id1167793371922"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>2</m:mn><m:mi>θ</m:mi></m:mfrac><m:mspace width="0.2em"/><m:mtext>on the interval</m:mtext><m:mspace width="0.2em"/><m:mi>π</m:mi><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793366017">
+<problem id="fs-id1167793366019">
+<para id="fs-id1167793366021"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>θ</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mtext>on the interval</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mi>π</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793366066">
+<para id="fs-id1167793366068">2</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793366074">
+<problem id="fs-id1167793366076">
+<para id="fs-id1167793366078"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>θ</m:mi><m:mn>2</m:mn></m:msup><m:mspace width="0.2em"/><m:mtext>on the interval</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mi>π</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793366120">
+<problem id="fs-id1167793366122">
+<para id="fs-id1167793366124"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mtext>on the interval</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mi>π</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793366166">
+<para id="fs-id1167793366168">4.39</para>
+</solution>
+</exercise>
+<para id="fs-id1167793366174">For the following exercises, use the familiar formula from geometry to find the area of the region described and then confirm by using the definite integral.</para>
+<exercise id="fs-id1167793366178">
+<problem id="fs-id1167793366180">
+<para id="fs-id1167793366183"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>on the interval</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mi>π</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793370322">
+<problem id="fs-id1167793370324">
+<para id="fs-id1167793370326"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>on the interval</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mi>π</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793370359">
+<para id="fs-id1167793370361"><m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>π</m:mi></m:msubsup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793370454">
+<problem id="fs-id1167793370456">
+<para id="fs-id1167793370458"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>8</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>on the interval</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mi>π</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1167793370595">For the following exercises, use the familiar formula from geometry to find the length of the curve and then confirm using the definite integral.</para>
+<exercise id="fs-id1167793370600">
+<problem id="fs-id1167793370602">
+<para id="fs-id1167793370604"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>on the interval</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mi>π</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793370633">
+<para id="fs-id1167793370636"><m:math><m:mrow><m:mi>C</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>π</m:mi><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>π</m:mi></m:msubsup><m:mn>3</m:mn></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>π</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793370696">
+<problem id="fs-id1167793370698">
+<para id="fs-id1167793370701"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>on the interval</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mi>π</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793372015">
+<problem id="fs-id1167793372017">
+<para id="fs-id1167793372020"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>8</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>on the interval</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mi>π</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793372057">
+<para id="fs-id1167793372059"><m:math><m:mrow><m:mi>C</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mrow><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>10</m:mn><m:mi>π</m:mi><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mn>0</m:mn><m:mi>π</m:mi></m:msubsup><m:mrow><m:mn>10</m:mn></m:mrow></m:mrow></m:mstyle><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mi>π</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793372117">
+<problem id="fs-id1167793372119">
+<para id="fs-id1167793372121">Verify that if <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math> then <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>f</m:mi><m:mo>′</m:mo><m:mo stretchy="false">(</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1167793372217">For the following exercises, find the slope of a tangent line to a polar curve <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Let <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow></m:math> so the polar equation <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is now written in parametric form.</para>
+<exercise id="fs-id1167793372320">
+<problem id="fs-id1167793372323">
+<para id="fs-id1167793372325">Use the definition of the derivative <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mrow><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mtext>/</m:mtext><m:mrow><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mrow><m:mrow><m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mtext>/</m:mtext><m:mrow><m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mrow></m:mfrac></m:mrow></m:math> and the product rule to derive the derivative of a polar equation.</para>
+</problem>
+<solution id="fs-id1167793372377">
+<para id="fs-id1167793372380"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow><m:mrow><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>−</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793372471">
+<problem id="fs-id1167793372473">
+<para id="fs-id1167793372476"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>;</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793370884">
+<problem id="fs-id1167793370886">
+<para id="fs-id1167793370889"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>;</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>3</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793370925">
+<para id="fs-id1167793370927">The slope is <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mn>3</m:mn></m:msqrt></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793370944">
+<problem id="fs-id1167793370946">
+<para id="fs-id1167793370948"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>;</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>π</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793371005">
+<problem id="fs-id1167793371007">
+<para id="fs-id1167793371009"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>;</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>π</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793371051">
+<para id="fs-id1167793371053">The slope is 0.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793371058">
+<problem id="fs-id1167793371060">
+<para id="fs-id1167793371062"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>;</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mi>π</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793371107">
+<problem id="fs-id1167793371109">
+<para id="fs-id1167793371112"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>;</m:mo></m:mrow></m:math> tips of the leaves</para>
+</problem>
+<solution id="fs-id1167793371139">
+<para id="fs-id1167793371141">At <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> the slope is undefined. At <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn><m:mo>,</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> the slope is 0.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793371187">
+<problem id="fs-id1167793371189">
+<para id="fs-id1167793371191"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>;</m:mo></m:mrow></m:math> tips of the leaves</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793371294">
+<problem id="fs-id1167793371296">
+<para id="fs-id1167793371299"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>θ</m:mi><m:mo>;</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793371336">
+<para id="fs-id1167793371338">The slope is undefined at <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793371358">
+<problem id="fs-id1167793371360">
+<para id="fs-id1167793371362">Find the points on the interval <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>π</m:mi><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mi>π</m:mi></m:mrow></m:math> at which the cardioid <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math> has a vertical or horizontal tangent line.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793371455">
+<problem id="fs-id1167793371457">
+<para id="fs-id1167793371459">For the cardioid <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow></m:math> find the slope of the tangent line when <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>3</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793371495">
+<para id="fs-id1167793371498">Slope = −1.</para>
+</solution>
+</exercise>
+<para id="fs-id1167793371503">For the following exercises, find the slope of the tangent line to the given polar curve at the point given by the value of <m:math><m:mrow><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<exercise id="fs-id1167793371514">
+<problem id="fs-id1167793371516">
+<para id="fs-id1167793371518"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793371563">
+<problem id="fs-id1167793371565">
+<para id="fs-id1167793371567"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793371593">
+<para id="fs-id1167793371595">Slope is <m:math><m:mrow><m:mfrac><m:mrow><m:mn>−2</m:mn></m:mrow><m:mi>π</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793371611">
+<problem id="fs-id1167793371613">
+<para id="fs-id1167793371615"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>e</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793373919">
+<problem id="fs-id1167793373921">
+<para id="fs-id1167793373923"><emphasis effect="bold">[T]</emphasis> Use technology: <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math> at <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>6</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793373960">
+<para id="fs-id1167793373962">Calculator answer: −0.836.</para>
+</solution>
+</exercise>
+<para id="fs-id1167793373968">For the following exercises, find the points at which the following polar curves have a horizontal or vertical tangent line.</para>
+<exercise id="fs-id1167793373973">
+<problem id="fs-id1167793373975">
+<para id="fs-id1167793373977"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793374087">
+<problem id="fs-id1167793374089">
+<para id="fs-id1167793374091"><m:math><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793374119">
+<para id="fs-id1167793374121">Horizontal tangent at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>±</m:mtext><m:msqrt><m:mn>2</m:mn></m:msqrt><m:mo>,</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>±</m:mtext><m:msqrt><m:mn>2</m:mn></m:msqrt><m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793374175">
+<problem id="fs-id1167793374178">
+<para id="fs-id1167793374180"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793374258">
+<problem id="fs-id1167793374260">
+<para id="fs-id1167793374262">The cardioid <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793374281">
+<para id="fs-id1167793374283">Horizontal tangents at <m:math><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>7</m:mn><m:mi>π</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>11</m:mn><m:mi>π</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> Vertical tangents at <m:math><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>6</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>π</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> and also at the pole <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793374357">
+<problem id="fs-id1167793374359">
+<para id="fs-id1167793374361">Show that the curve <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mspace width="0.2em"/><m:mtext>tan</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math> (called a <term class="no-emphasis"><emphasis effect="italics">cissoid of Diocles</emphasis></term>) has the line <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> as a vertical asymptote.</para>
+</problem>
+</exercise>
+</section>
+  </content>
+</document>

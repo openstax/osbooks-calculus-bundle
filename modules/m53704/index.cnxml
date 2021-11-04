@@ -1,0 +1,651 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Separable Equations</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53704</md:content-id>
+  <md:title>Separable Equations</md:title>
+  <md:abstract><list>
+<item>Use separation of variables to solve a differential equation.</item>
+<item>Solve applications using separation of variables.</item>
+</list></md:abstract>
+  <md:uuid>a3245a7d-68af-42dd-8fbd-f41aca409ccf</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-id1170573556504">We now examine a solution technique for finding exact solutions to a class of differential equations known as separable differential equations. These equations are common in a wide variety of disciplines, including physics, chemistry, and engineering. We illustrate a few applications at the end of the section.</para>
+<section id="fs-id1170571170481">
+<title>Separation of Variables</title>
+<para id="fs-id1170573757623">We start with a definition and some examples.</para>
+<note id="fs-id1170571080719">
+<title>Definition</title>
+<para id="fs-id1170570996031">A <term>separable differential equation</term> is any equation that can be written in the form</para>
+<equation id="fs-id1170573370116"><m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>.</m:mo></m:mrow></m:mrow></m:math></equation>
+</note>
+<para id="fs-id1170573574878">The term ‘separable’ refers to the fact that the right-hand side of the equation can be separated into a function of <m:math><m:mi>x</m:mi></m:math> times a function of <m:math><m:mrow><m:mi>y</m:mi><m:mo>.</m:mo></m:mrow></m:math> Examples of separable differential equations include</para>
+<equation id="fs-id1170573307602" class="unnumbered"><label/><m:math><m:mtable><m:mtr/><m:mtr/><m:mtr><m:mtd columnalign="left"><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mn>6</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mtext>sec</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi><m:mo>+</m:mo><m:mtext>tan</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>6.</m:mn></m:mtd></m:mtr></m:mtable></m:math></equation><para id="fs-id1170571059965">The second equation is separable with <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the third equation is separable with <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>sec</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi><m:mo>+</m:mo><m:mtext>tan</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> and the right-hand side of the fourth equation can be factored as <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> so it is separable as well. The third equation is also called an <term>autonomous differential equation</term> because the right-hand side of the equation is a function of <m:math><m:mi>y</m:mi></m:math> alone. If a differential equation is separable, then it is possible to solve the equation using the method of <term>separation of variables</term>.</para>
+<note id="fs-id1170571281535" class="problem-solving">
+<title>Problem-Solving Strategy: Separation of Variables</title>
+<list id="fs-id1170573419760" list-type="enumerated" number-style="arabic">
+<item>Check for any values of <m:math><m:mi>y</m:mi></m:math> that make <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> These correspond to constant solutions.</item>
+<item>Rewrite the differential equation in the form <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>Integrate both sides of the equation.</item>
+<item>Solve the resulting equation for <m:math><m:mi>y</m:mi></m:math> if possible.</item>
+<item>If an initial condition exists, substitute the appropriate values for <m:math><m:mi>x</m:mi></m:math> and <m:math><m:mi>y</m:mi></m:math> into the equation and solve for the constant.</item>
+</list>
+<para id="fs-id1170571101640">Note that Step 4. states “Solve the resulting equation for <m:math><m:mi>y</m:mi></m:math> if possible.” It is not always possible to obtain <m:math><m:mi>y</m:mi></m:math> as an explicit function of <m:math><m:mrow><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> Quite often we have to be satisfied with finding <m:math><m:mi>y</m:mi></m:math> as an implicit function of <m:math><m:mrow><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></para></note>
+<example id="fs-id1170571302542">
+<exercise id="fs-id1170571130297">
+<problem id="fs-id1170571303682">
+<title>Using Separation of Variables</title>
+<para id="fs-id1170573513040">Find a general solution to the differential equation <m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> using the method of separation of variables.</para>
+</problem>
+<solution id="fs-id1170573368010">
+<para id="fs-id1170573394671">Follow the five-step method of separation of variables.</para>
+<list id="fs-id1170573570811" list-type="enumerated" number-style="arabic">
+<item>In this example, <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math> Setting <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> gives <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> as a constant solution.</item>
+<item>Rewrite the differential equation in the form<newline/>
+<equation id="fs-id1170573206619" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation></item>
+<item>Integrate both sides of the equation:<newline/>
+<equation id="fs-id1170573356123" class="unnumbered"><label/><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="true">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:mo>∫</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.1em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Let <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math> Then <m:math><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> so the equation becomes<newline/>
+<equation id="fs-id1170571330940" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="true">∫</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>u</m:mi></m:mfrac><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mi>u</m:mi><m:mo>|</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation></item>
+<item>To solve this equation for <m:math><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> first multiply both sides of the equation by <m:math><m:mrow><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math><newline/>
+<equation id="fs-id1170573425728" class="unnumbered"><label/><m:math><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>C</m:mi></m:mrow></m:math></equation><newline/>
+Now we use some logic in dealing with the constant <m:math><m:mrow><m:mi>C</m:mi><m:mo>.</m:mo></m:mrow></m:math> Since <m:math><m:mi>C</m:mi></m:math> represents an arbitrary constant, <m:math><m:mrow><m:mn>3</m:mn><m:mi>C</m:mi></m:mrow></m:math> also represents an arbitrary constant. If we call the second arbitrary constant <m:math><m:mrow><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo></m:mrow></m:math> the equation becomes<newline/>
+<equation id="fs-id1170571289022" class="unnumbered"><label/><m:math><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Now exponentiate both sides of the equation (i.e., make each side of the equation the exponent for the base <m:math><m:mi>e</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:math><newline/>
+<equation id="fs-id1170573240205" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msup><m:mi>e</m:mi><m:mrow><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+Again define a new constant <m:math><m:mrow><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:msup></m:mrow></m:math> (note that <m:math><m:mrow><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mtext>:</m:mtext></m:mrow></m:math><newline/>
+<equation id="fs-id1170571058014" class="unnumbered"><label/><m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+This corresponds to two separate equations: <m:math><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mtext>−</m:mtext><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math><newline/>
+The solution to either equation can be written in the form <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>−2</m:mn><m:mo>±</m:mo><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math><newline/>
+Since <m:math><m:mrow><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> it does not matter whether we use plus or minus, so the constant can actually have either sign. Furthermore, the subscript on the constant <m:math><m:mi>C</m:mi></m:math> is entirely arbitrary, and can be dropped. Therefore the solution can be written as<newline/>
+<equation id="fs-id1170573282406" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>−2</m:mn><m:mo>+</m:mo><m:mi>C</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation></item>
+<item>No initial condition is imposed, so we are finished.</item>
+</list>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170573633376" class="checkpoint">
+<exercise id="fs-id1170571244783">
+<problem id="fs-id1170571123151">
+<para id="fs-id1170573402078">Use the method of separation of variables to find a general solution to the differential equation <m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170573388976">
+<para id="fs-id1170571375609"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mi>C</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1170573255391" type="hint">
+<title>Hint</title>
+<para id="fs-id1170573328131">First factor the right-hand side of the equation by grouping, then use the five-step strategy of separation of variables.</para>
+</commentary>
+</exercise>
+</note>
+<example id="fs-id1170573262524">
+<exercise id="fs-id1170571069529">
+<problem id="fs-id1170573574748">
+<title>Solving an Initial-Value Problem</title>
+<para id="fs-id1170571096292">Using the method of separation of variables, solve the initial-value problem</para>
+<equation id="fs-id1170573423616" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>-1</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+</problem>
+<solution id="fs-id1170573391549">
+<para id="fs-id1170573750521">Follow the five-step method of separation of variables.</para>
+<list id="fs-id1170573593199" list-type="enumerated" number-style="arabic">
+<item>In this example, <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math> Setting <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> gives <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>±</m:mo><m:mn>2</m:mn></m:mrow></m:math> as constant solutions.</item>
+<item>Divide both sides of the equation by <m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:math> and multiply by <m:math><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> This gives the equation<newline/>
+<equation id="fs-id1170573712029" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.1em"/><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation></item>
+<item>Next integrate both sides:<newline/>
+<equation id="fs-id1170573268326"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="true">∫</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:mfrac><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:mo>∫</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.1em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+To evaluate the left-hand side, use the method of partial fraction decomposition. This leads to the identity<newline/>
+<equation id="fs-id1170573336985" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Then <link target-id="fs-id1170573268326"/> becomes<newline/>
+<equation id="fs-id1170571123143" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="true">∫</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.1em"/><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mstyle displaystyle="true"><m:mrow><m:mo>∫</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.1em"/><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+Multiplying both sides of this equation by <m:math><m:mn>4</m:mn></m:math> and replacing <m:math><m:mrow><m:mn>4</m:mn><m:mi>C</m:mi></m:mrow></m:math> with <m:math><m:mrow><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> gives<newline/>
+<equation id="fs-id1170573580573" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation></item>
+<item>It is possible to solve this equation for <emphasis effect="italics">y</emphasis>. First exponentiate both sides of the equation and define <m:math><m:mrow><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:msup><m:mtext>:</m:mtext></m:mrow></m:math><newline/>
+<equation id="fs-id1170571051107" class="unnumbered"><label/><m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Next we can remove the absolute value and let <m:math><m:mrow><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> be either positive or negative. Then multiply both sides by <m:math><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math><newline/>
+<equation id="fs-id1170573408989" class="unnumbered"><label/><m:math><m:mtable><m:mtr/><m:mtr/><m:mtr><m:mtd columnalign="left"><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:mi>y</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mrow/><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mrow/><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:msup><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+Now collect all terms involving <emphasis effect="italics">y</emphasis> on one side of the equation, and solve for <m:math><m:mrow><m:mi>y</m:mi><m:mtext>:</m:mtext></m:mrow></m:math><newline/>
+<equation id="fs-id1170573627024" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>y</m:mi><m:mo>−</m:mo><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:mi>y</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo stretchy="false">)</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>y</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation></item>
+<item>To determine the value of <m:math><m:mrow><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:mo>,</m:mo></m:mrow></m:math> substitute <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn></m:mrow></m:math> into the general solution. Alternatively, we can put the same values into an earlier equation, namely the equation <m:math><m:mrow><m:mfrac><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math> This is much easier to solve for <m:math><m:mrow><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:mtext>:</m:mtext></m:mrow></m:math><newline/>
+<equation id="fs-id1170571369024" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mrow><m:mn>−1</m:mn><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow><m:mn>−1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>4</m:mn><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>−3</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+Therefore the solution to the initial-value problem is<newline/>
+<equation id="fs-id1170573501784" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>6</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+A graph of this solution appears in <link target-id="CNX_Calc_Figure_08_03_001"/>.<newline/>
+<figure id="CNX_Calc_Figure_08_03_001">
+<media id="fs-id1170570996947" alt="A graph of the solution over [-5, 3] for x and [-3, 2] for y. It begins as a horizontal line at y = -2 from x = -5 to just before -3, almost immediately steps up to y = 2 from just after x = -3 to just before x = 0, and almost immediately steps back down to y = -2 just after x = 0 to x = 3.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_03_001.jpg"/>
+</media>
+<caption>Graph of the solution to the initial-value problem <m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>y</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>−1</m:mn><m:mo>.</m:mo></m:mrow></m:math></caption>
+</figure></item>
+</list>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170571138688" class="checkpoint">
+<exercise id="fs-id1170573436521">
+<problem id="fs-id1170571300752">
+<para id="fs-id1170571097577">Find the solution to the initial-value problem</para>
+<equation id="fs-id1170573582993" class="unnumbered"><label/><m:math><m:mrow><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>y</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>−3</m:mn></m:mrow></m:math></equation>
+<para id="fs-id1170573577573">using the method of separation of variables.</para>
+</problem>
+<solution id="fs-id1170573288989">
+<para id="fs-id1170571136712"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>14</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>7</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1170571228168" type="hint">
+<title>Hint</title>
+<para id="fs-id1170571124616">Follow the steps for separation of variables to solve the initial-value problem.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170573423552">
+<title>Applications of Separation of Variables</title>
+<para id="fs-id1170573583237">Many interesting problems can be described by separable equations. We illustrate two types of problems: solution concentrations and Newton’s law of cooling.</para>
+<section id="fs-id1170570976383">
+<title>Solution concentrations</title>
+<para id="fs-id1170573281482">Consider a tank being filled with a salt solution. We would like to determine the amount of salt present in the tank as a function of time. We can apply the process of separation of variables to solve this problem and similar problems involving <term class="no-emphasis">solution concentrations</term>.</para>
+<example id="fs-id1170573587324">
+<exercise id="fs-id1170571026369">
+<problem id="fs-id1170571193813">
+<title>Determining Salt Concentration over Time</title>
+<para id="fs-id1170573713804">A tank containing <m:math><m:mrow><m:mn>100</m:mn><m:mspace width="0.2em"/><m:mtext>L</m:mtext></m:mrow></m:math> of a brine solution initially has <m:math><m:mrow><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mtext>kg</m:mtext></m:mrow></m:math> of salt dissolved in the solution. At time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> another brine solution flows into the tank at a rate of <m:math><m:mrow><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>L/min</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math> This brine solution contains a concentration of <m:math><m:mrow><m:mn>0.5</m:mn><m:mspace width="0.2em"/><m:mtext>kg/L</m:mtext></m:mrow></m:math> of salt. At the same time, a stopcock is opened at the bottom of the tank, allowing the combined solution to flow out at a rate of <m:math><m:mrow><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>L/min</m:mtext><m:mo>,</m:mo></m:mrow></m:math> so that the level of liquid in the tank remains constant (<link target-id="CNX_Calc_Figure_08_03_004"/>). Find the amount of salt in the tank as a function of time (measured in minutes), and find the limiting amount of salt in the tank, assuming that the solution in the tank is well mixed at all times.</para>
+<figure id="CNX_Calc_Figure_08_03_004">
+<media id="fs-id1170571026969" alt="A diagram of a cylinder filled with water with input and output. It is a 100 liter tank which initially contains 4 kg of salt. The input is 0.5 kg salt / liter and 2 liters / minute. The output is 2 liters / minute.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_03_002.jpg"/>
+</media>
+<caption>A brine tank with an initial amount of salt solution accepts an input flow and delivers an output flow. How does the amount of salt change with time?</caption>
+</figure>
+</problem>
+<solution id="fs-id1170573541546">
+<para id="fs-id1170571056492">First we define a function <m:math><m:mrow><m:mi>u</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> that represents the amount of salt in kilograms in the tank as a function of time. Then <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac></m:mrow></m:math> represents the rate at which the amount of salt in the tank changes as a function of time. Also, <m:math><m:mrow><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math> represents the amount of salt in the tank at time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> which is <m:math><m:mn>4</m:mn></m:math> kilograms.</para>
+<para id="fs-id1170570998527">The general setup for the differential equation we will solve is of the form</para>
+<equation id="fs-id1170573516013"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mtext>INFLOW RATE</m:mtext><m:mo>−</m:mo><m:mtext>OUTFLOW RATE</m:mtext><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573759829">INFLOW RATE represents the rate at which salt enters the tank, and OUTFLOW RATE represents the rate at which salt leaves the tank. Because solution enters the tank at a rate of <m:math><m:mn>2</m:mn></m:math> L/min, and each liter of solution contains <m:math><m:mrow><m:mn>0.5</m:mn></m:mrow></m:math> kilogram of salt, every minute <m:math><m:mrow><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0.5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mspace width="0.2em"/><m:mtext>kilogram</m:mtext></m:mrow></m:math> of salt enters the tank. Therefore INFLOW RATE = <m:math><m:mrow><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170571110733">To calculate the rate at which salt leaves the tank, we need the concentration of salt in the tank at any point in time. Since the actual amount of salt varies over time, so does the concentration of salt. However, the volume of the solution remains fixed at 100 liters. The number of kilograms of salt in the tank at time <m:math><m:mi>t</m:mi></m:math> is equal to <m:math><m:mrow><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Thus, the concentration of salt is <m:math><m:mrow><m:mfrac><m:mrow><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac></m:mrow></m:math> kg/L, and the solution leaves the tank at a rate of <m:math><m:mn>2</m:mn></m:math> L/min. Therefore salt leaves the tank at a rate of <m:math><m:mrow><m:mfrac><m:mrow><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>50</m:mn></m:mrow></m:mfrac></m:mrow></m:math> kg/min, and OUTFLOW RATE is equal to <m:math><m:mrow><m:mfrac><m:mrow><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>50</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> Therefore the differential equation becomes <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>u</m:mi><m:mrow><m:mn>50</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> and the initial condition is <m:math><m:mrow><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math> The initial-value problem to be solved is</para>
+<equation id="fs-id1170571189540" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>u</m:mi><m:mrow><m:mn>50</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571116543">The differential equation is a separable equation, so we can apply the five-step strategy for solution.</para>
+<para id="fs-id1170571116546">Step 1. Setting <m:math><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>u</m:mi><m:mrow><m:mn>50</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> gives <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>50</m:mn></m:mrow></m:math> as a constant solution. Since the initial amount of salt in the tank is <m:math><m:mn>4</m:mn></m:math> kilograms, this solution does not apply.</para><para id="fs-id1170571048346">Step 2. Rewrite the equation as</para><equation id="fs-id1170571048349" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>50</m:mn><m:mo>−</m:mo><m:mi>u</m:mi></m:mrow><m:mrow><m:mn>50</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571046360">Then multiply both sides by <m:math><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:math> and divide both sides by <m:math><m:mrow><m:mn>50</m:mn><m:mo>−</m:mo><m:mi>u</m:mi><m:mtext>:</m:mtext></m:mrow></m:math></para>
+<equation id="fs-id1170571169512" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow><m:mrow><m:mn>50</m:mn><m:mo>−</m:mo><m:mi>u</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow><m:mrow><m:mn>50</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571100906">Step 3. Integrate both sides:</para><equation id="fs-id1170571100910" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="true">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow><m:mrow><m:mn>50</m:mn><m:mo>−</m:mo><m:mi>u</m:mi></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="true">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow><m:mrow><m:mn>50</m:mn></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mo>−</m:mo><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>50</m:mn><m:mo>−</m:mo><m:mi>u</m:mi></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mi>t</m:mi><m:mrow><m:mn>50</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>C</m:mi><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170571057417">Step 4. Solve for <m:math><m:mrow><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mtext>:</m:mtext></m:mrow></m:math></para><equation id="fs-id1170571221759" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>50</m:mn><m:mo>−</m:mo><m:mi>u</m:mi></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>−</m:mo><m:mfrac><m:mi>t</m:mi><m:mrow><m:mn>50</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mi>C</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>50</m:mn><m:mo>−</m:mo><m:mi>u</m:mi></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mtext>/</m:mtext><m:mn>50</m:mn><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mi>C</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>50</m:mn><m:mo>−</m:mo><m:mi>u</m:mi></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi><m:mtext>/</m:mtext><m:mn>50</m:mn></m:mrow></m:msup><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170571094788">Eliminate the absolute value by allowing the constant to be either positive or negative:</para>
+<equation id="fs-id1170571094791" class="unnumbered"><label/><m:math><m:mrow><m:mn>50</m:mn><m:mo>−</m:mo><m:mi>u</m:mi><m:mo>=</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi><m:mtext>/</m:mtext><m:mn>50</m:mn></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573397513">Finally, solve for <m:math><m:mrow><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mtext>:</m:mtext></m:mrow></m:math></para>
+<equation id="fs-id1170571138821" class="unnumbered"><label/><m:math><m:mrow><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>50</m:mn><m:mo>−</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi><m:mtext>/</m:mtext><m:mn>50</m:mn></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571021933">Step 5. Solve for <m:math><m:mrow><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:mtext>:</m:mtext></m:mrow></m:math></para><equation id="fs-id1170573359438" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>50</m:mn><m:mo>−</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−0</m:mn><m:mtext>/</m:mtext><m:mn>50</m:mn></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>4</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>50</m:mn><m:mo>−</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>46</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170571116380">The solution to the initial value problem is <m:math><m:mrow><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>50</m:mn><m:mo>−</m:mo><m:mn>46</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi><m:mtext>/</m:mtext><m:mn>50</m:mn></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math> To find the limiting amount of salt in the tank, take the limit as <m:math><m:mi>t</m:mi></m:math> approaches infinity:</para>
+<equation id="fs-id1170571052876" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>50</m:mn><m:mo>−</m:mo><m:mn>46</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi><m:mtext>/</m:mtext><m:mn>50</m:mn></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>50</m:mn><m:mo>−</m:mo><m:mn>46</m:mn><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>50</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170571066821">Note that this was the constant solution to the differential equation. If the initial amount of salt in the tank is <m:math><m:mrow><m:mn>50</m:mn></m:mrow></m:math> kilograms, then it remains constant. If it starts at less than 50 kilograms, then it approaches 50 kilograms over time.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170573420593" class="checkpoint">
+<exercise id="fs-id1170571290127">
+<problem id="fs-id1170571290129">
+<para id="fs-id1170571290132">A tank contains <m:math><m:mn>3</m:mn></m:math> kilograms of salt dissolved in <m:math><m:mrow><m:mn>75</m:mn></m:mrow></m:math> liters of water. A salt solution of <m:math><m:mrow><m:mn>0.4</m:mn><m:mspace width="0.2em"/><m:mtext>kg salt/L</m:mtext></m:mrow></m:math> is pumped into the tank at a rate of <m:math><m:mrow><m:mn>6</m:mn><m:mspace width="0.2em"/><m:mtext>L/min</m:mtext></m:mrow></m:math> and is drained at the same rate. Solve for the salt concentration at time <m:math><m:mrow><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math> Assume the tank is well mixed at all times.</para>
+</problem>
+<solution id="fs-id1170571096071">
+<para id="fs-id1170571096073">Initial value problem:</para>
+<para id="fs-id1170571096076"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>2.4</m:mn><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>u</m:mi></m:mrow><m:mrow><m:mn>25</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+<para id="fs-id1170571145647"><m:math><m:mrow><m:mtext>Solution:</m:mtext><m:mspace width="0.2em"/><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>−</m:mo><m:mn>27</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi><m:mtext>/</m:mtext><m:mn>50</m:mn></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1170573356102" type="hint">
+<title>Hint</title>
+<para id="fs-id1170570999054">Follow the steps in <link target-id="fs-id1170573587324"/> and determine an expression for INFLOW and OUTFLOW. Formulate an initial-value problem, and then solve it.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170573604152">
+<title>Newton’s law of cooling</title>
+<para id="fs-id1170573500089"><term class="no-emphasis">Newton’s law of cooling</term> states that the rate of change of an object’s temperature is proportional to the difference between its own temperature and the ambient temperature (i.e., the temperature of its surroundings). If we let <m:math><m:mrow><m:mi>T</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> represent the temperature of an object as a function of time, then <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>T</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac></m:mrow></m:math> represents the rate at which that temperature changes. The temperature of the object’s surroundings can be represented by <m:math><m:mrow><m:msub><m:mi>T</m:mi><m:mi>s</m:mi></m:msub><m:mo>.</m:mo></m:mrow></m:math> Then Newton’s law of cooling can be written in the form</para>
+<equation id="fs-id1170571136560" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>T</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:msub><m:mi>T</m:mi><m:mi>s</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></equation>
+<para id="fs-id1170573501463">or simply</para>
+<equation id="fs-id1170573501466"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>T</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>T</m:mi><m:mo>−</m:mo><m:msub><m:mi>T</m:mi><m:mi>s</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573363451">The temperature of the object at the beginning of any experiment is the initial value for the initial-value problem. We call this temperature <m:math><m:mrow><m:msub><m:mi>T</m:mi><m:mn>0</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math> Therefore the initial-value problem that needs to be solved takes the form</para>
+<equation id="fs-id1170573413054"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>T</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>T</m:mi><m:mo>−</m:mo><m:msub><m:mi>T</m:mi><m:mi>s</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>T</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>T</m:mi><m:mn>0</m:mn></m:msub><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573743423">where <m:math><m:mi>k</m:mi></m:math> is a constant that needs to be either given or determined in the context of the problem. We use these equations in <link target-id="fs-id1170571198014"/>.</para>
+<example id="fs-id1170571198014">
+<exercise id="fs-id1170571198016">
+<problem id="fs-id1170571227272">
+<title>Waiting for a Pizza to Cool</title>
+<para id="fs-id1170573612460">A pizza is removed from the oven after baking thoroughly, and the temperature of the pizza when it comes out of the oven is <m:math><m:mrow><m:mn>350</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math> The temperature of the kitchen is <m:math><m:mrow><m:mn>75</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext><m:mo>,</m:mo></m:mrow></m:math> and after <m:math><m:mn>5</m:mn></m:math> minutes the temperature of the pizza is <m:math><m:mrow><m:mn>340</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math> We would like to wait until the temperature of the pizza reaches <m:math><m:mrow><m:mn>300</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext></m:mrow></m:math> before cutting and serving it (<link target-id="CNX_Calc_Figure_08_03_005"/>). How much longer will we have to wait?</para>
+<figure id="CNX_Calc_Figure_08_03_005">
+<media id="fs-id1170573419435" alt="A diagram of a pizza pie. The room temperature is 75 degrees, and the pizza temperature is 350 degrees.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_03_003.jpg"/>
+</media>
+<caption>From Newton’s law of cooling, if the pizza cools <m:math><m:mrow><m:mn>10</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext></m:mrow></m:math> in <m:math><m:mn>5</m:mn></m:math> minutes, how long before it cools to <m:math><m:mrow><m:mn>300</m:mn><m:mtext>°</m:mtext><m:mtext>F?</m:mtext></m:mrow></m:math></caption>
+</figure>
+</problem>
+<solution id="fs-id1170571228928">
+<para id="fs-id1170571228930">The ambient temperature (surrounding temperature) is <m:math><m:mrow><m:mn>75</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext><m:mo>,</m:mo></m:mrow></m:math> so <m:math><m:mrow><m:msub><m:mi>T</m:mi><m:mi>s</m:mi></m:msub><m:mo>=</m:mo><m:mn>75</m:mn><m:mo>.</m:mo></m:mrow></m:math> The temperature of the pizza when it comes out of the oven is <m:math><m:mrow><m:mn>350</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext><m:mo>,</m:mo></m:mrow></m:math> which is the initial temperature (i.e., initial value), so <m:math><m:mrow><m:msub><m:mi>T</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:mn>350</m:mn><m:mo>.</m:mo></m:mrow></m:math> Therefore <link target-id="fs-id1170573268326"/> becomes</para>
+<equation id="fs-id1170573583269" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>T</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>T</m:mi><m:mo>−</m:mo><m:mn>75</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>T</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>350</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170573732305">To solve the differential equation, we use the five-step technique for solving separable equations.</para>
+<list id="fs-id1170573732308" list-type="enumerated" number-style="arabic">
+<item>Setting the right-hand side equal to zero gives <m:math><m:mrow><m:mi>T</m:mi><m:mo>=</m:mo><m:mn>75</m:mn></m:mrow></m:math> as a constant solution. Since the pizza starts at <m:math><m:mrow><m:mn>350</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext><m:mo>,</m:mo></m:mrow></m:math> this is not the solution we are seeking.</item>
+<item>Rewrite the differential equation by multiplying both sides by <m:math><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:math> and dividing both sides by <m:math><m:mrow><m:mi>T</m:mi><m:mo>−</m:mo><m:mn>75</m:mn><m:mtext>:</m:mtext></m:mrow></m:math><newline/>
+<equation id="fs-id1170573509887" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>T</m:mi></m:mrow><m:mrow><m:mi>T</m:mi><m:mo>−</m:mo><m:mn>75</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>k</m:mi><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation></item>
+<item>Integrate both sides:<newline/>
+<equation id="fs-id1170573403649" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="true">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>T</m:mi></m:mrow><m:mrow><m:mi>T</m:mi><m:mo>−</m:mo><m:mn>75</m:mn></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mstyle displaystyle="true"><m:mrow><m:mo>∫</m:mo><m:mrow><m:mi>k</m:mi><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mi>T</m:mi><m:mo>−</m:mo><m:mn>75</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>k</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>C</m:mi><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation></item>
+<item>Solve for <m:math><m:mi>T</m:mi></m:math> by first exponentiating both sides:<newline/>
+<equation id="fs-id1170571032119" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mi>T</m:mi><m:mo>−</m:mo><m:mn>75</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msup><m:mi>e</m:mi><m:mrow><m:mi>k</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mrow><m:mo>|</m:mo><m:mrow><m:mi>T</m:mi><m:mo>−</m:mo><m:mn>75</m:mn></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>k</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>T</m:mi><m:mo>−</m:mo><m:mn>75</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>k</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>75</m:mn><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>k</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation></item>
+<item>Solve for <m:math><m:mrow><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> by using the initial condition <m:math><m:mrow><m:mi>T</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>350</m:mn><m:mtext>:</m:mtext></m:mrow></m:math><newline/>
+<equation id="fs-id1170571250089" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>75</m:mn><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>k</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>T</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>75</m:mn><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>350</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>75</m:mn><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>275</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+Therefore the solution to the initial-value problem is<newline/>
+<equation id="fs-id1170571049362" class="unnumbered"><label/><m:math><m:mrow><m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>75</m:mn><m:mo>+</m:mo><m:mn>275</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mi>k</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+To determine the value of <m:math><m:mrow><m:mi>k</m:mi><m:mo>,</m:mo></m:mrow></m:math> we need to use the fact that after <m:math><m:mn>5</m:mn></m:math> minutes the temperature of the pizza is <m:math><m:mrow><m:mn>340</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math> Therefore <m:math><m:mrow><m:mi>T</m:mi><m:mrow><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>340</m:mn><m:mo>.</m:mo></m:mrow></m:math> Substituting this information into the solution to the initial-value problem, we have<newline/>
+<equation id="fs-id1170571103568" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>75</m:mn><m:mo>+</m:mo><m:mn>275</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mi>k</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>T</m:mi><m:mrow><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>340</m:mn><m:mo>=</m:mo><m:mn>75</m:mn><m:mo>+</m:mo><m:mn>275</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>k</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>265</m:mn></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>275</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>k</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>k</m:mi></m:mrow></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mn>53</m:mn></m:mrow><m:mrow><m:mn>55</m:mn></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>k</m:mi></m:mrow></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>53</m:mn></m:mrow><m:mrow><m:mn>55</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>5</m:mn><m:mi>k</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>53</m:mn></m:mrow><m:mrow><m:mn>55</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>k</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mn>1</m:mn><m:mn>5</m:mn></m:mfrac><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>53</m:mn></m:mrow><m:mrow><m:mn>55</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>≈</m:mo><m:mo>−</m:mo><m:mn>0.007408.</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>0.007408</m:mn><m:mi>t</m:mi></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+So now we have <m:math><m:mrow><m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>75</m:mn><m:mo>+</m:mo><m:mn>275</m:mn><m:mi>e</m:mi><m:mo>.</m:mo></m:mrow></m:math> When is the temperature <m:math><m:mrow><m:mn>300</m:mn><m:mtext>°</m:mtext><m:mtext>F?</m:mtext></m:mrow></m:math> Solving for <m:math><m:mrow><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> we find<newline/>
+<equation id="fs-id1170571260323" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd><m:mi>T</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>75</m:mn><m:mo>+</m:mo><m:mn>275</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>007408</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>300</m:mn></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>75</m:mn><m:mo>+</m:mo><m:mn>275</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>007408</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>225</m:mn></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>275</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>007408</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>007408</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mfrac><m:mn>9</m:mn><m:mn>11</m:mn></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>007408</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mn>9</m:mn><m:mn>11</m:mn></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>−</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>007408</m:mn><m:mi>t</m:mi></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mn>9</m:mn><m:mn>11</m:mn></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>t</m:mi></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>007408</m:mn></m:mrow></m:mfrac><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mn>9</m:mn><m:mn>11</m:mn></m:mfrac><m:mo>≈</m:mo><m:mn>27</m:mn><m:mo>.</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+Therefore we need to wait an additional <m:math><m:mrow><m:mn>22.1</m:mn></m:mrow></m:math> minutes (after the temperature of the pizza reached <m:math><m:mrow><m:mn>340</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> That should be just enough time to finish this calculation.</item>
+</list>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170571110821" class="checkpoint">
+<exercise id="fs-id1170571110824">
+<problem id="fs-id1170571110826">
+<para id="fs-id1170571110828">A cake is removed from the oven after baking thoroughly, and the temperature of the cake when it comes out of the oven is <m:math><m:mrow><m:mn>450</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math> The temperature of the kitchen is <m:math><m:mrow><m:mn>70</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext><m:mo>,</m:mo></m:mrow></m:math> and after <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> minutes the temperature of the cake is <m:math><m:mrow><m:mn>330</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math></para>
+<list id="fs-id1170571143291" list-type="enumerated" number-style="lower-alpha">
+<item>Write the appropriate initial-value problem to describe this situation.</item>
+<item>Solve the initial-value problem for <m:math><m:mrow><m:mi>T</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>How long will it take until the temperature of the cake is within <m:math><m:mrow><m:mn>5</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext></m:mrow></m:math> of room temperature?</item>
+</list>
+</problem>
+<solution id="fs-id1170571292457">
+<list id="fs-id1170571292459" list-type="enumerated" number-style="lower-alpha">
+<item>Initial-value problem<newline/>
+<m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>T</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>T</m:mi><m:mo>−</m:mo><m:mn>70</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>T</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>450</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>T</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>70</m:mn><m:mo>+</m:mo><m:mn>380</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mi>k</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math></item>
+<item>Approximately <m:math><m:mrow><m:mn>114</m:mn></m:mrow></m:math> minutes.</item>
+</list>
+</solution>
+<commentary id="fs-id1170571137906" type="hint">
+<title>Hint</title>
+<para id="fs-id1170571137912">Determine the values of <m:math><m:mrow><m:msub><m:mi>T</m:mi><m:mi>s</m:mi></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>T</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:math> then use <link target-id="fs-id1170573268326"/>.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+</section>
+<section id="fs-id1170573604128" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id1170573604134" list-type="bulleted" bullet-style="bullet">
+<item>A separable differential equation is any equation that can be written in the form <m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>The method of separation of variables is used to find the general solution to a separable differential equation.</item>
+</list>
+</section>
+<section id="fs-id1170571346190" class="key-equations">
+<title>Key Equations</title>
+<table id="eip-517" summary="." class="unnumbered unstyled">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><emphasis effect="bold">Separable differential equation</emphasis></entry>
+    <entry><m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry><emphasis effect="bold">Solution concentration</emphasis></entry>
+    <entry><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mtext>INFLOW RATE</m:mtext><m:mo>−</m:mo><m:mtext>OUTFLOW RATE</m:mtext></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry><emphasis effect="bold">Newton’s law of cooling</emphasis></entry>
+    <entry><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>T</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>T</m:mi><m:mo>−</m:mo><m:msub><m:mi>T</m:mi><m:mi>s</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</section>
+<section id="fs-id1170571116657" class="section-exercises">
+<para id="fs-id1170571346206">Solve the following initial-value problems with the initial condition <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and graph the solution.</para>
+<exercise id="fs-id1170571298232">
+<problem id="fs-id1170571298234">
+<para id="fs-id1170571298236"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170571216145">
+<para id="fs-id1170571216147"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170573628755">
+<problem id="fs-id1170573628757">
+<para id="fs-id1170573628726"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571227046">
+<problem id="fs-id1170571227048">
+<para id="fs-id1170571227050"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170573536913">
+<para id="fs-id1170573536915"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>C</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170573739096">
+<problem id="fs-id1170573736901">
+<para id="fs-id1170573736903"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170573720279">Find the general solution to the differential equation.</para>
+<exercise id="fs-id1170571086082">
+<problem id="fs-id1170571086084">
+<para id="fs-id1170571086086"><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>y</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170571137783">
+<para id="fs-id1170571137785"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>C</m:mi><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−1</m:mn><m:mtext>/</m:mtext><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571082435">
+<problem id="fs-id1170571082437">
+<para id="fs-id1170571082439"><m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mtext>tan</m:mtext><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow><m:mi>x</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571086134">
+<problem id="fs-id1170571086136">
+<para id="fs-id1170571086138"><m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170571026547">
+<para id="fs-id1170571026549"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>C</m:mi><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571080665">
+<problem id="fs-id1170571080667">
+<para id="fs-id1170571080670"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>y</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170573742502">
+<problem id="fs-id1170573726186">
+<para id="fs-id1170573726188"><m:math><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170571343516">
+<para id="fs-id1170571343518"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>2</m:mn><m:mrow><m:mi>C</m:mi><m:mo>+</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571105977">
+<problem id="fs-id1170571105980">
+<para id="fs-id1170571105982"><m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>y</m:mi></m:msup><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170570991601">
+<problem id="fs-id1170570991604">
+<para id="fs-id1170573514638"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170571234163">
+<para id="fs-id1170571234165"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>C</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571027370">
+<problem id="fs-id1170571027373">
+<para id="fs-id1170571027375"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571503173">
+<problem id="fs-id1170571503176">
+<para id="fs-id1170571503178"><m:math><m:mrow><m:mi>t</m:mi><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170573535517">
+<para id="fs-id1170573535519"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571041172">
+<problem id="fs-id1170571041175">
+<para id="fs-id1170571041177"><m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:msup><m:mi>e</m:mi><m:mi>y</m:mi></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170571074902">Find the solution to the initial-value problem.</para>
+<exercise id="fs-id1170571074905">
+<problem id="fs-id1170571074907">
+<para id="fs-id1170571074909"><m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow></m:msup><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170571267064">
+<para id="fs-id1170571267066"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571306882">
+<problem id="fs-id1170571343222">
+<para id="fs-id1170571343224"><m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571023995">
+<problem id="fs-id1170571023998">
+<para id="fs-id1170571024000"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170571140193">
+<para id="fs-id1170571140195"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mrow><m:mn>2</m:mn><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170573525553">
+<problem id="fs-id1170573525555">
+<para id="fs-id1170573525557"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571346512">
+<problem id="fs-id1170571346514">
+<para id="fs-id1170571233298"><m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mrow><m:mtext>sech</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>y</m:mi></m:mrow></m:mfrac><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170573743784">
+<para id="fs-id1170573743786"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mrow><m:mtext>tanh</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170573732357">
+<problem id="fs-id1170573732359">
+<para id="fs-id1170573732361"><m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−1</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571375659">
+<problem id="fs-id1170571375662">
+<para id="fs-id1170571375664"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>,</m:mo><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170573737700">
+<para id="fs-id1170573737702"><m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>t</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170573546252">
+<problem id="fs-id1170573546255">
+<para id="fs-id1170573546257"><m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">(</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170573735242">
+<problem id="fs-id1170573735244">
+<para id="fs-id1170573735246"><m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>y</m:mi></m:msup><m:msup><m:mn>5</m:mn><m:mi>x</m:mi></m:msup><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170571332572">
+<para id="fs-id1170571332574"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:msup><m:mn>5</m:mn><m:mi>x</m:mi></m:msup><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571169464">
+<problem id="fs-id1170571169466">
+<para id="fs-id1170571169468"><m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mn>−2</m:mn><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>tan</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170573503653">For the following problems, use a software program or your calculator to generate the directional fields. Solve explicitly and draw solution curves for several initial conditions. Are there some critical initial conditions that change the behavior of the solution?</para>
+<exercise id="fs-id1170571503203">
+<problem id="fs-id1170571503205">
+<para id="fs-id1170571503207"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>y</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170573762583">
+<para id="fs-id1170573762585"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>C</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math><newline/>
+<media id="fs-id1170573762613" alt="A direction field with horizontal arrows pointing to the right at y = 0.5. Above 0.5, the arrows slope down and to the right and are increasingly vertical the further they are from y = 0.5 Below0.5, the arrows slope up and to the right and are increasingly vertical the further they are from y = 0.5.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_03_201.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571051147">
+<problem id="fs-id1170571051149">
+<para id="fs-id1170571051151"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571169446">
+<problem id="fs-id1170571169448">
+<para id="fs-id1170571169450"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170571343268">
+<para id="fs-id1170571343270"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt><m:msqrt><m:mrow><m:mi>C</m:mi><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math><newline/>
+<media id="fs-id1170573491884" alt="A direction field with arrows pointing to the right. They are horizontal at the y axis. The further the arrows are from the axis, the more vertical they become. They point up above the x axis and down below the x axis.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_03_203.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170573491896">
+<problem id="fs-id1170573491898">
+<para id="fs-id1170573491900"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>y</m:mi></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571348378">
+<problem id="fs-id1170571348381">
+<para id="fs-id1170571348383"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mi>y</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170573619811">
+<para id="fs-id1170573619813"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>C</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:msup><m:mi>x</m:mi><m:mi>x</m:mi></m:msup></m:mrow></m:math><newline/>
+<media id="fs-id1170571429492" alt="A direction field with arrows pointing to the right. The arrows are flat on y = 1. The further the arrows are from that, the steeper they become. They point up above that line and down below that line.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_03_205.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571429505">
+<problem id="fs-id1170571152529">
+<para id="fs-id1170571152531">Most <term class="no-emphasis">drugs in the bloodstream</term> decay according to the equation <m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mi>c</m:mi><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mi>y</m:mi></m:math> is the concentration of the drug in the bloodstream. If the half-life of a drug is <m:math><m:mn>2</m:mn></m:math> hours, what fraction of the initial dose remains after <m:math><m:mn>6</m:mn></m:math> hours?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571334905">
+<problem id="fs-id1170571334907">
+<para id="fs-id1170571334910">A drug is administered intravenously to a patient at a rate <m:math><m:mi>r</m:mi></m:math> mg/h and is cleared from the body at a rate proportional to the amount of drug still present in the body, <m:math><m:mi>d</m:mi></m:math> Set up and solve the differential equation, assuming there is no drug initially present in the body.</para>
+</problem>
+<solution id="fs-id1170571252471">
+<para id="fs-id1170571252474"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>r</m:mi><m:mi>d</m:mi></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170573732323">
+<problem id="fs-id1170573732325">
+<para id="fs-id1170573732327"><emphasis effect="bold">[T]</emphasis> How often should a drug be taken if its dose is <m:math><m:mn>3</m:mn></m:math> mg, it is cleared at a rate <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0.1</m:mn></m:mrow></m:math> mg/h, and <m:math><m:mn>1</m:mn></m:math> mg is required to be in the bloodstream at all times?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571503132">
+<problem id="fs-id1170571503134">
+<para id="fs-id1170571503136">A tank contains <m:math><m:mn>1</m:mn></m:math> kilogram of salt dissolved in <m:math><m:mrow><m:mn>100</m:mn></m:mrow></m:math> liters of water. A salt solution of <m:math><m:mrow><m:mn>0.1</m:mn></m:mrow></m:math> kg salt/L is pumped into the tank at a rate of <m:math><m:mn>2</m:mn></m:math> L/min and is drained at the same rate. Solve for the salt concentration at time <m:math><m:mi>t</m:mi><m:mo>.</m:mo></m:math> Assume the tank is well mixed.</para>
+</problem>
+<solution id="fs-id1170573717039">
+<para id="fs-id1170573717041"><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>−</m:mo><m:mn>9</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mi>x</m:mi><m:mtext>/</m:mtext><m:mrow><m:mn>50</m:mn></m:mrow></m:mrow></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571332706">
+<problem id="fs-id1170571332708">
+<para id="fs-id1170571332710">A tank containing <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> kilograms of salt dissolved in <m:math><m:mrow><m:mn>1000</m:mn></m:mrow></m:math> liters of water has two salt solutions pumped in. The first solution of <m:math><m:mrow><m:mn>0.2</m:mn></m:mrow></m:math> kg salt/L is pumped in at a rate of <m:math><m:mrow><m:mn>20</m:mn></m:mrow></m:math> L/min and the second solution of <m:math><m:mrow><m:mn>0.05</m:mn></m:mrow></m:math> kg salt/L is pumped in at a rate of <m:math><m:mn>5</m:mn></m:math> L/min. The tank drains at <m:math><m:mrow><m:mn>25</m:mn></m:mrow></m:math> L/min. Assume the tank is well mixed. Solve for the salt concentration at time <m:math><m:mi>t</m:mi><m:mo>.</m:mo></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170573756832">
+<problem id="fs-id1170573756835">
+<para id="fs-id1170573756837"><emphasis effect="bold">[T]</emphasis> For the preceding problem, find how much salt is in the tank <m:math><m:mn>1</m:mn></m:math> hour after the process begins.</para>
+</problem>
+<solution id="fs-id1170573756849">
+<para id="fs-id1170573756851"><m:math><m:mrow><m:mn>134.3</m:mn></m:mrow></m:math> kilograms</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170573756861">
+<problem id="fs-id1170573756863">
+<para id="fs-id1170573611953">Torricelli’s law states that for a water tank with a hole in the bottom that has a cross-section of <m:math><m:mi>A</m:mi></m:math> and with a height of water <m:math><m:mi>h</m:mi></m:math> above the bottom of the tank, the rate of change of volume of water flowing from the tank is proportional to the square root of the height of water, according to <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>V</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>A</m:mi><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>g</m:mi><m:mi>h</m:mi></m:mrow></m:msqrt><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mi>g</m:mi></m:math> is the acceleration due to gravity. Note that <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>V</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>A</m:mi><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>h</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> Solve the resulting initial-value problem for the height of the water, assuming a tank with a hole of radius <m:math><m:mn>2</m:mn></m:math> ft. The initial height of water is <m:math><m:mrow><m:mn>100</m:mn></m:mrow></m:math> ft.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571209325">
+<problem id="fs-id1170571209327">
+<para id="fs-id1170571209329">For the preceding problem, determine how long it takes the tank to drain.</para>
+</problem>
+<solution id="fs-id1170571209333">
+<para id="fs-id1170571209335"><m:math><m:mrow><m:mn>720</m:mn></m:mrow></m:math> seconds</para>
+</solution>
+</exercise>
+<para id="fs-id1170573507080">For the following problems, use Newton’s law of cooling.</para>
+<exercise id="fs-id1170573507083">
+<problem id="fs-id1170573507085">
+<para id="fs-id1170573507088">The liquid base of an ice cream has an initial temperature of <m:math><m:mrow><m:mn>200</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext></m:mrow></m:math> before it is placed in a freezer with a constant temperature of <m:math><m:mrow><m:mn>0</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math> After <m:math><m:mn>1</m:mn></m:math> hour, the temperature of the ice-cream base has decreased to <m:math><m:mrow><m:mn>140</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math> Formulate and solve the initial-value problem to determine the temperature of the ice cream.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571146758">
+<problem id="fs-id1170571146760">
+<para id="fs-id1170571146762"><emphasis effect="bold">[T]</emphasis> The liquid base of an ice cream has an initial temperature of <m:math><m:mrow><m:mn>210</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext></m:mrow></m:math> before it is placed in a freezer with a constant temperature of <m:math><m:mrow><m:mn>20</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math> After <m:math><m:mn>2</m:mn></m:math> hours, the temperature of the ice-cream base has decreased to <m:math><m:mrow><m:mn>170</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math> At what time will the ice cream be ready to eat? (Assume <m:math><m:mrow><m:mn>30</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext></m:mrow></m:math> is the optimal eating temperature.)</para>
+</problem>
+<solution id="fs-id1170571137600">
+<para id="fs-id1170571137602"><m:math><m:mrow><m:mn>24</m:mn></m:mrow></m:math> hours <m:math><m:mrow><m:mn>57</m:mn></m:mrow></m:math> minutes</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571110643">
+<problem id="fs-id1170571110645">
+<para id="fs-id1170571110647"><emphasis effect="bold">[T]</emphasis> You are organizing an ice cream social. The outside temperature is <m:math><m:mrow><m:mn>80</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext></m:mrow></m:math> and the ice cream is at <m:math><m:mrow><m:mn>10</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math> After <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> minutes, the ice cream temperature has risen by <m:math><m:mrow><m:mn>10</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math> How much longer can you wait before the ice cream melts at <m:math><m:mrow><m:mn>40</m:mn><m:mtext>°</m:mtext><m:mtext>F?</m:mtext></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571074882">
+<problem id="fs-id1170571074884">
+<para id="fs-id1170571074886">You have a cup of coffee at temperature <m:math><m:mrow><m:mn>70</m:mn><m:mtext>°</m:mtext><m:mtext>C</m:mtext></m:mrow></m:math> and the ambient temperature in the room is <m:math><m:mrow><m:mn>20</m:mn><m:mtext>°</m:mtext><m:mtext>C</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math> Assuming a cooling rate <m:math><m:mrow><m:mi>k</m:mi><m:mspace width="0.2em"/><m:mtext>of</m:mtext><m:mspace width="0.2em"/><m:mn>0.125</m:mn><m:mo>,</m:mo></m:mrow></m:math> write and solve the differential equation to describe the temperature of the coffee with respect to time.</para>
+</problem>
+<solution id="fs-id1170571278861">
+<para id="fs-id1170571278863"><m:math><m:mrow><m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>20</m:mn><m:mo>+</m:mo><m:mn>50</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−0.125</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571151946">
+<problem id="fs-id1170571151948">
+<para id="fs-id1170571151950"><emphasis effect="bold">[T]</emphasis> You have a cup of coffee at temperature <m:math><m:mrow><m:mn>70</m:mn><m:mtext>°</m:mtext><m:mtext>C</m:mtext></m:mrow></m:math> that you put outside, where the ambient temperature is <m:math><m:mrow><m:mn>0</m:mn><m:mtext>°</m:mtext><m:mtext>C</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math> After <m:math><m:mn>5</m:mn></m:math> minutes, how much colder is the coffee?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170570991542">
+<problem id="fs-id1170570991544">
+<para id="fs-id1170570991546">You have a cup of coffee at temperature <m:math><m:mrow><m:mn>70</m:mn><m:mtext>°</m:mtext><m:mtext>C</m:mtext></m:mrow></m:math> and you immediately pour in <m:math><m:mn>1</m:mn></m:math> part milk to <m:math><m:mn>5</m:mn></m:math> parts coffee. The milk is initially at temperature <m:math><m:mrow><m:mn>1</m:mn><m:mtext>°</m:mtext><m:mtext>C</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math> Write and solve the differential equation that governs the temperature of this coffee.</para>
+</problem>
+<solution id="fs-id1170570991581">
+<para id="fs-id1170570991583"><m:math><m:mrow><m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>20</m:mn><m:mo>+</m:mo><m:mn>38.5</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−0.125</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571137651">
+<problem id="fs-id1170571137653">
+<para id="fs-id1170571137655">You have a cup of coffee at temperature <m:math><m:mrow><m:mn>70</m:mn><m:mtext>°</m:mtext><m:mtext>C</m:mtext><m:mo>,</m:mo></m:mrow></m:math> which you let cool <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> minutes before you pour in the same amount of milk at <m:math><m:mrow><m:mn>1</m:mn><m:mtext>°</m:mtext><m:mtext>C</m:mtext></m:mrow></m:math> as in the preceding problem. How does the temperature compare to the previous cup after <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> minutes?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571110518">
+<problem id="fs-id1170571110520">
+<para id="fs-id1170571110522">Solve the generic problem <m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow></m:math> with initial condition <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170571307053">
+<para id="fs-id1170571307055"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>c</m:mi><m:mo>+</m:mo><m:mfrac><m:mi>b</m:mi><m:mi>a</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>a</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mfrac><m:mi>b</m:mi><m:mi>a</m:mi></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571042943">
+<problem id="fs-id1170571042946">
+<para id="fs-id1170571042948">Prove the basic continual compounded interest equation. Assuming an initial deposit of <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:math> and an interest rate of <m:math><m:mrow><m:mi>r</m:mi><m:mo>,</m:mo></m:mrow></m:math> set up and solve an equation for continually compounded interest.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170573735511">
+<problem id="fs-id1170573735513">
+<para id="fs-id1170573735515">Assume an initial nutrient amount of <m:math><m:mi>I</m:mi></m:math> kilograms in a tank with <m:math><m:mi>L</m:mi></m:math> liters. Assume a concentration of <m:math><m:mi>c</m:mi></m:math> kg/L being pumped in at a rate of <m:math><m:mi>r</m:mi></m:math> L/min. The tank is well mixed and is drained at a rate of <m:math><m:mi>r</m:mi></m:math> L/min. Find the equation describing the amount of nutrient in the tank.</para>
+</problem>
+<solution id="fs-id1170573735542">
+<para id="fs-id1170573735544"><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>c</m:mi><m:mi>L</m:mi><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mi>I</m:mi><m:mo>−</m:mo><m:mi>c</m:mi><m:mi>L</m:mi><m:mo stretchy="false">)</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow><m:mtext>/</m:mtext><m:mi>L</m:mi></m:mrow></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571343179">
+<problem id="fs-id1170571343181">
+<para id="fs-id1170571343183">Leaves accumulate on the forest floor at a rate of <m:math><m:mn>2</m:mn></m:math> g/cm<sup>2</sup>/yr and also decompose at a rate of <m:math><m:mrow><m:mn>90</m:mn><m:mtext>%</m:mtext></m:mrow></m:math> per year. Write a differential equation governing the number of grams of leaf litter per square centimeter of forest floor, assuming at time <m:math><m:mn>0</m:mn></m:math> there is no leaf litter on the ground. Does this amount approach a steady value? What is that value?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170573742107">
+<problem id="fs-id1170573742109">
+<para id="fs-id1170573742111">Leaves accumulate on the forest floor at a rate of <m:math><m:mn>4</m:mn></m:math> g/cm<sup>2</sup>/yr. These leaves decompose at a rate of <m:math><m:mrow><m:mn>10</m:mn><m:mtext>%</m:mtext></m:mrow></m:math> per year. Write a differential equation governing the number of grams of leaf litter per square centimeter of forest floor. Does this amount approach a steady value? What is that value?</para>
+</problem>
+<solution id="fs-id1170571510472">
+<para id="fs-id1170571510474"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>40</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−0.1</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mn>40</m:mn></m:mrow></m:math> g/cm<sup>2</sup></para>
+</solution>
+</exercise>
+</section>
+ </content>
+<glossary>
+<definition id="fs-id1170571243486">
+<term>autonomous differential equation</term>
+<meaning id="fs-id1170571243492">an equation in which the right-hand side is a function of <m:math><m:mi>y</m:mi></m:math> alone</meaning>
+</definition>
+<definition id="fs-id1170571243500">
+<term>separable differential equation</term>
+<meaning id="fs-id1170571243506">any equation that can be written in the form <m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math></meaning>
+</definition>
+<definition id="fs-id1170573742138">
+<term>separation of variables</term>
+<meaning id="fs-id1170573742143">a method used to solve a separable differential equation</meaning>
+</definition>
+</glossary>
+</document>

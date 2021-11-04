@@ -1,0 +1,882 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+<title>Functions of Several Variables</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53946</md:content-id>
+  <md:title>Functions of Several Variables</md:title>
+  <md:abstract><list>
+<item>Recognize a function of two variables and identify its domain and range.</item>
+<item>Sketch a graph of a function of two variables.</item>
+<item>Sketch several traces or level curves of a function of two variables.</item>
+<item>Recognize a function of three or more variables and identify its level surfaces.</item>
+</list></md:abstract>
+  <md:uuid>b7e3d905-cf1c-4d70-8f63-b5101d20b9ce</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-id1167794055134">Our first step is to explain what a function of more than one variable is, starting with functions of two independent variables. This step includes identifying the domain and range of such functions and learning how to graph them. We also examine ways to relate the graphs of functions in three dimensions to graphs of more familiar planar functions.</para>
+<section id="fs-id1167793984762">
+<title>Functions of Two Variables</title>
+<para id="fs-id1167794060692">The definition of a function of two variables is very similar to the definition for a function of one variable. The main difference is that, instead of mapping values of one variable to values of another variable, we map ordered pairs of variables to another variable.</para>
+<note id="fs-id1167794040017">
+<title>Definition</title>
+<para id="fs-id1167793998846">A <term>function of two variables</term> <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> maps each ordered pair <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> in a subset <m:math><m:mi>D</m:mi></m:math> of the real plane <m:math><m:mrow><m:msup><m:mi>ℝ</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> to a unique real number <m:math><m:mrow><m:mi>z</m:mi><m:mo>.</m:mo></m:mrow></m:math> The set <m:math><m:mi>D</m:mi></m:math> is called the <emphasis effect="italics">domain</emphasis> of the function. The <emphasis effect="italics">range</emphasis> of <m:math><m:mi>f</m:mi></m:math> is the set of all real numbers <m:math><m:mi>z</m:mi></m:math> that has at least one ordered pair <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>∈</m:mo><m:mi>D</m:mi></m:mrow></m:math> such that <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>z</m:mi></m:mrow></m:math> as shown in the following figure.</para></note>
+<figure id="CNX_Calc_Figure_14_01_001">
+<media id="fs-id1167794030881" alt="A bulbous shape is marked domain and it contains the point (x, y). From this point, there is an arrow marked f that points to a point z on a straight line marked range.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_001.jpg"/>
+</media>
+<caption>The domain of a function of two variables consists of ordered pairs <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></caption>
+</figure>
+<para id="fs-id1167794336160">Determining the domain of a function of two variables involves taking into account any domain restrictions that may exist. Let’s take a look.</para>
+<example id="fs-id1167793371525">
+<exercise id="fs-id1167794073216">
+<problem id="fs-id1167793438039">
+<title>Domains and Ranges for Functions of Two Variables</title>
+<para id="fs-id1167794210658">Find the domain and range of each of the following functions:</para>
+<list id="fs-id1167793997527" list-type="enumerated" number-style="lower-alpha">
+<item><m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math></item>
+</list>
+</problem>
+<solution id="fs-id1167793901721">
+<list id="fs-id1167793818898" list-type="enumerated" number-style="lower-alpha">
+<item>This is an example of a linear function in two variables. There are no values or combinations of <m:math><m:mi>x</m:mi></m:math> and <m:math><m:mi>y</m:mi></m:math> that cause <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> to be undefined, so the domain of <m:math><m:mi>f</m:mi></m:math> is <m:math><m:mrow><m:msup><m:mi>ℝ</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> To determine the range, first pick a value for <m:math><m:mi>z</m:mi><m:mo>.</m:mo></m:math> We need to find a solution to the equation <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>z</m:mi><m:mo>,</m:mo></m:mrow></m:math> or <m:math><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mi>z</m:mi><m:mo>.</m:mo></m:mrow></m:math> One such solution can be obtained by first setting <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> which yields the equation <m:math><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mi>z</m:mi><m:mo>.</m:mo></m:mrow></m:math> The solution to this equation is <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>z</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> which gives the ordered pair <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>z</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> as a solution to the equation <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>z</m:mi></m:mrow></m:math> for any value of <m:math><m:mi>z</m:mi><m:mo>.</m:mo></m:math> Therefore, the range of the function is all real numbers, or <m:math><m:mrow><m:mi>ℝ</m:mi><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>For the function <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> to have a real value, the quantity under the square root must be nonnegative:<newline/>
+<equation id="fs-id1167793258386" class="unnumbered"><label/><m:math><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>≥</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+This inequality can be written in the form<newline/>
+<equation id="fs-id1167794218592" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>≤</m:mo><m:mn>9</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Therefore, the domain of <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>∈</m:mo><m:mrow><m:mrow><m:msup><m:mi>ℝ</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>|</m:mo></m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>≤</m:mo><m:mn>9</m:mn></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> The graph of this set of points can be described as a disk of radius <m:math><m:mn>3</m:mn></m:math> centered at the origin. The domain includes the boundary circle as shown in the following graph.<newline/>
+<figure id="CNX_Calc_Figure_14_01_002">
+<media id="fs-id1167793953675" alt="A circle of radius three with center at the origin. The equation x2 + y2 = 9 is given.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_002.jpg"/>
+</media>
+<caption>The domain of the function <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math> is a closed disk of radius 3.</caption>
+</figure><newline/>
+To determine the range of <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math> we start with a point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> on the boundary of the domain, which is defined by the relation <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>.</m:mo></m:mrow></m:math> It follows that <m:math><m:mrow><m:msubsup><m:mi>x</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mi>y</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math> and<newline/>
+<equation id="fs-id1167793976388" class="unnumbered"><label/><m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msubsup><m:mi>x</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>−</m:mo><m:msubsup><m:mi>y</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>x</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mi>y</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>9</m:mn></m:mrow></m:msqrt><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+If <m:math><m:mrow><m:msubsup><m:mi>x</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mi>y</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> (in other words, <m:math><m:mrow><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> then<newline/>
+<equation id="fs-id1167793300455" class="unnumbered"><label/><m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msubsup><m:mi>x</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>−</m:mo><m:msubsup><m:mi>y</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>x</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mi>y</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>0</m:mn></m:mrow></m:msqrt><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+This is the maximum value of the function. Given any value <emphasis effect="italics">c</emphasis> between <m:math><m:mrow><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow></m:math> we can find an entire set of points inside the domain of <m:math><m:mi>g</m:mi></m:math> such that <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>c</m:mi><m:mtext>:</m:mtext></m:mrow></m:math><newline/>
+<equation id="fs-id1167794030291" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>c</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+Since <m:math><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> this describes a circle of radius <m:math><m:mrow><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math> centered at the origin. Any point on this circle satisfies the equation <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>.</m:mo></m:mrow></m:math> Therefore, the range of this function can be written in interval notation as <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></item>
+</list>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167793855526" class="checkpoint">
+<exercise id="fs-id1167793983759">
+<problem id="fs-id1167793938241">
+<para id="fs-id1167793983037">Find the domain and range of the function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>36</m:mn><m:mo>−</m:mo><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>9</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794026033">
+<para id="fs-id1167793544265">The domain is the shaded circle defined by the inequality <m:math><m:mrow><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>9</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>≤</m:mo><m:mn>36</m:mn><m:mo>,</m:mo></m:mrow></m:math> which has a circle of radius <m:math><m:mn>2</m:mn></m:math> as its boundary. The range is <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>6</m:mn></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math><newline/>
+<media id="fs-id1167793444602" alt="A circle of radius two with center at the origin. The equation x2 + y2 ≤ 4 is given.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_003.jpg"/>
+</media></para>
+</solution>
+<commentary id="fs-id1167793985243" type="hint">
+<title>Hint</title>
+<para id="fs-id1167793426756">Determine the set of ordered pairs that do not make the radicand negative.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+<section id="fs-id1167794212628">
+<title>Graphing Functions of Two Variables</title>
+<para id="fs-id1167794178170">Suppose we wish to graph the function <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> This function has two independent variables <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and one dependent variable <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mi>z</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> When graphing a function <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> of one variable, we use the Cartesian plane. We are able to graph any ordered pair <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> in the plane, and every point in the plane has an ordered pair <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> associated with it. With a function of two variables, each ordered pair <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> in the domain of the function is mapped to a real number <m:math><m:mrow><m:mi>z</m:mi><m:mo>.</m:mo></m:mrow></m:math> Therefore, the graph of the function <m:math><m:mi>f</m:mi></m:math> consists of ordered triples <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> The graph of a function <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> of two variables is called a <term>surface</term>.</para>
+<para id="fs-id1167794188060">To understand more completely the concept of plotting a set of ordered triples to obtain a surface in three-dimensional space, imagine the <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> coordinate system laying flat. Then, every point in the domain of the function <m:math><m:mi>f</m:mi></m:math> has a unique <m:math><m:mi>z</m:mi><m:mtext>-value</m:mtext></m:math> associated with it. If <m:math><m:mi>z</m:mi></m:math> is positive, then the graphed point is located above the <m:math><m:mrow><m:mtext mathvariant="italic">xy</m:mtext><m:mtext>-plane,</m:mtext></m:mrow></m:math> if <m:math><m:mi>z</m:mi></m:math> is negative, then the graphed point is located below the <m:math><m:mrow><m:mtext mathvariant="italic">xy</m:mtext><m:mtext>-plane</m:mtext><m:mo>.</m:mo></m:mrow></m:math> The set of all the graphed points becomes the two-dimensional surface that is the graph of the function <m:math><m:mi>f</m:mi><m:mo>.</m:mo></m:math></para>
+<example id="fs-id1167793887390">
+<exercise id="fs-id1167793878353">
+<problem id="fs-id1167793932901">
+<title>Graphing Functions of Two Variables</title>
+<para id="fs-id1167793261160">Create a graph of each of the following functions:</para>
+<list id="fs-id1167793398728" list-type="enumerated" number-style="lower-alpha">
+<item><m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></item>
+</list>
+</problem>
+<solution id="fs-id1167794067571">
+<list id="fs-id1167793958604" list-type="enumerated" number-style="lower-alpha">
+<item>In <link target-id="fs-id1167793371525"/>, we determined that the domain of <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math> is <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>∈</m:mo><m:mrow><m:mrow><m:msup><m:mi>ℝ</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>|</m:mo></m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>≤</m:mo><m:mn>9</m:mn></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math> and the range is <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mi>z</m:mi><m:mo>∈</m:mo><m:mrow><m:mrow><m:msup><m:mi>ℝ</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>|</m:mo></m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>z</m:mi><m:mo>≤</m:mo><m:mn>3</m:mn></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> When <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math> we have <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> Therefore any point on the circle of radius <m:math><m:mn>3</m:mn></m:math> centered at the origin in the <m:math><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mtext>-plane</m:mtext></m:mrow></m:math> maps to <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> in <m:math><m:mrow><m:msup><m:mi>ℝ</m:mi><m:mn>3</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> If <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> so any point on the circle of radius <m:math><m:mrow><m:mn>2</m:mn><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:math> centered at the origin in the <m:math><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mtext>-plane</m:mtext></m:mrow></m:math> maps to <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> in <m:math><m:mrow><m:msup><m:mi>ℝ</m:mi><m:mn>3</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> As <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> gets closer to zero, the value of <emphasis effect="italics">z</emphasis> approaches 3. When <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math> This is the origin in the <m:math><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mtext>-plane</m:mtext><m:mo>.</m:mo></m:mrow></m:math> If <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> is equal to any other value between <m:math><m:mrow><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mn>9</m:mn><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> equals some other constant between <m:math><m:mrow><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math> The surface described by this function is a hemisphere centered at the origin with radius <m:math><m:mn>3</m:mn></m:math> as shown in the following graph.<newline/>
+<figure id="CNX_Calc_Figure_14_01_004">
+<media id="fs-id1167793618095" alt="A hemisphere with center at the origin. The equation z = g(x, y) = the square root of the quantity (9 – x2 – y2) is given.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_004.jpg"/>
+</media>
+<caption>Graph of the hemisphere represented by the given function of two variables.</caption>
+</figure></item>
+<item>This function also contains the expression <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> Setting this expression equal to various values starting at zero, we obtain circles of increasing radius. The minimum value of <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> is zero (attained when <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> When <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> the function becomes <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> and when <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> then the function becomes <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> These are cross-sections of the graph, and are parabolas. Recall from <link document="m53906">Introduction to Vectors in Space</link> that the name of the graph of <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> is a <emphasis effect="italics">paraboloid</emphasis>. The graph of <m:math><m:mi>f</m:mi></m:math> appears in the following graph.<newline/>
+<figure id="CNX_Calc_Figure_14_01_005">
+<media id="fs-id1167793266003" alt="A paraboloid with vertex at the origin. The equation z = f(x, y) = x2 + y2 is given.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_005.jpg"/>
+</media>
+<caption>A paraboloid is the graph of the given function of two variables.</caption>
+</figure></item>
+</list>
+</solution>
+</exercise>
+</example>
+<example id="fs-id1167793390029">
+<exercise id="fs-id1167793390031">
+<problem id="fs-id1167794169352">
+<title>Nuts and Bolts</title>
+<para id="fs-id1167794043348">A profit function for a hardware manufacturer is given by</para>
+<equation id="fs-id1167794043351" class="unnumbered"><label/><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>16</m:mn><m:mo>−</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793953597">where <m:math><m:mi>x</m:mi></m:math> is the number of nuts sold per month (measured in thousands) and <m:math><m:mi>y</m:mi></m:math> represents the number of bolts sold per month (measured in thousands). Profit is measured in thousands of dollars. Sketch a graph of this function.</para>
+</problem>
+<solution id="fs-id1167793265628">
+<para id="fs-id1167793925358">This function is a polynomial function in two variables. The domain of <m:math><m:mi>f</m:mi></m:math> consists of <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> coordinate pairs that yield a nonnegative profit:</para>
+<equation id="fs-id1167793363804" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="left"><m:mn>16</m:mn><m:mo>−</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>≥</m:mo><m:mn>0</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>≤</m:mo><m:mn>16.</m:mn></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1167794037521">This is a disk of radius <m:math><m:mn>4</m:mn></m:math> centered at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> A further restriction is that both <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi></m:mrow></m:math> must be nonnegative. When <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>16</m:mn><m:mo>.</m:mo></m:mrow></m:math> Note that it is possible for either value to be a noninteger; for example, it is possible to sell <m:math><m:mrow><m:mn>2.5</m:mn></m:mrow></m:math> thousand nuts in a month. The domain, therefore, contains thousands of points, so we can consider all points within the disk. For any <m:math><m:mrow><m:mi>z</m:mi><m:mo>&lt;</m:mo><m:mn>16</m:mn><m:mo>,</m:mo></m:mrow></m:math> we can solve the equation <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>z</m:mi><m:mtext>:</m:mtext></m:mrow></m:math></para>
+<equation id="fs-id1167793420999" class="unnumbered"><label/><m:math><m:mtable><m:mtr/><m:mtr><m:mtd columnalign="right"><m:mn>16</m:mn><m:mo>−</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>z</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>16</m:mn><m:mo>−</m:mo><m:mi>z</m:mi><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1167794027058">Since <m:math><m:mrow><m:mi>z</m:mi><m:mo>&lt;</m:mo><m:mn>16</m:mn><m:mo>,</m:mo></m:mrow></m:math> we know that <m:math><m:mrow><m:mn>16</m:mn><m:mo>−</m:mo><m:mi>z</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> so the previous equation describes a circle with radius <m:math><m:mrow><m:msqrt><m:mrow><m:mn>16</m:mn><m:mo>−</m:mo><m:mi>z</m:mi></m:mrow></m:msqrt></m:mrow></m:math> centered at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Therefore. the range of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mi>z</m:mi><m:mo>∈</m:mo><m:mrow><m:mi>ℝ</m:mi><m:mo>|</m:mo></m:mrow><m:mi>z</m:mi><m:mo>≤</m:mo><m:mn>16</m:mn></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> The graph of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is also a paraboloid, and this paraboloid points downward as shown.</para>
+<figure id="CNX_Calc_Figure_14_01_006">
+<media id="fs-id1167793265079" alt="A paraboloid center seemingly on the positive z axis. The equation z = f(x, y) = 16 – (x – 3)2 – (y – 2)2 is given.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_006.jpg"/>
+</media>
+<caption>The graph of the given function of two variables is also a paraboloid.</caption>
+</figure>
+</solution>
+</exercise>
+</example>
+</section>
+<section id="fs-id1167793274042">
+<title>Level Curves</title>
+<para id="fs-id1167793638019">If hikers walk along rugged trails, they might use a topographical map that shows how steeply the trails change. A <term class="no-emphasis">topographical map</term> contains curved lines called <emphasis effect="italics">contour lines</emphasis>. Each contour line corresponds to the points on the map that have equal elevation (<link target-id="CNX_Calc_Figure_14_01_007"/>). A level curve of a function of two variables <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is completely analogous to a contour line on a topographical map.</para>
+<figure id="CNX_Calc_Figure_14_01_007">
+<media id="fs-id1167793949243" alt="This figure consists of two figures marked a and b. Figure a shows a topographic map of Devil’s Tower, which has its lines very close together to indicate the very steep terrain. Figure b shows a picture of Devil’s Tower, which has very steep sides.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_007.jpg"/>
+</media>
+<caption>(a) A topographical map of Devil’s Tower, Wyoming. Lines that are close together indicate very steep terrain. (b) A perspective photo of Devil’s Tower shows just how steep its sides are. Notice the top of the tower has the same shape as the center of the topographical map.</caption>
+</figure>
+<note id="fs-id1167793882806">
+<title>Definition</title>
+<para id="fs-id1167793882811">Given a function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and a number <m:math><m:mi>c</m:mi></m:math> in the range of <m:math><m:mrow><m:mi>f</m:mi><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>a</m:mtext></m:mrow></m:math> <term>level curve of a function of two variables</term> for the value <m:math><m:mi>c</m:mi></m:math> is defined to be the set of points satisfying the equation <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</note>
+<para id="fs-id1167794147127">Returning to the function <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>,</m:mo></m:mrow></m:math> we can determine the level curves of this function. The range of <m:math><m:mi>g</m:mi></m:math> is the closed interval <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> First, we choose any number in this closed interval—say, <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math> The level curve corresponding to <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> is described by the equation</para>
+<equation id="fs-id1167793377557" class="unnumbered"><label/><m:math><m:mrow><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793628076">To simplify, square both sides of this equation:</para>
+<equation id="fs-id1167794126146" class="unnumbered"><label/><m:math><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793383319">Now, multiply both sides of the equation by <m:math><m:mrow><m:mn>−1</m:mn></m:mrow></m:math> and add <m:math><m:mn>9</m:mn></m:math> to each side:</para>
+<equation id="fs-id1167794212849" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167794031064">This equation describes a circle centered at the origin with radius <m:math><m:mrow><m:msqrt><m:mn>5</m:mn></m:msqrt><m:mo>.</m:mo></m:mrow></m:math> Using values of <m:math><m:mi>c</m:mi></m:math> between <m:math><m:mrow><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mn>3</m:mn></m:mrow></m:math> yields other circles also centered at the origin. If <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow></m:math> then the circle has radius <m:math><m:mn>0</m:mn><m:mo>,</m:mo></m:math> so it consists solely of the origin. <link target-id="CNX_Calc_Figure_14_01_008"/> is a graph of the level curves of this function corresponding to <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math> Note that in the previous derivation it may be possible that we introduced extra solutions by squaring both sides. This is not the case here because the range of the square root function is nonnegative.</para>
+<figure id="CNX_Calc_Figure_14_01_008">
+<media id="fs-id1167794164473" alt="Three concentric circles with center at the origin. The largest circle marked c = 0 has a radius of 3. The medium circle marked c = 1 has a radius slightly less than 3. The smallest circle marked c = 2 has a radius slightly more than 2.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_008.jpg"/>
+</media>
+<caption>Level curves of the function <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>,</m:mo></m:mrow></m:math> using <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mn>3</m:mn></m:math> <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math> corresponds to the origin).</caption>
+</figure>
+<para id="fs-id1167794044137">A graph of the various level curves of a function is called a <term>contour map</term>.</para>
+<example id="fs-id1167793961239">
+<exercise id="fs-id1167793961241">
+<problem id="fs-id1167794147269">
+<title>Making a Contour Map</title>
+<para id="fs-id1167794147274">Given the function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>,</m:mo></m:mrow></m:math> find the level curve corresponding to <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> Then create a contour map for this function. What are the domain and range of <m:math><m:mrow><m:mi>f</m:mi><m:mo>?</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793510342">
+<para id="fs-id1167794333899">To find the level curve for <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> we set <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and solve. This gives</para>
+<equation id="fs-id1167793612585" class="unnumbered"><label/><m:math><m:mrow><m:mn>0</m:mn><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793964417">We then square both sides and multiply both sides of the equation by <m:math><m:mrow><m:mn>−1</m:mn><m:mtext>:</m:mtext></m:mrow></m:math></para>
+<equation id="fs-id1167793373719" class="unnumbered"><label/><m:math><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793524733">Now, we rearrange the terms, putting the <m:math><m:mi>x</m:mi></m:math> terms together and the <m:math><m:mi>y</m:mi></m:math> terms together, and add <m:math><m:mn>8</m:mn></m:math> to each side:</para>
+<equation id="fs-id1167794099173" class="unnumbered"><label/><m:math><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793548720">Next, we group the pairs of terms containing the same variable in parentheses, and factor <m:math><m:mn>4</m:mn></m:math> from the first pair:</para>
+<equation id="fs-id1167793977279" class="unnumbered"><label/><m:math><m:mrow><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793581505">Then we complete the square in each pair of parentheses and add the correct value to the right-hand side:</para>
+<equation id="fs-id1167793581509" class="unnumbered"><label/><m:math><m:mrow><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167794070091">Next, we factor the left-hand side and simplify the right-hand side:</para>
+<equation id="fs-id1167794070094" class="unnumbered"><label/><m:math><m:mrow><m:mn>4</m:mn><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>16</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167794328506">Last, we divide both sides by <m:math><m:mrow><m:mn>16</m:mn><m:mtext>:</m:mtext></m:mrow></m:math></para>
+<equation id="fs-id1167793547522"><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793503169">This equation describes an ellipse centered at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> The graph of this ellipse appears in the following graph.</para>
+<figure id="CNX_Calc_Figure_14_01_009">
+<media id="fs-id1167793443504" alt="An ellipse with center (1, –2), major axis vertical and of length 8, and minor axis horizontal of length 4.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_009.jpg"/>
+</media>
+<caption>Level curve of the function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math> corresponding to <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></caption>
+</figure>
+<para id="fs-id1167793278477">We can repeat the same derivation for values of <m:math><m:mi>c</m:mi></m:math> less than <m:math><m:mn>4</m:mn><m:mo>.</m:mo></m:math> Then, <link target-id="fs-id1167793547522"/> becomes</para>
+<equation id="fs-id1167793418306" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mrow><m:mn>4</m:mn><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>16</m:mn><m:mo>−</m:mo><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>16</m:mn><m:mo>−</m:mo><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></equation>
+<para id="fs-id1167793422044">for an arbitrary value of <m:math><m:mi>c</m:mi><m:mo>.</m:mo></m:math> <link target-id="CNX_Calc_Figure_14_01_010"/> shows a contour map for <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> using the values <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math> When <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo></m:mrow></m:math> the level curve is the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<figure id="CNX_Calc_Figure_14_01_010">
+<media id="fs-id1167793880297" alt="An series of four concentric ellipses with center (1, –2). The largest one is marked c = 0 and has major axis vertical and of length 8 and minor axis horizontal of length 4. The next smallest one is marked c = 1 and is only slightly smaller. The next two are marked c = 2 and c = 3 and are increasingly smaller. Finally, there is a point marked c = 4 at the center (1, –2).">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_010.jpg"/>
+</media>
+<caption>Contour map for the function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math> using the values <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math></caption>
+</figure>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167793964397" class="checkpoint">
+<exercise id="fs-id1167793964400">
+<problem id="fs-id1167793964402">
+<para id="fs-id1167793376346">Find and graph the level curve of the function <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi></m:mrow></m:math> corresponding to <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794140082">
+<para id="fs-id1167794140084">The equation of the level curve can be written as <m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>25</m:mn><m:mo>,</m:mo></m:mrow></m:math> which is a circle with radius <m:math><m:mn>5</m:mn></m:math> centered at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math><newline/>
+<media id="fs-id1167793632758" alt="An circle of radius 5 with center (3, –1).">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_011.jpg"/>
+</media></para>
+</solution>
+<commentary id="fs-id1167793373705" type="hint">
+<title>Hint</title>
+<para id="fs-id1167793420524">First, set <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>15</m:mn></m:mrow></m:math> and then complete the square.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1167793589858">Another useful tool for understanding the <term>graph of a function of two variables</term> is called a vertical trace. Level curves are always graphed in the <m:math><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mtext>-plane,</m:mtext></m:mrow></m:math> but as their name implies, vertical traces are graphed in the <m:math><m:mrow><m:mi>x</m:mi><m:mi>z</m:mi></m:mrow></m:math>- or <m:math><m:mrow><m:mi>y</m:mi><m:mi>z</m:mi><m:mtext>-planes.</m:mtext></m:mrow></m:math></para>
+<note id="fs-id1167793285160">
+<title>Definition</title>
+<para id="fs-id1167793285166">Consider a function <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> with domain <m:math><m:mrow><m:mi>D</m:mi><m:mo>⊆</m:mo><m:msup><m:mi>ℝ</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> A <term>vertical trace</term> of the function can be either the set of points that solves the equation <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>z</m:mi></m:mrow></m:math> for a given constant <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:mrow></m:math> or <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>z</m:mi></m:mrow></m:math> for a given constant <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</note>
+<example id="fs-id1167793291691">
+<exercise id="fs-id1167793291694">
+<problem id="fs-id1167794101423">
+<title>Finding Vertical Traces</title>
+<para id="fs-id1167794101428">Find vertical traces for the function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi></m:mrow></m:math> corresponding to <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794042310">
+<para id="fs-id1167794042312">First set <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> in the equation <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mtext>:</m:mtext></m:mrow></m:math></para>
+<equation id="fs-id1167793938287" class="unnumbered"><label/><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>≈</m:mo><m:mn>−0.7071</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793619086">This describes a cosine graph in the plane <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> The other values of <m:math><m:mi>z</m:mi></m:math> appear in the following table.</para>
+<table id="fs-id1167794284852" summary="This table consists of two columns and four rows. The first row is a header row and reads from left to right c and vertical trace for x = c. The first column below the header row reads –π/4, 0, and π/4. The second column reads z = –(square root of 2) cos y all divided by 2, z = 0, and z = (square root of 2) cos y all divided by 2.">
+<title>Vertical Traces Parallel to the <m:math><m:mrow><m:mi>x</m:mi><m:mi>z</m:mi><m:mtext>-Plane</m:mtext></m:mrow></m:math> for the Function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi></m:mrow></m:math></title>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead>
+<row valign="top">
+<entry valign="top" align="center"><m:math><m:mi>c</m:mi></m:math></entry>
+<entry valign="top" align="center"><emphasis effect="italics">Vertical Trace for</emphasis> <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>c</m:mi></m:mrow></m:math></entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry valign="top" align="center"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="center"><m:math><m:mn>0</m:mn></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="center"><m:math><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="fs-id1167793384894">In a similar fashion, we can substitute the <m:math><m:mi>y</m:mi><m:mtext>-values</m:mtext></m:math> in the equation <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> to obtain the traces in the <m:math><m:mrow><m:mi>y</m:mi><m:mi>z</m:mi><m:mtext>-plane,</m:mtext></m:mrow></m:math> as listed in the following table.</para>
+<table id="fs-id1167794213478" summary="This table consists of two columns and four rows. The first row is a header row and reads from left to right d and vertical trace for y = d. The first column below the header row reads –π/4, 0, and π/4. The second column reads z = –(square root of 2) sin x all divided by 2, z = sin x, and z = (square root of 2) sin x all divided by 2.">
+<title>Vertical Traces Parallel to the <m:math><m:mrow><m:mi>y</m:mi><m:mi>z</m:mi><m:mtext>-Plane</m:mtext></m:mrow></m:math> for the Function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi></m:mrow></m:math></title>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead>
+<row valign="top">
+<entry valign="top" align="center"><m:math><m:mi>d</m:mi></m:math></entry>
+<entry valign="top" align="center"><emphasis effect="italics">Vertical Trace for</emphasis> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>d</m:mi></m:mrow></m:math></entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry valign="top" align="center"><m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="center"><m:math><m:mn>0</m:mn></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="center"><m:math><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="fs-id1167793432433">The three traces in the <m:math><m:mrow><m:mi>x</m:mi><m:mi>z</m:mi><m:mtext>-plane</m:mtext></m:mrow></m:math> are cosine functions; the three traces in the <m:math><m:mrow><m:mi>y</m:mi><m:mi>z</m:mi><m:mtext>-plane</m:mtext></m:mrow></m:math> are sine functions. These curves appear in the intersections of the surface with the planes <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> as shown in the following figure.</para>
+<figure id="CNX_Calc_Figure_14_01_012">
+<media id="fs-id1167793607567" alt="This figure consists of two figures marked a and b. In figure a, a function is given in three dimensions and it is intersected by three parallel x-z planes at y = ±π/4 and 0. In figure b, a function is given in three dimensions and it is intersected by three parallel y-z planes at x = ±π/4 and 0.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_014.jpg"/>
+</media>
+<caption>Vertical traces of the function <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> are cosine curves in the <m:math><m:mrow><m:mi>x</m:mi><m:mi>z</m:mi><m:mtext>-planes</m:mtext></m:mrow></m:math> (a) and sine curves in the <m:math><m:mrow><m:mi>y</m:mi><m:mi>z</m:mi><m:mtext>-planes</m:mtext></m:mrow></m:math> (b).</caption>
+</figure>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167793638037" class="checkpoint">
+<exercise id="fs-id1167793638040">
+<problem id="fs-id1167794293273">
+<para id="fs-id1167794293275">Determine the equation of the vertical trace of the function <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>−</m:mtext><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:math> corresponding to <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow></m:math> and describe its graph.</para>
+</problem>
+<solution id="fs-id1167793618367">
+<para id="fs-id1167793618369"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> This function describes a parabola opening downward in the plane <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1167793480140" type="hint">
+<title>Hint</title>
+<para id="fs-id1167793638549">Set <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math> in the equation <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:math> and complete the square.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1167794147337">Functions of two variables can produce some striking-looking surfaces. The following figure shows two examples.</para>
+<figure id="CNX_Calc_Figure_14_01_013">
+<media id="fs-id1167793383305" alt="This figure consists of two figures marked a and b. In figure a, the function f(x, y) = x2 sin y is given; it has some sinusoidal properties by increases as the square along the maximums of the sine function. In figure b, the function f(x, y) = sin(ex) cos(ln y) is given in three dimensions; it decreases gently from the corner nearest (–2, 20) but then seems to bunch up into a series of folds that are parallel to the x and y axes.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_015.jpg"/>
+</media>
+<caption>Examples of surfaces representing functions of two variables: (a) a combination of a power function and a sine function and (b) a combination of trigonometric, exponential, and logarithmic functions.</caption>
+</figure>
+</section>
+<section id="fs-id1167793912021">
+<title>Functions of More Than Two Variables</title>
+<para id="fs-id1167793912026">So far, we have examined only functions of two variables. However, it is useful to take a brief look at functions of more than two variables. Two such examples are</para>
+<equation id="fs-id1167793516790" class="unnumbered"><label/><m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mi>z</m:mi><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mspace width="0.2em"/><m:mtext>(a polynomial in three variables)</m:mtext></m:mrow></m:math></equation>
+<para id="fs-id1167793245198">and</para>
+<equation id="fs-id1167793245201" class="unnumbered"><label/><m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>t</m:mi><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793630188">In the first function, <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> represents a point in space, and the function <m:math><m:mi>f</m:mi></m:math> maps each point in space to a fourth quantity, such as temperature or wind speed. In the second function, <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> can represent a point in the plane, and <m:math><m:mi>t</m:mi></m:math> can represent time. The function might map a point in the plane to a third quantity (for example, pressure) at a given time <m:math><m:mi>t</m:mi><m:mo>.</m:mo></m:math> The method for finding the domain of a function of more than two variables is analogous to the method for functions of one or two variables.</para>
+<example id="fs-id1167793385918">
+<exercise id="fs-id1167793385920">
+<problem id="fs-id1167793385922">
+<title>Domains for Functions of Three Variables</title>
+<para id="fs-id1167793385927">Find the domain of each of the following functions:</para>
+<list id="fs-id1167793895395" list-type="enumerated" number-style="lower-alpha">
+<item><m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>z</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:msqrt></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></item>
+</list>
+</problem>
+<solution id="fs-id1167793420703">
+<list id="fs-id1167793420705" list-type="enumerated" number-style="lower-alpha">
+<item>For the function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>z</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math> to be defined (and be a real value), two conditions must hold:
+<list id="fs-id1167794125858" list-type="enumerated" number-style="arabic">
+<item>The denominator cannot be zero.</item>
+<item>The radicand cannot be negative.</item>
+</list>
+Combining these conditions leads to the inequality<newline/>
+<equation id="fs-id1167793633628" class="unnumbered"><label/><m:math><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Moving the variables to the other side and reversing the inequality gives the domain as<newline/>
+<equation id="fs-id1167793637930" class="unnumbered"><label/><m:math><m:mrow><m:mtext>domain</m:mtext><m:mrow><m:mo>(</m:mo><m:mi>f</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>∈</m:mo><m:mrow><m:mrow><m:msup><m:mi>ℝ</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mo>|</m:mo></m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>&lt;</m:mo><m:mn>9</m:mn></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math></equation><newline/>
+which describes a ball of radius <m:math><m:mn>3</m:mn></m:math> centered at the origin. (<emphasis effect="italics">Note</emphasis>: The surface of the ball is not included in this domain.)</item>
+<item>For the function <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:msqrt></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math> to be defined (and be a real value), two conditions must hold:
+<list id="fs-id1167793424341" list-type="enumerated" number-style="arabic">
+<item>The radicand cannot be negative.</item>
+<item>The denominator cannot be zero.</item>
+</list>
+Since the radicand cannot be negative, this implies <m:math><m:mrow><m:mn>2</m:mn><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>≥</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> and therefore that <m:math><m:mrow><m:mi>t</m:mi><m:mo>≥</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math> Since the denominator cannot be zero, <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> or <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>≠</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> Which can be rewritten as <m:math><m:mrow><m:mi>y</m:mi><m:mo>≠</m:mo><m:mtext>±</m:mtext><m:mi>x</m:mi></m:mrow></m:math>, which are the equations of two lines passing through the origin. Therefore, the domain of <m:math><m:mi>g</m:mi></m:math> is<newline/>
+<equation id="fs-id1167794095064" class="unnumbered"><label/><m:math><m:mrow><m:mtext>domain</m:mtext><m:mrow><m:mo>(</m:mo><m:mi>g</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>{</m:mo><m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow><m:mi>y</m:mi><m:mo>≠</m:mo><m:mtext>±</m:mtext><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>t</m:mi><m:mo>≥</m:mo><m:mn>2</m:mn><m:mo>}</m:mo><m:mo>.</m:mo></m:mrow></m:math></equation></item>
+</list>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167793498995" class="checkpoint">
+<exercise id="fs-id1167793498998">
+<problem id="fs-id1167793499000">
+<para id="fs-id1167793499002">Find the domain of the function <m:math><m:mrow><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:msqrt><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:msqrt><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793465471">
+<para id="fs-id1167793465474"><m:math><m:mrow><m:mtext>domain</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>{</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>∈</m:mo><m:msup><m:mi>ℝ</m:mi><m:mn>3</m:mn></m:msup><m:mo>|</m:mo><m:mi>y</m:mi><m:mo>≥</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>}</m:mo></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1167793288600" type="hint">
+<title>Hint</title>
+<para id="fs-id1167793288606">Check for values that make radicands negative or denominators equal to zero.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1167793288613">Functions of two variables have level curves, which are shown as curves in the <m:math><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mtext>-plane.</m:mtext></m:mrow></m:math> However, when the function has three variables, the curves become surfaces, so we can define level surfaces for functions of three variables.</para>
+<note id="fs-id1167793631584">
+<title>Definition</title>
+<para id="fs-id1167793631590">Given a function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and a number <m:math><m:mi>c</m:mi></m:math> in the range of <m:math><m:mi>f</m:mi><m:mo>,</m:mo></m:math> a <term>level surface of a function of three variables</term> is defined to be the set of points satisfying the equation <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</note>
+<example id="fs-id1167793478778">
+<exercise id="fs-id1167793478780">
+<problem id="fs-id1167793478782">
+<title>Finding a Level Surface</title>
+<para id="fs-id1167793478788">Find the level surface for the function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>9</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> corresponding to <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793385882">
+<para id="fs-id1167793385884">The level surface is defined by the equation <m:math><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>9</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> This equation describes a hyperboloid of one sheet as shown in the following figure.</para>
+<figure id="CNX_Calc_Figure_14_01_014">
+<media id="fs-id1167793960603" alt="This figure consists of four figures. The first is marked c = 0 and consists of a double cone (that is, two nappes) with their apex at the origin. The second is marked c = 1 and it looks remarkably similar to the first except that there is no apex at which the cones meet: instead, the two nappes are connected. Similarly, the next figure marked c = 2 has the two nappes connect, but this time their connection is larger (that is, the radius of their connection is greater). The final figure marked c = 3 also has the two nappes connect in an even larger fashion.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_013.jpg"/>
+</media>
+<caption>A hyperboloid of one sheet with some of its level surfaces.</caption>
+</figure>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167793960624" class="checkpoint">
+<exercise id="fs-id1167793960628">
+<problem id="fs-id1167793509917">
+<para id="fs-id1167793509919">Find the equation of the level surface of the function</para>
+<equation id="fs-id1167793509922" class="unnumbered"><label/><m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mi>z</m:mi></m:mrow></m:math></equation>
+<para id="fs-id1167794296755">corresponding to <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow></m:math> and describe the surface, if possible.</para>
+</problem>
+<solution id="fs-id1167793431601">
+<para id="fs-id1167793431603"><m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>z</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>16</m:mn></m:mrow></m:math> describes a sphere of radius <m:math><m:mn>4</m:mn></m:math> centered at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1167793642059" type="hint">
+<title>Hint</title>
+<para id="fs-id1167793642066">Set <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>c</m:mi></m:mrow></m:math> and complete the square.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+<section id="fs-id1167793398542" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id1167793559181" list-type="bulleted" bullet-style="bullet">
+<item>The graph of a function of two variables is a surface in <m:math><m:mrow><m:msup><m:mi>ℝ</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:math> and can be studied using level curves and vertical traces.</item>
+<item>A set of level curves is called a contour map.</item>
+</list>
+</section>
+<section id="fs-id1167793567248" class="key-equations">
+<title>Key Equations</title>
+<table id="eip-544" summary="." class="unnumbered unstyled">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><emphasis effect="bold">Vertical trace</emphasis></entry>
+    <entry><m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>z</m:mi></m:mrow></m:math> for <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:mrow></m:math> or <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>z</m:mi></m:mrow></m:math> for <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>b</m:mi></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry><emphasis effect="bold">Level surface of a function of three variables</emphasis></entry>
+    <entry><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>c</m:mi></m:mrow></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</section>
+<section id="fs-id1167794067617" class="section-exercises">
+<para id="fs-id1167794067620">For the following exercises, evaluate each function at the indicated values.</para>
+<exercise id="fs-id1167794067623">
+<problem id="fs-id1167794067626">
+<para id="fs-id1167794067628"><m:math><m:mrow><m:mi>W</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> Find <m:math><m:mrow><m:mi>W</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>W</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794296786">
+<para id="fs-id1167793279369"><m:math><m:mrow><m:mn>17</m:mn><m:mo>,</m:mo><m:mn>72</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793279382">
+<problem id="fs-id1167793279384">
+<para id="fs-id1167793279386"><m:math><m:mrow><m:mi>W</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> Find <m:math><m:mrow><m:mi>W</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793452862">
+<problem id="fs-id1167793452864">
+<para id="fs-id1167793452866">The volume of a right circular cylinder is calculated by a function of two variables, <m:math><m:mrow><m:mi>V</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>π</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mi>x</m:mi></m:math> is the radius of the right circular cylinder and <m:math><m:mi>y</m:mi></m:math> represents the height of the cylinder. Evaluate <m:math><m:mrow><m:mi>V</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and explain what this means.</para>
+</problem>
+<solution id="fs-id1167794168425">
+<para id="fs-id1167794168427"><m:math><m:mrow><m:mn>20</m:mn><m:mi>π</m:mi><m:mo>.</m:mo></m:mrow></m:math> This is the volume when the radius is <m:math><m:mn>2</m:mn></m:math> and the height is <m:math><m:mn>5</m:mn><m:mo>.</m:mo></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793928768">
+<problem id="fs-id1167793928770">
+<para id="fs-id1167793928772">An oxygen tank is constructed of a right cylinder of height <m:math><m:mi>y</m:mi></m:math> and radius <m:math><m:mi>x</m:mi></m:math> with two hemispheres of radius <m:math><m:mi>x</m:mi></m:math> mounted on the top and bottom of the cylinder. Express the volume of the tank as a function of two variables, <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> find <m:math><m:mrow><m:mi>V</m:mi><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> and explain what this means.</para>
+</problem>
+</exercise>
+<para id="fs-id1167793514512">For the following exercises, find the domain of the function.</para>
+<exercise id="fs-id1167793514515">
+<problem id="fs-id1167793514517">
+<para id="fs-id1167793514519"><m:math><m:mrow><m:mi>V</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793510108">
+<para id="fs-id1167793510110">All points in the <m:math><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mtext>-plane</m:mtext></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167794139840">
+<problem id="fs-id1167794139842">
+<para id="fs-id1167794139844"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:msqrt></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793420489">
+<problem id="fs-id1167793420491">
+<para id="fs-id1167793420494"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793418430">
+<para id="fs-id1167793418432"><m:math><m:mrow><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167794296633">
+<problem id="fs-id1167794296636">
+<para id="fs-id1167794296638"><m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>16</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793369344">
+<problem id="fs-id1167793369346">
+<para id="fs-id1167793369349"><m:math><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793376317">
+<para id="fs-id1167793376319">All real ordered pairs in the <m:math><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mtext>-plane</m:mtext></m:mrow></m:math> of the form <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793510320">
+<problem id="fs-id1167793510322">
+<para id="fs-id1167793510324"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1167793940807">Find the range of the functions.</para>
+<exercise id="fs-id1167793940810">
+<problem id="fs-id1167793940812">
+<para id="fs-id1167794031244"><m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>16</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793278158">
+<para id="fs-id1167793278161"><m:math><m:mrow><m:mo>{</m:mo><m:mi>z</m:mi><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo></m:mrow></m:mrow><m:mi>z</m:mi><m:mo>≤</m:mo><m:mn>4</m:mn><m:mo>}</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793548553">
+<problem id="fs-id1167793548555">
+<para id="fs-id1167793548557"><m:math><m:mrow><m:mi>V</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793514716">
+<problem id="fs-id1167793514718">
+<para id="fs-id1167793514720"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793952824">
+<para id="fs-id1167793952826">The set <m:math><m:mi>ℝ</m:mi></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1167793952835">For the following exercises, find the level curves of each function at the indicated value of <m:math><m:mi>c</m:mi></m:math> to visualize the given function.</para>
+<exercise id="fs-id1167793640586">
+<problem id="fs-id1167793640588">
+<para id="fs-id1167793640590"><m:math><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793830464">
+<problem id="fs-id1167793830466">
+<para id="fs-id1167793830468"><m:math><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793442718">
+<para id="fs-id1167793442720"><m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo></m:mrow></m:math> a hyperbola</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167794336223">
+<problem id="fs-id1167794336225">
+<para id="fs-id1167794336228"><m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>;</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167794097359">
+<problem id="fs-id1167794097361">
+<para id="fs-id1167794097363"><m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>;</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794284760">
+<para id="fs-id1167794284762"><m:math><m:mrow><m:mn>4</m:mn><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> a line; <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> line through the origin</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793275892">
+<problem id="fs-id1167793275894">
+<para id="fs-id1167793275896"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>;</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793637956">
+<problem id="fs-id1167793637958">
+<para id="fs-id1167793637961"><m:math><m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>;</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794326945">
+<para id="fs-id1167794326947"><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="left"><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn></m:mrow></m:mtd></m:mtr></m:mtable><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>;</m:mo></m:mrow></m:math> three lines</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793931653">
+<problem id="fs-id1167793931655">
+<para id="fs-id1167793931657"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>;</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167794176162">
+<problem id="fs-id1167794176164">
+<para id="fs-id1167794176166"><m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mo>;</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793609972">
+<para id="fs-id1167793609975"><m:math><m:mrow><m:mfrac><m:mi>x</m:mi><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793932199">
+<problem id="fs-id1167793932201">
+<para id="fs-id1167793932203"><m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>;</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793299682">
+<problem id="fs-id1167793299684">
+<para id="fs-id1167793299686"><m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msubsup><m:mi>e</m:mi><m:mrow/><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:msubsup><m:mo>;</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793479981">
+<para id="fs-id1167793479983"><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="left"><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793473739">
+<problem id="fs-id1167793473741">
+<para id="fs-id1167793473744"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>;</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>9</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793419036">
+<problem id="fs-id1167793419038">
+<para id="fs-id1167793419040"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>;</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793948142">
+<para id="fs-id1167793948144"><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="left"><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:mtd></m:mtr></m:mtable><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167794212883">
+<problem id="fs-id1167794212885">
+<para id="fs-id1167793627736"><m:math><m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793571189">
+<problem id="fs-id1167793571191">
+<para id="fs-id1167793571193"><m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>y</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793928252">
+<para id="fs-id1167793928254"><m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="left"><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn></m:mrow></m:msup><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793514689">
+<problem id="fs-id1167793514691">
+<para id="fs-id1167793514693"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793418297">
+<problem id="fs-id1167793571087">
+<para id="fs-id1167793571089"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo></m:mrow></m:math> any constant</para>
+</problem>
+<solution id="fs-id1167793299618">
+<para id="fs-id1167793299620">The level curves are parabolas of the form <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>c</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1167793547466">For the following exercises, find the vertical traces of the functions at the indicated values of <m:math><m:mi>x</m:mi></m:math> and <emphasis effect="italics">y</emphasis>, and plot the traces.</para>
+<exercise id="fs-id1167793547478">
+<problem id="fs-id1167793547480">
+<para id="fs-id1167793547482"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>;</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793617968">
+<problem id="fs-id1167793617970">
+<para id="fs-id1167793617972"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793940640">
+<para id="fs-id1167793940642"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> a curve in the <m:math><m:mrow><m:mi>z</m:mi><m:mi>y</m:mi><m:mtext>-plane</m:mtext></m:mrow></m:math> with rulings parallel to the <m:math><m:mi>x</m:mi><m:mtext>-axis</m:mtext></m:math><newline/>
+<media id="fs-id1167793589375" alt="A planar version of the function y3 + 3 with results in the z axis and nothing mattering from the x axis.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_202.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793589386">
+<problem id="fs-id1167793589388">
+<para id="fs-id1167793589391"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math> <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1167793631487">Find the domain of the following functions.</para>
+<exercise id="fs-id1167793631490">
+<problem id="fs-id1167793631492">
+<para id="fs-id1167793631494"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>100</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>25</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793280678">
+<para id="fs-id1167793280680"><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>25</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>≤</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167794155238">
+<problem id="fs-id1167794155240">
+<para id="fs-id1167794155242"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793219328">
+<problem id="fs-id1167793219330">
+<para id="fs-id1167793219332"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mrow><m:mn>36</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>9</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793416678">
+<para id="fs-id1167793416681"><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>9</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>36</m:mn></m:mrow></m:mfrac><m:mo>&lt;</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793560885">
+<problem id="fs-id1167793560887">
+<para id="fs-id1167793560889"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>49</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793498236">
+<problem id="fs-id1167793498238">
+<para id="fs-id1167793498240"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot><m:mrow><m:mn>16</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>3</m:mn></m:mroot></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794212811">
+<para id="fs-id1167794212813">All points in <m:math><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi></m:mrow><m:mtext>-space</m:mtext></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167794212828">
+<problem id="fs-id1167794212830">
+<para id="fs-id1167794212832"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1167793886679">For the following exercises, plot a graph of the function.</para>
+<exercise id="fs-id1167793886682">
+<problem id="fs-id1167793886684">
+<para id="fs-id1167793886686"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793957308"><para id="fs-id1167793957309"><newline/>
+<media id="fs-id1167793957313" alt="An upward facing, gently increasing paraboloid.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_204.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793957323">
+<problem id="fs-id1167793957325">
+<para id="fs-id1167793957328"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793432478">
+<problem id="fs-id1167793432480">
+<para id="fs-id1167793432483">Use technology to graph <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793393720"><para id="fs-id1167793393721"><newline/>
+<media id="fs-id1167793393726" alt="A twisted plane with corners at (1, –1, –1), (–1, –1, –1), (–1, 1, 0.5), and (1, 1, 0.5).">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_206.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<para id="fs-id1167793393736">Sketch the following by finding the level curves. Verify the graph using technology.</para>
+<exercise id="fs-id1167793925824">
+<problem id="fs-id1167793925826">
+<para id="fs-id1167793925828"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793957972">
+<problem id="fs-id1167793957974">
+<para id="fs-id1167793957976"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793468451"><para id="fs-id1167793468452"><newline/>
+<media id="fs-id1167793468455" alt="A downward facing, gently decreasing paraboloid.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_208.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793450506">
+<problem id="fs-id1167793450508">
+<para id="fs-id1167793450510"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793556981">
+<problem id="fs-id1167793556984">
+<para id="fs-id1167793556986"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793603803"><para id="fs-id1167793603804"><newline/>
+<media id="fs-id1167793603807" alt="A hemisphere in the center with edges then swooping up at the four corners.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_210.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793603818">
+<problem id="fs-id1167793603820">
+<para id="fs-id1167793603822"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793589669">
+<problem id="fs-id1167793589672">
+<para id="fs-id1167793589674">Describe the contour lines for several values of <m:math><m:mi>c</m:mi></m:math> for <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794137126">
+<para id="fs-id1167794137128">The contour lines are circles.</para>
+</solution>
+</exercise>
+<para id="fs-id1167793618954">Find the level surface for the functions of three variables and describe it.</para>
+<exercise id="fs-id1167793618957">
+<problem id="fs-id1167793618959">
+<para id="fs-id1167793618961"><m:math><m:mrow><m:mi>w</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>z</m:mi><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793411172">
+<problem id="fs-id1167793411174">
+<para id="fs-id1167793411176"><m:math><m:mrow><m:mi>w</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793504958">
+<para id="fs-id1167793504960"><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>,</m:mo></m:mrow></m:math> a sphere of radius <m:math><m:mn>3</m:mn></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793640523">
+<problem id="fs-id1167793640526">
+<para id="fs-id1167793640528"><m:math><m:mrow><m:mi>w</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>−4</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793641999">
+<problem id="fs-id1167793642002">
+<para id="fs-id1167793642004"><m:math><m:mrow><m:mi>w</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793607606">
+<para id="fs-id1167793607608"><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo></m:mrow></m:math> a hyperboloid of one sheet</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793479850">
+<problem id="fs-id1167793479852">
+<para id="fs-id1167793479854"><m:math><m:mrow><m:mi>w</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>36</m:mn><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1167793294150">For the following exercises, find an equation of the level curve of <m:math><m:mi>f</m:mi></m:math> that contains the point <m:math><m:mi>P</m:mi><m:mo>.</m:mo></m:math></para>
+<exercise id="fs-id1167793294163">
+<problem id="fs-id1167793294165">
+<para id="fs-id1167793294167"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793373661">
+<para id="fs-id1167793443438"><m:math><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793443466">
+<problem id="fs-id1167793443468">
+<para id="fs-id1167793443470"><m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mtext>arctan</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793627414">
+<problem id="fs-id1167793627416">
+<para id="fs-id1167793627418"><m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:msup><m:mo stretchy="false">(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793937376">
+<para id="fs-id1167793937378"><m:math><m:mrow><m:mn>1</m:mn><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:msup><m:mo stretchy="false">(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167794172790">
+<problem id="fs-id1167794172792">
+<para id="fs-id1167794172794">The strength <m:math><m:mi>E</m:mi></m:math> of an electric field at point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> resulting from an infinitely long charged wire lying along the <m:math><m:mi>y</m:mi><m:mtext>-axis</m:mtext></m:math> is given by <m:math><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mi>k</m:mi><m:mtext>/</m:mtext><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mrow><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mi>k</m:mi></m:math> is a positive constant. For simplicity, let <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> and find the equations of the level surfaces for <m:math><m:mrow><m:mi>E</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>E</m:mi><m:mo>=</m:mo><m:mn>100</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167794291672">
+<problem id="fs-id1167794291674">
+<para id="fs-id1167794291676">A thin plate made of iron is located in the <m:math><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mtext>-plane.</m:mtext></m:mrow></m:math> The temperature <m:math><m:mi>T</m:mi></m:math> in degrees Celsius at a point <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is inversely proportional to the square of its distance from the origin. Express <m:math><m:mi>T</m:mi></m:math> as a function of <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793453335">
+<para id="fs-id1167793453337"><m:math><m:mrow><m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mi>k</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167794177169">
+<problem id="fs-id1167794177171">
+<para id="fs-id1167794177174">Refer to the preceding problem. Using the temperature function found there, determine the proportionality constant if the temperature at point <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mi>i</m:mi><m:mi>s</m:mi><m:mspace width="0.2em"/><m:mn>50</m:mn><m:mtext>°</m:mtext><m:mtext>C</m:mtext><m:mo>.</m:mo></m:mrow></m:math> Use this constant to determine the temperature at point <m:math><m:mrow><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793638113">
+<problem id="fs-id1167793638115">
+<para id="fs-id1167793638117">Refer to the preceding problem. Find the level curves for <m:math><m:mrow><m:mi>T</m:mi><m:mo>=</m:mo><m:mn>40</m:mn><m:mtext>°</m:mtext><m:mtext>C and</m:mtext><m:mspace width="0.2em"/><m:mi>T</m:mi><m:mo>=</m:mo><m:mn>100</m:mn><m:mtext>°</m:mtext><m:mtext>C</m:mtext><m:mo>,</m:mo></m:mrow></m:math> and describe what the level curves represent.</para>
+</problem>
+<solution id="fs-id1167793638150">
+<para id="fs-id1167794067523"><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mfrac><m:mi>k</m:mi><m:mrow><m:mn>40</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mfrac><m:mi>k</m:mi><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> The level curves represent circles of radii <m:math><m:mrow><m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>10</m:mn><m:mi>k</m:mi></m:mrow></m:msqrt></m:mrow><m:mtext>/</m:mtext><m:mrow><m:mn>20</m:mn></m:mrow></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mrow><m:mrow><m:msqrt><m:mi>k</m:mi></m:msqrt></m:mrow><m:mtext>/</m:mtext><m:mrow><m:mn>10</m:mn></m:mrow></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+</section>
+ </content>
+<glossary>
+<definition id="fs-id1167793371350">
+<term>contour map</term>
+<meaning id="fs-id1167793371356">a plot of the various level curves of a given function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></meaning>
+</definition>
+<definition id="fs-id1167793371377">
+<term>function of two variables</term>
+<meaning id="fs-id1167793371382">a function <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> that maps each ordered pair <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> in a subset <m:math><m:mi>D</m:mi></m:math> of <m:math><m:mrow><m:msup><m:mi>ℝ</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> to a unique real number <m:math><m:mi>z</m:mi></m:math></meaning>
+</definition>
+<definition id="fs-id1167793251246">
+<term>graph of a function of two variables</term>
+<meaning id="fs-id1167793251252">a set of ordered triples <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> that satisfies the equation <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> plotted in three-dimensional Cartesian space</meaning>
+</definition>
+<definition id="fs-id1167793452781">
+<term>level curve of a function of two variables</term>
+<meaning id="fs-id1167793452786">the set of points satisfying the equation <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>c</m:mi></m:mrow></m:math> for some real number <m:math><m:mi>c</m:mi></m:math> in the range of <m:math><m:mi>f</m:mi></m:math></meaning>
+</definition>
+<definition id="fs-id1167793387126">
+<term>level surface of a function of three variables</term>
+<meaning id="fs-id1167793387132">the set of points satisfying the equation <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>c</m:mi></m:mrow></m:math> for some real number <m:math><m:mi>c</m:mi></m:math> in the range of <m:math><m:mi>f</m:mi></m:math></meaning>
+</definition>
+<definition id="fs-id1167793418231">
+<term>surface</term>
+<meaning id="fs-id1167793418237">the graph of a function of two variables, <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></meaning>
+</definition>
+<definition id="fs-id1167793615241">
+<term>vertical trace</term>
+<meaning id="fs-id1167793615247">the set of ordered triples <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>c</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> that solves the equation <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>c</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>z</m:mi></m:mrow></m:math> for a given constant <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>c</m:mi></m:mrow></m:math> or the set of ordered triples <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>d</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> that solves the equation <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>d</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>z</m:mi></m:mrow></m:math> for a given constant <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>d</m:mi></m:mrow></m:math></meaning>
+</definition>
+</glossary>
+</document>

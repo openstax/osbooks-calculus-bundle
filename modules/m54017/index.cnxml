@@ -1,0 +1,22 @@
+<document xmlns="http://cnx.rice.edu/cnxml" class="introduction">
+
+<title>Introduction</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m54017</md:content-id>
+  <md:title>Introduction</md:title>
+  <md:abstract/>
+  <md:uuid>41358830-7753-4f50-af9d-ec46020d7b0c</md:uuid>
+</metadata>
+
+<content>
+<figure id="CNX_Calc_Figure_16_00_001" class="splash">
+<media id="fs-id1167793563677" alt="A photograph of a hurricane, showing the rotation around its eye.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_00_001.jpg"/>
+</media>
+<caption>Hurricanes form from rotating winds driven by warm temperatures over the ocean. Meteorologists forecast the motion of hurricanes by studying the rotating vector fields of their wind velocity. Shown is Cyclone Catarina in the South Atlantic Ocean in 2004, as seen from the International Space Station. (credit: modification of work by NASA)</caption>
+</figure>
+<para id="fs-id1167793392282">Hurricanes are huge storms that can produce tremendous amounts of damage to life and property, especially when they reach land. Predicting where and when they will strike and how strong the winds will be is of great importance for preparing for protection or evacuation. Scientists rely on studies of rotational vector fields for their forecasts (see <link document="m53989" target-id="fs-id1167793958705"/>).</para>
+<para id="fs-id1167793957082">In this chapter, we learn to model new kinds of integrals over fields such as magnetic fields, gravitational fields, or velocity fields. We also learn how to calculate the work done on a charged particle traveling through a magnetic field, the work done on a particle with mass traveling through a gravitational field, and the volume per unit time of water flowing through a net dropped in a river.</para>
+<para id="fs-id1167793368938">All these applications are based on the concept of a vector field, which we explore in this chapter. Vector fields have many applications because they can be used to model real fields such as electromagnetic or gravitational fields. A deep understanding of physics or engineering is impossible without an understanding of vector fields. Furthermore, vector fields have mathematical properties that are worthy of study in their own right. In particular, vector fields can be used to develop several higher-dimensional versions of the Fundamental Theorem of Calculus.</para>
+ </content>
+</document>

@@ -1,0 +1,972 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+<title>Second-Order Linear Equations</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m54040</md:content-id>
+  <md:title>Second-Order Linear Equations</md:title>
+  <md:abstract><list>
+<item>Recognize homogeneous and nonhomogeneous linear differential equations.</item>
+<item>Determine the characteristic equation of a homogeneous linear equation.</item>
+<item>Use the roots of the characteristic equation to find the solution to a homogeneous linear equation.</item>
+<item>Solve initial-value and boundary-value problems involving linear differential equations.</item>
+</list></md:abstract>
+  <md:uuid>658907a3-724d-4f81-9468-fbde7bb4b09e</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-id1170572169386">When working with differential equations, usually the goal is to find a solution. In other words, we want to find a function (or functions) that satisfies the differential equation. The technique we use to find these solutions varies, depending on the form of the differential equation with which we are working. Second-order differential equations have several important characteristics that can help us determine which solution method to use. In this section, we examine some of these characteristics and the associated terminology.</para>
+<section id="fs-id1170571769962">
+<title>Homogeneous Linear Equations</title>
+<para id="fs-id1170571585385">Consider the second-order differential equation</para>
+<equation id="fs-id1170572451084" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>5</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571602172">Notice that <emphasis effect="italics">y</emphasis> and its derivatives appear in a relatively simple form. They are multiplied by functions of <emphasis effect="italics">x</emphasis>, but are not raised to any powers themselves, nor are they multiplied together. As discussed in <link document="m53696">Introduction to Differential Equations</link>, first-order equations with similar characteristics are said to be linear. The same is true of second-order equations. Also note that all the terms in this differential equation involve either <emphasis effect="italics">y</emphasis> or one of its derivatives. There are no terms involving only functions of <emphasis effect="italics">x</emphasis>. Equations like this, in which every term contains <emphasis effect="italics">y</emphasis> or one of its derivatives, are called homogeneous.</para>
+<para id="fs-id1170572582703">Not all differential equations are homogeneous. Consider the differential equation</para>
+<equation id="fs-id1170572481054" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>5</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572169093">The <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> term on the right side of the equal sign does not contain <emphasis effect="italics">y</emphasis> or any of its derivatives. Therefore, this differential equation is nonhomogeneous.</para>
+<note id="fs-id1170571696990">
+<title>Definition</title>
+<para id="fs-id1170572215852">A second-order differential equation is linear if it can be written in the form</para>
+<equation id="fs-id1170572251008"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>0</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572404274">where <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>0</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> are real-valued functions and <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is not identically zero. If <m:math><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≡</m:mo><m:mn>0</m:mn></m:mrow></m:math>—in other words, if <m:math><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> for every value of <emphasis effect="italics">x</emphasis>—the equation is said to be a <term>homogeneous linear equation</term>. If <m:math><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow></m:math> for some value of <m:math><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> the equation is said to be a <term>nonhomogeneous linear equation</term>.</para>
+</note>
+<note id="fs-id1170571636349" class="media-2">
+<para id="fs-id1170571710660">Visit this <link url="http://www.openstax.org/l/20_Secondord">website</link> to study more about second-order linear differential equations.</para>
+</note>
+<para id="fs-id1170572280427">In linear differential equations, <m:math><m:mi>y</m:mi></m:math> and its derivatives can be raised only to the first power and they may not be multiplied by one another. Terms involving <m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> or <m:math><m:mrow><m:msqrt><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup></m:msqrt></m:mrow></m:math> make the equation nonlinear. Functions of <m:math><m:mi>y</m:mi></m:math> and its derivatives, such as <m:math><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi></m:mrow></m:math> or <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup></m:msup><m:mo>,</m:mo></m:mrow></m:math> are similarly prohibited in linear differential equations.</para>
+<para id="fs-id1170571635343">Note that equations may not always be given in standard form (the form shown in the definition). It can be helpful to rewrite them in that form to decide whether they are linear, or whether a linear equation is homogeneous.</para>
+<example id="fs-id1170571650370">
+<exercise id="fs-id1170572086622">
+<problem id="fs-id1170572297316">
+<title>Classifying Second-Order Equations</title>
+<para id="fs-id1170572307004">Classify each of the following equations as linear or nonlinear. If the equation is linear, determine further whether it is homogeneous or nonhomogeneous.</para>
+<list id="fs-id1170572547853" list-type="enumerated" number-style="lower-alpha">
+<item><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mn>4</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>t</m:mi><m:mi>x</m:mi><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mn>5</m:mn><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>5</m:mn></m:msup></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>y</m:mi><m:mo>−</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mn>8</m:mn><m:mi>t</m:mi><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>6</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>t</m:mi><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">)</m:mo><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi></m:mrow></m:math></item>
+</list>
+</problem>
+<solution id="fs-id1170572212220">
+<list id="fs-id1170572337089" list-type="enumerated" number-style="lower-alpha">
+<item>This equation is nonlinear because of the <m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> term.</item>
+<item>This equation is linear. There is no term involving a power or function of <m:math><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> and the coefficients are all functions of <m:math><m:mrow><m:mi>x</m:mi><m:mtext>.</m:mtext></m:mrow></m:math> The equation is already written in standard form, and <m:math><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is identically zero, so the equation is homogeneous.</item>
+<item>This equation is nonlinear. Note that, in this case, <emphasis effect="italics">x</emphasis> is the dependent variable and <emphasis effect="italics">t</emphasis> is the independent variable. The second term involves the product of <m:math><m:mi>x</m:mi></m:math> and <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo>,</m:mo></m:mrow></m:math> so the equation is nonlinear.</item>
+<item>This equation is linear. Since <m:math><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>5</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> the equation is nonhomogeneous.</item>
+<item>This equation is nonlinear, because of the <m:math><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup></m:mrow></m:math> term.</item>
+<item>This equation is linear. Rewriting it in standard form gives<newline/>
+<equation id="fs-id1170572233488" class="unnumbered"><label/><m:math><m:mrow><m:mn>8</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>6</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>t</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+With the equation in standard form, we can see that <m:math><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> so the equation is nonhomogeneous.</item>
+<item>This equation looks like it’s linear, but we should rewrite it in standard form to be sure. We get<newline/>
+<equation id="fs-id1170572216687" class="unnumbered"><label/><m:math><m:mrow><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">)</m:mo><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+This equation is, indeed, linear. With <m:math><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−3</m:mn><m:mo>,</m:mo></m:mrow></m:math> it is nonhomogeneous.</item>
+<item>This equation is nonlinear because of the <m:math><m:mrow><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi></m:mrow></m:math> term.</item>
+</list>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170572169413" class="media-2">
+<para id="fs-id1170572129911">Visit this <link url="http://www.openstax.org/l/20_Secondord2">website</link> that discusses second-order differential equations.</para>
+</note>
+<note id="fs-id1170571659174" class="checkpoint">
+<exercise id="fs-id1170572167953">
+<problem id="fs-id1170571681219">
+<para id="fs-id1170572107308">Classify each of the following equations as linear or nonlinear. If the equation is linear, determine further whether it is homogeneous or nonhomogeneous.</para>
+<list id="fs-id1170572246040" list-type="enumerated" number-style="lower-alpha">
+<item><m:math><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>8</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>t</m:mi><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+</list>
+</problem>
+<solution id="fs-id1170571698872">
+<list id="fs-id1170572111868" list-type="enumerated" number-style="lower-alpha">
+<item>Nonlinear</item>
+<item>Linear, nonhomogeneous</item>
+</list>
+</solution>
+<commentary id="fs-id1170572451855" type="hint">
+<title>Hint</title>
+<para id="fs-id1170572167540">Write the equation in standard form if necessary. Check for powers or functions of <m:math><m:mi>y</m:mi></m:math> and its derivatives.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1170572553210">Later in this section, we will see some techniques for solving specific types of differential equations. Before we get to that, however, let’s get a feel for how solutions to linear differential equations behave. In many cases, solving differential equations depends on making educated guesses about what the solution might look like. Knowing how various types of solutions behave will be helpful.</para>
+<example id="fs-id1170572560326">
+<exercise id="fs-id1170572332134">
+<problem id="fs-id1170572108997">
+<title>Verifying a Solution</title>
+<para id="fs-id1170572106755">Consider the linear, homogeneous differential equation</para>
+<equation id="fs-id1170572344219" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572307137">Looking at this equation, notice that the coefficient functions are polynomials, with higher powers of <m:math><m:mi>x</m:mi></m:math> associated with higher-order derivatives of <m:math><m:mrow><m:mi>y</m:mi><m:mtext>.</m:mtext></m:mrow></m:math> Show that <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:math> is a solution to this differential equation.</para>
+</problem>
+<solution id="fs-id1170571655657">
+<para id="fs-id1170572225198">Let <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> Then <m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>=</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mtext>.</m:mtext></m:mrow></m:math> Substituting into the differential equation, we see that</para>
+<equation id="fs-id1170571543538" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>y</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>6</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170572542856" class="checkpoint">
+<exercise id="fs-id1170572107186">
+<problem id="fs-id1170571543162">
+<para id="fs-id1170572563030">Show that <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> is a solution to the differential equation</para>
+<equation id="fs-id1170572150551" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+</problem>
+<commentary id="fs-id1170571613489" type="hint">
+<title>Hint</title>
+<para id="fs-id1170572451058">Calculate the derivatives and substitute them into the differential equation.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1170572505444">Although simply finding any solution to a differential equation is important, mathematicians and engineers often want to go beyond finding <emphasis effect="italics">one</emphasis> solution to a differential equation to finding <emphasis effect="italics">all</emphasis> solutions to a differential equation. In other words, we want to find a general solution<emphasis effect="bold">.</emphasis> Just as with first-order differential equations, a general solution (or family of solutions) gives the entire set of solutions to a differential equation. An important difference between first-order and second-order equations is that, with second-order equations, we typically need to find two different solutions to the equation to find the general solution. If we find two solutions, then any linear combination of these solutions is also a solution. We state this fact as the following theorem.</para>
+<note id="fs-id1170572430386" class="theorem">
+<title>Superposition Principle</title>
+<para id="fs-id1170571613027">If <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> are solutions to a linear homogeneous differential equation, then the function</para>
+<equation id="fs-id1170572443602" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572208921">where <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> are constants, is also a solution.</para>
+</note>
+<para id="fs-id1170572215710">The proof of this <term class="no-emphasis">superposition principle</term> theorem is left as an exercise.</para>
+<example id="fs-id1170572167258">
+<exercise id="fs-id1170572114204">
+<problem id="fs-id1170572206288">
+<title>Verifying the Superposition Principle</title>
+<para id="fs-id1170571627560">Consider the differential equation</para>
+<equation id="fs-id1170572208610" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>4</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572366760">Given that <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> are solutions to this differential equation, show that <m:math><m:mrow><m:mn>4</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> is a solution.</para>
+</problem>
+<solution id="fs-id1170571678821">
+<para id="fs-id1170572608709">We have</para>
+<equation id="fs-id1170571711239" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>so</m:mtext><m:mspace width="0.2em"/><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−4</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mn>5</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mn>25</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572551127">Then</para>
+<equation id="fs-id1170572560041" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>4</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>y</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mn>25</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−4</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mn>5</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>5</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>4</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mn>25</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mn>16</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mn>20</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mn>20</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mn>5</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170571660196">Thus, <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> is a solution.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170572167171" class="checkpoint">
+<exercise id="fs-id1170572167175">
+<problem id="fs-id1170572474614">
+<para id="fs-id1170572474616">Consider the differential equation</para>
+<equation id="fs-id1170572474619" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>5</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572415337">Given that <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> are solutions to this differential equation, show that <m:math><m:mrow><m:mn>3</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mn>6</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> is a solution.</para>
+</problem>
+<commentary id="fs-id1170572366325" type="hint">
+<title>Hint</title>
+<para id="fs-id1170571618218">Differentiate the function and substitute into the differential equation.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1170572089292">Unfortunately, to find the general solution to a second-order differential equation, it is not enough to find any two solutions and then combine them. Consider the differential equation</para>
+<equation id="fs-id1170572089296" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>7</m:mn><m:msup><m:mi>x</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571825080">Both <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:mn>2</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math> are solutions (check this). However, <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is <emphasis effect="italics">not</emphasis> the general solution. This expression does not account for all solutions to the differential equation. In particular, it fails to account for the function <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>,</m:mo></m:mrow></m:math> which is also a solution to the differential equation.</para>
+<para id="fs-id1170571609148">It turns out that to find the general solution to a second-order differential equation, we must find two linearly independent solutions. We define that terminology here.</para>
+<note id="fs-id1170571609153">
+<title>Definition</title>
+<para id="fs-id1170571609156">A set of functions <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mtext>),…,</m:mtext><m:msub><m:mi>f</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is said to be <term>linearly dependent</term> if there are constants <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>,…</m:mtext><m:msub><m:mi>c</m:mi><m:mi>n</m:mi></m:msub><m:mo>,</m:mo></m:mrow></m:math> not all zero, such that <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mtext>⋯</m:mtext><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mi>n</m:mi></m:msub><m:msub><m:mi>f</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> for all <emphasis effect="italics">x</emphasis> over the interval of interest. A set of functions that is not linearly dependent is said to be <term>linearly independent</term>.</para>
+</note>
+<para id="fs-id1170571770955">In this chapter, we usually test sets of only two functions for linear independence, which allows us to simplify this definition. From a practical perspective, we see that two functions are linearly dependent if either one of them is identically zero or if they are constant multiples of each other.</para>
+<para id="fs-id1170571770961">First we show that if the functions meet the conditions given previously, then they are linearly dependent. If one of the functions is identically zero—say, <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≡</m:mo><m:mn>0</m:mn></m:mrow></m:math>—then choose <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> and the condition for linear dependence is satisfied. If, on the other hand, neither <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> nor <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is identically zero, but <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>C</m:mi><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> for some constant <m:math><m:mrow><m:mi>C</m:mi><m:mo>,</m:mo></m:mrow></m:math> then choose <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>C</m:mi></m:mfrac></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo></m:mrow></m:math> and again, the condition is satisfied.</para>
+<para id="fs-id1170572572984">Next, we show that if two functions are linearly dependent, then either one is identically zero or they are constant multiples of one another. Assume <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> are linearly independent. Then, there are constants, <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>,</m:mo></m:mrow></m:math> not both zero, such that</para>
+<equation id="fs-id1170571561369" class="unnumbered"><label/><m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></equation>
+<para id="fs-id1170571728246">for all <emphasis effect="italics">x</emphasis> over the interval of interest. Then,</para>
+<equation id="fs-id1170571781136" class="unnumbered"><label/><m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>−</m:mtext><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571673284">Now, since we stated that <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> can’t both be zero, assume <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> Then, there are two cases: either <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> or <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> If <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> then</para>
+<equation id="fs-id1170571674173" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="left"><m:mn>0</m:mn><m:mo>=</m:mo><m:mtext>−</m:mtext><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mn>0</m:mn><m:mo>=</m:mo><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170571813996">so one of the functions is identically zero. Now suppose <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> Then,</para>
+<equation id="fs-id1170571554721" class="unnumbered"><label/><m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572448483">and we see that the functions are constant multiples of one another.</para>
+<note id="fs-id1170572448486" class="theorem">
+<title>Linear Dependence of Two Functions</title>
+<para id="fs-id1170572448493">Two functions, <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> are said to be linearly dependent if either one of them is identically zero or if <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>C</m:mi><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> for some constant <emphasis effect="italics">C</emphasis> and for all <emphasis effect="italics">x</emphasis> over the interval of interest. Functions that are not linearly dependent are said to be <emphasis effect="italics">linearly independent</emphasis>.</para>
+</note>
+<example id="fs-id1170572630833">
+<exercise id="fs-id1170572630836">
+<problem id="fs-id1170572630838">
+<title>Testing for Linear Dependence</title>
+<para id="fs-id1170572630843">Determine whether the following pairs of functions are linearly dependent or linearly independent.</para>
+<list id="fs-id1170572630846" list-type="enumerated" number-style="lower-alpha">
+<item><m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math></item>
+</list>
+</problem>
+<solution id="fs-id1170572522328">
+<list id="fs-id1170572522330" list-type="enumerated" number-style="lower-alpha">
+<item><m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> so the functions are linearly dependent.</item>
+<item>There is no constant <emphasis effect="italics">C</emphasis> such that <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>C</m:mi><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> so the functions are linearly independent.</item>
+<item>There is no constant <emphasis effect="italics">C</emphasis> such that <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>C</m:mi><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> so the functions are linearly independent. Don’t get confused by the fact that the exponents are constant multiples of each other. With two exponential functions, unless the exponents are equal, the functions are linearly independent.</item>
+<item>There is no constant <emphasis effect="italics">C</emphasis> such that <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>C</m:mi><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> so the functions are linearly independent.</item>
+</list>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170572337768" class="checkpoint">
+<exercise id="fs-id1170572337771">
+<problem id="fs-id1170572337773">
+<para id="fs-id1170572337775">Determine whether the following pairs of functions are linearly dependent or linearly independent: <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572507361">
+<para id="fs-id1170572507363">Linearly independent</para>
+</solution>
+<commentary id="fs-id1170572507367" type="hint">
+<title>Hint</title>
+<para id="fs-id1170572507374">Are the functions constant multiples of one another?</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1170572507380">If we are able to find two linearly independent solutions to a second-order differential equation, then we can combine them to find the general solution. This result is formally stated in the following theorem.</para>
+<note id="fs-id1170572507385" class="theorem">
+<title>General Solution to a Homogeneous Equation</title>
+<para id="fs-id1170572507391">If <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> are linearly independent solutions to a second-order, linear, homogeneous differential equation, then the general solution is given by</para>
+<equation id="fs-id1170571679801" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571679863">where <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> are constants.</para>
+</note>
+<para id="fs-id1170572520510">When we say a family of functions is the <term class="no-emphasis">general solution to a differential equation</term>, we mean that (1) every expression of that form is a solution and (2) every solution to the differential equation can be written in that form, which makes this theorem extremely powerful. If we can find two linearly independent solutions to a differential equation, we have, effectively, found <emphasis effect="italics">all</emphasis> solutions to the differential equation—quite a remarkable statement. The proof of this theorem is beyond the scope of this text.</para>
+<example id="fs-id1170572520528">
+<exercise id="fs-id1170572520530">
+<problem id="fs-id1170572520532">
+<title>Writing the General Solution</title>
+<para id="fs-id1170572520537">If <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math> are solutions to <m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>9</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> what is the general solution?</para>
+</problem>
+<solution id="fs-id1170572450289">
+<para id="fs-id1170572450291">Note that <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> are not constant multiples of one another, so they are linearly independent. Then, the general solution to the differential equation is <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170572582064" class="checkpoint">
+<exercise id="fs-id1170572582067">
+<problem id="fs-id1170572582069">
+<para id="fs-id1170572582071">If <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> are solutions to <m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>6</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>9</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> what is the general solution?</para>
+</problem>
+<solution id="fs-id1170572592169">
+<para id="fs-id1170572592171"><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1170572592221" type="hint">
+<title>Hint</title>
+<para id="fs-id1170572592227">Check for linear independence first.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170572185064">
+<title>Second-Order Equations with Constant Coefficients</title>
+<para id="fs-id1170572185069">Now that we have a better feel for linear differential equations, we are going to concentrate on solving second-order equations of the form</para>
+<equation id="fs-id1170572185074"><m:math><m:mrow><m:mi>a</m:mi><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>c</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572185108">where <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>b</m:mi><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mi>c</m:mi></m:math> are constants.</para>
+<para id="fs-id1170572185130">Since all the coefficients are constants, the solutions are probably going to be functions with derivatives that are constant multiples of themselves. We need all the terms to cancel out, and if taking a derivative introduces a term that is not a constant multiple of the original function, it is difficult to see how that term cancels out. Exponential functions have derivatives that are constant multiples of the original function, so let’s see what happens when we try a solution of the form <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mi>λ</m:mi></m:math> (the lowercase Greek letter lambda) is some constant.</para>
+<para id="fs-id1170571571130">If <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>λ</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>=</m:mo><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math> Substituting these expressions into <link target-id="fs-id1170572251008"/>, we get</para>
+<equation id="fs-id1170572236019" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>a</m:mi><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>c</m:mi><m:mi>y</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>b</m:mi><m:mo stretchy="false">(</m:mo><m:mi>λ</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>c</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>λ</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170572386166">Since <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> is never zero, this expression can be equal to zero for all <emphasis effect="italics">x</emphasis> only if</para>
+<equation id="fs-id1170572386185" class="unnumbered"><label/><m:math><m:mrow><m:mi>a</m:mi><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>λ</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572168698">We call this the characteristic equation of the differential equation.</para>
+<note id="fs-id1170572168702">
+<title>Definition</title>
+<para id="fs-id1170572168705">The <term>characteristic equation</term> of the differential equation <m:math><m:mrow><m:mi>a</m:mi><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>c</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> is <m:math><m:mrow><m:mi>a</m:mi><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>λ</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</note>
+<para id="fs-id1170572168770">The characteristic equation is very important in finding solutions to differential equations of this form. We can solve the characteristic equation either by factoring or by using the quadratic formula</para>
+<equation id="fs-id1170572168775" class="unnumbered"><label/><m:math><m:mrow><m:mi>λ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>−</m:mtext><m:mi>b</m:mi><m:mo>±</m:mo><m:msqrt><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow></m:msqrt></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>a</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572439943">This gives three cases. The characteristic equation has (1) distinct real roots; (2) a single, repeated real root; or (3) complex conjugate roots. We consider each of these cases separately.</para>
+<section id="fs-id1170572439948">
+<title>Distinct Real Roots</title>
+<para id="fs-id1170572439954">If the characteristic equation has distinct real roots <m:math><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>2</m:mn></m:msub><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>1</m:mn></m:msub><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>2</m:mn></m:msub><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> are linearly independent solutions to <link target-id="fs-id1170571650370"/>, and the general solution is given by</para>
+<equation id="fs-id1170572218586" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>1</m:mn></m:msub><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>2</m:mn></m:msub><m:mi>x</m:mi></m:mrow></m:msup><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572218644">where <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> are constants.</para>
+<para id="fs-id1170572218664">For example, the differential equation <m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>9</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>14</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> has the associated characteristic equation <m:math><m:mrow><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>9</m:mn><m:mi>λ</m:mi><m:mo>+</m:mo><m:mn>14</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> This factors into <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>λ</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>λ</m:mi><m:mo>+</m:mo><m:mn>7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> which has roots <m:math><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>−2</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>−7</m:mn><m:mo>.</m:mo></m:mrow></m:math> Therefore, the general solution to this differential equation is</para>
+<equation id="fs-id1170572184975" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−7</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+</section>
+<section id="fs-id1170572185027">
+<title>Single Repeated Real Root</title>
+<para id="fs-id1170572185033">Things are a little more complicated if the characteristic equation has a repeated real root, <m:math><m:mi>λ</m:mi><m:mtext>.</m:mtext></m:math> In this case, we know <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> is a solution to <link target-id="fs-id1170572251008"/>, but it is only one solution and we need two linearly independent solutions to determine the general solution. We might be tempted to try a function of the form <m:math><m:mrow><m:mi>k</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo>,</m:mo></m:mrow></m:math> where <emphasis effect="italics">k</emphasis> is some constant, but it would not be linearly independent of <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math> Therefore, let’s try <m:math><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> as the second solution. First, note that by the quadratic formula,</para>
+<equation id="fs-id1170572562800" class="unnumbered"><label/><m:math><m:mrow><m:mi>λ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>−</m:mtext><m:mi>b</m:mi><m:mo>±</m:mo><m:msqrt><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow></m:msqrt></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>a</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571579633">But, <m:math><m:mi>λ</m:mi></m:math> is a repeated root, so <m:math><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>λ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>−</m:mtext><m:mi>b</m:mi></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>a</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> Thus, if <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo>,</m:mo></m:mrow></m:math> we have</para>
+<equation id="fs-id1170571579703" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mi>λ</m:mi><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>λ</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571629723">Substituting these expressions into <link target-id="fs-id1170572251008"/>, we see that</para>
+<equation id="fs-id1170571629729" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>a</m:mi><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>c</m:mi><m:mi>y</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>λ</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>b</m:mi><m:mo stretchy="false">(</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mi>λ</m:mi><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>c</m:mi><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>λ</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>a</m:mi><m:mi>λ</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>a</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mtext>−</m:mtext><m:mi>b</m:mi></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>a</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170572399053">This shows that <m:math><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> is a solution to <link target-id="fs-id1170572251008"/>. Since <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> are linearly independent, when the characteristic equation has a repeated root <m:math><m:mrow><m:mi>λ</m:mi><m:mo>,</m:mo></m:mrow></m:math> the general solution to <link target-id="fs-id1170572251008"/> is given by</para>
+<equation id="fs-id1170571695699" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571695755">where <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> are constants.</para>
+<para id="fs-id1170572569934">For example, the differential equation <m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>12</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>36</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> has the associated characteristic equation <m:math><m:mrow><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>λ</m:mi><m:mo>+</m:mo><m:mn>36</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> This factors into <m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>λ</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> which has a repeated root <m:math><m:mrow><m:mi>λ</m:mi><m:mo>=</m:mo><m:mn>−6</m:mn><m:mo>.</m:mo></m:mrow></m:math> Therefore, the general solution to this differential equation is</para>
+<equation id="fs-id1170571592459" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−6</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−6</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+</section>
+<section id="fs-id1170571592517">
+<title>Complex Conjugate Roots</title>
+<para id="fs-id1170571592522">The third case we must consider is when <m:math><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> In this case, when we apply the quadratic formula, we are taking the square root of a negative number. We must use the imaginary number <m:math><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>−1</m:mn></m:mrow></m:msqrt></m:mrow></m:math> to find the roots, which take the form <m:math><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mi>α</m:mi><m:mo>+</m:mo><m:mi>β</m:mi><m:mi>i</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mi>α</m:mi><m:mo>−</m:mo><m:mi>β</m:mi><m:mi>i</m:mi><m:mtext>.</m:mtext></m:mrow></m:math> The <term class="no-emphasis">complex number</term> <m:math><m:mrow><m:mi>α</m:mi><m:mo>+</m:mo><m:mi>β</m:mi><m:mi>i</m:mi></m:mrow></m:math> is called the <emphasis effect="italics">conjugate</emphasis> of <m:math><m:mrow><m:mi>α</m:mi><m:mo>−</m:mo><m:mi>β</m:mi><m:mi>i</m:mi><m:mtext>.</m:mtext></m:mrow></m:math> Thus, we see that when <m:math><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> the roots of our characteristic equation are always <term class="no-emphasis">complex conjugates</term>.</para>
+<para id="fs-id1170572456336">This creates a little bit of a problem for us. If we follow the same process we used for distinct real roots—using the roots of the characteristic equation as the coefficients in the exponents of exponential functions—we get the functions <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>α</m:mi><m:mo>+</m:mo><m:mi>β</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>α</m:mi><m:mo>−</m:mo><m:mi>β</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> as our solutions. However, there are problems with this approach. First, these functions take on complex (imaginary) values, and a complete discussion of such functions is beyond the scope of this text. Second, even if we were comfortable with complex-value functions, in this course we do not address the idea of a derivative for such functions. So, if possible, we’d like to find two linearly independent <emphasis effect="italics">real-value</emphasis> solutions to the differential equation. For purposes of this development, we are going to manipulate and differentiate the functions <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>α</m:mi><m:mo>+</m:mo><m:mi>β</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>α</m:mi><m:mo>−</m:mo><m:mi>β</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> as if they were real-value functions. For these particular functions, this approach is valid mathematically, but be aware that there are other instances when complex-value functions do not follow the same rules as real-value functions. Those of you interested in a more in-depth discussion of complex-value functions should consult a complex analysis text.</para>
+<para id="fs-id1170572548197">Based on the roots <m:math><m:mrow><m:mi>α</m:mi><m:mo>±</m:mo><m:mi>β</m:mi><m:mi>i</m:mi></m:mrow></m:math> of the characteristic equation, the functions <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>α</m:mi><m:mo>+</m:mo><m:mi>β</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>α</m:mi><m:mo>−</m:mo><m:mi>β</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> are linearly independent solutions to the differential equation. and the general solution is given by</para>
+<equation id="fs-id1170572331260" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>α</m:mi><m:mo>+</m:mo><m:mi>β</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>α</m:mi><m:mo>−</m:mo><m:mi>β</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mi>x</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572331344">Using some smart choices for <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>,</m:mo></m:mrow></m:math> and a little bit of algebraic manipulation, we can find two linearly independent, real-value solutions to <link target-id="fs-id1170572251008"/> and express our general solution in those terms.</para>
+<para id="fs-id1170571700943">We encountered exponential functions with complex exponents earlier. One of the key tools we used to express these exponential functions in terms of sines and cosines was <term class="no-emphasis">Euler’s formula</term>, which tells us that</para>
+<equation id="fs-id1170571700953" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>i</m:mi><m:mi>θ</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>θ</m:mi></m:mrow></m:math></equation>
+<para id="fs-id1170571700984">for all real numbers <m:math><m:mrow><m:mi>θ</m:mi><m:mtext>.</m:mtext></m:mrow></m:math></para>
+<para id="fs-id1170571700993">Going back to the general solution, we have</para>
+<equation id="fs-id1170571700996" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>α</m:mi><m:mo>+</m:mo><m:mi>β</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>α</m:mi><m:mo>−</m:mo><m:mi>β</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mi>x</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>α</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mi>β</m:mi><m:mi>i</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>α</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>β</m:mi><m:mi>i</m:mi><m:mi>x</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>α</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>β</m:mi><m:mi>i</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>β</m:mi><m:mi>i</m:mi><m:mi>x</m:mi></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170572453504">Applying Euler’s formula together with the identities <m:math><m:mrow><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> we get</para>
+<equation id="fs-id1170571613617" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>α</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mrow><m:mo>[</m:mo><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>β</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>β</m:mi><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mi>β</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>−</m:mtext><m:mi>β</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>α</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mrow><m:mo>[</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">)</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>β</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>−</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">)</m:mo><m:mi>i</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>β</m:mi><m:mi>x</m:mi></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170571736591">Now, if we choose <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> the second term is zero and we get</para>
+<equation id="fs-id1170571736619" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>α</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>β</m:mi><m:mi>x</m:mi></m:mrow></m:math></equation>
+<para id="fs-id1170571736656">as a real-value solution to <link target-id="fs-id1170572251008"/>. Similarly, if we choose <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mrow><m:mfrac><m:mi>i</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mfrac><m:mi>i</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> the first term is zero and we get</para>
+<equation id="fs-id1170572088600" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>α</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>β</m:mi><m:mi>x</m:mi></m:mrow></m:math></equation>
+<para id="fs-id1170572088637">as a second, linearly independent, real-value solution to <link target-id="fs-id1170572251008"/>.</para>
+<para id="fs-id1170572088645">Based on this, we see that if the characteristic equation has complex conjugate roots <m:math><m:mrow><m:mi>α</m:mi><m:mo>±</m:mo><m:mi>β</m:mi><m:mi>i</m:mi><m:mo>,</m:mo></m:mrow></m:math> then the general solution to <link target-id="fs-id1170572251008"/> is given by</para>
+<equation id="fs-id1170572088666" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>α</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>β</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>α</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>β</m:mi><m:mi>x</m:mi></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>α</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>β</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>β</m:mi><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170572330194">where <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> are constants.</para>
+<para id="fs-id1170572330214">For example, the differential equation <m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> has the associated characteristic equation <m:math><m:mrow><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>λ</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> By the quadratic formula, the roots of the characteristic equation are <m:math><m:mrow><m:mn>1</m:mn><m:mo>±</m:mo><m:mn>2</m:mn><m:mi>i</m:mi><m:mtext>.</m:mtext></m:mrow></m:math> Therefore, the general solution to this differential equation is</para>
+<equation id="fs-id1170572330286" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+</section>
+<section id="fs-id1170571769726">
+<title>Summary of Results</title>
+<para id="fs-id1170571769731">We can solve second-order, linear, homogeneous differential equations with constant coefficients by finding the roots of the associated characteristic equation. The form of the general solution varies, depending on whether the characteristic equation has distinct, real roots; a single, repeated real root; or complex conjugate roots. The three cases are summarized in <link target-id="fs-id1170571769749"/>.</para>
+<table id="fs-id1170571769749" summary="This is a table with two columns and three rows. The first column is labeled, “Characteristic Equation Roots;” the second column is labeled, “General Solution to the Differential Equation.” The first row first column contains the statement, “Distinct real roots λ1 and λ2. In the first row second column is the function: y(x) = c1e^λ1x + c2e^λ2x. The second row first column has the statement, “A repeated real root, λ.” The second row second column has the function: y(x) = c1e^λx + c2xe^λx. The third row first column has the statement, “Complex conjugate roots α ± βi. The third row second column has the function: y(x) =e^αx(c1cosβx + c2sinβx).">
+<title>Summary of Characteristic Equation Cases</title>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead>
+<row valign="top">
+<entry align="left">Characteristic Equation Roots</entry>
+<entry align="left">General Solution to the Differential Equation</entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry align="left">Distinct real roots, <m:math><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>1</m:mn></m:msub><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>2</m:mn></m:msub><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">A repeated real root, <m:math><m:mi>λ</m:mi></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>λ</m:mi><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left">Complex conjugate roots <m:math><m:mrow><m:mi>α</m:mi><m:mo>±</m:mo><m:mi>β</m:mi><m:mi>i</m:mi></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>α</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>β</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>β</m:mi><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<note id="fs-id1170572292207" class="problem-solving">
+<title>Problem-Solving Strategy: Using the Characteristic Equation to Solve Second-Order Differential Equations with Constant Coefficients</title>
+<list id="fs-id1170572292216" list-type="enumerated" number-style="arabic">
+<item>Write the differential equation in the form <m:math><m:mrow><m:mi>a</m:mi><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>c</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>Find the corresponding characteristic equation <m:math><m:mrow><m:mi>a</m:mi><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>λ</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>Either factor the characteristic equation or use the quadratic formula to find the roots.</item>
+<item>Determine the form of the general solution based on whether the characteristic equation has distinct, real roots; a single, repeated real root; or complex conjugate roots.</item>
+</list>
+</note>
+<example id="fs-id1170571735178">
+<exercise id="fs-id1170571735180">
+<problem id="fs-id1170571735182">
+<title>Solving Second-Order Equations with Constant Coefficients</title>
+<para id="fs-id1170571735188">Find the general solution to the following differential equations. Give your answers as functions of <emphasis effect="italics">x</emphasis>.</para>
+<list id="fs-id1170571735197" list-type="enumerated" number-style="lower-alpha">
+<item><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>3</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>6</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>13</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>5</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>16</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>16</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+</list>
+</problem>
+<solution id="fs-id1170572268256">
+<para id="fs-id1170572268258">Note that all these equations are already given in standard form (step 1).</para>
+<list id="fs-id1170572268261" list-type="enumerated" number-style="lower-alpha">
+<item>The characteristic equation is <m:math><m:mrow><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>λ</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> (step 2). This factors into <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>λ</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>λ</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> so the roots of the characteristic equation are <m:math><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>−4</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> (step 3). Then the general solution to the differential equation is<newline/>
+<equation id="fs-id1170572589239" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mspace width="0.2em"/><m:mtext>(step 4)</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math></equation></item>
+<item>The characteristic equation is <m:math><m:mrow><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>λ</m:mi><m:mo>+</m:mo><m:mn>13</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> (step 2). Applying the quadratic formula, we see this equation has complex conjugate roots <m:math><m:mrow><m:mn>−3</m:mn><m:mo>±</m:mo><m:mn>2</m:mn><m:mi>i</m:mi></m:mrow></m:math> (step 3). Then the general solution to the differential equation is<newline/>
+<equation id="fs-id1170572296619" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mn>2</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>2</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mtext>(step 4)</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math></equation></item>
+<item>The characteristic equation is <m:math><m:mrow><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>λ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> (step 2). This factors into <m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>λ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> so the characteristic equation has a repeated real root <m:math><m:mrow><m:mi>λ</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn></m:mrow></m:math> (step 3). Then the general solution to the differential equation is<newline/>
+<equation id="fs-id1170572468885" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mspace width="0.2em"/><m:mtext>(step 4).</m:mtext></m:mrow></m:math></equation></item>
+<item>The characteristic equation is <m:math><m:mrow><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>λ</m:mi></m:mrow></m:math> (step 2). This factors into <m:math><m:mrow><m:mi>λ</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>λ</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> so the roots of the characteristic equation are <m:math><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math> (step 3). Note that <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mn>0</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> so our first solution is just a constant. Then the general solution to the differential equation is<newline/>
+<equation id="fs-id1170571531346" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mspace width="0.2em"/><m:mtext>(step 4)</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math></equation></item>
+<item>The characteristic equation is <m:math><m:mrow><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>16</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> (step 2). This factors into <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>λ</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>λ</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> so the roots of the characteristic equation are <m:math><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>−4</m:mn></m:mrow></m:math> (step 3). Then the general solution to the differential equation is<newline/>
+<equation id="fs-id1170572306377" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>4</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mspace width="0.2em"/><m:mtext>(step 4)</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math></equation></item>
+<item>The characteristic equation is <m:math><m:mrow><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>16</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> (step 2). This has complex conjugate roots <m:math><m:mrow><m:mo>±</m:mo><m:mn>4</m:mn><m:mi>i</m:mi></m:mrow></m:math> (step 3). Note that <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mn>0</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> so the exponential term in our solution is just a constant. Then the general solution to the differential equation is<newline/>
+<equation id="fs-id1170572332697" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mn>4</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>4</m:mn><m:mi>t</m:mi><m:mspace width="0.2em"/><m:mtext>(step 4)</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math></equation></item>
+</list>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170572332756" class="checkpoint">
+<exercise id="fs-id1170572332760">
+<problem id="fs-id1170572332762">
+<para id="fs-id1170572332764">Find the general solution to the following differential equations:</para>
+<list id="fs-id1170572332768" list-type="enumerated" number-style="lower-alpha">
+<item><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>10</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>14</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>49</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+</list>
+</problem>
+<solution id="fs-id1170572558069">
+<list id="fs-id1170572558071" list-type="enumerated" number-style="lower-alpha">
+<item><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−7</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−7</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></item>
+</list>
+</solution>
+<commentary id="fs-id1170571737498" type="hint">
+<title>Hint</title>
+<para id="fs-id1170571737505">Find the roots of the characteristic equation.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+</section>
+<section id="fs-id1170571737514">
+<title>Initial-Value Problems and Boundary-Value Problems</title>
+<para id="fs-id1170571737519">So far, we have been finding general solutions to differential equations. However, differential equations are often used to describe physical systems, and the person studying that physical system usually knows something about the state of that system at one or more points in time. For example, if a constant-coefficient differential equation is representing how far a motorcycle shock absorber is compressed, we might know that the rider is sitting still on his motorcycle at the start of a race, time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:msub><m:mi>t</m:mi><m:mn>0</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math> This means the system is at equilibrium, so <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>t</m:mi><m:mn>0</m:mn></m:msub><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> and the compression of the shock absorber is not changing, so <m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:msub><m:mi>t</m:mi><m:mn>0</m:mn></m:msub><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> With these two initial conditions and the general solution to the differential equation, we can find the <emphasis effect="italics">specific</emphasis> solution to the differential equation that satisfies both initial conditions. This process is known as <emphasis effect="italics">solving an initial-value problem</emphasis>. (Recall that we discussed <term class="no-emphasis">initial-value problems</term> in <link document="m53696">Introduction to Differential Equations</link>.) Note that second-order equations have two arbitrary constants in the general solution, and therefore we require two initial conditions to find the solution to the initial-value problem.</para>
+<para id="fs-id1170572480451">Sometimes we know the condition of the system at two different times. For example, we might know <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>t</m:mi><m:mn>0</m:mn></m:msub><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>t</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math> These conditions are called <term>boundary conditions</term>, and finding the solution to the differential equation that satisfies the boundary conditions is called solving a <term>boundary-value problem</term>.</para>
+<para id="fs-id1170572624720">Mathematicians, scientists, and engineers are interested in understanding the conditions under which an initial-value problem or a boundary-value problem has a unique solution. Although a complete treatment of this topic is beyond the scope of this text, it is useful to know that, within the context of constant-coefficient, second-order equations, initial-value problems are guaranteed to have a unique solution as long as two initial conditions are provided. Boundary-value problems, however, are not as well behaved. Even when two boundary conditions are known, we may encounter boundary-value problems with unique solutions, many solutions, or no solution at all.</para>
+<example id="fs-id1170572624728">
+<exercise id="fs-id1170572624731">
+<problem id="fs-id1170572624733">
+<title>Solving an Initial-Value Problem</title>
+<para id="fs-id1170572624738">Solve the following initial-value problem: <m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>3</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−9</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170571547366">
+<para id="fs-id1170571547368">We already solved this differential equation in <link target-id="fs-id1170571735178"/>a. and found the general solution to be</para>
+<equation id="fs-id1170571547376" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571547427">Then</para>
+<equation id="fs-id1170571547430" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−4</m:mn><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571653723">When <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> we have <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−4</m:mn><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math> Applying the initial conditions, we have</para>
+<equation id="fs-id1170571653807" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>1</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>−4</m:mn><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>−9</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170572368489">Then <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math> Substituting this expression into the second equation, we see that</para>
+<equation id="fs-id1170572368514" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mn>−4</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>−9</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>−4</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>−9</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>5</m:mn><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>−5</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>−1</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170571712855">So, <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> and the solution to the initial-value problem is</para>
+<equation id="fs-id1170571712871" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170571700294" class="checkpoint">
+<exercise id="fs-id1170571700298">
+<problem id="fs-id1170571700301">
+<para id="fs-id1170571700303">Solve the initial-value problem <m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>3</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>10</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572307604">
+<para id="fs-id1170572307606"><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>−</m:mtext><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1170572307647" type="hint">
+<title>Hint</title>
+<para id="fs-id1170572307655">Use the initial conditions to determine values for <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math></para>
+</commentary>
+</exercise>
+</note>
+<example id="fs-id1170572307679">
+<exercise id="fs-id1170572307681">
+<problem id="fs-id1170572307683">
+<title>Solving an Initial-Value Problem and Graphing the Solution</title>
+<para id="fs-id1170572307689">Solve the following initial-value problem and graph the solution:</para>
+<equation id="fs-id1170572307692" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>6</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>13</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math></equation>
+</problem>
+<solution id="fs-id1170572218516">
+<para id="fs-id1170572218518">We already solved this differential equation in <link target-id="fs-id1170571735178"/>b. and found the general solution to be</para>
+<equation id="fs-id1170572218526" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572420001">Then</para>
+<equation id="fs-id1170572420004" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>3</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571700166">When <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> we have <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>−</m:mo><m:mn>3</m:mn><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math> Applying the initial conditions, we obtain</para>
+<equation id="fs-id1170571700244" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>0</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>−3</m:mn><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mn>2</m:mn><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>2</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170571746542">Therefore, <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> and the solution to the initial value problem is shown in the following graph.</para>
+<equation id="fs-id1170571746575" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>2</m:mn><m:mi>x</m:mi><m:mtext>.</m:mtext></m:mrow></m:math></equation>
+<media id="fs-id1170571746607" alt="This figure is a graph of the function y = e^−3x sin 2x. The x axis is scaled in increments of tenths. The y axis is scaled in increments of even tenths. The curve passes through the origin and has a horizontal asymptote of the positive x axis.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_01_001.jpg"/>
+</media>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170572627064" class="checkpoint">
+<exercise id="fs-id1170572627068">
+<problem id="fs-id1170572627071">
+<para id="fs-id1170572627073">Solve the following initial-value problem and graph the solution: <m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>10</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−1</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572627146">
+<para id="fs-id1170572627148"><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>3</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math><newline/>
+<media id="fs-id1170572306890" alt="This figure is the graph of y(x) = e^x(2 cos 3x − sin 3x) It has the positive x axis scaled in increments of even tenths. The y axis is scaled in increments of twenty. The graph itself starts at the origin. Its amplitude increases as x increases.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_01_002.jpg"/>
+</media></para>
+</solution>
+<commentary id="fs-id1170572306902" type="hint">
+<title>Hint</title>
+<para id="fs-id1170572306909">Use the initial conditions to determine values for <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math></para>
+</commentary>
+</exercise>
+</note>
+<example id="fs-id1170572306933">
+<exercise id="fs-id1170572306936">
+<problem id="fs-id1170572306938">
+<title>Initial-Value Problem Representing a Spring-Mass System</title>
+<para id="fs-id1170572306943">The following initial-value problem models the position of an object with mass attached to a spring. Spring-mass systems are examined in detail in <link document="m54044">Applications</link>. The solution to the differential equation gives the position of the mass with respect to a neutral (equilibrium) position (in meters) at any given time. (Note that for spring-mass systems of this type, it is customary to define the downward direction as positive.)</para>
+<equation id="fs-id1170572306957" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></equation>
+<para id="fs-id1170572223520">Solve the initial-value problem and graph the solution. What is the position of the mass at time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> sec? How fast is the mass moving at time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> sec? In what direction?</para>
+</problem>
+<solution id="fs-id1170572223544">
+<para id="fs-id1170572223546">In <link target-id="fs-id1170571735178"/>c. we found the general solution to this differential equation to be</para>
+<equation id="fs-id1170572223554" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572489109">Then</para>
+<equation id="fs-id1170572489112" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>−</m:mtext><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572489192">When <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> we have <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>−</m:mtext><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math> Applying the initial conditions, we obtain</para>
+<equation id="fs-id1170571646103" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>1</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:msub><m:mrow><m:mtext>−</m:mtext><m:mi>c</m:mi></m:mrow><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>0</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170572554210">Thus, <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> and the solution to the initial value problem is</para>
+<equation id="fs-id1170572554244" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572554289">This solution is represented in the following graph. At time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow></m:math> the mass is at position <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn></m:mrow></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn></m:mrow></m:msup><m:mo>≈</m:mo><m:mn>0.406</m:mn></m:mrow></m:math> m below equilibrium.</para>
+<media id="fs-id1170571611970" alt="This figure is the graph of y(t) = e^−t + te^−t. The horizontal axis is labeled with t and is scaled in increments of even tenths. The y axis is scaled in increments of 0.5. The graph passes through positive one and decreases with a horizontal asymptote of the positive t axis.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_01_003.jpg"/>
+</media>
+<para id="fs-id1170571611981">To calculate the velocity at time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> we need to find the derivative. We have <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mo>,</m:mo></m:mrow></m:math> so</para>
+<equation id="fs-id1170571612037" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>−</m:mtext><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572516810">Then <m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>−</m:mtext><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mo>≈</m:mo><m:mo>−</m:mo><m:mn>0.3679</m:mn><m:mo>.</m:mo></m:mrow></m:math> At time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the mass is moving upward at 0.3679 m/sec.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1170572516866" class="checkpoint">
+<exercise id="fs-id1170572516870">
+<problem id="fs-id1170572516873">
+<para id="fs-id1170572516875">Suppose the following initial-value problem models the position (in feet) of a mass in a spring-mass system at any given time. Solve the initial-value problem and graph the solution. What is the position of the mass at time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0.3</m:mn></m:mrow></m:math> sec? How fast is it moving at time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0.1</m:mn></m:mrow></m:math> sec? In what direction?</para>
+<equation id="fs-id1170572610910" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>14</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>49</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></equation>
+</problem>
+<solution id="fs-id1170572610985">
+<para id="fs-id1170572610988"><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−7</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math><newline/>
+<media id="fs-id1170571781015" alt="This figure is the graph of y(t) = te^−7t. The horizontal axis is labeled with t and is scaled in increments of tenths. The y axis is scaled in increments of 0.5. The graph passes through the origin and has a horizontal asymptote of the positive t axis.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_01_004.jpg"/>
+</media><newline/>
+At time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0.3</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.3</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>−7</m:mn><m:mo>*</m:mo><m:mn>0.3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:msup><m:mo>=</m:mo><m:mn>0.3</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2.1</m:mn></m:mrow></m:msup><m:mo>≈</m:mo><m:mn>0.0367</m:mn><m:mo>.</m:mo></m:mrow></m:math> The mass is 0.0367 ft below equilibrium. At time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0.1</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0.1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.3</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−0.7</m:mn></m:mrow></m:msup><m:mo>≈</m:mo><m:mn>0.1490</m:mn><m:mo>.</m:mo></m:mrow></m:math> The mass is moving downward at a speed of 0.1490 ft/sec.</para>
+</solution>
+<commentary id="fs-id1170572292347" type="hint">
+<title>Hint</title>
+<para id="fs-id1170572292354">Use the initial conditions to determine values for <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math></para>
+</commentary>
+</exercise>
+</note>
+<example id="fs-id1170572292379">
+<exercise id="fs-id1170572292381">
+<problem id="fs-id1170572292383">
+<title>Solving a Boundary-Value Problem</title>
+<para id="fs-id1170572292389">In <link target-id="fs-id1170571735178"/>f. we solved the differential equation <m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>16</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and found the general solution to be <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mn>4</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>4</m:mn><m:mi>t</m:mi><m:mtext>.</m:mtext></m:mrow></m:math> If possible, solve the boundary-value problem if the boundary conditions are the following:</para>
+<list id="fs-id1170572373491" list-type="enumerated" number-style="lower-alpha">
+<item><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>y</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>y</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>8</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mi>y</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>8</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>y</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>π</m:mi></m:mrow><m:mn>8</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math></item>
+</list>
+</problem>
+<solution id="fs-id1170571781233">
+<para id="fs-id1170571781236">We have</para>
+<equation id="fs-id1170571781239" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mn>4</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>4</m:mn><m:mi>t</m:mi><m:mtext>.</m:mtext></m:mrow></m:math></equation>
+<list id="fs-id1170571781288" list-type="enumerated" number-style="lower-alpha">
+<item>Applying the first boundary condition given here, we get <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> So the solution is of the form <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>4</m:mn><m:mi>t</m:mi><m:mtext>.</m:mtext></m:mrow></m:math> When we apply the second boundary condition, though, we get <m:math><m:mrow><m:mi>y</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>π</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> for all values of <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math> The boundary conditions are not sufficient to determine a value for <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>,</m:mo></m:mrow></m:math> so this boundary-value problem has infinitely many solutions. Thus, <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow></m:math> is a solution for any value of <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>Applying the first boundary condition given here, we get <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Applying the second boundary condition gives <m:math><m:mrow><m:mi>y</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>8</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> so <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> In this case, we have a unique solution: <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mn>4</m:mn><m:mi>t</m:mi><m:mtext>.</m:mtext></m:mrow></m:math></item>
+<item>Applying the first boundary condition given here, we get <m:math><m:mrow><m:mi>y</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>8</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> However, applying the second boundary condition gives <m:math><m:mrow><m:mi>y</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>π</m:mi></m:mrow><m:mn>8</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>−</m:mtext><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow></m:math> so <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>.</m:mo></m:mrow></m:math> We cannot have <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo></m:mrow></m:math> so this boundary value problem has no solution.</item>
+</list>
+</solution>
+</exercise>
+</example>
+</section>
+<section id="fs-id1170571558795" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id1170571558803" list-type="bulleted" bullet-style="bullet">
+<item>Second-order differential equations can be classified as linear or nonlinear, homogeneous or nonhomogeneous.</item>
+<item>To find a general solution for a homogeneous second-order differential equation, we must find two linearly independent solutions. If <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> are linearly independent solutions to a second-order, linear, homogeneous differential equation, then the general solution is given by<newline/>
+<equation id="fs-id1170571558858" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></equation></item>
+<item>To solve homogeneous second-order differential equations with constant coefficients, find the roots of the characteristic equation. The form of the general solution varies depending on whether the characteristic equation has distinct, real roots; a single, repeated real root; or complex conjugate roots.</item>
+<item>Initial conditions or boundary conditions can then be used to find the specific solution to a differential equation that satisfies those conditions, except when there is no solution or infinitely many solutions.</item>
+</list>
+</section>
+<section id="fs-id1170571780539" class="key-equations">
+<title>Key Equations</title>
+<table id="eip-564" summary="." class="unnumbered unstyled">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><emphasis effect="bold">Linear second-order differential equation</emphasis></entry>
+    <entry><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>0</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry><emphasis effect="bold">Second-order equation with constant coefficients</emphasis></entry>
+    <entry><m:math><m:mrow><m:mi>a</m:mi><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>c</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</section>
+<section id="fs-id1170572604487" class="section-exercises">
+<para id="fs-id1170572604491">Classify each of the following equations as linear or nonlinear. If the equation is linear, determine whether it is homogeneous or nonhomogeneous.</para>
+<exercise id="fs-id1170572604496">
+<problem id="fs-id1170572604498">
+<para id="fs-id1170572604500"><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>8</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572604547">
+<para id="fs-id1170572604549">linear, homogenous</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572604555">
+<problem id="fs-id1170572604557">
+<para id="fs-id1170572604559"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571543371">
+<problem id="fs-id1170571543373">
+<para id="fs-id1170571543375"><m:math><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mi>y</m:mi></m:msup><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170571543405">
+<para id="fs-id1170571543407">nonlinear</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571543412">
+<problem id="fs-id1170571543414">
+<para id="fs-id1170571543416"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mfrac><m:mn>4</m:mn><m:mi>x</m:mi></m:mfrac><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572642017">
+<problem id="fs-id1170572642019">
+<para id="fs-id1170572642021"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>y</m:mi></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572642067">
+<para id="fs-id1170572642069">linear, homogeneous</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572642074">
+<problem id="fs-id1170572642076">
+<para id="fs-id1170572642078"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mi>y</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170571614564">For each of the following problems, verify that the given function is a solution to the differential equation. Use a graphing utility to graph the particular solutions for several values of <emphasis effect="italics">c</emphasis><sub>1</sub> and <emphasis effect="italics">c</emphasis><sub>2</sub>. What do the solutions have in common?</para>
+<exercise id="fs-id1170571614582">
+<problem id="fs-id1170571614585">
+<para id="fs-id1170571614587"><emphasis effect="bold">[T]</emphasis><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571614670">
+<problem id="fs-id1170571614672">
+<para id="fs-id1170571614674"><emphasis effect="bold">[T]</emphasis><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>x</m:mi><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572372098">
+<problem id="fs-id1170572372100">
+<para id="fs-id1170572372102"><emphasis effect="bold">[T]</emphasis><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>14</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>49</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−7</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−7</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572268377">
+<problem id="fs-id1170572268379">
+<para id="fs-id1170572268381"><emphasis effect="bold">[T]</emphasis><m:math><m:mrow><m:mn>6</m:mn><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>49</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>8</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>x</m:mi><m:mtext>/</m:mtext><m:mn>6</m:mn></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>8</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+<para id="fs-id1170572088728">Find the general solution to the linear differential equation.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572088733">
+<problem id="fs-id1170572088735">
+<para id="fs-id1170572088737"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>3</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>10</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572088768">
+<para id="fs-id1170572088770"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572309558">
+<problem id="fs-id1170572309560">
+<para id="fs-id1170572309562"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>7</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572309635">
+<problem id="fs-id1170572309638">
+<para id="fs-id1170572309640"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>4</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572309671">
+<para id="fs-id1170572309673"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572383725">
+<problem id="fs-id1170572383727">
+<para id="fs-id1170572383729"><m:math><m:mrow><m:mn>4</m:mn><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>12</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>9</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572334866">
+<problem id="fs-id1170572334868">
+<para id="fs-id1170572334870"><m:math><m:mrow><m:mn>2</m:mn><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>3</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572334903">
+<para id="fs-id1170572334906"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572334950">
+<problem id="fs-id1170572334952">
+<para id="fs-id1170572334955"><m:math><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>14</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>8</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572582391">
+<problem id="fs-id1170572582393">
+<para id="fs-id1170572582395"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572582422">
+<para id="fs-id1170572582424"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mfrac><m:mrow><m:msqrt><m:mn>3</m:mn></m:msqrt><m:mi>x</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mfrac><m:mrow><m:msqrt><m:mn>3</m:mn></m:msqrt><m:mi>x</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572560180">
+<problem id="fs-id1170572560183">
+<para id="fs-id1170572560185"><m:math><m:mrow><m:mn>5</m:mn><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572274637">
+<problem id="fs-id1170572274639">
+<para id="fs-id1170572274641"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>121</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572274663">
+<para id="fs-id1170572274665"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−11</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>11</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572274705">
+<problem id="fs-id1170572274708">
+<para id="fs-id1170572274710"><m:math><m:mrow><m:mn>8</m:mn><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>14</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>15</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571557043">
+<problem id="fs-id1170571557045">
+<para id="fs-id1170571557047"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>81</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+
+<solution id="fs-id1170571557068">
+<para id="fs-id1170571557070"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mn>9</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>9</m:mn><m:mi>x</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571557115">
+<problem id="fs-id1170571557117">
+<para id="fs-id1170571557120"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>11</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572583472">
+<problem id="fs-id1170572583474">
+<para id="fs-id1170572583476"><m:math><m:mrow><m:mn>2</m:mn><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572512641">
+<para id="fs-id1170572512643"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mi>x</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572512668">
+<problem id="fs-id1170572512671">
+<para id="fs-id1170572512673"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>6</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>9</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572512748">
+<problem id="fs-id1170572512751">
+<para id="fs-id1170572512753"><m:math><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>7</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170571553727">
+<para id="fs-id1170571553729"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msqrt><m:mrow><m:mn>22</m:mn></m:mrow></m:msqrt></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mtext>/</m:mtext><m:mn>3</m:mn></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msqrt><m:mrow><m:mn>22</m:mn></m:mrow></m:msqrt></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mtext>/</m:mtext><m:mn>3</m:mn></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571553821">
+<problem id="fs-id1170571553823">
+<para id="fs-id1170571553825"><m:math><m:mrow><m:mn>4</m:mn><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>10</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572542773">
+<problem id="fs-id1170572542775">
+<para id="fs-id1170572542778"><m:math><m:mrow><m:mn>36</m:mn><m:mfrac><m:mrow><m:msup><m:mi>d</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mn>12</m:mn><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572542828">
+<para id="fs-id1170572542830"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mtext>/</m:mtext><m:mn>6</m:mn></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mtext>/</m:mtext><m:mn>6</m:mn></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571638071">
+<problem id="fs-id1170571638074">
+<para id="fs-id1170571638076"><m:math><m:mrow><m:mn>25</m:mn><m:mfrac><m:mrow><m:msup><m:mi>d</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>−</m:mo><m:mn>80</m:mn><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mn>64</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572388329">
+<problem id="fs-id1170572388331">
+<para id="fs-id1170572388333"><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>d</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>−</m:mo><m:mn>9</m:mn><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572388377">
+<para id="fs-id1170572388379"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>9</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572388411">
+<problem id="fs-id1170572388413">
+<para id="fs-id1170572388415"><m:math><m:mrow><m:mn>4</m:mn><m:mfrac><m:mrow><m:msup><m:mi>d</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mn>8</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170571596266">Solve the initial-value problem.</para>
+<exercise id="fs-id1170571596269">
+<problem id="fs-id1170571596271">
+<para id="fs-id1170571596273"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>5</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext/><m:mspace width="0.2em"/><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−2</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572626441">
+<para id="fs-id1170572626444"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572626478">
+<problem id="fs-id1170572626480">
+<para id="fs-id1170572626482"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>8</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext/><m:mspace width="0.2em"/><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572557927">
+<problem id="fs-id1170572557929">
+<para id="fs-id1170572557931"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="4em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext/><m:mspace width="0.2em"/><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>10</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572558004">
+<para id="fs-id1170572558006"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>5</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572501316">
+<problem id="fs-id1170572501318">
+<para id="fs-id1170572501320"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>18</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>81</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext/><m:mspace width="0.2em"/><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572304970">
+<problem id="fs-id1170572304972">
+<para id="fs-id1170572304974"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>30</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext/><m:mspace width="0.2em"/><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−16</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572305054">
+<para id="fs-id1170572305056"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:msup><m:mi>e</m:mi><m:mrow><m:mn>6</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−5</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571790172">
+<problem id="fs-id1170571790174">
+<para id="fs-id1170571790176"><m:math><m:mrow><m:mn>4</m:mn><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>4</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>8</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext/><m:mspace width="0.2em"/><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571817331">
+<problem id="fs-id1170571817333">
+<para id="fs-id1170571817335"><m:math><m:mrow><m:mn>25</m:mn><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>10</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext/><m:mspace width="0.2em"/><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170571817418">
+<para id="fs-id1170571817420"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mtext>/</m:mtext><m:mn>5</m:mn></m:mrow></m:msup><m:mo>+</m:mo><m:mfrac><m:mn>7</m:mn><m:mn>5</m:mn></m:mfrac><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mtext>/</m:mtext><m:mn>5</m:mn></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572499617">
+<problem id="fs-id1170572499619">
+<para id="fs-id1170572499621"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="4em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext/><m:mspace width="0.2em"/><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−5</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170571755415">Solve the boundary-value problem, if possible.</para>
+<exercise id="fs-id1170571755418">
+<problem id="fs-id1170571755420">
+<para id="fs-id1170571755422"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>42</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext/><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170571755499">
+<para id="fs-id1170571755501"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>2</m:mn><m:mrow><m:msup><m:mi>e</m:mi><m:mn>6</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−7</m:mn></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>6</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>2</m:mn><m:mrow><m:msup><m:mi>e</m:mi><m:mn>6</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−7</m:mn></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−7</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572217354">
+<problem id="fs-id1170572217356">
+<para id="fs-id1170572217358"><m:math><m:mrow><m:mn>9</m:mn><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="4em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>π</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext/><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−8</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571733162">
+<problem id="fs-id1170571733164">
+<para id="fs-id1170571733166"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>10</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>34</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext/><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170571733244">
+<para id="fs-id1170571733246">No solutions exist.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571733252">
+<problem id="fs-id1170571733254">
+<para id="fs-id1170571733256"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>7</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>60</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext/><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572311082">
+<problem id="fs-id1170572311084">
+<para id="fs-id1170572311086"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>4</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext/><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−1</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572311165">
+<para id="fs-id1170572311167"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:msup><m:mi>e</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:msup><m:mi>e</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571542979">
+<problem id="fs-id1170571542981">
+<para id="fs-id1170571542983"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>5</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext/><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572268031">
+<problem id="fs-id1170572268033">
+<para id="fs-id1170572268035"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>9</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext/><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>3</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>−4</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572268106">
+<para id="fs-id1170572268108"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>infinitely many solutions</m:mtext></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571778788">
+<problem id="fs-id1170571778790">
+<para id="fs-id1170571778792"><m:math><m:mrow><m:mn>4</m:mn><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>25</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext/><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−2</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571654026">
+<problem id="fs-id1170571654028">
+<para id="fs-id1170571654030">Find a differential equation with a general solution that is <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>x</m:mi><m:mtext>/</m:mtext><m:mn>5</m:mn></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170571654075">
+<para id="fs-id1170571654077"><m:math><m:mrow><m:mn>5</m:mn><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>19</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571654111">
+<problem id="fs-id1170571654113">
+<para id="fs-id1170571654115">Find a differential equation with a general solution that is <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>x</m:mi><m:mtext>/</m:mtext><m:mn>3</m:mn></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170572417818">For each of the following differential equations:</para>
+<list id="fs-id1170572417821" list-type="enumerated" number-style="lower-alpha">
+<item>Solve the initial value problem.</item>
+<item><emphasis effect="bold">[T]</emphasis> Use a graphing utility to graph the particular solution.</item>
+</list>
+<exercise id="fs-id1170572417838">
+<problem id="fs-id1170572417840">
+<para id="fs-id1170572417842"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>64</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo><m:mspace width="2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>16</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572281018">
+<para id="fs-id1170572281020">a. <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math><newline/>b.<newline/>
+<media id="fs-id1170572281067" alt="This figure is a periodic graph. It has an amplitude of 3.5. Both the x and y axes are scaled in increments of 1.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_01_201.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572281082">
+<problem id="fs-id1170572281084">
+<para id="fs-id1170572281086"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>−</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>10</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mspace width="2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>13</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572388281">
+<problem id="fs-id1170572388283">
+<para id="fs-id1170572388285"><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>5</m:mn><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mn>15</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mspace width="2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>7</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572507219">
+<para id="fs-id1170572507221">a. <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>−5</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mi>x</m:mi></m:mrow></m:msup><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>−2</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msqrt><m:mrow><m:mn>35</m:mn></m:mrow></m:msqrt></m:mrow><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>4</m:mn><m:msqrt><m:mrow><m:mn>35</m:mn></m:mrow></m:msqrt></m:mrow><m:mrow><m:mn>35</m:mn></m:mrow></m:mfrac><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msqrt><m:mrow><m:mn>35</m:mn></m:mrow></m:msqrt></m:mrow><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:math><newline/>b.<newline/>
+<media id="fs-id1170572567820" alt="This figure is a graph of an oscillating function. The x and y axes are scaled in increments of even numbers. The amplitude of the graph is decreasing as x increases.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_01_203.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572567835">
+<problem id="fs-id1170572567837">
+<para id="fs-id1170572567839">(Principle of superposition) Prove that if <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> are solutions to a linear homogeneous differential equation, <m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> then the function <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> are constants, is also a solution.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572622303">
+<problem id="fs-id1170572622305">
+<para id="fs-id1170572622307">Prove that if <emphasis effect="italics">a, b,</emphasis> and <emphasis effect="italics">c</emphasis> are positive constants, then all solutions to the second-order linear differential equation <m:math><m:mrow><m:mi>a</m:mi><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>c</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> approach zero as <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi><m:mtext>.</m:mtext></m:mrow></m:math> (<emphasis effect="italics">Hint:</emphasis> Consider three cases: two distinct roots, repeated real roots, and complex conjugate roots.)</para>
+</problem>
+</exercise>
+</section>
+ </content>
+<glossary>
+<definition id="fs-id1170572622374">
+<term>boundary conditions</term>
+<meaning id="fs-id1170572626668">the conditions that give the state of a system at different times, such as the position of a spring-mass system at two different times</meaning>
+</definition>
+<definition id="fs-id1170572626673">
+<term>boundary-value problem</term>
+<meaning id="fs-id1170572626678">a differential equation with associated boundary conditions</meaning>
+</definition>
+<definition id="fs-id1170572626683">
+<term>characteristic equation</term>
+<meaning id="fs-id1170572626688">the equation <m:math><m:mrow><m:mi>a</m:mi><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>λ</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> for the differential equation <m:math><m:mrow><m:mi>a</m:mi><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>c</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></meaning>
+</definition>
+<definition id="fs-id1170572626748">
+<term>homogeneous linear equation</term>
+<meaning id="fs-id1170572626753">a second-order differential equation that can be written in the form <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>0</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> but <m:math><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> for every value of <m:math><m:mi>x</m:mi></m:math></meaning>
+</definition>
+<definition id="fs-id1170572250119">
+<term>nonhomogeneous linear equation</term>
+<meaning id="fs-id1170572250125">a second-order differential equation that can be written in the form <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>0</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> but <m:math><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow></m:math> for some value of <m:math><m:mi>x</m:mi></m:math></meaning>
+</definition>
+<definition id="fs-id1170572370443">
+<term>linearly dependent</term>
+<meaning id="fs-id1170572370448">a set of functions <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>,…,</m:mtext><m:msub><m:mi>f</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> for which there are constants <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>,…</m:mtext><m:msub><m:mi>c</m:mi><m:mi>n</m:mi></m:msub><m:mo>,</m:mo></m:mrow></m:math> not all zero, such that <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mtext>⋯</m:mtext><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mi>n</m:mi></m:msub><m:msub><m:mi>f</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> for all <emphasis effect="italics">x</emphasis> in the interval of interest</meaning>
+</definition>
+<definition id="fs-id1170571683582">
+<term>linearly independent</term>
+<meaning id="fs-id1170571683587">a set of functions <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>,…,</m:mtext><m:msub><m:mi>f</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> for which there are no constants <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mtext>,…</m:mtext><m:msub><m:mi>c</m:mi><m:mi>n</m:mi></m:msub><m:mo>,</m:mo></m:mrow></m:math> such that <m:math><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mtext>⋯</m:mtext><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mi>n</m:mi></m:msub><m:msub><m:mi>f</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> for all <emphasis effect="italics">x</emphasis> in the interval of interest</meaning>
+</definition>
+</glossary>
+</document>

@@ -1,0 +1,20 @@
+<document xmlns="http://cnx.rice.edu/cnxml" class="introduction">
+<title>Introduction</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53494</md:content-id>
+  <md:title>Introduction</md:title>
+  <md:abstract/>
+  <md:uuid>b56f3f62-f26d-4a04-a9fd-dd9bb6e23fda</md:uuid>
+</metadata>
+
+<content>
+<figure id="CNX_Calc_Figure_03_00_001" class="splash">
+<media id="fs-id1169738055591" alt="A photo of a Hennessey Venom GT sports car speeding along a winding road.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_03_00_001.jpg"/>
+</media>
+<caption>The Hennessey Venom GT can go from 0 to 200 mph in 14.51 seconds. (credit: modification of work by Codex41, Flickr)</caption>
+</figure>
+<para id="fs-id1169737736796">The Hennessey Venom GT is one of the fastest cars in the world. In 2014, it reached a record-setting speed of 270.49 mph. It can go from 0 to 200 mph in 14.51 seconds. The techniques in this chapter can be used to calculate the acceleration the Venom achieves in this feat (see <link target-id="fs-id1169739204154" document="m53495"/>.)</para>
+<para id="fs-id1169738017022">Calculating velocity and changes in velocity are important uses of calculus, but it is far more widespread than that. Calculus is important in all branches of mathematics, science, and engineering, and it is critical to analysis in business and health as well. In this chapter, we explore one of the main tools of calculus, the derivative, and show convenient ways to calculate derivatives. We apply these rules to a variety of functions in this chapter so that we can then explore applications of these techniques.</para>
+  </content>
+</document>

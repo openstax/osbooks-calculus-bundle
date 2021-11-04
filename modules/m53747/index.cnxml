@@ -1,0 +1,988 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+<title>Ratio and Root Tests</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53747</md:content-id>
+  <md:title>Ratio and Root Tests</md:title>
+  <md:abstract><list>
+<item>Use the ratio test to determine absolute convergence of a series.</item>
+<item>Use the root test to determine absolute convergence of a series.</item>
+<item>Describe a strategy for testing the convergence of a given series.</item>
+</list></md:abstract>
+  <md:uuid>74f00d96-e6bb-49bc-aa83-26387d4e376d</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-id1169739128362">In this section, we prove the last two series convergence tests: the ratio test and the root test. These tests are particularly nice because they do not require us to find a comparable series. The ratio test will be especially useful in the discussion of power series in the next chapter.</para>
+<para id="fs-id1169739010825">Throughout this chapter, we have seen that no single convergence test works for all series. Therefore, at the end of this section we discuss a strategy for choosing which convergence test to use for a given series.</para>
+<section id="fs-id1169736729033">
+<title>Ratio Test</title>
+<para id="fs-id1169736618515">Consider a series <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> From our earlier discussion and examples, we know that <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> is not a sufficient condition for the series to converge. Not only do we need <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">→</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> but we need <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">→</m:mo><m:mn>0</m:mn></m:mrow></m:math> quickly enough. For example, consider the series <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mn>1</m:mn></m:mstyle><m:mtext>/</m:mtext><m:mi>n</m:mi></m:mrow></m:math> and the series <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mn>1</m:mn></m:mstyle><m:mtext>/</m:mtext><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> We know that <m:math><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">→</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> However, only the series <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mn>1</m:mn></m:mstyle><m:mtext>/</m:mtext><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> converges. The series <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mn>1</m:mn></m:mstyle><m:mtext>/</m:mtext><m:mi>n</m:mi></m:mrow></m:math> diverges because the terms in the sequence <m:math><m:mrow><m:mo>{</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>n</m:mi><m:mo>}</m:mo></m:mrow></m:math> do not approach zero fast enough as <m:math><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi><m:mo>.</m:mo></m:mrow></m:math> Here we introduce the <term>ratio test</term>, which provides a way of measuring how fast the terms of a series approach zero.</para>
+<note id="fs-id1169739067523" class="theorem">
+<title>Ratio Test</title>
+<para id="fs-id1169736661198">Let <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> be a series with nonzero terms. Let</para>
+<equation id="fs-id1169739298350" class="unnumbered"><label/><m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>|</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<list id="fs-id1169739302372" list-type="enumerated" number-style="lower-roman">
+<item>If <m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>ρ</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> converges absolutely.</item>
+<item>If <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>&gt;</m:mo><m:mn>1</m:mn></m:mrow></m:math> or <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> diverges.</item>
+<item>If <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the test does not provide any information.</item>
+</list>
+</note>
+<section id="fs-id1169736593669">
+<title>Proof</title>
+<para id="fs-id1169739175440">Let <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> be a series with nonzero terms.</para>
+<para id="fs-id1169739208935">We begin with the proof of part i. In this case, <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>|</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Since <m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>ρ</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> there exists <m:math><m:mi>R</m:mi></m:math> such that <m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>ρ</m:mi><m:mo>&lt;</m:mo><m:mi>R</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Let <m:math><m:mrow><m:mi>ε</m:mi><m:mo>=</m:mo><m:mi>R</m:mi><m:mo>−</m:mo><m:mi>ρ</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> By the definition of limit of a sequence, there exists some integer <m:math><m:mi>N</m:mi></m:math> such that</para>
+<equation id="fs-id1169739275391" class="unnumbered"><label/><m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mi>ρ</m:mi></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mi>ε</m:mi><m:mspace width="0.2em"/><m:mtext>for all</m:mtext><m:mspace width="0.2em"/><m:mi>n</m:mi><m:mo>≥</m:mo><m:mi>N</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1169738923259">Therefore,</para>
+<equation id="fs-id1169738869993" class="unnumbered"><label/><m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mi>ρ</m:mi><m:mo>+</m:mo><m:mi>ε</m:mi><m:mo>=</m:mo><m:mi>R</m:mi><m:mspace width="0.2em"/><m:mtext>for all</m:mtext><m:mspace width="0.2em"/><m:mi>n</m:mi><m:mo>≥</m:mo><m:mi>N</m:mi></m:mrow></m:math></equation>
+<para id="fs-id1169739344904">and, thus,</para>
+<equation id="fs-id1169738914987" class="unnumbered"><label/><m:math><m:mtable columnalign="left"><m:mtr><m:mtd><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&lt;</m:mo><m:mi>R</m:mi><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>N</m:mi></m:msub><m:mo>|</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&lt;</m:mo><m:mi>R</m:mi><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&lt;</m:mo><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>N</m:mi></m:msub><m:mo>|</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&lt;</m:mo><m:mi>R</m:mi><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&lt;</m:mo><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&lt;</m:mo><m:msup><m:mi>R</m:mi><m:mn>3</m:mn></m:msup><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>N</m:mi></m:msub><m:mo>|</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&lt;</m:mo><m:mi>R</m:mi><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&lt;</m:mo><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&lt;</m:mo><m:msup><m:mi>R</m:mi><m:mn>3</m:mn></m:msup><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&lt;</m:mo><m:msup><m:mi>R</m:mi><m:mn>4</m:mn></m:msup><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>N</m:mi></m:msub><m:mo>|</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>⋮</m:mo><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1169739302830">Since <m:math><m:mrow><m:mi>R</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the geometric series</para>
+<equation id="fs-id1169739212808" class="unnumbered"><label/><m:math><m:mrow><m:mi>R</m:mi><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>N</m:mi></m:msub><m:mo>|</m:mo><m:mo>+</m:mo><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>N</m:mi></m:msub><m:mo>|</m:mo><m:mo>+</m:mo><m:msup><m:mi>R</m:mi><m:mn>3</m:mn></m:msup><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>N</m:mi></m:msub><m:mo>|</m:mo><m:mo>+</m:mo><m:mtext>⋯</m:mtext></m:mrow></m:math></equation>
+<para id="fs-id1169738971692">converges. Given the inequalities above, we can apply the comparison test and conclude that the series</para>
+<equation id="fs-id1169738971694" class="unnumbered"><label/><m:math><m:mrow><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>+</m:mo><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>+</m:mo><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>+</m:mo><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>+</m:mo><m:mtext>⋯</m:mtext></m:mrow></m:math></equation>
+<para id="fs-id1169738904500">converges. Therefore, since</para>
+<equation id="fs-id1169739298749" class="unnumbered"><label/><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mo stretchy="false">|</m:mo></m:mstyle><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">|</m:mo><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>N</m:mi></m:munderover><m:mo stretchy="false">|</m:mo></m:mstyle><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">|</m:mo><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mo stretchy="false">|</m:mo></m:mstyle><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">|</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1169738971786">where <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>N</m:mi></m:munderover><m:mo stretchy="false">|</m:mo></m:mstyle><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">|</m:mo></m:mrow></m:math> is a finite sum and <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mo stretchy="false">|</m:mo></m:mstyle><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">|</m:mo></m:mrow></m:math> converges, we conclude that <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mo stretchy="false">|</m:mo></m:mstyle><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">|</m:mo></m:mrow></m:math> converges.</para>
+<para id="fs-id1169739010004">For part ii.</para>
+<equation id="fs-id1169739100280" class="unnumbered"><label/><m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>|</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1169739019548">Since <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> there exists <m:math><m:mi>R</m:mi></m:math> such that <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>&gt;</m:mo><m:mi>R</m:mi><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Let <m:math><m:mrow><m:mi>ε</m:mi><m:mo>=</m:mo><m:mi>ρ</m:mi><m:mo>−</m:mo><m:mi>R</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> By the definition of the limit of a sequence, there exists an integer <m:math><m:mi>N</m:mi></m:math> such that</para>
+<equation id="fs-id1169739007422" class="unnumbered"><label/><m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mi>ρ</m:mi></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mi>ε</m:mi><m:mspace width="0.2em"/><m:mtext>for all</m:mtext><m:mspace width="0.2em"/><m:mi>n</m:mi><m:mo>≥</m:mo><m:mi>N</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1169739006446">Therefore,</para>
+<equation id="fs-id1169738906387" class="unnumbered"><label/><m:math><m:mrow><m:mi>R</m:mi><m:mo>=</m:mo><m:mi>ρ</m:mi><m:mo>−</m:mo><m:mi>ε</m:mi><m:mo>&lt;</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow><m:mspace width="0.2em"/><m:mtext>for all</m:mtext><m:mspace width="0.2em"/><m:mi>n</m:mi><m:mo>≥</m:mo><m:mi>N</m:mi><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1169738895005">and, thus,</para>
+<equation id="fs-id1169738912557" class="unnumbered"><label/><m:math><m:mtable columnalign="left"><m:mtr><m:mtd><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&gt;</m:mo><m:mi>R</m:mi><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>N</m:mi></m:msub><m:mo>|</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&gt;</m:mo><m:mi>R</m:mi><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&gt;</m:mo><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>N</m:mi></m:msub><m:mo>|</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&gt;</m:mo><m:mi>R</m:mi><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&gt;</m:mo><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&gt;</m:mo><m:msup><m:mi>R</m:mi><m:mn>3</m:mn></m:msup><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>N</m:mi></m:msub><m:mo>|</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&gt;</m:mo><m:mi>R</m:mi><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&gt;</m:mo><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&gt;</m:mo><m:msup><m:mi>R</m:mi><m:mn>3</m:mn></m:msup><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>&gt;</m:mo><m:msup><m:mi>R</m:mi><m:mn>4</m:mn></m:msup><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>N</m:mi></m:msub><m:mo>|</m:mo><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1169739042629">Since <m:math><m:mrow><m:mi>R</m:mi><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the geometric series</para>
+<equation id="fs-id1169739017227" class="unnumbered"><label/><m:math><m:mrow><m:mi>R</m:mi><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>N</m:mi></m:msub><m:mo>|</m:mo><m:mo>+</m:mo><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>N</m:mi></m:msub><m:mo>|</m:mo><m:mo>+</m:mo><m:msup><m:mi>R</m:mi><m:mn>3</m:mn></m:msup><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>N</m:mi></m:msub><m:mo>|</m:mo><m:mo>+</m:mo><m:mtext>⋯</m:mtext></m:mrow></m:math></equation>
+<para id="fs-id1169736661594">diverges. Applying the comparison test, we conclude that the series</para>
+<equation id="fs-id1169739097736" class="unnumbered"><label/><m:math><m:mrow><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>+</m:mo><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>+</m:mo><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>+</m:mo><m:mtext>⋯</m:mtext></m:mrow></m:math></equation>
+<para id="fs-id1169739001004">diverges, and therefore the series <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mo stretchy="false">|</m:mo></m:mstyle><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">|</m:mo></m:mrow></m:math> diverges.</para>
+<para id="fs-id1169739020685">For part iii. we show that the test does not provide any information if <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> by considering the <m:math><m:mrow><m:mi>p</m:mi><m:mo>−</m:mo><m:mtext>series</m:mtext></m:mrow></m:math> <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mn>1</m:mn><m:mtext>/</m:mtext><m:msup><m:mi>n</m:mi><m:mi>p</m:mi></m:msup><m:mo>.</m:mo></m:mrow></m:math> For any real number <m:math><m:mrow><m:mi>p</m:mi><m:mo>,</m:mo></m:mrow></m:math></para>
+<equation id="fs-id1169739043970" class="unnumbered"><label/><m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>p</m:mi></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:msup><m:mi>n</m:mi><m:mi>p</m:mi></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:msup><m:mi>n</m:mi><m:mi>p</m:mi></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>p</m:mi></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1169739190247">However, we know that if <m:math><m:mrow><m:mi>p</m:mi><m:mo>≤</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the <m:math><m:mrow><m:mi>p</m:mi><m:mo>−</m:mo><m:mtext>series</m:mtext></m:mrow></m:math> <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mn>1</m:mn><m:mtext>/</m:mtext><m:msup><m:mi>n</m:mi><m:mi>p</m:mi></m:msup></m:mrow></m:math> diverges, whereas <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mn>1</m:mn><m:mtext>/</m:mtext><m:msup><m:mi>n</m:mi><m:mi>p</m:mi></m:msup></m:mrow></m:math> converges if <m:math><m:mrow><m:mi>p</m:mi><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1169739038269">□</para>
+<para id="fs-id1169736611442">The ratio test is particularly useful for series whose terms contain factorials or exponentials, where the ratio of terms simplifies the expression. The ratio test is convenient because it does not require us to find a comparative series. The drawback is that the test sometimes does not provide any information regarding convergence.</para>
+<example id="fs-id1169736845320">
+<exercise id="fs-id1169739301472">
+<problem id="fs-id1169736708955">
+<title>Using the Ratio Test</title>
+<para id="fs-id1169736843900">For each of the following series, use the ratio test to determine whether the series converges or diverges.</para>
+<list id="fs-id1169738970420" list-type="enumerated" number-style="lower-alpha">
+<item><m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mfrac><m:mrow><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup></m:mrow><m:mrow><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow></m:mfrac></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mfrac><m:mrow><m:msup><m:mi>n</m:mi><m:mi>n</m:mi></m:msup></m:mrow><m:mrow><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow></m:mfrac></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>−1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mi>n</m:mi></m:msup><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mtext>!</m:mtext><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></item>
+</list>
+</problem>
+<solution id="fs-id1169739094061">
+<list id="fs-id1169738905677" list-type="enumerated" number-style="lower-alpha">
+<item>From the ratio test, we can see that<newline/>
+<equation id="fs-id1169739097521" class="unnumbered"><label/><m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:msup><m:mn>2</m:mn><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mtext>/</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup><m:mtext>/</m:mtext><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow></m:mfrac><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:msup><m:mn>2</m:mn><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mrow><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Since <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>·</m:mo><m:mi>n</m:mi><m:mtext>!</m:mtext><m:mo>,</m:mo></m:mrow></m:math><newline/>
+<equation id="fs-id1169738890904" class="unnumbered"><label/><m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mn>2</m:mn><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Since <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the series converges.</item>
+<item>We can see that<newline/>
+<equation id="fs-id1169736738161" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="left"><m:mi>ρ</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mtext>/</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>!</m:mtext></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mi>n</m:mi></m:msup><m:mtext>/</m:mtext><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>!</m:mtext></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mrow><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>n</m:mi></m:msup><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>n</m:mi></m:msup><m:mo>=</m:mo><m:mi>e</m:mi><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+Since <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the series diverges.</item>
+<item>Since<newline/>
+<equation id="fs-id1169739205416" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mrow><m:mo>|</m:mo><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>−1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mtext>/</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext></m:mrow><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>−1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mi>n</m:mi></m:msup><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mtext>!</m:mtext><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mtext>/</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mtext>!</m:mtext><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+we see that<newline/>
+<equation id="fs-id1169739093131" class="unnumbered"><label/><m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Since <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the series converges.</item>
+</list>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1169736850668" class="checkpoint">
+<exercise id="fs-id1169736850672">
+<problem id="fs-id1169739274678">
+<para id="fs-id1169739274680">Use the ratio test to determine whether the series <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mfrac><m:mrow><m:msup><m:mi>n</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>3</m:mn><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:math> converges or diverges.</para>
+</problem>
+<solution id="fs-id1169739029192">
+<para id="fs-id1169739029194">The series converges.</para>
+</solution>
+<commentary id="fs-id1169739191528" type="hint">
+<title>Hint</title>
+<para id="fs-id1169736846183">Evaluate <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>3</m:mn><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mrow><m:msup><m:mn>3</m:mn><m:mi>n</m:mi></m:msup></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</commentary>
+</exercise>
+</note>
+</section>
+<section id="fs-id1169736607627">
+<title>Root Test</title>
+<para id="fs-id1169739033678">The approach of the <term>root test</term> is similar to that of the ratio test. Consider a series <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> such that <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mroot><m:mrow><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>|</m:mo></m:mrow><m:mi>n</m:mi></m:mroot><m:mo>=</m:mo><m:mi>ρ</m:mi></m:mrow></m:math> for some real number <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>.</m:mo></m:mrow></m:math> Then for <m:math><m:mi>N</m:mi></m:math> sufficiently large, <m:math><m:mrow><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>N</m:mi></m:msub><m:mo>|</m:mo><m:mo>≈</m:mo><m:msup><m:mi>ρ</m:mi><m:mi>N</m:mi></m:msup><m:mo>.</m:mo></m:mrow></m:math> Therefore, we can approximate <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mi>N</m:mi></m:mrow><m:mi>∞</m:mi></m:munderover><m:mo stretchy="false">|</m:mo></m:mstyle><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">|</m:mo></m:mrow></m:math> by writing</para>
+<equation id="fs-id1169739040737" class="unnumbered"><label/><m:math><m:mrow><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>N</m:mi></m:msub><m:mo>|</m:mo><m:mo>+</m:mo><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>+</m:mo><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:msub><m:mo>|</m:mo><m:mo>+</m:mo><m:mtext>⋯</m:mtext><m:mo>≈</m:mo><m:msup><m:mi>ρ</m:mi><m:mi>N</m:mi></m:msup><m:mo>+</m:mo><m:msup><m:mi>ρ</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo>+</m:mo><m:msup><m:mi>ρ</m:mi><m:mrow><m:mi>N</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:msup><m:mo>+</m:mo><m:mtext>⋯</m:mtext><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1169738907603">The expression on the right-hand side is a geometric series. As in the ratio test, the series <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> converges absolutely if <m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>ρ</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn></m:mrow></m:math> and the series diverges if <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>≥</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> If <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the test does not provide any information. For example, for any <emphasis effect="italics">p</emphasis>-series, <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mn>1</m:mn></m:mstyle><m:mtext>/</m:mtext><m:msup><m:mi>n</m:mi><m:mi>p</m:mi></m:msup><m:mo>,</m:mo></m:mrow></m:math> we see that</para>
+<equation id="fs-id1169736852758" class="unnumbered"><label/><m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mroot><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>n</m:mi><m:mi>p</m:mi></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:mroot><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>n</m:mi><m:mrow><m:mi>p</m:mi><m:mtext>/</m:mtext><m:mi>n</m:mi></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1169736844025">To evaluate this limit, we use the natural logarithm function. Doing so, we see that</para>
+<equation id="fs-id1169736853081" class="unnumbered"><label/><m:math><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>n</m:mi><m:mrow><m:mi>p</m:mi><m:mtext>/</m:mtext><m:mi>n</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mtext>ln</m:mtext><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>p</m:mi><m:mtext>/</m:mtext><m:mi>n</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mi>p</m:mi><m:mi>n</m:mi></m:mfrac><m:mo>·</m:mo><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:mi>p</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mi>n</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1169736852760">Using L’Hôpital’s rule, it follows that <m:math><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> and therefore <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> for all <m:math><m:mrow><m:mi>p</m:mi><m:mo>.</m:mo></m:mrow></m:math> However, we know that the <emphasis effect="italics">p</emphasis>-series only converges if <m:math><m:mrow><m:mi>p</m:mi><m:mo>&gt;</m:mo><m:mn>1</m:mn></m:mrow></m:math> and diverges if <m:math><m:mrow><m:mi>p</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<note id="fs-id1169736852039" class="theorem">
+<title>Root Test</title>
+<para id="fs-id1169736852046">Consider the series <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>.</m:mo></m:mrow></m:math> Let</para>
+<equation id="fs-id1169739260282" class="unnumbered"><label/><m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mroot><m:mrow><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>|</m:mo></m:mrow><m:mi>n</m:mi></m:mroot><m:mo>.</m:mo></m:mrow></m:math></equation>
+<list id="fs-id1169739352105" list-type="enumerated" number-style="lower-roman">
+<item>If <m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>ρ</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> converges absolutely.</item>
+<item>If <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>&gt;</m:mo><m:mn>1</m:mn></m:mrow></m:math> or <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> diverges.</item>
+<item>If <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the test does not provide any information.</item>
+</list>
+</note>
+<para id="fs-id1169736583976">The root test is useful for series whose terms involve exponentials. In particular, for a series whose terms <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> satisfy <m:math><m:mrow><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>|</m:mo><m:mo>=</m:mo><m:msubsup><m:mi>b</m:mi><m:mi>n</m:mi><m:mi>n</m:mi></m:msubsup><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:mroot><m:mrow><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>|</m:mo></m:mrow><m:mi>n</m:mi></m:mroot><m:mo>=</m:mo><m:msub><m:mi>b</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> and we need only evaluate <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:msub><m:mi>b</m:mi><m:mi>n</m:mi></m:msub><m:mo>.</m:mo></m:mrow></m:math></para>
+<example id="fs-id1169736615350">
+<exercise id="fs-id1169736615352">
+<problem id="fs-id1169736858393">
+<title>Using the Root Test</title>
+<para id="fs-id1169736858398">For each of the following series, use the root test to determine whether the series converges or diverges.</para>
+<list id="fs-id1169736858402" list-type="enumerated" number-style="lower-alpha">
+<item><m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mfrac><m:mrow><m:msup><m:mi>n</m:mi><m:mi>n</m:mi></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:math></item>
+</list>
+</problem>
+<solution id="fs-id1169739110614">
+<list id="fs-id1169739110616" list-type="enumerated" number-style="lower-alpha">
+<item>To apply the root test, we compute<newline/>
+<equation id="fs-id1169739110625" class="unnumbered"><label/><m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mroot><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup><m:mtext>/</m:mtext><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow><m:mi>n</m:mi></m:mroot><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>n</m:mi></m:mrow><m:mrow><m:mn>4</m:mn><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Since <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the series converges absolutely.</item>
+<item>We have<newline/>
+<equation id="fs-id1169736636617" class="unnumbered"><label/><m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mroot><m:mrow><m:msup><m:mi>n</m:mi><m:mi>n</m:mi></m:msup><m:mtext>/</m:mtext><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow><m:mi>n</m:mi></m:mroot><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mi>n</m:mi><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mi>n</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>∞</m:mi><m:mspace width="0.2em"/><m:mtext>by L’Hôpital’s rule</m:mtext><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Since <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo></m:mrow></m:math> the series diverges.</item>
+</list>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1169736852676" class="checkpoint">
+<exercise id="fs-id1169736852679">
+<problem id="fs-id1169736852681">
+<para id="fs-id1169736852683">Use the root test to determine whether the series <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mn>1</m:mn><m:mtext>/</m:mtext><m:msup><m:mi>n</m:mi><m:mi>n</m:mi></m:msup></m:mrow></m:math> converges or diverges.</para>
+</problem>
+<solution id="fs-id1169736852715">
+<para id="fs-id1169736852717">The series converges.</para>
+</solution>
+<commentary id="fs-id1169736852722" type="hint">
+<title>Hint</title>
+<para id="fs-id1169736592424">Evaluate <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mroot><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:msup><m:mi>n</m:mi><m:mi>n</m:mi></m:msup></m:mrow><m:mi>n</m:mi></m:mroot></m:mrow></m:math> using L’Hôpital’s rule.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+</section>
+<section id="fs-id1169736592463">
+<title>Choosing a Convergence Test</title>
+<para id="fs-id1169736592468">At this point, we have a long list of convergence tests. However, not all tests can be used for all series. When given a series, we must determine which test is the best to use. Here is a strategy for finding the best test to apply.</para>
+<note id="fs-id1169736592473" class="problem-solving">
+<title>Problem-Solving Strategy: Choosing a Convergence Test for a Series</title>
+<para id="fs-id1169736592480">Consider a series <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> In the steps below, we outline a strategy for determining whether the series converges.</para>
+<list id="fs-id1169736592510" list-type="enumerated" number-style="arabic">
+<item>Is <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> a familiar series? For example, is it the harmonic series (which diverges) or the alternating harmonic series (which converges)? Is it a <m:math><m:mrow><m:mi>p</m:mi><m:mo>−</m:mo><m:mtext>series</m:mtext></m:mrow></m:math> or geometric series? If so, check the power <m:math><m:mi>p</m:mi></m:math> or the ratio <m:math><m:mi>r</m:mi></m:math> to determine if the series converges.</item>
+<item>Is it an alternating series? Are we interested in absolute convergence or just convergence? If we are just interested in whether the series converges, apply the alternating series test. If we are interested in absolute convergence, proceed to step <m:math><m:mn>3</m:mn><m:mo>,</m:mo></m:math> considering the series of absolute values <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mo stretchy="false">|</m:mo></m:mstyle><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">|</m:mo><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>Is the series similar to a <m:math><m:mrow><m:mi>p</m:mi><m:mo>−</m:mo><m:mtext>series</m:mtext></m:mrow></m:math> or geometric series? If so, try the comparison test or limit comparison test.</item>
+<item>Do the terms in the series contain a factorial or power? If the terms are powers such that <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msubsup><m:mi>b</m:mi><m:mi>n</m:mi><m:mi>n</m:mi></m:msubsup><m:mo>,</m:mo></m:mrow></m:math> try the root test first. Otherwise, try the ratio test first.</item>
+<item>Use the divergence test. If this test does not provide any information, try the integral test.</item>
+</list>
+</note>
+<note id="fs-id1169736685638" class="media-2">
+<para id="fs-id1169736685641">Visit this <link url="http://www.openstax.org/l/20_series2">website</link> for more information on testing series for convergence, plus general information on sequences and series.</para>
+</note>
+<example id="fs-id1169736685651">
+<exercise id="fs-id1169736685653">
+<problem id="fs-id1169736685655">
+<title>Using Convergence Tests</title>
+<para id="fs-id1169736685660">For each of the following series, determine which convergence test is the best to use and explain why. Then determine if the series converges or diverges. If the series is an alternating series, determine whether it converges absolutely, converges conditionally, or diverges.</para>
+<list id="fs-id1169736685666" list-type="enumerated" number-style="lower-alpha">
+<item><m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mfrac><m:mrow><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow></m:mfrac></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mfrac><m:mrow><m:msup><m:mi>e</m:mi><m:mi>n</m:mi></m:msup></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></item>
+<item><m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mfrac><m:mrow><m:msup><m:mn>3</m:mn><m:mi>n</m:mi></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:math></item>
+</list>
+</problem>
+<solution id="fs-id1169736852464">
+<list id="fs-id1169736852466" list-type="enumerated" number-style="lower-alpha"><item>Step 1. The series is not a <m:math><m:mrow><m:mi>p</m:mi><m:mo>–</m:mo><m:mtext>series</m:mtext></m:mrow></m:math> or geometric series.<newline/>
+Step 2. The series is not alternating.<newline/>
+Step 3. For large values of <m:math><m:mrow><m:mi>n</m:mi><m:mo>,</m:mo></m:mrow></m:math> we approximate the series by the expression<newline/>
+<equation id="fs-id1169736852496" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mo>≈</m:mo><m:mfrac><m:mrow><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>n</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Therefore, it seems reasonable to apply the comparison test or limit comparison test using the series <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mn>1</m:mn></m:mstyle><m:mtext>/</m:mtext><m:mi>n</m:mi><m:mo>.</m:mo></m:mrow></m:math> Using the limit comparison test, we see that<newline/>
+<equation id="fs-id1169736843074" class="unnumbered"><label/><m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>/</m:mtext><m:mo stretchy="false">(</m:mo><m:msup><m:mi>n</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>n</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:msup><m:mi>n</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Since the series <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mn>1</m:mn></m:mstyle><m:mtext>/</m:mtext><m:mi>n</m:mi></m:mrow></m:math> diverges, this series diverges as well.</item>
+<item>Step 1.The series is not a familiar series.<newline/>
+Step 2. The series is alternating. Since we are interested in absolute convergence, consider the series<newline/>
+<equation id="fs-id1169736747084" class="unnumbered"><label/><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>n</m:mi></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext></m:mrow></m:mfrac></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Step 3. The series is not similar to a <emphasis effect="italics">p</emphasis>-series or geometric series.<newline/>
+Step 4. Since each term contains a factorial, apply the ratio test. We see that<newline/>
+<equation id="fs-id1169736643942" class="unnumbered"><label/><m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>/</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>!</m:mtext></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>/</m:mtext><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow></m:mfrac><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>!</m:mtext></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mrow><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow><m:mrow><m:mn>3</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Therefore, this series converges, and we conclude that the original series converges absolutely, and thus converges.</item>
+<item>Step 1. The series is not a familiar series.<newline/>
+Step 2. It is not an alternating series.<newline/>
+Step 3. There is no obvious series with which to compare this series.<newline/>
+Step 4. There is no factorial. There is a power, but it is not an ideal situation for the root test.<newline/>
+Step 5. To apply the divergence test, we calculate that<newline/>
+<equation id="fs-id1169736843793" class="unnumbered"><label/><m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:msup><m:mi>e</m:mi><m:mi>n</m:mi></m:msup></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>∞</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Therefore, by the divergence test, the series diverges.</item>
+<item>Step 1. This series is not a familiar series.<newline/>
+Step 2. It is not an alternating series.<newline/>
+Step 3. There is no obvious series with which to compare this series.<newline/>
+Step 4. Since each term is a power of <m:math><m:mrow><m:mi>n</m:mi><m:mo>,</m:mo></m:mrow></m:math> we can apply the root test. Since<newline/>
+<equation id="fs-id1169739077365" class="unnumbered"><label/><m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mroot><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>3</m:mn><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow><m:mi>n</m:mi></m:mroot><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mn>3</m:mn><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math></equation><newline/>
+by the root test, we conclude that the series converges.</item></list></solution>
+</exercise>
+</example>
+<note id="fs-id1169739077449" class="checkpoint">
+<exercise id="fs-id1169739077452">
+<problem id="fs-id1169739077454">
+<para id="fs-id1169739077456">For the series <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mfrac><m:mrow><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup></m:mrow><m:mrow><m:msup><m:mn>3</m:mn><m:mi>n</m:mi></m:msup><m:mo>+</m:mo><m:mi>n</m:mi></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> determine which convergence test is the best to use and explain why.</para>
+</problem>
+<solution id="fs-id1169739041763">
+<para id="fs-id1169739041765">The comparison test because <m:math><m:mrow><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup><m:mtext>/</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mn>3</m:mn><m:mi>n</m:mi></m:msup><m:mo>+</m:mo><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&lt;</m:mo><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup><m:mtext>/</m:mtext><m:msup><m:mn>3</m:mn><m:mi>n</m:mi></m:msup></m:mrow></m:math> for all positive integers <m:math><m:mrow><m:mi>n</m:mi><m:mo>.</m:mo></m:mrow></m:math> The limit comparison test could also be used.</para>
+</solution>
+<commentary id="fs-id1169739041818" type="hint">
+<title>Hint</title>
+<para id="fs-id1169739041825">The series is similar to the geometric series <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1169739027066">In <link target-id="fs-id1169739027151"/>, we summarize the convergence tests and when each can be applied. Note that while the comparison test, limit comparison test, and integral test require the series <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> to have nonnegative terms, if <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> has negative terms, these tests can be applied to <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mo stretchy="false">|</m:mo></m:mstyle><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">|</m:mo></m:mrow></m:math> to test for absolute convergence.</para>
+<table id="fs-id1169739027151" summary="This is a table with three columns and many rows describing the different series or test, conclusions, and comments in each column, respectively. The first test/series is the divergence test: for any series written as the sum from n = 1 to infinity of a_n, evaluate the limit as n goes to infinity of a + n. If the limit is 0, the test is inconclusive. If the limit is not equal to 0, the series diverges. Note – this test cannot prove convergence of a series. The second test/series is the geometric series: the sum from n = 1 to infinity of a r^(n - 1). If the absolute value of r is less than 1, the series converges to a/(1 - r). If the absolute value of r is greater than or equal to 1, the series diverges. Note – any geometric series can be reindexed to be written in the form a + a r + a r^2 + …, where a is the initial term and r is the ratio. The third test/series is the p-series: the sum from n = 1 to infinity of 1/n^p. If p is greater than 1, the series converges. If p is less than or equal to 1, the series diverges. Note — for p = 1, we have the harmonic series: the sum from n = 1 to infinity of 1/n. The fourth test/series is the comparison test: for the sum from n = 1 to infinity of a_n with nonnegative terms, compare with a known series – the sum from n = 1 to infinity of b_n. If a_n is less than or equal to b_n for all n greater than or equal to N and the sum from n = 1 to infinity of b_n converges, then the sum from n = 1 to infinity of a_n converges. If a_n is greater than or equal to b_n for all n greater than or equal to N and the sum from n = 1 to infinity of b_n diverges, then the sum from n = 1 to infinity a_n diverges. Note — this is typically used for a series similar to a geometric or p-series. It can sometimes be difficult to find an appropriate series. The fifth test/series is the limit comparison test: for the sum from n = 1 to infinity of a_n with positive terms, compare with a series – the sum from n = 1 to infinity of b_n by evaluating L = the limit as n goes to infinity of a_n / b_n. If L is a real number and L does not equal zero, then the sum from n=1 to infinity of a_n and the sum from n = 1 to infinity of b_n both converge or both diverge. If L = 0 and the sum from n = 1 to infinity of b_n converges, then the sum from n = 1 to infinity of a_n converges. If L = infinity and the sum from n = 1 to infinity of b_n diverges, then the sum from n = 1 to infinity of a_n diverges. Note — this is typically used for a series similar to a geometric of p-series. It is often easier to apply than the comparison test. The sixth test/series is the integral test: if there exists a positive, continuous, decreasing function f such that a_n = f(n) for all n greater than or equal to N, evaluate the integral from N to infinity of f(x) d x. Both the integral from N to infinity of f(x)f x and the sum from n = 1 to infinity will converge or diverge. Note — this is limited to those series for which the corresponding function f can be easily integrated. The seventh test/series is the alternating series: the sum from n = 1 to infinity of (-1)^(n + 1) * b_n or the sum from n = 1 to infinity of (-1)^n * b_n. If b_(n + 1) is less than or equal to b_n for all n greater than or equal to 1 and b_n goes to zero, then the series converges. Note — this only applies to alternating series. The eighth test/series is the ratio test: for any series – the sum from n = 1 to infinity of a_n – with nonzero terms, let p equal the limit as n goes to infinity of the absolute value of a_(n + 1)/a_n. If 0 is less than or equal to p which is less than 1, the series converges absolutely. If p is greater than 1 or p equals infinity, then the series diverges. If p equals 1, the test is inconclusive. Note — this is often used for series involving factorials or exponentials. The ninth test/series is the root test: for any series – the sum from n = 1 to infinity of a_n – let p equal the limit as n goes to infinity of the n-th root of the absolute value of a_n. If 0 is less than or equal to p which is less than 1, the series converges absolutely. If p is less than 1 or p equals infinity the series diverges. If p equals 1, the test is inconclusive. Note — often used for series where the absolute value of a_n = b_n to the power of n."><title>Summary of Convergence Tests</title><tgroup cols="3">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row valign="top">
+<entry align="left">Series or Test</entry>
+<entry align="left">Conclusions</entry>
+<entry align="left">Comments</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top" align="left" morerows="1"><emphasis effect="bold">Divergence Test</emphasis><newline/>
+For any series <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>,</m:mo></m:mrow></m:math> evaluate <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>.</m:mo></m:mrow></m:math></entry>
+<entry valign="top" align="left">If <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> the test is inconclusive.</entry>
+<entry valign="top" align="left" morerows="1">This test cannot prove convergence of a series.</entry>
+</row>
+<row>
+<entry valign="top" align="left">If <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> the series diverges.</entry>
+</row>
+<row>
+<entry valign="top" align="left" morerows="1"><emphasis effect="bold">Geometric Series</emphasis><newline/>
+<m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mi>a</m:mi><m:msup><m:mi>r</m:mi><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:math></entry>
+<entry valign="top" align="left">If <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mi>r</m:mi><m:mo>|</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the series converges to<newline/>
+<m:math><m:mrow><m:mi>a</m:mi><m:mtext>/</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>r</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></entry>
+<entry valign="top" align="left" morerows="1">Any geometric series can be reindexed to be written in the form <m:math><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mi>r</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mtext>⋯</m:mtext><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mi>a</m:mi></m:math> is the initial term and <m:math><m:mi>r</m:mi></m:math> is the ratio.</entry>
+</row>
+<row>
+<entry valign="top" align="left">If <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mi>r</m:mi><m:mo>|</m:mo></m:mrow><m:mo>≥</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the series diverges.</entry>
+</row>
+<row>
+<entry valign="top" align="left" morerows="1"><emphasis effect="bold"><emphasis effect="italics">p</emphasis>-Series</emphasis><newline/>
+<m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>n</m:mi><m:mi>p</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:math></entry>
+<entry valign="top" align="left">If <m:math><m:mrow><m:mi>p</m:mi><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the series converges.</entry>
+<entry valign="top" align="left" morerows="1">For <m:math><m:mrow><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> we have the harmonic series <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>n</m:mi><m:mo>.</m:mo></m:mrow></m:math></entry>
+</row>
+<row>
+<entry valign="top" align="left">If <m:math><m:mrow><m:mi>p</m:mi><m:mo>≤</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the series diverges.</entry>
+</row>
+<row>
+<entry valign="top" align="left" morerows="1"><emphasis effect="bold">Comparison Test</emphasis><newline/>
+For <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> with nonnegative terms, compare with a known series <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>b</m:mi><m:mi>n</m:mi></m:msub><m:mo>.</m:mo></m:mrow></m:math></entry>
+<entry valign="top" align="left">If <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>≤</m:mo><m:msub><m:mi>b</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> for all <m:math><m:mrow><m:mi>n</m:mi><m:mo>≥</m:mo><m:mi>N</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>b</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> converges, then <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> converges.</entry>
+<entry valign="top" align="left" morerows="1">Typically used for a series similar to a geometric or <m:math><m:mrow><m:mi>p</m:mi></m:mrow></m:math>-series. It can sometimes be difficult to find an appropriate series.</entry>
+</row>
+<row>
+<entry valign="top" align="left">If <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>≥</m:mo><m:msub><m:mi>b</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> for all <m:math><m:mrow><m:mi>n</m:mi><m:mo>≥</m:mo><m:mi>N</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>b</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> diverges, then <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> diverges.</entry>
+</row>
+<row>
+<entry valign="top" align="left" morerows="2"><emphasis effect="bold">Limit Comparison Test</emphasis><newline/>
+For <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> with positive terms, compare with a series <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>b</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> by evaluating<newline/>
+<m:math><m:mrow><m:mi>L</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow><m:mrow><m:msub><m:mi>b</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></entry>
+<entry valign="top" align="left">If <m:math><m:mi>L</m:mi></m:math> is a real number and <m:math><m:mrow><m:mi>L</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>b</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> both converge or both diverge.</entry>
+<entry valign="top" align="left" morerows="2">Typically used for a series similar to a geometric or <m:math><m:mrow><m:mi>p</m:mi></m:mrow></m:math>-series. Often easier to apply than the comparison test.</entry>
+</row>
+<row>
+<entry valign="top" align="left">If <m:math><m:mrow><m:mi>L</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>b</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> converges, then <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> converges.</entry>
+</row>
+<row>
+<entry valign="top" align="left">If <m:math><m:mrow><m:mi>L</m:mi><m:mo>=</m:mo><m:mi>∞</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>b</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> diverges, then <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> diverges.</entry>
+</row>
+<row>
+<entry valign="top" align="left"><emphasis effect="bold">Integral Test</emphasis><newline/>
+If there exists a positive, continuous, decreasing function <m:math><m:mi>f</m:mi></m:math> such that <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> for all <m:math><m:mrow><m:mi>n</m:mi><m:mo>≥</m:mo><m:mi>N</m:mi><m:mo>,</m:mo></m:mrow></m:math> evaluate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>N</m:mi><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>N</m:mi><m:mi>∞</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> and <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> both converge or both diverge.</entry>
+<entry valign="top" align="left">Limited to those series for which the corresponding function <m:math><m:mi>f</m:mi></m:math> can be easily integrated.</entry>
+</row>
+<row>
+<entry valign="top" align="left"><emphasis effect="bold">Alternating Series</emphasis><newline/>
+<m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:msub><m:mi>b</m:mi><m:mi>n</m:mi></m:msub><m:mspace width="0.2em"/><m:mtext>or</m:mtext><m:mspace width="0.2em"/><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup><m:msub><m:mi>b</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math></entry>
+<entry valign="top" align="left">If <m:math><m:mrow><m:msub><m:mi>b</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>≤</m:mo><m:msub><m:mi>b</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> for all <m:math><m:mrow><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>1</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>b</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">→</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> then the series converges.</entry>
+<entry valign="top" align="left">Only applies to alternating series.</entry>
+</row>
+<row>
+<entry valign="top" align="left" morerows="2"><emphasis effect="bold">Ratio Test</emphasis><newline/>
+For any series <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> with nonzero terms, let<newline/>
+<m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>|</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></entry>
+<entry valign="top" align="left">If <m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>ρ</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the series converges absolutely.</entry>
+<entry valign="top" align="left" morerows="2">Often used for series involving factorials or exponentials.</entry>
+</row>
+<row>
+<entry valign="top" align="left">If <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mspace width="0.2em"/><m:mtext>or</m:mtext><m:mspace width="0.2em"/><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo></m:mrow></m:math> the series diverges.</entry>
+</row>
+<row>
+<entry valign="top" align="left">If <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the test is inconclusive.</entry>
+</row>
+<row>
+<entry valign="top" align="left" morerows="2"><emphasis effect="bold">Root Test</emphasis><newline/>
+For any series <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>,</m:mo></m:mrow></m:math> let<newline/>
+<m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mroot><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:mroot><m:mo>.</m:mo></m:mrow></m:math></entry>
+<entry valign="top" align="left">If <m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>ρ</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the series converges absolutely.</entry>
+<entry valign="top" align="left" morerows="2">Often used for series where <m:math><m:mrow><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>|</m:mo><m:mo>=</m:mo><m:msubsup><m:mi>b</m:mi><m:mi>n</m:mi><m:mi>n</m:mi></m:msubsup><m:mo>.</m:mo></m:mrow></m:math></entry>
+</row>
+<row>
+<entry valign="top" align="left">If <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mspace width="0.2em"/><m:mtext>or</m:mtext><m:mspace width="0.2em"/><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo></m:mrow></m:math> the series diverges.</entry>
+</row>
+<row>
+<entry valign="top" align="left">If <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the test is inconclusive.</entry>
+</row>
+</tbody>
+</tgroup>
+</table><note id="fs-id1169736582702" class="project">
+<title>Series Converging to <m:math><m:mi>π</m:mi></m:math> and <m:math><m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>π</m:mi></m:mrow></m:mrow></m:math></title>
+<para id="fs-id1169736582723">Dozens of series exist that converge to <m:math><m:mi>π</m:mi></m:math> or an algebraic expression containing <m:math><m:mrow><m:mi>π</m:mi><m:mo>.</m:mo></m:mrow></m:math> Here we look at several examples and compare their rates of convergence. By rate of convergence, we mean the number of terms necessary for a partial sum to be within a certain amount of the actual value. The series representations of <m:math><m:mi>π</m:mi></m:math> in the first two examples can be explained using Maclaurin series, which are discussed in the next chapter. The third example relies on material beyond the scope of this text.</para>
+<list id="fs-id1169736707593" list-type="enumerated" number-style="arabic">
+<item>The series<newline/>
+<equation id="fs-id1169736707603" class="unnumbered"><label/><m:math><m:mrow><m:mi>π</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>7</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>9</m:mn></m:mfrac><m:mo>−</m:mo><m:mtext>⋯</m:mtext></m:mrow></m:math></equation><newline/>
+was discovered by Gregory and Leibniz in the late <m:math><m:mrow><m:mn>1600</m:mn><m:mtext>s</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math> This result follows from the Maclaurin series for <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mrow><m:mtext>tan</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> We will discuss this series in the next chapter.<newline/>
+<list id="fs-id1169739171821" list-type="enumerated" number-style="lower-alpha">
+<item>Prove that this series converges.</item>
+<item>Evaluate the partial sums <m:math><m:mrow><m:msub><m:mi>S</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> for <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>20</m:mn><m:mo>,</m:mo><m:mn>50</m:mn><m:mo>,</m:mo><m:mn>100</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>Use the remainder estimate for alternating series to get a bound on the error <m:math><m:mrow><m:msub><m:mi>R</m:mi><m:mi>n</m:mi></m:msub><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>What is the smallest value of <m:math><m:mi>N</m:mi></m:math> that guarantees <m:math><m:mrow><m:mo>|</m:mo><m:msub><m:mi>R</m:mi><m:mi>N</m:mi></m:msub><m:mo>|</m:mo><m:mo>&lt;</m:mo><m:mn>0.01</m:mn><m:mtext>?</m:mtext></m:mrow></m:math> Evaluate <m:math><m:mrow><m:msub><m:mi>S</m:mi><m:mi>N</m:mi></m:msub><m:mo>.</m:mo></m:mrow></m:math></item>
+</list></item>
+<item>The series<newline/>
+<equation id="fs-id1169739171920" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>π</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>6</m:mn><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mfrac><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>!</m:mtext></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mrow><m:mn>4</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>6</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow></m:mfrac><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>·</m:mo><m:mn>3</m:mn></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>5</m:mn></m:mrow></m:mfrac><m:mo>·</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>5</m:mn></m:msup><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>5</m:mn></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>6</m:mn><m:mo>·</m:mo><m:mn>7</m:mn></m:mrow></m:mfrac><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>7</m:mn></m:msup><m:mo>+</m:mo><m:mtext>⋯</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+has been attributed to Newton in the late <m:math><m:mrow><m:mn>1600</m:mn><m:mtext>s</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math> The proof of this result uses the Maclaurin series for <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math><newline/>
+<list id="fs-id1169736851958" list-type="enumerated" number-style="lower-alpha">
+<item>Prove that the series converges.</item>
+<item>Evaluate the partial sums <m:math><m:mrow><m:msub><m:mi>S</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> for <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>20</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>Compare <m:math><m:mrow><m:msub><m:mi>S</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> to <m:math><m:mi>π</m:mi></m:math> for <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>20</m:mn></m:mrow></m:math> and discuss the number of correct decimal places.</item>
+</list></item>
+<item>The series<newline/>
+<equation id="fs-id1169738920677" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>π</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:msqrt><m:mn>8</m:mn></m:msqrt></m:mrow><m:mrow><m:mn>9801</m:mn></m:mrow></m:mfrac><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mfrac><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>!</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>1103</m:mn><m:mo>+</m:mo><m:mn>26390</m:mn><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>4</m:mn></m:msup><m:msup><m:mrow><m:mn>396</m:mn></m:mrow><m:mrow><m:mn>4</m:mn><m:mi>n</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:math></equation><newline/>
+was discovered by <term class="no-emphasis">Ramanujan</term> in the early <m:math><m:mrow><m:mn>1900</m:mn><m:mtext>s</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math> William Gosper, Jr., used this series to calculate <m:math><m:mi>π</m:mi></m:math> to an accuracy of more than <m:math><m:mrow><m:mn>17</m:mn></m:mrow></m:math> million digits in the <m:math><m:mrow><m:mtext>mid-</m:mtext><m:mn>1980</m:mn><m:mtext>s</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math> At the time, that was a world record. Since that time, this series and others by Ramanujan have led mathematicians to find many other series representations for <m:math><m:mi>π</m:mi></m:math> and <m:math><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>π</m:mi><m:mo>.</m:mo></m:mrow></m:math><newline/>
+<list id="fs-id1169739252686" list-type="enumerated" number-style="lower-alpha">
+<item>Prove that this series converges.</item>
+<item>Evaluate the first term in this series. Compare this number with the value of <m:math><m:mi>π</m:mi></m:math> from a calculating utility. To how many decimal places do these two numbers agree? What if we add the first two terms in the series?</item>
+<item>Investigate the life of Srinivasa Ramanujan <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1887</m:mn><m:mtext>–</m:mtext><m:mn>1920</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and write a brief summary. Ramanujan is one of the most fascinating stories in the history of mathematics. He was basically self-taught, with no formal training in mathematics, yet he contributed in highly original ways to many advanced areas of mathematics.</item>
+</list></item>
+</list>
+</note>
+</section>
+<section id="fs-id1169739252731" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id1169739252738" list-type="bulleted" bullet-style="bullet">
+<item>For the ratio test, we consider<newline/>
+<equation id="fs-id1169739252749" class="unnumbered"><label/><m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>|</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+If <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the series <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> converges absolutely. If <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the series diverges. If <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the test does not provide any information. This test is useful for series whose terms involve factorials.</item>
+<item>For the root test, we consider<newline/>
+<equation id="fs-id1169739206929" class="unnumbered"><label/><m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mroot><m:mrow><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>|</m:mo></m:mrow><m:mi>n</m:mi></m:mroot><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+If <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the series <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> converges absolutely. If <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the series diverges. If <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the test does not provide any information. The root test is useful for series whose terms involve powers.</item>
+<item>For a series that is similar to a geometric series or <m:math><m:mrow><m:mi>p</m:mi><m:mo>−</m:mo><m:mtext>series,</m:mtext></m:mrow></m:math> consider one of the comparison tests.</item>
+</list>
+</section>
+<section id="fs-id1169736790185" class="section-exercises">
+<para id="fs-id1169736790190">Use the ratio test to determine whether <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> converges, where <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> is given in the following problems. State if the ratio test is inconclusive.</para>
+<exercise id="fs-id1169736790226">
+<problem id="fs-id1169736790228">
+<para id="fs-id1169736790230"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736790251">
+<para id="fs-id1169736790253"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mtext>/</m:mtext><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">→</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> Converges.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169736790287">
+<problem id="fs-id1169736694600">
+<para id="fs-id1169736694602"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mi>n</m:mi></m:msup><m:mtext>/</m:mtext><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736694683">
+<problem id="fs-id1169736694686">
+<para id="fs-id1169736694688"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mtext>/</m:mtext><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736694713">
+<para id="fs-id1169736694715"><m:math><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo stretchy="false">→</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Converges.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169736634939">
+<problem id="fs-id1169736634942">
+<para id="fs-id1169736634944"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mi>n</m:mi><m:mrow><m:mn>10</m:mn></m:mrow></m:msup><m:mtext>/</m:mtext><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736635046">
+<problem id="fs-id1169736635048">
+<para id="fs-id1169736635050"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mtext>!</m:mtext><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169739133174">
+<para id="fs-id1169739133176"><m:math><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac><m:mo stretchy="false">→</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mn>27</m:mn><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Converges.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169739133220">
+<problem id="fs-id1169739133222">
+<para id="fs-id1169739133224"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mn>2</m:mn><m:mrow><m:mn>3</m:mn><m:mi>n</m:mi></m:mrow></m:msup><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mtext>!</m:mtext><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para></problem>
+</exercise>
+<exercise id="fs-id1169736726552">
+<problem id="fs-id1169736726555">
+<para id="fs-id1169736726557"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736726605">
+<para id="fs-id1169736726608"><m:math><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac><m:mo stretchy="false">→</m:mo><m:mn>4</m:mn><m:mtext>/</m:mtext><m:msup><m:mi>e</m:mi><m:mn>2</m:mn></m:msup><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Converges.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169736767071">
+<problem id="fs-id1169736767073">
+<para id="fs-id1169736767075"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext></m:mrow><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736767170">
+<problem id="fs-id1169736767172">
+<para id="fs-id1169736767174"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mtext>/</m:mtext><m:mi>e</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736767222">
+<para id="fs-id1169736767225"><m:math><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac><m:mo stretchy="false">→</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Ratio test is inconclusive.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169739335670">
+<problem id="fs-id1169739335672">
+<para id="fs-id1169739335674"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext></m:mrow><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mtext>/</m:mtext><m:mi>e</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169739335773">
+<problem id="fs-id1169739335776">
+<para id="fs-id1169739335778"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup><m:mi>n</m:mi><m:mtext>!</m:mtext><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169738993775">
+<para id="fs-id1169738993778"><m:math><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow></m:mfrac><m:mo stretchy="false">→</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:msup><m:mi>e</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> Converges.</para>
+</solution>
+</exercise>
+<para id="fs-id1169738993820">Use the root test to determine whether <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> converges, where <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> is as follows.</para>
+<exercise id="fs-id1169738993856">
+<problem id="fs-id1169738993858">
+<para id="fs-id1169738993860"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>k</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>k</m:mi></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169739213893">
+<problem id="fs-id1169739213895">
+<para id="fs-id1169739213897"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:msup><m:mi>k</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:msup><m:mi>k</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>k</m:mi></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169739213945">
+<para id="fs-id1169739213948"><m:math><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>k</m:mi></m:mrow></m:msup><m:mo stretchy="false">→</m:mo><m:mn>2</m:mn><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Diverges.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169739213991">
+<problem id="fs-id1169739213993">
+<para id="fs-id1169736789952"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736790041">
+<problem id="fs-id1169736790043">
+<para id="fs-id1169736790046"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mi>n</m:mi><m:mtext>/</m:mtext><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736790068">
+<para id="fs-id1169736790070"><m:math><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>n</m:mi></m:mrow></m:msup><m:mo stretchy="false">→</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Converges.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169739110665">
+<problem id="fs-id1169739110667">
+<para id="fs-id1169739110669"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mi>n</m:mi><m:mtext>/</m:mtext><m:msup><m:mi>e</m:mi><m:mi>n</m:mi></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169739110741">
+<problem id="fs-id1169739110744">
+<para id="fs-id1169739110746"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>k</m:mi><m:mi>e</m:mi></m:msup></m:mrow><m:mrow><m:msup><m:mi>e</m:mi><m:mi>k</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169739110772">
+<para id="fs-id1169739110774"><m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>k</m:mi></m:mrow></m:msup><m:mo stretchy="false">→</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>e</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Converges.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169739110820">
+<problem id="fs-id1169739110822">
+<para id="fs-id1169739110824"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>π</m:mi><m:mi>k</m:mi></m:msup></m:mrow><m:mrow><m:msup><m:mi>k</m:mi><m:mi>π</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169739195739">
+<problem id="fs-id1169739195741">
+<para id="fs-id1169739195743"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>e</m:mi></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169739195780">
+<para id="fs-id1169739195782"><m:math><m:mrow><m:msubsup><m:mi>a</m:mi><m:mi>n</m:mi><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>n</m:mi></m:mrow></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>e</m:mi></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>n</m:mi></m:mfrac><m:mo stretchy="false">→</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>e</m:mi></m:mfrac><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Converges.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169739195833">
+<problem id="fs-id1169739195835">
+<para id="fs-id1169739195837"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>k</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>k</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169739341419">
+<problem id="fs-id1169739341421">
+<para id="fs-id1169739341423"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169739341482">
+<para id="fs-id1169739341484"><m:math><m:mrow><m:msubsup><m:mi>a</m:mi><m:mi>n</m:mi><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>n</m:mi></m:mrow></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac><m:mo stretchy="false">→</m:mo><m:mn>0</m:mn></m:mrow></m:math> by L’Hôpital’s rule. Converges.</para>
+</solution>
+</exercise>
+<para id="fs-id1169736708149">In the following exercises, use either the ratio test or the root test as appropriate to determine whether the series <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> with given terms <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub></m:mrow></m:math> converges, or state if the test is inconclusive.</para>
+<exercise id="fs-id1169736708187">
+<problem id="fs-id1169736708189">
+<para id="fs-id1169736708191"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>k</m:mi><m:mtext>!</m:mtext></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>5</m:mn><m:mtext>⋯</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>k</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736842898">
+<problem id="fs-id1169736842900">
+<para id="fs-id1169736842903"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>6</m:mn><m:mtext>⋯</m:mtext><m:mn>2</m:mn><m:mi>k</m:mi></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736842950">
+<para id="fs-id1169736842952"><m:math><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>2</m:mn><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mo stretchy="false">→</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> Converges by ratio test.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169736843002">
+<problem id="fs-id1169736843005">
+<para id="fs-id1169736843007"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>·</m:mo><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>7</m:mn><m:mtext>⋯</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>k</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:msup><m:mn>3</m:mn><m:mi>k</m:mi></m:msup><m:mi>k</m:mi><m:mtext>!</m:mtext></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736705902">
+<problem id="fs-id1169736705904">
+<para id="fs-id1169736705906"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736705944">
+<para id="fs-id1169736705946"><m:math><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>n</m:mi></m:mrow></m:msup><m:mo stretchy="false">→</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>e</m:mi><m:mo>.</m:mo></m:mrow></m:math> Converges by root test.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169736705989">
+<problem id="fs-id1169736702887">
+<para id="fs-id1169736702890"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mtext>⋯</m:mtext><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>2</m:mn><m:mi>k</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>k</m:mi></m:msup></m:mrow></m:math> (<emphasis effect="italics">Hint:</emphasis> Compare <m:math><m:mrow><m:msubsup><m:mi>a</m:mi><m:mi>k</m:mi><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>k</m:mi></m:mrow></m:msubsup></m:mrow></m:math> to <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>k</m:mi><m:mrow><m:mn>2</m:mn><m:mi>k</m:mi></m:mrow></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow><m:mi>t</m:mi></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736703046">
+<problem id="fs-id1169736703048">
+<para id="fs-id1169736703050"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mtext>⋯</m:mtext><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>3</m:mn><m:mi>k</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>k</m:mi></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169739202310">
+<para id="fs-id1169739202312"><m:math><m:mrow><m:msubsup><m:mi>a</m:mi><m:mi>k</m:mi><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>k</m:mi></m:mrow></m:msubsup><m:mo stretchy="false">→</m:mo><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Diverges by root test.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169739202356">
+<problem id="fs-id1169739202358">
+<para id="fs-id1169739202360"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:msup><m:mi>n</m:mi><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>n</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mi>n</m:mi></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1169739344142">Use the ratio test to determine whether <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> converges, or state if the ratio test is inconclusive.</para>
+<exercise id="fs-id1169739344170">
+<problem id="fs-id1169739344173">
+<para id="fs-id1169739344175"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mn>3</m:mn><m:mrow><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mrow><m:msup><m:mi>n</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169739344219">
+<para id="fs-id1169739344222"><m:math><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mn>3</m:mn><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mrow><m:mn>3</m:mn><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:mfrac><m:mo stretchy="false">→</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> Converge.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169739344299">
+<problem id="fs-id1169739344301">
+<para id="fs-id1169739344304"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mn>2</m:mn><m:mrow><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mi>n</m:mi></m:msup><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1169736857029">Use the root and limit comparison tests to determine whether <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> converges.</para>
+<exercise id="fs-id1169736857058">
+<problem id="fs-id1169736857060">
+<para id="fs-id1169736857062"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:msubsup><m:mi>x</m:mi><m:mi>n</m:mi><m:mi>n</m:mi></m:msubsup></m:mrow></m:math> where <m:math><m:mrow><m:msub><m:mi>x</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msub><m:mi>x</m:mi><m:mi>n</m:mi></m:msub><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>x</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> (<emphasis effect="italics">Hint:</emphasis> Find limit of <m:math><m:mrow><m:mo>{</m:mo><m:msub><m:mi>x</m:mi><m:mi>n</m:mi></m:msub><m:mo>}</m:mo><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169739344710">
+<para id="fs-id1169739344712">Converges by root test and limit comparison test since <m:math><m:mrow><m:msub><m:mi>x</m:mi><m:mi>n</m:mi></m:msub><m:mo stretchy="false">→</m:mo><m:msqrt><m:mn>2</m:mn></m:msqrt><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1169739344734">In the following exercises, use an appropriate test to determine whether the series converges.</para>
+<exercise id="fs-id1169739344739">
+<problem id="fs-id1169739344741">
+<para id="fs-id1169739344743"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169739236292">
+<problem id="fs-id1169739236295">
+<para id="fs-id1169739236297"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169739236379">
+<para id="fs-id1169739236381">Converges absolutely by limit comparison with <m:math><m:mrow><m:mi>p</m:mi><m:mo>−</m:mo><m:mtext>series,</m:mtext></m:mrow></m:math> <m:math><m:mrow><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1169739236405">
+<problem id="fs-id1169739236408">
+<para id="fs-id1169739236410"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1.1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736627530">
+<problem id="fs-id1169736627532">
+<para id="fs-id1169736627535"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736627594">
+<para id="fs-id1169736627596"><m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:msup><m:mi>e</m:mi><m:mn>2</m:mn></m:msup><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> Series diverges.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169736592251">
+<problem id="fs-id1169736592253">
+<para id="fs-id1169736592255"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow></m:math> (<emphasis effect="italics">Hint:</emphasis> <m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup><m:mo>≈</m:mo><m:mi>e</m:mi><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736592374">
+<problem id="fs-id1169736592376">
+<para id="fs-id1169736592378"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:msup><m:mn>2</m:mn><m:mrow><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>k</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736728744">
+<para id="fs-id1169736728746">Terms do not tend to zero: <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>≥</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow></m:math> since <m:math><m:mrow><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1169736728788">
+<problem id="fs-id1169736728790">
+<para id="fs-id1169736728792"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mn>2</m:mn><m:mrow><m:mtext>−</m:mtext><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:msup></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736728883">
+<problem id="fs-id1169736728885">
+<para id="fs-id1169736728887"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mrow><m:mo>(</m:mo><m:mtable><m:mtr><m:mtd><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>n</m:mi></m:mtd></m:mtr></m:mtable><m:mo>)</m:mo></m:mrow></m:mrow></m:math> where <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mtable><m:mtr><m:mtd><m:mi>n</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>k</m:mi></m:mtd></m:mtr></m:mtable><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow><m:mrow><m:mi>k</m:mi><m:mtext>!</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mi>k</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>!</m:mtext></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736720698">
+<para id="fs-id1169736720700"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>2</m:mn><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> which converges by comparison with <m:math><m:mrow><m:mi>p</m:mi><m:mo>−</m:mo><m:mtext>series</m:mtext></m:mrow></m:math> for <m:math><m:mrow><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1169736720771">
+<problem id="fs-id1169736720773">
+<para id="fs-id1169736720775"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mrow><m:mo>(</m:mo><m:mtable columnalign="left"><m:mtr><m:mtd><m:mn>2</m:mn><m:mi>k</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>k</m:mi></m:mtd></m:mtr></m:mtable><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736659407">
+<problem id="fs-id1169736659410">
+<para id="fs-id1169736659412"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mn>2</m:mn><m:mi>k</m:mi></m:msup><m:mtext>/</m:mtext><m:mrow><m:mo>(</m:mo><m:mtable columnalign="left"><m:mtr><m:mtd><m:mn>3</m:mn><m:mi>k</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>k</m:mi></m:mtd></m:mtr></m:mtable><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736659451">
+<para id="fs-id1169736659453"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mn>2</m:mn><m:mi>k</m:mi></m:msup><m:mn>1</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mtext>⋯</m:mtext><m:mi>k</m:mi></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mtext>⋯</m:mtext><m:mn>3</m:mn><m:mi>k</m:mi></m:mrow></m:mfrac><m:mo>≤</m:mo><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mtext>/</m:mtext><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mi>k</m:mi></m:msup></m:mrow></m:math> converges by comparison with geometric series.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169736725468">
+<problem id="fs-id1169736725470">
+<para id="fs-id1169736725472"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>k</m:mi><m:mrow><m:mi>k</m:mi><m:mo>+</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>k</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>k</m:mi></m:msup></m:mrow></m:math> (<emphasis effect="italics">Hint:</emphasis> <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>k</m:mi></m:mrow><m:mi>k</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mtext>−</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>k</m:mi><m:mtext>/</m:mtext><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>k</m:mi></m:mrow></m:msup><m:mo>≈</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>k</m:mi></m:mrow></m:msup><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736791905">
+<problem id="fs-id1169736791907">
+<para id="fs-id1169736791909"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>k</m:mi><m:mrow><m:mi>k</m:mi><m:mo>+</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>k</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>k</m:mi></m:mrow></m:msup></m:mrow></m:math> (<emphasis effect="italics">Hint:</emphasis> <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>k</m:mi></m:mrow><m:mi>k</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mtext>−</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>k</m:mi><m:mtext>/</m:mtext><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:msup><m:mi>k</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736792017">
+<para id="fs-id1169736792019"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>≈</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:msup><m:mi>k</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:msup><m:mi>k</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> Series converges by limit comparison with <m:math><m:mrow><m:mi>p</m:mi><m:mo>−</m:mo><m:mtext>series,</m:mtext></m:mrow></m:math> <m:math><m:mrow><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1169739095041">The following series converge by the ratio test. Use summation by parts, <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>n</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub></m:mrow></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>b</m:mi><m:mrow><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>b</m:mi><m:mi>k</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>[</m:mo><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:msub><m:mi>b</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>b</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>−</m:mo><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>n</m:mi></m:munderover><m:mrow><m:msub><m:mi>b</m:mi><m:mrow><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> to find the sum of the given series.</para>
+<exercise id="fs-id1169739095193">
+<problem id="fs-id1169739095195">
+<para id="fs-id1169739095197"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mi>k</m:mi><m:mrow><m:msup><m:mn>2</m:mn><m:mi>k</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math> (<emphasis effect="italics">Hint:</emphasis> Take <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:mi>k</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>b</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mn>2</m:mn><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>k</m:mi></m:mrow></m:msup><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736736662">
+<problem id="fs-id1169736736665">
+<para id="fs-id1169736736667"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mi>k</m:mi><m:mrow><m:msup><m:mi>c</m:mi><m:mi>k</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>c</m:mi><m:mo>&gt;</m:mo><m:mn>1</m:mn></m:mrow></m:math> (<emphasis effect="italics">Hint:</emphasis> Take <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:mi>k</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>b</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mi>c</m:mi><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>k</m:mi></m:mrow></m:msup><m:mtext>/</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>c</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736736770">
+<para id="fs-id1169736736772">If <m:math><m:mrow><m:msub><m:mi>b</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mi>c</m:mi><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>k</m:mi></m:mrow></m:msup><m:mtext>/</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>c</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:mi>k</m:mi><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:msub><m:mi>b</m:mi><m:mrow><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>b</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:mtext>−</m:mtext><m:msup><m:mi>c</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>k</m:mi></m:mrow></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mi>k</m:mi><m:mrow><m:msup><m:mi>c</m:mi><m:mi>k</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>b</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>c</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msup><m:mi>c</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>k</m:mi></m:mrow></m:msup></m:mrow></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mi>c</m:mi><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>c</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1169739369179">
+<problem id="fs-id1169739369181">
+<para id="fs-id1169739369183"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736604959">
+<problem id="fs-id1169736604961">
+<para id="fs-id1169736604964"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736605013">
+<para id="fs-id1169736605015"><m:math><m:mrow><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>11</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1169736605037">The <emphasis effect="italics">k</emphasis>th term of each of the following series has a factor <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mi>k</m:mi></m:msup><m:mo>.</m:mo></m:mrow></m:math> Find the range of <m:math><m:mi>x</m:mi></m:math> for which the ratio test implies that the series converges.</para>
+<exercise id="fs-id1169736605060">
+<problem id="fs-id1169736605062">
+<para id="fs-id1169736605064"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mi>k</m:mi></m:msup></m:mrow><m:mrow><m:msup><m:mi>k</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736605120">
+<problem id="fs-id1169736605122">
+<para id="fs-id1169736605124"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mrow><m:mn>2</m:mn><m:mi>k</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:msup><m:mi>k</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169739094725">
+<para id="fs-id1169739094727"><m:math><m:mrow><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>|</m:mo><m:mo>≤</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1169739094744">
+<problem id="fs-id1169739094746">
+<para id="fs-id1169739094749"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mrow><m:mn>2</m:mn><m:mi>k</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:msup><m:mn>3</m:mn><m:mi>k</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169739094808">
+<problem id="fs-id1169739094810">
+<para id="fs-id1169739094812"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mi>k</m:mi></m:msup></m:mrow><m:mrow><m:mi>k</m:mi><m:mtext>!</m:mtext></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169739094848">
+<para id="fs-id1169739094850"><m:math><m:mrow><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>|</m:mo><m:mo>&lt;</m:mo><m:mi>∞</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1169739094867">
+<problem id="fs-id1169739094869">
+<para id="fs-id1169739094871">Does there exist a number <m:math><m:mi>p</m:mi></m:math> such that <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mi>p</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math> converges?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736644108">
+<problem id="fs-id1169736644110">
+<para id="fs-id1169736644112">Let <m:math><m:mrow><m:mn>0</m:mn><m:mo>&lt;</m:mo><m:mi>r</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> For which real numbers <m:math><m:mi>p</m:mi></m:math> does <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msup><m:mi>n</m:mi><m:mi>p</m:mi></m:msup></m:mrow></m:mstyle><m:msup><m:mi>r</m:mi><m:mi>n</m:mi></m:msup></m:mrow></m:math> converge?</para>
+</problem>
+<solution id="fs-id1169736644166">
+<para id="fs-id1169736644168">All real numbers <m:math><m:mi>p</m:mi></m:math> by the ratio test.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169736644178">
+<problem id="fs-id1169736644180">
+<para id="fs-id1169736644182">Suppose that <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mo>|</m:mo><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac><m:mo>|</m:mo><m:mo>=</m:mo><m:mi>p</m:mi><m:mo>.</m:mo></m:mrow></m:math> For which values of <m:math><m:mi>p</m:mi></m:math> must <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup></m:mrow></m:mstyle><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> converge?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736662279">
+<problem id="fs-id1169736662281">
+<para id="fs-id1169736662283">Suppose that <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mo>|</m:mo><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac><m:mo>|</m:mo><m:mo>=</m:mo><m:mi>p</m:mi><m:mo>.</m:mo></m:mrow></m:math> For which values of <m:math><m:mrow><m:mi>r</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math> is <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msup><m:mi>r</m:mi><m:mi>n</m:mi></m:msup></m:mrow></m:mstyle><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> guaranteed to converge?</para>
+</problem>
+<solution id="fs-id1169736662375">
+<para id="fs-id1169736662377"><m:math><m:mrow><m:mi>r</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>p</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1169736662394">
+<problem id="fs-id1169736662396">
+<para id="fs-id1169736662398">Suppose that <m:math><m:mrow><m:mo>|</m:mo><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac><m:mo>|</m:mo><m:mo>≤</m:mo><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mi>p</m:mi></m:msup></m:mrow></m:math> for all <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mtext>,…</m:mtext></m:mrow></m:math> where <m:math><m:mi>p</m:mi></m:math> is a fixed real number. For which values of <m:math><m:mi>p</m:mi></m:math> is <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mi>n</m:mi></m:mstyle><m:mtext>!</m:mtext><m:mspace width="0.2em"/><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> guaranteed to converge?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1169739279096">
+<problem id="fs-id1169739279098">
+<para id="fs-id1169739279100">For which values of <m:math><m:mrow><m:mi>r</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> if any, does <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msup><m:mi>r</m:mi><m:mrow><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:msup></m:mrow></m:mstyle></m:mrow></m:math> converge? (<emphasis effect="italics">Hint:</emphasis> <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:msup><m:mi>k</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736770440">
+<para id="fs-id1169736770442"><m:math><m:mrow><m:mn>0</m:mn><m:mo>&lt;</m:mo><m:mi>r</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Note that the ratio and root tests are inconclusive. Using the hint, there are <m:math><m:mrow><m:mn>2</m:mn><m:mi>k</m:mi></m:mrow></m:math> terms <m:math><m:mrow><m:msup><m:mi>r</m:mi><m:mrow><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:msup></m:mrow></m:math> for <m:math><m:mrow><m:msup><m:mi>k</m:mi><m:mn>2</m:mn></m:msup><m:mo>≤</m:mo><m:mi>n</m:mi><m:mo>&lt;</m:mo><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> and for <m:math><m:mrow><m:mi>r</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn></m:mrow></m:math> each term is at least <m:math><m:mrow><m:msup><m:mi>r</m:mi><m:mi>k</m:mi></m:msup><m:mo>.</m:mo></m:mrow></m:math> Thus, <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msup><m:mi>r</m:mi><m:mrow><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:msup></m:mrow></m:mstyle><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:msup><m:mi>k</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:munderover><m:mrow><m:msup><m:mi>r</m:mi><m:mrow><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:msup></m:mrow></m:mstyle></m:mrow></m:mstyle></m:mrow></m:math> <m:math><m:mrow><m:mo>≥</m:mo><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mn>2</m:mn></m:mstyle><m:mi>k</m:mi><m:msup><m:mi>r</m:mi><m:mi>k</m:mi></m:msup><m:mo>,</m:mo></m:mrow></m:math> which converges by the ratio test for <m:math><m:mrow><m:mi>r</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> For <m:math><m:mrow><m:mi>r</m:mi><m:mo>≥</m:mo><m:mn>1</m:mn></m:mrow></m:math> the series diverges by the divergence test.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169738894848">
+<problem id="fs-id1169738894850">
+<para id="fs-id1169738894852">Suppose that <m:math><m:mrow><m:mo>|</m:mo><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac><m:mo>|</m:mo><m:mo>≤</m:mo><m:mi>r</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn></m:mrow></m:math> for all <m:math><m:mrow><m:mi>n</m:mi><m:mo>.</m:mo></m:mrow></m:math> Can you conclude that <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> converges?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736851103">
+<problem id="fs-id1169736851106">
+<para id="fs-id1169736851108">Let <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msup><m:mn>2</m:mn><m:mrow><m:mtext>−</m:mtext><m:mo stretchy="false">[</m:mo><m:mi>n</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn><m:mo stretchy="false">]</m:mo></m:mrow></m:msup></m:mrow></m:math> where <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>x</m:mi><m:mo stretchy="false">]</m:mo></m:mrow></m:math> is the greatest integer less than or equal to <m:math><m:mrow><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> Determine whether <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> converges and justify your answer.</para>
+</problem>
+<solution id="fs-id1169736851190">
+<para id="fs-id1169736851192">One has <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn><m:mtext>,…</m:mtext><m:mspace width="0.2em"/><m:msub><m:mi>a</m:mi><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup><m:mo>.</m:mo></m:mrow></m:math> The ratio test does not apply because <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mtext>/</m:mtext><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> if <m:math><m:mi>n</m:mi></m:math> is even. However, <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:msub><m:mtext>/</m:mtext><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow></m:math> so the series converges according to the previous exercise. Of course, the series is just a duplicated geometric series.</para>
+</solution>
+</exercise>
+<para id="fs-id1169736791456">The following <emphasis effect="italics">advanced</emphasis> exercises use a generalized ratio test to determine convergence of some series that arise in particular applications when tests in this chapter, including the ratio and root test, are not powerful enough to determine their convergence. The test states that if <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:mstyle displaystyle="true"><m:mo>∑</m:mo><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> converges, while if <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:mstyle displaystyle="true"><m:mo>∑</m:mo><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> diverges.</para>
+<exercise id="fs-id1169739255529">
+<problem id="fs-id1169739255531">
+<para id="fs-id1169739255533">Let <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mspace width="0.2em"/><m:mfrac><m:mn>3</m:mn><m:mn>6</m:mn></m:mfrac><m:mspace width="0.2em"/><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac><m:mtext>⋯</m:mtext><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>5</m:mn><m:mo>⋯</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> Explain why the ratio test cannot determine convergence of <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> Use the fact that <m:math><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is increasing <m:math><m:mi>k</m:mi></m:math> to estimate <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736776280">
+<problem id="fs-id1169736776282">
+<para id="fs-id1169736776285">Let <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mspace width="0.2em"/><m:mfrac><m:mn>2</m:mn><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mtext>⋯</m:mtext><m:mfrac><m:mi>n</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mspace width="0.2em"/><m:mfrac><m:mn>1</m:mn><m:mi>n</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mtext>!</m:mtext></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>⋯</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> Show that <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow></m:msub><m:mtext>/</m:mtext><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>≤</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup><m:mtext>/</m:mtext><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math> For which <m:math><m:mrow><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math> does the generalized ratio test imply convergence of <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle><m:mtext>?</m:mtext></m:mrow></m:math> (<emphasis effect="italics">Hint:</emphasis> Write <m:math><m:mrow><m:mn>2</m:mn><m:msub><m:mi>a</m:mi><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow></m:msub><m:mtext>/</m:mtext><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> as a product of <m:math><m:mi>n</m:mi></m:math> factors each smaller than <m:math><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi><m:mtext>/</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169739367193">
+<para id="fs-id1169739367195"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow></m:msub><m:mtext>/</m:mtext><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mspace width="0.2em"/><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mtext>⋯</m:mtext><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> The inverse of the <m:math><m:mrow><m:mi>k</m:mi><m:mtext>th</m:mtext></m:mrow></m:math> factor is <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mi>k</m:mi><m:mo>+</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>/</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi><m:mtext>/</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> so the product is less than <m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi><m:mtext>/</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mtext>−</m:mtext><m:mi>n</m:mi></m:mrow></m:msup><m:mo>≈</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math> Thus for <m:math><m:mrow><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac><m:mo>≤</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math> The series converges for <m:math><m:mrow><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1169736768824">
+<problem id="fs-id1169736768826">
+<para id="fs-id1169736768829">Let <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>n</m:mi><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mi>n</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> Show that <m:math><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mfrac><m:mo stretchy="false">→</m:mo><m:mn>0</m:mn></m:mrow></m:math> as <m:math><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1169739352652" class="review-exercises">
+<title>Chapter Review Exercises</title>
+<para id="fs-id1169739352659"><emphasis effect="italics">True or False?</emphasis> Justify your answer with a proof or a counterexample.</para><exercise id="fs-id1169739352667">
+<problem id="fs-id1169739352669">
+<para id="fs-id1169739352671">If <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> converges.</para>
+</problem>
+<solution id="fs-id1169739260393">
+<para id="fs-id1169739260395">false</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169739260400">
+<problem id="fs-id1169739260402">
+<para id="fs-id1169739260404">If <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> diverges.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1169739260470">
+<problem id="fs-id1169739260472">
+<para id="fs-id1169739260475">If <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mrow><m:mo>|</m:mo><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> converges, then <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> converges.</para>
+</problem>
+<solution id="fs-id1169739260536">
+<para id="fs-id1169739260538">true</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169739260544">
+<problem id="fs-id1169739260546">
+<para id="fs-id1169739260548">If <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> converges, then <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> converges.</para>
+</problem>
+</exercise>
+<para id="fs-id1169739265231">Is the sequence bounded, monotone, and convergent or divergent? If it is convergent, find the limit.</para>
+<exercise id="fs-id1169739265235">
+<problem id="fs-id1169739265238">
+<para id="fs-id1169739265240"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mo>+</m:mo><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169739265273">
+<para id="fs-id1169739265275">unbounded, not monotone, divergent</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169739265280">
+<problem id="fs-id1169739265282">
+<para id="fs-id1169739265284"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169739265320">
+<problem id="fs-id1169739265322">
+<para id="fs-id1169739265324"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736590084">
+<para id="fs-id1169736590087">bounded, monotone, convergent, <m:math><m:mn>0</m:mn></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1169736590095">
+<problem id="fs-id1169736590097">
+<para id="fs-id1169736590099"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mn>2</m:mn><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:msup><m:mn>5</m:mn><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736590143">
+<problem id="fs-id1169736590145">
+<para id="fs-id1169736590147"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:mfrac></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736590178">
+<para id="fs-id1169736590180">unbounded, not monotone, divergent</para>
+</solution>
+</exercise>
+<para id="fs-id1169736590186">Is the series convergent or divergent?</para>
+<exercise id="fs-id1169736590189">
+<problem id="fs-id1169736590191">
+<para id="fs-id1169736590193"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736590242">
+<problem id="fs-id1169736590244">
+<para id="fs-id1169736590247"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736590288">
+<para id="fs-id1169736590290">diverges</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169739249672">
+<problem id="fs-id1169739249674">
+<para id="fs-id1169739249676"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mn>4</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169739249720">
+<problem id="fs-id1169739249722">
+<para id="fs-id1169739249724"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>e</m:mi><m:mi>n</m:mi></m:msup></m:mrow><m:mrow><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169739249759">
+<para id="fs-id1169739249761">converges</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169739249766">
+<problem id="fs-id1169739249769">
+<para id="fs-id1169739249771"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msup><m:mi>n</m:mi><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1169739249824">Is the series convergent or divergent? If convergent, is it absolutely convergent?</para>
+<exercise id="fs-id1169739249827">
+<problem id="fs-id1169739249829">
+<para id="fs-id1169739249831"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow><m:mrow><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169739249873">
+<para id="fs-id1169736841680">converges, but not absolutely</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169736841685">
+<problem id="fs-id1169736841687">
+<para id="fs-id1169736841689"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow><m:mrow><m:msup><m:mn>3</m:mn><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736841745">
+<problem id="fs-id1169736841747">
+<para id="fs-id1169736841749"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup><m:mi>n</m:mi><m:mtext>!</m:mtext></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736841797">
+<para id="fs-id1169736841799">converges absolutely</para>
+</solution>
+</exercise>
+<exercise id="fs-id1169736841804">
+<problem id="fs-id1169736841806">
+<para id="fs-id1169736841809"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>n</m:mi><m:mi>π</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736841855">
+<problem id="fs-id1169736841858">
+<para id="fs-id1169736841860"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>π</m:mi><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>n</m:mi></m:mrow></m:msup></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736854668">
+<para id="fs-id1169736854671">converges absolutely</para>
+</solution>
+</exercise>
+<para id="fs-id1169736854676">Evaluate</para>
+<exercise id="fs-id1169736854679">
+<problem id="fs-id1169736854681">
+<para id="fs-id1169736854683"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mn>2</m:mn><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:msup><m:mn>7</m:mn><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736854740">
+<problem id="fs-id1169736854742">
+<para id="fs-id1169736854744"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736854800">
+<para id="fs-id1169736854802"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1169736854814">
+<problem id="fs-id1169736854816">
+<para id="fs-id1169736854818">A legend from India tells that a mathematician invented chess for a king. The king enjoyed the game so much he allowed the mathematician to demand any payment. The mathematician asked for one grain of rice for the first square on the chessboard, two grains of rice for the second square on the chessboard, four grains of rice for the third square on the chessboard, and so on. Find an exact expression for the total payment (in grains of rice) requested by the mathematician. Assuming there are <m:math><m:mrow><m:mn>30,000</m:mn></m:mrow></m:math> grains of rice in <m:math><m:mn>1</m:mn></m:math> pound, and <m:math><m:mrow><m:mn>2000</m:mn></m:mrow></m:math> pounds in <m:math><m:mn>1</m:mn></m:math> ton, how many tons of rice did the mathematician attempt to receive?</para>
+</problem>
+</exercise>
+<para id="fs-id1169736840794">The following problems consider a simple population model of the housefly, which can be exhibited by the recursive formula <m:math><m:mrow><m:msub><m:mi>x</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mi>b</m:mi><m:msub><m:mi>x</m:mi><m:mi>n</m:mi></m:msub><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:msub><m:mi>x</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> is the population of houseflies at generation <m:math><m:mrow><m:mi>n</m:mi><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mi>b</m:mi></m:math> is the average number of offspring per housefly who survive to the next generation. Assume a starting population <m:math><m:mrow><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math></para>
+<exercise id="fs-id1169736840855">
+<problem id="fs-id1169736840857">
+<para id="fs-id1169736840860">Find <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:msub><m:mi>x</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> if <m:math><m:mrow><m:mi>b</m:mi><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>b</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736840918">
+<para id="fs-id1169736840920"><m:math><m:mrow><m:mi>∞</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1169736840945">
+<problem id="fs-id1169736840947">
+<para id="fs-id1169736840949">Find an expression for <m:math><m:mrow><m:msub><m:mi>S</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mi>n</m:mi></m:munderover><m:mrow><m:msub><m:mi>x</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> in terms of <m:math><m:mi>b</m:mi></m:math> and <m:math><m:mrow><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math> What does it physically represent?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1169736790422">
+<problem id="fs-id1169736790424">
+<para id="fs-id1169736790426">If <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:mn>100</m:mn><m:mo>,</m:mo></m:mrow></m:math> find <m:math><m:mrow><m:msub><m:mi>S</m:mi><m:mrow><m:mn>10</m:mn></m:mrow></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:msub><m:mi>S</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1169736790489">
+<para id="fs-id1169736790491"><m:math><m:mrow><m:msub><m:mi>S</m:mi><m:mrow><m:mn>10</m:mn></m:mrow></m:msub><m:mo>≈</m:mo><m:mn>383</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:msub><m:mi>S</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mn>400</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1169736790536">
+<problem id="fs-id1169736790538">
+<para id="fs-id1169736790540">For what values of <m:math><m:mi>b</m:mi></m:math> will the series converge and diverge? What does the series converge to?</para>
+</problem>
+</exercise>
+</section>
+ </content>
+<glossary>
+<definition id="fs-id1169736845011">
+<term>ratio test</term>
+<meaning id="fs-id1169736845016">for a series <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> with nonzero terms, let <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mrow><m:mo>|</m:mo><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mtext>/</m:mtext><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>;</m:mo></m:mrow></m:math> if <m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>ρ</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the series converges absolutely; if <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the series diverges; if <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the test is inconclusive</meaning>
+</definition>
+<definition id="fs-id1169736845132">
+<term>root test</term>
+<meaning id="fs-id1169736845137">for a series <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>,</m:mo></m:mrow></m:math> let <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mroot><m:mrow><m:mo>|</m:mo><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>|</m:mo></m:mrow><m:mi>n</m:mi></m:mroot><m:mo>;</m:mo></m:mrow></m:math> if <m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>ρ</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the series converges absolutely; if <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the series diverges; if <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> the test is inconclusive</meaning>
+</definition>
+</glossary>
+</document>

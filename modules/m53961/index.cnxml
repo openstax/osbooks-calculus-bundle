@@ -1,0 +1,20 @@
+<document xmlns="http://cnx.rice.edu/cnxml" class="introduction">
+<title>Introduction</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53961</md:content-id>
+  <md:title>Introduction</md:title>
+  <md:abstract/>
+  <md:uuid>e4a91a96-4397-48af-a960-c72f16214c51</md:uuid>
+</metadata>
+
+<content>
+<figure id="CNX_Calc_Figure_15_00_001" class="splash">
+<media id="fs-id1167793250834" alt="A photo of a glass ovoid dome reflecting in the water to make something like a football shape.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_15_00_001.jpg"/>
+</media>
+<caption>The City of Arts and Sciences in Valencia, Spain, has a unique structure along an axis of just two kilometers that was formerly the bed of the River Turia. The l’Hemisfèric has an IMAX cinema with three systems of modern digital projections onto a concave screen of 900 square meters. An oval roof over 100 meters long has been made to look like a huge human eye that comes alive and opens up to the world as the “Eye of Wisdom.” (credit: modification of work by Javier Yaya Tur, Wikimedia Commons)</caption>
+</figure>
+<para id="fs-id1167794325378">In this chapter we extend the concept of a definite integral of a single variable to double and triple integrals of functions of two and three variables, respectively. We examine applications involving integration to compute volumes, masses, and centroids of more general regions. We will also see how the use of other coordinate systems (such as polar, cylindrical, and spherical coordinates) makes it simpler to compute multiple integrals over some types of regions and functions. As an example, we will use polar coordinates to find the volume of structures such as l’Hemisfèric. (See <link document="m53967" target-id="fs-id1167793926329"/>.)</para>
+<para id="fs-id1167793240561">In the preceding chapter, we discussed differential calculus with multiple independent variables. Now we examine integral calculus in multiple dimensions. Just as a partial derivative allows us to differentiate a function with respect to one variable while holding the other variables constant, we will see that an iterated integral allows us to integrate a function with respect to one variable while holding the other variables constant.</para>
+ </content>
+</document>

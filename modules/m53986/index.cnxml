@@ -1,0 +1,861 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Divergence and Curl</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53986</md:content-id>
+  <md:title>Divergence and Curl</md:title>
+  <md:abstract><list>
+<item>Determine divergence from the formula for a given vector field.</item>
+<item>Determine curl from the formula for a given vector field.</item>
+<item>Use the properties of curl and divergence to determine whether a vector field is conservative.</item>
+</list></md:abstract>
+  <md:uuid>6f668e5d-300d-4e6c-aec3-70b59f71fe69</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-id1167793571517">In this section, we examine two important operations on a vector field: divergence and curl. They are important to the field of calculus for several reasons, including the use of curl and divergence to develop some higher-dimensional versions of the Fundamental Theorem of Calculus. In addition, curl and divergence appear in mathematical descriptions of fluid mechanics, electromagnetism, and elasticity theory, which are important concepts in physics and engineering. We can also apply curl and divergence to other concepts we already explored. For example, under certain conditions, a vector field is conservative if and only if its curl is zero.</para>
+<para id="fs-id1167794210350">In addition to defining curl and divergence, we look at some physical interpretations of them, and show their relationship to conservative and source-free vector fields.</para>
+<section id="fs-id1167793949547">
+<title>Divergence</title>
+<para id="fs-id1167794213418">Divergence is an operation on a vector field that tells us how the field behaves toward or away from a point. Locally, the divergence of a vector field <emphasis effect="bold">F</emphasis> in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup></m:mrow></m:math> or <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup></m:mrow></m:math> at a particular point <emphasis effect="italics">P</emphasis> is a measure of the “outflowing-ness” of the vector field at <emphasis effect="italics">P</emphasis>. If <emphasis effect="bold">F</emphasis> represents the velocity of a fluid, then the divergence of <emphasis effect="bold">F</emphasis> at <emphasis effect="italics">P</emphasis> measures the net rate of change with respect to time of the amount of fluid flowing away from <emphasis effect="italics">P</emphasis> (the tendency of the fluid to flow “out of” <emphasis effect="italics">P</emphasis>). In particular, if the amount of fluid flowing into <emphasis effect="italics">P</emphasis> is the same as the amount flowing out, then the divergence at <emphasis effect="italics">P</emphasis> is zero.</para>
+<note id="fs-id1167793442187">
+<title>Definition</title>
+<para id="fs-id1167793931072">If <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mo>,</m:mo><m:mi>Q</m:mi><m:mo>,</m:mo><m:mi>R</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> is a vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mi>x</m:mi></m:msub><m:mo>,</m:mo><m:msub><m:mi>Q</m:mi><m:mi>y</m:mi></m:msub><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>R</m:mi><m:mi>z</m:mi></m:msub></m:mrow></m:math> all exist, then the <term>divergence</term> of <emphasis effect="bold">F</emphasis> is defined by</para>
+<equation id="fs-id1167794139077"><m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:msub><m:mi>P</m:mi><m:mi>x</m:mi></m:msub><m:mtext>+</m:mtext><m:msub><m:mi>Q</m:mi><m:mi>y</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>R</m:mi><m:mi>z</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>Q</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>R</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>z</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation>
+</note>
+<para id="fs-id1167793272083">Note the divergence of a vector field is not a vector field, but a scalar function. In terms of the gradient operator <m:math><m:mrow><m:mo>∇</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>z</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> divergence can be written symbolically as the dot product</para>
+<equation id="fs-id1167793839413" class="unnumbered"><label/><m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mo>∇</m:mo><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793392193">Note this is merely helpful notation, because the dot product of a vector of operators and a vector of functions is not meaningfully defined given our current definition of dot product.</para>
+<para id="fs-id1167793394292">If <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mo>,</m:mo><m:mi>Q</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> is a vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mi>x</m:mi></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>y</m:mi></m:msub></m:mrow></m:math> both exist, then the divergence of <emphasis effect="bold">F</emphasis> is defined similarly as</para>
+<equation id="fs-id1167793953348" class="unnumbered"><label/><m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:msub><m:mi>P</m:mi><m:mi>x</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>Q</m:mi><m:mi>y</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>Q</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mo>∇</m:mo><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793938579">To illustrate this point, consider the two vector fields in <link target-id="CNX_Calc_Figure_16_05_001"/>. At any particular point, the amount flowing in is the same as the amount flowing out, so at every point the “outflowing-ness” of the field is zero. Therefore, we expect the divergence of both fields to be zero, and this is indeed the case, as</para>
+<equation id="fs-id1167794035474" class="unnumbered"><label/><m:math><m:mrow><m:mtext>div</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mtext>div</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>x</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<figure id="CNX_Calc_Figure_16_05_001">
+<media id="fs-id1167794330018" alt="Two images of vector fields A and B in two dimensions. Vector field A has arrows pointing up and to the right. They do not change in size or direction. It has zero divergence. Vector field B has arrows surrounding the origin in a counterclockwise direction. The arrows are larger the closer they are to the origin. It also has zero divergence.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_05_001.jpg"/>
+</media>
+<caption>(a) Vector field <m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> has zero divergence. (b) Vector field <m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>x</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> also has zero divergence.</caption>
+</figure>
+<para id="fs-id1167793370079">By contrast, consider radial vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>R</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mo>,</m:mo><m:mtext>−</m:mtext><m:mi>y</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> in <link target-id="CNX_Calc_Figure_16_05_002"/>. At any given point, more fluid is flowing in than is flowing out, and therefore the “outgoingness” of the field is negative. We expect the divergence of this field to be negative, and this is indeed the case, as <m:math><m:mrow><m:mtext>div</m:mtext><m:mrow><m:mo>(</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>R</m:mtext></m:mstyle><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<figure id="CNX_Calc_Figure_16_05_002">
+<media id="fs-id1167793269176" alt="A vector field in two dimensions with negative divergence. The arrows point in towards the origin in a radial pattern. The closer the arrows are to the origin, the larger they are.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_05_002.jpg"/>
+</media>
+<caption>This vector field has negative divergence.</caption>
+</figure>
+<para id="fs-id1167793827313">To get a global sense of what divergence is telling us, suppose that a vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup></m:mrow></m:math> represents the velocity of a fluid. Imagine taking an elastic circle (a circle with a shape that can be changed by the vector field) and dropping it into a fluid. If the circle maintains its exact area as it flows through the fluid, then the divergence is zero. This would occur for both vector fields in <link target-id="CNX_Calc_Figure_16_05_001"/>. On the other hand, if the circle’s shape is distorted so that its area shrinks or expands, then the divergence is not zero. Imagine dropping such an elastic circle into the radial vector field in <link target-id="CNX_Calc_Figure_16_05_002"/> so that the center of the circle lands at point (3, 3). The circle would flow toward the origin, and as it did so the front of the circle would travel more slowly than the back, causing the circle to “scrunch” and lose area. This is how you can see a negative divergence.</para>
+<example id="fs-id1167794061260">
+<exercise id="fs-id1167793367861">
+<problem id="fs-id1167794101380">
+<title>Calculating Divergence at a Point</title>
+<para id="fs-id1167794047216">If <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>y</m:mi><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> then find the divergence of <emphasis effect="bold">F</emphasis> at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793393728">
+<para id="fs-id1167793887560">The divergence of <emphasis effect="bold">F</emphasis> is</para>
+<equation id="fs-id1167794040031" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>z</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mo>+</m:mo><m:mi>z</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mi>z</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793642080">Therefore, the divergence at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mn>0</m:mn></m:msup><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math> If <emphasis effect="bold">F</emphasis> represents the velocity of a fluid, then more fluid is flowing out than flowing in at point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167793921588" class="checkpoint">
+<exercise id="fs-id1167793425907">
+<problem id="fs-id1167793966798">
+<para id="fs-id1167793933424">Find <m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:mrow></m:math> for <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>,</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794296630">
+<para id="fs-id1167793369929"><m:math><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1167794168583" type="hint">
+<title>Hint</title>
+<para id="fs-id1167794146315">Follow <link target-id="fs-id1167794061260"/>.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1167793505815">One application for divergence occurs in physics, when working with magnetic fields. A magnetic field is a vector field that models the influence of electric currents and magnetic materials. Physicists use divergence in <term class="no-emphasis">Gauss’s law for magnetism</term>, which states that if <emphasis effect="bold">B</emphasis> is a magnetic field, then <m:math><m:mrow><m:mo>∇</m:mo><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>B</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo></m:mrow></m:math> in other words, the divergence of a magnetic field is zero.</para>
+<example id="fs-id1167793958418">
+<exercise id="fs-id1167793607885">
+<problem id="fs-id1167793640503">
+<title>Determining Whether a Field Is Magnetic</title>
+<para id="fs-id1167793259816">Is it possible for <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> to be a magnetic field?</para>
+</problem>
+<solution id="fs-id1167793511072">
+<para id="fs-id1167794064443">If <emphasis effect="bold">F</emphasis> were magnetic, then its divergence would be zero. The divergence of <emphasis effect="bold">F</emphasis> is</para>
+<equation id="fs-id1167794117797" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></equation>
+<para id="fs-id1167794059031">and therefore <emphasis effect="bold">F</emphasis> cannot model a magnetic field (<link target-id="CNX_Calc_Figure_16_05_003"/>).</para>
+<figure id="CNX_Calc_Figure_16_05_003">
+<media id="fs-id1167793262612" alt="A vector field in two dimensions with divergence equal to 1. The arrows are quite flat near the x axis and vertical near the y axis. They seem to asymptotically approach the axes in quadrants 2 and 4, pointing up and to the right in quadrant 2 and down and to the left in quadrant 4. In quadrant 1, they start by pointing up and to the right close to the y axis, but they soon shift to pointing down and to the right. In quadrant 3, they start by pointing down and to the left close to the y axis, bu they soon shift to pointing up and to the left. The closer the arrows are to the origin, the shorter they are.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_05_003.jpg"/>
+</media>
+<caption>The divergence of vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> is one, so it cannot model a magnetic field.</caption>
+</figure>
+</solution>
+</exercise>
+</example>
+<para id="fs-id1167793882489">Another application for divergence is detecting whether a field is source free. Recall that a source-free field is a vector field that has a stream function; equivalently, a source-free field is a field with a flux that is zero along any closed curve. The next two theorems say that, under certain conditions, source-free vector fields are precisely the vector fields with zero divergence.</para>
+<note id="fs-id1167793397658" class="theorem">
+<title>Divergence of a Source-Free Vector Field</title>
+<para id="fs-id1167793882761">If <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mo>,</m:mo><m:mi>Q</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> is a source-free continuous vector field with differentiable component functions, then <m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</note>
+<section id="fs-id1167793820527">
+<title>Proof</title>
+<para id="fs-id1167793628157">Since <emphasis effect="bold">F</emphasis> is source free, there is a function <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> with <m:math><m:mrow><m:msub><m:mi>g</m:mi><m:mi>y</m:mi></m:msub><m:mo>=</m:mo><m:mi>P</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mtext>−</m:mtext><m:msub><m:mi>g</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:mi>Q</m:mi><m:mo>.</m:mo></m:mrow></m:math> Therefore, <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:msub><m:mi>g</m:mi><m:mi>y</m:mi></m:msub><m:mo>,</m:mo><m:mtext>−</m:mtext><m:msub><m:mi>g</m:mi><m:mi>x</m:mi></m:msub></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:msub><m:mi>g</m:mi><m:mrow><m:mi>y</m:mi><m:mi>x</m:mi></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>g</m:mi><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> by Clairaut’s theorem.</para>
+<para id="fs-id1167794053681">□</para>
+<para id="fs-id1167794332889">The converse of <link target-id="fs-id1167793397658"/> is true on simply connected regions, but the proof is too technical to include here. Thus, we have the following theorem, which can test whether a vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup></m:mrow></m:math> is source free.</para>
+<note id="fs-id1167794127411" class="theorem">
+<title>Divergence Test for Source-Free Vector Fields</title>
+<para id="fs-id1167794042747">Let <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mo>,</m:mo><m:mi>Q</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> be a continuous vector field with differentiable component functions with a domain that is simply connected. Then, <m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> if and only if <emphasis effect="bold">F</emphasis> is source free.</para>
+</note>
+<example id="fs-id1167794173556">
+<exercise id="fs-id1167794207176">
+<problem id="fs-id1167794207178">
+<title>Determining Whether a Field Is Source Free</title>
+<para id="fs-id1167793290850">Is field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>−</m:mo><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> source free?</para>
+</problem>
+<solution id="fs-id1167793895783">
+<para id="fs-id1167793895785">Note the domain of <emphasis effect="bold">F</emphasis> is <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> which is simply connected. Furthermore, <emphasis effect="bold">F</emphasis> is continuous with differentiable component functions. Therefore, we can use <link target-id="fs-id1167794127411"/> to analyze <emphasis effect="bold">F</emphasis>. The divergence of <emphasis effect="bold">F</emphasis> is</para>
+<equation id="fs-id1167793881996" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mo>−</m:mo><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793579555">Therefore, <emphasis effect="bold">F</emphasis> is source free by <link target-id="fs-id1167794127411"/>.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167793278344" class="checkpoint">
+<exercise id="fs-id1167793433681">
+<problem id="fs-id1167793569547">
+<para id="fs-id1167793569549">Let <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>a</m:mi><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mi>x</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> be a rotational field where <emphasis effect="italics">a</emphasis> and <emphasis effect="italics">b</emphasis> are positive constants. Is <emphasis effect="bold">F</emphasis> source free?</para>
+</problem>
+<solution id="fs-id1167793952040">
+<para id="fs-id1167793952042">Yes</para>
+</solution>
+<commentary id="fs-id1167793832126" type="hint">
+<title>Hint</title>
+<para id="fs-id1167794071711">Calculate the divergence.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1167793950331">Recall that the flux form of Green’s theorem says that</para>
+<equation id="fs-id1167793771055" class="unnumbered"><label/><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∮</m:mo><m:mi>C</m:mi></m:msub><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>N</m:mtext></m:mstyle><m:mi>d</m:mi><m:mi>s</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>D</m:mi></m:msub><m:mrow><m:msub><m:mi>P</m:mi><m:mi>x</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>Q</m:mi><m:mi>y</m:mi></m:msub><m:mi>d</m:mi><m:mi>A</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793618969">where <emphasis effect="italics">C</emphasis> is a simple closed curve and <emphasis effect="italics">D</emphasis> is the region enclosed by <emphasis effect="italics">C</emphasis>. Since <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mi>x</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>Q</m:mi><m:mi>y</m:mi></m:msub><m:mo>=</m:mo><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> Green’s theorem is sometimes written as</para>
+<equation id="fs-id1167794049088" class="unnumbered"><label/><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∮</m:mo><m:mi>C</m:mi></m:msub><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>N</m:mtext></m:mstyle><m:mi>d</m:mi><m:mi>s</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>D</m:mi></m:msub><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mi>d</m:mi><m:mi>A</m:mi><m:mo>.</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></equation>
+<para id="fs-id1167794168799">Therefore, Green’s theorem can be written in terms of divergence. If we think of divergence as a derivative of sorts, then Green’s theorem says the “derivative” of <emphasis effect="bold">F</emphasis> on a region can be translated into a line integral of <emphasis effect="bold">F</emphasis> along the boundary of the region. This is analogous to the Fundamental Theorem of Calculus, in which the derivative of a function <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> on a line segment <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">]</m:mo></m:mrow></m:math> can be translated into a statement about <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> on the boundary of <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo></m:mrow></m:math> Using divergence, we can see that Green’s theorem is a higher-dimensional analog of the Fundamental Theorem of Calculus.</para>
+<para id="fs-id1167793604548">We can use all of what we have learned in the application of divergence. Let <emphasis effect="bold">v</emphasis> be a vector field modeling the velocity of a fluid. Since the divergence of <emphasis effect="bold">v</emphasis> at point <emphasis effect="italics">P</emphasis> measures the “outflowing-ness” of the fluid at <emphasis effect="italics">P</emphasis>, <m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>P</m:mi><m:mo stretchy="false">)</m:mo><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math> implies that more fluid is flowing out of <emphasis effect="italics">P</emphasis> than flowing in. Similarly, <m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>P</m:mi><m:mo stretchy="false">)</m:mo><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:mrow></m:math> implies the more fluid is flowing in to <emphasis effect="italics">P</emphasis> than is flowing out, and <m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>P</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> implies the same amount of fluid is flowing in as flowing out.</para>
+<example id="fs-id1167793508391">
+<exercise id="fs-id1167793508393">
+<problem id="fs-id1167794212177">
+<title>Determining Flow of a Fluid</title>
+<para id="fs-id1167793479320">Suppose <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math> models the flow of a fluid. Is more fluid flowing into point <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> than flowing out?</para>
+</problem>
+<solution id="fs-id1167793912349">
+<para id="fs-id1167793912351">To determine whether more fluid is flowing into <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> than is flowing out, we calculate the divergence of <emphasis effect="bold">v</emphasis> at <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mtext>:</m:mtext></m:math></para>
+<equation id="fs-id1167794044310" class="unnumbered"><label/><m:math><m:mrow><m:mtext>div</m:mtext><m:mrow><m:mo>(</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793424488">To find the divergence at <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> substitute the point into the divergence: <m:math><m:mrow><m:mn>−4</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>−3</m:mn><m:mo>.</m:mo></m:mrow></m:math> Since the divergence of <emphasis effect="bold">v</emphasis> at <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is negative, more fluid is flowing in than flowing out (<link target-id="CNX_Calc_Figure_16_05_004"/>).</para>
+<figure id="CNX_Calc_Figure_16_05_004">
+<media id="fs-id1167793977304" alt="A vector field in two dimensions with negative divergence at (1,4). The arrows are very flat but become more vertical closer to the y axis. Above the x axis, the arrows point up and towards the y axis on either side of it. Below the x axis, the arrows point down and away from the y axis on either side of it.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_05_004.jpg"/>
+</media>
+<caption>Vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> has negative divergence at <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></caption>
+</figure>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167793948983" class="checkpoint">
+<exercise id="fs-id1167793915603">
+<problem id="fs-id1167793915605">
+<para id="fs-id1167793915607">For vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> find all points <emphasis effect="italics">P</emphasis> such that the amount of fluid flowing in to <emphasis effect="italics">P</emphasis> equals the amount of fluid flowing out of <emphasis effect="italics">P</emphasis>.</para>
+</problem>
+<solution id="fs-id1167793775925">
+<para id="fs-id1167793775927">All points on line <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1167793921488" type="hint">
+<title>Hint</title>
+<para id="fs-id1167793937003">Find where the divergence is zero.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+</section>
+<section id="fs-id1167793421964">
+<title>Curl</title>
+<para id="fs-id1167794332441">The second operation on a vector field that we examine is the curl, which measures the extent of rotation of the field about a point. Suppose that <emphasis effect="bold">F</emphasis> represents the velocity field of a fluid. Then, the curl of <emphasis effect="bold">F</emphasis> at point <emphasis effect="italics">P</emphasis> is a vector that measures the tendency of particles near <emphasis effect="italics">P</emphasis> to rotate about the axis that points in the direction of this vector. The magnitude of the curl vector at <emphasis effect="italics">P</emphasis> measures how quickly the particles rotate around this axis. In other words, the curl at a point is a measure of the vector field’s “spin” at that point. Visually, imagine placing a paddlewheel into a fluid at <emphasis effect="italics">P</emphasis>, with the axis of the paddlewheel aligned with the curl vector (<link target-id="CNX_Calc_Figure_16_05_005"/>). The curl measures the tendency of the paddlewheel to rotate.</para>
+<figure id="CNX_Calc_Figure_16_05_005">
+<media id="fs-id1167794034220" alt="A diagram of a small paddlewheel in water. Arrows are drawn surrounding the center in a counterclockwise circle. At the center, the height is labeled n.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_05_005.jpg"/>
+</media>
+<caption>To visualize curl at a point, imagine placing a small paddlewheel into the vector field at a point.</caption>
+</figure>
+<para id="fs-id1167794290442">Consider the vector fields in <link target-id="CNX_Calc_Figure_16_05_001"/>. In part (a), the vector field is constant and there is no spin at any point. Therefore, we expect the curl of the field to be zero, and this is indeed the case. Part (b) shows a rotational field, so the field has spin. In particular, if you place a paddlewheel into a field at any point so that the axis of the wheel is perpendicular to a plane, the wheel rotates counterclockwise. Therefore, we expect the curl of the field to be nonzero, and this is indeed the case (the curl is <m:math><m:mrow><m:mn>2</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793931994">To see what curl is measuring globally, imagine dropping a leaf into the fluid. As the leaf moves along with the fluid flow, the curl measures the tendency of the leaf to rotate. If the curl is zero, then the leaf doesn’t rotate as it moves through the fluid.</para>
+<note id="fs-id1167793959741">
+<title>Definition</title>
+<para id="fs-id1167794025989">If <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mo>,</m:mo><m:mi>Q</m:mi><m:mo>,</m:mo><m:mi>R</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> is a vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mi>x</m:mi></m:msub><m:mo>,</m:mo><m:msub><m:mi>Q</m:mi><m:mi>y</m:mi></m:msub><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>R</m:mi><m:mi>z</m:mi></m:msub></m:mrow></m:math> all exist, then the <term>curl</term> of <emphasis effect="bold">F</emphasis> is defined by</para>
+<equation id="fs-id1167793965993"><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mi>y</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>Q</m:mi><m:mi>z</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>P</m:mi><m:mi>z</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>R</m:mi><m:mi>x</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>R</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>Q</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>z</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>z</m:mi></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>R</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>Q</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1167793931192">Note that the curl of a vector field is a vector field, in contrast to divergence.</para>
+</note>
+<para id="fs-id1167793831500">The definition of curl can be difficult to remember. To help with remembering, we use the notation <m:math><m:mrow><m:mo>∇</m:mo><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:mrow></m:math> to stand for a “determinant” that gives the curl formula:</para>
+<equation id="fs-id1167794025214" class="unnumbered"><label/><m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mtable><m:mtr><m:mtd columnalign="center"><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle></m:mtd><m:mtd columnalign="center"><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mtd><m:mtd columnalign="center"><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac></m:mtd><m:mtd columnalign="center"><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac></m:mtd><m:mtd columnalign="center"><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>z</m:mi></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mi>P</m:mi></m:mtd><m:mtd columnalign="center"><m:mi>Q</m:mi></m:mtd><m:mtd columnalign="center"><m:mi>R</m:mi></m:mtd></m:mtr></m:mtable><m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793965705">The determinant of this matrix is</para>
+<equation id="fs-id1167793384739" class="unnumbered"><label/><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mi>y</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>Q</m:mi><m:mi>z</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mi>x</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mi>z</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mi>y</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>Q</m:mi><m:mi>z</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>P</m:mi><m:mi>z</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>R</m:mi><m:mi>x</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>=</m:mo><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167794170488">Thus, this matrix is a way to help remember the formula for curl. Keep in mind, though, that the word <emphasis effect="italics">determinant</emphasis> is used very loosely. A determinant is not really defined on a matrix with entries that are three vectors, three operators, and three functions.</para>
+<para id="fs-id1167793925808">If <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mo>,</m:mo><m:mi>Q</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> is a vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> then the curl of <emphasis effect="bold">F</emphasis>, by definition, is</para>
+<equation id="fs-id1167793581943" class="unnumbered"><label/><m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>Q</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
+<example id="fs-id1167794026966">
+<exercise id="fs-id1167794026968">
+<problem id="fs-id1167794026970">
+<title>Finding the Curl of a Three-Dimensional Vector Field</title>
+<para id="fs-id1167793568842">Find the curl of <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>P</m:mi><m:mo>,</m:mo><m:mi>Q</m:mi><m:mo>,</m:mo><m:mi>R</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi><m:mo>,</m:mo><m:msup><m:mi>e</m:mi><m:mi>y</m:mi></m:msup><m:mo>+</m:mo><m:mi>x</m:mi><m:mi>z</m:mi><m:mo>,</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793959491">
+<para id="fs-id1167793959778">The curl is</para>
+<equation id="fs-id1167793959781" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mo>∇</m:mo><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mtable><m:mtr><m:mtd columnalign="center"><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle></m:mtd><m:mtd columnalign="center"><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mtd><m:mtd columnalign="center"><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mrow><m:mrow><m:mo>∂</m:mo><m:mtext>/</m:mtext><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mrow></m:mrow></m:mtd><m:mtd columnalign="center"><m:mrow><m:mrow><m:mo>∂</m:mo><m:mtext>/</m:mtext><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mrow></m:mrow></m:mtd><m:mtd columnalign="center"><m:mrow><m:mrow><m:mo>∂</m:mo><m:mtext>/</m:mtext><m:mrow><m:mo>∂</m:mo><m:mi>z</m:mi></m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mi>P</m:mi></m:mtd><m:mtd columnalign="center"><m:mi>Q</m:mi></m:mtd><m:mtd columnalign="center"><m:mi>R</m:mi></m:mtd></m:mtr></m:mtable></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mi>y</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>Q</m:mi><m:mi>z</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>P</m:mi><m:mi>z</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>R</m:mi><m:mi>x</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mi>z</m:mi><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mi>y</m:mi><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167794032729" class="checkpoint">
+<exercise id="fs-id1167794058816">
+<problem id="fs-id1167794058818">
+<para id="fs-id1167794058820">Find the curl of <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>z</m:mi><m:mo>,</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>z</m:mi><m:mo>,</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> at point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793951094">
+<para id="fs-id1167793951096"><m:math><m:mrow><m:mtext>−</m:mtext><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1167793383463" type="hint">
+<title>Hint</title>
+<para id="fs-id1167793416648">Find the determinant of matrix <m:math><m:mrow><m:mo>∇</m:mo><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</commentary>
+</exercise>
+</note>
+<example id="fs-id1167794046590">
+<exercise id="fs-id1167793720026">
+<problem id="fs-id1167793720029">
+<title>Finding the Curl of a Two-Dimensional Vector Field</title>
+<para id="fs-id1167793720034">Find the curl of <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mo>,</m:mo><m:mi>Q</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793489269">
+<para id="fs-id1167793489271">Notice that this vector field consists of vectors that are all parallel. In fact, each vector in the field is parallel to the <emphasis effect="italics">x</emphasis>-axis. This fact might lead us to the conclusion that the field has no spin and that the curl is zero. To test this theory, note that</para>
+<equation id="fs-id1167793486207" class="unnumbered"><label/><m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793640854">Therefore, this vector field does have spin. To see why, imagine placing a paddlewheel at any point in the first quadrant (<link target-id="CNX_Calc_Figure_16_05_006"/>). The larger magnitudes of the vectors at the top of the wheel cause the wheel to rotate. The wheel rotates in the clockwise (negative) direction, causing the coefficient of the curl to be negative.</para>
+<figure id="CNX_Calc_Figure_16_05_006">
+<media id="fs-id1167793541051" alt="Two vector field diagrams consisting of vectors that are all parallel. The closer they are to the x axis, the shorter the arrows are. Above the x axis, the arrows point to the right, and below the x axis, the arrows point to the left.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_05_006.jpg"/>
+</media>
+<caption>Vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> consists of vectors that are all parallel.</caption>
+</figure>
+</solution>
+</exercise>
+</example>
+<para id="fs-id1167793245268">Note that if <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mo>,</m:mo><m:mi>Q</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> is a vector field in a plane, then <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>=</m:mo><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub><m:mo>.</m:mo></m:mrow></m:math> Therefore, the circulation form of Green’s theorem is sometimes written as</para>
+<equation id="fs-id1167794206821" class="unnumbered"><label/><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∮</m:mo><m:mi>C</m:mi></m:msub><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>·</m:mo><m:mi>d</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo>=</m:mo></m:mrow></m:mrow></m:mstyle><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>D</m:mi></m:msub><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mi>d</m:mi><m:mi>A</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793420776">where <emphasis effect="italics">C</emphasis> is a simple closed curve and <emphasis effect="italics">D</emphasis> is the region enclosed by <emphasis effect="italics">C</emphasis>. Therefore, the circulation form of Green’s theorem can be written in terms of the curl. If we think of curl as a derivative of sorts, then Green’s theorem says that the “derivative” of <emphasis effect="bold">F</emphasis> on a region can be translated into a line integral of <emphasis effect="bold">F</emphasis> along the boundary of the region. This is analogous to the Fundamental Theorem of Calculus, in which the derivative of a function <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> on line segment <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">]</m:mo></m:mrow></m:math> can be translated into a statement about <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> on the boundary of <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo></m:mrow></m:math> Using curl, we can see the circulation form of Green’s theorem is a higher-dimensional analog of the Fundamental Theorem of Calculus.</para>
+<para id="fs-id1167793426386">We can now use what we have learned about curl to show that gravitational fields have no “spin.” Suppose there is an object at the origin with mass <m:math><m:mrow><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> at the origin and an object with mass <m:math><m:mrow><m:msub><m:mi>m</m:mi><m:mn>2</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math> Recall that the gravitational force that object 1 exerts on object 2 is given by field</para>
+<equation id="fs-id1167794200086" class="unnumbered"><label/><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>G</m:mi><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>m</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>〈</m:mo><m:mrow><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>3</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mi>y</m:mi><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>3</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mi>z</m:mi><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>3</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
+<example id="fs-id1167793505725">
+<exercise id="fs-id1167793505727">
+<problem id="fs-id1167793505729">
+<title>Determining the Spin of a Gravitational Field</title>
+<para id="fs-id1167793505735">Show that a gravitational field has no spin.</para>
+</problem>
+<solution id="fs-id1167793355045">
+<para id="fs-id1167793355047">To show that <emphasis effect="bold">F</emphasis> has no spin, we calculate its curl. Let <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>3</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>Q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mi>y</m:mi><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>3</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mi>z</m:mi><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>3</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> Then,</para>
+<equation id="fs-id1167793354822" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>G</m:mi><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>m</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>[</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mi>y</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>Q</m:mi><m:mi>z</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>P</m:mi><m:mi>z</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>R</m:mi><m:mi>x</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow><m:mo>]</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>G</m:mi><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>m</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>[</m:mo><m:mtable><m:mtr><m:mtd columnalign="left"><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>−3</m:mn><m:mi>y</m:mi><m:mi>z</m:mi></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>5</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>−3</m:mn><m:mi>y</m:mi><m:mi>z</m:mi></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>5</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi><m:mi>z</m:mi></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>5</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi><m:mi>z</m:mi></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>5</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>5</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>5</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mtd></m:mtr></m:mtable><m:mo>]</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>0.</m:mn></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1167793319476">Since the curl of the gravitational field is zero, the field has no spin.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167793371808" class="checkpoint">
+<exercise id="fs-id1167793371812">
+<problem id="fs-id1167793371814">
+<para id="fs-id1167793371816">Field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mi>y</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> models the flow of a fluid. Show that if you drop a leaf into this fluid, as the leaf moves over time, the leaf does not rotate.</para>
+</problem>
+<solution id="fs-id1167794223756">
+<para id="fs-id1167794223758"><m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mn>0</m:mn></m:mstyle></m:mrow></m:math></para>
+</solution>
+<commentary id="fs-id1167794173290" type="hint">
+<title>Hint</title>
+<para id="fs-id1167794173297">Calculate the curl.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+<section id="fs-id1167794054125">
+<title>Using Divergence and Curl</title>
+<para id="fs-id1167794054131">Now that we understand the basic concepts of divergence and curl, we can discuss their properties and establish relationships between them and conservative vector fields.</para>
+<para id="fs-id1167794054135">If <emphasis effect="bold">F</emphasis> is a vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> then the curl of <emphasis effect="bold">F</emphasis> is also a vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> Therefore, we can take the divergence of a curl. The next theorem says that the result is always zero. This result is useful because it gives us a way to show that some vector fields are not the curl of any other field. To give this result a physical interpretation, recall that divergence of a velocity field <emphasis effect="bold">v</emphasis> at point <emphasis effect="italics">P</emphasis> measures the tendency of the corresponding fluid to flow out of <emphasis effect="italics">P</emphasis>. Since <m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mrow><m:mo>(</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> the net rate of flow in vector field curl(<emphasis effect="bold">v</emphasis>) at any point is zero. Taking the curl of vector field <emphasis effect="bold">F</emphasis> eliminates whatever divergence was present in <emphasis effect="bold">F</emphasis>.</para>
+<note id="fs-id1167794029307" class="theorem">
+<title>Divergence of the Curl</title>
+<para id="fs-id1167794029314">Let <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mo>,</m:mo><m:mi>Q</m:mi><m:mo>,</m:mo><m:mi>R</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> be a vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup></m:mrow></m:math> such that the component functions all have continuous second-order partial derivatives. Then, <m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mrow><m:mo>(</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>∇</m:mo><m:mo>·</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>∇</m:mo><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</note>
+<section id="fs-id1167793355183">
+<title>Proof</title>
+<para id="fs-id1167793355188">By the definitions of divergence and curl, and by Clairaut’s theorem,</para>
+<equation id="fs-id1167793930471" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mtext>div curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mtext>div</m:mtext><m:mrow><m:mo>[</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mi>y</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>Q</m:mi><m:mi>z</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>P</m:mi><m:mi>z</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>R</m:mi><m:mi>x</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow><m:mo>]</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msub><m:mi>R</m:mi><m:mrow><m:mi>y</m:mi><m:mi>x</m:mi></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>Q</m:mi><m:mrow><m:mi>x</m:mi><m:mi>z</m:mi></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>P</m:mi><m:mrow><m:mi>y</m:mi><m:mi>z</m:mi></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>R</m:mi><m:mrow><m:mi>y</m:mi><m:mi>x</m:mi></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>Q</m:mi><m:mrow><m:mi>z</m:mi><m:mi>x</m:mi></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mrow><m:mi>z</m:mi><m:mi>y</m:mi></m:mrow></m:msub></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>0.</m:mn></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1167793568772">□</para>
+<example id="fs-id1167793568775">
+<exercise id="fs-id1167793355024">
+<problem id="fs-id1167793355027">
+<title>Showing That a Vector Field Is Not the Curl of Another</title>
+<para id="fs-id1167793355032">Show that <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>y</m:mi><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>x</m:mi><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math> is not the curl of another vector field. That is, show that there is no other vector <emphasis effect="bold">G</emphasis> with <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793553750">
+<para id="fs-id1167793553752">Notice that the domain of <emphasis effect="bold">F</emphasis> is all of <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup></m:mrow></m:math> and the second-order partials of <emphasis effect="bold">F</emphasis> are all continuous. Therefore, we can apply the previous theorem to <emphasis effect="bold">F</emphasis>.</para>
+<para id="fs-id1167793918481">The divergence of <emphasis effect="bold">F</emphasis> is <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mo>+</m:mo><m:mi>z</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>z</m:mi><m:mo>.</m:mo></m:mrow></m:math> If <emphasis effect="bold">F</emphasis> were the curl of vector field <emphasis effect="bold">G</emphasis>, then <m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mtext>div curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> But, the divergence of <emphasis effect="bold">F</emphasis> is not zero, and therefore <emphasis effect="bold">F</emphasis> is not the curl of any other vector field.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1167794314569" class="checkpoint">
+<exercise id="fs-id1167794314573">
+<problem id="fs-id1167794314575">
+<para id="fs-id1167794314577">Is it possible for <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>,</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi><m:mo>,</m:mo><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> to be the curl of a vector field?</para>
+</problem>
+<solution id="fs-id1167793379941">
+<para id="fs-id1167793379943">No</para>
+</solution>
+<commentary id="fs-id1167793379947" type="hint">
+<title>Hint</title>
+<para id="fs-id1167793977401">Find the divergence of <emphasis effect="bold">G</emphasis>.</para>
+</commentary>
+</exercise>
+</note>
+<para id="fs-id1167793977413">With the next two theorems, we show that if <emphasis effect="bold">F</emphasis> is a conservative vector field then its curl is zero, and if the domain of <emphasis effect="bold">F</emphasis> is simply connected then the converse is also true. This gives us another way to test whether a vector field is conservative.</para>
+<note id="fs-id1167793635932" class="theorem">
+<title>Curl of a Conservative Vector Field</title>
+<para id="fs-id1167793635940">If <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mo>,</m:mo><m:mi>Q</m:mi><m:mo>,</m:mo><m:mi>R</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> is conservative, then <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</note>
+</section>
+<section id="fs-id1167793445748">
+<title>Proof</title>
+<para id="fs-id1167793445753">Since conservative vector fields satisfy the cross-partials property, all the cross-partials of <emphasis effect="bold">F</emphasis> are equal. Therefore,</para>
+<equation id="fs-id1167793524959" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mi>y</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>Q</m:mi><m:mi>z</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>P</m:mi><m:mi>z</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>R</m:mi><m:mi>x</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>0.</m:mn></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1167793929491">□</para>
+<para id="fs-id1167794121465">The same theorem is true for vector fields in a plane.</para>
+<para id="fs-id1167794121468">Since a conservative vector field is the gradient of a scalar function, the previous theorem says that <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> for any scalar function <m:math><m:mrow><m:mi>f</m:mi><m:mo>.</m:mo></m:mrow></m:math> In terms of our curl notation, <m:math><m:mrow><m:mo>∇</m:mo><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mo>∇</m:mo><m:mrow><m:mo>(</m:mo><m:mi>f</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> This equation makes sense because the cross product of a vector with itself is always the zero vector. Sometimes equation <m:math><m:mrow><m:mo>∇</m:mo><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mo>∇</m:mo><m:mrow><m:mo>(</m:mo><m:mi>f</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> is simplified as <m:math><m:mrow><m:mo>∇</m:mo><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mo>∇</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<note id="fs-id1167793495816" class="theorem">
+<title>Curl Test for a Conservative Field</title>
+<para id="fs-id1167793495823">Let <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mo>,</m:mo><m:mi>Q</m:mi><m:mo>,</m:mo><m:mi>R</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> be a vector field in space on a simply connected domain. If <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> then <emphasis effect="bold">F</emphasis> is conservative.</para>
+</note>
+</section>
+<section id="fs-id1167793463615">
+<title>Proof</title>
+<para id="fs-id1167793355840">Since <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> we have that <m:math><m:mrow><m:msub><m:mi>R</m:mi><m:mi>y</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>Q</m:mi><m:mi>z</m:mi></m:msub><m:mo>,</m:mo><m:msub><m:mi>P</m:mi><m:mi>z</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>R</m:mi><m:mi>x</m:mi></m:msub><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub><m:mo>.</m:mo></m:mrow></m:math> Therefore, <emphasis effect="bold">F</emphasis> satisfies the cross-partials property on a simply connected domain, and <link document="m53987" target-id="fs-id1167793945282"/> implies that <emphasis effect="bold">F</emphasis> is conservative.</para>
+<para id="fs-id1167793498797">□</para>
+<para id="fs-id1167793498800">The same theorem is also true in a plane. Therefore, if <emphasis effect="bold">F</emphasis> is a vector field in a plane or in space and the domain is simply connected, then <emphasis effect="bold">F</emphasis> is conservative if and only if <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<example id="fs-id1167793502584">
+<exercise id="fs-id1167793502586">
+<problem id="fs-id1167793502588">
+<title>Testing Whether a Vector Field Is Conservative</title>
+<para id="fs-id1167793502594">Use the curl to determine whether <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>y</m:mi><m:mi>z</m:mi><m:mo>,</m:mo><m:mi>x</m:mi><m:mi>z</m:mi><m:mo>,</m:mo><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> is conservative.</para>
+</problem>
+<solution id="fs-id1167793755770">
+<para id="fs-id1167793755772">Note that the domain of <emphasis effect="bold">F</emphasis> is all of <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> which is simply connected (<link target-id="CNX_Calc_Figure_16_05_007"/>). Therefore, we can test whether <emphasis effect="bold">F</emphasis> is conservative by calculating its curl.</para>
+<figure id="CNX_Calc_Figure_16_05_007">
+<media id="fs-id1167794196714" alt="A diagram showing the curl of a vector field in two dimensions. The curl is zero. The arrows seem to be pointing up and over into the yz plane.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_05_007.jpg"/>
+</media>
+<caption>The curl of vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>y</m:mi><m:mi>z</m:mi><m:mo>,</m:mo><m:mi>x</m:mi><m:mi>z</m:mi><m:mo>,</m:mo><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> is zero.</caption>
+</figure>
+<para id="fs-id1167794023727">The curl of <emphasis effect="bold">F</emphasis> is</para>
+<equation id="fs-id1167794023734" class="unnumbered"><label/><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>−</m:mo><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>z</m:mi></m:mrow></m:mfrac><m:mi>x</m:mi><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mi>y</m:mi><m:mi>z</m:mi><m:mo>−</m:mo><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>z</m:mi></m:mrow></m:mfrac><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mi>x</m:mi><m:mi>z</m:mi><m:mo>−</m:mo><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>z</m:mi></m:mrow></m:mfrac><m:mi>y</m:mi><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>z</m:mi><m:mo>−</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167794054301">Thus, <emphasis effect="bold">F</emphasis> is conservative.</para>
+</solution>
+</exercise>
+</example>
+<para id="fs-id1167793562322">We have seen that the curl of a gradient is zero. What is the divergence of a gradient? If <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> is a function of two variables, then <m:math><m:mrow><m:mtext>div</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>∇</m:mo><m:mo>·</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>f</m:mi><m:mrow><m:mi>x</m:mi><m:mi>x</m:mi></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>f</m:mi><m:mrow><m:mi>y</m:mi><m:mi>y</m:mi></m:mrow></m:msub><m:mo>.</m:mo></m:mrow></m:math> We abbreviate this “double dot product” as <m:math><m:mrow><m:msup><m:mo>∇</m:mo><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> This operator is called the <term class="no-emphasis"><emphasis effect="italics">Laplace operator</emphasis></term><emphasis effect="italics">,</emphasis> and in this notation Laplace’s equation becomes <m:math><m:mrow><m:msup><m:mo>∇</m:mo><m:mn>2</m:mn></m:msup><m:mi>f</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> Therefore, a harmonic function is a function that becomes zero after taking the divergence of a gradient.</para>
+<para id="fs-id1167794018031">Similarly, if <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> is a function of three variables then</para>
+<equation id="fs-id1167794018039" class="unnumbered"><label/><m:math><m:mrow><m:mtext>div</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>∇</m:mo><m:mo>·</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>f</m:mi><m:mrow><m:mi>x</m:mi><m:mi>x</m:mi></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>f</m:mi><m:mrow><m:mi>y</m:mi><m:mi>y</m:mi></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>f</m:mi><m:mrow><m:mi>z</m:mi><m:mi>z</m:mi></m:mrow></m:msub><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793619900">Using this notation we get Laplace’s equation for harmonic functions of three variables:</para>
+<equation id="fs-id1167793619905" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mo>∇</m:mo><m:mn>2</m:mn></m:msup><m:mi>f</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1167793829624">Harmonic functions arise in many applications. For example, the potential function of an electrostatic field in a region of space that has no static charge is harmonic.</para>
+<example id="fs-id1167793829629">
+<exercise id="fs-id1167793829631"><problem id="fs-id1167793829633">
+<title>Analyzing a Function</title>
+<para id="fs-id1167793465193">Is it possible for <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi></m:mrow></m:math> to be the potential function of an electrostatic field that is located in a region of <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup></m:mrow></m:math> free of static charge?</para>
+</problem>
+<solution id="fs-id1167794053642">
+<para id="fs-id1167794053644">If <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> were such a potential function, then <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> would be harmonic. Note that <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mrow><m:mi>x</m:mi><m:mi>x</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mrow><m:mi>y</m:mi><m:mi>y</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> and so <m:math><m:mrow><m:msub><m:mi>f</m:mi><m:mrow><m:mi>x</m:mi><m:mi>x</m:mi></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>f</m:mi><m:mrow><m:mi>y</m:mi><m:mi>y</m:mi></m:mrow></m:msub><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> Therefore, <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> is not harmonic and <m:math><m:mrow><m:mi>f</m:mi></m:mrow></m:math> cannot represent an electrostatic potential.</para>
+</solution>
+</exercise></example>
+<note id="fs-id1167793941515" class="checkpoint">
+<exercise id="fs-id1167793941520">
+<problem id="fs-id1167793941522">
+<para id="fs-id1167793941524">Is it possible for function <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow></m:math> to be the potential function of an electrostatic field located in a region of <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup></m:mrow></m:math> free of static charge?</para>
+</problem>
+<solution id="fs-id1167793931445">
+<para id="fs-id1167793931447">Yes</para>
+</solution>
+<commentary id="fs-id1167793931451" type="hint">
+<title>Hint</title>
+<para id="fs-id1167793931458">Determine whether the function is harmonic.</para>
+</commentary>
+</exercise>
+</note>
+</section>
+</section>
+<section id="fs-id1167794127191" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id1167794127199" list-type="bulleted" bullet-style="bullet">
+<item>The divergence of a vector field is a scalar function. Divergence measures the “outflowing-ness” of a vector field. If <emphasis effect="bold">v</emphasis> is the velocity field of a fluid, then the divergence of <emphasis effect="bold">v</emphasis> at a point is the outflow of the fluid less the inflow at the point.</item>
+<item>The curl of a vector field is a vector field. The curl of a vector field at point <emphasis effect="italics">P</emphasis> measures the tendency of particles at <emphasis effect="italics">P</emphasis> to rotate about the axis that points in the direction of the curl at <emphasis effect="italics">P</emphasis>.</item>
+<item>A vector field with a simply connected domain is conservative if and only if its curl is zero.</item>
+</list>
+</section>
+<section id="fs-id1167793953364" class="key-equations">
+<title>Key Equations</title>
+<table id="eip-560" summary="." class="unnumbered unstyled">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><emphasis effect="bold">Curl</emphasis></entry>
+    <entry><m:math><m:mrow><m:mo>∇</m:mo><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mi>y</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>Q</m:mi><m:mi>z</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>P</m:mi><m:mi>z</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>R</m:mi><m:mi>x</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry><emphasis effect="bold">Divergence</emphasis></entry>
+    <entry><m:math><m:mrow><m:mo>∇</m:mo><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:msub><m:mi>P</m:mi><m:mi>x</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>Q</m:mi><m:mi>y</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>R</m:mi><m:mi>z</m:mi></m:msub></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry><emphasis effect="bold">Divergence of curl is zero</emphasis></entry>
+    <entry><m:math><m:mrow><m:mo>∇</m:mo><m:mo>·</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>∇</m:mo><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry><emphasis effect="bold">Curl of a gradient is the zero vector</emphasis></entry>
+    <entry><m:math><m:mrow><m:mo>∇</m:mo><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>∇</m:mtext><m:mi>f</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</section>
+<section id="fs-id1167793829662" class="section-exercises">
+<para id="fs-id1167794023966">For the following exercises, determine whether the statement is <emphasis effect="italics">true or false</emphasis>.</para>
+<exercise id="fs-id1167794023969">
+<problem id="fs-id1167794023971">
+<para id="fs-id1167794023973">If the coordinate functions of <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>:</m:mo><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup><m:mo stretchy="false">→</m:mo><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup></m:mrow></m:math> have continuous second partial derivatives, then <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mo stretchy="false">(</m:mo><m:mtext>div</m:mtext><m:mo stretchy="false">(</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math> equals zero.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793960943">
+<problem id="fs-id1167793960946">
+<para id="fs-id1167793960948"><m:math><m:mrow><m:mo>∇</m:mo><m:mo>·</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793524561">
+<para id="fs-id1167793524563">False</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793524568">
+<problem id="fs-id1167793524571">
+<para id="fs-id1167793524573">All vector fields of the form <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>z</m:mi><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math> are conservative.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167794169123">
+<problem id="fs-id1167794169126">
+<para id="fs-id1167794169128">If <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> then <emphasis effect="bold">F</emphasis> is conservative.</para>
+</problem>
+<solution id="fs-id1167793892952">
+<para id="fs-id1167793892954">True</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793892959">
+<problem id="fs-id1167793892961">
+<para id="fs-id1167793892963">If <emphasis effect="bold">F</emphasis> is a constant vector field then <m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167794186719">
+<problem id="fs-id1167794186722">
+<para id="fs-id1167794186724">If <emphasis effect="bold">F</emphasis> is a constant vector field then <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793480766">
+<para id="fs-id1167793480769">True</para>
+</solution>
+</exercise>
+<para id="fs-id1167793480774">For the following exercises, find the curl of <emphasis effect="bold">F</emphasis>.</para>
+<exercise id="fs-id1167793287219">
+<problem id="fs-id1167793287221">
+<para id="fs-id1167793287223"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>z</m:mi><m:mn>4</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793591316">
+<problem id="fs-id1167793591318">
+<para id="fs-id1167793591320"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794221142">
+<para id="fs-id1167794221144"><m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167794054991">
+<problem id="fs-id1167794054993">
+<para id="fs-id1167794054995"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>z</m:mi></m:mrow></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167791724501">
+<problem id="fs-id1167791724503">
+<para id="fs-id1167791724505"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793543673">
+<para id="fs-id1167793928963"><m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793936529">
+<problem id="fs-id1167793936532">
+<para id="fs-id1167793936534"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793951798">
+<problem id="fs-id1167793432001">
+<para id="fs-id1167793432003"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mi>z</m:mi><m:mo>−</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793829184">
+<para id="fs-id1167793829186"><m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793234031">
+<problem id="fs-id1167793234033">
+<para id="fs-id1167793234035"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>z</m:mi><m:mn>3</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793482845">
+<problem id="fs-id1167793482847">
+<para id="fs-id1167793482849"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>y</m:mi><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>x</m:mi><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794042880">
+<para id="fs-id1167794042882"><m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>−</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793632688">
+<problem id="fs-id1167793632690">
+<para id="fs-id1167793632692"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793618709">
+<problem id="fs-id1167793618711">
+<para id="fs-id1167793618713"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>c</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math> for constants <emphasis effect="italics">a</emphasis>, <emphasis effect="italics">b</emphasis>, <emphasis effect="italics">c</emphasis></para>
+</problem>
+<solution id="fs-id1167793384482">
+<para id="fs-id1167793384484"><m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1167793384507">For the following exercises, find the divergence of <emphasis effect="bold">F</emphasis>.</para>
+<exercise id="fs-id1167793517435">
+<problem id="fs-id1167793517437">
+<para id="fs-id1167793517439"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793927452">
+<problem id="fs-id1167793927454">
+<para id="fs-id1167793927456"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>z</m:mi></m:mrow></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794138048">
+<para id="fs-id1167794138050"><m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>z</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>z</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793945267">
+<problem id="fs-id1167793945270">
+<para id="fs-id1167793945272"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793245127">
+<problem id="fs-id1167793245129">
+<para id="fs-id1167793245131"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793561883">
+<para id="fs-id1167793561885"><m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793502678">
+<problem id="fs-id1167793502680">
+<para id="fs-id1167793502682"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>z</m:mi><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793641859">
+<problem id="fs-id1167793641862">
+<para id="fs-id1167793641864"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mfrac><m:mi>y</m:mi><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793554050">
+<para id="fs-id1167793554052"><m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793398104">
+<problem id="fs-id1167793398106">
+<para id="fs-id1167793398108"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793554496">
+<problem id="fs-id1167793554498">
+<para id="fs-id1167793554501"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>c</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math> for constants <emphasis effect="italics">a</emphasis>, <emphasis effect="italics">b</emphasis>, <emphasis effect="italics">c</emphasis></para>
+</problem>
+<solution id="fs-id1167793939825">
+<para id="fs-id1167793939827"><m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793939854">
+<problem id="fs-id1167793939856">
+<para id="fs-id1167793939858"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>z</m:mi><m:mn>3</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793498676">
+<problem id="fs-id1167793498678">
+<para id="fs-id1167793498680"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>y</m:mi><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>x</m:mi><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793373565">
+<para id="fs-id1167793373567"><m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>z</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1167793609907">For the following exercises, determine whether each of the given scalar functions is harmonic.</para>
+<exercise id="fs-id1167793609910">
+<problem id="fs-id1167793609912">
+<para id="fs-id1167793609914"><m:math><m:mrow><m:mi>u</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mo stretchy="false">(</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi><m:mo>−</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167794005201">
+<problem id="fs-id1167794005203">
+<para id="fs-id1167794005206"><m:math><m:mrow><m:mi>w</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mtext>−</m:mtext><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:msup></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793603168">
+<para id="fs-id1167793603171">Harmonic</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793512109">
+<problem id="fs-id1167793512111">
+<para id="fs-id1167793512113">If <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math> and <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> find <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mo stretchy="false">(</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793699419">
+<problem id="fs-id1167793699421">
+<para id="fs-id1167793699423">If <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math> and <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> find <m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mo stretchy="false">(</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793547561">
+<para id="fs-id1167793547563"><m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mo stretchy="false">(</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>z</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793244815">
+<problem id="fs-id1167793244817">
+<para id="fs-id1167793244819">Find <m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> given that <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mtext>∇</m:mtext><m:mi>f</m:mi><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167794006368">
+<problem id="fs-id1167794006371">
+<para id="fs-id1167794006373">Find the divergence of <emphasis effect="bold">F</emphasis> for vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>z</m:mi><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794222323">
+<para id="fs-id1167794222325"><m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793312578">
+<problem id="fs-id1167793312580">
+<para id="fs-id1167793312582">Find the divergence of <emphasis effect="bold">F</emphasis> for vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:msub><m:mi>f</m:mi><m:mn>3</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1167793454036">For the following exercises, use <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+<exercise id="fs-id1167793691577">
+<problem id="fs-id1167793691580">
+<para id="fs-id1167793691582">Find the <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793377750">
+<para id="fs-id1167793377752"><m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793377770">
+<problem id="fs-id1167793377773">
+<para id="fs-id1167793377775">Find the <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mi>r</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793754021">
+<problem id="fs-id1167793754023">
+<para id="fs-id1167793754025">Find the <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mrow><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793559076">
+<para id="fs-id1167793559078"><m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle></m:mrow><m:mrow><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793473647">
+<problem id="fs-id1167793473649">
+<para id="fs-id1167793473651">Let <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>−</m:mtext><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> where <emphasis effect="bold">F</emphasis> is defined on <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>∈</m:mo><m:mo>ℝ</m:mo><m:mo>|</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≠</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Find <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1167793929633">For the following exercises, use a computer algebra system to find the curl of the given vector fields.</para>
+<exercise id="fs-id1167793929637">
+<problem id="fs-id1167793929639">
+<para id="fs-id1167793929641"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>arctan</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>x</m:mi><m:mi>y</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mtext>ln</m:mtext><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793325776">
+<para id="fs-id1167793325778"><m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793248077">
+<problem id="fs-id1167793248079">
+<para id="fs-id1167793248081"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>z</m:mi><m:mo>−</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1167793597210">For the following exercises, find the divergence of <emphasis effect="bold">F</emphasis> at the given point.</para>
+<exercise id="fs-id1167793597218">
+<problem id="fs-id1167793597220">
+<para id="fs-id1167793597223"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math> at <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793566976">
+<para id="fs-id1167793566978"><m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793567001">
+<problem id="fs-id1167793567003">
+<para id="fs-id1167793567005"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math> at <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793584431">
+<problem id="fs-id1167793584434">
+<para id="fs-id1167793584436"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>x</m:mi><m:mi>z</m:mi></m:mrow></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>y</m:mi><m:mi>z</m:mi></m:mrow></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math> at <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793500833">
+<para id="fs-id1167793500835"><m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−6</m:mn></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793287092">
+<problem id="fs-id1167793287094">
+<para id="fs-id1167793287096"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math> at (1, 2, 1)</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167794200333">
+<problem id="fs-id1167794200335">
+<para id="fs-id1167794200338"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math> at (0, 0, 3)</para>
+</problem>
+<solution id="fs-id1167793444997">
+<para id="fs-id1167793444999"><m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1167793591246">For the following exercises, find the curl of <emphasis effect="bold">F</emphasis> at the given point.</para>
+<exercise id="fs-id1167793591255">
+<problem id="fs-id1167793591257">
+<para id="fs-id1167793591259"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math> at <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793931558">
+<problem id="fs-id1167793931561">
+<para id="fs-id1167793931563"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math> at <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793624642">
+<para id="fs-id1167793624644"><m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>−</m:mo><m:mn>3</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793261850">
+<problem id="fs-id1167793261852">
+<para id="fs-id1167793261854"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>x</m:mi><m:mi>z</m:mi></m:mrow></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>y</m:mi><m:mi>z</m:mi></m:mrow></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math> at (3, 2, 0)</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167794143317">
+<problem id="fs-id1167794143319">
+<para id="fs-id1167794143321"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math> at (1, 2, 1)</para>
+</problem>
+<solution id="fs-id1167793398488">
+<para id="fs-id1167793398491"><m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>2</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>−</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793447639">
+<problem id="fs-id1167793447641">
+<para id="fs-id1167793447643"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math> at (0, 0, 3)</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167794056666">
+<problem id="fs-id1167794124302">
+<para id="fs-id1167794124304">Let <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> For what value of <emphasis effect="italics">a</emphasis> is <emphasis effect="bold">F</emphasis> conservative?</para>
+</problem>
+<solution id="fs-id1167793958638">
+<para id="fs-id1167793958641"><m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793958653">
+<problem id="fs-id1167793958656">
+<para id="fs-id1167793958658">Given vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> on domain <m:math><m:mrow><m:mi>D</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:mfrac><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>∈</m:mo><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup><m:mo>|</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≠</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>}</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> is <emphasis effect="bold">F</emphasis> conservative?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167794199129">
+<problem id="fs-id1167794199131">
+<para id="fs-id1167794199133">Given vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> on domain <m:math><m:mrow><m:mi>D</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> is <emphasis effect="bold">F</emphasis> conservative?</para>
+</problem>
+<solution id="fs-id1167793219680">
+<para id="fs-id1167793219682"><emphasis effect="bold">F</emphasis> is conservative.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793219692">
+<problem id="fs-id1167793219694">
+<para id="fs-id1167793219696">Find the work done by force field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>y</m:mi></m:mrow></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>y</m:mi></m:mrow></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math> in moving an object from <emphasis effect="italics">P</emphasis>(0, 1) to <emphasis effect="italics">Q</emphasis>(2, 0). Is the force field conservative?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167794024141">
+<problem id="fs-id1167794024143">
+<para id="fs-id1167794024145">Compute divergence <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>sinh</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>cosh</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>−</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167793696494">
+<para id="fs-id1167793696496"><m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mtext>cosh</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>sinh</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793696533">
+<problem id="fs-id1167793696535">
+<para id="fs-id1167793696537">Compute curl <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>sinh</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>cosh</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>−</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1167793945652">For the following exercises, consider a rigid body that is rotating about the <emphasis effect="italics">x</emphasis>-axis counterclockwise with constant angular velocity <m:math><m:mrow><m:mi>ω</m:mi><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> If <emphasis effect="italics">P</emphasis> is a point in the body located at <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo>=</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mtext>,</m:mtext></m:mrow></m:math> the velocity at <emphasis effect="italics">P</emphasis> is given by vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mi>ω</m:mi><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+<media id="fs-id1167793480282" alt="A three dimensional diagram of an object rotating about the x axis in a counterclockwise manner with constant angular velocity w = &lt;a,b,c&gt;. The object is roughly a sphere with pointed ends on the x axis, which cuts it in half. An arrow r is drawn from (0,0,0) to P(x,y,z) and down from P(x,y,z) to the x axis.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_05_201.jpg"/>
+</media>
+<exercise id="fs-id1167793480293">
+<problem id="fs-id1167793480295">
+<para id="fs-id1167793480298">Express <emphasis effect="bold">F</emphasis> in terms of <emphasis effect="bold">i</emphasis>, <emphasis effect="bold">j</emphasis>, and <emphasis effect="bold">k</emphasis> vectors.</para>
+</problem>
+<solution id="fs-id1167793662663">
+<para id="fs-id1167793662665"><m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mi>z</m:mi><m:mo>−</m:mo><m:mi>c</m:mi><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>c</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>a</m:mi><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167794101698">
+<problem id="fs-id1167794101700">
+<para id="fs-id1167794101702">Find <m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1167794212788">
+<problem id="fs-id1167794212790">
+<para id="fs-id1167794212792">Find <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1167794212811">
+<para id="fs-id1167794212813"><m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>ω</m:mi></m:mrow></m:math></para>
+</solution>
+</exercise>
+<para id="fs-id1167793501838">In the following exercises, suppose that <m:math><m:mrow><m:mo>∇</m:mo><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mo>∇</m:mo><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<exercise id="fs-id1167793501880">
+<problem id="fs-id1167793501883">
+<para id="fs-id1167793501885">Does <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>+</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle></m:mrow></m:math> necessarily have zero divergence?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167794122868">
+<problem id="fs-id1167794122870">
+<para id="fs-id1167793501905">Does <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle></m:mrow></m:math> necessarily have zero divergence?</para>
+</problem>
+<solution id="fs-id1167793501935">
+<para id="fs-id1167793501937"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle></m:mrow></m:math> does not have zero divergence.</para>
+</solution>
+</exercise>
+<para id="fs-id1167793451689">In the following exercises, suppose a solid object in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup></m:mrow></m:math> has a temperature distribution given by <m:math><m:mrow><m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> The heat flow vector field in the object is <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>k</m:mi><m:mtext>∇</m:mtext><m:mi>T</m:mi><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>k</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math> is a property of the material. The heat flow vector points in the direction opposite to that of the gradient, which is the direction of greatest temperature decrease. The divergence of the heat flow vector is <m:math><m:mrow><m:mo>∇</m:mo><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>k</m:mi><m:mo>∇</m:mo><m:mo>·</m:mo><m:mtext>∇</m:mtext><m:mi>T</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>k</m:mi><m:msup><m:mo>∇</m:mo><m:mn>2</m:mn></m:msup><m:mi>T</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<exercise id="fs-id1167794284451">
+<problem id="fs-id1167794284453">
+<para id="fs-id1167794284455">Compute the heat flow vector field.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167793638510">
+<problem id="fs-id1167793638512">
+<para id="fs-id1167793638514">Compute the divergence.</para>
+</problem>
+<solution id="fs-id1167793638518">
+<para id="fs-id1167793638520"><m:math><m:mrow><m:mo>∇</m:mo><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>−200</m:mn><m:mi>k</m:mi><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1167793469030">
+<problem id="fs-id1167793469032">
+<para id="fs-id1167793469034"><emphasis effect="bold">[T]</emphasis> Consider rotational velocity field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>10</m:mn><m:mi>z</m:mi><m:mo>,</m:mo><m:mn>−10</m:mn><m:mi>y</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> If a paddlewheel is placed in plane <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> with its axis normal to this plane, using a computer algebra system, calculate how fast the paddlewheel spins in revolutions per unit time.</para>
+<media id="fs-id1167793544439" alt="A three dimensional diagram of a rotational velocity field. The arrows are showing a rotation in a clockwise manner. A paddlewheel is shown in plan x + y + z = 1 with n extended out perpendicular to the plane.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_05_202.jpg"/>
+</media>
+</problem>
+</exercise>
+</section>
+ </content>
+<glossary>
+<definition id="fs-id1167793432335">
+<term>curl</term>
+<meaning id="fs-id1167793432340">the curl of vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mo>,</m:mo><m:mi>Q</m:mi><m:mo>,</m:mo><m:mi>R</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> denoted <m:math><m:mrow><m:mo>∇</m:mo><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> is the “determinant” of the matrix <m:math><m:mrow><m:mrow><m:mo>|</m:mo><m:mtable><m:mtr><m:mtd columnalign="center"><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle></m:mtd><m:mtd columnalign="center"><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mtd><m:mtd columnalign="center"><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac></m:mtd><m:mtd columnalign="center"><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac></m:mtd><m:mtd columnalign="center"><m:mfrac><m:mo>∂</m:mo><m:mrow><m:mo>∂</m:mo><m:mi>z</m:mi></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mi>P</m:mi></m:mtd><m:mtd columnalign="center"><m:mi>Q</m:mi></m:mtd><m:mtd columnalign="center"><m:mi>R</m:mi></m:mtd></m:mtr></m:mtable><m:mo>|</m:mo></m:mrow></m:mrow></m:math> and is given by the expression <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mi>y</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>Q</m:mi><m:mi>z</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>P</m:mi><m:mi>z</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>R</m:mi><m:mi>x</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>;</m:mo></m:mrow></m:math> it measures the tendency of particles at a point to rotate about the axis that points in the direction of the curl at the point</meaning>
+</definition>
+<definition id="fs-id1167794267590">
+<term>divergence</term>
+<meaning id="fs-id1167794267595">the divergence of a vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mo>,</m:mo><m:mi>Q</m:mi><m:mo>,</m:mo><m:mi>R</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> denoted <m:math><m:mrow><m:mo>∇</m:mo><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> is <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mi>x</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>Q</m:mi><m:mi>y</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>R</m:mi><m:mi>z</m:mi></m:msub><m:mo>;</m:mo></m:mrow></m:math> it measures the “outflowing-ness” of a vector field</meaning>
+</definition>
+</glossary>
+</document>

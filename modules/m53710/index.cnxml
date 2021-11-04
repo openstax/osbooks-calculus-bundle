@@ -1,0 +1,612 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+<title>The Logistic Equation</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53710</md:content-id>
+  <md:title>The Logistic Equation</md:title>
+  <md:abstract><list>
+<item>Describe the concept of environmental carrying capacity in the logistic model of population growth.</item>
+<item>Draw a direction field for a logistic equation and interpret the solution curves.</item>
+<item>Solve a logistic equation and interpret the results.</item>
+</list></md:abstract>
+  <md:uuid>78cff0a4-afd5-4614-b4a7-0cb0b73d056f</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-id1170572135469">Differential equations can be used to represent the size of a population as it varies over time. We saw this in an earlier chapter in the section on exponential growth and decay, which is the simplest model. A more realistic model includes other factors that affect the growth of the population. In this section, we study the logistic differential equation and see how it applies to the study of population dynamics in the context of biology.</para>
+<section id="fs-id1170572479222">
+<title>Population Growth and Carrying Capacity</title>
+<para id="fs-id1170572173711">To model population growth using a differential equation, we first need to introduce some variables and relevant terms. The variable <m:math><m:mrow><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math> will represent time. The units of time can be hours, days, weeks, months, or even years. Any given problem must specify the units used in that particular problem. The variable <m:math><m:mi>P</m:mi></m:math> will represent population. Since the population varies over time, it is understood to be a function of time. Therefore we use the notation <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> for the population as a function of time. If <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is a differentiable function, then the first derivative <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac></m:mrow></m:math> represents the instantaneous rate of change of the population as a function of time.</para>
+<para id="fs-id1170572134788">In <link document="m53651">Exponential Growth and Decay</link>, we studied the exponential growth and decay of populations and radioactive substances. An example of an exponential growth function is <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math> In this function, <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> represents the population at time <m:math><m:mrow><m:mi>t</m:mi><m:mo>,</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:math> represents the <term>initial population</term> (population at time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> and the constant <m:math><m:mrow><m:mi>r</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math> is called the <term>growth rate</term>. <link target-id="CNX_Calc_Figure_08_04_001"/> shows a graph of <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>100</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.03</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math> Here <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:mn>100</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0.03</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<figure id="CNX_Calc_Figure_08_04_001">
+<media id="fs-id1170572295849" alt="A graph of an exponential function p(t) = 100 e ^ (0.03 t). It is an increasing concave up function starting in quadrant 2, crosses the y axis at (0, 100), and increases in quadrant 1.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_04_001.jpg"/>
+</media>
+<caption>An exponential growth model of population.</caption>
+</figure>
+<para id="fs-id1170571543468">We can verify that the function <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math> satisfies the initial-value problem</para>
+<equation id="fs-id1170572138153" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>P</m:mi><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572101855">This differential equation has an interesting interpretation. The left-hand side represents the rate at which the population increases (or decreases). The right-hand side is equal to a positive constant multiplied by the current population. Therefore the differential equation states that the rate at which the population increases is proportional to the population at that point in time. Furthermore, it states that the constant of proportionality never changes.</para>
+<para id="fs-id1170572267976">One problem with this function is its prediction that as time goes on, the population grows without bound. This is unrealistic in a real-world setting. Various factors limit the rate of growth of a particular population, including birth rate, death rate, food supply, predators, and so on. The growth constant <m:math><m:mi>r</m:mi></m:math> usually takes into consideration the birth and death rates but none of the other factors, and it can be interpreted as a net (birth minus death) percent growth rate per unit time. A natural question to ask is whether the population growth rate stays constant, or whether it changes over time. Biologists have found that in many biological systems, the population grows until a certain steady-state population is reached. This possibility is not taken into account with exponential growth. However, the concept of carrying capacity allows for the possibility that in a given area, only a certain number of a given organism or animal can thrive without running into resource issues.</para>
+<note id="fs-id1170572449281">
+<title>Definition</title>
+<para id="fs-id1170571655666">The <term>carrying capacity</term> of an organism in a given environment is defined to be the maximum population of that organism that the environment can sustain indefinitely.</para>
+</note>
+<para id="fs-id1170572206006">We use the variable <m:math><m:mi>K</m:mi></m:math> to denote the carrying capacity. The growth rate is represented by the variable <m:math><m:mi>r</m:mi><m:mo>.</m:mo></m:math> Using these variables, we can define the logistic differential equation.</para>
+<note id="fs-id1170571656992">
+<title>Definition</title>
+<para id="fs-id1170572217499">Let <m:math><m:mi>K</m:mi></m:math> represent the carrying capacity for a particular organism in a given environment, and let <m:math><m:mi>r</m:mi></m:math> be a real number that represents the growth rate. The function <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> represents the population of this organism as a function of time <m:math><m:mrow><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> and the constant <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:math> represents the initial population (population of the organism at time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> Then the <term>logistic differential equation</term> is</para>
+<equation id="fs-id1170571555572"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>P</m:mi><m:mi>K</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></equation></note>
+<note id="fs-id1170572240367" class="media-2">
+<para id="fs-id1170572421832">See this <link url="http://www.openstax.org/l/20_logisticEq">website</link> for more information on the logistic equation.</para>
+</note>
+<para id="fs-id1170572101733">The logistic equation was first published by Pierre Verhulst in <m:math><m:mrow><m:mn>1845</m:mn><m:mo>.</m:mo></m:mrow></m:math> This differential equation can be coupled with the initial condition <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:math> to form an initial-value problem for <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170572233784">Suppose that the initial population is small relative to the carrying capacity. Then <m:math><m:mrow><m:mfrac><m:mi>P</m:mi><m:mi>K</m:mi></m:mfrac></m:mrow></m:math> is small, possibly close to zero. Thus, the quantity in parentheses on the right-hand side of <link target-id="fs-id1170571555572"/> is close to <m:math><m:mn>1</m:mn><m:mo>,</m:mo></m:math> and the right-hand side of this equation is close to <m:math><m:mrow><m:mi>r</m:mi><m:mi>P</m:mi><m:mo>.</m:mo></m:mrow></m:math> If <m:math><m:mrow><m:mi>r</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> then the population grows rapidly, resembling exponential growth.</para>
+<para id="fs-id1170572169853">However, as the population grows, the ratio <m:math><m:mrow><m:mfrac><m:mi>P</m:mi><m:mi>K</m:mi></m:mfrac></m:mrow></m:math> also grows, because <m:math><m:mi>K</m:mi></m:math> is constant. If the population remains below the carrying capacity, then <m:math><m:mrow><m:mfrac><m:mi>P</m:mi><m:mi>K</m:mi></m:mfrac></m:mrow></m:math> is less than <m:math><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> so <m:math><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>P</m:mi><m:mi>K</m:mi></m:mfrac><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> Therefore the right-hand side of <link target-id="fs-id1170571555572"/> is still positive, but the quantity in parentheses gets smaller, and the growth rate decreases as a result. If <m:math><m:mrow><m:mi>P</m:mi><m:mo>=</m:mo><m:mi>K</m:mi></m:mrow></m:math> then the right-hand side is equal to zero, and the population does not change.</para>
+<para id="fs-id1170572388744">Now suppose that the population starts at a value higher than the carrying capacity. Then <m:math><m:mrow><m:mfrac><m:mi>P</m:mi><m:mi>K</m:mi></m:mfrac><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>P</m:mi><m:mi>K</m:mi></m:mfrac><m:mo>&lt;</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> Then the right-hand side of <link target-id="fs-id1170571555572"/> is negative, and the population decreases. As long as <m:math><m:mrow><m:mi>P</m:mi><m:mo>&gt;</m:mo><m:mi>K</m:mi><m:mo>,</m:mo></m:mrow></m:math> the population decreases. It never actually reaches <m:math><m:mi>K</m:mi></m:math> because <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac></m:mrow></m:math> will get smaller and smaller, but the population approaches the carrying capacity as <m:math><m:mi>t</m:mi></m:math> approaches infinity. This analysis can be represented visually by way of a phase line. A <term>phase line</term> describes the general behavior of a solution to an autonomous differential equation, depending on the initial condition. For the case of a carrying capacity in the logistic equation, the phase line is as shown in <link target-id="CNX_Calc_Figure_08_04_002"/>.</para>
+<figure id="CNX_Calc_Figure_08_04_002">
+<media id="fs-id1170572552192" alt="A diagram of the phase line for the given differential equation. A vertical blue line with arrows on either end has two points marked, at P = K and P = 0, with K &gt; 0. Red arrows point up between 0 and K and down below zero and above K.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_04_006.jpg"/>
+</media>
+<caption>A phase line for the differential equation <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>P</m:mi><m:mi>K</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></caption>
+</figure>
+<para id="fs-id1170572607927">This phase line shows that when <m:math><m:mi>P</m:mi></m:math> is less than zero or greater than <m:math><m:mrow><m:mi>K</m:mi><m:mo>,</m:mo></m:mrow></m:math> the population decreases over time. When <m:math><m:mi>P</m:mi></m:math> is between <m:math><m:mn>0</m:mn></m:math> and <m:math><m:mrow><m:mi>K</m:mi><m:mo>,</m:mo></m:mrow></m:math> the population increases over time.</para>
+<example id="fs-id1170572203846">
+<exercise id="fs-id1170572375702">
+<problem id="fs-id1170572593590">
+<title>Chapter Opener: Examining the Carrying Capacity of a Deer Population</title>
+<figure id="fs-id1165043380726">
+<media id="fs-id1170571777962" alt="This is a photograph of a deer.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_04_008.jpg"/>
+</media>
+<caption>(credit: modification of work by Rachel Kramer, Flickr)</caption>
+</figure>
+<para id="fs-id1170572129022">Let’s consider the population of white-tailed deer (<emphasis effect="italics">Odocoileus virginianus</emphasis>) in the state of Kentucky. The Kentucky Department of Fish and Wildlife Resources (KDFWR) sets guidelines for hunting and fishing in the state. Before the hunting season of <m:math><m:mrow><m:mn>2004</m:mn><m:mo>,</m:mo></m:mrow></m:math> it estimated a population of <m:math><m:mrow><m:mn>900,000</m:mn></m:mrow></m:math> deer. Johnson notes: “A deer population that has plenty to eat and is not hunted by humans or other predators will double every three years.” (George Johnson, “The Problem of Exploding Deer Populations Has No Attractive Solutions,” January <m:math><m:mrow><m:mn>12</m:mn><m:mo>,</m:mo><m:mn>2001</m:mn><m:mo>,</m:mo></m:mrow></m:math> accessed April 9, 2015, http://www.txtwriter.com/onscience/Articles/deerpops.html.) This observation corresponds to a rate of increase <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>0.2311</m:mn><m:mo>,</m:mo></m:mrow></m:math> so the approximate growth rate is <m:math><m:mrow><m:mn>23.11</m:mn><m:mtext>%</m:mtext></m:mrow></m:math> per year<emphasis effect="italics">.</emphasis> (This assumes that the population grows exponentially, which is reasonable––at least in the short term––with plentiful food supply and no predators.) The KDFWR also reports deer population densities for <m:math><m:mrow><m:mn>32</m:mn></m:mrow></m:math> counties in Kentucky, the average of which is approximately <m:math><m:mrow><m:mn>27</m:mn></m:mrow></m:math> deer per square mile. Suppose this is the deer density for the whole state <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>39,732</m:mn></m:mrow></m:math> square miles). The carrying capacity <m:math><m:mi>K</m:mi></m:math> is <m:math><m:mrow><m:mn>39,732</m:mn></m:mrow></m:math> square miles times <m:math><m:mrow><m:mn>27</m:mn></m:mrow></m:math> deer per square mile, or <m:math><m:mrow><m:mn>1,072,764</m:mn></m:mrow></m:math> deer<emphasis effect="italics">.</emphasis></para>
+<list id="fs-id1170572377574" list-type="enumerated" number-style="lower-alpha">
+<item>For this application, we have <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:mn>900,000</m:mn><m:mo>,</m:mo><m:mi>K</m:mi><m:mo>=</m:mo><m:mn>1,072,764</m:mn><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0.2311</m:mn><m:mo>.</m:mo></m:mrow></m:math> Substitute these values into <link target-id="fs-id1170571555572"/> and form the initial-value problem.</item>
+<item>Solve the initial-value problem from part a.</item>
+<item>According to this model, what will be the population in <m:math><m:mn>3</m:mn></m:math> years? Recall that the doubling time predicted by Johnson for the deer population was <m:math><m:mn>3</m:mn></m:math> years. How do these values compare?</item>
+<item>Suppose the population managed to reach <m:math><m:mrow><m:mn>1,200,000</m:mn></m:mrow></m:math> deer. What does the logistic equation predict will happen to the population in this scenario?</item>
+</list>
+</problem>
+<solution id="fs-id1170571637513">
+<list id="fs-id1170572628445" list-type="enumerated" number-style="lower-alpha"><item>The initial value problem is<newline/>
+<m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.2311</m:mn><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>P</m:mi><m:mrow><m:mn>1,072,764</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>900,000.</m:mn></m:mrow></m:math></item>
+<item>The logistic equation is an autonomous differential equation, so we can use the method of separation of variables.<newline/>
+Step 1: Setting the right-hand side equal to zero gives <m:math><m:mrow><m:mi>P</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>P</m:mi><m:mo>=</m:mo><m:mn>1,072,764</m:mn><m:mo>.</m:mo></m:mrow></m:math> This means that if the population starts at zero it will never change, and if it starts at the carrying capacity, it will never change.<newline/>
+Step 2: Rewrite the differential equation and multiply both sides by:<newline/>
+<equation id="fs-id1170572274861" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>0.2311</m:mn><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>1,072,764</m:mn><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mn>1,072,764</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>d</m:mi><m:mi>P</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>0.2311</m:mn><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>1,072,764</m:mn><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mn>1,072,764</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.1em"/><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+Divide both sides by <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1,072,764</m:mn><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>:</m:mtext></m:mrow></m:math><newline/>
+<equation id="fs-id1170572247794" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1,072,764</m:mn><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>0.2311</m:mn></m:mrow><m:mrow><m:mn>1,072,764</m:mn></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Step 3: Integrate both sides of the equation using partial fraction decomposition:<newline/>
+<equation id="fs-id1170572215770" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="true">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1,072,764</m:mn><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="true">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>0.2311</m:mn></m:mrow><m:mrow><m:mn>1,072,764</m:mn></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>1,072,764</m:mn></m:mrow></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="true">∫</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>P</m:mi></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>1,072,764</m:mn><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.1em"/><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow><m:mrow><m:mn>1,072,764</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>C</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>1,072,764</m:mn></m:mrow></m:mfrac><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mi>P</m:mi><m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mn>1,072,764</m:mn><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow><m:mrow><m:mn>1,072,764</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>C</m:mi><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+Step 4: Multiply both sides by <m:math><m:mrow><m:mn>1,072,764</m:mn></m:mrow></m:math> and use the quotient rule for logarithms:<newline/>
+<equation id="fs-id1170572228192" class="unnumbered"><label/><m:math><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mfrac><m:mi>P</m:mi><m:mrow><m:mn>1,072,764</m:mn><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.2311</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Here <m:math><m:mrow><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>1,072,764</m:mn><m:mi>C</m:mi><m:mo>.</m:mo></m:mrow></m:math> Next exponentiate both sides and eliminate the absolute value:<newline/>
+<equation id="fs-id1170572604570" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mfrac><m:mi>P</m:mi><m:mrow><m:mn>1,072,764</m:mn><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mrow><m:mo>|</m:mo><m:mrow><m:mfrac><m:mi>P</m:mi><m:mrow><m:mn>1,072,764</m:mn><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mi>P</m:mi><m:mrow><m:mn>1,072,764</m:mn><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow></m:mfrac></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+Here <m:math><m:mrow><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:msup></m:mrow></m:math> but after eliminating the absolute value, it can be negative as well. Now solve for:<newline/>
+<equation id="fs-id1170571595894" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>P</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1,072,764</m:mn><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>P</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>1,072,764</m:mn><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:mi>P</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>P</m:mi><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:mi>P</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>1,072,764</m:mn><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>1,072,764</m:mn><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mn>1,072,764</m:mn><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+Step 5: To determine the value of <m:math><m:mrow><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:mo>,</m:mo></m:mrow></m:math> it is actually easier to go back a couple of steps to where <m:math><m:mrow><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> was defined. In particular, use the equation<newline/>
+<equation id="fs-id1170572444582" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mi>P</m:mi><m:mrow><m:mn>1,072,764</m:mn><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+The initial condition is <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>900,000</m:mn><m:mo>.</m:mo></m:mrow></m:math> Replace <m:math><m:mi>P</m:mi></m:math> with <m:math><m:mrow><m:mn>900,000</m:mn></m:mrow></m:math> and <m:math><m:mi>t</m:mi></m:math> with zero:<newline/>
+<equation id="fs-id1170572547637" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mi>P</m:mi><m:mrow><m:mn>1,072,764</m:mn><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow></m:mfrac></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mrow><m:mn>900,000</m:mn></m:mrow><m:mrow><m:mn>1,072,764</m:mn><m:mo>−</m:mo><m:mn>900,000</m:mn></m:mrow></m:mfrac></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mrow><m:mn>900,000</m:mn></m:mrow><m:mrow><m:mn>172,764</m:mn></m:mrow></m:mfrac></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mn>25,000</m:mn></m:mrow><m:mrow><m:mn>4,799</m:mn></m:mrow></m:mfrac><m:mo>≈</m:mo><m:mn>5.209</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+Therefore<newline/>
+<equation id="fs-id1170571681024" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1,072,764</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>25000</m:mn></m:mrow><m:mrow><m:mn>4799</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.1em"/><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>25000</m:mn></m:mrow><m:mrow><m:mn>4799</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.1em"/><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1,072,764</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>25000</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>4799</m:mn><m:mo>+</m:mo><m:mn>25000</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+Dividing the numerator and denominator by <m:math><m:mrow><m:mn>25,000</m:mn></m:mrow></m:math> gives<newline/>
+<equation id="fs-id1170572250982" class="unnumbered"><label/><m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1,072,764</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>0.19196</m:mn><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+<link target-id="CNX_Calc_Figure_08_04_004"/> is a graph of this equation.<newline/>
+<figure id="CNX_Calc_Figure_08_04_004">
+<media id="fs-id1170572298993" alt="A graph of a logistic curve for the deer population with an initial population P_0 of 900,000. The graph begins as an increasing concave up function in quadrant two, changes to an increasing concave down function, crosses the x axis at (0, 900,000), and asymptotically approaches P = 1,072,764 as x goes to infinity.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_04_002.jpg"/>
+</media>
+<caption>Logistic curve for the deer population with an initial population of <m:math><m:mrow><m:mn>900,000</m:mn></m:mrow></m:math> deer.</caption>
+</figure>
+</item>
+<item>Using this model we can predict the population in <m:math><m:mn>3</m:mn></m:math> years.<newline/>
+<equation id="fs-id1170571777847" class="unnumbered"><label/><m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1,072,764</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow><m:mrow><m:mn>0.19196</m:mn><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>≈</m:mo><m:mn>978,830</m:mn><m:mspace width="0.2em"/><m:mtext>deer</m:mtext></m:mrow></m:math></equation><newline/>
+This is far short of twice the initial population of <m:math><m:mrow><m:mn>900,000</m:mn><m:mo>.</m:mo></m:mrow></m:math> Remember that the doubling time is based on the assumption that the growth rate never changes, but the logistic model takes this possibility into account.</item>
+<item>If the population reached <m:math><m:mrow><m:mn>1,200,000</m:mn></m:mrow></m:math> deer, then the new initial-value problem would be<newline/>
+<equation id="fs-id1170571813593" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.2311</m:mn><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>P</m:mi><m:mrow><m:mn>1,072,764</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1,200,000.</m:mn></m:mrow></m:math></equation><newline/>
+The general solution to the differential equation would remain the same.<newline/>
+<equation id="fs-id1170571655656" class="unnumbered"><label/><m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1,072,764</m:mn><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:math></equation><newline/>
+To determine the value of the constant, return to the equation<newline/>
+<equation id="fs-id1170571771010" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mi>P</m:mi><m:mrow><m:mn>1,072,764</m:mn><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Substituting the values <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>P</m:mi><m:mo>=</m:mo><m:mn>1,200,000</m:mn><m:mo>,</m:mo></m:mrow></m:math> you get<newline/>
+<equation id="fs-id1170572226824" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mn>1,200,000</m:mn></m:mrow><m:mrow><m:mn>1,072,764</m:mn><m:mo>−</m:mo><m:mn>1,200,000</m:mn></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>100,000</m:mn></m:mrow><m:mrow><m:mn>10,603</m:mn></m:mrow></m:mfrac><m:mo>≈</m:mo><m:mo>−</m:mo><m:mn>9.431</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+Therefore<newline/>
+<equation id="fs-id1170572134608" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1,072,764</m:mn><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1,072,764</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>100,000</m:mn></m:mrow><m:mrow><m:mn>10,603</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.1em"/><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>100,000</m:mn></m:mrow><m:mrow><m:mn>10,603</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.1em"/><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>107,276,400,000</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>100,000</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mn>10,603</m:mn></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>≈</m:mo><m:mfrac><m:mrow><m:mn>10,117,551</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>9.43129</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+This equation is graphed in <link target-id="CNX_Calc_Figure_08_04_005"/>.<newline/>
+<figure id="CNX_Calc_Figure_08_04_005">
+<media id="fs-id1170572479667" alt="A graph of the logistic curve for an initial population of 1,200,000 deer. The graph is a decreasing concave up function which begins in quadrant two, crosses the y axis at (0, 1,200,000), and asymptotically approaches P = 1,072,764 as x goes to infinity.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_04_003.jpg"/>
+</media>
+<caption>Logistic curve for the deer population with an initial population of <m:math><m:mrow><m:mn>1,200,000</m:mn></m:mrow></m:math> deer.</caption>
+</figure>
+</item>
+</list></solution>
+</exercise>
+</example>
+</section>
+<section id="fs-id1170572393398">
+<title>Solving the Logistic Differential Equation</title>
+<para id="fs-id1170571618234">The logistic differential equation is an autonomous differential equation, so we can use separation of variables to find the general solution, as we just did in <link target-id="fs-id1170572203846"/>.</para>
+<para id="fs-id1170571769524">Step 1: Setting the right-hand side equal to zero leads to <m:math><m:mrow><m:mi>P</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>P</m:mi><m:mo>=</m:mo><m:mi>K</m:mi></m:mrow></m:math> as constant solutions. The first solution indicates that when there are no organisms present, the population will never grow. The second solution indicates that when the population starts at the carrying capacity, it will never change.</para>
+<para id="fs-id1170571542396">Step 2: Rewrite the differential equation in the form</para>
+<equation id="fs-id1170571593415" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>r</m:mi><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>K</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572410223">Then multiply both sides by <m:math><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:math> and divide both sides by <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> This leads to</para>
+<equation id="fs-id1170572510106" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>r</m:mi><m:mi>K</m:mi></m:mfrac><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571571798">Multiply both sides of the equation by <m:math><m:mi>K</m:mi></m:math> and integrate:</para>
+<equation id="fs-id1170572231848" class="unnumbered"><label/><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="true">∫</m:mo><m:mrow><m:mfrac><m:mi>K</m:mi><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="true">∫</m:mo><m:mi>r</m:mi></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572337198">The left-hand side of this equation can be integrated using partial fraction decomposition. We leave it to you to verify that</para>
+<equation id="fs-id1170572342835" class="unnumbered"><label/><m:math><m:mrow><m:mfrac><m:mi>K</m:mi><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>P</m:mi></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572211423">Then the equation becomes</para>
+<equation id="fs-id1170572169463" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="true">∫</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>P</m:mi></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow></m:mfrac><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mstyle displaystyle="true"><m:mrow><m:mo>∫</m:mo><m:mrow><m:mi>r</m:mi><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mi>P</m:mi><m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>r</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>C</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mfrac><m:mi>P</m:mi><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>r</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>C</m:mi><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170571615998">Now exponentiate both sides of the equation to eliminate the natural logarithm:</para>
+<equation id="fs-id1170572468509" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>|</m:mo><m:mrow><m:mfrac><m:mi>P</m:mi><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mrow><m:mo>|</m:mo><m:mrow><m:mfrac><m:mi>P</m:mi><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msup><m:mi>e</m:mi><m:mi>C</m:mi></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170571610954">We define <m:math><m:mrow><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>c</m:mi></m:msup></m:mrow></m:math> and, noting that <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mi>K</m:mi><m:mo>,</m:mo><m:mi>P</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:math> and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mi>P</m:mi><m:mo>&lt;</m:mo><m:mi>K</m:mi></m:math>, so that <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mfrac><m:mi>P</m:mi><m:mrow><m:mi>K</m:mi><m:mo>–</m:mo><m:mi>P</m:mi></m:mrow></m:mfrac><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:math> we can drop the absolute value sign, so that the equation becomes</para>
+<equation id="fs-id1170572478804"><m:math><m:mrow><m:mfrac><m:mi>P</m:mi><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572489213">To solve this equation for <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> first multiply both sides by <m:math><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow></m:math> and collect the terms containing <m:math><m:mi>P</m:mi></m:math> on the left-hand side of the equation:</para>
+<equation id="fs-id1170572100061" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>P</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>P</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:mi>K</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:mi>P</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>P</m:mi><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:mi>P</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:mi>K</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170571643113">Next, factor <m:math><m:mi>P</m:mi></m:math> from the left-hand side and divide both sides by the other factor:</para>
+<equation id="fs-id1170572624848"><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:mi>K</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:mi>K</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170572216811">The last step is to determine the value of <m:math><m:mrow><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math> The easiest way to do this is to substitute <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:math> in place of <m:math><m:mi>P</m:mi></m:math> in <link target-id="fs-id1170572478804"/> and solve for <m:math><m:mrow><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:mtext>:</m:mtext></m:mrow></m:math></para>
+<equation id="fs-id1170571637473" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mi>P</m:mi><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:mi>P</m:mi></m:mrow></m:mfrac></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170571543117">Finally, substitute the expression for <m:math><m:mrow><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> into <link target-id="fs-id1170572624848"/>:</para>
+<equation id="fs-id1170572176233" class="unnumbered"><label/><m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:mi>K</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mi>K</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:math></equation>
+<para id="fs-id1170572274967">Now multiply the numerator and denominator of the right-hand side by <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and simplify:</para>
+<equation id="fs-id1170572150636" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mi>K</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mi>K</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>·</m:mo><m:mfrac><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:mi>K</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170572111539">We state this result as a theorem.</para>
+<note id="fs-id1170572135929" class="theorem">
+<title>Solution of the Logistic Differential Equation</title>
+<para id="fs-id1170571728769">Consider the logistic differential equation subject to an initial population of <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:math> with carrying capacity <m:math><m:mi>K</m:mi></m:math> and growth rate <m:math><m:mrow><m:mi>r</m:mi><m:mo>.</m:mo></m:mrow></m:math> The solution to the corresponding initial-value problem is given by</para>
+<equation id="fs-id1170571597871"><m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:mi>K</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation>
+</note>
+<para id="fs-id1170571580249">Now that we have the solution to the initial-value problem, we can choose values for <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:mo>,</m:mo><m:mi>r</m:mi><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mi>K</m:mi></m:math> and study the solution curve. For example, in <link target-id="fs-id1170572203846"/> we used the values <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0.2311</m:mn><m:mo>,</m:mo><m:mi>K</m:mi><m:mo>=</m:mo><m:mn>1,072,764</m:mn><m:mo>,</m:mo></m:mrow></m:math> and an initial population of <m:math><m:mrow><m:mn>900,000</m:mn></m:mrow></m:math> deer. This leads to the solution</para>
+<equation id="fs-id1170572454271" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:mi>K</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>900,000</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1,072,764</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1,072,764</m:mn><m:mo>−</m:mo><m:mn>900,000</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>900,000</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>900,000</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1,072,764</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>172,764</m:mn><m:mo>+</m:mo><m:mn>900,000</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170572506080">Dividing top and bottom by <m:math><m:mrow><m:mn>900,000</m:mn></m:mrow></m:math> gives</para>
+<equation id="fs-id1170572212158" class="unnumbered"><label/><m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1,072,764</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>0.19196</m:mn><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.2311</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170571592911">This is the same as the original solution. The graph of this solution is shown again in blue in <link target-id="CNX_Calc_Figure_08_04_006"/>, superimposed over the graph of the exponential growth model with initial population <m:math><m:mrow><m:mn>900,000</m:mn></m:mrow></m:math> and growth rate <m:math><m:mrow><m:mn>0.2311</m:mn></m:mrow></m:math> (appearing in green). The red dashed line represents the carrying capacity, and is a horizontal asymptote for the solution to the logistic equation.</para>
+<figure id="CNX_Calc_Figure_08_04_006">
+<media id="fs-id1170571681326" alt="A graph showing exponential and logistic growth for the same initial population of 900,000 organisms and growth rate of 23.11%. Both begin in quadrant two close to the x axis as increasing concave up curves. The exponential growth curve continues to grow, passing P = 1,072,764 while still in quadrant two. The logistic growth curve changes concavity, crosses the x axis at P_0 = 900,000, and asymptotically approaches P = 1,072,764.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_04_004.jpg"/>
+</media>
+<caption>A comparison of exponential versus logistic growth for the same initial population of <m:math><m:mrow><m:mn>900,000</m:mn></m:mrow></m:math> organisms and growth rate of <m:math><m:mrow><m:mn>23.11</m:mn><m:mtext>%</m:mtext><m:mo>.</m:mo></m:mrow></m:math></caption>
+</figure>
+<para id="fs-id1170571557196">Working under the assumption that the population grows according to the logistic differential equation, this graph predicts that approximately <m:math><m:mrow><m:mn>20</m:mn></m:mrow></m:math> years earlier <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1984</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> the growth of the population was very close to exponential. The net growth rate at that time would have been around <m:math><m:mrow><m:mn>23.1</m:mn><m:mtext>%</m:mtext></m:mrow></m:math> per year. As time goes on, the two graphs separate. This happens because the population increases, and the logistic differential equation states that the growth rate decreases as the population increases. At the time the population was measured <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2004</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> it was close to carrying capacity, and the population was starting to level off.</para>
+<para id="fs-id1170572626583">The solution to the logistic differential equation has a point of inflection. To find this point, set the second derivative equal to zero:</para>
+<equation id="fs-id1170572307551" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:mi>K</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:msup><m:mi>P</m:mi><m:mo>′</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mi>r</m:mi><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:mi>K</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>P</m:mi><m:mtext>″</m:mtext><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:mi>K</m:mi><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:msup><m:mrow/><m:mn>2</m:mn></m:msup><m:mi>K</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:mi>K</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170571712032">Setting the numerator equal to zero,</para>
+<equation id="fs-id1170572509015" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:mi>K</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572344215">As long as <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:mo>≠</m:mo><m:mi>K</m:mi><m:mo>,</m:mo></m:mrow></m:math> the entire quantity before and including <m:math><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math> is nonzero, so we can divide it out:</para>
+<equation id="fs-id1170572147551" class="unnumbered"><label/><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
+<para id="fs-id1170572236506">Solving for <m:math><m:mi>t</m:mi><m:mo>,</m:mo></m:math></para>
+<equation id="fs-id1170572404260" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>r</m:mi><m:mi>t</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>t</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mn>1</m:mn><m:mi>r</m:mi></m:mfrac><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation>
+<para id="fs-id1170572163756">Notice that if <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:mo>&gt;</m:mo><m:mi>K</m:mi><m:mo>,</m:mo></m:mrow></m:math> then this quantity is undefined, and the graph does not have a point of inflection. In the logistic graph, the point of inflection can be seen as the point where the graph changes from concave up to concave down. This is where the “leveling off” starts to occur, because the net growth rate becomes slower as the population starts to approach the carrying capacity.</para>
+<note id="fs-id1170572330817" class="checkpoint">
+<exercise id="fs-id1170572604603">
+<problem id="fs-id1170572604605">
+<para id="fs-id1170572604607">A population of rabbits in a meadow is observed to be <m:math><m:mrow><m:mn>200</m:mn></m:mrow></m:math> rabbits at time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> After a month, the rabbit population is observed to have increased by <m:math><m:mrow><m:mn>4</m:mn><m:mtext>%</m:mtext><m:mo>.</m:mo></m:mrow></m:math> Using an initial population of <m:math><m:mrow><m:mn>200</m:mn></m:mrow></m:math> and a growth rate of <m:math><m:mrow><m:mn>0.04</m:mn><m:mo>,</m:mo></m:mrow></m:math> with a carrying capacity of <m:math><m:mrow><m:mn>750</m:mn></m:mrow></m:math> rabbits,</para>
+<list id="fs-id1170571638238" list-type="enumerated" number-style="lower-alpha">
+<item>Write the logistic differential equation and initial condition for this model.</item>
+<item>Draw a slope field for this logistic differential equation, and sketch the solution corresponding to an initial population of <m:math><m:mrow><m:mn>200</m:mn></m:mrow></m:math> rabbits.</item>
+<item>Solve the initial-value problem for <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>Use the solution to predict the population after <m:math><m:mn>1</m:mn></m:math> year.</item>
+</list>
+</problem>
+<solution id="fs-id1170572596902">
+<list id="fs-id1170572596904" list-type="enumerated" number-style="lower-alpha">
+<item><para id="fs-id1167024121600"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.04</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>P</m:mi><m:mrow><m:mn>750</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>200</m:mn></m:mrow></m:math></para></item>
+<item><para id="fs-id1167023779503"><newline/>
+<media id="fs-id1170572455347" alt="A direction field with horizontal lines on the x axis and y = 15. The other lines are vertical, except for those curving into the x axis and y = 15. A solution is drawn that crosses the y axis at about (0, 4) and asymptotically approaches y = 15.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_04_005.jpg"/>
+</media></para>
+</item>
+<item><para id="fs-id1167023779524"><m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>3000</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>.04</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>11</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>.04</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para></item>
+<item><para id="fs-id1167023916424">After <m:math><m:mrow><m:mn>12</m:mn></m:mrow></m:math> months, the population will be <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>12</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>278</m:mn></m:mrow></m:math> rabbits.</para></item>
+</list>
+</solution>
+<commentary id="fs-id1170571649916" type="hint">
+<title>Hint</title>
+<para id="fs-id1170572455116">First determine the values of <m:math><m:mrow><m:mi>r</m:mi><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>K</m:mi><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math> Then create the initial-value problem, draw the direction field, and solve the problem.</para>
+</commentary>
+</exercise>
+</note>
+<note id="fs-id1170572222848" class="project">
+<title>Student Project: Logistic Equation with a Threshold Population</title>
+<para id="fs-id1170572180105">An improvement to the logistic model includes a <term>threshold population</term>. The threshold population is defined to be the minimum population that is necessary for the species to survive. We use the variable <m:math><m:mi>T</m:mi></m:math> to represent the threshold population. A differential equation that incorporates both the threshold population <m:math><m:mi>T</m:mi></m:math> and carrying capacity <m:math><m:mi>K</m:mi></m:math> is</para>
+<equation id="fs-id1170571671426"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>r</m:mi><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>P</m:mi><m:mi>K</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>P</m:mi><m:mi>T</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></equation>
+<para id="fs-id1170572540897">where <m:math><m:mi>r</m:mi></m:math> represents the growth rate, as before.</para>
+<list id="fs-id1170572242653" list-type="enumerated" number-style="arabic">
+<item>The threshold population is useful to biologists and can be utilized to determine whether a given species should be placed on the endangered list. A group of Australian researchers say they have determined the threshold population for any species to survive: <m:math><m:mrow><m:mn>5000</m:mn></m:mrow></m:math> adults. (Catherine Clabby, “A Magic Number,” <emphasis effect="italics">American Scientist</emphasis> 98(1): 24, doi:10.1511/2010.82.24. accessed April 9, 2015, http://www.americanscientist.org/issues/pub/a-magic-number). Therefore we use <m:math><m:mrow><m:mi>T</m:mi><m:mo>=</m:mo><m:mn>5000</m:mn></m:mrow></m:math> as the threshold population in this project. Suppose that the environmental carrying capacity in Montana for elk is <m:math><m:mrow><m:mn>25,000</m:mn><m:mo>.</m:mo></m:mrow></m:math> Set up <link target-id="fs-id1170571671426"/> using the carrying capacity of <m:math><m:mrow><m:mn>25,000</m:mn></m:mrow></m:math> and threshold population of <m:math><m:mrow><m:mn>5000</m:mn><m:mo>.</m:mo></m:mrow></m:math> Assume an annual net growth rate of <m:math><m:mrow><m:mn>18</m:mn><m:mtext>%</m:mtext><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>Draw the direction field for the differential equation from step <m:math><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> along with several solutions for different initial populations. What are the constant solutions of the differential equation? What do these solutions correspond to in the original population model (i.e., in a biological context)?</item>
+<item>What is the limiting population for each initial population you chose in step <m:math><m:mn>2</m:mn><m:mo>?</m:mo></m:math> (Hint: use the slope field to see what happens for various initial populations, i.e., look for the horizontal asymptotes of your solutions.)</item>
+<item>This equation can be solved using the method of separation of variables. However, it is very difficult to get the solution as an explicit function of <m:math><m:mrow><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math> Using an initial population of <m:math><m:mrow><m:mn>18,000</m:mn></m:mrow></m:math> elk, solve the initial-value problem and express the solution as an implicit function of <m:math><m:mrow><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> or solve the general initial-value problem, finding a solution in terms of <m:math><m:mrow><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>K</m:mi><m:mo>,</m:mo><m:mi>T</m:mi><m:mo>,</m:mo><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math></item>
+</list>
+</note>
+</section>
+<section id="fs-id1170572311324" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id1170572560614" list-type="bulleted" bullet-style="bullet">
+<item>When studying population functions, different assumptions—such as exponential growth, logistic growth, or threshold population—lead to different rates of growth.</item>
+<item>The logistic differential equation incorporates the concept of a carrying capacity. This value is a limiting value on the population for any given environment.</item>
+<item>The logistic differential equation can be solved for any positive growth rate, initial population, and carrying capacity.</item>
+</list>
+</section>
+<section id="fs-id1170571598181" class="key-equations">
+<title>Key Equations</title>
+<table id="eip-518" summary="." class="unnumbered unstyled">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><emphasis effect="bold">Logistic differential equation and initial-value problem</emphasis></entry>
+    <entry><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>P</m:mi><m:mi>K</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry><emphasis effect="bold">Solution to the logistic differential equation/initial-value problem</emphasis></entry>
+    <entry><m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:mi>K</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:math></entry>
+  </row>
+  <row>
+    <entry><emphasis effect="bold">Threshold population model</emphasis></entry>
+    <entry><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>r</m:mi><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>P</m:mi><m:mi>K</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>P</m:mi><m:mi>T</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</section>
+<section id="fs-id1170572245934" class="section-exercises">
+<para id="fs-id1170572304996">For the following problems, consider the logistic equation in the form <m:math><m:mrow><m:mi>P</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mi>C</m:mi><m:mi>P</m:mi><m:mo>−</m:mo><m:msup><m:mi>P</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> Draw the directional field and find the stability of the equilibria.</para>
+<exercise id="fs-id1170572452453">
+<problem id="fs-id1170572452455">
+<para id="fs-id1170571777931"><m:math><m:mrow><m:mi>C</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572547893">
+<problem id="fs-id1170572547895">
+<para id="fs-id1170572094346"><m:math><m:mrow><m:mi>C</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572130073"><para id="fs-id1170572130074"><newline/>
+<media id="fs-id1170572130077" alt="A direction field with arrows pointing to the right. The arrows are horizontal along the x axis. The arrows point down above the x axis and below the x axis. The further away the arrows are from the x axis, the more vertical the lines become.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_04_202.jpg"/>
+</media><newline/>
+<m:math><m:mrow><m:mi>P</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> semi-stable</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572505465">
+<problem id="fs-id1170572505467">
+<para id="fs-id1170572505470"><m:math><m:mrow><m:mi>C</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572480690">
+<problem id="fs-id1170572480692">
+<para id="fs-id1170571602164">Solve the logistic equation for <m:math><m:mrow><m:mi>C</m:mi><m:mo>=</m:mo><m:mn>10</m:mn></m:mrow></m:math> and an initial condition of <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572484953">
+<para id="fs-id1170571637179"><m:math><m:mrow><m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>10</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>10</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>10</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571807840">
+<problem id="fs-id1170571771111">
+<para id="fs-id1170571771113">Solve the logistic equation for <m:math><m:mrow><m:mi>C</m:mi><m:mo>=</m:mo><m:mn>−10</m:mn></m:mrow></m:math> and an initial condition of <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571775807">
+<problem id="fs-id1170571775809">
+<para id="fs-id1170571775811">A population of deer inside a park has a carrying capacity of <m:math><m:mrow><m:mn>200</m:mn></m:mrow></m:math> and a growth rate of <m:math><m:mrow><m:mn>2</m:mn><m:mtext>%</m:mtext><m:mo>.</m:mo></m:mrow></m:math> If the initial population is <m:math><m:mrow><m:mn>50</m:mn></m:mrow></m:math> deer, what is the population of deer at any given time?</para>
+</problem>
+<solution id="fs-id1170571554726">
+<para id="fs-id1170571680855"><m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>10000</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.02</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>150</m:mn><m:mo>+</m:mo><m:mn>50</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.02</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571612329">
+<problem id="fs-id1170571612331">
+<para id="fs-id1170572225093">A population of frogs in a pond has a growth rate of <m:math><m:mrow><m:mn>5</m:mn><m:mtext>%</m:mtext><m:mo>.</m:mo></m:mrow></m:math> If the initial population is <m:math><m:mrow><m:mn>1000</m:mn></m:mrow></m:math> frogs and the carrying capacity is <m:math><m:mrow><m:mn>6000</m:mn><m:mo>,</m:mo></m:mrow></m:math> what is the population of frogs at any given time?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571558918">
+<problem id="fs-id1170571586873">
+<para id="fs-id1170571586875"><emphasis effect="bold">[T]</emphasis> Bacteria grow at a rate of <m:math><m:mrow><m:mn>20</m:mn><m:mtext>%</m:mtext></m:mrow></m:math> per hour in a petri dish. If there is initially one bacterium and a carrying capacity of <m:math><m:mn>1</m:mn></m:math> million cells, how long does it take to reach <m:math><m:mrow><m:mn>500,000</m:mn></m:mrow></m:math> cells?</para>
+</problem>
+<solution id="fs-id1170572228560">
+<para id="fs-id1170572498710"><m:math><m:mrow><m:mn>69</m:mn></m:mrow></m:math> hours <m:math><m:mn>5</m:mn></m:math> minutes</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572222301">
+<problem id="fs-id1170572222304">
+<para id="fs-id1170572222306"><emphasis effect="bold">[T]</emphasis> Rabbits in a park have an initial population of <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> and grow at a rate of <m:math><m:mrow><m:mn>4</m:mn><m:mtext>%</m:mtext></m:mrow></m:math> per year. If the carrying capacity is <m:math><m:mrow><m:mn>500</m:mn><m:mo>,</m:mo></m:mrow></m:math> at what time does the population reach <m:math><m:mrow><m:mn>100</m:mn></m:mrow></m:math> rabbits?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572420405">
+<problem id="fs-id1170572216489">
+<para id="fs-id1170572216491"><emphasis effect="bold">[T]</emphasis> Two monkeys are placed on an island. After <m:math><m:mn>5</m:mn></m:math> years, there are <m:math><m:mn>8</m:mn></m:math> monkeys, and the estimated carrying capacity is <m:math><m:mrow><m:mn>25</m:mn></m:mrow></m:math> monkeys. When does the population of monkeys reach <m:math><m:mrow><m:mn>16</m:mn></m:mrow></m:math> monkeys?</para>
+</problem>
+<solution id="fs-id1170572234103">
+<para id="fs-id1170571597581"><m:math><m:mn>8</m:mn></m:math> years <m:math><m:mn>11</m:mn></m:math> months</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572479560">
+<problem id="fs-id1170572479562">
+<para id="fs-id1170572479564"><emphasis effect="bold">[T]</emphasis> A butterfly sanctuary is built that can hold <m:math><m:mrow><m:mn>2000</m:mn></m:mrow></m:math> butterflies, and <m:math><m:mrow><m:mn>400</m:mn></m:mrow></m:math> butterflies are initially moved in. If after <m:math><m:mn>2</m:mn></m:math> months there are now <m:math><m:mrow><m:mn>800</m:mn></m:mrow></m:math> butterflies, when does the population get to <m:math><m:mrow><m:mn>1500</m:mn></m:mrow></m:math> butterflies?</para>
+</problem>
+</exercise>
+<para id="fs-id1170571822099">The following problems consider the logistic equation with an added term for depletion, either through death or emigration.</para>
+<exercise id="fs-id1170571698875">
+<problem id="fs-id1170571698877">
+<para id="fs-id1170571698879"><emphasis effect="bold">[T]</emphasis> The population of trout in a pond is given by <m:math><m:mrow><m:mi>P</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mn>0.4</m:mn><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>P</m:mi><m:mrow><m:mn>10000</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>400</m:mn><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mn>400</m:mn></m:mrow></m:math> trout are caught per year. Use your calculator or computer software to draw a directional field and draw a few sample solutions. What do you expect for the behavior?</para>
+</problem>
+<solution id="fs-id1170571637431"><para id="fs-id1170571637432"><newline/>
+<media id="fs-id1170571641840" alt="A direction field with arrows down for P &lt; 1,000, pointing up for 1,000 &lt; P &lt; 8,500, and pointing down for P &gt; 8,500. Right above P = 8,500, the arrows point down and to the right.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_04_204.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572206108">
+<problem id="fs-id1170572206110">
+<para id="fs-id1170572305097">In the preceding problem, what are the stabilities of the equilibria <m:math><m:mrow><m:mn>0</m:mn><m:mo>&lt;</m:mo><m:msub><m:mi>P</m:mi><m:mn>1</m:mn></m:msub><m:mo>&lt;</m:mo><m:msub><m:mi>P</m:mi><m:mn>2</m:mn></m:msub><m:mo>?</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572601342">
+<problem id="fs-id1170571780639">
+<para id="fs-id1170571780641"><emphasis effect="bold">[T]</emphasis> For the preceding problem, use software to generate a directional field for the value <m:math><m:mrow><m:mi>f</m:mi><m:mo>=</m:mo><m:mn>400</m:mn><m:mo>.</m:mo></m:mrow></m:math> What are the stabilities of the equilibria?</para>
+</problem>
+<solution id="fs-id1170572481029"><para id="fs-id1170572481030"><newline/>
+<media id="fs-id1170572342242" alt="A direction field with arrows pointing down and to the right. Around y = 4,000, the arrows are more horizontal. The further the arrows are from this line, the more vertical the arrows become.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_04_205.jpg"/>
+</media><newline/>
+<m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> semi-stable</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572217697">
+<problem id="fs-id1170572217699">
+<para id="fs-id1170572205077"><emphasis effect="bold">[T]</emphasis> For the preceding problems, use software to generate a directional field for the value <m:math><m:mrow><m:mi>f</m:mi><m:mo>=</m:mo><m:mn>600</m:mn><m:mo>.</m:mo></m:mrow></m:math> What are the stabilities of the equilibria?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571599486">
+<problem id="fs-id1170571599488">
+<para id="fs-id1170572228848"><emphasis effect="bold">[T]</emphasis> For the preceding problems, consider the case where a certain number of fish are added to the pond, or <m:math><m:mrow><m:mi>f</m:mi><m:mo>=</m:mo><m:mn>−200</m:mn><m:mo>.</m:mo></m:mrow></m:math> What are the nonnegative equilibria and their stabilities?</para>
+</problem>
+<solution id="fs-id1170572454229"><para id="fs-id1170572454230"><newline/>
+<media id="fs-id1170571599564" alt="A direction field with arrows pointing up for P &lt; 10,000 and arrows pointing down for P &gt; 10,000.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_04_207.jpg"/>
+</media><newline/>
+<m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>2</m:mn></m:msub><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math> stable</para>
+</solution>
+</exercise>
+<para id="fs-id1170572177641">It is more likely that the amount of fishing is governed by the current number of fish present, so instead of a constant number of fish being caught, the rate is proportional to the current number of fish present, with proportionality constant <m:math><m:mrow><m:mi>k</m:mi><m:mo>,</m:mo></m:mrow></m:math> as</para>
+<para id="fs-id1170572332924"><m:math><m:mrow><m:mi>P</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mn>0.4</m:mn><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>P</m:mi><m:mrow><m:mn>10000</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mi>k</m:mi><m:mi>P</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<exercise id="fs-id1170572388176">
+<problem id="fs-id1170572388178">
+<para id="fs-id1170572448299"><emphasis effect="bold">[T]</emphasis> For the previous fishing problem, draw a directional field assuming <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0.1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Draw some solutions that exhibit this behavior. What are the equilibria and what are their stabilities?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572554552">
+<problem id="fs-id1170572554554">
+<para id="fs-id1170572554556"><emphasis effect="bold">[T]</emphasis> Use software or a calculator to draw directional fields for <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0.4</m:mn><m:mo>.</m:mo></m:mrow></m:math> What are the nonnegative equilibria and their stabilities?</para>
+</problem>
+<solution id="fs-id1170571637085"><para id="fs-id1170571637086"><newline/>
+<media id="fs-id1170571637089" alt="A direction field with arrows pointing to the right at P = 0. Below 0, the arrows point down and to the right. Above 0, the arrows point down and to the right. The further away from 0, the more vertical the arrows become.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_04_208.jpg"/>
+</media><newline/>
+<m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> is semi-stable</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572440081">
+<problem id="fs-id1170572440083">
+<para id="fs-id1170572242789"><emphasis effect="bold">[T]</emphasis> Use software or a calculator to draw directional fields for <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0.6</m:mn><m:mo>.</m:mo></m:mrow></m:math> What are the equilibria and their stabilities?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571592872">
+<problem id="fs-id1170571592875">
+<para id="fs-id1170572169554">Solve this equation, assuming a value of <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:mrow></m:math> and an initial condition of <m:math><m:mrow><m:mn>2000</m:mn></m:mrow></m:math> fish.</para>
+</problem>
+<solution id="fs-id1170571616654">
+<para id="fs-id1170571616656"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>−20</m:mn></m:mrow><m:mrow><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−6</m:mn></m:mrow></m:msup><m:mo>−</m:mo><m:mn>0.002</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.01</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571621575">
+<problem id="fs-id1170572512575">
+<para id="fs-id1170572512577">Solve this equation, assuming a value of <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:mrow></m:math> and an initial condition of <m:math><m:mrow><m:mn>5000</m:mn></m:mrow></m:math> fish.</para>
+</problem>
+</exercise>
+<para id="fs-id1170572338444">The following problems add in a minimal threshold value for the species to survive, <m:math><m:mrow><m:mi>T</m:mi><m:mo>,</m:mo></m:mrow></m:math> which changes the differential equation to <m:math><m:mrow><m:mi>P</m:mi><m:mo>′</m:mo><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>P</m:mi><m:mi>K</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>T</m:mi><m:mi>P</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<exercise id="fs-id1170572455069">
+<problem id="fs-id1170572455071">
+<para id="fs-id1170572242017">Draw the directional field of the threshold logistic equation, assuming <m:math><m:mrow><m:mi>K</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0.1</m:mn><m:mo>,</m:mo><m:mi>T</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math> When does the population survive? When does it go extinct?</para>
+</problem>
+<solution id="fs-id1170572309901"><para id="fs-id1170572309902"><newline/>
+<media id="fs-id1170571655991" alt="A direction field with arrows pointing horizontally to the right along y = 2 and y = 10. For P &lt; 2, the arrows point down and to the right. For 2 &lt; P &lt; 10, the arrows point up and to the right. For P &gt; 10, the arrows point down and to the right. The further the arrows are from 2 and 10, the steeper they become, and the closer they are from 2 and 10, the more horizontal the arrows become.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_04_210.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572540852">
+<problem id="fs-id1170572540854">
+<para id="fs-id1170572293378">For the preceding problem, solve the logistic threshold equation, assuming the initial condition <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571609179">
+<problem id="fs-id1170571609181">
+<para id="fs-id1170572397302">Bengal tigers in a conservation park have a carrying capacity of <m:math><m:mrow><m:mn>100</m:mn></m:mrow></m:math> and need a minimum of <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> to survive. If they grow in population at a rate of <m:math><m:mrow><m:mn>1</m:mn><m:mtext>%</m:mtext></m:mrow></m:math> per year, with an initial population of <m:math><m:mrow><m:mn>15</m:mn></m:mrow></m:math> tigers, solve for the number of tigers present.</para>
+</problem>
+<solution id="fs-id1170571688155">
+<para id="fs-id1170571688158"><m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>850</m:mn><m:mo>+</m:mo><m:mn>500</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.009</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>85</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.009</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572593883">
+<problem id="fs-id1170572181064">
+<para id="fs-id1170572181066">A forest containing ring-tailed lemurs in Madagascar has the potential to support <m:math><m:mrow><m:mn>5000</m:mn></m:mrow></m:math> individuals, and the lemur population grows at a rate of <m:math><m:mrow><m:mn>5</m:mn><m:mtext>%</m:mtext></m:mrow></m:math> per year. A minimum of <m:math><m:mrow><m:mn>500</m:mn></m:mrow></m:math> individuals is needed for the lemurs to survive. Given an initial population of <m:math><m:mrow><m:mn>600</m:mn></m:mrow></m:math> lemurs, solve for the population of lemurs.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571532520">
+<problem id="fs-id1170571532522">
+<para id="fs-id1170571532524">The population of mountain lions in Northern Arizona has an estimated carrying capacity of <m:math><m:mrow><m:mn>250</m:mn></m:mrow></m:math> and grows at a rate of <m:math><m:mrow><m:mn>0.25</m:mn><m:mtext>%</m:mtext></m:mrow></m:math> per year and there must be <m:math><m:mrow><m:mn>25</m:mn></m:mrow></m:math> for the population to survive. With an initial population of <m:math><m:mrow><m:mn>30</m:mn></m:mrow></m:math> mountain lions, how many years will it take to get the mountain lions off the endangered species list (at least <m:math><m:mrow><m:mn>100</m:mn><m:mo stretchy="false">)</m:mo><m:mo>?</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170571712743">
+<para id="fs-id1170572134310"><m:math><m:mrow><m:mn>13</m:mn></m:mrow></m:math> years months</para>
+</solution>
+</exercise>
+<para id="fs-id1170572448515">The following questions consider the <term class="no-emphasis">Gompertz equation</term>, a modification for logistic growth, which is often used for modeling cancer growth, specifically the number of tumor cells.</para>
+<exercise id="fs-id1170572592083">
+<problem id="fs-id1170572592086">
+<para id="fs-id1170572592088">The Gompertz equation is given by <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>′</m:mo><m:mo>=</m:mo><m:mi>α</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>K</m:mi><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Draw the directional fields for this equation assuming all parameters are positive, and given that <m:math><m:mrow><m:mi>K</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572089817">
+<problem id="fs-id1170572089819">
+<para id="fs-id1170571690901">Assume that for a population, <m:math><m:mrow><m:mi>K</m:mi><m:mo>=</m:mo><m:mn>1000</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn><m:mo>.</m:mo></m:mrow></m:math> Draw the directional field associated with this differential equation and draw a few solutions. What is the behavior of the population?</para>
+</problem>
+<solution id="fs-id1170572610940"><para id="fs-id1170572610941"><newline/>
+<media id="fs-id1170572618275" alt="A direction field with arrows pointing down and to the right for P &lt; 0, up for 0 &lt; P &lt; 1,000, and down for P &gt; 1,000. The further the arrows are from P = 0 and P = 1,000, the more vertical they become, and the closer they are, the more horizontal they are.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_04_212.jpg"/>
+</media></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572451566">
+<problem id="fs-id1170572451568">
+<para id="fs-id1170572451570">Solve the Gompertz equation for generic <m:math><m:mi>α</m:mi></m:math> and <m:math><m:mi>K</m:mi></m:math> and <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572505424">
+<problem id="fs-id1170572505426">
+<para id="fs-id1170572505428"><emphasis effect="bold">[T]</emphasis> The Gompertz equation has been used to model tumor growth in the human body. Starting from one tumor cell on day <m:math><m:mn>1</m:mn></m:math> and assuming <m:math><m:mrow><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.1</m:mn></m:mrow></m:math> and a carrying capacity of <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> million cells, how long does it take to reach “detection” stage at <m:math><m:mn>5</m:mn></m:math> million cells?</para>
+</problem>
+<solution id="fs-id1170572211028">
+<para id="fs-id1170571591378"><m:math><m:mrow><m:mn>31.465</m:mn></m:mrow></m:math> days</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571563225">
+<problem id="fs-id1170571563227">
+<para id="fs-id1170571563229"><emphasis effect="bold">[T]</emphasis> It is estimated that the world human population reached <m:math><m:mn>3</m:mn></m:math> billion people in <m:math><m:mrow><m:mn>1959</m:mn></m:mrow></m:math> and <m:math><m:mn>6</m:mn></m:math> billion in <m:math><m:mrow><m:mn>1999</m:mn><m:mo>.</m:mo></m:mrow></m:math> Assuming a carrying capacity of <m:math><m:mrow><m:mn>16</m:mn></m:mrow></m:math> billion humans, write and solve the differential equation for logistic growth, and determine what year the population reached <m:math><m:mn>7</m:mn></m:math> billion.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571704355">
+<problem id="fs-id1170571655341">
+<para id="fs-id1170571655343"><emphasis effect="bold">[T]</emphasis> It is estimated that the world human population reached <m:math><m:mn>3</m:mn></m:math> billion people in <m:math><m:mrow><m:mn>1959</m:mn></m:mrow></m:math> and <m:math><m:mn>6</m:mn></m:math> billion in <m:math><m:mrow><m:mn>1999</m:mn><m:mo>.</m:mo></m:mrow></m:math> Assuming a carrying capacity of <m:math><m:mrow><m:mn>16</m:mn></m:mrow></m:math> billion humans, write and solve the differential equation for Gompertz growth, and determine what year the population reached <m:math><m:mn>7</m:mn></m:math> billion. Was logistic growth or Gompertz growth more accurate, considering world population reached <m:math><m:mn>7</m:mn></m:math> billion on October <m:math><m:mrow><m:mn>31</m:mn><m:mo>,</m:mo><m:mn>2011</m:mn><m:mo>?</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170571618996">
+<para id="fs-id1170571597413">September <m:math><m:mrow><m:mn>2008</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170572455751">
+<problem id="fs-id1170572455754">
+<para id="fs-id1170572455756">Show that the population grows fastest when it reaches half the carrying capacity for the logistic equation <m:math><m:mrow><m:mi>P</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>P</m:mi><m:mi>K</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571557226">
+<problem id="fs-id1170571557228">
+<para id="fs-id1170571557230">When does population increase the fastest in the threshold logistic equation <m:math><m:mrow><m:mi>P</m:mi><m:mo>′</m:mo><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>P</m:mi><m:mi>K</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>T</m:mi><m:mi>P</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>?</m:mo></m:mrow></m:math></para>
+</problem>
+<solution id="fs-id1170572522328">
+<para id="fs-id1170571572977"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>K</m:mi><m:mo>+</m:mo><m:mi>T</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571598386">
+<problem id="fs-id1170572337035">
+<para id="fs-id1170572337037">When does population increase the fastest for the Gompertz equation <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>′</m:mo><m:mo>=</m:mo><m:mi>α</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>K</m:mi><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>?</m:mo></m:mrow></m:math></para>
+</problem>
+</exercise>
+<para id="fs-id1170572207324">Below is a table of the populations of whooping cranes in the wild from <m:math><m:mrow><m:mn>1940</m:mn><m:mspace width="0.2em"/><m:mtext>to</m:mtext><m:mspace width="0.2em"/><m:mn>2000</m:mn><m:mo>.</m:mo></m:mrow></m:math> The population rebounded from near extinction after conservation efforts began. The following problems consider applying population models to fit the data. Assume a carrying capacity of <m:math><m:mrow><m:mn>10,000</m:mn></m:mrow></m:math> cranes. Fit the data assuming years since <m:math><m:mrow><m:mn>1940</m:mn></m:mrow></m:math> (so your initial population at time <m:math><m:mn>0</m:mn></m:math> would be <m:math><m:mrow><m:mn>22</m:mn></m:mrow></m:math> cranes).</para>
+<table id="fs-id1170571715330" class="unnumbered" summary="A table with eight rows and two columns. The first column has the label “Year (years since conservation began)” and values 1940 (0), 1950 (10), and so on to 2000 (60), increasingly by 10. The second column has the label “Whooping Crane Population” and the values 22, 31, 36, 57, 91, 159, and 256">
+<label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead>
+<row valign="top">
+<entry align="left">Year (years since conservation began)</entry>
+<entry align="left">Whooping Crane Population</entry>
+</row>
+</thead>
+<tbody>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mn>1940</m:mn><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mn>22</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mn>1950</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>10</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mn>31</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mn>1960</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>20</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mn>36</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mn>1970</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>30</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mn>57</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mn>1980</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>40</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mn>91</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mn>1990</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>50</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mn>159</m:mn></m:mrow></m:math></entry>
+</row>
+<row valign="top">
+<entry align="left"><m:math><m:mrow><m:mn>2000</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>60</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mn>256</m:mn></m:mrow></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+<caption><emphasis effect="italics">Source:</emphasis> https://www.savingcranes.org/images/stories/site_images/conservation/whooping_crane/pdfs/historic_wc_numbers.pdf</caption>
+</table>
+<exercise id="fs-id1170572468867">
+<problem id="fs-id1170572468869">
+<para id="fs-id1170572468871">Find the equation and parameter <m:math><m:mi>r</m:mi></m:math> that best fit the data for the logistic equation.</para>
+</problem>
+<solution id="fs-id1170571758349">
+<para id="fs-id1170571758351"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0.0405</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571699409">
+<problem id="fs-id1170571699411">
+<para id="fs-id1170571699413">Find the equation and parameters <m:math><m:mi>r</m:mi></m:math> and <m:math><m:mi>T</m:mi></m:math> that best fit the data for the threshold logistic equation.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170571769920">
+<problem id="fs-id1170571638181">
+<para id="fs-id1170571638183">Find the equation and parameter <m:math><m:mi>α</m:mi></m:math> that best fit the data for the Gompertz equation.</para>
+</problem>
+<solution id="fs-id1170572563886">
+<para id="fs-id1170572563888"><m:math><m:mrow><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.0081</m:mn></m:mrow></m:math></para>
+</solution>
+</exercise>
+<exercise id="fs-id1170571637502">
+<problem id="fs-id1170571637504">
+<para id="fs-id1170571637506">Graph all three solutions and the data on the same graph. Which model appears to be most accurate?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1170572242197">
+<problem id="fs-id1170572410183">
+<para id="fs-id1170572410185">Using the three equations found in the previous problems, estimate the population in <m:math><m:mrow><m:mn>2010</m:mn></m:mrow></m:math> (year <m:math><m:mrow><m:mn>70</m:mn></m:mrow></m:math> after conservation). The real population measured at that time was <m:math><m:mrow><m:mn>437</m:mn><m:mo>.</m:mo></m:mrow></m:math> Which model is most accurate?</para>
+</problem>
+<solution id="fs-id1170571814022">
+<para id="fs-id1170571814024">Logistic: <m:math><m:mrow><m:mn>361</m:mn><m:mo>,</m:mo></m:mrow></m:math> Threshold: <m:math><m:mrow><m:mn>436</m:mn><m:mo>,</m:mo></m:mrow></m:math> Gompertz: <m:math><m:mrow><m:mn>309</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+</solution>
+</exercise>
+</section>
+ </content>
+<glossary>
+<definition id="fs-id1170572147813">
+<term>carrying capacity</term>
+<meaning id="fs-id1170572351566">the maximum population of an organism that the environment can sustain indefinitely</meaning>
+</definition>
+<definition id="fs-id1170572351570">
+<term>growth rate</term>
+<meaning id="fs-id1170572351576">the constant <m:math><m:mrow><m:mi>r</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math> in the exponential growth function <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>P</m:mi><m:mn>0</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>r</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math></meaning>
+</definition>
+<definition id="fs-id1170572290475">
+<term>initial population</term>
+<meaning id="fs-id1170572290480">the population at time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></meaning>
+</definition>
+<definition id="fs-id1170571688565">
+<term>logistic differential equation</term>
+<meaning id="fs-id1170572624812">a differential equation that incorporates the carrying capacity <m:math><m:mi>K</m:mi></m:math> and growth rate <m:math><m:mi>r</m:mi></m:math> into a population model</meaning>
+</definition>
+<definition id="fs-id1170572379509">
+<term>phase line</term>
+<meaning id="fs-id1170572379514">a visual representation of the behavior of solutions to an autonomous differential equation subject to various initial conditions</meaning>
+</definition>
+<definition id="fs-id1170572379519">
+<term>threshold population</term>
+<meaning id="fs-id1170571638272">the minimum population that is necessary for a species to survive</meaning>
+</definition>
+</glossary>
+</document>

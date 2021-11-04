@@ -1,0 +1,20 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" class="introduction">
+<title>Introduction</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53760</md:content-id>
+  <md:title>Introduction</md:title>
+  <md:abstract/>
+  <md:uuid>fa3b6d19-d93e-42e0-941e-ea59d67759d7</md:uuid>
+</metadata>
+
+<content>
+<figure id="CNX_Calc_Figure_10_00_001" class="splash">
+<media id="fs-id1170572482032" alt="A photograph shows a flat surface covered with $100 bills.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_10_00_001.jpg"/>
+</media>
+<caption>If you win a lottery, do you get more money by taking a lump-sum payment or by accepting fixed payments over time? (credit: modification of work by Robert Huffstutter, Flickr)</caption>
+</figure>
+<para id="fs-id1170571601980">When winning a lottery, sometimes an individual has an option of receiving winnings in one lump-sum payment or receiving smaller payments over fixed time intervals. For example, you might have the option of receiving 20 million dollars today or receiving 1.5 million dollars each year for the next 20 years. Which is the better deal? Certainly 1.5 million dollars over 20 years is equivalent to 30 million dollars. However, receiving the 20 million dollars today would allow you to invest the money.</para>
+<para id="fs-id1170572558771">Alternatively, what if you were guaranteed to receive 1 million dollars every year indefinitely (extending to your heirs) or receive 20 million dollars today. Which would be the better deal? To answer these questions, you need to know how to use infinite series to calculate the value of periodic payments over time in terms of today’s dollars (see <link document="m53762" target-id="fs-id1167023711689"/>).</para><para id="fs-id1170571811695">An infinite series of the form <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>c</m:mi><m:mi>n</m:mi></m:msub><m:msup><m:mi>x</m:mi><m:mi>n</m:mi></m:msup></m:mrow></m:mstyle></m:mrow></m:math> is known as a power series. Since the terms contain the variable x, power series can be used to define functions. They can be used to represent given functions, but they are also important because they allow us to write functions that cannot be expressed any other way than as “infinite polynomials.” In addition, power series can be easily differentiated and integrated, thus being useful in solving differential equations and integrating complicated functions. An infinite series can also be truncated, resulting in a finite polynomial that we can use to approximate functional values. Power series have applications in a variety of fields, including physics, chemistry, biology, and economics. As we will see in this chapter, representing functions using power series allows us to solve mathematical problems that cannot be solved with other techniques.</para>
+ </content>
+</document>

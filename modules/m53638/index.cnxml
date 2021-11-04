@@ -1,0 +1,21 @@
+<document xmlns="http://cnx.rice.edu/cnxml" class="introduction">
+
+<title>Introduction</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53638</md:content-id>
+  <md:title>Introduction</md:title>
+  <md:abstract/>
+  <md:uuid>0e9b28ca-f080-4d11-add1-28820fd7b281</md:uuid>
+</metadata>
+
+<content>
+<figure id="CNX_Calc_Figure_06_00_001" class="splash">
+<media id="fs-id1167794069403" alt="This is a picture of the Hoover Dam. The picture has the dam in the background and flowing water in the foreground below the dam.">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_06_00_001.jpg"/>
+</media>
+<caption>Hoover Dam is one of the United States’ iconic landmarks, and provides irrigation and hydroelectric power for millions of people in the southwest United States. (credit: modification of work by Lynn Betts, Wikimedia)</caption>
+</figure>
+<para id="fs-id1167793372187">The Hoover Dam is an engineering marvel. When Lake Mead, the reservoir behind the dam, is full, the dam withstands a great deal of force. However, water levels in the lake vary considerably as a result of droughts and varying water demands. Later in this chapter, we use definite integrals to calculate the force exerted on the dam when the reservoir is full and we examine how changing water levels affect that force (see <link document="m53648" target-id="fs-id1167793421214"/>).</para>
+<para id="fs-id1167794035470">Hydrostatic force is only one of the many applications of definite integrals we explore in this chapter. From geometric applications such as surface area and volume, to physical applications such as mass and work, to growth and decay models, definite integrals are a powerful tool to help us understand and model the world around us.</para>
+   </content>
+</document>
