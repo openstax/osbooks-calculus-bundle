@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m53636</md:content-id>
   <md:title>Integrals Resulting in Inverse Trigonometric Functions</md:title>
-  <md:abstract><list>
+  <md:abstract><list id="list-00001">
 <item>Integrate functions resulting in inverse trigonometric functions</item>
 </list></md:abstract>
   <md:uuid>100d4b89-50fd-47f5-b530-99221cb6a5bd</md:uuid>
@@ -17,7 +17,7 @@
 <para id="fs-id1170571596362">Let us begin this last section of the chapter with the three formulas. Along with these formulas, we use substitution to evaluate the integrals. We prove the formula for the inverse sine integral.</para>
 <note id="fs-id1170571609338">
 <title>Rule: Integration Formulas Resulting in Inverse Trigonometric Functions</title>
-<para id="fs-id1170571528516">The following integration formulas yield inverse trigonometric functions. Assume <m:math><m:mi>a</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:math>:</para>
+<para id="fs-id1170571528516">The following integration formulas yield inverse trigonometric functions. Assume <m:math><m:mi>a</m:mi><m:mo>></m:mo><m:mn>0</m:mn></m:math>:</para>
 <list id="fs-id1170572178178" list-type="enumerated" number-style="arabic">
 <item><newline/><equation id="fs-id1170572554001"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="true">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>u</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mfrac><m:mi>u</m:mi><m:mrow><m:mo>|</m:mo><m:mi>a</m:mi><m:mo>|</m:mo></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></equation></item>
 <item><newline/><equation id="fs-id1170572607870"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="true">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>u</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>a</m:mi></m:mfrac><m:mspace width="0.05em"/><m:msup><m:mrow><m:mtext>tan</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mfrac><m:mi>u</m:mi><m:mi>a</m:mi></m:mfrac><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></equation></item>
@@ -301,7 +301,7 @@
 <para id="fs-id1170571638317">Explain what is wrong with the following integral: <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="true">∫</m:mo><m:mn>1</m:mn><m:mn>2</m:mn></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1170572624825">
-<para id="fs-id1170572624827"><m:math><m:mrow><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math> is not defined as a real number when <m:math><m:mrow><m:mi>t</m:mi><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170572624827"><m:math><m:mrow><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math> is not defined as a real number when <m:math><m:mrow><m:mi>t</m:mi><m:mo>></m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1170572163878">
@@ -505,7 +505,7 @@ The general antiderivative is <m:math><m:mrow><m:msup><m:mrow><m:mtext>tan</m:mt
 </exercise>
 <exercise id="fs-id1170572415152">
 <problem id="fs-id1170572415154">
-<para id="fs-id1170572415156">For <m:math><m:mrow><m:mi>A</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> compute <m:math><m:mrow><m:mi>I</m:mi><m:mrow><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="true">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>A</m:mi></m:mrow><m:mi>A</m:mi></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> and evaluate <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>a</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mi>I</m:mi><m:mrow><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> the area under the graph of <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math> on <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170572415156">For <m:math><m:mrow><m:mi>A</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> compute <m:math><m:mrow><m:mi>I</m:mi><m:mrow><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="true">∫</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>A</m:mi></m:mrow><m:mi>A</m:mi></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> and evaluate <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>a</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mi>I</m:mi><m:mrow><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> the area under the graph of <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math> on <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1170572168751">
 <para id="fs-id1170572168753"><m:math><m:mrow><m:mn>2</m:mn><m:msup><m:mrow><m:mtext>tan</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>)</m:mo></m:mrow><m:mo stretchy="false">→</m:mo><m:mi>π</m:mi></m:mrow></m:math> as <m:math><m:mrow><m:mi>A</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:math></para>
@@ -552,7 +552,7 @@ The general antiderivative is <m:math><m:mrow><m:msup><m:mrow><m:mtext>tan</m:mt
 <para id="fs-id1170572346985"><emphasis effect="italics">True or False.</emphasis> Justify your answer with a proof or a counterexample. Assume all functions <m:math><m:mi>f</m:mi></m:math> and <m:math><m:mi>g</m:mi></m:math> are continuous over their domains.</para>
 <exercise id="fs-id1170572347001">
 <problem id="fs-id1170572347003">
-<para id="fs-id1170572347005">If <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mtext>(</m:mtext><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math> for all <m:math><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> then the right-hand rule underestimates the integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo>∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> Use a graph to justify your answer.</para>
+<para id="fs-id1170572347005">If <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mtext>(</m:mtext><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>></m:mo><m:mn>0</m:mn></m:mrow></m:math> for all <m:math><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> then the right-hand rule underestimates the integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo>∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> Use a graph to justify your answer.</para>
 </problem>
 <solution id="fs-id1170572451347">
 <para id="fs-id1170572451349">False</para>
