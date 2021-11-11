@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m53640</md:content-id>
   <md:title>Areas between Curves</md:title>
-  <md:abstract><list id="list-00001">
+  <md:abstract><list>
 <item>Determine the area of a region between two curves by integrating with respect to the independent variable.</item>
 <item>Find the area of a compound region.</item>
 <item>Determine the area of a region between two curves by integrating with respect to the dependent variable.</item>
@@ -419,7 +419,7 @@
 <para id="fs-id1167793546875">For the following exercises, graph the equations and shade the area of the region between the curves. If necessary, break the region into sub-regions to determine its entire area.</para>
 <exercise id="fs-id1167793546880">
 <problem id="fs-id1167793546882">
-<para id="fs-id1167793546884"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>π</m:mi><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+<para id="fs-id1167793546884"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>π</m:mi><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1167793318490">

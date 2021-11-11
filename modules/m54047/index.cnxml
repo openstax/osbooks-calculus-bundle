@@ -3,7 +3,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m54047</md:content-id>
   <md:title>Nonhomogeneous Linear Equations</md:title>
-  <md:abstract><list id="list-00001">
+  <md:abstract><list>
 <item>Write the general solution to a nonhomogeneous differential equation.</item>
 <item>Solve a nonhomogeneous differential equation by the method of undetermined coefficients.</item>
 <item>Solve a nonhomogeneous differential equation by the method of variation of parameters.</item>
@@ -19,10 +19,10 @@
 <equation id="fs-id1170571602112" class="unnumbered"><label/><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>0</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></equation>
 <para id="fs-id1170572346900">The associated homogeneous equation</para>
 <equation id="fs-id1170572140518"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>0</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></equation>
-<para id="fs-id1170571543157">is called the <term id="term-00001">complementary equation</term>. We will see that solving the complementary equation is an important step in solving a nonhomogeneous differential equation.</para>
+<para id="fs-id1170571543157">is called the <term>complementary equation</term>. We will see that solving the complementary equation is an important step in solving a nonhomogeneous differential equation.</para>
 <note id="fs-id1170572452607">
 <title>Definition</title>
-<para id="fs-id1170572554730">A solution <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mi>p</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> of a differential equation that contains no arbitrary constants is called a <term id="term-00002">particular solution</term> to the equation.</para>
+<para id="fs-id1170572554730">A solution <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mi>p</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> of a differential equation that contains no arbitrary constants is called a <term>particular solution</term> to the equation.</para>
 </note>
 <note id="fs-id1170571626655" class="theorem">
 <title>General Solution to a Nonhomogeneous Equation</title>
@@ -78,7 +78,7 @@
 </section>
 <section id="fs-id1170571565966">
 <title>Undetermined Coefficients</title>
-<para id="fs-id1170571630374">The <term id="term-00003">method of undetermined coefficients</term> involves making educated guesses about the form of the particular solution based on the form of <m:math><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mtext>).</m:mtext></m:mrow></m:math> When we take derivatives of polynomials, exponential functions, sines, and cosines, we get polynomials, exponential functions, sines, and cosines. So when <m:math><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> has one of these forms, it is possible that the solution to the nonhomogeneous differential equation might take that same form. Let’s look at some examples to see how this works.</para>
+<para id="fs-id1170571630374">The <term>method of undetermined coefficients</term> involves making educated guesses about the form of the particular solution based on the form of <m:math><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mtext>).</m:mtext></m:mrow></m:math> When we take derivatives of polynomials, exponential functions, sines, and cosines, we get polynomials, exponential functions, sines, and cosines. So when <m:math><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> has one of these forms, it is possible that the solution to the nonhomogeneous differential equation might take that same form. Let’s look at some examples to see how this works.</para>
 <example id="fs-id1170571680619">
 <exercise id="fs-id1170572386534">
 <problem id="fs-id1170572451194">
@@ -278,7 +278,7 @@ This gives <m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></
 </section>
 <section id="fs-id1170572593826">
 <title>Variation of Parameters</title>
-<para id="fs-id1170572593832">Sometimes, <m:math><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is not a combination of polynomials, exponentials, or sines and cosines. When this is the case, the method of undetermined coefficients does not work, and we have to use another approach to find a particular solution to the differential equation. We use an approach called the <term id="term-00004">method of variation of parameters</term>.</para>
+<para id="fs-id1170572593832">Sometimes, <m:math><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is not a combination of polynomials, exponentials, or sines and cosines. When this is the case, the method of undetermined coefficients does not work, and we have to use another approach to find a particular solution to the differential equation. We use an approach called the <term>method of variation of parameters</term>.</para>
 <para id="fs-id1170572593856">To simplify our calculations a little, we are going to divide the differential equation through by <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo></m:mrow></m:math> so we have a leading coefficient of 1. Then the differential equation has the form</para>
 <equation id="fs-id1170572604296" class="unnumbered"><label/><m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>p</m:mi><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>q</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math></equation>
 <para id="fs-id1170572604342">where <m:math><m:mi>p</m:mi></m:math> and <m:math><m:mi>q</m:mi></m:math> are constants.</para>
@@ -646,7 +646,7 @@ Then, <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mi>p</m:mi></m:msub><m:mo stretch
 <para id="fs-id1170571596300"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>57</m:mn></m:mrow><m:mrow><m:mn>25</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>25</m:mn></m:mrow></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>5</m:mn></m:mfrac><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mfrac><m:mn>4</m:mn><m:mrow><m:mn>25</m:mn></m:mrow></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−5</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
 </solution>
 </exercise>
-<para id="fs-id1170572388360">In each of the following problems, two linearly independent solutions—<m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math>—are given that satisfy the corresponding homogeneous equation. Use the method of variation of parameters to find a particular solution to the given nonhomogeneous equation. Assume <emphasis effect="italics">x</emphasis> > 0 in each exercise.</para>
+<para id="fs-id1170572388360">In each of the following problems, two linearly independent solutions—<m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math>—are given that satisfy the corresponding homogeneous equation. Use the method of variation of parameters to find a particular solution to the given nonhomogeneous equation. Assume <emphasis effect="italics">x</emphasis> &gt; 0 in each exercise.</para>
 <exercise id="fs-id1170572388390">
 <problem id="fs-id1170572388392">
 <para id="fs-id1170572388394"><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mspace width="1em"/><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mrow><m:mn>−2</m:mn></m:mrow></m:msup></m:mrow></m:math></para>

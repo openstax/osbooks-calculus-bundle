@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m53875</md:content-id>
   <md:title>Cylindrical and Spherical Coordinates</md:title>
-  <md:abstract><list id="list-00001">
+  <md:abstract><list>
 <item>Convert from cylindrical to rectangular coordinates.</item>
 <item>Convert from rectangular to cylindrical coordinates.</item>
 <item>Convert from spherical to rectangular coordinates.</item>
@@ -20,7 +20,7 @@
 <para id="fs-id1163723287899">When we expanded the traditional Cartesian coordinate system from two dimensions to three, we simply added a new axis to model the third dimension. Starting with polar coordinates, we can follow this same process to create a new three-dimensional coordinate system, called the cylindrical coordinate system. In this way, cylindrical coordinates provide a natural extension of polar coordinates to three dimensions.</para>
 <note id="fs-id1163723948419">
 <title>Definition</title>
-<para id="fs-id1163723216822">In the <term id="term-00001">cylindrical coordinate system</term>, a point in space (<link target-id="CNX_Calc_Figure_12_07_001"/>) is represented by the ordered triple <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> where</para>
+<para id="fs-id1163723216822">In the <term>cylindrical coordinate system</term>, a point in space (<link target-id="CNX_Calc_Figure_12_07_001"/>) is represented by the ordered triple <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> where</para>
 <list id="fs-id1163723236536" list-type="bulleted" bullet-style="bullet">
 <item><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> are the polar coordinates of the point’s projection in the <emphasis effect="italics">xy</emphasis>-plane</item>
 <item><m:math><m:mi>z</m:mi></m:math> is the usual <m:math><m:mrow><m:mi>z</m:mi><m:mtext>-coordinate</m:mtext></m:mrow></m:math> in the Cartesian coordinate system</item>
@@ -191,7 +191,7 @@
 <para id="fs-id1163723669991">In the Cartesian coordinate system, the location of a point in space is described using an ordered triple in which each coordinate represents a distance. In the cylindrical coordinate system, location of a point in space is described using two distances <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>r</m:mi><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and an angle measure <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> In the spherical coordinate system, we again use an ordered triple to describe the location of a point in space. In this case, the triple describes one distance and two angles. Spherical coordinates make it simple to describe a sphere, just as cylindrical coordinates make it easy to describe a cylinder. Grid lines for spherical coordinates are based on angle measures, like those for polar coordinates.</para>
 <note id="fs-id1163724078135">
 <title>Definition</title>
-<para id="fs-id1163723830824">In the <term id="term-00002">spherical coordinate system</term>, a point <m:math><m:mi>P</m:mi></m:math> in space (<link target-id="CNX_Calc_Figure_12_07_011"/>) is represented by the ordered triple <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>ρ</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi><m:mo>,</m:mo><m:mi>φ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> where</para>
+<para id="fs-id1163723830824">In the <term>spherical coordinate system</term>, a point <m:math><m:mi>P</m:mi></m:math> in space (<link target-id="CNX_Calc_Figure_12_07_011"/>) is represented by the ordered triple <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>ρ</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi><m:mo>,</m:mo><m:mi>φ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> where</para>
 <list id="fs-id1163723954970" list-type="bulleted" bullet-style="bullet">
 <item><m:math><m:mi>ρ</m:mi></m:math> (the Greek letter rho) is the distance between <m:math><m:mi>P</m:mi></m:math> and the origin <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ρ</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>;</m:mo></m:mrow></m:math></item>
 <item><m:math><m:mi>θ</m:mi></m:math> is the same angle used to describe the location in cylindrical coordinates;</item>
@@ -295,7 +295,7 @@ Cartesian: <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mfra
 </problem>
 <solution id="fs-id1163724069757">
 <list id="fs-id1163724069760" list-type="enumerated" number-style="lower-alpha">
-<item>The variable <m:math><m:mi>θ</m:mi></m:math> represents the measure of the same angle in both the cylindrical and spherical coordinate systems. Points with coordinates <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ρ</m:mi><m:mo>,</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>3</m:mn></m:mfrac><m:mo>,</m:mo><m:mi>φ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> lie on the plane that forms angle <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> with the positive <emphasis effect="italics">x</emphasis>-axis. Because <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> the surface described by equation <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> is the half-plane shown in <link target-id="CNX_Calc_Figure_12_07_016"/>.<newline/>
+<item>The variable <m:math><m:mi>θ</m:mi></m:math> represents the measure of the same angle in both the cylindrical and spherical coordinate systems. Points with coordinates <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ρ</m:mi><m:mo>,</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>3</m:mn></m:mfrac><m:mo>,</m:mo><m:mi>φ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> lie on the plane that forms angle <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> with the positive <emphasis effect="italics">x</emphasis>-axis. Because <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> the surface described by equation <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> is the half-plane shown in <link target-id="CNX_Calc_Figure_12_07_016"/>.<newline/>
 <figure id="CNX_Calc_Figure_12_07_016">
 <media id="fs-id1163724023646" alt="This figure is the first quadrant of the 3-dimensional coordinate system. There is a plane attached to the z-axis, dividing the x y-plane with a diagonal line. The angle between the x-axis and this plane is theta = pi/3.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_07_020.jpg"/>
@@ -794,7 +794,7 @@ The equation describes a sphere centered at point <m:math><m:mrow><m:mrow><m:mo>
 <para id="fs-id1163724057689">For the following exercises, find the most suitable system of coordinates to describe the solids.</para>
 <exercise id="fs-id1163724057692">
 <problem id="fs-id1163724057694">
-<para id="fs-id1163724057696">The solid situated in the first octant with a vertex at the origin and enclosed by a cube of edge length <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>a</m:mi><m:mo>></m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+<para id="fs-id1163724057696">The solid situated in the first octant with a vertex at the origin and enclosed by a cube of edge length <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>a</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1163724057718">
 <para id="fs-id1163724057720">Cartesian system, <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>|</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>y</m:mi><m:mo>≤</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>z</m:mi><m:mo>≤</m:mo><m:mi>a</m:mi></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
@@ -802,7 +802,7 @@ The equation describes a sphere centered at point <m:math><m:mrow><m:mrow><m:mo>
 </exercise>
 <exercise id="fs-id1163724057789">
 <problem id="fs-id1163724057791">
-<para id="fs-id1163724057794">A spherical shell determined by the region between two concentric spheres centered at the origin, of radii of <m:math><m:mi>a</m:mi></m:math> and <m:math><m:mrow><m:mi>b</m:mi><m:mo>,</m:mo></m:mrow></m:math> respectively, where <m:math><m:mrow><m:mi>b</m:mi><m:mo>></m:mo><m:mi>a</m:mi><m:mo>></m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+<para id="fs-id1163724057794">A spherical shell determined by the region between two concentric spheres centered at the origin, of radii of <m:math><m:mi>a</m:mi></m:math> and <m:math><m:mrow><m:mi>b</m:mi><m:mo>,</m:mo></m:mrow></m:math> respectively, where <m:math><m:mrow><m:mi>b</m:mi><m:mo>&gt;</m:mo><m:mi>a</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1163723073046">
@@ -948,7 +948,7 @@ The equation describes a sphere centered at point <m:math><m:mrow><m:mrow><m:mo>
 </exercise>
 <exercise id="fs-id1163723341675">
 <problem id="fs-id1163723341677">
-<para id="fs-id1163723341679"><emphasis effect="bold">[T]</emphasis> Consider the torus of equation <m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>R</m:mi><m:mo>≥</m:mo><m:mi>r</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1163723341679"><emphasis effect="bold">[T]</emphasis> Consider the torus of equation <m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>R</m:mi><m:mo>≥</m:mo><m:mi>r</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 <list id="fs-id1163723341781" list-type="enumerated" number-style="lower-alpha">
 <item>Write the equation of the torus in spherical coordinates.</item>
 <item>If <m:math><m:mrow><m:mi>R</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mo>,</m:mo></m:mrow></m:math> the surface is called a <emphasis effect="italics">horn torus</emphasis>. Show that the equation of a horn torus in spherical coordinates is <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>R</m:mi><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>φ</m:mi><m:mo>.</m:mo></m:mrow></m:math></item>

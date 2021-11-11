@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m53684</md:content-id>
   <md:title>Other Strategies for Integration</md:title>
-  <md:abstract><list id="list-00001">
+  <md:abstract><list>
 <item>Use a table of integrals to solve integration problems.</item>
 <item>Use a computer algebra system (CAS) to solve integration problems.</item>
 </list></md:abstract>
@@ -12,7 +12,7 @@
 </metadata>
 
 <content>
-<para id="fs-id1165042273590">In addition to the techniques of integration we have already seen, several other tools are widely available to assist with the process of integration. Among these tools are <term id="term-00001">integration tables</term>, which are readily available in many books, including the appendices to this one. Also widely available are <term id="term-00002">computer algebra systems (CAS)</term>, which are found on calculators and in many campus computer labs, and are free online.</para>
+<para id="fs-id1165042273590">In addition to the techniques of integration we have already seen, several other tools are widely available to assist with the process of integration. Among these tools are <term>integration tables</term>, which are readily available in many books, including the appendices to this one. Also widely available are <term>computer algebra systems (CAS)</term>, which are found on calculators and in many campus computer labs, and are free online.</para>
 <section id="fs-id1165040774511">
 <title>Tables of Integrals</title>
 <para id="fs-id1165042105278">Integration tables, if used in the right manner, can be a handy way either to evaluate or check an integral quickly. Keep in mind that when using a table to check an answer, it is possible for two completely correct solutions to look very different. For example, in <link document="m53659">Trigonometric Substitution</link>, we found that, by using the substitution <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>tan</m:mtext><m:mspace width="0.1em"/><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow></m:math> we can arrive at</para>
