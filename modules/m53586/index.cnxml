@@ -657,7 +657,7 @@ More generally, if <m:math><m:mrow><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</
 </list>
 </problem>
 <solution id="fs-id1169738094721">
-<para id="fs-id1169738094723">a. <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>e</m:mi><m:mo>~</m:mo><m:mn>2.718</m:mn></m:mrow></m:math> b. <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>e</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>e</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+<para id="fs-id1169738094723">a. <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>e</m:mi><m:mo>~</m:mo><m:mn>2.718</m:mn></m:mrow></m:math> b. <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mi>y</m:mi><m:mo>'</m:mo><m:mo>&#xA0;</m:mo><m:mo>&gt;</m:mo><m:mo>&#xA0;</m:mo><m:mn>0</m:mn><m:mo>&#xA0;</m:mo><m:mtext>on</m:mtext><m:mo>&#xA0;</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo>&#xA0;</m:mo><m:mi>e</m:mi><m:mo>)</m:mo><m:mo>;</m:mo><m:mo>&#xA0;</m:mo><m:mi>y</m:mi><m:mo>'</m:mo><m:mo>&#xA0;</m:mo><m:mo>&lt;</m:mo><m:mo>&#xA0;</m:mo><m:mn>0</m:mn><m:mo>&#xA0;</m:mo><m:mtext>on</m:mtext><m:mo>&#xA0;</m:mo><m:mo>(</m:mo><m:mi>e</m:mi><m:mo>,</m:mo><m:mo>&#xA0;</m:mo><m:mo>&#x221E;</m:mo><m:mo>)</m:mo></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1169738094772">
@@ -745,7 +745,7 @@ More generally, if <m:math><m:mrow><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</
 </exercise>
 <exercise id="fs-id1169738220789">
 <problem id="fs-id1169738220792">
-<para id="fs-id1169738220794"><emphasis effect="bold">[T]</emphasis> The number of cases of influenza in New York City from the beginning of 1960 to the beginning of 1961 is modeled by the function</para>
+<para id="fs-id1169738220794"><emphasis effect="bold">[T]</emphasis> The number of cases of influenza in New York City from the beginning of 1960 to the beginning of 1964 is modeled by the function</para>
 <para id="fs-id1169738220802"><m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5.3</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>0.093</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>0.87</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>t</m:mi><m:mo>≤</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math>
 where <m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> gives the number of cases (in thousands) and <emphasis effect="italics">t</emphasis> is measured in years, with <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> corresponding to the beginning of 1960.</para>
 <list id="fs-id1169738220892" list-type="enumerated" number-style="lower-alpha">

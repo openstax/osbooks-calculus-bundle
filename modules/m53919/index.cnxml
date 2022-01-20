@@ -519,7 +519,7 @@ Last, since <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mt
 </solution>
 </exercise>
 <exercise id="fs-id1169737512651">
-<problem id="fs-id1169737512653"><para id="fs-id1169737512654">Given <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>2</m:mn><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mo>,</m:mo><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mo>,</m:mo><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> find the unit normal vector evaluated at <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0.</m:mn></m:mrow></m:math></para>
+<problem id="fs-id1169737512653"><para id="fs-id1169737512654">Given <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>2</m:mn><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mo>,</m:mo><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mo>,</m:mo><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> find the unit binormal vector evaluated at <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0.</m:mn></m:mrow></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1169738202647">
@@ -688,7 +688,7 @@ Last, since <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mt
 <exercise id="fs-id1169737201424">
 <problem id="fs-id1169737201426"><para id="fs-id1169737201427">Find the length of the curve over the interval <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
-<solution id="fs-id1169737201451"><para id="fs-id1169737201452"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>38</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
+<solution id="fs-id1169737201451"><para id="fs-id1169737201452"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mi>ln</m:mi><m:mfenced><m:mrow><m:msqrt><m:mn>17</m:mn></m:msqrt><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:mfenced><m:mo>+</m:mo><m:msqrt><m:mn>17</m:mn></m:msqrt><m:mo>&#x2248;</m:mo><m:mn>4</m:mn><m:mo>.</m:mo><m:mn>647</m:mn></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1169737201465">
