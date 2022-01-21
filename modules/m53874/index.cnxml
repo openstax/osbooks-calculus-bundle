@@ -671,7 +671,7 @@ This is an elliptic paraboloid centered at <m:math><m:mrow><m:mrow><m:mo>(</m:mo
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_228.jpg"/>
 </media>
 <list id="fs-id1163723475569" list-type="enumerated" number-style="lower-alpha">
-<item>Solve the system consisting of the equations of the surfaces to find the equation of the intersection curve. (<emphasis effect="italics">Hint:</emphasis> Find <m:math><m:mi>x</m:mi></m:math> and <m:math><m:mi>y</m:mi></m:math> in terms of <m:math><m:mrow><m:mi>z</m:mi><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math></item>
+<item>Solve the system consisting of the equations of the surfaces to find the equations of the intersection curve. (<emphasis effect="italics">Hint:</emphasis> Find <m:math><m:mi>x</m:mi></m:math> and <m:math><m:mi>y</m:mi></m:math> in terms of <m:math><m:mrow><m:mi>z</m:mi><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math></item>
 <item>Use a computer algebra system (CAS) to visualize the intersection curve on sphere <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
 </list>
 </problem>

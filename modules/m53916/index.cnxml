@@ -639,7 +639,7 @@ The last statement implies that the velocity and acceleration are perpendicular 
 <problem id="fs-id1169736588825"><para id="fs-id1169736588826">Now, use the product rule for the derivative of the cross product of two vectors and show this result is the same as the answer for the preceding problem.</para>
 </problem>
 </exercise>
-<para id="fs-id1167793638379">Find the unit tangent vector <emphasis effect="bold">T</emphasis>(t) for the following vector-valued functions.</para>
+<para id="fs-id1167793638379">Find the unit tangent vector <emphasis effect="bold">T</emphasis>(<emphasis effect="italics">t</emphasis>) for the following vector-valued functions.</para>
 <exercise id="fs-id1169736588839">
 <problem id="fs-id1169736588841"><para id="fs-id1169736588842"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>t</m:mi><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>t</m:mi></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> The graph is shown here:</para>
 <media id="fs-id1169739350914" alt="This figure is the graph of a hyperbolic curve. The y-axis is a vertical asymptote and the x-axis is the horizontal asymptote.">

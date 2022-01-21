@@ -812,7 +812,7 @@ Write down the vectors along the lines representing those pipes, find the cross 
 <para id="fs-id1163723090868">For the following exercises, the equation of a plane is given.</para>
 <list id="fs-id1163723090871" list-type="enumerated" number-style="lower-alpha">
 <item>Find normal vector <m:math><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>n</m:mtext></m:mstyle></m:math> to the plane. Express <m:math><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>n</m:mtext></m:mstyle></m:math> using standard unit vectors.</item>
-<item>Find the intersections of the plane with the axes of coordinates.</item>
+<item>Find the intersections of the plane with the coordinate axes.</item>
 <item>Sketch the plane.</item>
 </list>
 <exercise id="fs-id1163723090908">

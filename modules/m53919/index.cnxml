@@ -470,7 +470,7 @@ Last, since <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mt
 </problem>
 </exercise>
 <exercise id="fs-id1169738088757">
-<problem id="fs-id1169738088759"><para id="fs-id1169738088760">A particle travels in a circle with the equation of motion <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>3</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>0</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> Find the distance traveled around the circle by the particle.</para>
+<problem id="fs-id1169738088759"><para id="fs-id1169738088760">A particle travels once around a circle with the equation of motion <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>3</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>0</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> Find the distance traveled around the circle by the particle.</para>
 </problem>
 <solution id="fs-id1169737358738"><para id="fs-id1169737358739"><m:math><m:mrow><m:mn>6</m:mn><m:mi>π</m:mi></m:mrow></m:math></para>
 </solution>
@@ -688,7 +688,7 @@ Last, since <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mt
 <exercise id="fs-id1169737201424">
 <problem id="fs-id1169737201426"><para id="fs-id1169737201427">Find the length of the curve over the interval <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
-<solution id="fs-id1169737201451"><para id="fs-id1169737201452"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mi>ln</m:mi><m:mfenced><m:mrow><m:msqrt><m:mn>17</m:mn></m:msqrt><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:mfenced><m:mo>+</m:mo><m:msqrt><m:mn>17</m:mn></m:msqrt><m:mo>&#x2248;</m:mo><m:mn>4</m:mn><m:mo>.</m:mo><m:mn>647</m:mn></m:math></para>
+<solution id="fs-id1169737201451"><para id="fs-id1169737201452"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mi>ln</m:mi><m:mfenced><m:mrow><m:msqrt><m:mn>17</m:mn></m:msqrt><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:mfenced><m:mo>+</m:mo><m:msqrt><m:mn>17</m:mn></m:msqrt><m:mo>≈</m:mo><m:mn>4</m:mn><m:mo>.</m:mo><m:mn>647</m:mn></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1169737201465">
