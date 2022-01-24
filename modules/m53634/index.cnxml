@@ -628,7 +628,7 @@ The antiderivative is <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn
 </exercise>
 <exercise id="fs-id1170571160883">
 <problem id="fs-id1170571160885">
-<para id="fs-id1170571160887">If <m:math><m:mrow><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>b</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> in <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msubsup><m:mo>&#x222B;</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mi>g</m:mi><m:mo>′</m:mo><m:mrow><m:mo>(</m:mo><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>h</m:mi><m:mo>′</m:mo><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>,</m:mo></m:math> what can you say about the value of the integral?</para>
+<para id="fs-id1170571160887">If <m:math><m:mrow><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>b</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> in <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msubsup><m:mo>∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mi>g</m:mi><m:mo>′</m:mo><m:mrow><m:mo>(</m:mo><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>h</m:mi><m:mo>′</m:mo><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>,</m:mo></m:math> what can you say about the value of the integral?</para>
 </problem>
 </exercise>
 <exercise id="fs-id1170571160975">

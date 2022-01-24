@@ -528,7 +528,7 @@ Now, <m:math><m:mrow><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:
 <table id="eip-533" summary="." class="unnumbered unstyled">
 <tgroup cols="2"><tbody>
   <row>
-    <entry><emphasis effect="bold">Dot product of <m:math><</m:math>u and v</emphasis></entry>
+    <entry><emphasis effect="bold">Dot product of <m:math/>u and v</emphasis></entry>
     <entry><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>u</m:mtext></m:mstyle><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:msub><m:mi>u</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>v</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>u</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>v</m:mi><m:mn>2</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>u</m:mi><m:mn>3</m:mn></m:msub><m:msub><m:mi>v</m:mi><m:mn>3</m:mn></m:msub></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mrow><m:mo>‖</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>u</m:mtext></m:mstyle><m:mo>‖</m:mo></m:mrow><m:mrow><m:mo>‖</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mo>‖</m:mo></m:mrow><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mtd></m:mtr></m:mtable></m:math></entry>
   </row>
   <row>
