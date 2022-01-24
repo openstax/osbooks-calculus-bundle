@@ -364,7 +364,7 @@
 </problem>
 <solution id="fs-id1169739298971">
 <para id="fs-id1169739298973">First observe that <m:math><m:mrow><m:mn>60</m:mn></m:mrow></m:math> mph = <m:math><m:mrow><m:mn>88</m:mn></m:mrow></m:math> ft/s, <m:math><m:mrow><m:mn>100</m:mn></m:mrow></m:math> mph <m:math><m:mrow><m:mo>≈</m:mo><m:mn>146.67</m:mn></m:mrow></m:math> ft/s, <m:math><m:mrow><m:mn>200</m:mn></m:mrow></m:math> mph <m:math><m:mrow><m:mo>≈</m:mo><m:mn>293.33</m:mn></m:mrow></m:math> ft/s, and <m:math><m:mrow><m:mn>229.9</m:mn></m:mrow></m:math> mph <m:math><m:mrow><m:mo>≈</m:mo><m:mn>337.19</m:mn></m:mrow></m:math> ft/s. We can summarize the information in a table.</para>
-<table id="fs-id1169739188462" summary="This table has six rows and two columns. The first row is a header row and it labels each column. The first column header is x and the second column is v(t). Under the first column are the values 0, 3.05, 5.88, 14.51, and 19.96. Under the second column are the values 0, 88, 147.67, 293.33, and 337.19.">
+<table id="fs-id1169739188462" summary="This table has six rows and two columns. The first row is a header row and it labels each column. The first column header is x and the second column is v(t). Under the first column are the values 0, 3.05, 5.88, 14.51, and 19.96. Under the second column are the values 0, 88, 146.67, 293.33, and 337.19.">
 <title><m:math><m:mrow><m:mi>v</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> at different values of <emphasis effect="italics">t</emphasis></title>
 <tgroup cols="2">
 <colspec colnum="1" colname="col1"/>
@@ -386,7 +386,7 @@
 </row>
 <row>
 <entry valign="top" align="left"><m:math><m:mrow><m:mn>5.88</m:mn></m:mrow></m:math></entry>
-<entry valign="top" align="left"><m:math><m:mrow><m:mn>147.67</m:mn></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mn>146.67</m:mn></m:mrow></m:math></entry>
 </row>
 <row>
 <entry valign="top" align="left"><m:math><m:mrow><m:mn>14.51</m:mn></m:mrow></m:math></entry>
@@ -400,7 +400,7 @@
 </tgroup>
 </table>
 <para id="fs-id1169739019682">Now compute the average acceleration of the car in feet per second per second on intervals of the form <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mi>t</m:mi><m:mo>,</m:mo><m:mn>19.96</m:mn></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:math> as <m:math><m:mi>t</m:mi></m:math> approaches <m:math><m:mrow><m:mn>19.96</m:mn><m:mo>,</m:mo></m:mrow></m:math> as shown in the following table.</para>
-<table id="fs-id1169739188868" summary="This table has five rows and two columns. The first row is a header row and it labels each column. The first column header is x and the second column is (v(t) - v(19.96))/(t - 19.96) = (v(t) - 337.19)/(t - 19.96). Under the first column are the values 0, 3.05, 5.88, and 14.51. Under the second column are the values 16.89, 14.74, 13.46, and 8.05.">
+<table id="fs-id1169739188868" summary="This table has five rows and two columns. The first row is a header row and it labels each column. The first column header is x and the second column is (v(t) - v(19.96))/(t - 19.96) = (v(t) - 337.19)/(t - 19.96). Under the first column are the values 0, 3.05, 5.88, and 14.51. Under the second column are the values 16.89, 14.74, 13.53, and 8.05.">
 <title>Average acceleration</title>
 <tgroup cols="2">
 <colspec colnum="1" colname="col1"/>
@@ -422,7 +422,7 @@
 </row>
 <row>
 <entry valign="top" align="left"><m:math><m:mrow><m:mn>5.88</m:mn></m:mrow></m:math></entry>
-<entry valign="top" align="left"><m:math><m:mrow><m:mn>13.46</m:mn></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mn>13.53</m:mn></m:mrow></m:math></entry>
 </row>
 <row>
 <entry valign="top" align="left"><m:math><m:mrow><m:mn>14.51</m:mn></m:mrow></m:math></entry>
