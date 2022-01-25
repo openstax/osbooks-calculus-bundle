@@ -1077,7 +1077,17 @@
 </exercise>
 <exercise id="fs-id1170572617993">
 <problem id="fs-id1170572617995">
-<para id="fs-id1170572617997">A unit circle is made up of <emphasis effect="italics">n</emphasis> wedges equivalent to the inner wedge in the figure. The base of the inner triangle is 1 unit and its height is <m:math><m:mrow><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>2</m:mn><m:mi>π</m:mi><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> The base of the outer triangle is <m:math><m:mrow><m:mi>B</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>tan</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and the height is <m:math><m:mrow><m:mi>H</m:mi><m:mo>=</m:mo><m:mi>B</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Use this information to argue that the area of a unit circle is equal to <emphasis effect="italics">π</emphasis>.</para>
+<para id="fs-id1170572617997">A unit circle is made up of <emphasis effect="italics">n</emphasis> wedges equivalent to the inner wedge in the figure. The base of the inner triangle is 1 unit and its height is 
+<m:math><m:mrow><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow>
+  <m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> The base of the outer triangle is 
+<m:math><m:mrow><m:mi>B</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow>
+  <m:mfrac><m:mi>π</m:mi><m:mi>n</m:mi></m:mfrac>
+</m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow>
+  <m:mfrac><m:mi>π</m:mi><m:mi>n</m:mi></m:mfrac>
+</m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>tan</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow>
+  <m:mfrac><m:mi>π</m:mi><m:mi>n</m:mi></m:mfrac>
+</m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and the height is <m:math><m:mrow><m:mi>H</m:mi><m:mo>=</m:mo><m:mi>B</m:mi><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow>
+  <m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Use this information to argue that the area of a unit circle is equal to <emphasis effect="italics">π</emphasis>.</para>
 <media id="fs-id1170572554281" alt="A wedge of a circle cut at an acute angle theta = 2pi / n. Several extra lines are drawn. The first is a line A connecting the ends of the two radii, creating a triangle. The second is another line B parallel to the A, connecting the radii a few units in from each endpoint. A concentric curve C connects the endpoints of B and is tangent to A near its midpoint. The area between this curve C and the edge of the circle is shaded in pink, and the rest of the wedge is purple. A final concentric curve is drawn very close to angle theta.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_05_01_213.jpg"/>
 </media>
