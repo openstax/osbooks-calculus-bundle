@@ -173,7 +173,14 @@ Notice that the velocity vector is tangent to the path, as is always the case.<n
 <item>Let’s start with <link target-id="fs-id1169738185179"/>:<newline/>
 <equation id="fs-id1169738194389" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>r</m:mi><m:mo>′</m:mo></m:msup></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>t</m:mi><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>2</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>a</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>v</m:mi><m:mo>′</m:mo></m:msup></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>6</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:msub><m:mi>a</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>T</m:mtext></m:mstyle></m:msub></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>a</m:mtext></m:mstyle></m:mrow><m:mrow><m:mrow><m:mo>‖</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>v</m:mtext></m:mstyle><m:mo>‖</m:mo></m:mrow></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>t</m:mi><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>2</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>·</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>6</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mrow><m:mo>‖</m:mo><m:mrow><m:mn>2</m:mn><m:mi>t</m:mi><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>2</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow><m:mo>‖</m:mo></m:mrow></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mn>4</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:msqrt><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mn>40</m:mn><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>18</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>40</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>36</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>13</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
 Then we apply <link target-id="fs-id1169738191530"/>:<newline/>
-<equation id="fs-id1169737413633" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:msub><m:mi>a</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>N</m:mtext></m:mstyle></m:msub></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mrow><m:mrow><m:mo>‖</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>a</m:mtext></m:mstyle><m:mo>‖</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>a</m:mi><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>T</m:mtext></m:mstyle><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mrow><m:mrow><m:mo>‖</m:mo><m:mrow><m:mn>2</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>6</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow><m:mo>‖</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>40</m:mn><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>18</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>40</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>36</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>13</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>36</m:mn><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>40</m:mn><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>18</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>40</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>36</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>13</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>40</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>40</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>36</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>13</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1600</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>1440</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>324</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>40</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>36</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>13</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>196</m:mn></m:mrow><m:mrow><m:mn>40</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>36</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>13</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>14</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>40</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>36</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>13</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation></item>
+<equation id="fs-id1169737413633" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:msub><m:mi>a</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>N</m:mtext></m:mstyle></m:msub></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:msqrt><m:mrow>
+<m:msup><m:mrow><m:mo>‖</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>a</m:mtext></m:mstyle><m:mo>‖</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>−</m:mo>
+<m:msup><m:mrow><m:mi>a</m:mi><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>T</m:mtext></m:mstyle></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msqrt><m:mrow>
+<m:msup><m:mrow><m:mo>‖</m:mo><m:mrow><m:mn>2</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>6</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow><m:mo>‖</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>−</m:mo>
+<m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>40</m:mn><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>18</m:mn><m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>40</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>36</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>13</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup>
+</m:mrow></m:msqrt></m:mtd></m:mtr><m:mtr><m:mtd/>
+<m:mtd columnalign="left"><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>36</m:mn><m:mo>−</m:mo><m:mfrac><m:mrow>
+<m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>40</m:mn><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>18</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>40</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>36</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>13</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>40</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>40</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>36</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>13</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1600</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>1440</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>324</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>40</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>36</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>13</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>196</m:mn></m:mrow><m:mrow><m:mn>40</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>36</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>13</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>14</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>40</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>36</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>13</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation></item>
 <item>We must evaluate each of the answers from part a. at <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mtext>:</m:mtext></m:mrow></m:math><newline/>
 <equation id="fs-id1169738072962" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:msub><m:mi>a</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>T</m:mtext></m:mstyle></m:msub><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mn>40</m:mn><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>18</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>40</m:mn><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>36</m:mn><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>13</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mn>80</m:mn><m:mo>−</m:mo><m:mn>18</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>160</m:mn><m:mo>−</m:mo><m:mn>72</m:mn><m:mo>+</m:mo><m:mn>13</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>62</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>101</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:msub><m:mi>a</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>N</m:mtext></m:mstyle></m:msub><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mn>14</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>40</m:mn><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>36</m:mn><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>13</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mn>14</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>160</m:mn><m:mo>−</m:mo><m:mn>72</m:mn><m:mo>+</m:mo><m:mn>13</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>14</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>101</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
 The units of acceleration are feet per second squared, as are the units of the normal and tangential components of acceleration.</item>
@@ -378,13 +385,339 @@ Therefore, the ball hits the water about 9914.26 ft away from the base of the cl
 <para id="fs-id1169737204120">Kepler’s third law of planetary motion can be modified to the case of one object in orbit around an object other than the Sun, such as the Moon around the Earth. In this case, Kepler’s third law becomes</para>
 <equation id="fs-id1169737204126"><m:math><m:mrow><m:msup><m:mi>P</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>4</m:mn><m:msup><m:mi>π</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>a</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:mi>G</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>m</m:mi><m:mo>+</m:mo><m:mi>M</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math></equation>
 <para id="fs-id1169737849145">where <emphasis effect="italics">m</emphasis> is the mass of the Moon and <emphasis effect="italics">M</emphasis> is the mass of Earth, <emphasis effect="italics">a</emphasis> represents the length of the major axis of the elliptical orbit, and <emphasis effect="italics">P</emphasis> represents the period.</para>
-<para id="fs-id1169737849169">Given that the mass of the Moon is <m:math><m:mrow><m:mn>7.35</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>22</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mtext>kg,</m:mtext></m:mrow></m:math> the mass of Earth is <m:math><m:mrow><m:mn>5.97</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mtext>kg,</m:mtext></m:mrow></m:math> <m:math><m:mrow><m:mi>G</m:mi><m:mo>=</m:mo><m:mn>6.67</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−11</m:mn></m:mrow></m:msup><m:mrow><m:mrow><m:msup><m:mtext>m</m:mtext><m:mspace width="0.2em"/><m:mn>3</m:mn></m:msup></m:mrow><m:mtext>/</m:mtext><m:mrow><m:mtext>kg</m:mtext><m:mo>·</m:mo><m:msup><m:mrow><m:mtext>sec</m:mtext></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>,</m:mo></m:mrow></m:math> and the period of the moon is 27.3 days, let’s find the length of the major axis of the orbit of the Moon around Earth.</para>
+<para id="fs-id1169737849169">Given that the mass of the Moon is <m:math><m:mrow><m:mn>7.35</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>22</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mtext>kg,</m:mtext></m:mrow></m:math> the mass of Earth is <m:math><m:mrow><m:mn>5.97</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mtext>kg,</m:mtext></m:mrow></m:math> <m:math><m:mrow><m:mi>G</m:mi><m:mo>=</m:mo><m:mn>6.67</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−11</m:mn></m:mrow></m:msup><m:mrow><m:mrow><m:msup><m:mtext>m</m:mtext><m:mn>3</m:mn></m:msup></m:mrow><m:mtext>/</m:mtext><m:mrow><m:mtext>kg</m:mtext><m:mo>·</m:mo><m:msup><m:mrow><m:mtext>sec</m:mtext></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>,</m:mo></m:mrow></m:math> and the period of the moon is 27.3 days, let’s find the length of the major axis of the orbit of the Moon around Earth.</para>
 </problem>
 <solution id="fs-id1169737946587">
 <para id="fs-id1169737946589">It is important to be consistent with units. Since the universal gravitational constant contains seconds in the units, we need to use seconds for the period of the Moon as well:</para>
 <equation id="fs-id1169737946594" class="unnumbered"><label/><m:math><m:mrow><m:mn>27.3</m:mn><m:mspace width="0.2em"/><m:mtext>days</m:mtext><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mfrac><m:mrow><m:mn>24</m:mn><m:mspace width="0.2em"/><m:mtext>hr</m:mtext></m:mrow><m:mrow><m:mn>1</m:mn><m:mspace width="0.2em"/><m:mtext>day</m:mtext></m:mrow></m:mfrac><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mfrac><m:mrow><m:mn>3600</m:mn><m:mspace width="0.1em"/><m:mtext>sec</m:mtext></m:mrow><m:mrow><m:mn>1</m:mn><m:mspace width="0.1em"/><m:mtext>hour</m:mtext></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>2,358,720</m:mn><m:mspace width="0.1em"/><m:mtext>sec</m:mtext><m:mtext>.</m:mtext></m:mrow></m:math></equation>
 <para id="fs-id1169738073042">Substitute all the data into <link target-id="fs-id1169737204126"/> and solve for <emphasis effect="italics">a:</emphasis></para>
-<equation id="fs-id1169737497152" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2,358,720</m:mn><m:mspace width="0.1em"/><m:mtext>sec</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mn>4</m:mn><m:msup><m:mi>π</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>a</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6.67</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−11</m:mn></m:mrow></m:msup><m:mspace width="0.1em"/><m:mfrac><m:mrow><m:msup><m:mtext>m</m:mtext><m:mspace width="0.2em"/><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:mtext>kg</m:mtext><m:mo>·</m:mo><m:mspace width="0.1em"/><m:msup><m:mrow><m:mtext>sec</m:mtext></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>7.35</m:mn><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>22</m:mn></m:mrow></m:msup><m:mtext>kg</m:mtext><m:mo>+</m:mo><m:mn>5.97</m:mn><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:msup><m:mtext>kg</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mn>5.563</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mn>10</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mn>4</m:mn><m:msup><m:mi>π</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>a</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6.67</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−11</m:mn></m:mrow></m:msup><m:mspace width="0.1em"/><m:msup><m:mtext>m</m:mtext><m:mn>3</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6.04</m:mn><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5.563</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6.67</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−11</m:mn></m:mrow></m:msup><m:mspace width="0.1em"/><m:msup><m:mtext>m</m:mtext><m:mn>3</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6.04</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>4</m:mn><m:msup><m:mi>π</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>a</m:mi><m:mn>3</m:mn></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:msup><m:mi>a</m:mi><m:mn>3</m:mn></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mrow><m:mn>2.241</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>27</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:mn>4</m:mn><m:msup><m:mi>π</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:msup><m:mtext>m</m:mtext><m:mn>3</m:mn></m:msup></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mi>a</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>3.84</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mn>10</m:mn><m:mn>8</m:mn></m:msup><m:mtext>m</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>≈</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>384,000</m:mn><m:mspace width="0.2em"/><m:mtext>km</m:mtext><m:mtext>.</m:mtext></m:mtd></m:mtr></m:mtable></m:math></equation>
+<equation id="fs-id1169737497152" class="unnumbered"><label/><m:math>
+	<m:mtable>
+		<m:mtr>
+			<m:mtd columnalign="right">
+				<m:msup>
+					<m:mrow>
+						<m:mo>(</m:mo>
+						<m:mrow>
+							<m:mn>2,358,720</m:mn>
+							<m:mspace width="0.1em"/>
+							<m:mtext>sec</m:mtext>
+						</m:mrow>
+						<m:mo>)</m:mo>
+					</m:mrow>
+					<m:mn>2</m:mn>
+				</m:msup>
+			</m:mtd>
+			<m:mtd columnalign="left">
+				<m:mo>=</m:mo>
+			</m:mtd>
+			<m:mtd columnalign="left">
+				<m:mfrac>
+					<m:mrow>
+						<m:mn>4</m:mn>
+						<m:msup>
+							<m:mi>π</m:mi>
+							<m:mn>2</m:mn>
+						</m:msup>
+						<m:msup>
+							<m:mi>a</m:mi>
+							<m:mn>3</m:mn>
+						</m:msup>
+					</m:mrow>
+					<m:mrow>
+						<m:mrow>
+							<m:mo>(</m:mo>
+							<m:mrow>
+								<m:mn>6.67</m:mn>
+								<m:mspace width="0.2em"/>
+								<m:mo>×</m:mo>
+								<m:mspace width="0.2em"/>
+								<m:msup>
+									<m:mrow>
+										<m:mn>10</m:mn>
+									</m:mrow>
+									<m:mrow>
+										<m:mn>−11</m:mn>
+									</m:mrow>
+								</m:msup>
+								<m:mspace width="0.1em"/>
+								<m:mfrac>
+									<m:mrow>
+										<m:msup>
+											<m:mtext>m</m:mtext>
+											<m:mn>3</m:mn>
+										</m:msup>
+									</m:mrow>
+									<m:mrow>
+										<m:mtext>kg</m:mtext>
+										<m:mo>·</m:mo>
+										<m:mspace width="0.1em"/>
+										<m:msup>
+											<m:mrow>
+												<m:mtext>sec</m:mtext>
+											</m:mrow>
+											<m:mn>2</m:mn>
+										</m:msup>
+									</m:mrow>
+								</m:mfrac>
+							</m:mrow>
+							<m:mo>)</m:mo>
+						</m:mrow>
+						<m:mrow>
+							<m:mo>(</m:mo>
+							<m:mrow>
+								<m:mn>7.35</m:mn>
+								<m:mspace width="0.2em"/>
+								<m:mi>x</m:mi>
+								<m:mspace width="0.2em"/>
+								<m:msup>
+									<m:mrow>
+										<m:mn>10</m:mn>
+									</m:mrow>
+									<m:mrow>
+										<m:mn>22</m:mn>
+									</m:mrow>
+								</m:msup>
+								<m:mtext>kg</m:mtext>
+								<m:mo>+</m:mo>
+								<m:mn>5.97</m:mn>
+								<m:mspace width="0.2em"/>
+								<m:mi>x</m:mi>
+								<m:mspace width="0.2em"/>
+								<m:msup>
+									<m:mrow>
+										<m:mn>10</m:mn>
+									</m:mrow>
+									<m:mrow>
+										<m:mn>24</m:mn>
+									</m:mrow>
+								</m:msup>
+								<m:mtext>kg</m:mtext>
+							</m:mrow>
+							<m:mo>)</m:mo>
+						</m:mrow>
+					</m:mrow>
+				</m:mfrac>
+			</m:mtd>
+		</m:mtr>
+		<m:mtr>
+			<m:mtd columnalign="right">
+				<m:mn>5.563</m:mn>
+				<m:mspace width="0.2em"/>
+				<m:mo>×</m:mo>
+				<m:mspace width="0.2em"/>
+				<m:msup>
+					<m:mn>10</m:mn>
+					<m:mn>12</m:mn>
+				</m:msup>
+			</m:mtd>
+			<m:mtd columnalign="left">
+				<m:mo>=</m:mo>
+			</m:mtd>
+			<m:mtd columnalign="left">
+				<m:mfrac>
+					<m:mrow>
+						<m:mn>4</m:mn>
+						<m:msup>
+							<m:mi>π</m:mi>
+							<m:mn>2</m:mn>
+						</m:msup>
+						<m:msup>
+							<m:mi>a</m:mi>
+							<m:mn>3</m:mn>
+						</m:msup>
+					</m:mrow>
+					<m:mrow>
+						<m:mrow>
+							<m:mo>(</m:mo>
+							<m:mrow>
+								<m:mn>6.67</m:mn>
+								<m:mspace width="0.2em"/>
+								<m:mo>×</m:mo>
+								<m:mspace width="0.2em"/>
+								<m:msup>
+									<m:mrow>
+										<m:mn>10</m:mn>
+									</m:mrow>
+									<m:mrow>
+										<m:mn>−11</m:mn>
+									</m:mrow>
+								</m:msup>
+								<m:mspace width="0.1em"/>
+								<m:msup>
+									<m:mtext>m</m:mtext>
+									<m:mn>3</m:mn>
+								</m:msup>
+							</m:mrow>
+							<m:mo>)</m:mo>
+						</m:mrow>
+						<m:mrow>
+							<m:mo>(</m:mo>
+							<m:mrow>
+								<m:mn>6.04</m:mn>
+								<m:mspace width="0.2em"/>
+								<m:mi>x</m:mi>
+								<m:mspace width="0.2em"/>
+								<m:msup>
+									<m:mrow>
+										<m:mn>10</m:mn>
+									</m:mrow>
+									<m:mrow>
+										<m:mn>24</m:mn>
+									</m:mrow>
+								</m:msup>
+							</m:mrow>
+							<m:mo>)</m:mo>
+						</m:mrow>
+					</m:mrow>
+				</m:mfrac>
+			</m:mtd>
+		</m:mtr>
+		<m:mtr>
+			<m:mtd columnalign="right">
+				<m:mrow>
+					<m:mo>(</m:mo>
+					<m:mrow>
+						<m:mn>5.563</m:mn>
+						<m:mspace width="0.2em"/>
+						<m:mo>×</m:mo>
+						<m:mspace width="0.2em"/>
+						<m:msup>
+							<m:mrow>
+								<m:mn>10</m:mn>
+							</m:mrow>
+							<m:mrow>
+								<m:mn>12</m:mn>
+							</m:mrow>
+						</m:msup>
+					</m:mrow>
+					<m:mo>)</m:mo>
+				</m:mrow>
+				<m:mrow>
+					<m:mo>(</m:mo>
+					<m:mrow>
+						<m:mn>6.67</m:mn>
+						<m:mspace width="0.2em"/>
+						<m:mo>×</m:mo>
+						<m:mspace width="0.2em"/>
+						<m:msup>
+							<m:mrow>
+								<m:mn>10</m:mn>
+							</m:mrow>
+							<m:mrow>
+								<m:mn>−11</m:mn>
+							</m:mrow>
+						</m:msup>
+						<m:mspace width="0.1em"/>
+						<m:msup>
+							<m:mtext>m</m:mtext>
+							<m:mn>3</m:mn>
+						</m:msup>
+					</m:mrow>
+					<m:mo>)</m:mo>
+				</m:mrow>
+				<m:mrow>
+					<m:mo>(</m:mo>
+					<m:mrow>
+						<m:mn>6.04</m:mn>
+						<m:mspace width="0.2em"/>
+						<m:mo>×</m:mo>
+						<m:mspace width="0.2em"/>
+						<m:msup>
+							<m:mrow>
+								<m:mn>10</m:mn>
+							</m:mrow>
+							<m:mrow>
+								<m:mn>24</m:mn>
+							</m:mrow>
+						</m:msup>
+					</m:mrow>
+					<m:mo>)</m:mo>
+				</m:mrow>
+			</m:mtd>
+			<m:mtd columnalign="left">
+				<m:mo>=</m:mo>
+			</m:mtd>
+			<m:mtd columnalign="left">
+				<m:mn>4</m:mn>
+				<m:msup>
+					<m:mi>π</m:mi>
+					<m:mn>2</m:mn>
+				</m:msup>
+				<m:msup>
+					<m:mi>a</m:mi>
+					<m:mn>3</m:mn>
+				</m:msup>
+			</m:mtd>
+		</m:mtr>
+		<m:mtr>
+			<m:mtd columnalign="right">
+				<m:msup>
+					<m:mi>a</m:mi>
+					<m:mn>3</m:mn>
+				</m:msup>
+			</m:mtd>
+			<m:mtd columnalign="left">
+				<m:mo>=</m:mo>
+			</m:mtd>
+			<m:mtd columnalign="left">
+				<m:mfrac>
+					<m:mrow>
+						<m:mn>2.241</m:mn>
+						<m:mspace width="0.2em"/>
+						<m:mo>×</m:mo>
+						<m:mspace width="0.2em"/>
+						<m:msup>
+								<m:mn>10</m:mn>
+								<m:mn>27</m:mn>
+						</m:msup>
+					</m:mrow>
+					<m:mrow>
+						<m:mn>4</m:mn>
+						<m:msup>
+							<m:mi>π</m:mi>
+							<m:mn>2</m:mn>
+						</m:msup>
+					</m:mrow>
+				</m:mfrac>
+				<m:msup>
+					<m:mtext>m</m:mtext>
+					<m:mn>3</m:mn>
+				</m:msup>
+			</m:mtd>
+		</m:mtr>
+		<m:mtr>
+			<m:mtd columnalign="right">
+				<m:mi>a</m:mi>
+			</m:mtd>
+			<m:mtd columnalign="left">
+				<m:mo>=</m:mo>
+			</m:mtd>
+			<m:mtd columnalign="left">
+				<m:mn>3.84</m:mn>
+				<m:mspace width="0.2em"/>
+				<m:mo>×</m:mo>
+				<m:mspace width="0.2em"/>
+				<m:msup>
+					<m:mn>10</m:mn>
+					<m:mn>8</m:mn>
+				</m:msup>
+				<m:mtext>m</m:mtext>
+			</m:mtd>
+		</m:mtr>
+		<m:mtr>
+			<m:mtd/>
+			<m:mtd columnalign="left">
+				<m:mo>≈</m:mo>
+			</m:mtd>
+			<m:mtd columnalign="left">
+				<m:mn>384,000</m:mn>
+				<m:mspace width="0.2em"/>
+				<m:mtext>km.</m:mtext>
+			</m:mtd>
+		</m:mtr>
+	</m:mtable>
+</m:math></equation>
 </solution>
 <commentary id="fs-id1169737523990">
 <title>Analysis</title>
@@ -395,7 +728,7 @@ Therefore, the ball hits the water about 9914.26 ft away from the base of the cl
 <note id="fs-id1169737484455" class="checkpoint">
 <exercise id="fs-id1169737484459">
 <problem id="fs-id1169737484461">
-<para id="fs-id1169737484464">Titan is the largest moon of Saturn. The mass of Titan is approximately <m:math><m:mrow><m:mn>1.35</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>23</m:mn></m:mrow></m:msup></m:mrow></m:math> kg. The mass of Saturn is approximately <m:math><m:mrow><m:mn>5.68</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>26</m:mn></m:mrow></m:msup></m:mrow></m:math> kg. Titan takes approximately 16 days to orbit Saturn. Use this information, along with the universal gravitation constant <m:math><m:mrow><m:mi>G</m:mi><m:mo>=</m:mo><m:mn>6.67</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−11</m:mn></m:mrow></m:msup><m:mrow><m:mrow><m:msup><m:mtext>m</m:mtext><m:mspace width="0.2em"/><m:mn>3</m:mn></m:msup></m:mrow><m:mtext>/</m:mtext><m:mrow><m:mtext>kg</m:mtext><m:mo>·</m:mo><m:msup><m:mrow><m:mtext>sec</m:mtext></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mrow></m:math> to estimate the distance from Titan to Saturn.</para>
+<para id="fs-id1169737484464">Titan is the largest moon of Saturn. The mass of Titan is approximately <m:math><m:mrow><m:mn>1.35</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>23</m:mn></m:mrow></m:msup></m:mrow></m:math> kg. The mass of Saturn is approximately <m:math><m:mrow><m:mn>5.68</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>26</m:mn></m:mrow></m:msup></m:mrow></m:math> kg. Titan takes approximately 16 days to orbit Saturn. Use this information, along with the universal gravitation constant <m:math><m:mrow><m:mi>G</m:mi><m:mo>=</m:mo><m:mn>6.67</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−11</m:mn></m:mrow></m:msup><m:mrow><m:mrow><m:msup><m:mtext>m</m:mtext><m:mn>3</m:mn></m:msup></m:mrow><m:mtext>/</m:mtext><m:mrow><m:mtext>kg</m:mtext><m:mo>·</m:mo><m:msup><m:mrow><m:mtext>sec</m:mtext></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mrow></m:math> to estimate the distance from Titan to Saturn.</para>
 </problem>
 <solution id="fs-id1169737826016">
 <para id="fs-id1169737826018"><m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>1.224</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>9</m:mn></m:msup><m:mtext>m</m:mtext><m:mo>≈</m:mo><m:mn>1,224,000</m:mn><m:mspace width="0.2em"/><m:mtext>km</m:mtext></m:mrow></m:math></para>
@@ -555,7 +888,7 @@ The Bristol Motor Speedway is a NASCAR short track in Bristol, Tennessee. The tr
 </media>
 </problem>
 <solution id="fs-id1169737168395">
-<para id="fs-id1169737168397"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mi>v</m:mi></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−2</m:mn><m:mi>sin</m:mi><m:mspace width="0.2em"/><m:mi>t</m:mi><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mi>j</m:mi></m:mstyle><m:mo>+</m:mo><m:mn>3</m:mn><m:mspace width="0.1em"/><m:mi>cos</m:mi><m:mspace width="0.2em"/><m:mi>t</m:mi><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mi>k</m:mi></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>a</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−2</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>−</m:mo><m:mn>3</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtext>speed</m:mtext><m:mo>=</m:mo><m:msqrt><m:mn>4</m:mn><m:mspace width="0.1em"/><m:msup><m:mtext>sin</m:mtext><m:mn>2</m:mn></m:msup><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>9</m:mn><m:msup><m:mi>cos</m:mi><m:mn>2</m:mn></m:msup><m:mi>t</m:mi></m:msqrt></m:math></para>
+<para id="fs-id1169737168397"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mi>v</m:mi></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−2</m:mn><m:mi>sin</m:mi><m:mspace width="0.2em"/><m:mi>t</m:mi><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mi>j</m:mi></m:mstyle><m:mo>+</m:mo><m:mn>3</m:mn><m:mspace width="0.1em"/><m:mi>cos</m:mi><m:mspace width="0.2em"/><m:mi>t</m:mi><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mi>k</m:mi></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>a</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−2</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>−</m:mo><m:mn>3</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtext>speed</m:mtext><m:mo>=</m:mo><m:msqrt><m:mn>4</m:mn><m:mspace width="0.1em"/><m:msup><m:mtext>sin</m:mtext><m:mn>2</m:mn></m:msup><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>9</m:mn><m:msup><m:mtext>cos</m:mtext><m:mn>2</m:mn></m:msup><m:mi>t</m:mi></m:msqrt></m:math></para>
 </solution>
 </exercise>
 <para id="fs-id1169737212054">Find the velocity, acceleration, and speed of a particle with the given position function.</para>

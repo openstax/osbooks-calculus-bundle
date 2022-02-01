@@ -390,7 +390,7 @@
 <para id="fs-id1165043114993">A triangle has two constant sides of length 3 ft and 5 ft. The angle between these two sides is increasing at a rate of 0.1 rad/sec. Find the rate at which the area of the triangle is changing when the angle between the two sides is <m:math><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>6</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1165043115010">
-<para id="fs-id1165043115012">The area is increasing at a rate <m:math><m:mrow><m:mfrac><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:msqrt><m:mn>3</m:mn></m:msqrt></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>8</m:mn></m:mfrac><m:mspace width="0.2em"/><m:msup><m:mtext>ft</m:mtext><m:mspace width="0.2em"/><m:mn>2</m:mn></m:msup><m:mtext>/sec.</m:mtext></m:mrow></m:math></para>
+<para id="fs-id1165043115012">The area is increasing at a rate <m:math><m:mrow><m:mfrac><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:msqrt><m:mn>3</m:mn></m:msqrt></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>8</m:mn></m:mfrac><m:mspace width="0.2em"/><m:msup><m:mtext>ft</m:mtext><m:mn>2</m:mn></m:msup><m:mtext>/sec.</m:mtext></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1165043115045">
@@ -429,7 +429,7 @@
 <para id="fs-id1165043092203">A cylinder is leaking water but you are unable to determine at what rate. The cylinder has a height of 2 m and a radius of 2 m. Find the rate at which the water is leaking out of the cylinder if the rate at which the height is decreasing is 10 cm/min when the height is 1 m.</para>
 </problem>
 <solution id="fs-id1165043092210">
-<para id="fs-id1165043092212">The water flows out at rate <m:math><m:mrow><m:mfrac><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>5</m:mn></m:mfrac><m:mspace width="0.2em"/><m:msup><m:mtext>m</m:mtext><m:mspace width="0.2em"/><m:mn>3</m:mn></m:msup><m:mtext>/min.</m:mtext></m:mrow></m:math></para>
+<para id="fs-id1165043092212">The water flows out at rate <m:math><m:mrow><m:mfrac><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>5</m:mn></m:mfrac><m:mspace width="0.2em"/><m:msup><m:mtext>m</m:mtext><m:mn>3</m:mn></m:msup><m:mtext>/min.</m:mtext></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1165043092244">
