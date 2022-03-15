@@ -1169,7 +1169,7 @@ d. <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:m
 </table>
 </problem>
 <solution id="fs-id1167794139271">
-<para id="fs-id1167794139273"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−1.238</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−7</m:mn></m:mrow></m:msup><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>0.001196</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>3.666</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7208</m:mn><m:mo>;</m:mo></m:mrow></m:math> average temperature approximately <m:math><m:mrow><m:mn>2800</m:mn><m:msup><m:mtext>°</m:mtext></m:msup><m:mi>C</m:mi></m:mrow></m:math></para>
+<para id="fs-id1167794139273"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−1.238</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−7</m:mn></m:mrow></m:msup><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>0.001196</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>3.666</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7208</m:mn><m:mo>;</m:mo></m:mrow></m:math> average temperature approximately <m:math><m:mrow><m:msup><m:mn>2800</m:mn><m:mtext>°</m:mtext></m:msup><m:mi>C</m:mi></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793429885">

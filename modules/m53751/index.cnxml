@@ -556,7 +556,7 @@ Since the limit is <m:math><m:mn>0</m:mn></m:math> and <m:math><m:mrow><m:munder
 <para id="fs-id1169736728311"><m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>a</m:mi><m:mi>b</m:mi><m:mo>+</m:mo><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> or <m:math><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:mo>≥</m:mo><m:mn>2</m:mn><m:mi>a</m:mi><m:mi>b</m:mi><m:mo>,</m:mo></m:mrow></m:math> so convergence follows from comparison of <m:math>
 <m:mrow><m:mn>2</m:mn><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:msub><m:mi>b</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> with <m:math>
 
-<m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:msub><m:mi>n</m:mi></m:msub><m:mrow/><m:mo>+</m:mo><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:msub><m:mi>n</m:mi></m:msub><m:mrow/><m:mo>.</m:mo></m:mrow>
+<m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:msub><m:mrow/><m:mi>n</m:mi></m:msub><m:mrow/><m:mo>+</m:mo><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:msub><m:mrow/><m:mi>n</m:mi></m:msub><m:mrow/><m:mo>.</m:mo></m:mrow>
 
 </m:math> Since the partial sums on the left are bounded by those on the right, the inequality holds for the infinite series.</para>
 </solution>
