@@ -1,0 +1,15 @@
+# These settings are synced to GitHub by https://probot.github.io/apps/settings/
+
+repository:
+  # See https://docs.github.com/en/rest/reference/repos#update-a-repository for all available settings.
+  private: false
+  
+  has_issues: false
+  has_wiki: false
+  has_projects: false
+
+  default_branch: main
+
+  allow_auto_merge: true
+  delete_branch_on_merge: true
+  allow_forking: true
