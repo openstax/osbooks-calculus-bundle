@@ -314,10 +314,10 @@ Therefore we need to wait an additional <m:math><m:mrow><m:mn>22.1</m:mn></m:mro
 </exercise>
 <exercise id="fs-id1170571227046">
 <problem id="fs-id1170571227048">
-<para id="fs-id1170571227050"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+<para id="fs-id1170571227050"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>–y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1170573536913">
-<para id="fs-id1170573536915"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>C</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+<para id="fs-id1170573536915"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>C</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1170573739096">
