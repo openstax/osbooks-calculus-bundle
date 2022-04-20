@@ -25,7 +25,7 @@
 <media id="fs-id1165042988619" alt="The function f(x) 2 + 1/x is graphed. The function starts negative near y = 2 but then decreases to −∞ near x = 0. The function then decreases from ∞ near x = 0 and gets nearer to y = 2 as x increases. There is a horizontal line denoting the asymptote y = 2.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_04_06_019.jpg"/>
 </media>
-<caption>The function approaches the asymptote <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> as <m:math><m:mi>x</m:mi></m:math> approaches <m:math><m:mrow><m:mtext>±</m:mtext><m:mi>∞</m:mi><m:mo>.</m:mo></m:mrow></m:math></caption>
+<caption>The function approaches the asymtote <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> as <m:math><m:mi>x</m:mi></m:math> approaches <m:math><m:mrow><m:mtext>±</m:mtext><m:mi>∞</m:mi><m:mo>.</m:mo></m:mrow></m:math></caption>
 </figure>
 <table id="fs-id1165043428402" class="column-header" summary="The table has four rows and five columns. The first column is a header column and it reads x, 2 + 1/x, x, and 2 + 1/x. After the header, the first row reads 10, 100, 1000, and 10000. The second row reads 2.1, 2.01, 2.001, and 2.0001. The third row reads −10, −100, −1000, and −10000. The fourth row reads 1.9, 1.99, 1.999, and 1.9999.">
 <title>Values of a function <m:math><m:mi>f</m:mi></m:math> as <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">→</m:mo><m:mtext>±</m:mtext><m:mi>∞</m:mi></m:mrow></m:math></title>
