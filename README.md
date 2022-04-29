@@ -8,7 +8,7 @@ To view these books online and view contributors, please visit:
 - _Calculus Volume 3_ [online](https://openstax.org/details/books/calculus-volume-3)
 
 ## License
-These books are available under the [Creative Commons Attribution-NonCommercial-ShareAlike License](https://github.com/openstax/content-synchronizer/blob/main/licenses/by-nc-sa-4.0) license.
+These books are available under the [Creative Commons Attribution-NonCommercial-ShareAlike License](./LICENSE) license.
 
 ## Support
 If you would like to support the creation of free textbooks for students, your [donations are welcome](https://riceconnect.rice.edu/donation/support-openstax-banner).
