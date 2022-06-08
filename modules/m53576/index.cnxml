@@ -291,7 +291,7 @@ Since <m:math><m:mrow><m:mn>3</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup
 </exercise>
 <exercise id="fs-id1169736609267">
 <problem id="fs-id1169736609269">
-<para id="fs-id1169736609271">A rocket is fired vertically upward from the ground. The distance <m:math><m:mrow><m:mi>s</m:mi></m:mrow></m:math> in feet that the rocket travels from the ground after <m:math><m:mi>t</m:mi></m:math> seconds is given by <m:math><m:mrow><m:mi>s</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>−16</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>560</m:mn><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1169736609271">A model rocket is fired vertically upward from the ground. The distance <m:math><m:mrow><m:mi>s</m:mi></m:mrow></m:math> in feet that the rocket travels from the ground after <m:math><m:mi>t</m:mi></m:math> seconds is given by <m:math><m:mrow><m:mi>s</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>−16</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>560</m:mn><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
 <list id="fs-id1169739351577" list-type="enumerated" number-style="lower-alpha">
 <item>Find the velocity of the rocket 3 seconds after being fired.</item>
 <item>Find the acceleration of the rocket 3 seconds after being fired.</item>

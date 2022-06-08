@@ -1127,7 +1127,7 @@ The Bristol Motor Speedway is a NASCAR short track in Bristol, Tennessee. The tr
 <para id="fs-id1169737359591"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>2</m:mn><m:mi>t</m:mi><m:mo>,</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo><m:mfrac><m:mrow><m:msup><m:mi>t</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mn>3</m:mn></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1169737184191">
-<para id="fs-id1169737184193"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>T</m:mi></m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>N</m:mi></m:msub><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+<para id="fs-id1169737184193"><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>T</m:mi></m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:msub><m:mi>a</m:mi><m:mi>N</m:mi></m:msub><m:mo>=</m:mo><m:mn>2</m:mn></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1169737184235">

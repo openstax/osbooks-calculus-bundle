@@ -636,14 +636,14 @@ Using a weight-density of <m:math><m:mrow><m:mn>62.4</m:mn></m:mrow></m:math> lb
 </exercise>
 <exercise id="fs-id1167793524815">
 <problem id="fs-id1167793524817">
-<para id="fs-id1167793524819"><emphasis effect="bold">[T]</emphasis> A rectangular dam is <m:math><m:mrow><m:mn>40</m:mn></m:mrow></m:math> ft high and <m:math><m:mrow><m:mn>60</m:mn></m:mrow></m:math> ft wide. Compute the total force <m:math><m:mi>F</m:mi></m:math> on the dam when</para>
+<para id="fs-id1167793524819"><emphasis effect="bold">[T]</emphasis> A rectangular dam is <m:math><m:mrow><m:mn>40</m:mn></m:mrow></m:math> ft high and <m:math><m:mrow><m:mn>60</m:mn></m:mrow></m:math> ft wide. Assume the weight density of water is 62.5 lbs/ft<sup>3</sup>. Compute the total force <m:math><m:mi>F</m:mi></m:math> on the dam when</para>
 <list id="fs-id1167793524840" list-type="enumerated" number-style="lower-alpha">
 <item>the surface of the water is at the top of the dam and</item>
 <item>the surface of the water is halfway down the dam.</item>
 </list>
 </problem>
 <solution id="fs-id1167793524853">
-<para id="fs-id1167793957832">a. <m:math><m:mrow><m:mn>3,000,000</m:mn></m:mrow></m:math> lb, b. <m:math><m:mrow><m:mn>749,000</m:mn></m:mrow></m:math> lb</para>
+<para id="fs-id1167793957832">a. <m:math><m:mrow><m:mn>3,000,000</m:mn></m:mrow></m:math> lb, b. <m:math><m:mrow><m:mn>750,000</m:mn></m:mrow></m:math> lbs</para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793957860">
