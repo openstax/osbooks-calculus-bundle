@@ -437,7 +437,7 @@
 <colspec colnum="4" colname="c4"/>
 <thead>
 <row valign="top">
-<entry align="left"><emphasis effect="italics">x</emphasis></entry>
+<entry align="left"><emphasis effect="italics">ϕ</emphasis></entry>
 <entry align="left"><emphasis effect="italics">y</emphasis></entry>
 <entry align="left"><m:math><m:mrow><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ϕ</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
 <entry align="left"><emphasis effect="italics">m</emphasis><sub>sec</sub></entry>

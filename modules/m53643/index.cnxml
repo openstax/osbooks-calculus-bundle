@@ -483,17 +483,17 @@ Looking at the region, it would be problematic to define a horizontal rectangle;
 </exercise>
 <exercise id="fs-id1167794095695">
 <problem id="fs-id1167794095697">
-<para id="fs-id1167794095699"><m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>π</m:mi></m:mrow>
+<para id="fs-id1167794095699"><m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>π</m:mi></m:mrow>
 </m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1167794095754">
 <problem id="fs-id1167794095756">
 <para id="fs-id1167793545161">
-<m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>,</m:mo></m:mrow></m:math>  and the <emphasis effect="italics">y</emphasis>-axis</para>
+<m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793545211">
-<para id="fs-id1167793545213"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>114</m:mn><m:mi>π</m:mi></m:mrow><m:mn>5</m:mn></m:mfrac></m:mrow></m:math></para>
+<para id="fs-id1167793545213"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>113</m:mn><m:mi>π</m:mi></m:mrow><m:mn>5</m:mn></m:mfrac></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793545231">

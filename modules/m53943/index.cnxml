@@ -466,7 +466,10 @@ Then, we substitute <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:
 <para id="fs-id1167793501799">Find the point on the surface <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>z</m:mi></m:mrow></m:math> closest to the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793298490">
-<para id="fs-id1167793298492"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+<para id="para-00001">The given equation describes two planes parallel to the x-axis: <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>;</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:math>.</para>
+<para id="para-00002">The point closest to <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:math> is <m:math><m:mfenced><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow></m:mfenced><m:mfenced><m:mrow><m:mtext>distance</m:mtext><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:mfenced></m:math></para>
+<para id="para-00003">and the point closest to <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:math> is <m:math><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow></m:mfenced><m:mfenced><m:mrow><m:mtext>distance</m:mtext><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:mfenced></m:math></para>
+
 </solution>
 </exercise>
 <exercise id="fs-id1167793298519">

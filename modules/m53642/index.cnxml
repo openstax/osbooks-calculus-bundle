@@ -526,7 +526,7 @@
 </exercise>
 <exercise id="fs-id1167794069008">
 <problem id="fs-id1167794069011">
-<para id="fs-id1167794069013"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+<para id="fs-id1167794069013"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mtext>for</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167794327643"><para id="fs-id1167794327644"><newline/>
 <media id="fs-id1167794327648" alt="This figure is a graph in the first quadrant. It is a shaded region bounded above by the line y=1, below by the curve y=x^4, and to the left by the y-axis.">
