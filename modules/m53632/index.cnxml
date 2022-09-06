@@ -455,7 +455,7 @@ Some jumpers wear “<term class="no-emphasis" id="term-00008">wingsuits</term>�
 </exercise>
 <exercise id="fs-id1170572551781">
 <problem id="fs-id1170572551783">
-<para id="fs-id1170572551785"><m:math><m:mrow><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="true">∫</m:mo><m:mn>4</m:mn><m:mi>x</m:mi></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>16</m:mn><m:mo>−</m:mo><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+<para id="fs-id1170572551785"><m:math><m:mrow><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="true">∫</m:mo><m:mn>3</m:mn><m:mi>x</m:mi></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>16</m:mn><m:mo>−</m:mo><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1170572551831">
 <para id="fs-id1170572551833"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mrow><m:mn>16</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math></para>

@@ -752,14 +752,7 @@ This expression is undefined when <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m
 <para id="fs-id1167794049813">Find the area bounded by the curve <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>t</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>t</m:mi><m:mo>≤</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> and the lines <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167794049877">
-<para id="fs-id1167794049879"><m:math><m:mrow>
-<m:mfrac>
-<m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:msup>
-<m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
-<m:mrow><m:mn>2</m:mn></m:mrow>
-</m:mfrac>
-</m:mrow>
-</m:math></para></solution>
+<para id="fs-id1167794049879"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mfrac><m:mrow><m:msup><m:mi>e</m:mi><m:mfrac><m:mi mathvariant="normal">&#x3C0;</m:mi><m:mn>2</m:mn></m:mfrac></m:msup><m:mo>&#x2013;</m:mo><m:mn>1</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac></m:math></para></solution>
 </exercise>
 <exercise id="fs-id1167794049885">
 <problem id="fs-id1167794049887">

@@ -353,7 +353,7 @@
 <para id="fs-id1165042706092"><emphasis effect="italics">True or False</emphasis>. For every continuous nonlinear function, you can find the value <m:math><m:mi>x</m:mi></m:math> that maximizes the function.</para>
 </problem>
 <solution id="fs-id1165042328704">
-<para id="fs-id1165042328706">False; <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> has a minimum only</para>
+<para id="fs-id1165042328706">False; <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> has a minimum only</para>
 </solution>
 </exercise>
 <exercise id="fs-id1165042707536">

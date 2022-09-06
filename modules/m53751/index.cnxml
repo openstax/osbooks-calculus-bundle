@@ -354,7 +354,7 @@ Since the limit is <m:math><m:mn>0</m:mn></m:math> and <m:math><m:mrow><m:munder
 </exercise>
 <exercise id="fs-id1169739186610">
 <problem id="fs-id1169739186612">
-<para id="fs-id1169739186614"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
+<para id="fs-id1169739186614"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1169736662761">
 <para id="fs-id1169736662763"><m:math><m:mrow><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>≤</m:mo><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mi>n</m:mi><m:mo>,</m:mo></m:mrow></m:math> so converges by comparison with <emphasis effect="italics">p</emphasis>-series, <m:math><m:mrow><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
