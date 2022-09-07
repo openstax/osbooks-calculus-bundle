@@ -628,7 +628,7 @@ which is small for <m:math><m:mi>k</m:mi></m:math> small.</item>
 </exercise>
 <exercise id="fs-id1167023786885">
 <problem id="fs-id1167023786887">
-<para id="fs-id1167023786890">Find the <m:math><m:mrow><m:mn>99</m:mn></m:mrow></m:math> th derivative of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>25</m:mn></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167023786890">Find the <m:math><m:mrow><m:mn>99</m:mn></m:mrow></m:math> th derivative at <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:math> of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>25</m:mn></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167023786936">
 <para id="fs-id1167023786939"><m:math><m:mrow><m:msup><m:mi>f</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>99</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>

@@ -727,7 +727,7 @@ requires us first to find the set of antiderivatives of <m:math><m:mi>f</m:mi></
 </exercise>
 <exercise id="fs-id1165042667147">
 <problem id="fs-id1165042667149">
-<para id="fs-id1165042667151">You are merging onto the freeway, accelerating at a constant rate of <m:math><m:mrow><m:mn>12</m:mn></m:mrow></m:math> ft/sec<sup>2</sup>. How long does it take you to reach merging speed at <m:math><m:mrow><m:mn>60</m:mn></m:mrow></m:math> mph?</para>
+<para id="fs-id1165042667151">You are merging onto the freeway, accelerating from rest at a constant rate of <m:math><m:mrow><m:mn>12</m:mn></m:mrow></m:math> ft/sec<sup>2</sup>. How long does it take you to reach merging speed at <m:math><m:mrow><m:mn>60</m:mn></m:mrow></m:math> mph?</para>
 </problem>
 <solution id="fs-id1165042667169">
 <para id="fs-id1165042667171"><m:math><m:mrow><m:mn>7.333</m:mn></m:mrow></m:math> sec</para>

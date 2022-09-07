@@ -1265,10 +1265,10 @@ where <emphasis effect="italics">P</emphasis> is measured in millions of people 
 </exercise>
 <exercise id="fs-id1170572213021">
 <problem id="fs-id1170572213023">
-<para id="fs-id1170572213025"><emphasis effect="bold">[T]</emphasis> The 1906 earthquake in San Francisco had a magnitude of 8.3 on the Richter scale. At the same time, in Japan, an earthquake with magnitude 4.9 caused only minor damage. Approximately how much more energy was released by the San Francisco earthquake than by the Japanese earthquake? See the definition of Richter Scale in <link document="m53481" target-id="fs-id1170572128685"/> in this section.</para>
+<para id="fs-id1170572213025"><emphasis effect="bold">[T]</emphasis> The 1906 earthquake in San Francisco had a magnitude of 8.3 on the Richter scale. At the same time, in Japan, an earthquake with magnitude 4.9 caused only minor damage. Approximately how much more intense was the San Francisco earthquake than the Japanese earthquake? See the definition of Richter Scale in <link document="m53481" target-id="fs-id1170572128685"/> in this section.</para>
 </problem>
 <solution id="fs-id1170572213036">
-<para id="fs-id1170572213038">The San Francisco earthquake had <m:math><m:mrow><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>3.4</m:mn></m:mrow></m:msup><m:mtext>or</m:mtext><m:mspace width="0.2em"/><m:mo>~</m:mo><m:mn>2512</m:mn></m:mrow></m:math> times more energy than the Japan earthquake.</para>
+<para id="fs-id1170572213038">The San Francisco earthquake was <m:math><m:mrow><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>3.4</m:mn></m:mrow></m:msup><m:mtext>or</m:mtext><m:mspace width="0.2em"/><m:mo>≈</m:mo><m:mn>2512</m:mn></m:mrow></m:math> times more intense than the Japanese earthquake.</para>
 </solution>
 </exercise>
 </section>

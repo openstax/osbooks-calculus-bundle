@@ -565,7 +565,7 @@
 
 <exercise id="fs-id1170572373699">
 <problem id="fs-id1170572373702">
-<para id="fs-id1170572373704"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mo>∫</m:mo><m:mi>x</m:mi><m:mo> </m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mi>d</m:mi><m:mi>x</m:mi></m:math> <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtext>(</m:mtext><m:mi>H</m:mi><m:mi>i</m:mi><m:mi>n</m:mi><m:mi>t</m:mi><m:mtext>:</m:mtext><m:mspace width="0.2em"/><m:mo>∫</m:mo><m:mi>x</m:mi><m:mo> </m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>∫</m:mo><m:mi>x</m:mi><m:mo> </m:mo><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mtext>; </m:mtext><m:mi>x</m:mi><m:mtext>0)</m:mtext></m:math></para>
+<para id="fs-id1170572373704"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mo>∫</m:mo><m:mi>x</m:mi><m:mo> </m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mi>d</m:mi><m:mi>x</m:mi></m:math> <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtext>(</m:mtext><m:mi>H</m:mi><m:mi>i</m:mi><m:mi>n</m:mi><m:mi>t</m:mi><m:mtext>:</m:mtext><m:mspace width="0.2em"/><m:mo>∫</m:mo><m:mi>x</m:mi><m:mo> </m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>∫</m:mo><m:mi>x</m:mi><m:mo> </m:mo><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>)</m:mo></m:math></para>
 </problem>
 </exercise>
 

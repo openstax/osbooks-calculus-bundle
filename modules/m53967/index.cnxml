@@ -697,7 +697,7 @@ where <m:math><m:mover accent="true"><m:mi>g</m:mi><m:mo>˜</m:mo></m:mover></m:
 <para id="fs-id1167793495345"><m:math><m:mi>E</m:mi></m:math> is located inside the cylinder <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> and between the circular paraboloids <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793368860">
-<para id="fs-id1167793368862"><m:math><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac></m:math></para>
+<para id="fs-id1167793368862"><m:math><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793368870">
