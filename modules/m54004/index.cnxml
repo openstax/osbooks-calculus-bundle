@@ -507,7 +507,7 @@
 <note id="fs-id1167793398456" class="checkpoint">
 <exercise id="fs-id1167793398461">
 <problem id="fs-id1167793398463">
-<para id="fs-id1167793398465">Calculate line integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>S</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> where <emphasis effect="italics">S</emphasis> is cylinder <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>z</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow></m:math> including the circular top and bottom.</para>
+<para id="fs-id1167793398465">Calculate surface integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>S</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> where <emphasis effect="italics">S</emphasis> is cylinder <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>z</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow></m:math> including the circular top and bottom.</para>
 </problem>
 <solution id="fs-id1167794056622">
 <para id="fs-id1167794056624">0</para>

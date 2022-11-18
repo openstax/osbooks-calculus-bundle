@@ -37,39 +37,39 @@
 </thead>
 <tbody>
 <row valign="top">
-<entry valign="top" align="left"><m:math><m:mrow><m:msup><m:mn>4</m:mn><m:mn>3</m:mn></m:msup></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mn>3</m:mn></m:mrow></m:math></entry>
 <entry valign="top" align="left">64</entry>
-<entry valign="top" align="left"><m:math><m:mrow><m:msup><m:mn>4</m:mn><m:mrow><m:mn>3.141593</m:mn></m:mrow></m:msup></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mn>3.141593</m:mn></m:mrow></m:math></entry>
 <entry valign="top" align="left">77.8802710486</entry>
 </row>
 <row valign="top">
-<entry valign="top" align="left"><m:math><m:mrow><m:msup><m:mn>4</m:mn><m:mrow><m:mn>3.1</m:mn></m:mrow></m:msup></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mn>3.1</m:mn></m:mrow></m:math></entry>
 <entry valign="top" align="left">73.5166947198</entry>
-<entry valign="top" align="left"><m:math><m:mrow><m:msup><m:mn>4</m:mn><m:mrow><m:mn>3.1416</m:mn></m:mrow></m:msup></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mn>3.1416</m:mn></m:mrow></m:math></entry>
 <entry valign="top" align="left">77.8810268071</entry>
 </row>
 <row valign="top">
-<entry valign="top" align="left"><m:math><m:mrow><m:msup><m:mn>4</m:mn><m:mrow><m:mn>3.14</m:mn></m:mrow></m:msup></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mn>3.14</m:mn></m:mrow></m:math></entry>
 <entry valign="top" align="left">77.7084726013</entry>
-<entry valign="top" align="left"><m:math><m:mrow><m:msup><m:mn>4</m:mn><m:mrow><m:mn>3.142</m:mn></m:mrow></m:msup></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mn>3.142</m:mn></m:mrow></m:math></entry>
 <entry valign="top" align="left">77.9242251944</entry>
 </row>
 <row valign="top">
-<entry valign="top" align="left"><m:math><m:mrow><m:msup><m:mn>4</m:mn><m:mrow><m:mn>3.141</m:mn></m:mrow></m:msup></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mn>3.141</m:mn></m:mrow></m:math></entry>
 <entry valign="top" align="left">77.8162741237</entry>
-<entry valign="top" align="left"><m:math><m:mrow><m:msup><m:mn>4</m:mn><m:mrow><m:mn>3.15</m:mn></m:mrow></m:msup></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mrow><m:mn>3.15</m:mn></m:mrow></m:math></entry>
 <entry valign="top" align="left">78.7932424541</entry>
 </row>
 <row valign="top">
-<entry valign="top" align="left"><m:math><m:mrow><m:msup><m:mn>4</m:mn><m:mrow><m:mn>3.1415</m:mn></m:mrow></m:msup></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mn>3.1415</m:mn></m:math></entry>
 <entry valign="top" align="left">77.8702309526</entry>
-<entry valign="top" align="left"><m:math><m:mrow><m:msup><m:mn>4</m:mn><m:mrow><m:mn>3.2</m:mn></m:mrow></m:msup></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mn>3.2</m:mn></m:math></entry>
 <entry valign="top" align="left">84.4485062895</entry>
 </row>
 <row valign="top">
-<entry valign="top" align="left"><m:math><m:mrow><m:msup><m:mn>4</m:mn><m:mrow><m:mn>3.14159</m:mn></m:mrow></m:msup></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mn>3.14159</m:mn></m:math></entry>
 <entry valign="top" align="left">77.8799471543</entry>
-<entry valign="top" align="left"><m:math><m:mrow><m:msup><m:mn>4</m:mn><m:mn>4</m:mn></m:msup></m:mrow></m:math></entry>
+<entry valign="top" align="left"><m:math><m:mn>4</m:mn></m:math></entry>
 <entry valign="top" align="left">256</entry>
 </row>
 </tbody>

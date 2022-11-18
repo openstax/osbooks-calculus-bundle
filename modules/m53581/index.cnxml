@@ -239,7 +239,7 @@
         <m:mo>′</m:mo>
         <m:mo stretchy="false">(</m:mo>
         <m:mi>x</m:mi>
-        <m:mo stretchy="false">)</m:mo> <m:mo stretchy="false">)</m:mo>
+        <m:mo stretchy="false">)</m:mo>
       </m:mtd>
       <m:mtd/>
       <m:mtd/>
@@ -315,7 +315,7 @@
         <m:mo>′</m:mo>
         <m:mo stretchy="false">(</m:mo>
         <m:mi>x</m:mi>
-        <m:mo stretchy="false">)</m:mo> <m:mo stretchy="false">)</m:mo>
+        <m:mo stretchy="false">)</m:mo> 
       </m:mtd>
       <m:mtd/>
       <m:mtd/>
@@ -395,7 +395,7 @@
         <m:mo>′</m:mo>
         <m:mo stretchy="false">(</m:mo>
         <m:mi>x</m:mi>
-        <m:mo stretchy="false">)</m:mo> <m:mo stretchy="false">)</m:mo>
+        <m:mo stretchy="false">)</m:mo> 
       </m:mtd>
       <m:mtd/>
       <m:mtd/>
@@ -479,7 +479,7 @@
         <m:mo>′</m:mo>
         <m:mo stretchy="false">(</m:mo>
         <m:mi>x</m:mi>
-        <m:mo stretchy="false">)</m:mo> <m:mo stretchy="false">)</m:mo>
+        <m:mo stretchy="false">)</m:mo> 
       </m:mtd>
       <m:mtd/>
       <m:mtd/>
@@ -568,7 +568,7 @@
         <m:mo>′</m:mo>
         <m:mo stretchy="false">(</m:mo>
         <m:mi>x</m:mi>
-        <m:mo stretchy="false">)</m:mo> <m:mo stretchy="false">)</m:mo>
+        <m:mo stretchy="false">)</m:mo> 
       </m:mtd>
       <m:mtd/>
       <m:mtd/>
@@ -625,7 +625,7 @@
             <m:mo stretchy="false">)</m:mo>
             <m:mo stretchy="false">)</m:mo>
           </m:mrow>
-           <m:mo stretchy="false">)</m:mo>
+          <m:mo stretchy="false">(</m:mo>
         </m:mrow>
         <m:mspace width="0.25em"/>
         <m:mo>=</m:mo>
@@ -657,7 +657,7 @@
         <m:mo>′</m:mo>
         <m:mo stretchy="false">(</m:mo>
         <m:mi>x</m:mi>
-        <m:mo stretchy="false">)</m:mo> <m:mo stretchy="false">)</m:mo>
+        <m:mo stretchy="false">)</m:mo> 
       </m:mtd>
       <m:mtd/>
       <m:mtd/>
