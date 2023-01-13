@@ -251,7 +251,7 @@
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_06_004.jpg"/>
 </media>
 
-<caption>A rotated ellipse with equation f(x, y) = 18. At the point (–2, 1) on the ellipse, there are drawn two arrows, one tangent vector and one normal vector. The normal vector is marked ∇f(–2, 1) and is perpendicular to the tangent vector.</caption></figure></solution>
+<caption>A rotated ellipse with equation f(x, y) = 18. At the point (–2, 1) on the ellipse, there are drawn two arrows, one tangent vector and one normal vector. The normal vector is marked ∇f(–2, 1) and is perpendicular to the tangent vector. Note that the tangent vector is drawn much shorter than it actually is to fit in the figure. The direction is correct, however.</caption></figure></solution>
 </exercise>
 </example>
 <note id="fs-id1167793219292" class="checkpoint">

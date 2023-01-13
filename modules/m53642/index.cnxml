@@ -797,7 +797,7 @@
 </exercise>
 <exercise id="fs-id1167793624757">
 <problem id="fs-id1167793624759">
-<para id="fs-id1167793624761">Bore a hole of radius <m:math><m:mi>a</m:mi></m:math> down the axis of a right cone and through the base of radius <m:math><m:mi>b</m:mi><m:mo>,</m:mo></m:math> as seen here.</para>
+<para id="fs-id1167793624761">Bore a hole of radius <m:math><m:mi>a</m:mi></m:math> down the axis of a right cone of height <m:math><m:mi>b</m:mi></m:math> and radius <m:math><m:mi>b</m:mi></m:math> through the base of the cone as seen here.</para>
 <media id="fs-id1167793630330" alt="This figure is an upside down cone. It has a radius of the top as “b”, center at “a”, and height as “b”.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_06_02_246.jpg"/>
 </media>

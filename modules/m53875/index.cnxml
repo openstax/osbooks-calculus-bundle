@@ -956,7 +956,7 @@ The equation describes a sphere centered at point <m:math><m:mrow><m:mrow><m:mo>
 </list>
 </problem>
 <solution id="fs-id1163723341844">
-<para id="fs-id1163723341846">a. <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>+</m:mo><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>R</m:mi><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>φ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo></m:mrow></m:math><newline/>
+<para id="fs-id1163723341846">a. <m:math><m:mrow><m:msup><m:mi>ρ</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>+</m:mo><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>R</m:mi><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>φ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo></m:mrow></m:math><newline/>
 c.<newline/>
 <media id="fs-id1163723361972" alt="This figure is a torus. It is inside of a box. The edges of the box represent the x, y, and z axes.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_07_238.jpg"/>
