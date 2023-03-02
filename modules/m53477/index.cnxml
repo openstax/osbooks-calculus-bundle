@@ -1847,7 +1847,7 @@ Since <m:math><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:msqrt><m:mrow><m:mi>y
 <problem id="fs-id1170572425345">
 <para id="fs-id1170572425347"><emphasis effect="bold">[T]</emphasis> The manager at a skateboard shop pays his workers a monthly salary <emphasis effect="italics">S</emphasis> of $750 plus a commission of $8.50 for each skateboard they sell.</para>
 <list id="fs-id1170572425360" list-type="enumerated" number-style="lower-alpha"><item>Write a function <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>S</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> that models a worker’s monthly salary based on the number of skateboards <emphasis effect="italics">x</emphasis> he or she sells.</item>
-<item>Find the approximate monthly salary when a worker sells 25, 40, or 55 skateboards.</item>
+<item>Find the monthly salary when a worker sells 25, 40, or 55 skateboards.</item>
 <item>Use the INTERSECT feature on a graphing calculator to determine the number of skateboards that must be sold for a worker to earn a monthly income of $1400. (<emphasis effect="italics">Hint</emphasis>: Find the intersection of the function and the line <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1400</m:mn><m:mtext>.)</m:mtext></m:mrow></m:math></item>
 </list><media id="fs-id1170572425418" alt="An image of a graph. The y axis runs from 0 to 1800 and the x axis runs from 0 to 100. The graph is of the function “S(x) = 8.5x + 750”, which is a increasing straight line. The function has a y intercept at (0, 750) and the x intercept is not shown.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_01_01_215.jpg"/>
