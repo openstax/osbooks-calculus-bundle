@@ -942,7 +942,7 @@ Since the evaluation is getting complicated, we will only do the computation tha
 <para id="fs-id1167793480086"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>sinh</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>sinh</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>R</m:mi><m:mo>=</m:mo><m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">]</m:mo><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167794067795">
-<para id="fs-id1167794067797"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>cosh</m:mtext><m:mspace width="0.2em"/><m:mn>1</m:mn><m:mo>+</m:mo><m:mtext>cosh</m:mtext><m:mspace width="0.2em"/><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167794067797"><m:math><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>cosh</m:mtext><m:mspace width="0.2em"/><m:mn>1</m:mn><m:mo>+</m:mo><m:mtext>cosh</m:mtext><m:mspace width="0.2em"/><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>.</m:mo></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793417017">
