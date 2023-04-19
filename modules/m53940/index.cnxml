@@ -209,7 +209,7 @@
 <media id="fs-id1167793420668" alt="An surface in xyz space with point at f(a, b). There is an arrow in the direction of greatest descent.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_06_002.jpg"/>
 </media>
-<caption>A typical surface in <m:math><m:mrow><m:msup><m:mi>ℝ</m:mi><m:mn>3</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> Given a point on the surface, the directional derivative can be calculated using the gradient.</caption>
+<caption>A typical surface in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> Given a point on the surface, the directional derivative can be calculated using the gradient.</caption>
 </figure>
 <para id="fs-id1167793957099">When using a topographical map, the steepest slope is always in the direction where the contour lines are closest together (see <link target-id="CNX_Calc_Figure_14_06_003"/>). This is analogous to the contour map of a function, assuming the level curves are obtained for equally spaced values throughout the range of that function.</para>
 <figure id="CNX_Calc_Figure_14_06_003">
