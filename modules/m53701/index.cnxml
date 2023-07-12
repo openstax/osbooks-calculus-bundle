@@ -546,7 +546,7 @@ The equilibrium solutions are <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>
 <problem id="fs-id1170573626143">
 <para id="fs-id1170573626145"><m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup></m:mrow></m:math></para>
 </problem>
-<solution id="fs-id1170573626162"><para id="fs-id1170573626163"><newline/>
+<solution id="fs-id1170573626162"><para id="fs-id1170573626163">General solution is <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math>.
 <media id="fs-id1170571423359" alt="A direction field over the four quadrants. As t goes from 0 to infinity, the arrows become more and more vertical after being horizontal closer to x = 0.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_02_210.jpg"/>
 </media></para>
@@ -561,7 +561,7 @@ The equilibrium solutions are <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>
 <problem id="fs-id1170571423427">
 <para id="fs-id1170571423429"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup></m:mrow></m:math></para>
 </problem>
-<solution id="fs-id1170571100719"><para id="fs-id1170571100720"><newline/>
+<solution id="fs-id1170571100719"><para id="fs-id1170571100720">General solution is <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>C</m:mi></m:math>.
 <media id="fs-id1170571100723" alt="A direction field over [-2, 2] in the x and y axes. The arrows point slightly down and to the right over [-2, 0] and gradually become vertical over [0, 2].">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_02_212.jpg"/>
 </media></para>
