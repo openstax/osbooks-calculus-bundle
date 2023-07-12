@@ -859,24 +859,24 @@ The equilibrium solutions are <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>
 <thead>
 <row valign="top">
 <entry align="left">Step Size</entry>
-<entry align="left">Error</entry>
+<entry align="left">Relative Error</entry>
 </row>
 </thead>
 <tbody>
 <row valign="top">
-<entry align="left"><m:math><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>0.1</m:mn></m:mrow></m:math></entry>
 <entry align="left"><m:math><m:mrow><m:mn>0.3935</m:mn></m:mrow></m:math></entry>
 </row>
 <row valign="top">
-<entry align="left"><m:math><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>10</m:mn></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>0.01</m:mn></m:mrow></m:math></entry>
 <entry align="left"><m:math><m:mrow><m:mn>0.06163</m:mn></m:mrow></m:math></entry>
 </row>
 <row valign="top">
-<entry align="left"><m:math><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>100</m:mn></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>0.001</m:mn></m:mrow></m:math></entry>
 <entry align="left"><m:math><m:mrow><m:mn>0.006612</m:mn></m:mrow></m:math></entry>
 </row>
 <row valign="top">
-<entry align="left"><m:math><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>1000</m:mn></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>0.0001</m:mn></m:mrow></m:math></entry>
 <entry align="left"><m:math><m:mrow><m:mn>0.0006661</m:mn></m:mrow></m:math></entry>
 </row>
 </tbody>
