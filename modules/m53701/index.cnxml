@@ -821,7 +821,7 @@ The equilibrium solutions are <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>
 </exercise>
 <exercise id="fs-id1170571099338">
 <problem id="fs-id1170571099340">
-<para id="fs-id1170571099342"><m:math><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+<para id="fs-id1170571099342">Compute using <m:math><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1170571099354">
 <para id="fs-id1170571099356"><m:math><m:mn>2</m:mn></m:math></para>
@@ -829,12 +829,12 @@ The equilibrium solutions are <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>
 </exercise>
 <exercise id="fs-id1170571099364">
 <problem id="fs-id1170571099366">
-<para id="fs-id1170571099368"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>10</m:mn></m:mrow></m:math></para>
+<para id="fs-id1170571099368">Compute using <emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>0.1</m:mn></m:mrow></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1170571099396">
 <problem id="fs-id1170571099398">
-<para id="fs-id1170571099400"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>100</m:mn></m:mrow></m:math></para>
+<para id="fs-id1170571099400">Compute using <emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>0.001</m:mn></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1170571099417">
 <para id="fs-id1170571099419"><m:math><m:mrow><m:mn>3.2756</m:mn></m:mrow></m:math></para>
@@ -842,7 +842,7 @@ The equilibrium solutions are <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>
 </exercise>
 <exercise id="fs-id1170571099427">
 <problem id="fs-id1170571099430">
-<para id="fs-id1170571099432"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>1000</m:mn></m:mrow></m:math></para>
+<para id="fs-id1170571099432">Compute using <emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>0.0001</m:mn></m:mrow></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1170571450464">
