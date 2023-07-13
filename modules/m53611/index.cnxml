@@ -357,7 +357,7 @@ We conclude that the absolute maximum of <m:math><m:mi>f</m:mi></m:math> over th
 <para id="fs-id1165042065985">When <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
 </solution>
 </exercise>
-<para id="fs-id1165042065999">For the following exercises, determine where the local and absolute maxima and minima occur on the graph given. Assume the graph represents the entirety of each function.</para><exercise id="fs-id1165042066003">
+<para id="fs-id1165042065999">For the following exercises, determine where the local and absolute maxima and minima occur on the graph given. Assume the graph represents the entirety of each function. For any extrema located at an endpoint, approximate the x-value.</para><exercise id="fs-id1165042066003">
 <problem id="fs-id1165042066006">
 <media id="fs-id1165042066010" alt="The function graphed starts at (−4, 60), decreases rapidly to (−3, −40), increases to (−1, 10) before decreasing slowly to (2, 0), at which point it increases rapidly to (3, 30).">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_04_03_201.jpg"/>
