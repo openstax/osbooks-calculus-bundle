@@ -1056,7 +1056,7 @@ where <m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)<
 <para id="fs-id1169738138106">Find <m:math><m:mrow><m:msup><m:mi>w</m:mi><m:mo>′</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> What is the physical meaning of this value?</para>
 </problem>
 <solution id="fs-id1169738138129">
-<para id="fs-id1169738138131"><m:math><m:mrow><m:msup><m:mi>w</m:mi><m:mo>′</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>2.9</m:mn><m:mi>π</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> At 3 a.m. the tide is decreasing at a rate of 1.514 ft/hr.</para>
+<para id="fs-id1169738138131"><m:math><m:mrow><m:msup><m:mi>w</m:mi><m:mo>′</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>2.9</m:mn><m:mi>π</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> At 3 a.m. the tide is decreasing at a rate of 1.518 ft/hr.</para>
 </solution>
 </exercise>
 <para id="fs-id1169738138166">The following questions consider the wind speeds of Hurricane Katrina, which affected New Orleans, Louisiana, in August 2005. The data are displayed in a table.</para>
