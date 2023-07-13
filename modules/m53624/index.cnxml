@@ -669,10 +669,10 @@
 <para id="fs-id1170571777861"><m:math><m:mrow><m:msub><m:mi>R</m:mi><m:mrow><m:mn>100</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>e</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>100</m:mn></m:mrow></m:munderover><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>e</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mfrac><m:mi>i</m:mi><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
 </solution>
 </exercise>
-<para id="fs-id1170572569923">In the following exercises, graph the function then use a calculator or a computer program to evaluate the following left and right endpoint sums. Is the area under the curve on the given interval better approximated by the left Riemann sum or right Riemann sum? If the two agree, say "neither."</para>
+<para id="fs-id1170572569923">In the following exercises, graph the function then use a calculator or a computer program to evaluate the following left and right endpoint sums. If the two agree, say "neither."</para>
 <exercise id="fs-id1170572569928">
 <problem id="fs-id1170572569930">
-<para id="fs-id1170572569933"><emphasis effect="bold">[T]</emphasis> <emphasis effect="italics">L</emphasis><sub>100</sub> and <emphasis effect="italics">R</emphasis><sub>100</sub> for <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math> on the interval <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:math></para>
+<para id="fs-id1170572569933"><emphasis effect="bold">[T]</emphasis> <emphasis effect="italics">L</emphasis><sub>100</sub> and <emphasis effect="italics">R</emphasis><sub>100</sub> for <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math> on the interval <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1170572309991">
@@ -709,13 +709,13 @@
 </exercise>
 <exercise id="fs-id1170572379131">
 <problem id="fs-id1170572379133">
-<para id="fs-id1170572379135"><emphasis effect="bold">[T]</emphasis> <emphasis effect="italics">L</emphasis><sub>100</sub> and <emphasis effect="italics">R</emphasis><sub>100</sub> for <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> on the interval <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:math></para>
+<para id="fs-id1170572379135"><emphasis effect="bold">[T]</emphasis> <emphasis effect="italics">L</emphasis><sub>100</sub> and <emphasis effect="italics">R</emphasis><sub>100</sub> for <m:math><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn></m:math> on the interval <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1170572589190">
 <para id="fs-id1167794047771"><media id="fs-id1170572589192" alt="A graph of the given function over the interval -1 to 1 set up for a left endpoint approximation. It is an underestimate since the function is increasing. Ten rectangles are shown for isual clarity, but this behavior persists for more rectangles.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_05_01_211.jpg"/>
 </media><newline/>
-<m:math><m:mrow><m:msub><m:mi>L</m:mi><m:mrow><m:mn>100</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>3.555</m:mn><m:mo>,</m:mo><m:msub><m:mi>R</m:mi><m:mrow><m:mn>100</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>3.670</m:mn><m:mo>.</m:mo></m:mrow></m:math> The plot shows that the left Riemann sum is an underestimate because the function is increasing. Ten rectangles are shown for visual clarity. This behavior persists for more rectangles.</para>
+<m:math><m:mrow><m:msub><m:mi>L</m:mi><m:mrow><m:mn>100</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>3.980</m:mn><m:mo>,</m:mo><m:msub><m:mi>R</m:mi><m:mrow><m:mn>100</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>4.020</m:mn><m:mo>,</m:mo></m:mrow><m:msub><m:mi>R</m:mi><m:mrow><m:mn>100</m:mn></m:mrow></m:msub><m:mo>&gt;</m:mo><m:msub><m:mi>L</m:mi><m:mrow><m:mn>100</m:mn></m:mrow></m:msub></m:math> The plot shows that the left Riemann sum is an underestimate because the function is increasing. Ten rectangles are shown for visual clarity. This behavior persists for more rectangles.</para>
 </solution>
 </exercise>
 <exercise id="fs-id1170572589240">
