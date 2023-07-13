@@ -536,7 +536,7 @@ The equilibrium solutions are <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>
 <para id="fs-id1170573626073"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> is a stable equilibrium and <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> is unstable</para>
 </solution>
 </exercise>
-<para id="fs-id1170573626096">Draw the direction field for the following differential equations, then solve the differential equation. Draw your solution on top of the direction field. Does your solution follow along the arrows on your direction field?</para>
+<para id="fs-id1170573626096">Draw the direction field for the following differential equations, then solve the differential equation.</para>
 <exercise id="fs-id1170573626101">
 <problem id="fs-id1170573626103">
 <para id="fs-id1170573626106"><m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:msup><m:mi>t</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:math></para>
@@ -888,7 +888,7 @@ The equilibrium solutions are <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>
                               <m:mn>0</m:mn>
                           </m:msub>
                           <m:mo>,</m:mo>
-                          <m:mspace width="1em"/>
+                          <m:mspace width="0.5em"/>
                           <m:mi>t</m:mi>
                           <m:mrow>
                               <m:mo>(</m:mo>
