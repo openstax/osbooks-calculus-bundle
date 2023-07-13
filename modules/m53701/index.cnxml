@@ -917,9 +917,11 @@ The equilibrium solutions are <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>
                       <m:mrow>
                           <m:mtext>k</m:mtext>
                           <m:mo>=</m:mo>
-                          <m:mn>1</m:mn>
+                          <m:mn>0</m:mn>
                           <m:mspace width="0.2em"/>
-                          <m:mtext>to N</m:mtext>
+                          <m:mtext mathvariant="bold">to</m:mtext>
+                          <m:mspace width="0.2em"/>
+                          <m:mi>N</m:mi>
                       </m:mrow>
                   </m:math>
               </para>
