@@ -795,17 +795,216 @@ The equilibrium solutions are <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>
 </solution>
 </exercise>
 <exercise id="fs-id1170571233975">
-<problem id="fs-id1170571233977">
-<para id="fs-id1170571233979"><emphasis effect="bold">[T]</emphasis> Use computational software or a calculator to compute the solution to the initial-value problem <m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mi>t</m:mi><m:mi>y</m:mi><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>y</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> using Euler’s Method with the given step size <m:math><m:mrow><m:mi>h</m:mi><m:mo>.</m:mo></m:mrow></m:math> Find the solution at <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> For a hint, here is “pseudo-code” for how to write a computer program to perform Euler’s Method for <m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mtext>:</m:mtext></m:mrow></m:math></para>
-<para id="fs-id1170571095047">Create function <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
-<para id="fs-id1170571095069">Define parameters <m:math><m:mrow><m:mi>y</m:mi><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>t</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> step size <m:math><m:mrow><m:mi>h</m:mi><m:mo>,</m:mo></m:mrow></m:math> and total number of steps, <m:math><m:mi>N</m:mi></m:math></para>
-<para id="fs-id1170571283600">Write a for loop:</para>
-<para id="fs-id1170571283604">for <m:math><m:mrow><m:mtext>k</m:mtext><m:mo>=</m:mo><m:mn>1</m:mn><m:mspace width="0.2em"/><m:mtext>to N</m:mtext></m:mrow></m:math></para>
-<para id="fs-id1170571283620"><m:math><m:mrow><m:mtext>fn</m:mtext><m:mo>=</m:mo><m:mtext>f</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>t</m:mtext><m:mrow><m:mo>(</m:mo><m:mtext>k</m:mtext><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mtext>y</m:mtext><m:mrow><m:mo>(</m:mo><m:mtext>k</m:mtext><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
-<para id="fs-id1170571283655"><m:math><m:mrow><m:mtext>y</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>k+1</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>y</m:mtext><m:mrow><m:mo>(</m:mo><m:mtext>k</m:mtext><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mtext>h*fn</m:mtext></m:mrow></m:math></para>
-<para id="fs-id1170571263613"><m:math><m:mrow><m:mtext>t</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>k+1</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>t</m:mtext><m:mrow><m:mo>(</m:mo><m:mtext>k</m:mtext><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mtext>h</m:mtext></m:mrow></m:math></para>
-</problem>
+  <problem id="fs-id1170571233977">
+      <para id="fs-id1170571233979">
+          <emphasis effect="bold">[T]</emphasis> Use computational software or a calculator to compute an approximate
+          solution to the initial-value problem <m:math>
+              <m:mrow>
+                  <m:mi>y</m:mi>
+                  <m:mo>′</m:mo>
+                  <m:mo>=</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mi>y</m:mi>
+                  <m:mo>,</m:mo>
+                  <m:mspace width="1em"/>
+                  <m:mi>y</m:mi>
+                  <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mn>0</m:mn>
+                      <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mn>2</m:mn>
+              </m:mrow>
+          </m:math> using Euler's Method with a given step size <m:math>
+              <m:mrow>
+                  <m:mi>h</m:mi>
+                  <m:mo>.</m:mo>
+              </m:mrow>
+          </m:math> Find the solution at <m:math>
+              <m:mrow>
+                  <m:mi>t</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>1</m:mn>
+              </m:mrow>
+          </m:math>
+          in terms of <m:math>
+              <m:mi>h</m:mi>
+              <m:mo>.</m:mo>
+          </m:math>
+          <emphasis effect="italics">Hint</emphasis>: Here is "pseudo-code" for how to write a computer program to
+          perform Euler's Method for <m:math>
+              <m:mrow>
+                  <m:mi>y</m:mi>
+                  <m:mo>′</m:mo>
+                  <m:mo>=</m:mo>
+                  <m:mi>f</m:mi>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>,</m:mo>
+                  <m:mi>y</m:mi>
+                  <m:mo stretchy="false">)</m:mo>
+                  <m:mo>,</m:mo>
+                  <m:mi>y</m:mi>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mn>0</m:mn>
+                  <m:mo stretchy="false">)</m:mo>
+                  <m:mo>=</m:mo>
+                  <m:msub>
+                      <m:mi>y</m:mi>
+                      <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mtext>:</m:mtext>
+              </m:mrow>
+          </m:math>
+      </para>
+      <list id="list-00002">
+          <item>
+              <para id="fs-id1170571095047">Create function <m:math>
+                      <m:mrow>
+                          <m:mi>f</m:mi>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mi>t</m:mi>
+                          <m:mo>,</m:mo>
+                          <m:mi>y</m:mi>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mo>.</m:mo>
+                      </m:mrow>
+                  </m:math>
+              </para>
+          </item>
+          <item>
+              <para id="fs-id1170571095069">Define parameters <m:math>
+                      <m:mrow>
+                          <m:mi>y</m:mi>
+                          <m:mrow>
+                              <m:mo>(</m:mo>
+                              <m:mn>0</m:mn>
+                              <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mo>=</m:mo>
+                          <m:msub>
+                              <m:mi>y</m:mi>
+                              <m:mn>0</m:mn>
+                          </m:msub>
+                          <m:mo>,</m:mo>
+                          <m:mspace width="1em"/>
+                          <m:mi>t</m:mi>
+                          <m:mrow>
+                              <m:mo>(</m:mo>
+                              <m:mn>0</m:mn>
+                              <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mo>=</m:mo>
+                          <m:mn>0</m:mn>
+                          <m:mo>,</m:mo>
+                      </m:mrow>
+                  </m:math> step size <m:math>
+                      <m:mrow>
+                          <m:mi>h</m:mi>
+                          <m:mo>,</m:mo>
+                      </m:mrow>
+                  </m:math> and total number of steps, <m:math>
+                      <m:mi>N</m:mi>
+                  </m:math>
+              </para>
+          </item>
+          <item>
+              <para id="fs-id1170571283600">Write a <emphasis>for</emphasis> loop:</para>
+              <para id="fs-id1170571283604">
+                  <emphasis>for</emphasis>
+                  <m:math>
+                      <m:mrow>
+                          <m:mtext>k</m:mtext>
+                          <m:mo>=</m:mo>
+                          <m:mn>1</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mtext>to N</m:mtext>
+                      </m:mrow>
+                  </m:math>
+              </para>
+              <para id="fs-id1170571283620">
+                  <m:math>
+                      <m:mspace width="2em"/>
+                      <m:mrow>
+                          <m:mtext>fn</m:mtext>
+                          <m:mo>=</m:mo>
+                          <m:mtext>f</m:mtext>
+                          <m:mrow>
+                              <m:mo>(</m:mo>
+                              <m:mrow>
+                                  <m:mtext>t</m:mtext>
+                                  <m:mrow>
+                                      <m:mo>(</m:mo>
+                                      <m:mtext>k</m:mtext>
+                                      <m:mo>)</m:mo>
+                                  </m:mrow>
+                                  <m:mo>,</m:mo>
+                                  <m:mtext>y</m:mtext>
+                                  <m:mrow>
+                                      <m:mo>(</m:mo>
+                                      <m:mtext>k</m:mtext>
+                                      <m:mo>)</m:mo>
+                                  </m:mrow>
+                              </m:mrow>
+                              <m:mo>)</m:mo>
+                          </m:mrow>
+                      </m:mrow>
+                  </m:math>
+              </para>
+              <para id="fs-id1170571283655">
+                  <m:math>
+                      <m:mspace width="2em"/>
+                      <m:mrow>
+                          <m:mtext>y</m:mtext>
+                          <m:mrow>
+                              <m:mo>(</m:mo>
+                              <m:mrow>
+                                  <m:mtext>k+1</m:mtext>
+                              </m:mrow>
+                              <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mo>=</m:mo>
+                          <m:mtext>y</m:mtext>
+                          <m:mrow>
+                              <m:mo>(</m:mo>
+                              <m:mtext>k</m:mtext>
+                              <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mo>+</m:mo>
+                          <m:mtext>h*fn</m:mtext>
+                      </m:mrow>
+                  </m:math>
+              </para>
+              <para id="fs-id1170571263613">
+                  <m:math>
+                      <m:mspace width="2em"/>
+                      <m:mrow>
+                          <m:mtext>t</m:mtext>
+                          <m:mrow>
+                              <m:mo>(</m:mo>
+                              <m:mrow>
+                                  <m:mtext>k+1</m:mtext>
+                              </m:mrow>
+                              <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mo>=</m:mo>
+                          <m:mtext>t</m:mtext>
+                          <m:mrow>
+                              <m:mo>(</m:mo>
+                              <m:mtext>k</m:mtext>
+                              <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mo>+</m:mo>
+                          <m:mtext>h</m:mtext>
+                      </m:mrow>
+                  </m:math>
+              </para>
+          </item>
+      </list>
+  </problem>
 </exercise>
+<para id="para-00001">Refer to your answer for <link target-id="fs-id1170571233977"/> to solve the following exercises.</para>
 <exercise id="fs-id1170571433817">
 <problem id="fs-id1170571433819">
 <para id="fs-id1170571433822">Solve the initial-value problem for the exact solution.</para>
