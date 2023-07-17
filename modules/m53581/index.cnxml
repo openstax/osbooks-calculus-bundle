@@ -1022,7 +1022,7 @@ In Leibniz’s notation this rule takes the form<newline/>
 </exercise>
 <exercise id="fs-id1169739280417">
 <problem id="fs-id1169739280419">
-<para id="fs-id1169739280421"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−6</m:mn><m:mspace width="0.1em"/><m:msup><m:mrow><m:mo>(</m:mo><m:mtext>sin</m:mtext><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>−3</m:mn></m:mrow></m:msup><m:mi>x</m:mi></m:mrow></m:math></para>
+<para id="fs-id1169739280421"><m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−6</m:mn><m:mspace width="0.1em"/><m:msup><m:mrow><m:mo>(</m:mo><m:mi>sin</m:mi><m:mo>&#xA0;</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow></m:msup></m:math></para>
 </problem>
 <solution id="fs-id1169739280443">
 <para id="fs-id1169739280445">a. <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>u</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>−6</m:mn><m:msup><m:mi>u</m:mi><m:mrow><m:mn>−3</m:mn></m:mrow></m:msup><m:mo>,</m:mo><m:mi>u</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> b. <m:math><m:mrow><m:mn>18</m:mn><m:mspace width="0.1em"/><m:msup><m:mrow><m:mo>(</m:mo><m:mtext>sin</m:mtext><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>−4</m:mn></m:mrow></m:msup><m:mi>x</m:mi><m:mo>·</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow></m:math></para>
