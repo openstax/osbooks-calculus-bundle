@@ -721,7 +721,7 @@ and is also equal to any of the other five possible orderings for the iterated t
 </exercise>
 <exercise id="fs-id1167793480037" class="material-set-2">
 <problem id="fs-id1167793480039">
-<para id="fs-id1167793480041">The solid <m:math><m:mi>E</m:mi></m:math> bounded by <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> and situated in the first octant is given in the following figure. Find the volume of the solid.</para>
+<para id="fs-id1167793480041">The solid <m:math><m:mi>E</m:mi></m:math> bounded by <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> and <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:math> and situated in the first octant is given in the following figure. Find the volume of the solid.</para>
 <media id="fs-id1167793480066" alt="A complex shape in the first octant with height 1, width 5, and length 1. The shape appears to be a slightly deformed quarter of a cylinder of radius 1 and width 5.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_15_04_208.jpg"/>
 </media>
