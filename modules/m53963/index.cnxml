@@ -911,7 +911,7 @@
 </exercise>
 <exercise id="fs-id1167793372893">
 <problem id="fs-id1167793372895">
-<para id="fs-id1167793372897">Find the volume of the solid under the plane in the first octant <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow></m:math> and above the region determined by <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>7</m:mn></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793372897">Find the volume in the first octant of the solid under the plane <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow></m:math> and above the region determined by <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>7</m:mn></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793245908">
 <para id="fs-id1167793245910"><m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math></para>
