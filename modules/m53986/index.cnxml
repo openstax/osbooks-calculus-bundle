@@ -855,7 +855,7 @@
 </definition>
 <definition id="fs-id1167794267590">
 <term>divergence</term>
-<meaning id="fs-id1167794267595">the divergence of a vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mo>,</m:mo><m:mi>Q</m:mi><m:mo>,</m:mo><m:mi>R</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> denoted <m:math><m:mrow><m:mo>∇</m:mo><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> is <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mi>x</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>Q</m:mi><m:mi>y</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>R</m:mi><m:mi>z</m:mi></m:msub><m:mo>;</m:mo></m:mrow></m:math> it measures the “outflowing-ness” of a vector field</meaning>
+<meaning id="fs-id1167794267595">the divergence of a vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mi>P</m:mi><m:mo>,</m:mo><m:mi>Q</m:mi><m:mo>,</m:mo><m:mi>R</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> denoted <m:math><m:mrow><m:mo>∇</m:mo><m:mspace width="0.2em"/><m:mo>⋅</m:mo><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> is <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mi>x</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>Q</m:mi><m:mi>y</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>R</m:mi><m:mi>z</m:mi></m:msub><m:mo>;</m:mo></m:mrow></m:math> it measures the “outflowing-ness” of a vector field</meaning>
 </definition>
 </glossary>
 </document>
