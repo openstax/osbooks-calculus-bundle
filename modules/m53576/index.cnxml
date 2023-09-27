@@ -266,7 +266,7 @@ Since <m:math><m:mrow><m:mn>3</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup
 </list>
 </section>
 <section id="fs-id1169739300381" class="section-exercises">
-<para id="fs-id1169739300384">For the following exercises, the given functions represent the position of a particle traveling along a horizontal line.</para>
+<para id="fs-id1169739300384">For the following exercises, the given functions represent the position of a particle traveling along a horizontal line; <m:math><m:mi>t</m:mi><m:mo>&#x2265;</m:mo><m:mn>0</m:mn></m:math>.</para>
 <list id="fs-id1169739303939" list-type="enumerated" number-style="lower-alpha">
 <item>Find the velocity and acceleration functions.</item>
 <item>Determine the time intervals when the object is slowing down or speeding up.</item>
