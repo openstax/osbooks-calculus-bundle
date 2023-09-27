@@ -140,7 +140,7 @@
 <media id="fs-id1167794134944" alt="A region D is shown in polar coordinates with edges given by theta = alpha, theta = beta, r = h2(theta), and r = h1(theta).">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_15_03_005.jpg"/>
 </media>
-<caption>A general polar region between <m:math><m:mrow><m:mi>α</m:mi><m:mo>&lt;</m:mo><m:mi>θ</m:mi><m:mo>&lt;</m:mo><m:mi>β</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>h</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mi>r</m:mi><m:mo>&lt;</m:mo><m:msub><m:mi>h</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></caption>
+<caption>A general polar region between <m:math><m:mrow><m:mi>α</m:mi><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mi>β</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>h</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mo>≤</m:mo><m:mi>r</m:mi><m:mo>≤</m:mo><m:msub><m:mi>h</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></caption>
 </figure>
 <note id="fs-id1167793367134" class="theorem">
 <title>Double Integrals over General Polar Regions</title>
