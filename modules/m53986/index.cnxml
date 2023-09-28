@@ -690,7 +690,7 @@
 </exercise>
 <exercise id="fs-id1167793567001">
 <problem id="fs-id1167793567003">
-<para id="fs-id1167793567005"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math> at <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793567005"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math> at <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1167793584431">
