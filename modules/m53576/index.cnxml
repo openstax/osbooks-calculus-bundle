@@ -334,7 +334,7 @@ Since <m:math><m:mrow><m:mn>3</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup
 </exercise>
 <exercise id="fs-id1169739300061">
 <problem id="fs-id1169739300063">
-<para id="fs-id1169739300065">A potato is launched vertically upward with an initial velocity of 100 ft/s from a potato gun at the top of an 85-foot-tall building. The distance in feet that the potato travels from the ground after <m:math><m:mi>t</m:mi></m:math> seconds is given by <m:math><m:mrow><m:mi>s</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>−16</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>100</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>85</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1169739300065">A potato is launched vertically upward with an initial velocity of 100 ft/s from a potato gun at the top of an 85-foot-tall building. The position of the potato relative to the ground after <m:math><m:mi>t</m:mi></m:math> seconds is given by <m:math><m:mrow><m:mi>s</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>−16</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>100</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>85</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 <list id="fs-id1169736654241" list-type="enumerated" number-style="lower-alpha">
 <item>Find the velocity of the potato after <m:math><m:mrow><m:mn>0.5</m:mn><m:mspace width="0.2em"/><m:mtext>s</m:mtext></m:mrow></m:math> and <m:math><m:mrow><m:mn>5.75</m:mn><m:mspace width="0.2em"/><m:mtext>s</m:mtext><m:mo>.</m:mo></m:mrow></m:math></item>
 <item>Find the speed of the potato at 0.5 s and 5.75 s.</item>
