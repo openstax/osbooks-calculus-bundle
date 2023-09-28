@@ -547,7 +547,7 @@
 <para id="fs-id1167793462449">Find the probability that <m:math><m:mi>X</m:mi></m:math> is at most <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> and <m:math><m:mi>Y</m:mi></m:math> is at least <m:math><m:mrow><m:mn>5</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793462473">
-<para id="fs-id1167793462475"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>55</m:mn></m:mrow><m:mrow><m:mn>72</m:mn></m:mrow></m:mfrac><m:mo>≈</m:mo><m:mn>0.7638</m:mn></m:mrow></m:math></para>
+<para id="fs-id1167793462475"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>39</m:mn></m:mrow></m:mfrac><m:mo>≈</m:mo><m:mn>0.282</m:mn></m:mrow></m:math></para>
 </solution>
 <commentary id="fs-id1167794076396" type="hint">
 <title>Hint</title>
