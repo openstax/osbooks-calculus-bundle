@@ -1087,7 +1087,7 @@ If <m:math><m:mrow><m:mn>−2</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:m
 </exercise>
 <exercise id="fs-id1170573596195">
 <problem id="fs-id1170573596197">
-<para id="fs-id1170573596199"><emphasis effect="bold">[T]</emphasis> The output (as a percent of total capacity) of nuclear power plants in the United States can be modeled by the function <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1.8576</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>68.052</m:mn><m:mo>,</m:mo></m:mrow></m:math> where <emphasis effect="italics">t</emphasis> is time in years and <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> corresponds to the beginning of 2000. Use the model to predict the percentage output in 2015.</para>
+<para id="fs-id1170573596199"><emphasis effect="bold">[T]</emphasis> The output (as a percent of total capacity) of nuclear power plants in the United States can be modeled by the function <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1.8576</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>68.052</m:mn><m:mo>,</m:mo></m:mrow></m:math> where <emphasis effect="italics">t</emphasis> is time in years and <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> corresponds to the beginning of 2000. Use the model to predict the approximate percentage output at the beginning of 2015.</para>
 </problem>
 <solution id="fs-id1170573596250">
 <para id="fs-id1170573596252">96% of the total capacity</para>
