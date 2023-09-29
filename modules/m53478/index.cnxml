@@ -1098,7 +1098,7 @@ If <m:math><m:mrow><m:mn>−2</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:m
 <para id="fs-id1170573596262"><emphasis effect="bold">[T]</emphasis> The admissions office at a public university estimates that 65% of the students offered admission to the class of 2019 will actually enroll.</para>
 <list id="fs-id1170573596271" list-type="enumerated" number-style="lower-alpha">
 <item>Find the linear function <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mi>N</m:mi></m:math> is the number of students that actually enroll and <m:math><m:mi>x</m:mi></m:math> is the number of all students offered admission to the class of 2019.</item>
-<item>If the university wants the 2019 freshman class size to be 1350, determine how many students should be admitted.</item>
+<item>If the university wants the 2019 freshman class size to be 1350, determine how many students should be offered admission.</item>
 </list>
 </problem>
 </exercise>
