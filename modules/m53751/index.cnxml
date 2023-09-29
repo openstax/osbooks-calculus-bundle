@@ -328,10 +328,10 @@ Since the limit is <m:math><m:mn>0</m:mn></m:math> and <m:math><m:mrow><m:munder
 </exercise>
 <exercise id="fs-id1169738901956">
 <problem id="fs-id1169739019416">
-<para id="fs-id1169739019419"><m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+<para id="fs-id1169739019419"><m:math><m:munderover><m:mo>&#x2211;</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow><m:mo>&#x221E;</m:mo></m:munderover><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>2</m:mn><m:mfenced><m:mrow><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:mfenced></m:mrow></m:mfrac></m:math></para>
 </problem>
 <solution id="fs-id1169739253557">
-<para id="fs-id1169739253559">Diverges by comparison with harmonic series, since <m:math><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>≥</m:mo><m:mi>n</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1169739253559">The sum is one half times a harmonic series, which diverges.</para>
 </solution>
 </exercise>
 <exercise id="fs-id1169739029849">
