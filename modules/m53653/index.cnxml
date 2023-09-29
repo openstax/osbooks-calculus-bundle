@@ -814,7 +814,7 @@ Note that <m:math><m:mrow><m:mtext>cosh</m:mtext><m:mspace width="0.2em"/><m:mi>
 </exercise>
 <exercise id="fs-id1167793975626">
 <problem id="fs-id1167793975628">
-<para id="fs-id1167793975630"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> from <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mspace width="0.2em"/><m:mtext>to</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo></m:mrow></m:math> rotated around the<emphasis effect="italics">y</emphasis>-axis using the washer method</para>
+<para id="fs-id1167793975630">The region bounded by the curve <m:math><m:mi>y</m:mi><m:mo>&#xA0;</m:mo><m:mo>=</m:mo><m:mo>&#xA0;</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>&#xA0;</m:mo><m:mo>&#x2013;</m:mo><m:mo>&#xA0;</m:mo><m:mi>x</m:mi></m:math> and the <emphasis effect="italics">x</emphasis>-axis from <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mspace width="0.2em"/><m:mtext>to</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo></m:mrow></m:math> rotated around the <emphasis effect="italics">y</emphasis>-axis using the washer method</para>
 </problem>
 </exercise>
 <exercise id="fs-id1167793957410">
