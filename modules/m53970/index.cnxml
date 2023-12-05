@@ -1066,7 +1066,7 @@ d. <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:m
 <para id="fs-id1167793358447">The volume of the solid bounded by the cylinder <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>16</m:mn></m:mrow></m:math> and from <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793395509">
-<para id="fs-id1167793395511">93.291</para>
+<para id="fs-id1167793395511"><m:math><m:mn>16</m:mn><m:mi>&#x3C0;</m:mi><m:mo>&#x2248;</m:mo><m:mn>50</m:mn><m:mo>.</m:mo><m:mn>265</m:mn></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793395516">
