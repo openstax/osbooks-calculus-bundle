@@ -902,7 +902,7 @@ where <m:math><m:mi>g</m:mi></m:math> is an antiderivative of <m:math><m:mi>f</m
 <para id="fs-id1167794222802"><emphasis effect="bold">[T]</emphasis> Use a CAS to evaluate the integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:munder><m:mo>∭</m:mo><m:mi>E</m:mi></m:munder><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>V</m:mi></m:mrow></m:math> where <m:math><m:mi>E</m:mi></m:math> lies above the paraboloid <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> and below the plane <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793300348">
-<para id="fs-id1167793300350"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>343</m:mn><m:mi>π</m:mi></m:mrow><m:mrow><m:mn>32</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+<para id="fs-id1167793300350"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>243</m:mn><m:mi>π</m:mi></m:mrow><m:mrow><m:mn>32</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793300366">
