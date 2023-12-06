@@ -887,8 +887,8 @@ where <m:math><m:mi>g</m:mi></m:math> is an antiderivative of <m:math><m:mi>f</m
 </problem>
 <solution id="fs-id1167793776330">
 <para id="fs-id1167793776332"><m:math><m:mrow><m:mi>V</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>4</m:mn><m:mi>π</m:mi><m:msqrt><m:mn>3</m:mn></m:msqrt></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>≈</m:mo><m:mn>7.255</m:mn></m:mrow></m:math><newline/>
-<media id="fs-id1167793776357" alt="A sphere of radius 1 with a hole drilled into it of radius 0.5.">
-<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_15_05_207.jpg"/>
+<media id="fs-id1167793776357" alt="A quarter section of an ellipsoid with width 2, height 2, and depth 1">
+<image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_15_05_208.jpg"/>
 </media></para>
 </solution>
 </exercise>
