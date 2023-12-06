@@ -620,7 +620,7 @@ where <m:math><m:mover accent="true"><m:mi>g</m:mi><m:mo>˜</m:mo></m:mover></m:
 </exercise>
 <exercise id="fs-id1167793619924">
 <problem id="fs-id1167793619927">
-<para id="fs-id1167793619929"><m:math><m:mi>E</m:mi></m:math> is outside the right circular cylinder <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow></m:math> above the <m:math><m:mi>x</m:mi><m:mo>–</m:mo><m:mi>y</m:mi></m:math> plane, and inside the sphere <m:math><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793619929"><m:math><m:mi>E</m:mi></m:math> is inside the right circular cylinder <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow></m:math> above the <m:math><m:mi>r</m:mi><m:mi>&#x3B8;</m:mi><m:mo>-</m:mo></m:math> plane, and inside the sphere <m:math><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1167793409904">
