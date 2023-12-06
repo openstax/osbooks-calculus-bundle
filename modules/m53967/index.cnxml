@@ -605,10 +605,10 @@ where <m:math><m:mover accent="true"><m:mi>g</m:mi><m:mo>˜</m:mo></m:mover></m:
 </list>
 </problem>
 </exercise>
-<para id="fs-id1167793581626">In the following exercises, the boundaries of the solid <m:math><m:mi>E</m:mi></m:math> are given in cylindrical coordinates.</para>
+<para id="fs-id1167793581626">In the following exercises, the boundaries of the solid <m:math><m:mi>E</m:mi></m:math> are given in cylindrical coordinates. Let <m:math><m:mi>f</m:mi><m:mo>&#xA0;</m:mo><m:mo>(</m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mo>&#xA0;</m:mo><m:mi>&#x3B8;</m:mi><m:mo>,</m:mo><m:mo>&#xA0;</m:mo><m:mi>z</m:mi><m:mo>)</m:mo></m:math> be the corresponding function in cylindrical coordinates.</para>
 <list id="fs-id1167793581634" list-type="enumerated" number-style="lower-alpha">
 <item>Define the region in cylindrical coordinates.</item>
-<item>Convert the integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:munder><m:mo>∭</m:mo><m:mi>E</m:mi></m:munder><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>V</m:mi></m:mrow></m:math> to cylindrical coordinates.</item>
+<item>Convert the integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:munder><m:mo>∭</m:mo><m:mi>g</m:mi></m:munder><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>V</m:mi></m:mrow></m:math> to cylindrical coordinates.</item>
 </list>
 <exercise id="fs-id1167793590432">
 <problem id="fs-id1167793590434">
