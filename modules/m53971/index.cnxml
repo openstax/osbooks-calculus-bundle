@@ -712,7 +712,7 @@ c.<newline/>
 </exercise>
 <exercise id="fs-id1167793375453">
 <problem id="fs-id1167793375455">
-<para id="fs-id1167793375458">Let <m:math><m:mi>Q</m:mi></m:math> be the solid unit hemisphere. Find the mass of the solid if its density <m:math><m:mi>ρ</m:mi></m:math> is proportional to the distance of an arbitrary point of <m:math><m:mi>Q</m:mi></m:math> to the origin.</para>
+<para id="fs-id1167793375458">Let <m:math><m:mi>Q</m:mi></m:math> be the solid unit hemisphere. Find the mass of the solid if its density <m:math><m:mi>ρ</m:mi></m:math> is equal to the distance of an arbitrary point of <m:math><m:mi>Q</m:mi></m:math> to the origin.</para>
 </problem>
 </exercise>
 <exercise id="fs-id1167793375490">
