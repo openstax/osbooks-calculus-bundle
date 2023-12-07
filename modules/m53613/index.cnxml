@@ -672,6 +672,7 @@
 <item>intervals where <m:math><m:mi>f</m:mi></m:math> is increasing or decreasing and</item>
 <item>local minima and maxima of <m:math><m:mrow><m:mi>f</m:mi><m:mo>.</m:mo></m:mrow></m:math></item>
 </list>
+<para id="para-00001">If needed, use a calculator to graph the functions, but show your work.</para>
 <exercise id="fs-id1165042709552">
 <problem id="fs-id1165042709554">
 <para id="fs-id1165042709556"><m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>3</m:mn></m:msup><m:mi>x</m:mi></m:mrow></m:math> over <m:math><m:mrow><m:mtext>−</m:mtext><m:mi>π</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>π</m:mi></m:mrow></m:math></para>
