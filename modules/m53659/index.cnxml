@@ -450,7 +450,7 @@ For <m:math><m:mrow><m:mi>x</m:mi><m:mo>≥</m:mo><m:mi>a</m:mi><m:mo>,</m:mo></
 </exercise>
 <exercise id="fs-id1165040669735">
 <problem id="fs-id1165040669737">
-<para id="fs-id1165040669739"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mrow><m:mn>−1</m:mn></m:mrow><m:mn>1</m:mn></m:msubsup><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mn>3</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+<para id="fs-id1165040669739"><m:math><m:mo>&#x222B;</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>3</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:math></para>
 </problem>
 <solution id="fs-id1165042229605">
 <para id="fs-id1165042229607"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>+</m:mo><m:mn>3</m:mn><m:mspace width="0.1em"/><m:mtext>arcsin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
