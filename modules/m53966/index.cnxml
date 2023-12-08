@@ -620,7 +620,7 @@
 </exercise>
 <exercise id="fs-id1167793711055">
 <problem id="fs-id1167793711057">
-<para id="fs-id1167793711059">Evaluate the integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:munder><m:mo>∬</m:mo><m:mi>D</m:mi></m:munder><m:mrow><m:mi>r</m:mi><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>A</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mi>D</m:mi></m:math> is the region bounded by the part of the four-leaved rose <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow></m:math> situated in the first quadrant (see the following figure).</para>
+<para id="fs-id1167793711059">Evaluate the integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:munder><m:mo>∬</m:mo><m:mi>D</m:mi></m:munder><m:mrow><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>A</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mi>D</m:mi></m:math> is the region bounded by the part of the four-leaved rose <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow></m:math> situated in the first quadrant (see the following figure).</para>
 <media id="fs-id1167793630633" alt="A region D is drawn in the first quadrant petal of the four petal rose given by r = sin (2 theta).">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_15_03_207.jpg"/>
 </media>
