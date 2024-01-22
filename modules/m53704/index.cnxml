@@ -189,7 +189,8 @@ A graph of this solution appears in <link target-id="CNX_Calc_Figure_08_03_001"/
 <solution id="fs-id1170571096071">
 <para id="fs-id1170571096073">Initial value problem:</para>
 <para id="fs-id1170571096076"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>2.4</m:mn><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>u</m:mi></m:mrow><m:mrow><m:mn>25</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
-<para id="fs-id1170571145647"><m:math><m:mrow><m:mtext>Solution:</m:mtext><m:mspace width="0.2em"/><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>−</m:mo><m:mn>27</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi><m:mtext>/</m:mtext><m:mn>50</m:mn></m:mrow></m:msup></m:mrow></m:math></para>
+<para id="fs-id1170571145647"><m:math><m:mrow><m:mtext>Solution:</m:mtext><m:mspace width="0.2em"/><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>−</m:mo><m:mn>27</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mn>2</m:mn><m:mi>t</m:mi><m:mtext>/</m:mtext><m:mn>25</m:mn></m:mrow></m:msup></m:mrow></m:math><newline/>
+  <m:math><m:mtext>Concentration:&#xA0;</m:mtext><m:mn>30</m:mn><m:mo>-</m:mo><m:mn>27</m:mn><m:msup><m:mi>e</m:mi><m:mfrac><m:mrow><m:mo mathvariant="italic">-</m:mo><m:mn mathvariant="italic">2</m:mn><m:mi mathvariant="italic">t</m:mi></m:mrow><m:mn mathvariant="italic">25</m:mn></m:mfrac></m:msup></m:math></para>
 </solution>
 <commentary id="fs-id1170573356102" type="hint">
 <title>Hint</title>
@@ -256,7 +257,7 @@ Therefore we need to wait an additional <m:math><m:mrow><m:mn>6.12</m:mn></m:mro
 </problem>
 <solution id="fs-id1170571292457">
 <list id="fs-id1170571292459" list-type="enumerated" number-style="lower-alpha">
-<item>Initial-value problem<newline/>
+<item>Initial value problem<newline/>
 <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>T</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>T</m:mi><m:mo>−</m:mo><m:mn>70</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>T</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>450</m:mn></m:mrow></m:math></item>
 <item><m:math><m:mrow><m:mi>T</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>70</m:mn><m:mo>+</m:mo><m:mn>380</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mi>k</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math></item>
 <item>Approximately <m:math><m:mrow><m:mn>114</m:mn></m:mrow></m:math> minutes.</item>
