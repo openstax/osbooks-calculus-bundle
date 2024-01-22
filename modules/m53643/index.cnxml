@@ -483,8 +483,7 @@ Looking at the region, it would be problematic to define a horizontal rectangle;
 </exercise>
 <exercise id="fs-id1167794095695">
 <problem id="fs-id1167794095697">
-<para id="fs-id1167794095699"><m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>π</m:mi></m:mrow>
-</m:math></para>
+<para id="fs-id1167794095699"><m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:msqrt><m:mn>4</m:mn><m:mo>-</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:msqrt><m:mtext>,</m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mtext>,</m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1167794095754">
