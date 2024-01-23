@@ -217,7 +217,7 @@ A graph of this solution appears in <link target-id="CNX_Calc_Figure_08_03_001"/
 <media id="fs-id1170573419435" alt="A diagram of a pizza pie. The room temperature is 75 degrees, and the pizza temperature is 200 degrees.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_03_003.jpg"/>
 </media>
-<caption>From Newton’s law of cooling, if the pizza cools <m:math><m:mrow><m:mn>10</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext></m:mrow></m:math> in <m:math><m:mn>5</m:mn></m:math> minutes, how long before it cools to <m:math><m:mrow><m:mn>150</m:mn><m:mtext>°</m:mtext><m:mtext>F?</m:mtext></m:mrow></m:math></caption>
+<caption>From Newton’s law of cooling, if the pizza cools <m:math><m:mrow><m:mn>10</m:mn><m:mtext>°</m:mtext><m:mtext>F</m:mtext></m:mrow></m:math> in <m:math><m:mn>1</m:mn></m:math> minute, how long before it cools to <m:math><m:mrow><m:mn>150</m:mn><m:mtext>°</m:mtext><m:mtext>F?</m:mtext></m:mrow></m:math></caption>
 </figure>
 </problem>
 <solution id="fs-id1170571228928">
