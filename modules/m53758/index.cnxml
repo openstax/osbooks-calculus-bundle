@@ -748,7 +748,7 @@ The number <m:math><m:mrow><m:mi>ϕ</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m
 <para id="fs-id1169738894853"><m:math><m:mrow><m:mi>n</m:mi><m:mtext>/</m:mtext><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1169738894879">
-<para id="fs-id1169738894882">bounded, decreasing for <m:math><m:mrow><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+<para id="fs-id1169738894882">bounded, decreasing for <m:math><m:mrow><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1169738894895">
