@@ -441,17 +441,17 @@ b. <m:math><m:mtable><m:mtr><m:mtd><m:mi>y</m:mi><m:mo>'</m:mo><m:mo>=</m:mo><m:
 </exercise>
 <exercise id="fs-id1169736655092">
 <problem id="fs-id1169736655124">
-<para id="fs-id1169736655126"><m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>tan</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+<para id="fs-id1169736655126"><m:math><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>tan</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo><m:mo>&#xA0;</m:mo><m:mn>0</m:mn><m:mo>&#xA0;</m:mo><m:mo>&lt;</m:mo><m:mo>&#xA0;</m:mo><m:mi>x</m:mi><m:mo>&#xA0;</m:mo><m:mo>&lt;</m:mo><m:mo>&#xA0;</m:mo><m:mi>&#x3C0;</m:mi><m:mo>/</m:mo><m:mn>2</m:mn></m:math></para>
 </problem>
 <solution id="fs-id1169736654597">
 <para id="fs-id1169736654599"><m:math><m:mn>1</m:mn></m:math></para>
 </solution>
 </exercise>
-<para id="fs-id1169736659320">For each of the given functions <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math></para>
+<para id="fs-id1169736659320">For each of the given functions <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math>
 <list id="fs-id1169736659350" list-type="enumerated" number-style="lower-alpha">
 <item>find the slope of the tangent line to its inverse function <m:math><m:mrow><m:msup><m:mi>f</m:mi><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup></m:mrow></m:math> at the indicated point <m:math><m:mrow><m:mi>P</m:mi><m:mo>,</m:mo></m:mrow></m:math> and</item>
 <item>find the equation of the tangent line to the graph of <m:math><m:mrow><m:msup><m:mi>f</m:mi><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup></m:mrow></m:math> at the indicated point.</item>
-</list>
+</list></para>
 <exercise id="fs-id1169736589272">
 <problem id="fs-id1169736589274">
 <para id="fs-id1169736589276"><m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>4</m:mn><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>,</m:mo><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
