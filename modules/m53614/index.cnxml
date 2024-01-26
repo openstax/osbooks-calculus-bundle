@@ -472,7 +472,7 @@
 </exercise>
 <exercise id="fs-id1165042369580">
 <problem id="fs-id1165042369582">
-<para id="fs-id1165042369584">A truck uses gas as <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>v</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>v</m:mi><m:mo>+</m:mo><m:mfrac><m:mi>b</m:mi><m:mi>v</m:mi></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mi>v</m:mi></m:math> represents the speed of the truck and <m:math><m:mi>g</m:mi></m:math> represents the gallons of fuel per mile. At what speed is fuel consumption minimized?</para>
+<para id="fs-id1165042369584">A truck uses gas as <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>v</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>v</m:mi><m:mo>+</m:mo><m:mfrac><m:mi>b</m:mi><m:mi>v</m:mi></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mi>v</m:mi></m:math> represents the speed of the truck and <m:math><m:mi>g</m:mi></m:math> represents the gallons of fuel per mile. Assuming <m:math><m:mi>a</m:mi></m:math> and <m:math><m:mi>b</m:mi></m:math> are positive, at what speed is fuel consumption minimized?</para>
 </problem>
 <solution id="fs-id1165042374583">
 <para id="fs-id1165042374585"><m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mi>b</m:mi><m:mi>a</m:mi></m:mfrac></m:mrow></m:msqrt></m:mrow></m:math></para>
