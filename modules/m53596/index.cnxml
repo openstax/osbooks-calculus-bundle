@@ -1512,7 +1512,7 @@ where the degree of <m:math><m:mrow><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x<
 </exercise>
 <exercise id="fs-id1165042558519">
 <problem id="fs-id1165042558521">
-<para id="fs-id1165042558523"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:math></para>
+<para id="fs-id1165042558523"><m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:msqrt><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn></m:msqrt><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1165043404024">
