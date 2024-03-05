@@ -63,7 +63,7 @@
 </note>
 <para id="fs-id1165042376423">Now let’s look at a general strategy for solving optimization problems similar to <link target-id="fs-id1165043431956"/>.</para>
 <note id="fs-id1165042916977" class="problem-solving">
-<title>Problem-Solving Strategy: Solving Optimization Problems</title>
+<title>Solving Optimization Problems</title>
 <list id="fs-id1165043013367" list-type="enumerated" number-style="arabic">
 <item>Introduce all variables. If applicable, draw a figure and label all variables.</item>
 <item>Determine which quantity is to be maximized or minimized, and for what range of values of the other variables (if this can be determined at this time).</item>

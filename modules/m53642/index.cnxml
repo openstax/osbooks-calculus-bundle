@@ -46,7 +46,7 @@
 <equation id="fs-id1167794334680" class="unnumbered"><label/><m:math><m:mrow><m:mi>V</m:mi><m:mrow><m:mo>(</m:mo><m:mi>S</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>n</m:mi></m:munderover><m:mrow><m:mi>A</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>x</m:mi><m:mi>i</m:mi><m:mo>*</m:mo></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mstyle><m:mtext>Δ</m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:munderover><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:munderover><m:mrow><m:mi>A</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></equation>
 <para id="fs-id1167793638650">The technique we have just described is called the <term id="term-00002">slicing method</term>. To apply it, we use the following strategy.</para>
 <note id="fs-id1167794210849" class="problem-solving">
-<title>Problem-Solving Strategy: Finding Volumes by the Slicing Method</title>
+<title>Finding Volumes by the Slicing Method</title>
 <list id="fs-id1167793274159" list-type="enumerated" number-style="arabic">
 <item>Examine the solid and determine the shape of a cross-section of the solid. It is often helpful to draw a picture if one is not provided.</item>
 <item>Determine a formula for the area of the cross-section.</item>

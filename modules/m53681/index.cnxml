@@ -197,7 +197,7 @@
 <title>The General Method</title>
 <para id="fs-id1165042042809">Now that we are beginning to get the idea of how the technique of partial fraction decomposition works, let’s outline the basic method in the following problem-solving strategy.</para>
 <note id="fs-id1165040639180" class="problem-solving">
-<title>Problem-Solving Strategy: Partial Fraction Decomposition</title>
+<title>Partial Fraction Decomposition</title>
 <para id="fs-id1165040639187">To decompose the rational function <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>/</m:mtext><m:mi>Q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> use the following steps:</para>
 <list id="fs-id1165042108900" list-type="enumerated" number-style="arabic">
 <item>Make sure that <m:math><m:mrow><m:mtext>degree</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mtext>degree</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> If not, perform long division of polynomials.</item>

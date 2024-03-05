@@ -689,7 +689,7 @@ Now let’s consider the end behavior for functions involving a radical.</item>
 <title>Guidelines for Drawing the Graph of a Function</title>
 <para id="fs-id1165042602938">We now have enough analytical tools to draw graphs of a wide variety of algebraic and transcendental functions. Before showing how to graph specific functions, let’s look at a general strategy to use when graphing any function.</para>
 <note id="fs-id1165042602944" class="problem-solving">
-<title>Problem-Solving Strategy: Drawing the Graph of a Function</title>
+<title>Drawing the Graph of a Function</title>
 <para id="fs-id1165042602951">Given a function <m:math><m:mrow><m:mi>f</m:mi><m:mo>,</m:mo></m:mrow></m:math> use the following steps to sketch a graph of <m:math><m:mrow><m:mi>f</m:mi><m:mtext>:</m:mtext></m:mrow></m:math></para>
 <list id="fs-id1165042602969" list-type="enumerated" number-style="arabic">
 <item>Determine the domain of the function.</item>

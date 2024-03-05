@@ -155,7 +155,7 @@ The derivative is defined everywhere. Therefore, we only need to find values for
 </note>
 <para id="fs-id1165042035392">With this idea in mind, let’s examine a procedure for locating absolute extrema.</para>
 <note id="fs-id1165042035397" class="problem-solving">
-<title>Problem-Solving Strategy: Locating Absolute Extrema over a Closed Interval</title>
+<title>Locating Absolute Extrema over a Closed Interval</title>
 <para id="fs-id1165042035403">Consider a continuous function <m:math><m:mi>f</m:mi></m:math> defined over the closed interval <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
 <list id="fs-id1165042035429" list-type="enumerated" number-style="arabic">
 <item>Evaluate <m:math><m:mi>f</m:mi></m:math> at the endpoints <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>.</m:mo></m:mrow></m:math></item>

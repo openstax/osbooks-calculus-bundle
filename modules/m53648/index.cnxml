@@ -209,7 +209,7 @@
 <para id="fs-id1167793546878">The work required to empty the tank is approximately 23,650,000 J.</para>
 <para id="fs-id1167793546882">For pumping problems, the calculations vary depending on the shape of the tank or container. The following problem-solving strategy lays out a step-by-step process for solving pumping problems.</para>
 <note id="fs-id1167793546887" class="problem-solving">
-<title>Problem-Solving Strategy: Solving Pumping Problems</title>
+<title>Solving Pumping Problems</title>
 <list id="fs-id1167794051212" list-type="enumerated" number-style="arabic">
 <item>Sketch a picture of the tank and select an appropriate frame of reference.</item>
 <item>Calculate the volume of a representative layer of water.</item>
@@ -300,7 +300,7 @@
 <equation id="fs-id1167794057937"><m:math><m:mrow><m:mi>F</m:mi><m:mo>=</m:mo><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">→</m:mo><m:mi>∞</m:mi></m:mrow></m:munder><m:munderover><m:mstyle mathsize="140%" displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>n</m:mi></m:munderover><m:mi>ρ</m:mi><m:mrow><m:mo>[</m:mo><m:mrow><m:mi>w</m:mi><m:mo stretchy="false">(</m:mo><m:msubsup><m:mi>x</m:mi><m:mi>i</m:mi><m:mo>*</m:mo></m:msubsup><m:mo stretchy="false">)</m:mo><m:mtext>Δ</m:mtext><m:mi>x</m:mi></m:mrow><m:mo>]</m:mo></m:mrow><m:mi>s</m:mi><m:mo stretchy="false">(</m:mo><m:msubsup><m:mi>x</m:mi><m:mi>i</m:mi><m:mo>*</m:mo></m:msubsup><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>a</m:mi><m:mi>b</m:mi></m:msubsup><m:mi>ρ</m:mi></m:mrow></m:mstyle><m:mi>w</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>s</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation>
 <para id="fs-id1167794291708">Evaluating this integral gives us the force on the plate. We summarize this in the following problem-solving strategy.</para>
 <note id="fs-id1167794291713" class="problem-solving">
-<title>Problem-Solving Strategy: Finding Hydrostatic Force</title>
+<title>Finding Hydrostatic Force</title>
 <list id="fs-id1167794291719" list-type="enumerated" number-style="arabic">
 <item>Sketch a picture and select an appropriate frame of reference. (Note that if we select a frame of reference other than the one used earlier, we may have to adjust <link target-id="fs-id1167794057937"/> accordingly.)</item>
 <item>Determine the depth and width functions, <m:math><m:mrow><m:mi>s</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>w</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></item>

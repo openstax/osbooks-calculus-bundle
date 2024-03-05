@@ -345,7 +345,7 @@ This equation is, indeed, linear. With <m:math><m:mrow><m:mi>r</m:mi><m:mo stret
 </tgroup>
 </table>
 <note id="fs-id1170572292207" class="problem-solving">
-<title>Problem-Solving Strategy: Using the Characteristic Equation to Solve Second-Order Differential Equations with Constant Coefficients</title>
+<title>Using the Characteristic Equation to Solve Second-Order Differential Equations with Constant Coefficients</title>
 <list id="fs-id1170572292216" list-type="enumerated" number-style="arabic">
 <item>Write the differential equation in the form <m:math><m:mrow><m:mi>a</m:mi><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:mi>c</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
 <item>Find the corresponding characteristic equation <m:math><m:mrow><m:mi>a</m:mi><m:msup><m:mi>λ</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>λ</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>

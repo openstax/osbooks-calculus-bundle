@@ -168,7 +168,7 @@ Since <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo
 <title>Choosing a Convergence Test</title>
 <para id="fs-id1169736592468">At this point, we have a long list of convergence tests. However, not all tests can be used for all series. When given a series, we must determine which test is the best to use. Here is a strategy for finding the best test to apply.</para>
 <note id="fs-id1169736592473" class="problem-solving">
-<title>Problem-Solving Strategy: Choosing a Convergence Test for a Series</title>
+<title>Choosing a Convergence Test for a Series</title>
 <para id="fs-id1169736592480">Consider a series <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> In the steps below, we outline a strategy for determining whether the series converges.</para>
 <list id="fs-id1169736592510" list-type="enumerated" number-style="arabic">
 <item>Is <m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math> a familiar series? For example, is it the harmonic series (which diverges) or the alternating harmonic series (which converges)? Is it a <m:math><m:mrow><m:mi>p</m:mi><m:mo>−</m:mo><m:mtext>series</m:mtext></m:mrow></m:math> or geometric series? If so, check the power <m:math><m:mi>p</m:mi></m:math> or the ratio <m:math><m:mi>r</m:mi></m:math> to determine if the series converges.</item>

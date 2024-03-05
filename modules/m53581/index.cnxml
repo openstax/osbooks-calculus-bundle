@@ -44,7 +44,7 @@
 <para id="fs-id1169739080685">Watch an <link url="http://www.openstax.org/l/20_chainrule2">animation</link> of the chain rule.</para>
 </note>
 <note id="fs-id1169736619728" class="problem-solving">
-<title>Problem-Solving Strategy: Applying the Chain Rule</title>
+<title>Applying the Chain Rule</title>
 <list id="fs-id1169739182671" list-type="enumerated" number-style="arabic">
 <item>To differentiate <m:math><m:mrow><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> begin by identifying <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></item>
 <item>Find <m:math><m:mrow><m:mi>f</m:mi><m:mo>′</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and evaluate it at <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> to obtain <m:math><m:mrow><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></item>

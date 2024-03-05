@@ -271,7 +271,7 @@
 </note>
 <para id="fs-id1167793940632">We are ready to give a problem-solving strategy for change of variables.</para>
 <note id="fs-id1167793940635" class="problem-solving">
-<title>Problem-Solving Strategy: Change of Variables</title>
+<title>Change of Variables</title>
 <list id="fs-id1167793940642" list-type="enumerated" number-style="arabic">
 <item>Sketch the region given by the problem in the <m:math><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mtext>-plane</m:mtext></m:mrow></m:math> and then write the equations of the curves that form the boundary.</item>
 <item>Depending on the region or the integrand, choose the transformations <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>u</m:mi><m:mo>,</m:mo><m:mi>v</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>u</m:mi><m:mo>,</m:mo><m:mi>v</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></item>

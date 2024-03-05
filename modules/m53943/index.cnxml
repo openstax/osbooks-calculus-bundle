@@ -45,7 +45,7 @@
 <para id="fs-id1167794028995">□</para>
 <para id="fs-id1167794050438">To apply <link target-id="fs-id1167794055797"/> to an optimization problem similar to that for the golf ball manufacturer, we need a problem-solving strategy.</para>
 <note id="fs-id1167793879387" class="problem-solving">
-<title>Problem-Solving Strategy: Steps for Using Lagrange Multipliers</title>
+<title>Steps for Using Lagrange Multipliers</title>
 <list id="fs-id1167793863160" list-type="enumerated" number-style="arabic">
 <item>Determine the objective function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and the constraint function <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Does the optimization problem involve maximizing or minimizing the objective function?</item>
 <item>Set up a system of equations using the following template:<newline/>
