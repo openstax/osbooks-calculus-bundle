@@ -808,144 +808,133 @@ The total distance is <m:math><m:mrow><m:mi>d</m:mi><m:mo stretchy="false">(</m:
 <exercise id="fs-id1170571689730" class="material-set-2">
 <problem id="fs-id1170571689733">
 <para id="fs-id1170571689735">The distribution of incomes as of 2012 in the United States in $5000 increments is given in the following table. The <emphasis effect="italics">k</emphasis>th row denotes the percentage of households with incomes between <m:math><m:mrow><m:mn>$5000</m:mn><m:mi>x</m:mi><m:mi>k</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mn>5000</m:mn><m:mi>x</m:mi><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>4999</m:mn><m:mo>.</m:mo></m:mrow></m:math> The row <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>40</m:mn></m:mrow></m:math> contains all households with income between $200,000 and $250,000.</para>
-<table id="fs-id1170571689791" summary="A table with 21 rows and four columns. The first column has the values 0 through 20. The second column has the values 3.5, 4.1, 5.9, 5.7, 5.9, 5.4, 5.5, 5.1, 4.8, 4.1, 4.3, 3.5, 3.7, 3.2, 3.0, 2.8, 2.5, 2.2, 2.2, 1.8, and 2.1. The third column has the values 21 through 41. The fourth column has the values 1.5, 1.4, 1.3, 1.3, 1.1, 1.0, 0.75, 0.8, 1.0, 0.6, 0.6, 0.5, 0.5, 0.4, 0.3, 0.3, 0.3, 0.2, 1.8, and 2.3.">
-<title>Income Distributions</title>
-<tgroup cols="4">
-<colspec colnum="1" colname="c1"/>
-<colspec colnum="2" colname="c2"/>
-<colspec colnum="3" colname="c3"/>
-<colspec colnum="4" colname="c4"/>
-<tbody>
-<row valign="top">
-<entry align="left">0</entry>
-<entry align="left">3.5</entry>
-<entry align="left">21</entry>
-<entry align="left">1.5</entry>
-</row>
-<row valign="top">
-<entry align="left">1</entry>
-<entry align="left">4.1</entry>
-<entry align="left">22</entry>
-<entry align="left">1.4</entry>
-</row>
-<row valign="top">
-<entry align="left">2</entry>
-<entry align="left">5.9</entry>
-<entry align="left">23</entry>
-<entry align="left">1.3</entry>
-</row>
-<row valign="top">
-<entry align="left">3</entry>
-<entry align="left">5.7</entry>
-<entry align="left">24</entry>
-<entry align="left">1.3</entry>
-</row>
-<row valign="top">
-<entry align="left">4</entry>
-<entry align="left">5.9</entry>
-<entry align="left">25</entry>
-<entry align="left">1.1</entry>
-</row>
-<row valign="top">
-<entry align="left">5</entry>
-<entry align="left">5.4</entry>
-<entry align="left">26</entry>
-<entry align="left">1.0</entry>
-</row>
-<row valign="top">
-<entry align="left">6</entry>
-<entry align="left">5.5</entry>
-<entry align="left">27</entry>
-<entry align="left">0.75</entry>
-</row>
-<row valign="top">
-<entry align="left">7</entry>
-<entry align="left">5.1</entry>
-<entry align="left">28</entry>
-<entry align="left">0.8</entry>
-</row>
-<row valign="top">
-<entry align="left">8</entry>
-<entry align="left">4.8</entry>
-<entry align="left">29</entry>
-<entry align="left">1.0</entry>
-</row>
-<row valign="top">
-<entry align="left">9</entry>
-<entry align="left">4.1</entry>
-<entry align="left">30</entry>
-<entry align="left">0.6</entry>
-</row>
-<row valign="top">
-<entry align="left">10</entry>
-<entry align="left">4.3</entry>
-<entry align="left">31</entry>
-<entry align="left">0.6</entry>
-</row>
-<row valign="top">
-<entry align="left">11</entry>
-<entry align="left">3.5</entry>
-<entry align="left">32</entry>
-<entry align="left">0.5</entry>
-</row>
-<row valign="top">
-<entry align="left">12</entry>
-<entry align="left">3.7</entry>
-<entry align="left">33</entry>
-<entry align="left">0.5</entry>
-</row>
-<row valign="top">
-<entry align="left">13</entry>
-<entry align="left">3.2</entry>
-<entry align="left">34</entry>
-<entry align="left">0.4</entry>
-</row>
-<row valign="top">
-<entry align="left">14</entry>
-<entry align="left">3.0</entry>
-<entry align="left">35</entry>
-<entry align="left">0.3</entry>
-</row>
-<row valign="top">
-<entry align="left">15</entry>
-<entry align="left">2.8</entry>
-<entry align="left">36</entry>
-<entry align="left">0.3</entry>
-</row>
-<row valign="top">
-<entry align="left">16</entry>
-<entry align="left">2.5</entry>
-<entry align="left">37</entry>
-<entry align="left">0.3</entry>
-</row>
-<row valign="top">
-<entry align="left">17</entry>
-<entry align="left">2.2</entry>
-<entry align="left">38</entry>
-<entry align="left">0.2</entry>
-</row>
-<row valign="top">
-<entry align="left">18</entry>
-<entry align="left">2.2</entry>
-<entry align="left">39</entry>
-<entry align="left">1.8</entry>
-</row>
-<row valign="top">
-<entry align="left">19</entry>
-<entry align="left">1.8</entry>
-<entry align="left">40</entry>
-<entry align="left">2.3</entry>
-</row>
-<row valign="top">
-<entry align="left">20</entry>
-<entry align="left">2.1</entry>
-<entry align="left"/>
-<entry align="left"/>
-</row>
-</tbody>
-</tgroup>
-<caption><emphasis effect="italics">Source</emphasis>: http://www.census.gov/prod/2013pubs/p60-245.pdf</caption>
+<table id="fs-id1170571689791" summary="A reorganized table with expanded columns to accommodate the rearrangement based on the new starting split.">
+  <title>Income Distributions</title>
+  <tgroup cols="8">
+      <colspec colnum="1" colname="c1"/>
+      <colspec colnum="2" colname="c2"/>
+      <colspec colnum="3" colname="c3"/>
+      <colspec colnum="4" colname="c4"/>
+      <colspec colnum="5" colname="c5"/>
+      <colspec colnum="6" colname="c6"/>
+      <colspec colnum="7" colname="c7"/>
+      <colspec colnum="8" colname="c8"/>
+      <tbody>
+          <row valign="top">
+              <entry align="left">0</entry>
+              <entry align="left">3.5</entry>
+              <entry align="left">21</entry>
+              <entry align="left">1.5</entry>
+              <entry align="left">11</entry>
+              <entry align="left">3.5</entry>
+              <entry align="left">32</entry>
+              <entry align="left">0.5</entry>
+          </row>
+          <row valign="top">
+              <entry align="left">1</entry>
+              <entry align="left">4.1</entry>
+              <entry align="left">22</entry>
+              <entry align="left">1.4</entry>
+              <entry align="left">12</entry>
+              <entry align="left">3.7</entry>
+              <entry align="left">33</entry>
+              <entry align="left">0.5</entry>
+          </row>
+          <row valign="top">
+              <entry align="left">2</entry>
+              <entry align="left">5.9</entry>
+              <entry align="left">23</entry>
+              <entry align="left">1.3</entry>
+              <entry align="left">13</entry>
+              <entry align="left">3.2</entry>
+              <entry align="left">34</entry>
+              <entry align="left">0.4</entry>
+          </row>
+          <row valign="top">
+              <entry align="left">3</entry>
+              <entry align="left">5.7</entry>
+              <entry align="left">24</entry>
+              <entry align="left">1.3</entry>
+              <entry align="left">14</entry>
+              <entry align="left">3.0</entry>
+              <entry align="left">35</entry>
+              <entry align="left">0.3</entry>
+          </row>
+          <row valign="top">
+              <entry align="left">4</entry>
+              <entry align="left">5.9</entry>
+              <entry align="left">25</entry>
+              <entry align="left">1.1</entry>
+              <entry align="left">15</entry>
+              <entry align="left">2.8</entry>
+              <entry align="left">36</entry>
+              <entry align="left">0.3</entry>
+          </row>
+          <row valign="top">
+              <entry align="left">5</entry>
+              <entry align="left">5.4</entry>
+              <entry align="left">26</entry>
+              <entry align="left">1.0</entry>
+              <entry align="left">16</entry>
+              <entry align="left">2.5</entry>
+              <entry align="left">37</entry>
+              <entry align="left">0.3</entry>
+          </row>
+          <row valign="top">
+              <entry align="left">6</entry>
+              <entry align="left">5.5</entry>
+              <entry align="left">27</entry>
+              <entry align="left">0.75</entry>
+              <entry align="left">17</entry>
+              <entry align="left">2.2</entry>
+              <entry align="left">38</entry>
+              <entry align="left">0.2</entry>
+          </row>
+          <row valign="top">
+              <entry align="left">7</entry>
+              <entry align="left">5.1</entry>
+              <entry align="left">28</entry>
+              <entry align="left">0.8</entry>
+              <entry align="left">18</entry>
+              <entry align="left">2.2</entry>
+              <entry align="left">39</entry>
+              <entry align="left">1.8</entry>
+          </row>
+          <row valign="top">
+              <entry align="left">8</entry>
+              <entry align="left">4.8</entry>
+              <entry align="left">29</entry>
+              <entry align="left">1.0</entry>
+              <entry align="left">19</entry>
+              <entry align="left">1.8</entry>
+              <entry align="left">40</entry>
+              <entry align="left">2.3</entry>
+          </row>
+          <row valign="top">
+              <entry align="left">9</entry>
+              <entry align="left">4.1</entry>
+              <entry align="left">30</entry>
+              <entry align="left">0.6</entry>
+              <entry align="left">20</entry>
+              <entry align="left">2.1</entry>
+              <entry align="left"/>
+              <entry align="left"/>
+          </row>
+          <row valign="top">
+              <entry align="left">10</entry>
+              <entry align="left">4.3</entry>
+              <entry align="left">31</entry>
+              <entry align="left">0.6</entry>
+              <entry align="left"/>
+              <entry align="left"/>
+              <entry align="left"/>
+              <entry align="left"/>
+          </row>
+      </tbody>
+  </tgroup>
+  <caption><emphasis effect="italics">Source</emphasis>: http://www.census.gov/prod/2013pubs/p60-245.pdf</caption>
 </table>
+
 <list id="fs-id1170571613778" list-type="enumerated" number-style="lower-alpha">
 <item>Estimate the percentage of U.S. households in 2012 with incomes less than $55,000.</item>
 <item>What percentage of households had incomes exceeding $85,000?</item>
