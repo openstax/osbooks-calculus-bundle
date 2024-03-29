@@ -243,7 +243,7 @@
 <para id="fs-id1170572448369">Sketch left-endpoint and right-endpoint approximations for <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac></m:mrow></m:math> on <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>;</m:mo></m:mrow></m:math> use <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math> Approximate the area using both methods.</para>
 </problem>
 <solution id="fs-id1170572622437">
-<para id="fs-id1170572622439">The left-endpoint approximation is 0.7595. The right-endpoint approximation is 0.6345. See the below <link target-id="fs-id1170572216462"/>.<newline/>
+<para id="fs-id1170572622439">The left-endpoint approximation is 0.7595. The right-endpoint approximation is 0.6345.
 <media id="fs-id1170572216462" alt="Two graphs side by side showing the left-endpoint approximation ad right-endpoint approximation of the area under the curve f(x) = 1/x from 1 to 2 with endpoints spaced evenly at .25 units. The heights of the left-endpoint approximation one are determined by the values of the function at the left endpoints, and the height of the right-endpoint approximation one are determined by the values of the function at the right endpoints.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_05_01_012.jpg"/>
 </media>
