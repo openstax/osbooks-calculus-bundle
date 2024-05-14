@@ -336,12 +336,33 @@ When we multiply both sides of this equation by <m:math><m:mrow><m:mn>5</m:mn><m
 If <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mtext>/</m:mtext><m:mn>5</m:mn><m:mo>,</m:mo></m:mrow></m:math> this equation has no solution. On the other hand, as long as <m:math><m:mrow><m:mi>y</m:mi><m:mo>≠</m:mo><m:mn>3</m:mn><m:mtext>/</m:mtext><m:mn>5</m:mn><m:mo>,</m:mo></m:mrow></m:math><newline/>
 <equation id="fs-id1170573352338" class="unnumbered"><label/><m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>y</m:mi></m:mrow></m:mfrac></m:mrow></m:math></equation><newline/>
 satisfies this equation. We can conclude that the range of <m:math><m:mi>f</m:mi></m:math> is <m:math><m:mrow><m:mo>{</m:mo><m:mi>y</m:mi><m:mo>|</m:mo><m:mi>y</m:mi><m:mo>≠</m:mo><m:mn>3</m:mn><m:mtext>/</m:mtext><m:mn>5</m:mn><m:mo>}</m:mo><m:mo>.</m:mo></m:mrow></m:math></item>
-<item>To find the domain of <m:math><m:mi>f</m:mi><m:mo>,</m:mo></m:math> we need <m:math><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>≥</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> When we factor, we write <m:math><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>≥</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> This inequality holds if and only if both terms are positive or both terms are negative. For both terms to be positive, we need to find <m:math><m:mi>x</m:mi></m:math> such that<newline/>
-<equation id="fs-id1170573364358" class="unnumbered"><label/><m:math><m:mrow><m:mn>2</m:mn><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn><m:mspace width="2em"/><m:mtext>and</m:mtext><m:mspace width="2em"/><m:mn>2</m:mn><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
-These two inequalities reduce to <m:math><m:mrow><m:mn>2</m:mn><m:mo>≥</m:mo><m:mi>x</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>−2</m:mn><m:mo>.</m:mo></m:mrow></m:math> Therefore, the set <m:math><m:mrow><m:mo>{</m:mo><m:mi>x</m:mi><m:mo>|</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mo>}</m:mo></m:mrow></m:math> must be part of the domain. For both terms to be negative, we need<newline/>
-<equation id="fs-id1170573406248" class="unnumbered"><label/><m:math><m:mrow><m:mn>2</m:mn><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>0</m:mn><m:mspace width="2em"/><m:mtext>and</m:mtext><m:mspace width="2em"/><m:mn>2</m:mn><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
-These two inequalities also reduce to <m:math><m:mrow><m:mn>2</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>−2</m:mn><m:mo>.</m:mo></m:mrow></m:math> There are no values of <m:math><m:mi>x</m:mi></m:math> that satisfy both of these inequalities. Thus, we can conclude the domain of this function is <m:math><m:mrow><m:mo>{</m:mo><m:mi>x</m:mi><m:mo>|</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mo>}</m:mo><m:mtext>.</m:mtext></m:mrow></m:math><newline/>
-If <m:math><m:mrow><m:mn>−2</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow></m:math> then <m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>≤</m:mo><m:mn>4</m:mn><m:mo>.</m:mo></m:mrow></m:math> Therefore, <m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:msqrt><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>≤</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow></m:math> and the range of <m:math><m:mi>f</m:mi></m:math> is <m:math><m:mrow><m:mo>{</m:mo><m:mi>y</m:mi><m:mo>|</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>y</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mo>}</m:mo><m:mo>.</m:mo></m:mrow></m:math></item>
+
+<item>
+  <para id="para-00001">To find the domain of <m:math><m:mi>f</m:mi></m:math>, we need to identify values of <m:math><m:mi>x</m:mi></m:math> with <m:math><m:mn>4</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>≥</m:mo><m:mn>0</m:mn></m:math>. Note that <m:math><m:mn>4</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn></m:math> when <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:math> or <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn></m:math>. Solving <m:math><m:mn>4</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>></m:mo><m:mn>0</m:mn></m:math> is equivalent to solving <m:math><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>></m:mo><m:mn>0</m:mn></m:math>. If this inequality is true, then both factors are positive or both are negative.</para>
+
+  <para id="para-00002">Case 1: Both factors are positive.</para>
+
+  <equation class="unnumbered" id="eq-00001">
+    <m:math><m:mn>2</m:mn><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo> </m:mo><m:mtext>and</m:mtext><m:mo> </m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn></m:math>
+  </equation>
+  <equation class="unnumbered" id="eq-00002">
+    <label/><m:math><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mo> </m:mo><m:mtext>and</m:mtext><m:mo> </m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mo>−</m:mo><m:mn>2</m:mn></m:math>
+  </equation>
+  <para id="para-00003">So, the expression <m:math><m:mn>4</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:math> is positive for all values in the interval <m:math><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn></m:math>.</para>
+
+  <para id="para-00004">Case 2: Both factors are negative.</para>
+  <equation class="unnumbered" id="eq-00003">
+    <m:math><m:mn>2</m:mn><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn><m:mo> </m:mo><m:mtext>and</m:mtext><m:mo> </m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:math>
+  </equation>
+  <equation class="unnumbered" id="eq-00004">
+    <m:math><m:mi>x</m:mi><m:mo>></m:mo><m:mn>2</m:mn><m:mo> </m:mo><m:mtext>and</m:mtext><m:mo> </m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mo>−</m:mo><m:mn>2</m:mn></m:math>
+  </equation>
+  <para id="para-00005">There is no value of <m:math><m:mi>x</m:mi></m:math> that can satisfy both inequalities.</para>
+
+  <para id="para-00006">The domain of the function is <m:math><m:mo>{</m:mo><m:mi>x</m:mi><m:mo>|</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mo>}</m:mo></m:math>.</para>
+  <para id="para-00007">To identify the range, note that if <m:math><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn></m:math>, then <m:math><m:mn>0</m:mn><m:mo>≤</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>≤</m:mo><m:mn>4</m:mn></m:math>. Therefore, <m:math><m:mn>0</m:mn><m:mo>≤</m:mo><m:msqrt><m:mn>4</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:msqrt><m:mo>≤</m:mo><m:mn>2</m:mn></m:math>. The range of <m:math><m:mi>f</m:mi></m:math> is <m:math><m:mo>{</m:mo><m:mi>y</m:mi><m:mo>|</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>y</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mo>}</m:mo></m:math>.</para>
+</item>
+
 </list>
 </solution>
 </exercise>
