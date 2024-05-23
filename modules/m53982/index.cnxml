@@ -173,12 +173,12 @@
 <exercise id="fs-id1167794249986">
 <problem id="fs-id1167794249988">
 <para id="fs-id1167794249990">Find the area of the region enclosed by the curve with parameterization <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>t</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>t</m:mi><m:mo>,</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>t</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>t</m:mi><m:mo>≤</m:mo><m:mi>π</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
-<media id="fs-id1167793847151" alt="An image of a curve in quadrants 1 and 2. The curve begins at the origin, curves up and to the right until about (.5, .8), curves to the left nearly horizontally, goes through (0,1), continues until about (-1, .7), and then curves down and to the right until it hits the origin again.">
+<media id="fs-id1167793847151" alt="An image of a curve in quadrants 1 and 2. The curve begins at the origin, curves up and to the right until about (.5, 1), turns left to go through (0, 1), and curves down going through (-.5, 1) and then goes down and right until it hits the origin again.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_04_007.jpg"/>
 </media>
 </problem>
 <solution id="fs-id1167793433726">
-<para id="fs-id1167793433729"><m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
+<para id="fs-id1167793433729"><m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
 </solution>
 <commentary id="fs-id1167794042546" type="hint">
 <title>Hint</title>
