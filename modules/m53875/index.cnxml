@@ -1143,7 +1143,7 @@ c.<newline/>
 <exercise id="fs-id1163724034971">
 <problem id="fs-id1163724034973">
 <para id="fs-id1163724034975">If the boat velocity is <m:math><m:mn>5</m:mn></m:math> km/h due north in still water and the water has a current of <m:math><m:mn>2</m:mn></m:math> km/h due west (see the following figure), what is the velocity of the boat relative to shore? What is the angle <m:math><m:mi>θ</m:mi></m:math> that the boat is actually traveling?</para>
-<media id="fs-id1163724034996" alt="This figure is an image of overtop of a boat. There is a line segment from the back of the boat. It is labeled “5 k m/h r.” This line segment has another line segment perpendicular. It is labeled “2 k m/h r.” There is another line segment making a right triangle with the other two. The angle between the line segments from the boat is theta.">
+<media id="fs-id1163724034996" alt="This figure is an image of overtop of a boat. There is a line segment from the front of the boat. It is labeled “5 k m/h r.” This line segment has another line segment perpendicular. It is labeled “2 k m/h r.” There is another line segment making a right triangle with the other two. The angle between the line segments from the boat is theta.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_07_219.jpg"/>
 </media>
 </problem>
