@@ -16,7 +16,21 @@
 
 <content>
 <para id="fs-id1163723934859">Imagine a mechanic turning a wrench to tighten a bolt. The mechanic applies a force at the end of the wrench. This creates rotation, or torque, which tightens the bolt. We can use vectors to represent the force applied by the mechanic, and the distance (radius) from the bolt to the end of the wrench. Then, we can represent torque by a vector oriented along the axis of rotation. Note that the torque vector is orthogonal to both the force vector and the radius vector.</para>
-<para id="fs-id1163723894425">In this section, we develop an operation called the <emphasis effect="italics">cross product,</emphasis> which allows us to find a vector orthogonal to two given vectors. Calculating torque is an important application of cross products, and we examine torque in more detail later in the section.</para>
+<para id="fs-id1163723894425">In this section, we develop an operation called the <emphasis effect="italics">cross product,</emphasis> which allows us to find a vector orthogonal to two given vectors. Calculating torque is an important application of cross products, and we examine torque in more detail later in the section. This material uses a 3 × 3 determinant of the form
+  <m:math><m:mo>|</m:mo><m:mtable><m:mtr><m:mtd columnalign="left"><m:mi>a</m:mi></m:mtd><m:mtd columnalign="left"><m:mi>b</m:mi></m:mtd><m:mtd columnalign="left"><m:mi>c</m:mi></m:mtd></m:mtr>
+<m:mtr>  <m:mtd columnalign="left"><m:mi>d</m:mi></m:mtd><m:mtd columnalign="left">
+    <m:mi>e</m:mi></m:mtd><m:mtd columnalign="left"><m:mi>f</m:mi></m:mtd></m:mtr><m:mtr>  <m:mtd columnalign="left"><m:mi>g</m:mi></m:mtd><m:mtd columnalign="left">
+      <m:mi>h</m:mi></m:mtd><m:mtd columnalign="left"><m:mi>i</m:mi></m:mtd></m:mtr></m:mtable><m:mo>|</m:mo></m:math>, which expands by minors to
+      <m:math><m:mi>a</m:mi><m:mo>|</m:mo><m:mtable><m:mtr><m:mtd columnalign="left"><m:mi>e</m:mi></m:mtd><m:mtd columnalign="left"><m:mi>f</m:mi></m:mtd></m:mtr>
+<m:mtr>  <m:mtd columnalign="left"><m:mi>h</m:mi></m:mtd><m:mtd columnalign="left">
+    <m:mi>i</m:mi></m:mtd></m:mtr></m:mtable><m:mo>|</m:mo><m:mo>-</m:mo><m:mi>b</m:mi><m:mo>|</m:mo><m:mtable><m:mtr><m:mtd columnalign="left"><m:mi>d</m:mi></m:mtd><m:mtd columnalign="left"><m:mi>f</m:mi></m:mtd></m:mtr>
+    <m:mtr>  <m:mtd columnalign="left"><m:mi>g</m:mi></m:mtd><m:mtd columnalign="left">
+        <m:mi>i</m:mi></m:mtd></m:mtr></m:mtable><m:mo>|</m:mo><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>|</m:mo><m:mtable><m:mtr><m:mtd columnalign="left"><m:mi>d</m:mi></m:mtd><m:mtd columnalign="left"><m:mi>e</m:mi></m:mtd></m:mtr>
+        <m:mtr>  <m:mtd columnalign="left"><m:mi>g</m:mi></m:mtd><m:mtd columnalign="left">
+            <m:mi>h</m:mi></m:mtd></m:mtr></m:mtable><m:mo>|</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:mi>e</m:mi><m:mi>i</m:mi><m:mo>–</m:mo><m:mi>f</m:mi><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo><m:mi>–</m:mi>
+            <m:mi>b</m:mi><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mi>i</m:mi><m:mo>–</m:mo><m:mi>f</m:mi><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo>
+            <m:mi>c</m:mi><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mi>h</m:mi><m:mo>–</m:mo><m:mi>e</m:mi><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:math>
+    </para>
 <section id="fs-id1163724083973">
 <title>The Cross Product and Its Properties</title>
 <para id="fs-id1163724087473">The dot product is a multiplication of two vectors that results in a scalar. In this section, we introduce a product of two vectors that generates a third vector orthogonal to the first two. Consider how we might find such a vector. Let <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>u</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:msub><m:mi>u</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>u</m:mi><m:mn>2</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>u</m:mi><m:mn>3</m:mn></m:msub></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math>
