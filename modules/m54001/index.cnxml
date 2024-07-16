@@ -769,7 +769,7 @@ If we think of the curl as a derivative of sorts, then <term class="no-emphasis"
 </exercise>
 <exercise id="fs-id1167793686562">
 <problem id="fs-id1167793686564">
-<para id="fs-id1167793686566"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo stretchy="true">∮</m:mo><m:mi>C</m:mi></m:msub><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mi>y</m:mi></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> where <emphasis effect="italics">C</emphasis> is a circle centered at the origin with radius 3</para>
+<para id="fs-id1167793686566"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo stretchy="true">∫</m:mo><m:mi>C</m:mi></m:msub><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mi>y</m:mi></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> where <emphasis effect="italics">C</emphasis> is a circle centered at the origin with radius 3</para>
 </problem>
 <solution id="fs-id1167793508796">
 <para id="fs-id1167793508799"><m:math><m:mrow><m:mn>−18</m:mn><m:mi>π</m:mi></m:mrow></m:math></para>
