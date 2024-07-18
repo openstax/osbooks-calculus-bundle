@@ -842,7 +842,7 @@ where <m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)<
 <thead>
 <row valign="top">
 <entry valign="top" align="left">Years since 1790</entry>
-<entry valign="top" align="left"><m:math><m:mi>P</m:mi><m:mtext>″</m:mtext></m:math></entry>
+<entry valign="top" align="left"><m:math><m:msup><m:mi>P</m:mi><m:mo>″</m:mo></m:msup></m:math></entry>
 </row>
 </thead>
 <tbody>

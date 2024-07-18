@@ -413,7 +413,7 @@ Note that <m:math><m:mrow><m:mtext>cosh</m:mtext><m:mspace width="0.2em"/><m:mi>
 </exercise>
 <exercise id="fs-id1167793956239">
 <problem id="fs-id1167793956241">
-<para id="fs-id1167793956243">Show that <m:math><m:mrow><m:mtext>cosh</m:mtext><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mtext>sinh</m:mtext><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> satisfy <m:math><m:mrow><m:mi>y</m:mi><m:mtext>″</m:mtext><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793956243">Show that <m:math><m:mrow><m:mtext>cosh</m:mtext><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mtext>sinh</m:mtext><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> satisfy <m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>″</m:mo></m:msup><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167794126503">
 <para id="fs-id1167793416604">Answers may vary</para>

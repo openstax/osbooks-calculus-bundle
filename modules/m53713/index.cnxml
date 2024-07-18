@@ -743,7 +743,7 @@ where <m:math><m:mi>L</m:mi></m:math> is a constant of proportionality called th
 <title>Chapter Review Exercises</title>
 <para id="fs-id1170572115957"><emphasis effect="italics">True or False?</emphasis> Justify your answer with a proof or a counterexample.</para><exercise id="fs-id1170572115965">
 <problem id="fs-id1170572115967">
-<para id="fs-id1170572115969">The differential equation <m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>−</m:mo><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>y</m:mi><m:mtext>″</m:mtext></m:mrow></m:math> is linear.</para>
+<para id="fs-id1170572115969">The differential equation <m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>−</m:mo><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:msup><m:mi>y</m:mi><m:mo>″</m:mo></m:msup></m:mrow></m:math> is linear.</para>
 </problem>
 </exercise>
 <exercise id="fs-id1170572439961">

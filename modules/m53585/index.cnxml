@@ -346,7 +346,7 @@
 </exercise>
 <exercise id="fs-id1169738186907">
 <problem id="fs-id1169738186909">
-<para id="fs-id1169738186911">Find <m:math><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup></m:math> and <m:math><m:mi>y</m:mi><m:mtext>″</m:mtext></m:math> for <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1169738186911">Find <m:math><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup></m:math> and <m:math><m:msup><m:mi>y</m:mi><m:mo>″</m:mo></m:msup></m:math> for <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1169737934269">
