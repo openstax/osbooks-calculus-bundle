@@ -541,7 +541,7 @@ You now know how a planimeter works and you have used Green’s theorem to justi
   </row>
   <row>
     <entry><emphasis effect="bold">Green’s theorem, flux form</emphasis></entry>
-    <entry><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∫</m:mo><m:mi>C</m:mi></m:msub><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>·</m:mo><m:mi>d</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>D</m:mi></m:msub><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>x</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>P</m:mi><m:mi>y</m:mi></m:msub><m:mi>d</m:mi><m:mi>A</m:mi><m:mo>,</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> where <emphasis effect="italics">C</emphasis> is the boundary of <emphasis effect="italics">D</emphasis></entry>
+    <entry><m:math><m:msub><m:mo>&#x222B;</m:mo><m:mi>C</m:mi></m:msub><m:mtext mathvariant="bold">F</m:mtext><m:mo>&#xB7;</m:mo><m:mtext mathvariant="bold">N</m:mtext><m:mi>d</m:mi><m:mi>s</m:mi><m:mo>=</m:mo><m:msub><m:mo>&#x222C;</m:mo><m:mi>D</m:mi></m:msub><m:msub><m:mi>P</m:mi><m:mi>x</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>Q</m:mi><m:mi>y</m:mi></m:msub><m:mi>d</m:mi><m:mi>A</m:mi></m:math></entry>
   </row>
   <row>
     <entry><emphasis effect="bold">Green’s theorem, extended version</emphasis></entry>
