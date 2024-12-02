@@ -321,7 +321,7 @@ This is the equation of a circle with center at <m:math><m:mrow><m:mrow><m:mo>(<
 </note>
 <para id="fs-id1167793219357">We have now seen several examples of drawing graphs of curves defined by <term id="term-00006">polar equations</term>. A summary of some common curves is given in the tables below. In each equation, <emphasis effect="italics">a</emphasis> and <emphasis effect="italics">b</emphasis> are arbitrary constants.</para>
 <figure id="CNX_Calc_Figure_11_03_016">
-<media id="fs-id1167794070768" alt="This table has three columns and 3 rows. The first row is a header row and is given from left to right as name, equation, and example. The second row is Line passing through the pole with slope tan K; θ = K; and a picture of a straight line on the polar coordinate plane with θ = π/3. The third row is Circle; r = a cosθ + b sinθ; and a picture of a circle on the polar coordinate plane with equation r = 2 cos(t) – 3 sin(t): the circle touches the origin but has center in the third quadrant.">
+<media id="fs-id1167794070768" alt="This table has three columns and 3 rows. The first row is a header row and is given from left to right as name, equation, and example. The second row is Line passing through the pole with slope tan K; θ = K; and a picture of a straight line on the polar coordinate plane with θ = π/3. The third row is Circle; r = a cosθ + b sinθ; and a picture of a circle on the polar coordinate plane with equation r = 2 cos(θ) – 3 sin(θ): the circle touches the origin but has center in the third quadrant.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_11_03_016.jpg"/>
 </media>
 </figure>
