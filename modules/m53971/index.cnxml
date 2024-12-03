@@ -876,7 +876,7 @@ c.<newline/>
 <glossary>
 <definition id="fs-id1167793480090">
 <term>radius of gyration</term>
-<meaning id="fs-id1167793416998">the distance from an object’s center of mass to its axis of rotation</meaning>
+<meaning id="fs-id1167793416998">the distance between the rotational axis of the object and the point where the entire mass of the object can be concentrated and have the same moment of inertia</meaning>
 </definition>
 </glossary>
 </document>
