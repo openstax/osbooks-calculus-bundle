@@ -345,6 +345,9 @@ Therefore, the solutions are given by the angles <m:math><m:mi>θ</m:mi></m:math
 <problem id="fs-id1170572171310">
 <para id="fs-id1170572226907">Prove the trigonometric identity <m:math><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mrow><m:mtext>cot</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>θ</m:mi><m:mo>=</m:mo><m:msup><m:mrow><m:mtext>csc</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
+<solution><para>
+<m:math><m:mtable columnalign="right center left"><m:mtr><m:mtd><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>&#x3B8;</m:mi></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mi>&#x3B8;</m:mi><m:mi>&#x3B8;</m:mi></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mfrac><m:mi>&#x3B8;</m:mi><m:mi>&#x3B8;</m:mi></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mi>&#x3B8;</m:mi><m:mi>&#x3B8;</m:mi></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mfrac><m:mrow><m:mi>&#x3B8;</m:mi><m:mo>+</m:mo><m:mi>&#x3B8;</m:mi></m:mrow><m:mi>&#x3B8;</m:mi></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mfrac><m:mn>1</m:mn><m:mi>&#x3B8;</m:mi></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mi>&#x3B8;</m:mi></m:mtd></m:mtr></m:mtable></m:math></para>
+</solution>
 <commentary id="fs-id1165041809085" type="hint">
 <title>Hint</title>
 <para id="fs-id1165041809092">Divide both sides of the identity <m:math><m:mrow><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>θ</m:mi><m:mo>+</m:mo><m:msup><m:mrow><m:mtext>cos</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> by <m:math><m:mrow><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
