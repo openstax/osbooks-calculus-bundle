@@ -5,7 +5,7 @@
   <md:content-id>m53754</md:content-id>
   <md:title>The Divergence and Integral Tests</md:title>
   <md:abstract><list id="list-00001">
-<item>Use the divergence test to determine whether a series converges or diverges.</item>
+<item>Use the divergence test to demonstrate that a series diverges.</item>
 <item>Use the integral test to determine the convergence of a series.</item>
 <item>Estimate the value of a series by finding bounds on its remainder term.</item>
 </list></md:abstract>
