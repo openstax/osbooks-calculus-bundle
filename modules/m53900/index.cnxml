@@ -999,7 +999,8 @@ So, in component form,<newline/>
 </exercise>
 <exercise id="fs-id1167793445740">
 <problem id="fs-id1167793445743">
-<para id="fs-id1167793445745">A guy-wire supports a pole that is <m:math><m:mrow><m:mn>75</m:mn></m:mrow></m:math> ft high. One end of the wire is attached to the top of the pole and the other end is anchored to the ground <m:math><m:mrow><m:mn>50</m:mn></m:mrow></m:math> ft from the base of the pole. Determine the horizontal and vertical components of the force of tension in the wire if its magnitude is <m:math><m:mrow><m:mn>50</m:mn></m:mrow></m:math> lb. (Round to the nearest integer.)</para><media id="fs-id1167793362180" alt="This figure is a tower with a guy wire from the top to the ground. The tower, guy wire, and the ground form a right triangle. The base is labeled “50 feet” and is horizontal. The other side is labeled “75 feet” and is vertical. This side is the tower.">
+<para id="fs-id1167793445745">A guy-wire supports a pole that is <newline />
+  <m:math><m:mrow><m:mn>75</m:mn></m:mrow></m:math> ft high. One end of the wire is attached to the top of the pole and the other end is anchored to the ground <m:math><m:mrow><m:mn>50</m:mn></m:mrow></m:math> ft from the base of the pole. Determine the horizontal and vertical components of the force of tension in the wire if its magnitude is <m:math><m:mrow><m:mn>50</m:mn></m:mrow></m:math> lb. (Round to the nearest integer.)</para><media id="fs-id1167793362180" alt="This figure is a tower with a guy wire from the top to the ground. The tower, guy wire, and the ground form a right triangle. The base is labeled “50 feet” and is horizontal. The other side is labeled “75 feet” and is vertical. This side is the tower.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_01_210.jpg"/>
 </media>
 </problem>
