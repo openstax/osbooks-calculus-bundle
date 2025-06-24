@@ -1,5 +1,6 @@
 {
   "files.associations": {
+    "*.embeddedhtml": "html",
     "*.cnxml": "xml"
   },
   "xml.server.vmargs": "-Xmx1024m",
