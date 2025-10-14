@@ -414,7 +414,7 @@ The values then repeat themselves, except for the fact that the coefficient of k
 <list id="fs-id1169737177651" list-type="enumerated" number-style="lower-alpha">
 <item><m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>t</m:mi><m:mo stretchy="false">→</m:mo><m:mn>−3</m:mn></m:mrow></m:munder><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></item>
 <item><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mn>−3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></item>
-<item>Is <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> continuous at <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn><m:mo>?</m:mo></m:mrow></m:math></item>
+<item>Is <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> continuous at <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn><m:mo>?</m:mo></m:mrow></m:math></item>
 <item><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></item>
 </list>
 </problem>
