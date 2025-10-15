@@ -1,391 +1,256 @@
 <col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en">
   <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
-  <md:title>Calculus Volume 3</md:title>
-  
-  
-  <md:license url="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike License 4.0</md:license>
-  <md:language>en</md:language>
+    <md:title>Calculus Volume 3</md:title>
 
-  
 
-  
-  
-  
-  
-  
+    <md:license url="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike License 4.0</md:license>
+    <md:language>en</md:language>
 
-  <md:uuid>a31cd793-2162-4e9e-acb5-6e6bbd76a5fa</md:uuid>
-<md:slug>calculus-volume-3</md:slug>
-</metadata>
+
+    <md:uuid>a31cd793-2162-4e9e-acb5-6e6bbd76a5fa</md:uuid>
+    <md:slug>calculus-volume-3</md:slug>
+  </metadata>
 
   <col:content>
-    
-      <col:module document="m60029"/>
-        
-      
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>Parametric Equations and Polar Coordinates</md:title>
-        
-        
-        
 
-        <col:content>
-          
-    
-      <col:module document="m53831"/>
-        
-      
-    
-    
-      <col:module document="m53834"/>
-        
-      
-    
-    
-      <col:module document="m53850"/>
-        
-      
-    
-    
-      <col:module document="m53852"/>
-        
-      
-    
-    
-      <col:module document="m53840"/>
-        
-      
-    
-    
-      <col:module document="m53846"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>Vectors in Space</md:title>
-        
-        
-        
+    <col:module document="m60029" />
 
-        <col:content>
-          
-    
-      <col:module document="m53906"/>
-        
-      
-    
-    
-      <col:module document="m53900"/>
-        
-      
-    
-    
-      <col:module document="m53897"/>
-        
-      
-    
-    
-      <col:module document="m53902"/>
-        
-      
-    
-    
-      <col:module document="m53903"/>
-        
-      
-    
-    
-      <col:module document="m53870"/>
-        
-      
-    
-    
-      <col:module document="m53874"/>
-        
-      
-    
-    
-      <col:module document="m53875"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>Vector-Valued Functions</md:title>
-        
-        
-        
 
-        <col:content>
-          
-    
-      <col:module document="m53907"/>
-        
-      
-    
-    
-      <col:module document="m53913"/>
-        
-      
-    
-    
-      <col:module document="m53916"/>
-        
-      
-    
-    
-      <col:module document="m53919"/>
-        
-      
-    
-    
-      <col:module document="m53930"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>Differentiation of Functions of Several Variables</md:title>
-        
-        
-        
+    <col:subcollection>
+      <md:title>Parametric Equations and Polar Coordinates</md:title>
 
-        <col:content>
-          
-    
-      <col:module document="m53929"/>
-        
-      
-    
-    
-      <col:module document="m53946"/>
-        
-      
-    
-    
-      <col:module document="m53933"/>
-        
-      
-    
-    
-      <col:module document="m53934"/>
-        
-      
-    
-    
-      <col:module document="m53937"/>
-        
-      
-    
-    
-      <col:module document="m53938"/>
-        
-      
-    
-    
-      <col:module document="m53940"/>
-        
-      
-    
-    
-      <col:module document="m53942"/>
-        
-      
-    
-    
-      <col:module document="m53943"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>Multiple Integration</md:title>
-        
-        
-        
 
-        <col:content>
-          
-    
-      <col:module document="m53961"/>
-        
-      
-    
-    
-      <col:module document="m53949"/>
-        
-      
-    
-    
-      <col:module document="m53963"/>
-        
-      
-    
-    
-      <col:module document="m53966"/>
-        
-      
-    
-    
-      <col:module document="m53965"/>
-        
-      
-    
-    
-      <col:module document="m53967"/>
-        
-      
-    
-    
-      <col:module document="m53971"/>
-        
-      
-    
-    
-      <col:module document="m53970"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>Vector Calculus</md:title>
-        
-        
-        
+      <col:content>
 
-        <col:content>
-          
-    
-      <col:module document="m54017"/>
-        
-      
-    
-    
-      <col:module document="m53989"/>
-        
-      
-    
-    
-      <col:module document="m54012"/>
-        
-      
-    
-    
-      <col:module document="m53987"/>
-        
-      
-    
-    
-      <col:module document="m53982"/>
-        
-      
-    
-    
-      <col:module document="m53986"/>
-        
-      
-    
-    
-      <col:module document="m54004"/>
-        
-      
-    
-    
-      <col:module document="m54009"/>
-        
-      
-    
-    
-      <col:module document="m54001"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>Second-Order Differential Equations</md:title>
-        
-        
-        
 
-        <col:content>
-          
-    
-      <col:module document="m54039"/>
-        
-      
-    
-    
-      <col:module document="m54040"/>
-        
-      
-    
-    
-      <col:module document="m54047"/>
-        
-      
-    
-    
-      <col:module document="m54044"/>
-        
-      
-    
-    
-      <col:module document="m54046"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      <col:module document="m54049"/>
-        
-      
-    
-    
-      <col:module document="m54050"/>
-        
-      
-    
-    
-      <col:module document="m54053"/>
-        
-      
-    
+        <col:module document="m53831" />
+
+
+        <col:module document="m53834" />
+
+
+        <col:module document="m53850" />
+
+
+        <col:module document="m53852" />
+
+
+        <col:module document="m53840" />
+
+
+        <col:module document="m53846" />
+
+
+      </col:content>
+    </col:subcollection>
+
+
+    <col:subcollection>
+      <md:title>Vectors in Space</md:title>
+
+
+      <col:content>
+
+
+        <col:module document="m53906" />
+
+
+        <col:module document="m53900" />
+
+
+        <col:module document="m53897" />
+
+
+        <col:module document="m53902" />
+
+
+        <col:module document="m53903" />
+
+
+        <col:module document="m53870" />
+
+
+        <col:module document="m53874" />
+
+
+        <col:module document="m53875" />
+
+
+      </col:content>
+    </col:subcollection>
+
+
+    <col:subcollection>
+      <md:title>Vector-Valued Functions</md:title>
+
+
+      <col:content>
+
+
+        <col:module document="m53907" />
+
+
+        <col:module document="m53913" />
+
+
+        <col:module document="m53916" />
+
+
+        <col:module document="m53919" />
+
+
+        <col:module document="m53930" />
+
+
+      </col:content>
+    </col:subcollection>
+
+
+    <col:subcollection>
+      <md:title>Differentiation of Functions of Several Variables</md:title>
+
+
+      <col:content>
+
+
+        <col:module document="m53929" />
+
+
+        <col:module document="m53946" />
+
+
+        <col:module document="m53933" />
+
+
+        <col:module document="m53934" />
+
+
+        <col:module document="m53937" />
+
+
+        <col:module document="m53938" />
+
+
+        <col:module document="m53940" />
+
+
+        <col:module document="m53942" />
+
+
+        <col:module document="m53943" />
+
+
+      </col:content>
+    </col:subcollection>
+
+
+    <col:subcollection>
+      <md:title>Multiple Integration</md:title>
+
+
+      <col:content>
+
+
+        <col:module document="m53961" />
+
+
+        <col:module document="m53949" />
+
+
+        <col:module document="m53963" />
+
+
+        <col:module document="m53966" />
+
+
+        <col:module document="m53965" />
+
+
+        <col:module document="m53967" />
+
+
+        <col:module document="m53971" />
+
+
+        <col:module document="m53970" />
+
+
+      </col:content>
+    </col:subcollection>
+
+
+    <col:subcollection>
+      <md:title>Vector Calculus</md:title>
+
+
+      <col:content>
+
+
+        <col:module document="m54017" />
+
+
+        <col:module document="m53989" />
+
+
+        <col:module document="m54012" />
+
+
+        <col:module document="m53987" />
+
+
+        <col:module document="m53982" />
+
+
+        <col:module document="m53986" />
+
+
+        <col:module document="m54004" />
+
+
+        <col:module document="m54009" />
+
+
+        <col:module document="m54001" />
+
+
+      </col:content>
+    </col:subcollection>
+
+
+    <col:subcollection>
+      <md:title>Second-Order Differential Equations</md:title>
+
+
+      <col:content>
+
+
+        <col:module document="m54039" />
+
+
+        <col:module document="m54040" />
+
+
+        <col:module document="m54047" />
+
+
+        <col:module document="m54044" />
+
+
+        <col:module document="m54046" />
+
+
+      </col:content>
+    </col:subcollection>
+
+
+    <col:module document="m54049" />
+
+
+    <col:module document="m54050" />
+
+
+    <col:module document="m54053" />
+
+
   </col:content>
 </col:collection>
