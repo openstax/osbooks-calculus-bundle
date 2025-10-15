@@ -261,7 +261,7 @@ For <m:math><m:mi>n</m:mi></m:math> even, this term is zero. For <m:math><m:mi>n
 </exercise>
 </note>
 <para id="fs-id1167024039026">We now consider an example involving a differential equation that we cannot solve using previously discussed methods. This differential equation</para>
-<equation id="fs-id1167024039030" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>−</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></equation>
+<equation id="fs-id1167024039030" class="unnumbered"><label/><m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>′′</m:mo></m:msup><m:mo>−</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></equation>
 <para id="fs-id1167024039054">is known as <term class="no-emphasis" id="term-00002">Airy’s equation</term>. It has many applications in mathematical physics, such as modeling the diffraction of light. Here we show how to solve it using power series.</para>
 <example id="fs-id1167024039063">
 <exercise id="fs-id1167024039065">
