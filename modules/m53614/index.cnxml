@@ -388,7 +388,8 @@
 </exercise>
 <exercise id="fs-id1165042334143">
 <problem id="fs-id1165042334145">
-<para id="fs-id1165042334148">Find two positive integers such that their sum is <m:math><m:mrow><m:mn>10</m:mn><m:mo>,</m:mo></m:mrow></m:math> and minimize and maximize the sum of their squares.</para>
+<para id="fs-id1165042334148">Find the two positive integers so that their sum is <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> and the sum of their squares is as large as possible. Then find another two positive integers so that their sum is 10 and the sum of their squares is as small as possible.
+</para>
 </problem>
 </exercise>
 <para id="fs-id1165042970426">For the following exercises, consider the construction of a pen to enclose an area.</para>
