@@ -475,7 +475,7 @@ Since the limit is <m:math><m:mn>0</m:mn></m:math> and <m:math><m:mrow><m:munder
 <para id="fs-id1169736779613"><m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mfrac><m:mn>1</m:mn><m:mi>n</m:mi></m:mfrac><m:mo>(</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>−</m:mo><m:mrow><m:msup><m:mrow><m:mtext>tan</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1169738999346">
-<para id="fs-id1169738999348">Converges by limit comparison with <emphasis effect="italics">p</emphasis>-series, <m:math><m:mrow><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1169738999348">Converges by limit comparison with <emphasis effect="italics">p</emphasis>-series, <m:math><m:mrow><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1169739169498">
