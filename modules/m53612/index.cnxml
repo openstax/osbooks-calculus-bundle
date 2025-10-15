@@ -125,7 +125,6 @@
 <para id="fs-id1165042369562">Since <m:math><m:mrow><m:mi>g</m:mi><m:mo>′</m:mo><m:mo stretchy="false">(</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> we conclude that</para>
 <equation id="fs-id1165042608728" class="unnumbered"><label/><m:math><m:mrow><m:mi>f</m:mi><m:mo>′</m:mo><m:mrow><m:mo>(</m:mo><m:mi>c</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>b</m:mi><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>b</m:mi><m:mo>−</m:mo><m:mi>a</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation>
 <para id="fs-id1165042639297">□</para>
-<para id="fs-id1165043131938">In the next example, we show how the Mean Value Theorem can be applied to the function <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt><m:mi>x</m:mi></m:msqrt></m:mrow></m:math> over the interval <m:math><m:mrow><m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>9</m:mn><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo></m:mrow></m:math> The method is the same for other functions, although sometimes with more interesting consequences.</para>
 <example id="fs-id1165042979713">
 <exercise id="fs-id1165042478873">
 <problem id="fs-id1165042941583">
