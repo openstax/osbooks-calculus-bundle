@@ -258,7 +258,7 @@
 <exercise id="fs-id1163723955186">
 <problem id="fs-id1163723955188">
 <title>Finding the Equation of a Sphere</title>
-<para id="fs-id1163724072122">Let <m:math><m:mrow><m:mi>P</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mi>Q</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> and suppose line segment <m:math><m:mrow><m:mi>P</m:mi><m:mi>Q</m:mi></m:mrow></m:math> forms the diameter of a sphere (<link target-id="CNX_Calc_Figure_12_02_016"/>). Find the equation of the sphere.</para>
+<para id="fs-id1163724072122">Let <m:math><m:mrow><m:mi>P</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−5</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mi>Q</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> and suppose line segment <m:math><m:mrow><m:mi>P</m:mi><m:mi>Q</m:mi></m:mrow></m:math> forms the diameter of a sphere (<link target-id="CNX_Calc_Figure_12_02_016"/>). Find an equation of the sphere.</para>
 <figure id="CNX_Calc_Figure_12_02_016">
 <media id="fs-id1163723735222" alt="This figure is the 3-dimensional coordinate system. There are two points labeled. The first point is P = (-5, 2, 3). The second point is Q = (3, 4, -1). There is a line segment drawn between the two points.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_02_016.jpg"/>
@@ -278,7 +278,7 @@
 <note id="fs-id1163723281629" class="checkpoint">
 <exercise id="fs-id1163723281632">
 <problem id="fs-id1163723281634">
-<para id="fs-id1163723281637">Find the equation of the sphere with diameter <m:math><m:mrow><m:mi>P</m:mi><m:mi>Q</m:mi><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>P</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mi>Q</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1163723281637">Find an equation of the sphere with diameter <m:math><m:mrow><m:mi>P</m:mi><m:mi>Q</m:mi><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>P</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>−3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mi>Q</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1163723987830">
 <para id="fs-id1163723674324"><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>z</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>14</m:mn></m:mrow></m:math></para>
@@ -638,7 +638,7 @@
 <para id="fs-id1163723303998">Find an equation of the plane passing through points <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>−7</m:mn><m:mo>,</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 </exercise>
-<para id="fs-id1163724059325">For the following exercises, find the equation of the sphere in standard form that satisfies the given conditions.</para>
+<para id="fs-id1163724059325">For the following exercises, find an equation of the sphere in standard form that satisfies the given conditions.</para>
 <exercise id="fs-id1163724059330">
 <problem id="fs-id1163724059332">
 <para id="fs-id1163724059334">Center <m:math><m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and radius <m:math><m:mn>4</m:mn></m:math></para>

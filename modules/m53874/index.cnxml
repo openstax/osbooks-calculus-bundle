@@ -631,7 +631,7 @@ This is an elliptic paraboloid centered at <m:math><m:mrow><m:mrow><m:mo>(</m:mo
 </exercise>
 <exercise id="fs-id1163723171158">
 <problem id="fs-id1163724080792">
-<para id="fs-id1163724080794">Find the equation of the quadric surface with points <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> that are equidistant from point <m:math><m:mrow><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and plane of equation <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Identify the surface.</para>
+<para id="fs-id1163724080794">Find an equation of the quadric surface with points <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> that are equidistant from point <m:math><m:mrow><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and plane of equation <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Identify the surface.</para>
 </problem>
 <solution id="fs-id1163724052080">
 <para id="fs-id1163724052083"><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> elliptic paraboloid</para>
@@ -639,7 +639,7 @@ This is an elliptic paraboloid centered at <m:math><m:mrow><m:mrow><m:mo>(</m:mo
 </exercise>
 <exercise id="fs-id1163723501874">
 <problem id="fs-id1163723501876">
-<para id="fs-id1163723501878">Find the equation of the quadric surface with points <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> that are equidistant from point <m:math><m:mrow><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and plane of equation <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>.</m:mo></m:mrow></m:math> Identify the surface.</para>
+<para id="fs-id1163723501878">Find an equation of the quadric surface with points <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> that are equidistant from point <m:math><m:mrow><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and plane of equation <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>.</m:mo></m:mrow></m:math> Identify the surface.</para>
 </problem>
 </exercise>
 <exercise id="fs-id1163724026997">
@@ -718,8 +718,8 @@ two ellipses of equations <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi
 <list id="fs-id1163723498100" list-type="enumerated" number-style="lower-alpha">
 <item>Write the equation in standard form of the ellipsoid that represents the shape of Earth. Assume the center of Earth is at the origin and that the trace formed by plane <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> corresponds to the equator.</item>
 <item>Sketch the graph.</item>
-<item>Find the equation of the intersection curve of the surface with plane <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1000</m:mn></m:mrow></m:math> that is parallel to the <emphasis effect="italics">xy</emphasis>-plane. The intersection curve is called a <emphasis effect="italics">parallel</emphasis>.</item>
-<item>Find the equation of the intersection curve of the surface with plane <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> that passes through the <emphasis effect="italics">z</emphasis>-axis. The intersection curve is called a <emphasis effect="italics">meridian</emphasis>.</item>
+<item>Find an equation of the intersection curve of the surface with plane <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1000</m:mn></m:mrow></m:math> that is parallel to the <emphasis effect="italics">xy</emphasis>-plane. The intersection curve is called a <emphasis effect="italics">parallel</emphasis>.</item>
+<item>Find an equation of the intersection curve of the surface with plane <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> that passes through the <emphasis effect="italics">z</emphasis>-axis. The intersection curve is called a <emphasis effect="italics">meridian</emphasis>.</item>
 </list>
 </problem>
 <solution id="fs-id1163723477604">

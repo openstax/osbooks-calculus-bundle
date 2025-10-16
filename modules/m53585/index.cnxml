@@ -97,7 +97,7 @@
 <exercise id="fs-id1169737906658">
 <problem id="fs-id1169737906660">
 <title>Finding a Tangent Line to a Circle</title>
-<para id="fs-id1169737950789">Find the equation of the line tangent to the curve <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>25</m:mn></m:mrow></m:math> at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1169737950789">Find an equation of the line tangent to the curve <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>25</m:mn></m:mrow></m:math> at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>−4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1169738180812">
 <para id="fs-id1169737143580">Although we could find this equation without using implicit differentiation, using that method makes it much easier. In <link target-id="fs-id1169737819953"/>, we found <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mi>x</m:mi><m:mi>y</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
@@ -116,7 +116,7 @@
 <exercise id="fs-id1169737142258">
 <problem id="fs-id1169737142260">
 <title>Finding the Equation of the Tangent Line to a Curve</title>
-<para id="fs-id1169737143587">Find the equation of the line tangent to the graph of <m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> (<link target-id="CNX_Calc_Figure_03_08_003"/>). This curve is known as the folium (or leaf) of Descartes.</para>
+<para id="fs-id1169737143587">Find an equation of the line tangent to the graph of <m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> (<link target-id="CNX_Calc_Figure_03_08_003"/>). This curve is known as the folium (or leaf) of Descartes.</para>
 <figure id="CNX_Calc_Figure_03_08_003">
 <media id="fs-id1169738095567" alt="A folium is shown, which is a line that creates a loop that crosses over itself. In this graph, it crosses over itself at (0, 0). Its tangent line from (3/2, 3/2) is shown.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_03_08_003.jpg"/>
@@ -151,7 +151,7 @@
 <note id="fs-id1169738186785" class="checkpoint">
 <exercise id="fs-id1169738186788">
 <problem id="fs-id1169738186791">
-<para id="fs-id1169738186793">Find the equation of the line tangent to the hyperbola <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>16</m:mn></m:mrow></m:math> at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1169738186793">Find an equation of the line tangent to the hyperbola <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>16</m:mn></m:mrow></m:math> at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1169737145207">
 <para id="fs-id1169737145209"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>3</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>16</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
@@ -237,7 +237,7 @@
 <para id="fs-id1169738187256"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>−3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>
 </solution>
 </exercise>
-<para id="fs-id1169738184790">For the following exercises, find the equation of the tangent line to the graph of the given equation at the indicated point. Use a calculator or computer software to graph the function and the tangent line.</para>
+<para id="fs-id1169738184790">For the following exercises, find an equation of the tangent line to the graph of the given equation at the indicated point. Use a calculator or computer software to graph the function and the tangent line.</para>
 <exercise id="fs-id1169738184795">
 <problem id="fs-id1169738184797">
 <para id="fs-id1169738184799"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
@@ -296,8 +296,8 @@
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_03_08_207.jpg"/>
 </media>
 <list id="fs-id1169737145054" list-type="enumerated" number-style="lower-alpha">
-<item>Find the equation of the tangent line at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Graph the tangent line along with the folium.</item>
-<item>Find the equation of the normal line to the tangent line in a. at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>Find an equation of the tangent line at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Graph the tangent line along with the folium.</item>
+<item>Find an equation of the normal line to the tangent line in a. at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></item>
 </list>
 </problem>
 </exercise>
@@ -305,7 +305,7 @@
 <problem id="fs-id1169738244352">
 <para id="fs-id1169738244354">For the equation <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math></para>
 <list id="fs-id1169738244389" list-type="enumerated" number-style="lower-alpha">
-<item>Find the equation of the normal to the tangent line at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></item>
+<item>Find an equation of the normal to the tangent line at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></item>
 <item>At what other point does the normal line in a. intersect the graph of the equation?</item>
 </list>
 </problem>
@@ -333,12 +333,12 @@
 </exercise>
 <exercise id="fs-id1169738211914">
 <problem id="fs-id1169738211916">
-<para id="fs-id1169738211918">Find the equation of the tangent line to the graph of the equation <m:math><m:mrow><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1169738211918">Find an equation of the tangent line to the graph of the equation <m:math><m:mrow><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1169738201886">
 <problem id="fs-id1169738201888">
-<para id="fs-id1169738201890">Find the equation of the tangent line to the graph of the equation <m:math><m:mrow><m:msup><m:mrow><m:mtext>tan</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1169738201890">Find an equation of the tangent line to the graph of the equation <m:math><m:mrow><m:msup><m:mrow><m:mtext>tan</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1169738201950">
 <para id="fs-id1169738201952"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>

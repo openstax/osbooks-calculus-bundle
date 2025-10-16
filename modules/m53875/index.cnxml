@@ -502,7 +502,7 @@ The equation describes a sphere centered at point <m:math><m:mrow><m:mrow><m:mo>
 </problem>
 </exercise>
 <para id="fs-id1163723187105">For the following exercises, the equation of a surface in cylindrical coordinates is given.</para>
-<para id="fs-id1163723187108">Find the equation of the surface in rectangular coordinates. Identify and graph the surface.</para>
+<para id="fs-id1163723187108">Find an equation of the surface in rectangular coordinates. Identify and graph the surface.</para>
 <exercise id="fs-id1163723187112">
 <problem id="fs-id1163723187114">
 <para id="fs-id1163723187116"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
@@ -567,7 +567,7 @@ The equation describes a sphere centered at point <m:math><m:mrow><m:mrow><m:mo>
 <para id="fs-id1163723093217"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>csc</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
 </problem>
 </exercise>
-<para id="fs-id1163724081928">For the following exercises, the equation of a surface in rectangular coordinates is given. Find the equation of the surface in cylindrical coordinates.</para>
+<para id="fs-id1163724081928">For the following exercises, the equation of a surface in rectangular coordinates is given. Find an equation of the surface in cylindrical coordinates.</para>
 <exercise id="fs-id1163724081932">
 <problem id="fs-id1163724081935">
 <para id="fs-id1163724081937"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
@@ -661,7 +661,7 @@ The equation describes a sphere centered at point <m:math><m:mrow><m:mrow><m:mo>
 <para id="fs-id1163723183853"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:msqrt><m:mn>3</m:mn></m:msqrt><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
 </problem>
 </exercise>
-<para id="fs-id1163723573540">For the following exercises, the equation of a surface in spherical coordinates is given. Find the equation of the surface in rectangular coordinates. Identify and graph the surface.</para>
+<para id="fs-id1163723573540">For the following exercises, the equation of a surface in spherical coordinates is given. Find an equation of the surface in rectangular coordinates. Identify and graph the surface.</para>
 <exercise id="fs-id1163723573545">
 <problem id="fs-id1163723573547">
 <para id="fs-id1163723573549"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math></para>
@@ -710,7 +710,7 @@ The equation describes a sphere centered at point <m:math><m:mrow><m:mrow><m:mo>
 <para id="fs-id1163724066000"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mspace width="0.2em"/><m:mtext>csc</m:mtext><m:mspace width="0.2em"/><m:mi>φ</m:mi><m:mspace width="0.2em"/><m:mtext>sec</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
 </problem>
 </exercise>
-<para id="fs-id1163724066054">For the following exercises, the equation of a surface in rectangular coordinates is given. Find the equation of the surface in spherical coordinates. Identify the surface.</para>
+<para id="fs-id1163724066054">For the following exercises, the equation of a surface in rectangular coordinates is given. Find an equation of the surface in spherical coordinates. Identify the surface.</para>
 <exercise id="fs-id1163724066058">
 <problem id="fs-id1163724066061">
 <para id="fs-id1163724066063"><m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>3</m:mn><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>z</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
@@ -969,7 +969,7 @@ c.<newline/>
 <list id="fs-id1163723362099" list-type="enumerated" number-style="lower-alpha">
 <item>Show that the “bumpy sphere” is contained inside a sphere of equation <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>.</m:mo></m:mrow></m:math> Find the values of <m:math><m:mi>θ</m:mi></m:math> and <m:math><m:mi>φ</m:mi></m:math> at which the two surfaces intersect.</item>
 <item>Use a CAS to graph the surface for <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>14</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:math> along with sphere <m:math><m:mrow><m:mi>ρ</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>.</m:mo></m:mrow></m:math></item>
-<item>Find the equation of the intersection curve of the surface at b. with the cone <m:math><m:mrow><m:mi>φ</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> Graph the intersection curve in the plane of intersection.</item>
+<item>Find an equation of the intersection curve of the surface at b. with the cone <m:math><m:mrow><m:mi>φ</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> Graph the intersection curve in the plane of intersection.</item>
 </list>
 </problem>
 </exercise>
@@ -1080,7 +1080,7 @@ c.<newline/>
 <para id="fs-id1163724022825"><m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>t</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>t</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>8</m:mn><m:mi>t</m:mi><m:mo>,</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>8</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle></m:mrow></m:math></para>
 </solution>
 </exercise>
-<para id="fs-id1163723312390">For the following exercises, find the equation of the plane with the given properties.</para>
+<para id="fs-id1163723312390">For the following exercises, find an equation of the plane with the given properties.</para>
 <exercise id="fs-id1163723312394">
 <problem id="fs-id1163723312396">
 <para id="fs-id1163723312398">The plane that passes through point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and has normal vector <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>n</m:mtext></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></para>

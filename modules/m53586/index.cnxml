@@ -633,7 +633,7 @@ More generally, if <m:math><m:mrow><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</
 </exercise>
 <exercise id="fs-id1169738210057">
 <problem id="fs-id1169738210060">
-<para id="fs-id1169738210062"><emphasis effect="bold">[T]</emphasis> Find the equation of the line that is normal to the graph of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>·</m:mo><m:msup><m:mn>5</m:mn><m:mi>x</m:mi></m:msup></m:mrow></m:math> at the point where <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Graph both the function and the normal line.</para>
+<para id="fs-id1169738210062"><emphasis effect="bold">[T]</emphasis> Find an equation of the line that is normal to the graph of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>·</m:mo><m:msup><m:mn>5</m:mn><m:mi>x</m:mi></m:msup></m:mrow></m:math> at the point where <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> Graph both the function and the normal line.</para>
 </problem>
 <solution id="fs-id1169738080234">
 <para id="fs-id1169738080236"><newline/>
@@ -645,7 +645,7 @@ More generally, if <m:math><m:mrow><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</
 </exercise>
 <exercise id="fs-id1169738080322">
 <problem id="fs-id1169738080324">
-<para id="fs-id1169738080326"><emphasis effect="bold">[T]</emphasis> Find the equation of the tangent line to the graph of <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:math> at the point (2, 1). (<emphasis effect="italics">Hint</emphasis>: Use implicit differentiation to find <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math> Graph both the curve and the tangent line.</para>
+<para id="fs-id1169738080326"><emphasis effect="bold">[T]</emphasis> Find an equation of the tangent line to the graph of <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>y</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:math> at the point (2, 1). (<emphasis effect="italics">Hint</emphasis>: Use implicit differentiation to find <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo></m:mrow></m:math> Graph both the curve and the tangent line.</para>
 </problem>
 </exercise>
 <exercise id="fs-id1169738094644">
@@ -1010,7 +1010,7 @@ where <m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)<
 <para id="fs-id1169738239502"><m:math><m:mrow><m:msup><m:mn>4</m:mn><m:mi>x</m:mi></m:msup><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow></m:math></para>
 </solution>
 </exercise>
-<para id="fs-id1169738226407">Find the equation of the tangent line to the following equations at the specified point.</para>
+<para id="fs-id1169738226407">Find an equation of the tangent line to the following equations at the specified point.</para>
 <exercise id="fs-id1169738226411">
 <problem id="fs-id1169738226413">
 <para id="fs-id1169738226415"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mrow><m:mtext>cos</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow></m:math> at <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>

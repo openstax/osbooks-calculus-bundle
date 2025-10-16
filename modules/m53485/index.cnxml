@@ -295,7 +295,7 @@
 </exercise>
 <exercise id="fs-id1170573369540">
 <problem id="fs-id1170570995180">
-<para id="fs-id1170573361009">Use the value in the preceding exercise to find the equation of the tangent line at point <emphasis effect="italics">P</emphasis>. Graph <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and the tangent line.</para>
+<para id="fs-id1170573361009">Use the value in the preceding exercise to find an equation of the tangent line at point <emphasis effect="italics">P</emphasis>. Graph <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and the tangent line.</para>
 </problem>
 <solution id="fs-id1170573333081">
 <para id="fs-id1170573571230"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:math></para>
@@ -359,7 +359,7 @@
 </exercise>
 <exercise id="fs-id1170573263712">
 <problem id="fs-id1170570996505">
-<para id="fs-id1170571138298">Use the value in the preceding exercise to find the equation of the tangent line at point <emphasis effect="italics">P</emphasis>. Graph <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and the tangent line.</para>
+<para id="fs-id1170571138298">Use the value in the preceding exercise to find an equation of the tangent line at point <emphasis effect="italics">P</emphasis>. Graph <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and the tangent line.</para>
 </problem>
 </exercise>
 <para id="fs-id1170573501916">For the following exercises, points <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> are on the graph of the function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mi>x</m:mi></m:msqrt><m:mo>.</m:mo></m:mrow></m:math></para>
@@ -420,7 +420,7 @@
 </exercise>
 <exercise id="fs-id1170570997493">
 <problem id="fs-id1170570997495">
-<para id="fs-id1170573396387">Use the value in the preceding exercise to find the equation of the tangent line at point <emphasis effect="italics">P</emphasis>.</para>
+<para id="fs-id1170573396387">Use the value in the preceding exercise to find an equation of the tangent line at point <emphasis effect="italics">P</emphasis>.</para>
 </problem>
 <solution id="fs-id1170573419625">
 <para id="fs-id1170571124877"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>x</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
@@ -482,7 +482,7 @@
 </exercise>
 <exercise id="fs-id1170573589729">
 <problem id="fs-id1170573589731">
-<para id="fs-id1170573589733">Use the value in the preceding exercise to find the equation of the tangent line at point <emphasis effect="italics">P</emphasis>.</para>
+<para id="fs-id1170573589733">Use the value in the preceding exercise to find an equation of the tangent line at point <emphasis effect="italics">P</emphasis>.</para>
 </problem>
 </exercise>
 <para id="fs-id1170573396155">For the following exercises, points <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> are on the graph of the function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
@@ -543,7 +543,7 @@
 </exercise>
 <exercise id="fs-id1170573382504">
 <problem id="fs-id1170573382506">
-<para id="fs-id1170573406148">Use the value in the preceding exercise to find the equation of the tangent line at point <emphasis effect="italics">P</emphasis>.</para>
+<para id="fs-id1170573406148">Use the value in the preceding exercise to find an equation of the tangent line at point <emphasis effect="italics">P</emphasis>.</para>
 </problem>
 <solution id="fs-id1170571033603">
 <para id="fs-id1170571033605"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>

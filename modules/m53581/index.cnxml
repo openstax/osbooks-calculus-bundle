@@ -122,7 +122,7 @@
 <note id="fs-id1169739301868" class="checkpoint">
 <exercise id="fs-id1169739301871">
 <problem id="fs-id1169739301873">
-<para id="fs-id1169739303885">Find the equation of the line tangent to the graph of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:msup></m:mrow></m:math> at <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1169739303885">Find an equation of the line tangent to the graph of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:msup></m:mrow></m:math> at <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1169739300282">
 <para id="fs-id1169738869705"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−48</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>88</m:mn></m:mrow></m:math></para>
@@ -1115,7 +1115,7 @@ In Leibniz’s notation this rule takes the form<newline/>
 </exercise>
 <exercise id="fs-id1169739374644">
 <problem id="fs-id1169739374646">
-<para id="fs-id1169739374648"><emphasis effect="bold">[T]</emphasis> Find the equation of the tangent line to <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>x</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> at the origin. Use a calculator to graph the function and the tangent line together.</para>
+<para id="fs-id1169739374648"><emphasis effect="bold">[T]</emphasis> Find an equation of the tangent line to <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>x</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> at the origin. Use a calculator to graph the function and the tangent line together.</para>
 </problem>
 <solution id="fs-id1169739374680">
 <para id="fs-id1169739374682"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>−1</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi></m:mrow></m:math></para>
@@ -1123,7 +1123,7 @@ In Leibniz’s notation this rule takes the form<newline/>
 </exercise>
 <exercise id="fs-id1169738991878">
 <problem id="fs-id1169738991880">
-<para id="fs-id1169738991882"><emphasis effect="bold">[T]</emphasis> Find the equation of the tangent line to <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math> at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>16</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Use a calculator to graph the function and the tangent line together.</para>
+<para id="fs-id1169738991882"><emphasis effect="bold">[T]</emphasis> Find an equation of the tangent line to <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math> at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>16</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Use a calculator to graph the function and the tangent line together.</para>
 </problem>
 </exercise>
 <exercise id="fs-id1169738991955">

@@ -114,7 +114,7 @@
 <exercise id="fs-id1169739062472">
 <problem id="fs-id1169739022986">
 <title>Applying the Power Rule to a Rational Power</title>
-<para id="fs-id1169739343740">Find the equation of the line tangent to the graph of <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mrow><m:mn>2</m:mn><m:mtext>/</m:mtext><m:mn>3</m:mn></m:mrow></m:msup></m:mrow></m:math> at <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1169739343740">Find an equation of the line tangent to the graph of <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mrow><m:mn>2</m:mn><m:mtext>/</m:mtext><m:mn>3</m:mn></m:mrow></m:msup></m:mrow></m:math> at <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1169739270369">
 <para id="fs-id1169739020528">First find <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac></m:mrow></m:math> and evaluate it at <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math> Since</para>
@@ -268,7 +268,7 @@
 <note id="fs-id1169736605027" class="checkpoint">
 <exercise id="fs-id1169736605031">
 <problem id="fs-id1169739273646">
-<para id="fs-id1169739273648">Find the equation of the line tangent to the graph of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mi>x</m:mi></m:mrow></m:math> at <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1169739273648">Find an equation of the line tangent to the graph of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mi>x</m:mi></m:mrow></m:math> at <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1169736652019">
 <para id="fs-id1169739302752"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math></para>
@@ -450,7 +450,7 @@ b. <m:math><m:mtable><m:mtr><m:mtd><m:mi>y</m:mi><m:mo>'</m:mo><m:mo>=</m:mo><m:
 <para id="fs-id1169736659320">For each of the given functions <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math>
 <list id="fs-id1169736659350" list-type="enumerated" number-style="lower-alpha">
 <item>find the slope of the tangent line to its inverse function <m:math><m:mrow><m:msup><m:mi>f</m:mi><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup></m:mrow></m:math> at the indicated point <m:math><m:mrow><m:mi>P</m:mi><m:mo>,</m:mo></m:mrow></m:math> and</item>
-<item>find the equation of the tangent line to the graph of <m:math><m:mrow><m:msup><m:mi>f</m:mi><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup></m:mrow></m:math> at the indicated point.</item>
+<item>find an equation of the tangent line to the graph of <m:math><m:mrow><m:msup><m:mi>f</m:mi><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup></m:mrow></m:math> at the indicated point.</item>
 </list></para>
 <exercise id="fs-id1169736589272">
 <problem id="fs-id1169736589274">

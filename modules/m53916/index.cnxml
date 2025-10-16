@@ -528,7 +528,7 @@ The last statement implies that the velocity and acceleration are perpendicular 
 </problem>
 </exercise>
 <exercise id="fs-id1169736731192">
-<problem id="fs-id1169736731194"><para id="fs-id1169736731195">Find the equation of the tangent line to the curve <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mo>,</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> at <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<problem id="fs-id1169736731194"><para id="fs-id1169736731195">Find an equation of the tangent line to the curve <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mo>,</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> at <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1169736731258"><para id="fs-id1169736731259"><m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:math></para>
 </solution>

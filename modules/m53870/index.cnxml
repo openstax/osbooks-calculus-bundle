@@ -1025,7 +1025,7 @@ c.<newline/>
 <problem id="fs-id1163723286792">
 <para id="fs-id1163723286794">Consider the plane of equation <m:math><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>z</m:mi><m:mo>−</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 <list id="fs-id1163723286821" list-type="enumerated" number-style="lower-alpha">
-<item>Find the equation of the sphere with center <m:math><m:mi>C</m:mi></m:math> at the origin that is tangent to the given plane.</item>
+<item>Find an equation of the sphere with center <m:math><m:mi>C</m:mi></m:math> at the origin that is tangent to the given plane.</item>
 <item>Find parametric equations of the line passing through the origin and the point of tangency.</item>
 </list>
 </problem>

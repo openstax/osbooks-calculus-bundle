@@ -422,7 +422,7 @@ Last, since <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mt
 <exercise id="fs-id1169738056376">
 <problem id="fs-id1169738056378">
 <title>Finding the Equation of an Osculating Circle</title>
-<para id="fs-id1169738056384">Find the equation of the osculating circle of the helix defined by the function <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math> at <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow></m:math></para></problem>
+<para id="fs-id1169738056384">Find an equation of the osculating circle of the helix defined by the function <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math> at <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow></m:math></para></problem>
 <solution id="fs-id1169738056420">
 <para id="fs-id1169738056422"><link target-id="CNX_Calc_Figure_13_03_008"/> shows the graph of <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1.</m:mn></m:mrow></m:math></para>
 <figure id="CNX_Calc_Figure_13_03_008">
@@ -446,7 +446,7 @@ Last, since <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mt
 <note id="fs-id1169737300010" class="checkpoint">
 <exercise id="fs-id1169737300014">
 <problem id="fs-id1169737300017">
-<para id="fs-id1169737300019">Find the equation of the osculating circle of the curve defined by the vector-valued function <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:math> at <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow></m:math></para>
+<para id="fs-id1169737300019">Find an equation of the osculating circle of the curve defined by the vector-valued function <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:math> at <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1169738250464">
 <para id="fs-id1169738250467"><m:math><m:mrow><m:mi>κ</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>4</m:mn><m:mrow><m:msup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mrow><m:mrow><m:mn>3</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:math></para>

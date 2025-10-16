@@ -407,7 +407,7 @@ Since the radicand cannot be negative, this implies <m:math><m:mrow><m:mn>2</m:m
 <note id="fs-id1167793960624" class="checkpoint">
 <exercise id="fs-id1167793960628">
 <problem id="fs-id1167793509917">
-<para id="fs-id1167793509919">Find the equation of the level surface of the function</para>
+<para id="fs-id1167793509919">Find an equation of the level surface of the function</para>
 <equation id="fs-id1167793509922" class="unnumbered"><label/><m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mi>z</m:mi></m:mrow></m:math></equation>
 <para id="fs-id1167794296755">corresponding to <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow></m:math> and describe the surface, if possible.</para>
 </problem>
