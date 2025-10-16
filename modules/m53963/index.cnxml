@@ -654,7 +654,7 @@
 </exercise>
 <exercise id="fs-id1167793720930">
 <problem id="fs-id1167793720933">
-<para id="fs-id1167793720935">Find the volume of the solid under the graph of the function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow></m:math> and above the region in the figure from the previous exercise.</para>
+<para id="fs-id1167793720935">Find the signed volume of the solid under the graph of the function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow></m:math> and above the region in the figure from the previous exercise.</para>
 </problem>
 <solution id="fs-id1167793502454">
 <para id="fs-id1167793502456"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>1000</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
