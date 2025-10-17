@@ -540,7 +540,7 @@ is a telescoping series. The <m:math><m:mrow><m:mi>k</m:mi><m:mtext>th</m:mtext>
 </exercise>
 <exercise id="fs-id1169738164839">
 <problem id="fs-id1169738164841">
-<para id="fs-id1169738164843"><m:math><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>1</m:mn><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mn>3</m:mn><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mn>4</m:mn><m:mo>+</m:mo><m:mtext>⋯</m:mtext></m:mrow></m:math></para>
+<para id="fs-id1169738164843"><m:math><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mn>1</m:mn><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mtext>⋯</m:mtext></m:mrow></m:math></para>
 </problem>
 </exercise>
 <para id="fs-id1169737168330">Compute the first four partial sums <m:math><m:mrow><m:msub><m:mi>S</m:mi><m:mn>1</m:mn></m:msub><m:mtext>,…</m:mtext><m:mo>,</m:mo><m:msub><m:mi>S</m:mi><m:mn>4</m:mn></m:msub></m:mrow></m:math> for the series having <m:math><m:mrow><m:mi>n</m:mi><m:mtext>th</m:mtext></m:mrow></m:math> term <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> starting with <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> as follows.</para>
