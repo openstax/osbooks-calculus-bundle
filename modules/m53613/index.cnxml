@@ -804,7 +804,7 @@
 </exercise>
 <exercise id="fs-id1165042374784">
 <problem id="fs-id1165042374786">
-<para id="fs-id1165042374789"><m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:msqrt><m:mi>x</m:mi></m:msqrt><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+<para id="fs-id1165042374789"><m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>(</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>)</m:mo><m:msqrt><m:mi>x</m:mi></m:msqrt><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1165042320285">
