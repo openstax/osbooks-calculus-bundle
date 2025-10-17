@@ -364,7 +364,29 @@ Equation of the tangent line: <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>
 <para id="fs-id1167793510319">Let <m:math><m:mrow><m:mi>w</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>z</m:mi><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mtext>arcsin</m:mtext><m:mspace width="0.2em"/><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math> Find <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>w</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167794031261">
-<para id="fs-id1167794031263"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>w</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>y</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>z</m:mi><m:mo>+</m:mo><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>z</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>z</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math></para>
+<para id="fs-id1167794031263"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>w</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>=</m:mo><m:mfrac>
+    <m:mrow>
+      <m:mn>3</m:mn>
+      <m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>−</m:mo>
+      <m:mn>4</m:mn>
+      <m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+    <m:msqrt>
+      <m:mn>1</m:mn>
+      <m:mo>−</m:mo>
+      <m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:msqrt>
+  </m:mfrac></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167794204844">
@@ -377,7 +399,7 @@ Equation of the tangent line: <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>
 <para id="fs-id1167793952842">If <m:math><m:mrow><m:mi>w</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn><m:mi>s</m:mi><m:mo>+</m:mo><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>s</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> find <m:math><m:mrow><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>w</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>s</m:mi></m:mrow></m:mfrac></m:mrow></m:math> and <m:math><m:mrow><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>w</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793964877">
-<para id="fs-id1167793442715"><m:math><m:mrow><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>w</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>s</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>−30</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>w</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>10</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>16</m:mn><m:mi>y</m:mi></m:mrow></m:math></para>
+<para id="fs-id1167793442715"><m:math><m:mrow><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>w</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>s</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>94</m:mn><m:mi>s</m:mi><m:mo>–</m:mo><m:mn>46</m:mn><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>w</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>–46</m:mn><m:mi>s</m:mi><m:mo>+</m:mo><m:mn>74</m:mn><m:mi>t</m:mi></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167794051796">
@@ -455,7 +477,7 @@ Equation of the tangent line: <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>
 <para id="fs-id1167794226525">Let <m:math><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-ln</m:mo><m:mn>2</m:mn><m:mi>t</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math> Find <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac></m:mrow></m:math> when <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mn>2</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793571115">
-<para id="fs-id1167793571117"><m:math><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:msqrt><m:mn>2</m:mn></m:msqrt><m:mo>(</m:mo><m:mi>π</m:mi><m:mn>-4</m:mn></m:math></para>
+<para id="fs-id1167793571117"><m:math><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>u</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:msqrt><m:mn>2</m:mn></m:msqrt><m:mo>(</m:mo><m:mi>π</m:mi><m:mn>-4</m:mn><m:mo>)</m:mo></m:math></para>
 </solution>
 </exercise>
 <para id="fs-id1167793418290">For the following exercises, find <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac></m:mrow></m:math> using partial derivatives.</para>
@@ -573,7 +595,129 @@ Equation of the tangent line: <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>
 <para id="fs-id1167794177145">If <m:math><m:mrow><m:mi>w</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>t</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>t</m:mi></m:mrow></m:msup><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> find <m:math><m:mrow><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>w</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793590444">
-<para id="fs-id1167793590446"><m:math><m:mrow><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>w</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mi>z</m:mi><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mo stretchy="false">(</m:mo><m:mn>−3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>x</m:mi><m:mi>z</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mn>4</m:mn></m:mrow></m:math></para>
+<para id="fs-id1167793590446"><m:math><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>w</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfenced open="(" close="" separators="|">
+    <m:mrow>
+      <m:mo>−</m:mo>  
+      <m:mn>12</m:mn>  
+      <m:mi>t</m:mi>  
+      <m:msup>
+        <m:mi>e</m:mi>
+        <m:mrow>
+          <m:mn>1</m:mn>
+          <m:mo>−</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:msup>  
+      <m:mi>cos</m:mi>  
+      <m:mo></m:mo>  
+      <m:mfenced open="(" close=")" separators="|">
+        <m:mrow>
+          <m:mo stretchy="false">(</m:mo>      
+          <m:mn>1</m:mn>      
+          <m:mo>−</m:mo>      
+          <m:mn>3</m:mn>      
+          <m:mi>t</m:mi>      
+          <m:mo stretchy="false">)</m:mo>      
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mn>1</m:mn>
+              <m:mo>−</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>      
+          <m:mo stretchy="false">(</m:mo>      
+          <m:mo>−</m:mo>      
+          <m:mn>4</m:mn>      
+          <m:mi>t</m:mi>      
+          <m:mo stretchy="false">)</m:mo>      
+        </m:mrow>      
+      </m:mfenced>  
+      <m:mo>+</m:mo>  
+      <m:mn>4</m:mn>  
+      <m:mi>t</m:mi>  
+      <m:mo stretchy="false">(</m:mo>  
+      <m:mn>1</m:mn>  
+      <m:mo>−</m:mo>  
+      <m:mn>3</m:mn>  
+      <m:mi>t</m:mi>  
+      <m:mo stretchy="false">)</m:mo>  
+      <m:msup>
+        <m:mi>e</m:mi>
+        <m:mrow>
+          <m:mn>1</m:mn>
+          <m:mo>−</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:msup>  
+      <m:mi>cos</m:mi>  
+      <m:mo></m:mo>  
+      <m:mfenced open="(" close=")" separators="|">
+        <m:mrow>
+          <m:mo stretchy="false">(</m:mo>      
+          <m:mn>1</m:mn>      
+          <m:mo>−</m:mo>      
+          <m:mn>3</m:mn>      
+          <m:mi>t</m:mi>      
+          <m:mo stretchy="false">)</m:mo>      
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mn>1</m:mn>
+              <m:mo>−</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>      
+          <m:mo stretchy="false">(</m:mo>      
+          <m:mo>−</m:mo>      
+          <m:mn>4</m:mn>      
+          <m:mi>t</m:mi>      
+          <m:mo stretchy="false">)</m:mo>      
+        </m:mrow>      
+      </m:mfenced>  
+      <m:mo>−</m:mo>  
+      <m:mn>4</m:mn>  
+      <m:mo stretchy="false">(</m:mo>  
+      <m:mn>1</m:mn>  
+      <m:mo>−</m:mo>  
+      <m:mn>3</m:mn>  
+      <m:mi>t</m:mi>  
+      <m:mo stretchy="false">)</m:mo>  
+      <m:msup>
+        <m:mi>e</m:mi>
+        <m:mrow>
+          <m:mn>1</m:mn>
+          <m:mo>−</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:msup>  
+      <m:mi>cos</m:mi>  
+      <m:mo></m:mo>  
+      <m:mfenced open="(" close=")" separators="|">
+        <m:mrow>
+          <m:mo stretchy="false">(</m:mo>      
+          <m:mn>1</m:mn>      
+          <m:mo>−</m:mo>      
+          <m:mn>3</m:mn>      
+          <m:mi>t</m:mi>      
+          <m:mo stretchy="false">)</m:mo>      
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mn>1</m:mn>
+              <m:mo>−</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>      
+          <m:mo stretchy="false">(</m:mo>      
+          <m:mo>−</m:mo>      
+          <m:mn>4</m:mn>      
+          <m:mi>t</m:mi>      
+          <m:mo stretchy="false">)</m:mo>      
+        </m:mrow>      
+      </m:mfenced>  
+    </m:mrow>  
+  </m:mfenced></m:math></para>
 </solution>
 </exercise>
 <para id="fs-id1167793638114">For the following exercises, use this information: A function <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is said to be homogeneous of degree <m:math><m:mi>n</m:mi></m:math> if <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>t</m:mi><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>t</m:mi><m:mi>n</m:mi></m:msup><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> For all <term class="no-emphasis" id="term-00006">homogeneous functions</term> of degree <m:math><m:mrow><m:mi>n</m:mi><m:mo>,</m:mo></m:mrow></m:math> the following equation is true: <m:math><m:mrow><m:mi>x</m:mi><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>f</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>y</m:mi><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>f</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> Show that the given function is homogeneous and verify that <m:math><m:mrow><m:mi>x</m:mi><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>f</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>y</m:mi><m:mfrac><m:mrow><m:mo>∂</m:mo><m:mi>f</m:mi></m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
