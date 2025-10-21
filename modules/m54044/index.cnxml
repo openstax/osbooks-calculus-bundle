@@ -644,7 +644,7 @@ d. <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</
 </list>
 </problem>
 <solution id="fs-id1170571080067">
-<para id="fs-id1170571080069">a. <m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mn>10</m:mn><m:mi>t</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math><newline/>b. critically damped</para>
+<para id="fs-id1170571080069">a. <m:math><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>&#x2212;4</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>(</m:mo><m:mo>&#x2013;</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mn>11</m:mn><m:mo>.</m:mo><m:mn>866</m:mn><m:mi>t</m:mi><m:mo>&#xA0;</m:mo><m:mo>&#x2013;</m:mo><m:mo>&#xA0;</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>834</m:mn><m:mi>sin</m:mi><m:mn>11</m:mn><m:mo>.</m:mo><m:mn>866</m:mn><m:mi>t</m:mi><m:mo>)</m:mo></m:math><newline/>b. underdamped</para>
 </solution>
 </exercise>
 <exercise id="fs-id1170571041443">
