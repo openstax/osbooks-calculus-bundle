@@ -644,7 +644,7 @@ By the same logic in a., it is impossible to find a <m:math><m:mi>δ</m:mi></m:m
 <para id="fs-id1167793219340"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:mfrac></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793252302">
-<para id="fs-id1167793252305">The function <m:math><m:mi>f</m:mi></m:math> is continuous at all points in the <m:math><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mtext>-plane</m:mtext></m:mrow></m:math> except at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793252305">The function <m:math><m:mi>f</m:mi></m:math> is continuous on the set <m:math><m:mi>R</m:mi><m:mo>=</m:mo><m:mfenced open="{" close="}"><m:mrow><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow></m:mfenced><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>&#x2260;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>&#x2260;</m:mo><m:mn>0</m:mn></m:mrow></m:mfenced></m:math></para>
 </solution>
 </exercise>
 <para id="fs-id1167793560891">For the following exercises, determine the region in which the function is continuous. Explain your answer.</para>
