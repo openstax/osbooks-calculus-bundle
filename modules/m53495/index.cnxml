@@ -1076,7 +1076,7 @@ Instantaneous velocity is given by<newline/>
 </exercise>
 <exercise id="fs-id1169739333962">
 <problem id="fs-id1169739333964">
-<para id="fs-id1169739333967"><emphasis effect="bold">[T]</emphasis> The total cost <m:math><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> in hundreds of dollars, to produce <m:math><m:mi>x</m:mi></m:math> jars of mayonnaise is given by <m:math><m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.000003</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>300</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1169739333967"><emphasis effect="bold">[T]</emphasis> The total cost <m:math><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> in hundreds of dollars, to produce <m:math><m:mi>x</m:mi></m:math> thousand jars of mayonnaise is given by <m:math><m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.000003</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>300</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 <list id="fs-id1169738894944" list-type="enumerated" number-style="lower-alpha">
 <item>Calculate the average cost per jar over the following intervals:
 <list id="fs-id1169738894953" list-type="enumerated" number-style="lower-roman">
@@ -1085,7 +1085,7 @@ Instantaneous velocity is given by<newline/>
 <item>[100, 100.001]</item>
 <item>[100, 100.0001]</item>
 </list></item>
-<item>Use the answers from a. to estimate the average cost to produce <m:math><m:mrow><m:mn>100</m:mn></m:mrow></m:math> jars of mayonnaise.</item>
+<item>Use the answers from a. to estimate the average cost to produce <m:math><m:mrow><m:mn>100,000</m:mn></m:mrow></m:math> jars of mayonnaise.</item>
 </list>
 </problem>
 </exercise>
