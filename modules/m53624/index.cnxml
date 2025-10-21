@@ -693,7 +693,7 @@
 </exercise>
 <exercise id="fs-id1170572451375">
 <problem id="fs-id1170572451377">
-<para id="fs-id1170572451379"><emphasis effect="bold">[T]</emphasis> <emphasis effect="italics">L</emphasis><sub>100</sub> and <emphasis effect="italics">R</emphasis><sub>100</sub> for <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:math> on the interval <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:math></para>
+<para id="fs-id1170572451379"><emphasis effect="bold">[T]</emphasis> <emphasis effect="italics">L</emphasis><sub>100</sub> and <emphasis effect="italics">R</emphasis><sub>100</sub> for <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mo>+</m:mo><m:mn>2</m:mn></m:math> on the interval <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1170572451430">
 <para id="fs-id1167794094128"><media id="fs-id1170572329918" alt="A graph of the given function over [-1,1] set up for a left endpoint approximation. It is an underestimate since the function is increasing. Ten rectangles are shown for visual clarity, but this behavior persists for more rectangles.">
