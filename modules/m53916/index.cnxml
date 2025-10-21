@@ -376,7 +376,7 @@ Next, substitute this back into the integral and integrate:<newline/>
 <exercise id="fs-id1169736699009">
 <problem id="fs-id1169736699011"><para id="fs-id1169736699012"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>;</m:mo><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>3</m:mn></m:mfrac></m:mrow></m:math></para>
 </problem>
-<solution id="fs-id1169736602052"><para id="fs-id1169736602053"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:mfrac><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></para>
+<solution id="fs-id1169736602052"><para id="fs-id1169736602053"><m:math><m:mo>〈</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>〉</m:mo></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1169736918233">
@@ -386,7 +386,7 @@ Next, substitute this back into the integral and integrate:<newline/>
 <exercise id="fs-id1169736873381">
 <problem id="fs-id1169736873383"><para id="fs-id1169736873384"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−3</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>4</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mspace width="0.1em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>;</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
 </problem>
-<solution id="fs-id1169736702471"><para id="fs-id1169736702472"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mrow><m:mn>1060.5625</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>6</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo><m:mn>32</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math></para>
+<solution id="fs-id1169736702471"><para id="fs-id1169736702472"><m:math><m:mo>〈</m:mo><m:mrow><m:mn>6</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo><m:mn>32</m:mn><m:mo>〉</m:mo></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1169736830195">
