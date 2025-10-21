@@ -1536,7 +1536,7 @@ Since <m:math><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:msqrt><m:mrow><m:mi>y
 <list id="fs-id1170572169081" list-type="enumerated" number-style="lower-alpha">
 <item>Domain and range</item>
 <item><m:math><m:mi>x</m:mi></m:math>-intercept, if any (estimate where necessary)</item>
-<item><m:math><m:mi>y</m:mi></m:math>-Intercept, if any (estimate where necessary)</item>
+<item><m:math><m:mi>y</m:mi></m:math>-intercept, if any (estimate where necessary)</item>
 <item>The intervals for which the function is increasing</item>
 <item>The intervals for which the function is decreasing</item>
 <item>The intervals for which the function is constant</item>
