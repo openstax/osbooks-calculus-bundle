@@ -562,7 +562,7 @@
 <para id="fs-id1167793371299"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>θ</m:mi><m:mo>;</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793371336">
-<para id="fs-id1167793371338">The slope is undefined at <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793371338">The slope is undefined at <m:math><m:mfrac><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:mi mathvariant="normal">&#x3C0;</m:mi></m:mrow><m:mrow><m:mn>4</m:mn><m:mo>-</m:mo><m:mi mathvariant="normal">&#x3C0;</m:mi></m:mrow></m:mfrac></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793371358">
