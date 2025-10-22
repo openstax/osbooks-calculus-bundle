@@ -455,7 +455,7 @@ Therefore we need to wait an additional <m:math><m:mrow><m:mn>6.12</m:mn></m:mro
 </exercise>
 <exercise id="fs-id1170571169464">
 <problem id="fs-id1170571169466">
-<para id="fs-id1170571169468"><m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mn>−2</m:mn><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>tan</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+<para id="fs-id1170571169468"><m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mn>−2</m:mn><m:mi>x</m:mi><m:mspace width="0.1em"/><m:mtext>tan</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>6</m:mn></m:mfrac></m:mrow></m:math></para>
 </problem>
 </exercise>
 <para id="fs-id1170573503653">For the following problems, use a software program or your calculator to generate the directional fields. Solve explicitly and draw solution curves for several initial conditions. Are there some critical initial conditions that change the behavior of the solution?</para>
