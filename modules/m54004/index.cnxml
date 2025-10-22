@@ -920,7 +920,7 @@
 </exercise>
 <exercise id="fs-id1167793480985">
 <problem id="fs-id1167793480988">
-<para id="fs-id1167793480990"><emphasis effect="bold">[T]</emphasis> <emphasis effect="italics">S</emphasis> is surface <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>with</m:mtext><m:mspace width="0.2em"/><m:mi>z</m:mi><m:mo>≥</m:mo><m:mn>1</m:mn><m:mtext>;</m:mtext><m:mspace width="0.2em"/><m:mi>ρ</m:mi><m:mo>=</m:mo><m:msup><m:mi>θ</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793480990"><emphasis effect="bold">[T]</emphasis> <emphasis effect="italics">S</emphasis> is surface <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>with</m:mtext><m:mspace width="0.2em"/><m:mi>z</m:mi><m:mo>≥</m:mo><m:mn>1</m:mn><m:mtext>;</m:mtext><m:mspace width="0.2em"/><m:mi>ρ</m:mi><m:mo>=</m:mo><m:msup><m:mi>θ</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793542462">
 <para id="fs-id1167793542464"><m:math><m:mrow><m:mi>m</m:mi><m:mo>≈</m:mo><m:mn>228.5313</m:mn></m:mrow></m:math></para>
