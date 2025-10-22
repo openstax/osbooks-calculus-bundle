@@ -609,7 +609,7 @@ b. It is not possible to redefine <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(<
 </exercise>
 <exercise id="fs-id1170573512268">
 <problem id="fs-id1170573439551">
-<para id="fs-id1170573439554">Sketch the graph of the function <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> with properties i. through vi.</para>
+<para id="fs-id1170573439554">Sketch the graph of a function <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> with properties i. through vi.</para>
 <list id="fs-id1170573397517" list-type="enumerated" number-style="lower-roman">
 <item>The domain of <emphasis effect="italics">f</emphasis> is <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>−</m:mtext><m:mi>∞</m:mi><m:mo>,</m:mo><m:mtext>+</m:mtext><m:mi>∞</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></item>
 <item><emphasis effect="italics">f</emphasis> has an infinite discontinuity at <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−6</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
@@ -628,7 +628,7 @@ b. It is not possible to redefine <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(<
 </exercise>
 <exercise id="fs-id1170571130669">
 <problem id="fs-id1170571073840">
-<para id="fs-id1170571073842">Sketch the graph of the function <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> with properties i. through iv.</para>
+<para id="fs-id1170571073842">Sketch the graph of a function <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> with properties i. through iv.</para>
 <list id="fs-id1170573388516" list-type="enumerated" number-style="lower-roman">
 <item>The domain of <emphasis effect="italics">f</emphasis> is <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>5</m:mn></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></item>
 <item><m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">→</m:mo><m:msup><m:mn>1</m:mn><m:mo>+</m:mo></m:msup></m:mrow></m:munder><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">→</m:mo><m:msup><m:mn>1</m:mn><m:mo>−</m:mo></m:msup></m:mrow></m:munder><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> exist and are equal.</item>
