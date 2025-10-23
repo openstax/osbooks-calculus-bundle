@@ -535,7 +535,7 @@ Note that <m:math><m:mrow><m:mtext>cosh</m:mtext><m:mspace width="0.2em"/><m:mi>
 <para id="fs-id1167794336743"><m:math><m:mrow><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mtext>cosh</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793950950">
-<para id="fs-id1167793950952"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mrow><m:mtext>sinh</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
+<para id="fs-id1167793950952"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mtext>sinh</m:mtext></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793956996">
