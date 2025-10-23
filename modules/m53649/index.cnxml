@@ -704,7 +704,7 @@
 <para id="fs-id1167793604176">Find the generalized center of mass between <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> Then, use the Pappus theorem to find the volume of the solid generated when revolving around the <emphasis effect="italics">y</emphasis>-axis.</para>
 </problem>
 <solution id="fs-id1167793521414">
-<para id="fs-id1167793521416">Center of mass: <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>a</m:mi><m:mn>6</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>4</m:mn><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>5</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> volume: <m:math><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi><m:msup><m:mi>a</m:mi><m:mn>4</m:mn></m:msup></m:mrow><m:mn>9</m:mn></m:mfrac></m:mrow></m:math></para>
+<para id="fs-id1167793521416">Center of mass: <m:math><m:mrow><m:mo>(</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>a</m:mi></m:mrow><m:mn>8</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>5</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:math> volume: <m:math><m:mfrac><m:mrow><m:mi>&#x3C0;</m:mi><m:msup><m:mi>a</m:mi><m:mn>4</m:mn></m:msup></m:mrow><m:mn>2</m:mn></m:mfrac></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793521468">
