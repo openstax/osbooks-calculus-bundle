@@ -620,7 +620,7 @@ and<newline/>
 <para id="fs-id1167794283169"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mtext>−</m:mtext><m:msqrt><m:mn>3</m:mn></m:msqrt></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167794283190">
-<para id="fs-id1167794283192"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:msqrt><m:mn>3</m:mn></m:msqrt><m:mo>,</m:mo><m:mn>−5.759</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:msqrt><m:mn>3</m:mn></m:msqrt><m:mo>,</m:mo><m:mn>2.618</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+<para id="fs-id1167794283192"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:msqrt><m:mn>3</m:mn></m:msqrt><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>11</m:mn><m:mi mathvariant="normal">&#x3C0;</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn><m:msqrt><m:mn>3</m:mn></m:msqrt><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi mathvariant="normal">&#x3C0;</m:mi></m:mrow><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
 </solution>
 </exercise>
 <para id="fs-id1167793244423">For the following exercises, find rectangular coordinates for the given point in polar coordinates.</para>
