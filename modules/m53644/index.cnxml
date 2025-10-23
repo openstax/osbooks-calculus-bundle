@@ -639,10 +639,10 @@
 </exercise>
 <exercise id="fs-id1167793956541">
 <problem id="fs-id1167793595178">
-<para id="fs-id1167793595180"><emphasis effect="bold">[T]</emphasis> You are building a bridge that will span <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> ft. You intend to add decorative rope in the shape of <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mrow><m:mo>|</m:mo><m:mrow><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mi>π</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mtext>/</m:mtext><m:mn>5</m:mn></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mi>x</m:mi></m:math> is the distance in feet from one end of the bridge. Find out how much rope you need to buy, rounded to the nearest foot.</para>
+<para id="fs-id1167793595180"><emphasis effect="bold">[T]</emphasis> You are building a bridge that will span <m:math><m:mrow><m:mn>10</m:mn></m:mrow></m:math> ft. You intend to add decorative rope in the shape of <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mrow><m:mo>|</m:mo><m:mrow><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mi>π</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mtext>/</m:mtext><m:mn>5</m:mn></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mi>x</m:mi></m:math> is the distance in feet from one end of the bridge. Find out how much rope you need to buy, measured in a whole number of feet.</para>
 </problem>
 <solution id="fs-id1167793929411">
-<para id="fs-id1167793929413"><m:math><m:mrow><m:mn>23</m:mn></m:mrow></m:math> ft</para>
+<para id="fs-id1167793929413"><m:math><m:mrow><m:mn>24</m:mn></m:mrow></m:math> ft</para>
 </solution>
 </exercise>
 <para id="fs-id1167793929422">For the following exercises, find the exact arc length for the following problems over the given interval.</para>
