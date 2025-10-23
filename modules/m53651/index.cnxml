@@ -346,7 +346,7 @@
 <para id="fs-id1167793400848">If given a half-life of <emphasis effect="italics">t</emphasis> years, the constant <m:math><m:mi>k</m:mi></m:math> for <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>k</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math> is calculated by <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mrow><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mtext>/</m:mtext><m:mi>t</m:mi></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793372408">
-<para id="fs-id1167793372410">False; <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>t</m:mi></m:mfrac></m:mrow></m:math></para>
+<para id="fs-id1167793372410">True; <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mspace width="0.2em"/><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>t</m:mi></m:mfrac></m:mrow></m:math></para>
 </solution>
 </exercise>
 <para id="fs-id1167793517466">For the following exercises, use <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>k</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
