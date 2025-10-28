@@ -610,7 +610,7 @@
 </media>
 </problem>
 <solution id="fs-id1167793378480">
-<para id="fs-id1167793378482"><m:math><m:mi mathvariant="normal">π</m:mi><m:mo>(</m:mo><m:mi mathvariant="normal">π</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:math></para>
+<para id="fs-id1167793378482"><m:math><m:mi mathvariant="normal">π</m:mi><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mi mathvariant="normal">π</m:mi><m:mo>)</m:mo></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793378493" class="material-set-2">
