@@ -811,7 +811,7 @@
 </media>
 </problem>
 <solution id="fs-id1167793544880">
-<para id="fs-id1167793544882"><m:math><m:mi>V</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi mathvariant="normal">&#x3C0;</m:mi></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>(</m:mo><m:mn>2</m:mn><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>3</m:mn><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mi>h</m:mi><m:mo>+</m:mo><m:msup><m:mi>h</m:mi><m:mn>3</m:mn></m:msup><m:mo>)</m:mo></m:math> units<sup>3</sup></para>
+<para id="fs-id1167793544882"><m:math><m:mi>V</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi mathvariant="normal">&#x3C0;</m:mi></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>(</m:mo><m:mn>2</m:mn><m:mi>r</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>)</m:mo><m:msup><m:mfenced><m:mrow><m:mi>r</m:mi><m:mo>-</m:mo><m:mi>h</m:mi></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:math> units<sup>3</sup></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793489568">
