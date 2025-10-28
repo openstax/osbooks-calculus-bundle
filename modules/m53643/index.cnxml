@@ -519,7 +519,7 @@ Looking at the region, it would be problematic to define a horizontal rectangle;
 <para id="fs-id1167793750822"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>8</m:mn></m:mrow></m:math> rotated around the <m:math><m:mrow><m:mi>y</m:mi><m:mtext>-axis</m:mtext><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793750872">
-<para id="fs-id1167793750874"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>96</m:mn><m:mi>π</m:mi></m:mrow><m:mn>5</m:mn></m:mfrac></m:mrow></m:math> units<sup>3</sup></para>
+<para id="fs-id1167793750874"><m:math><m:mrow><m:mfrac><m:mrow><m:mn>96</m:mn><m:mi>π</m:mi></m:mrow><m:mn>5</m:mn></m:mfrac></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793750892">
