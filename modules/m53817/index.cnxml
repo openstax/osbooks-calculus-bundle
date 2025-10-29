@@ -357,8 +357,7 @@ Solving this inequality for <emphasis effect="italics">x</emphasis>, we have tha
 <problem id="fs-id1167024969275">
 <para id="fs-id1167024969277">Find the Taylor series for <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:mfrac></m:mrow></m:math> at <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> and determine its interval of convergence.</para></problem>
 <solution id="fs-id1167024969311">
-<para id="fs-id1167024969313"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mn>2</m:mn><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow>
-<m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math> The interval of convergence is <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math>
+<para id="fs-id1167024969313"><m:math><m:munderover><m:mo>&#x2211;</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mi>&#x221E;</m:mi></m:munderover><m:mfrac><m:msup><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>-</m:mo><m:mi>x</m:mi></m:mrow></m:mfenced><m:mi>n</m:mi></m:msup><m:msup><m:mn>2</m:mn><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn></m:mrow></m:mfenced></m:msup></m:mfrac><m:mo>.</m:mo></m:math> The interval of convergence is <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math>
 
 
 </para></solution>
