@@ -1476,7 +1476,7 @@
 <colspec colnum="2" colname="c2"/>
 <thead>
 <row valign="top">
-<entry align="left"><emphasis effect="italics">a</emphasis></entry>
+<entry align="left"><m:math><m:mi>&#x3B1;</m:mi></m:math></entry>
 <entry align="left"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>α</m:mi></m:mfrac><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mi>α</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
 </row>
 </thead>
