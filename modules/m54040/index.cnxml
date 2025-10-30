@@ -902,10 +902,10 @@ At time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0.3</m:mn><m:mo>,</m:m
 </list>
 <exercise id="fs-id1170572417838">
 <problem id="fs-id1170572417840">
-<para id="fs-id1170572417842"><m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>″</m:mo></m:msup><m:mo>+</m:mo><m:mn>64</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo><m:mspace width="2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>16</m:mn></m:mrow></m:math></para>
+<para id="fs-id1170572417842"><m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>″</m:mo></m:msup><m:mo>+</m:mo><m:mn>64</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo><m:mspace width="2em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>–24</m:mn></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1170572281018">
-<para id="fs-id1170572281020">a. <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math><newline/>b.<newline/>
+<para id="fs-id1170572281020">a. <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math><newline/>b.<newline/>
 <media id="fs-id1170572281067" alt="This figure is a periodic graph. It has an amplitude of 3.5. Both the x and y axes are scaled in increments of 1.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_01_201.jpg"/>
 </media></para>
@@ -922,7 +922,7 @@ At time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0.3</m:mn><m:mo>,</m:m
 </problem>
 <solution id="fs-id1170572507219">
 <para id="fs-id1170572507221">a. <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>−5</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mi>x</m:mi></m:mrow></m:msup><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>−2</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msqrt><m:mrow><m:mn>35</m:mn></m:mrow></m:msqrt></m:mrow><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>4</m:mn><m:msqrt><m:mrow><m:mn>35</m:mn></m:mrow></m:msqrt></m:mrow><m:mrow><m:mn>35</m:mn></m:mrow></m:mfrac><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msqrt><m:mrow><m:mn>35</m:mn></m:mrow></m:msqrt></m:mrow><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:math><newline/>b.<newline/>
-<media id="fs-id1170572567820" alt="This figure is a graph of an oscillating function. The x and y axes are scaled in increments of even numbers. The amplitude of the graph is decreasing as x increases.">
+<media id="fs-id1170572567820" alt="This figure is a graph of an oscillating function. The amplitude of the graph is decreasing as x increases.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_17_01_203.jpg"/>
 </media></para>
 </solution>

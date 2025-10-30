@@ -1034,7 +1034,7 @@ Since <m:math><m:mrow><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:msu
 <para id="fs-id1167024045501"><m:math><m:mrow><m:mstyle displaystyle="true"><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>n</m:mi><m:msup><m:mi>x</m:mi><m:mi>n</m:mi></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mn>12</m:mn></m:mrow><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167024045543">
-<para id="fs-id1167024045545">ROC: <m:math><m:mrow><m:mn>12</m:mn><m:mo>;</m:mo></m:mrow></m:math> IOC: <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−16</m:mn><m:mo>,</m:mo><m:mn>8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+<para id="fs-id1167024045545">ROC: <m:math><m:mrow><m:mn>12</m:mn><m:mo>;</m:mo></m:mrow></m:math> IOC: <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−12</m:mn><m:mo>,</m:mo><m:mn>12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167024045573">
