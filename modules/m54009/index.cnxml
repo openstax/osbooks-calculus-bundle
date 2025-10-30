@@ -343,7 +343,7 @@
 </media>
 </problem>
 <solution id="fs-id1167793293462">
-<para id="fs-id1167793293465"><m:math><m:mn>0</m:mn></m:math></para>
+<para id="fs-id1167793293465"><m:math><m:msub><m:mo>&#x222B;</m:mo><m:mi>C</m:mi></m:msub><m:mtext mathvariant="bold">F</m:mtext><m:mo>&#xB7;</m:mo><m:mi>d</m:mi><m:mi mathvariant="bold">r</m:mi><m:mo mathvariant="bold">=</m:mo><m:mn>0</m:mn></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793366115">
