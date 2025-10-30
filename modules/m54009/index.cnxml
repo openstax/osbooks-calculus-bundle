@@ -509,7 +509,7 @@
 <para id="fs-id1167793355840">Let <emphasis effect="italics">S</emphasis> be ellipsoid <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>9</m:mn></m:mfrac><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> oriented outward and let <emphasis effect="bold">F</emphasis> be a vector field with component functions that have continuous partial derivatives. Compute <m:math><m:mo>∫</m:mo><m:msub><m:mo>∫</m:mo><m:mi>s</m:mi></m:msub><m:mtext>curl </m:mtext><m:mi mathvariant="bold">F</m:mi><m:mo mathvariant="bold">·</m:mo><m:mi>d</m:mi><m:mi mathvariant="bold">s</m:mi></m:math></para>
 </problem>
 <solution id="fs-id1167793949022">
-<para id="fs-id1167793949024"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>N</m:mtext></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+<para id="fs-id1167793949024"><m:math><m:msub><m:mo>&#x222C;</m:mo><m:mi>S</m:mi></m:msub><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mtext mathvariant="bold">F</m:mtext><m:mo>&#xB7;</m:mo><m:mi>d</m:mi><m:mtext mathvariant="bold">S</m:mtext><m:mo>=</m:mo><m:mn>0</m:mn></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793829399">
