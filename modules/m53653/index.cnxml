@@ -664,7 +664,7 @@ Note that <m:math><m:mrow><m:mtext>cosh</m:mtext><m:mspace width="0.2em"/><m:mi>
 </exercise>
 <exercise id="fs-id1167793510599">
 <problem id="fs-id1167793510601">
-<para id="fs-id1167793510603"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup></m:mrow><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+<para id="fs-id1167793510603"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup></m:mrow><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793582489">
 <para id="fs-id1167793582491"><m:math><m:mrow><m:msup><m:mrow><m:mtext>cosh</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
@@ -672,7 +672,7 @@ Note that <m:math><m:mrow><m:mtext>cosh</m:mtext><m:mspace width="0.2em"/><m:mi>
 </exercise>
 <exercise id="fs-id1167794058783">
 <problem id="fs-id1167794058785">
-<para id="fs-id1167794049090"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+<para id="fs-id1167794049090"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="false">∫</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:math></para>
 </problem>
 </exercise>
 <para id="fs-id1167793384924">For the following exercises, use the fact that a falling body with friction equal to velocity squared obeys the equation <m:math><m:mrow><m:mrow><m:mrow><m:mi>d</m:mi><m:mi>v</m:mi></m:mrow><m:mtext>/</m:mtext><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow><m:mo>=</m:mo><m:mi>g</m:mi><m:mo>−</m:mo><m:msup><m:mi>v</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
