@@ -1091,7 +1091,7 @@
 </exercise>
 <exercise id="fs-id1167793696600">
 <problem id="fs-id1167793696602">
-<para id="fs-id1167793696604">Evaluate surface integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:mi>z</m:mi><m:mi>d</m:mi><m:mtext>A</m:mtext></m:mrow></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> where <emphasis effect="italics">S</emphasis> is surface <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>z</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793696604">Evaluate surface integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:mi>z</m:mi><m:mi>d</m:mi><m:mtext>S</m:mtext></m:mrow></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> where <emphasis effect="italics">S</emphasis> is surface <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>z</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1167793279308">
