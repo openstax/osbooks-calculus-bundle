@@ -590,7 +590,7 @@ Therefore,<newline/>
 <para id="fs-id1170571652901">An engineer is using a machine to cut a flat square of Aerogel of area 144 cm<sup>2</sup>. If there is a maximum error tolerance in the area of 8 cm<sup>2</sup>, how accurately must the engineer cut on the side, assuming all sides have the same length? How do these numbers relate to <m:math><m:mrow><m:mi>δ</m:mi><m:mo>,</m:mo></m:mrow></m:math> <emphasis effect="italics">ε</emphasis>, <emphasis effect="italics">a</emphasis>, and <emphasis effect="italics">L</emphasis>?</para>
 </problem>
 <solution id="fs-id1170571652930">
-<para id="fs-id1170571652932">0.328 cm, <m:math><m:mrow><m:mi>ε</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mi>δ</m:mi><m:mo>=</m:mo><m:mn>0.33</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mi>L</m:mi><m:mo>=</m:mo><m:mn>144</m:mn></m:mrow></m:math></para>
+<para id="fs-id1170571652932">The engineer must cut within 0.328 cm of 12 cm on each side; <m:math><m:mrow><m:mi>ε</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mi>δ</m:mi><m:mo>=</m:mo><m:mn>0.328</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mi>L</m:mi><m:mo>=</m:mo><m:mn>144</m:mn></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1170572551905">
