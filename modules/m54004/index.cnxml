@@ -960,7 +960,7 @@
 </exercise>
 <exercise id="fs-id1167793442664">
 <problem id="fs-id1167793442666">
-<para id="fs-id1167793442668"><emphasis effect="bold">[T]</emphasis> Evaluate <m:math><m:mo>∫</m:mo><m:msub><m:mo>∫</m:mo><m:mi>S</m:mi></m:msub><m:mo>(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mi>z</m:mi><m:mo>)</m:mo><m:mi>d</m:mi><m:mi mathvariant="bold">S</m:mi></m:math> where <m:math><m:mi mathvariant="bold">S</m:mi></m:math> is the surface defined by <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>u</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>u</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:msup><m:mi>u</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>v</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mtext>,</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>u</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mtext>,</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>v</m:mi><m:mo>≤</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793442668"><emphasis effect="bold">[T]</emphasis> Evaluate <m:math><m:mo>∫</m:mo><m:msub><m:mo>∫</m:mo><m:mi>S</m:mi></m:msub><m:mo>(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mi>z</m:mi><m:mo>)</m:mo><m:mi>d</m:mi><m:mi>S</m:mi></m:math> where <m:math><m:mi>S</m:mi></m:math> is the surface defined by <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>u</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>u</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:msup><m:mi>u</m:mi><m:mn>2</m:mn></m:msup><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>v</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mtext>,</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>u</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mtext>,</m:mtext><m:mspace width="0.2em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>v</m:mi><m:mo>≤</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1167793427585">
@@ -984,7 +984,7 @@
 </media>
 </problem>
 <solution id="fs-id1167793267021">
-<para id="fs-id1167793267023"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi><m:mi>d</m:mi><m:mtext>S</m:mtext></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1023</m:mn><m:mi>π</m:mi><m:msqrt><m:mrow><m:mn>2</m:mn></m:mrow></m:msqrt></m:mrow><m:mn>5</m:mn></m:mfrac></m:mrow></m:math></para>
+<para id="fs-id1167793267023"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi><m:mi>d</m:mi><m:mi>S</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1023</m:mn><m:mi>π</m:mi><m:msqrt><m:mrow><m:mn>2</m:mn></m:mrow></m:msqrt></m:mrow><m:mn>5</m:mn></m:mfrac></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793544845">
@@ -1003,12 +1003,12 @@
 </media>
 </problem>
 <solution id="fs-id1167793939294">
-<para id="fs-id1167793939296"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mtext>S</m:mtext></m:msub><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>z</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mtext>S</m:mtext></m:mrow></m:mrow></m:mstyle><m:mo>≈</m:mo><m:mn>10.1</m:mn></m:mrow></m:math></para>
+<para id="fs-id1167793939296"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>z</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>S</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>≈</m:mo><m:mn>10.1</m:mn></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793379204" class="material-set-2">
 <problem id="fs-id1167793379206">
-<para id="fs-id1167793379208">Evaluate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mi>d</m:mi><m:mtext>S</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> if <emphasis effect="italics">S</emphasis> is the part of plane <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow></m:math> that lies over the triangular region in the <emphasis effect="italics">xy</emphasis>-plane with vertices (0, 0, 0), (1, 0, 0), and (0, 2, 0).</para>
+<para id="fs-id1167793379208">Evaluate <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mi>d</m:mi><m:mi>S</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> if <emphasis effect="italics">S</emphasis> is the part of plane <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow></m:math> that lies over the triangular region in the <emphasis effect="italics">xy</emphasis>-plane with vertices (0, 0, 0), (1, 0, 0), and (0, 2, 0).</para>
 </problem>
 </exercise>
 <exercise id="fs-id1167793498738">
@@ -1083,15 +1083,15 @@
 </exercise>
 <exercise id="fs-id1167793611134">
 <problem id="fs-id1167793611136">
-<para id="fs-id1167793611138">Evaluate surface integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mtext>S</m:mtext></m:mrow></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> where <emphasis effect="italics">S</emphasis> is hemisphere <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793611138">Evaluate surface integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>S</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> where <emphasis effect="italics">S</emphasis> is hemisphere <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793696540">
-<para id="fs-id1167793696542"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mtext>S</m:mtext></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>π</m:mi><m:msup><m:mi>a</m:mi><m:mn>5</m:mn></m:msup></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+<para id="fs-id1167793696542"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>S</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>π</m:mi><m:msup><m:mi>a</m:mi><m:mn>5</m:mn></m:msup></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793696600">
 <problem id="fs-id1167793696602">
-<para id="fs-id1167793696604">Evaluate surface integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:mi>z</m:mi><m:mi>d</m:mi><m:mtext>S</m:mtext></m:mrow></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> where <emphasis effect="italics">S</emphasis> is surface <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>z</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793696604">Evaluate surface integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:mi>z</m:mi><m:mi>d</m:mi><m:mi>S</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> where <emphasis effect="italics">S</emphasis> is surface <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>z</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1167793279308">
@@ -1109,10 +1109,10 @@
 </exercise>
 <exercise id="fs-id1167793570610">
 <problem id="fs-id1167793570612">
-<para id="fs-id1167793570615">Evaluate surface integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:mi>y</m:mi><m:mi>z</m:mi><m:mi>d</m:mi><m:mtext>S</m:mtext></m:mrow></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> where <emphasis effect="italics">S</emphasis> is the part of plane <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math> that lies inside cylinder <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793570615">Evaluate surface integral <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:mi>y</m:mi><m:mi>z</m:mi><m:mi>d</m:mi><m:mi>S</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> where <emphasis effect="italics">S</emphasis> is the part of plane <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math> that lies inside cylinder <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793595143">
-<para id="fs-id1167793595146"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:mi>y</m:mi><m:mi>z</m:mi><m:mi>d</m:mi><m:mtext>S</m:mtext></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt><m:mi>π</m:mi></m:mrow><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
+<para id="fs-id1167793595146"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∬</m:mo><m:mi>S</m:mi></m:msub><m:mrow><m:mi>y</m:mi><m:mi>z</m:mi><m:mi>d</m:mi><m:mi>S</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt><m:mi>π</m:mi></m:mrow><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></para>
 </solution>
 </exercise>
 <para id="fs-id1167793228873">For the following exercises, use geometric reasoning to evaluate the given surface integrals.</para>
