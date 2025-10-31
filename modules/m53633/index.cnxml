@@ -130,7 +130,7 @@
 </problem>
 <solution id="fs-id1170572242300">
 <para id="fs-id1170572242305">Express the problem as a definite integral, integrate, and evaluate using the Fundamental Theorem of Calculus. The limits of integration are the endpoints of the interval <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> We have</para>
-<equation id="fs-id1170572331198" class="unnumbered"><label/><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>1</m:mn><m:msup><m:mi>t</m:mi><m:mn>3</m:mn></m:msup><m:mo>)</m:mo><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>5</m:mn><m:mi>t</m:mi><m:mo>&#x2013;</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>1</m:mn><m:mfrac><m:msup><m:mi>t</m:mi><m:mn>4</m:mn></m:msup><m:mn>4</m:mn></m:mfrac><m:mo>)</m:mo><m:msub><m:msup><m:mo>|</m:mo><m:mn>2</m:mn></m:msup><m:mn>0</m:mn></m:msub><m:mspace linebreak="newline"/><m:mo>=</m:mo><m:mo>[</m:mo><m:mn>5</m:mn><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>&#x2013;</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>1</m:mn><m:mfrac><m:msup><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mn>4</m:mn></m:msup><m:mn>4</m:mn></m:mfrac><m:mo>]</m:mo><m:mo>&#x2013;</m:mo><m:mn>0</m:mn><m:mspace linebreak="newline"/><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>&#x2013;</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>4</m:mn><m:mspace linebreak="newline"/><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>.</m:mo><m:mn>6</m:mn></m:math></equation>
+<equation id="fs-id1170572331198" class="unnumbered"><label/><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msubsup><m:mo>∫</m:mo><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>1</m:mn><m:msup><m:mi>t</m:mi><m:mn>3</m:mn></m:msup><m:mo>)</m:mo><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>5</m:mn><m:mi>t</m:mi><m:mo>–</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>1</m:mn><m:mfrac><m:msup><m:mi>t</m:mi><m:mn>4</m:mn></m:msup><m:mn>4</m:mn></m:mfrac><m:mo>)</m:mo><m:msub><m:msup><m:mo>|</m:mo><m:mn>2</m:mn></m:msup><m:mn>0</m:mn></m:msub><m:mspace linebreak="newline"/><m:mo>=</m:mo><m:mo>[</m:mo><m:mn>5</m:mn><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>–</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>1</m:mn><m:mfrac><m:msup><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mn>4</m:mn></m:msup><m:mn>4</m:mn></m:mfrac><m:mo>]</m:mo><m:mo>–</m:mo><m:mn>0</m:mn><m:mspace linebreak="newline"/><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>–</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>4</m:mn><m:mspace linebreak="newline"/><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>.</m:mo><m:mn>6</m:mn></m:math></equation>
 <para id="fs-id1170572425086">Thus, the motorboat uses 9.6 gal of gas in 2 hours.</para>
 </solution>
 </exercise>
@@ -963,12 +963,12 @@ The total distance is <m:math><m:mrow><m:mi>d</m:mi><m:mo stretchy="false">(</m:
 </exercise>
 <exercise id="fs-id1170571546776">
 <problem id="fs-id1170571546778">
-<para id="fs-id1170571546780">John is a 25-year old man who weighs 160 lb. He burns <m:math><m:mrow><m:mn>500</m:mn><m:mo>−</m:mo><m:mn>50</m:mn><m:mi>t</m:mi></m:mrow></m:math> calories/hr while riding his bike for <emphasis effect="italics">t</emphasis> hours. If an oatmeal cookie has 55 cal and John eats 4<emphasis effect="italics">t</emphasis> cookies during the <emphasis effect="italics">t</emphasis>th hour, how many net calories has he lost after 3 hours riding his bike?</para>
+<para id="fs-id1170571546780">John is a 25-year old man who weighs 160 lb. He burns <m:math><m:mrow><m:mn>500</m:mn><m:mo>−</m:mo><m:mn>50</m:mn><m:mi>t</m:mi></m:mrow></m:math> calories/hr while riding his bike for <emphasis effect="italics">t</emphasis> hours. If an oatmeal cookie has 55 cal and John eats cookies at a rate of 4<emphasis effect="italics">t</emphasis> calories during the <emphasis effect="italics">t</emphasis>th hour, how many net calories has he lost after 3 hours riding his bike?</para>
 </problem>
 </exercise>
 <exercise id="fs-id1170571613601">
 <problem id="fs-id1170571613603">
-<para id="fs-id1170571613605">Sandra is a 25-year old woman who weighs 120 lb. She burns <m:math><m:mrow><m:mn>300</m:mn><m:mo>−</m:mo><m:mn>50</m:mn><m:mi>t</m:mi></m:mrow></m:math> cal/hr while walking on her treadmill. Her caloric intake from drinking Gatorade is 100<emphasis effect="italics">t</emphasis> calories during the <emphasis effect="italics">t</emphasis>th hour. What is her net decrease in calories after walking for 3 hours?</para>
+<para id="fs-id1170571613605">Sandra is a 25-year old woman who weighs 120 lb. She burns <m:math><m:mrow><m:mn>300</m:mn><m:mo>−</m:mo><m:mn>50</m:mn><m:mi>t</m:mi></m:mrow></m:math> cal/hr while walking on her treadmill. Her caloric intake from drinking Gatorade is 100<emphasis effect="italics">t</emphasis> calories/hour during the <emphasis effect="italics">t</emphasis>th hour. What is her net decrease in calories after walking for 3 hours?</para>
 </problem>
 <solution id="fs-id1170571613632">
 <para id="fs-id1170571613635">225 cal</para>
@@ -1253,6 +1253,29 @@ The graph is nonlinear, with minutes per mile increasing dramatically as vehicle
 </tbody>
 </tgroup>
 </table>
+<para id="para-00001">As a car accelerates, it does not accelerate at a constant rate; rather, the acceleration is variable. For the next three exercises use the following table, which contains the acceleration measured at every second as a driver merges onto a freeway.</para>
+<table id="table-00001"><tgroup cols="2"><thead>
+    <row><entry>Time (sec)</entry>
+        <entry>Acceleration (mph/sec)</entry>
+    </row>
+</thead>
+<tbody>
+    <row><entry>1</entry>
+        <entry>11.2</entry>
+    </row>
+        <row><entry>2</entry>
+        <entry>10.6</entry>
+    </row>
+        <row><entry>3</entry>
+        <entry>8.1</entry>
+    </row>
+        <row><entry>4</entry>
+        <entry>5.4</entry>
+    </row>
+        <row><entry>5</entry>
+        <entry>0</entry>
+    </row>
+</tbody></tgroup></table>
 <exercise id="fs-id1170572582602">
 <problem id="fs-id1170572582604">
 <para id="fs-id1170572582606"><emphasis effect="bold">[T]</emphasis> The accompanying graph plots the best quadratic fit, <m:math><m:mrow><m:mi>a</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>−0.70</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1.44</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>10.44</m:mn><m:mo>,</m:mo></m:mrow></m:math> to the data from the preceding table. Compute the average value of <m:math><m:mrow><m:mi>a</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> to estimate the average acceleration between <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
@@ -1261,12 +1284,36 @@ The graph is nonlinear, with minutes per mile increasing dramatically as vehicle
 </media>
 </problem>
 <solution id="fs-id1170572351520">
-<para id="fs-id1170572351522">Average acceleration is <m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>5</m:mn></m:mfrac><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="true">∫</m:mo><m:mn>0</m:mn><m:mn>5</m:mn></m:msubsup><m:mrow><m:mi>a</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>=</m:mo></m:mrow></m:mrow></m:mstyle><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>0.7</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mn>5</m:mn><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>1.44</m:mn><m:mrow><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mn>10.44</m:mn><m:mo>≈</m:mo><m:mn>8.2</m:mn></m:mrow></m:math> mph/s</para>
+<para id="fs-id1170572351522">Average acceleration is <m:math><m:mrow>
+<m:mo>&#8722;</m:mo>
+<m:mfrac><m:mrow><m:mn>0.7</m:mn></m:mrow>
+<m:mrow><m:mn>3</m:mn></m:mrow>
+</m:mfrac>
+<m:msup><m:mi>t</m:mi><m:mn>3</m:mn></m:msup>
+<m:mo>+</m:mo>
+<m:mfrac><m:mrow><m:mn>1.44</m:mn></m:mrow>
+<m:mrow><m:mn>2</m:mn></m:mrow>
+</m:mfrac>
+<m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup>
+<m:mo>+</m:mo>
+<m:mn>10.44</m:mn>
+<m:mi>t</m:mi>
+<m:msubsup><m:mo stretchy="true">|</m:mo><m:mn>0</m:mn><m:mn>5</m:mn></m:msubsup>
+<m:mo>=</m:mo>
+<m:mo>&#8722;</m:mo>
+<m:mfrac><m:mrow><m:mn>0.7</m:mn></m:mrow>
+<m:mrow><m:mn>3</m:mn></m:mrow>
+</m:mfrac>
+<m:mo>(</m:mo><m:msup><m:mn>5</m:mn><m:mn>3</m:mn></m:msup><m:mo>)</m:mo>
+<m:mo>+</m:mo>
+<m:mn>10.44</m:mn>
+<m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo><m:mo>≈</m:mo>
+<m:mn>41</m:mn></m:mrow></m:math> mph/s</para>
 </solution>
 </exercise>
 <exercise id="fs-id1170571638063">
 <problem id="fs-id1170571638065">
-<para id="fs-id1170571638067"><emphasis effect="bold">[T]</emphasis> Using your acceleration equation from the previous exercise, find the corresponding velocity equation. Assuming the initial velocity is 0 mph, find the velocity at time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170571638067"><emphasis effect="bold">[T]</emphasis> Using your acceleration equation from the previous exercise, find the corresponding velocity equation. Assuming the initial velocity is 65 mph, find the velocity at time <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1170571610292">
@@ -1274,7 +1321,72 @@ The graph is nonlinear, with minutes per mile increasing dramatically as vehicle
 <para id="fs-id1170571610296"><emphasis effect="bold">[T]</emphasis> Using your velocity equation from the previous exercise, find the corresponding distance equation, assuming your initial distance is 0 mi. How far did you travel while you accelerated your car? (<emphasis effect="italics">Hint:</emphasis> You will need to convert time units.)</para>
 </problem>
 <solution id="fs-id1170571610311">
-<para id="fs-id1170571610313"><m:math><m:mi>d</m:mi><m:mo>=</m:mo><m:msubsup><m:mo stretchy="true">&#x222B;</m:mo><m:mn>0</m:mn><m:mn>5</m:mn></m:msubsup><m:mfenced open="|" close="|"><m:mrow><m:mi>v</m:mi><m:mfenced><m:mi>t</m:mi></m:mfenced><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfenced><m:mo>=</m:mo><m:msubsup><m:mo stretchy="true">&#x222B;</m:mo><m:mn>0</m:mn><m:mn>5</m:mn></m:msubsup><m:mfenced><m:mrow><m:mo>-</m:mo><m:mfrac><m:mn>7</m:mn><m:mn>30</m:mn></m:mfrac><m:msup><m:mi>t</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>0.72</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:mn>10.44</m:mn><m:mi>t</m:mi></m:mrow></m:mfenced><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>124</m:mn><m:mo>.</m:mo><m:mn>042</m:mn><m:mfenced><m:mfrac><m:mn>5280</m:mn><m:mn>3600</m:mn></m:mfrac></m:mfenced><m:mo>=</m:mo><m:mn>181.928</m:mn><m:mo>&#xA0;</m:mo><m:mi>ft</m:mi><m:mo>.</m:mo></m:math></para>
+<para id="fs-id1170571610313"><m:math><m:mrow><m:mi>s</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo>
+<m:mo>=</m:mo>
+<m:mi>v</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo><m:mi>d</m:mi><m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mo stretchy="true">∫</m:mo>
+<m:mo stretchy="true">(</m:mo>
+<m:mo>&#8722;</m:mo>
+
+<m:mfrac>
+<m:mn>7</m:mn>
+<m:mn>30</m:mn>
+</m:mfrac>
+<m:msup>
+<m:mi>t</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>+</m:mo>
+<m:mn>0.72</m:mn>
+<m:msup>
+<m:mi>t</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo>
+<m:mn>10.44</m:mn><m:mi>t</m:mi>
+<m:mo>+</m:mo>
+<m:mn>23.967</m:mn>
+<m:mo stretchy="true">)</m:mo>
+<m:mi>d</m:mi>
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mo>&#8722;</m:mo>
+<m:mfrac>
+<m:mn>7</m:mn>
+<m:mn>120</m:mn>
+</m:mfrac>
+<m:msup>
+<m:mi>t</m:mi>
+<m:mn>4</m:mn>
+</m:msup>
+<m:mo>+</m:mo>
+
+<m:mfrac>
+<m:mn>0.72</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:msup>
+<m:mi>t</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>+</m:mo>
+<m:mfrac>
+<m:mn>10.44</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:msup>
+<m:mi>t</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo>
+<m:mn>23.967</m:mn><m:mi>t</m:mi>
+<m:mo>+</m:mo>
+<m:mi>C</m:mi>
+<m:mo>=</m:mo>
+<m:mn>174.24</m:mn>
+<m:mspace width="0.2em"/>
+<m:mtext>feet</m:mtext></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1170572448412">
