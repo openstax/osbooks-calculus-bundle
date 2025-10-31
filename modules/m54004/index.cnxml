@@ -854,7 +854,7 @@
 <para id="fs-id1167794210189"><emphasis effect="bold">[T]</emphasis> Half cylinder <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>:</m:mo><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mi>π</m:mi><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>z</m:mi><m:mo>≤</m:mo><m:mn>7</m:mn></m:mrow><m:mo>}</m:mo></m:mrow></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167794090599">
-<para id="fs-id1167794090602"><m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mn>87.9646</m:mn></m:mrow></m:math></para>
+<para id="fs-id1167794090602"><m:math><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mn>28</m:mn><m:mi mathvariant="normal">&#x3C0;</m:mi><m:mo>=</m:mo><m:mn>87.9646</m:mn></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167794090614">
