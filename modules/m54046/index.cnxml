@@ -332,7 +332,7 @@ Putting this together, we have<newline/>
 </exercise>
 <exercise id="fs-id1170571461823">
 <problem id="fs-id1170571461826">
-<para id="fs-id1170571461828"><m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>″</m:mo></m:msup><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></para>
+<para id="fs-id1170571461828"><m:math><m:msup><m:mi>y</m:mi><m:mo>''</m:mo></m:msup><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:math></para>
 </problem>
 <solution id="fs-id1170571078738">
 <para id="fs-id1170571078740"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−4</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mfrac><m:mi>x</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>18</m:mn></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
