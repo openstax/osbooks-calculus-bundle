@@ -658,7 +658,7 @@ d. <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</
 </exercise>
 <exercise id="fs-id1170571227151">
 <problem id="fs-id1170571227153">
-<para id="fs-id1170571227155">A 64-lb weight is attached to a vertical spring with a spring constant of 4.625 lb/ft. The resistance in the spring-mass system is equal to the instantaneous velocity. The weight is set in motion from a position 1 ft below its equilibrium position with an upward velocity of 2 ft/sec. Is the mass above or below the equation position at the end of <m:math><m:mi>π</m:mi></m:math> sec? By what distance?</para>
+<para id="fs-id1170571227155">A 64-lb weight is attached to a vertical spring with a spring constant of 4.625 lb/ft. The resistance in the spring-mass system is equal to the instantaneous velocity. The weight is set in motion from a position 1 ft below its equilibrium position with an upward velocity of 2 ft/sec. Is the mass above or below the equilibrium position at the end of <m:math><m:mi>π</m:mi></m:math> sec? By what distance?</para>
 </problem>
 <solution id="fs-id1170571139272">
 <para id="fs-id1170571139274"><m:math><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>7</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>4</m:mn></m:mrow></m:msup></m:mrow><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> ft below</para>
