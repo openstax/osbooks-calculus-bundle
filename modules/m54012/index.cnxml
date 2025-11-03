@@ -847,7 +847,7 @@
 <para id="fs-id1167793267540">Evaluate the line integral of scalar function <m:math><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:math> along parabolic path <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> connecting the origin to point (1, 1).</para>
 </problem>
 <solution id="fs-id1167793267565">
-<para id="fs-id1167793267567"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mi>C</m:mi><m:mrow/></m:msubsup><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>·</m:mo><m:mi>d</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>s</m:mtext></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>25</m:mn><m:msqrt><m:mn>5</m:mn></m:msqrt><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>120</m:mn></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+<para id="fs-id1167793267567"><m:math><m:mstyle displaystyle="true"><m:msubsup><m:mo>&#x222B;</m:mo><m:mi>C</m:mi><m:mrow/></m:msubsup><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>&#xA0;</m:mo><m:mi>d</m:mi><m:mi>s</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>25</m:mn><m:msqrt><m:mn>5</m:mn></m:msqrt><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mn>120</m:mn></m:mfrac></m:mstyle></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793244285">
