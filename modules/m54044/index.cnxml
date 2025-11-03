@@ -649,7 +649,7 @@ d. <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</
 </exercise>
 <exercise id="fs-id1170571041443">
 <problem id="fs-id1170571041445">
-<para id="fs-id1170571041447">A 32-lb weight (1 slug) stretches a vertical spring 4 in. The resistance in the spring-mass system is equal to four times the instantaneous velocity of the mass.</para>
+<para id="fs-id1170571041447">A 32-lb weight (1 slug) stretches a vertical spring 128 in. The resistance in the spring-mass system is equal to four times the instantaneous velocity of the mass.</para>
 <list id="fs-id1170571325717" list-type="enumerated" number-style="lower-alpha">
 <item>Find the equation of motion if it is released from its equilibrium position with a downward velocity of 12 ft/sec.</item>
 <item>Determine whether the motion is overdamped, critically damped, or underdamped.</item>
