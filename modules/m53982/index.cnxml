@@ -931,7 +931,7 @@ You now know how a planimeter works and you have used Green’s theorem to justi
 <para id="fs-id1167794287538">Calculate the outward flux of <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math> over a square with corners <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>±1</m:mn><m:mo>,</m:mo><m:mn>±1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> where the unit normal is outward pointing and oriented in the counterclockwise direction.</para>
 </problem>
 <solution id="fs-id1167793640133">
-<para id="fs-id1167793640135"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∫</m:mo><m:mi>C</m:mi></m:msub><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mover accent="true"><m:mi>n</m:mi><m:mo>^</m:mo></m:mover></m:mstyle><m:mi>d</m:mi><m:mi>s</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
+<para id="fs-id1167793640135"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∫</m:mo><m:mi>C</m:mi></m:msub><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mover accent="true"><m:mi>N</m:mi><m:mo>^</m:mo></m:mover></m:mstyle><m:mi>d</m:mi><m:mi>s</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793551260">
@@ -944,7 +944,7 @@ You now know how a planimeter works and you have used Green’s theorem to justi
 <para id="fs-id1167794287654">Find the flux of field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math> across <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>16</m:mn></m:mrow></m:math> oriented in the counterclockwise direction.</para>
 </problem>
 <solution id="fs-id1167793662604">
-<para id="fs-id1167793662607"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∫</m:mo><m:mi>C</m:mi></m:msub><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>n</m:mtext></m:mstyle><m:mi>d</m:mi><m:mi>s</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+<para id="fs-id1167793662607"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msub><m:mo>∫</m:mo><m:mi>C</m:mi></m:msub><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>·</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>N</m:mtext></m:mstyle><m:mi>d</m:mi><m:mi>s</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793979103">
