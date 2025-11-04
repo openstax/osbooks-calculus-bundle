@@ -799,12 +799,12 @@
 </exercise>
 <exercise id="fs-id1167794101698">
 <problem id="fs-id1167794101700">
-<para id="fs-id1167794101702">Find <m:math><m:mrow><m:mtext>div</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167794101702">Find <m:math><m:mrow><m:mtext>the div of</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1167794212788">
 <problem id="fs-id1167794212790">
-<para id="fs-id1167794212792">Find <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:mrow></m:math></para>
+<para id="fs-id1167794212792">Find <m:math><m:mrow><m:mtext>the curl of</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167794212811">
 <para id="fs-id1167794212813"><m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>ω</m:mi></m:mrow></m:math></para>
