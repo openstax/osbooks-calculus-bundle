@@ -876,7 +876,7 @@
 </exercise>
 <exercise id="fs-id1167793500831">
 <problem id="fs-id1167793500833">
-<para id="fs-id1167793500835">Show that the electric field at a point in the <emphasis effect="italics">xy</emphasis>-plane is directed outward from the origin and has magnitude <m:math><m:mfenced open="||" close="||"><m:mi mathvariant="bold">E</m:mi></m:mfenced><m:mo>=</m:mo><m:mfrac><m:mi>c</m:mi><m:mi>r</m:mi></m:mfrac><m:mo>,</m:mo></m:math></para>
+<para id="fs-id1167793500835">Show that the electric field at a point in the <emphasis effect="italics">xy</emphasis>-plane is directed outward from the origin and has magnitude <m:math><m:mfenced open="||" close="||"><m:mi mathvariant="bold">E</m:mi></m:mfenced><m:mo>=</m:mo><m:mfrac><m:mi>c</m:mi><m:mi>r</m:mi></m:mfrac></m:math>, where <m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:msqrt></m:math>.</para>
 </problem>
 <solution id="fs-id1167794200668">
 <para id="fs-id1167794200670"><m:math><m:mfenced open="||" close="||"><m:mi mathvariant="bold">E</m:mi></m:mfenced><m:mo>=</m:mo><m:mfrac><m:mi>c</m:mi><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:msqrt><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:msqrt><m:mo>=</m:mo><m:mfrac><m:mi>c</m:mi><m:msqrt><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:msqrt></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>c</m:mi><m:mi>r</m:mi></m:mfrac></m:math></para>
