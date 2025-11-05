@@ -592,7 +592,7 @@
 </media>
 </problem>
 </exercise>
-<para id="fs-id1165042318715">For the following exercises, analyze the graphs of <m:math><m:mrow><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mo>,</m:mo></m:mrow></m:math> then list all inflection points and intervals <m:math><m:mi>f</m:mi></m:math> that are concave up and concave down.</para>
+<para id="fs-id1165042318715">For the following exercises, analyze the graphs of <m:math><m:mrow><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mo>,</m:mo></m:mrow></m:math> then list all inflection points and intervals where <m:math><m:mi>f</m:mi></m:math> is concave up and concave down.</para>
 <exercise id="fs-id1165043395336">
 <problem id="fs-id1165043395338">
 <media id="fs-id1165043395342" alt="The function f’(x) is graphed. The function is linear and starts negative. It crosses the x axis at the origin.">
