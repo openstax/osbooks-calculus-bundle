@@ -635,7 +635,7 @@
 <para id="fs-id1167793395013"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793421227">
-<para id="fs-id1167793421229"><m:math><m:mrow><m:mn>0.852</m:mn></m:mrow></m:math></para>
+<para id="fs-id1167793421229"><m:math><m:mrow><m:mn>1.605</m:mn></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793421237">
