@@ -537,7 +537,7 @@ Since the limit is <m:math><m:mn>0</m:mn></m:math> and <m:math><m:mrow><m:munder
 </exercise>
 <exercise id="fs-id1169739186700">
 <problem id="fs-id1169739186702">
-<para id="fs-id1169739186704">Does <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mfrac><m:mrow><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mi>r</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:mfrac></m:mrow></m:math> converge or diverge? Explain.</para>
+<para id="fs-id1169739186704">Does <m:math><m:munderover><m:mrow/><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>&#x221E;</m:mi></m:munderover><m:mfenced><m:mfrac><m:mrow><m:mi>n</m:mi><m:mi mathvariant="normal">&#x3C0;</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mfenced></m:math> converge or diverge? Explain.</para>
 </problem>
 <solution id="fs-id1169739186848">
 <para id="fs-id1169739186850">The numerator is equal to <m:math><m:mn>1</m:mn></m:math> when <m:math><m:mi>n</m:mi></m:math> is odd and <m:math><m:mn>0</m:mn></m:math> when <m:math><m:mi>n</m:mi></m:math> is even, so the series can be rewritten <m:math><m:mrow><m:munderover><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo></m:mrow></m:math> which diverges by limit comparison with the harmonic series.</para>
