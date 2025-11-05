@@ -421,7 +421,7 @@ The general antiderivative is <m:math><m:mrow><m:msup><m:mrow><m:mtext>tan</m:mt
 </exercise>
 <exercise id="fs-id1170571697193">
 <problem id="fs-id1170571697196">
-<para id="fs-id1170571697198"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="true">∫</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>x</m:mi><m:msup><m:mrow><m:mtext>ln</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>x</m:mi></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> over <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:math></para>
+<para id="fs-id1170571697198"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="true">∫</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>x</m:mi><m:msup><m:mrow><m:mtext>ln</m:mtext></m:mrow><m:mn>2</m:mn></m:msup><m:mi>x</m:mi></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:math> over <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1170571539134">
 <para id="fs-id1170571539136"><newline/>
@@ -433,7 +433,7 @@ The general antiderivative is <m:math><m:mrow><m:msup><m:mrow><m:mtext>tan</m:mt
 </exercise>
 <exercise id="fs-id1170571539209">
 <problem id="fs-id1170571543184">
-<para id="fs-id1170571543187"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="true">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mi>x</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> over <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:math></para>
+<para id="fs-id1170571543187"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo stretchy="true">∫</m:mo><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mtext>sin</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mi>x</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:math> over <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:math></para>
 </problem>
 </exercise>
 <para id="fs-id1170572456361">In the following exercises, compute each integral using appropriate substitutions.</para>
