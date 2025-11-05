@@ -638,10 +638,10 @@
 <para id="fs-id1167793312582">Find the divergence of <emphasis effect="bold">F</emphasis> for vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub><m:mi>f</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:msub><m:mi>f</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:msub><m:mi>f</m:mi><m:mn>3</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 </exercise>
-<para id="fs-id1167793454036">For the following exercises, use <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793454036">For the following exercises, use <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mrow><m:mo>||</m:mo><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle></m:mrow><m:mo>||</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mtext mathvariant="bold">r</m:mtext><m:mo>=</m:mo><m:mfenced open="&lt;" close="&gt;"><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow></m:mfenced><m:mo>.</m:mo></m:math></para>
 <exercise id="fs-id1167793691577">
 <problem id="fs-id1167793691580">
-<para id="fs-id1167793691582">Find the <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793691582">Find <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793377750">
 <para id="fs-id1167793377752"><m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn mathvariant="bold">0</m:mn></m:mrow></m:math></para>
@@ -649,12 +649,12 @@
 </exercise>
 <exercise id="fs-id1167793377770">
 <problem id="fs-id1167793377773">
-<para id="fs-id1167793377775">Find the <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mi>r</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793377775">Find <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mi>r</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1167793754021">
 <problem id="fs-id1167793754023">
-<para id="fs-id1167793754025">Find the <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mrow><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167793754025">Find <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mrow><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793559076">
 <para id="fs-id1167793559078"><m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mfrac><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle></m:mrow><m:mrow><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn mathvariant="bold">0</m:mn></m:mrow></m:math></para>
