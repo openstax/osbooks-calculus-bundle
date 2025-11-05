@@ -442,7 +442,7 @@
 </exercise>
 <exercise id="fs-id1167794169123">
 <problem id="fs-id1167794169126">
-<para id="fs-id1167794169128">If <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> then <emphasis effect="bold">F</emphasis> is conservative.</para>
+<para id="fs-id1167794169128">If <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn mathvariant="bold">0</m:mn><m:mo>,</m:mo></m:mrow></m:math> then <emphasis effect="bold">F</emphasis> is conservative.</para>
 </problem>
 <solution id="fs-id1167793892952">
 <para id="fs-id1167793892954">True</para>
@@ -455,7 +455,7 @@
 </exercise>
 <exercise id="fs-id1167794186719">
 <problem id="fs-id1167794186722">
-<para id="fs-id1167794186724">If <emphasis effect="bold">F</emphasis> is a constant vector field then <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1167794186724">If <emphasis effect="bold">F</emphasis> is a constant vector field then <m:math><m:mrow><m:mtext>curl</m:mtext><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn mathvariant="bold">0</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793480766">
 <para id="fs-id1167793480769">True</para>
