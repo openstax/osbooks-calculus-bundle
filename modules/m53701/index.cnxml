@@ -718,10 +718,10 @@ The equilibrium solutions are <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>
 </exercise>
 <exercise id="fs-id1170573721407">
 <problem id="fs-id1170573721409">
-<para id="fs-id1170573721411"><m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+<para id="fs-id1170573721411"><m:math><m:mrow><m:mi>y</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>,</m:mo><m:mo>&#xA0;</m:mo><m:mi>y</m:mi><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo><m:mo>&#xA0;</m:mo><m:mo>=</m:mo><m:mo>&#xA0;</m:mo><m:mn>2</m:mn></m:math></para>
 </problem>
 <solution id="fs-id1170573721428">
-<para id="fs-id1170573721431"><m:math><m:mrow><m:mn>2.24</m:mn><m:mo>,</m:mo></m:mrow></m:math> exact: <m:math><m:mn>3</m:mn></m:math></para>
+<para id="fs-id1170573721431"><m:math><m:mrow><m:mn>2.24</m:mn><m:mo>,</m:mo></m:mrow></m:math> exact: <m:math><m:mn>2</m:mn></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1170573721446">
