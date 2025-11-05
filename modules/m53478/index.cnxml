@@ -883,7 +883,7 @@ satisfies this equation. We can conclude that the range of <m:math><m:mi>f</m:mi
 <para id="fs-id1170573589173"><m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1170573589208">
-<para id="fs-id1170573589210">a. 2 b. <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>;</m:mo></m:mrow></m:math> c. −5 d. Both ends rise e. Neither</para>
+<para id="fs-id1170573589210">a. 2 b. <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>;</m:mo></m:mrow></m:math> c. −5 d. As <m:math><m:mi>x</m:mi><m:mo>&#x2192;</m:mo><m:mo>&#xB1;</m:mo><m:mo>&#x221E;</m:mo><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>&#x2192;</m:mo><m:mo>&#x221E;</m:mo></m:math> e. Neither</para>
 </solution>
 </exercise>
 <exercise id="fs-id1170573589231">
@@ -896,7 +896,7 @@ satisfies this equation. We can conclude that the range of <m:math><m:mi>f</m:mi
 <para id="fs-id1170573589289"><m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1170573589321">
-<para id="fs-id1170573589323">a. 2 b. <m:math><m:mrow><m:mo>±</m:mo><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:math> c. −1 d. Both ends rise e. Even</para>
+<para id="fs-id1170573589323">a. 2 b. <m:math><m:mrow><m:mo>±</m:mo><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:math> c. −1 d. As <m:math><m:mi>x</m:mi><m:mo>&#x2192;</m:mo><m:mo>&#xB1;</m:mo><m:mo>&#x221E;</m:mo><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>&#x2192;</m:mo><m:mo>&#x221E;</m:mo></m:math> e. Even</para>
 </solution>
 </exercise>
 <exercise id="fs-id1170573589337">
@@ -909,7 +909,7 @@ satisfies this equation. We can conclude that the range of <m:math><m:mi>f</m:mi
 <para id="fs-id1170573589407"><m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1170573589436">
-<para id="fs-id1170573589438">a. 3 b. 0, <m:math><m:mrow><m:mo>±</m:mo><m:msqrt><m:mn>3</m:mn></m:msqrt></m:mrow></m:math> c. 0 d. Left end rises, right end falls e. Odd</para>
+<para id="fs-id1170573589438">a. 3 b. 0, <m:math><m:mrow><m:mo>±</m:mo><m:msqrt><m:mn>3</m:mn></m:msqrt></m:mrow></m:math> c. 0 d. As <m:math><m:mi>x</m:mi><m:mo>&#x2192;</m:mo><m:mo>-</m:mo><m:mo>&#x221E;</m:mo><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>&#x2192;</m:mo><m:mo>&#x221E;</m:mo></m:math> and <m:math><m:mi>x</m:mi><m:mo>&#x2192;</m:mo><m:mo>&#x221E;</m:mo><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>&#x2192;</m:mo><m:mo>-</m:mo><m:mo>&#x221E;</m:mo></m:math> e. Odd</para>
 </solution>
 </exercise>
 <para id="fs-id1170573589452">For the following exercises, use the graph of <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> to graph each transformed function <m:math><m:mrow><m:mi>g</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
