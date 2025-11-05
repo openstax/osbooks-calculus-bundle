@@ -778,7 +778,7 @@
 </exercise>
 <exercise id="fs-id1167793939279">
 <problem id="fs-id1167793939281">
-<para id="fs-id1167793939283"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mtext>,</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>i</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math></para>
+<para id="fs-id1167793939283"><m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mtext>,</m:mtext><m:mspace width="0.2em"/><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi mathvariant="bold">i</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math></para>
 <para id="fs-id1167793451608"><emphasis effect="italics">C</emphasis>: counterclockwise around the triangle with vertices (0, 0), (1, 0), and (1, 1)</para>
 </problem>
 </exercise>
