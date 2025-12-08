@@ -509,7 +509,7 @@ Therefore we need to wait an additional <m:math><m:mrow><m:mn>6.12</m:mn></m:mro
 </exercise>
 <exercise id="fs-id1170571334905">
 <problem id="fs-id1170571334907">
-<para id="fs-id1170571334910">A drug is administered intravenously to a patient at a rate <m:math><m:mi>r</m:mi></m:math> mg/h and is cleared from the body at a rate proportional to the amount of drug still present in the body, <m:math><m:mi>d</m:mi></m:math> Set up and solve the differential equation, assuming there is no drug initially present in the body.</para>
+<para id="fs-id1170571334910">A drug is administered intravenously to a patient at a rate <m:math><m:mi>r</m:mi></m:math> mg/h and is cleared from the body at a rate proportional to the amount of drug still present in the body, <m:math><m:mi>d</m:mi></m:math>. Set up and solve the differential equation, assuming there is no drug initially present in the body.</para>
 </problem>
 <solution id="fs-id1170571252471">
 <para id="fs-id1170571252474"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>r</m:mi><m:mi>d</m:mi></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
