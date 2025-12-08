@@ -681,7 +681,7 @@
 </exercise>
 <exercise id="fs-id1167793960056">
 <problem id="fs-id1167793960058">
-<para id="fs-id1167793960060">Let <m:math><m:mi>D</m:mi></m:math> be the region bounded by the curves of equations <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math> Explain why <m:math><m:mi>D</m:mi></m:math> is neither of Type I nor II.</para>
+<para id="fs-id1167793960060">Let <m:math><m:mi>D</m:mi></m:math> be the region bounded by the curve <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> and below the equations <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> Explain why <m:math><m:mi>D</m:mi></m:math> is neither of Type I nor II.</para>
 </problem>
 </exercise>
 <exercise id="fs-id1167793959356">
