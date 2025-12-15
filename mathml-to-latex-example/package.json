@@ -1,0 +1,19 @@
+{
+  "name": "extract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "@xmldom/xmldom": "^0.8.11",
+    "mathml-to-latex": "^1.5.0",
+    "xpath": "^0.0.34"
+  },
+  "devDependencies": {
+    "prettier": "^3.7.4"
+  }
+}
