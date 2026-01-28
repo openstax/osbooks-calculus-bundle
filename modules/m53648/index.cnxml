@@ -500,7 +500,7 @@ Using a weight-density of <m:math><m:mrow><m:mn>62.4</m:mn></m:mrow></m:math> lb
 </exercise>
 <exercise id="fs-id1167793724760">
 <problem id="fs-id1167793724762">
-<para id="fs-id1167793724764">A metal rod that is <m:math><m:mn>8</m:mn></m:math> in. long (starting at <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and has a density function of <m:math><m:mrow><m:mi>ρ</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math> lb/in.</para>
+<para id="fs-id1167793724764">A metal rod that is <m:math><m:mn>8</m:mn></m:math> in. long (starting at <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and has a density function of <m:math><m:mi>&#x3C1;</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mfenced><m:mrow><m:mn>1</m:mn><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:mfenced><m:mi>x</m:mi></m:mrow></m:msup></m:math> lb/in.</para>
 </problem>
 </exercise>
 <exercise id="fs-id1167793630100">
