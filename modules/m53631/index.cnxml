@@ -842,7 +842,7 @@ In the following exercises, find the net signed area between <m:math><m:mi>f</m:
 <para id="fs-id1170572309649">In the following exercises, approximate the average value using Riemann sums <emphasis effect="italics">L</emphasis><sub>100</sub> and <emphasis effect="italics">R</emphasis><sub>100</sub>. How does your answer compare with the exact given answer?</para>
 <exercise id="fs-id1170572309667">
 <problem id="fs-id1170572617925">
-<para id="fs-id1170572617927"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> over the interval <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>;</m:mo></m:mrow></m:math> the exact solution is <m:math><m:mrow><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>256</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170572617927"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> over the interval <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>;</m:mo></m:mrow></m:math> the exact solution is <m:math><m:mrow><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>256</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 </exercise>
 <exercise id="fs-id1170572618038">
