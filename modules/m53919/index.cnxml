@@ -186,84 +186,45 @@ This is an arc-length parameterization of <m:math><m:mrow><m:mstyle mathvariant=
   <m:mo>(</m:mo>
   <m:mi>t</m:mi>
   <m:mo>)</m:mo>
-</m:math> is a unit tangent vector, <m:math>
-  <m:mo>&#x2016;</m:mo>
+</m:math> is a unit vector, <m:math>
+  <m:mo>‖</m:mo>
   <m:mi mathvariant="bold">T</m:mi>
   <m:mo>(</m:mo>
   <m:mi>t</m:mi>
   <m:mo>)</m:mo>
-  <m:mo>&#x2016;</m:mo>
+  <m:mo>‖</m:mo>
 
   <m:mo>=</m:mo>
 
   <m:mn>1</m:mn>
-</m:math> . So, <m:math>
+</m:math> for all values of <m:math><m:mi>t</m:mi></m:math>. So, 
+<m:math><m:mi mathvariant="bold">T</m:mi><m:mfenced><m:mi>t</m:mi></m:mfenced><m:mo mathvariant="bold">·</m:mo><m:mi mathvariant="bold">T</m:mi><m:mfenced><m:mi>t</m:mi></m:mfenced><m:mo mathvariant="bold">=</m:mo></m:math>
+  <m:math>
   <m:msup>
       <m:mrow>
-          <m:mo>&#x2016;</m:mo>
+          <m:mo>‖</m:mo>
           <m:mi mathvariant="bold">T</m:mi>
           <m:mo>(</m:mo>
           <m:mi>t</m:mi>
           <m:mo>)</m:mo>
-          <m:mo>&#x2016;</m:mo>
+          <m:mo>‖</m:mo>
       </m:mrow>
       <m:mn>2</m:mn>
   </m:msup>
   <m:mo>=</m:mo>
 
   <m:mn>1</m:mn>
-</m:math> It follows that <m:math>
+</m:math>.</para>
+<para id="para-00001">By <link target-id="fs-id1169738214420"/>, we have
+<equation class="unnumbered" id="eq-00001"><label/>
+<m:math><m:mn>0</m:mn><m:mo>=</m:mo><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mi mathvariant="bold" mathsize="normal">T</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo><m:mo>⋅</m:mo><m:mi mathvariant="bold" mathsize="normal">T</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>T</m:mi><m:mo>′</m:mo></m:msup></m:mstyle><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo><m:mo>⋅</m:mo><m:mi mathvariant="bold" mathsize="normal">T</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo><m:mo>+</m:mo><m:mi mathvariant="bold" mathsize="normal">T</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo><m:mo>⋅</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>T</m:mi><m:mo>′</m:mo></m:msup></m:mstyle><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>T</m:mi><m:mo>′</m:mo></m:msup></m:mstyle><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo><m:mo>⋅</m:mo><m:mi mathvariant="bold" mathsize="normal">T</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo><m:mo>.</m:mo></m:math>
+</equation>
+Therefore, <m:math><m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>T</m:mi><m:mo>′</m:mo></m:msup></m:mstyle><m:mo>⋅</m:mo><m:mi mathvariant="bold">T</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:math> showing that <m:math><m:mi mathvariant="bold">T</m:mi></m:math> and <m:math><m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>T</m:mi><m:mo>′</m:mo></m:msup></m:mstyle></m:math> are perpendicular. This means that 
 
-  <m:mi mathvariant="bold">T</m:mi>
-
-  <m:mo>&#xD7;</m:mo>
-
-  <m:mi mathvariant="bold">T</m:mi>
-
-  <m:mo>=</m:mo>
-
-  <m:mn>1</m:mn>
-</m:math>. Apply the product rule to see <m:math>
-
-<m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>T</m:mi><m:mo>′</m:mo></m:msup></m:mstyle>
-  <m:mo>&#xD7;</m:mo>
-
-  <m:mi mathvariant="bold">T</m:mi>
-
-  <m:mo>+</m:mo>
-
-  <m:mi mathvariant="bold">T</m:mi>
-
-  <m:mo>&#xD7;</m:mo>
-
-  <m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>T</m:mi><m:mo>′</m:mo></m:msup></m:mstyle>
-
-  <m:mo>=</m:mo>
-
-  <m:mn>0</m:mn>
-</m:math> Therefore, <m:math>
-
-  <m:mn>2</m:mn>
-  <m:mo>(</m:mo>
-  <m:mi mathvariant="bold">T</m:mi>
-
-  <m:mo>&#xD7;</m:mo>
-
-  <m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>T</m:mi><m:mo>′</m:mo></m:msup></m:mstyle>
-
-  <m:mo>)</m:mo>
-
-  <m:mo>=</m:mo>
-
-  <m:mn>0</m:mn>
-</m:math> Showing <m:math>
-
-  <m:mi mathvariant="bold">T</m:mi>
-</m:math> and <m:math>
-
-
-<m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>T</m:mi><m:mo>′</m:mo></m:msup></m:mstyle>
-</m:math> are perpendicular. This means that <m:math><m:mrow><m:mrow><m:mo>‖</m:mo><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>T</m:mtext></m:mstyle><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>T</m:mi><m:mo>′</m:mo></m:msup></m:mstyle></m:mrow><m:mo>‖</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>‖</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>T</m:mtext></m:mstyle><m:mo>‖</m:mo></m:mrow><m:mrow><m:mo>‖</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>T</m:mi><m:mo>′</m:mo></m:msup></m:mstyle><m:mo>‖</m:mo></m:mrow><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>‖</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>T</m:mi><m:mo>′</m:mo></m:msup></m:mstyle><m:mo>‖</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> so</para>
+<equation class="unnumbered" id="eq-00002"><label/>
+<m:math><m:mrow><m:mo>‖</m:mo><m:mi mathvariant="bold">T</m:mi><m:mo mathvariant="bold">×</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>T</m:mi><m:mo>′</m:mo></m:msup></m:mstyle></m:mrow><m:mo>‖</m:mo><m:mo>=</m:mo><m:mo>‖</m:mo><m:mi mathvariant="bold">T</m:mi><m:mo>‖</m:mo><m:mo>.</m:mo><m:mo> </m:mo><m:mo>‖</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>T</m:mi><m:mo>′</m:mo></m:msup></m:mstyle><m:mo>‖</m:mo><m:mtext>sin</m:mtext><m:mfrac><m:mi mathvariant="normal">π</m:mi><m:mn>2</m:mn></m:mfrac><m:mtext>=</m:mtext><m:mo>‖</m:mo><m:msup><m:mi mathvariant="bold">T</m:mi><m:mo>'</m:mo></m:msup><m:mo>‖</m:mo><m:mtext>, so</m:mtext></m:math>
+</equation>
+</para>
 <equation id="fs-id1169737364004" class="unnumbered"><label/><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mo>‖</m:mo><m:msup><m:mi mathvariant="bold">r</m:mi><m:mo mathvariant="bold">'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mi mathvariant="bold">r</m:mi><m:mo>″</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>‖</m:mo><m:mo>=</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>s</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mrow><m:mo>‖</m:mo><m:msup><m:mi mathvariant="bold">T</m:mi><m:mo mathvariant="bold">'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>‖</m:mo></m:mrow><m:mo>.</m:mo></m:math></equation>
 <para id="fs-id1169737741561">Now we solve this equation for <m:math><m:mrow><m:mrow><m:mo>‖</m:mo><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>T</m:mi><m:mo>′</m:mo></m:msup></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>‖</m:mo></m:mrow></m:mrow></m:math> and use the fact that <m:math><m:mrow><m:mrow><m:mrow><m:mi>d</m:mi><m:mi>s</m:mi></m:mrow><m:mtext>/</m:mtext><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>‖</m:mo><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>r</m:mi><m:mo>′</m:mo></m:msup></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>‖</m:mo></m:mrow><m:mtext>:</m:mtext></m:mrow></m:math></para>
 <equation id="fs-id1169737168750" class="unnumbered"><label/><m:math><m:mrow><m:mrow><m:mo>‖</m:mo><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>T</m:mi><m:mo>′</m:mo></m:msup></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>‖</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mrow><m:mo>‖</m:mo><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>r</m:mi><m:mo>′</m:mo></m:msup></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>r</m:mi><m:mo>″</m:mo></m:msup></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>‖</m:mo></m:mrow></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>‖</m:mo><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:msup><m:mi>r</m:mi><m:mo>′</m:mo></m:msup></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>‖</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation>
@@ -597,7 +558,7 @@ Last, since <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mt
 <exercise id="fs-id1169738253240">
 <problem id="fs-id1169738253242"><para id="fs-id1169738253243">Given <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>2</m:mn><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mo>,</m:mo><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mo>,</m:mo><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> find the unit normal vector <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>N</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> evaluated at <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>N</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
-<solution id="fs-id1169737512596"><para id="fs-id1169737512597"><m:math><m:mtext mathvariant="bold">N</m:mtext><m:mfenced><m:mn>0</m:mn></m:mfenced><m:mo>=</m:mo><m:mrow><m:mo>&#x27E8;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac><m:msqrt><m:mn>2</m:mn></m:msqrt><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:msqrt><m:mn>2</m:mn></m:msqrt><m:mn>2</m:mn></m:mfrac><m:mo>&#x27E9;</m:mo></m:mrow></m:math></para>
+<solution id="fs-id1169737512596"><para id="fs-id1169737512597"><m:math><m:mtext mathvariant="bold">N</m:mtext><m:mfenced><m:mn>0</m:mn></m:mfenced><m:mo>=</m:mo><m:mrow><m:mo>⟨</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac><m:msqrt><m:mn>2</m:mn></m:msqrt><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:msqrt><m:mn>2</m:mn></m:msqrt><m:mn>2</m:mn></m:mfrac><m:mo>⟩</m:mo></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1169737512651">
