@@ -986,7 +986,7 @@ is a telescoping series. The <m:math><m:mrow><m:mi>k</m:mi><m:mtext>th</m:mtext>
 <exercise id="fs-id1169737985841">
 <problem id="fs-id1169737985843">
 <para id="fs-id1169737985845"><emphasis effect="bold">[T]</emphasis> Find the length of the dashed zig-zag path in the following figure.<newline/>
-<media id="fs-id1169295672942" alt="No-Alt-Text">
+<media id="fs-id1169295672942" alt="This is a triangle drawn in quadrant 1 with vertices at (1, 1), (0, 0), and (1, 0). The zigzag line is drawn starting at (1, 0) and goes to the middle of the hypotenuse at (0.5, 0.5), point (1, 0.5), up to point (0.75, 0.75), across to point (1, 0.75), and so on until it converges on the top vertex.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_02_202-7c1e.jpg"/>
 </media></para>
 </problem>
