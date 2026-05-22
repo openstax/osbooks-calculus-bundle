@@ -339,7 +339,7 @@ This is the equation of a circle with center at <m:math><m:mrow><m:mrow><m:mo>(<
 </figure>
 <para id="fs-id1167794329520">If the coefficient of <m:math><m:mi>θ</m:mi></m:math> is even, the graph has twice as many petals as the coefficient. If the coefficient of <m:math><m:mi>θ</m:mi></m:math> is odd, then the number of petals equals the coefficient. You are encouraged to explore why this happens. Even more interesting graphs emerge when the coefficient of <m:math><m:mi>θ</m:mi></m:math> is not an integer. For example, if it is rational, then the curve is closed; that is, it eventually ends where it started (<link target-id="CNX_Calc_Figure_11_03_009"/>(a)). However, if the coefficient is irrational, then the curve never closes (<link target-id="CNX_Calc_Figure_11_03_009"/>(b)). Although it may appear that the curve is closed, a closer examination reveals that the petals just above the positive <emphasis effect="italics">r</emphasis> axis are slightly thicker. This is because the petal does not quite match up with the starting point.</para>
 <figure id="CNX_Calc_Figure_11_03_009">
-<media id="fs-id1167794329558" alt="This figure has two figures. The first is a rose with so many overlapping petals that there are a few patterns that develop, starting with a sharp 10 pointed star in the center and moving out to an increasingly rounded set of petals. The second figure is a rose with even more overlapping petals, so many so that it is impossible to tell what is happening in the center, but on the outer edges are a number of sharply rounded petals.">
+<!-- Alt text revised by AI (score: 0.5156 -> 0.7500) --><media id="fs-id1167794329558" alt="Two polar plots on a coordinate system with radial distance r. Plot (a) shows a rose curve defined by the equation r equals 3 sin of the quantity 5 theta over 4, featuring distinct overlapping petals that form a star-like pattern in the center. Plot (b) shows a rose curve defined by the equation r equals 3 sin of pi times theta, appearing as a much denser collection of overlapping petals that create a more solid circular appearance toward the center.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_11_03_009.jpg"/>
 </media>
 <caption>Polar rose graphs of functions with (a) rational coefficient and (b) irrational coefficient. Note that the rose in part (b) does not fill the disk of radius 3 centered at the origin, even though it appears to. To see this, just note that for any fixed ray from the origin, there are only a countable number of values of theta for which we get a point on the graph along that ray. What we can say, though, is that for any point in the disk, there are points as close as you please to that point on the given graph.</caption>
@@ -808,7 +808,7 @@ and<newline/>
 <para id="fs-id1167794200510"><m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167794200528"><para id="fs-id1167794200529"><newline/>
-<media id="fs-id1167794200533" alt="A cardioid with the upper heart part at the origin and the rest of the cardioid oriented up.">
+<!-- Alt text revised by AI (score: 0.5820 -> 0.7266) --><media id="fs-id1167794200533" alt="A cardioid plotted on a polar coordinate system. The cusp of the cardioid is at the origin, and the shape extends upward into the upper quadrants. The polar grid includes labeled radial increments at 0.5, 1.0, 1.5, and 2.0.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_11_03_218.jpg"/>
 </media><newline/>
 <emphasis effect="italics">y</emphasis>-axis symmetry</para>
@@ -904,7 +904,7 @@ no symmetry</para>
 <para id="fs-id1167793299789"><emphasis effect="bold">[T]</emphasis> Use a graphing utility and sketch the graph of <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>6</m:mn><m:mrow><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mi>θ</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793299825"><para id="fs-id1167793299826"><newline/>
-<media id="fs-id1167793299829" alt="A line that crosses the y axis at roughly 3 and has slope roughly 3/2.">
+<!-- Alt text revised by AI (score: 0.4473 -> 0.7734) --><media id="fs-id1167793299829" alt="A polar coordinate plot showing a straight line that passes through the pole (the origin). The line extends through the first and third quadrants at a constant angle.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_11_03_230.jpg"/>
 </media><newline/>
 a line</para>

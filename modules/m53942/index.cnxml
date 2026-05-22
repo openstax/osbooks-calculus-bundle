@@ -333,7 +333,7 @@ The absolute minimum of <emphasis effect="italics">g</emphasis> is <m:math><m:mr
 <problem id="fs-id1167793423552">
 <title>Chapter Opener: Profitable Golf Balls</title>
 <figure id="CNX_Calc_Figure_14_07_014">
-<media id="fs-id1167793423558" alt="A basket full of golf balls.">
+<!-- Alt text revised by AI (score: 0.4434 -> 0.8125) --><media id="fs-id1167793423558" alt="A close-up view of several white golf balls piled together. Some of the balls have the words &quot;DORA RANGE&quot; printed on them in red text.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_07_014.jpg"/>
 </media>
 <caption>(credit: modification of work by oatsy40, Flickr)</caption>
@@ -611,7 +611,7 @@ The absolute minimum of <emphasis effect="italics">g</emphasis> is <m:math><m:mr
 </problem>
 <solution id="fs-id1167794172492">
 <para id="fs-id1167794172494">A saddle point is located at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math><newline/>
-<media id="fs-id1167793589584" alt="A complicated graph that starts near (1, 1, 1), and decreases significantly along the x and y axes, so much so along the y axis that it is cut off. The rest of the graph stays near 0.">
+<!-- Alt text revised by AI (score: 0.5977 -> 0.6758) --><media id="fs-id1167793589584" alt="A 3D surface plot within a bounding box. The surface features a prominent dip that descends from near zero into negative z-values, reaching a minimum of approximately -6. This decrease occurs along a diagonal path relative to the x and y axes. The rest of the surface remains relatively flat, staying close to the z equals 0 plane across the visible range of x and y values from -2 to 2.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_07_201.jpg"/>
 </media></para>
 </solution>
@@ -627,7 +627,7 @@ The absolute minimum of <emphasis effect="italics">g</emphasis> is <m:math><m:mr
 </problem>
 <solution id="fs-id1167793443539">
 <para id="fs-id1167793443541">There is a saddle point at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>π</m:mi><m:mo>,</m:mo><m:mi>π</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> local maxima at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>π</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>π</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> and local minima at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>π</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mtext>and</m:mtext><m:mspace width="0.2em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>π</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math><newline/>
-<media id="fs-id1167793401528" alt="A series of hills and holes alternating through a space with amplitude 1.">
+<!-- Alt text revised by AI (score: 0.4121 -> 0.7773) --><media id="fs-id1167793401528" alt="A 3D surface plot of a periodic function over a square domain where both x and y axes range from -5 to 5. The z-axis represents the function's value, ranging from -1.0 to 1.0. The plot shows an undulating pattern of peaks and valleys across the coordinate plane.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_07_203.jpg"/>
 </media></para>
 </solution>

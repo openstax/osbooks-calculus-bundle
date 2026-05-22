@@ -1027,14 +1027,14 @@ where <m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)<
 <para id="fs-id1169738226544">Draw the derivative for the following graphs.</para>
 <exercise id="fs-id1169738226547">
 <problem id="fs-id1169738226549">
-<media id="fs-id1169738226555" alt="The function begins at (−3, 0.5) and decreases to a local minimum at (−2.3, −2). Then the function increases through (−1.5, 0) and slows its increase through (0, 2). It then slowly increases to a local maximum at (2.3, 6) before decreasing to (3, 3).">
+<!-- Alt text revised by AI (score: 0.5898 -> 0.7539) --><media id="fs-id1169738226555" alt="A graph of a continuous function on the interval from x equals negative 3 to x equals 3. The curve starts at approximately (-3, 1), decreases to a local minimum at (-2, -1.5), and then increases through the x-intercept at roughly (-1, 0) and the y-intercept at (0, 2). It continues increasing to a local maximum at approximately (2.2, 6) before decreasing to end at (3, 3.5).">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_03_09_204.jpg"/>
 </media>
 </problem>
 </exercise>
 <exercise id="fs-id1169738226588">
 <problem id="fs-id1169738226590">
-<media id="fs-id1169738226594" alt="The function decreases linearly from (−1, 4) to the origin, at which point it increases as x2, passing through (1, 1) and (2, 4).">
+<!-- Alt text revised by AI (score: 0.5664 -> 0.6562) --><media id="fs-id1169738226594" alt="A graph of a parabola that is symmetric about the y-axis. The curve passes through the points negative one, four; negative one, one; zero, zero; one, one; and two, four.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_03_09_206.jpg"/>
 </media>
 </problem>

@@ -558,7 +558,7 @@ orientation: left to right</para>
 <para id="fs-id1169293320753"><emphasis effect="bold">[T]</emphasis> <m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="left"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:mi>t</m:mi></m:mrow></m:msup><m:mo>,</m:mo></m:mrow></m:mtd><m:mtd columnalign="left"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mn>2</m:mn><m:mi>t</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1169293223928"><para id="fs-id1169293223929"><newline/>
-<media id="fs-id1169293223932" alt="A curve going through (1, 0) and (0, 3) with arrow pointing up and to the left.">
+<!-- Alt text revised by AI (score: 0.4980 -> 0.7305) --><media id="fs-id1169293223932" alt="A graph of a decreasing curve on a coordinate plane with x and y axes. The curve passes through the point (1, 0) and has a y-intercept at (0, 6). As the x-values increase from -1 to 4, the curve drops sharply from the top and then levels off toward the x-axis.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_11_01_208.jpg"/>
 </media></para>
 </solution>

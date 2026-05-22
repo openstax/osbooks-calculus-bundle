@@ -890,7 +890,7 @@ a. 1; b. 1</para>
 </problem>
 <solution id="fs-id1170571612254">
 <para id="fs-id1170571612256">a.<newline/>
-<media id="fs-id1170571612260" alt="A graph of a function with two curves. The first is in quadrant two and curves asymptotically to infinity along the y axis and to 0 along the x axis as x goes to negative infinity. The second is in quadrant one and curves asymptotically to infinity along the y axis and to 0 along the x axis as x goes to infinity.">
+<!-- Alt text revised by AI (score: 0.4492 -> 0.8320) --><media id="fs-id1170571612260" alt="A graph of a continuous function E(r) plotted against r. The function has a vertical asymptote at r equals 0, where E(r) approaches infinity from both sides. As r approaches positive or negative infinity, the curve asymptotically approaches the horizontal axis (E(r) equals 0). The axes are labeled with r on the horizontal axis and E(r) on the vertical axis, both ranging from -10 to 10.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_02_03_207.jpg"/>
 </media><newline/>
 b. ∞. The magnitude of the electric field as you approach the particle <emphasis effect="italics">q</emphasis> becomes infinite. It does not make physical sense to evaluate negative distance.</para>

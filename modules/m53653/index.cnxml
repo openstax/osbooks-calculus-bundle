@@ -344,7 +344,7 @@ Note that <m:math><m:mrow><m:mtext>cosh</m:mtext><m:mspace width="0.2em"/><m:mi>
 <title>Applications</title>
 <para id="fs-id1167793964561">One physical application of hyperbolic functions involves <term class="no-emphasis" id="term-00001">hanging cables</term>. If a cable of uniform density is suspended between two supports without any load other than its own weight, the cable forms a curve called a <term id="term-00002">catenary</term>. High-voltage power lines, chains hanging between two posts, and strands of a spider’s web all form catenaries. The following figure shows chains hanging from a row of posts.</para>
 <figure id="CNX_Calc_Figure_06_09_003">
-<media id="fs-id1167794003533" alt="An image of chains hanging between posts that all take the shape of a catenary.">
+<!-- Alt text revised by AI (score: 0.3828 -> 0.6992) --><media id="fs-id1167794003533" alt="Black metal chains hang in catenary curves between several posts, forming a perimeter around the circular stone base of a large monument. The scene is set on a red brick pavement.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_06_09_003.jpg"/>
 </media>
 <caption>Chains between these posts take the shape of a catenary. (credit: modification of work by OKFoundryCompany, Flickr)</caption>
@@ -985,7 +985,7 @@ Note that <m:math><m:mrow><m:mtext>cosh</m:mtext><m:mspace width="0.2em"/><m:mi>
 <exercise id="fs-id1167794247619" class="material-set-2">
 <problem id="fs-id1167794247621">
 <para id="fs-id1167794247623">Find the volume of the catenoid <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>cosh</m:mtext><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> from <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn><m:mspace width="0.2em"/><m:mtext>to</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> that is created by rotating this curve around the <m:math><m:mrow><m:mi>x</m:mi><m:mtext>-axis</m:mtext><m:mo>,</m:mo></m:mrow></m:math> as shown here.</para>
-<media id="fs-id1167793590706" alt="This figure is an image of a catenoid. It has been formed by rotating a catenary curve about a vertical axis.">
+<!-- Alt text revised by AI (score: 0.3223 -> 0.4375) --><media id="fs-id1167793590706" alt="A catenoid formed by rotating a catenary curve about a vertical axis. The surface features a blue and magenta color gradient with highlights, set against a dark gray background. Shadows of the object are cast on the surface below.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_06_09_202.jpg"/>
 </media>
 </problem>

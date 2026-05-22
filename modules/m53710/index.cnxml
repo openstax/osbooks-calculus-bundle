@@ -55,7 +55,7 @@
 <problem id="fs-id1170572593590">
 <title>Chapter Opener: Examining the Carrying Capacity of a Deer Population</title>
 <figure id="fs-id1165043380726">
-<media id="fs-id1170571777962" alt="This is a photograph of a deer.">
+<!-- Alt text revised by AI (score: 0.5430 -> 0.7305) --><media id="fs-id1170571777962" alt="A photograph of a small group of several deer standing together in a grassy field at the edge of a dense, wooded area.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_04_008.jpg"/>
 </media>
 <caption>(credit: modification of work by Rachel Kramer, Flickr)</caption>
@@ -196,7 +196,7 @@ This equation is graphed in <link target-id="CNX_Calc_Figure_08_04_005"/>.<newli
 <list id="fs-id1170572596904" list-type="enumerated" number-style="lower-alpha">
 <item><para id="fs-id1167024121600"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>P</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.04</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mi>P</m:mi><m:mrow><m:mn>750</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>200</m:mn></m:mrow></m:math></para></item>
 <item><para id="fs-id1167023779503"><newline/>
-<media id="fs-id1170572455347" alt="A direction field with horizontal lines on the x axis and y = 15. The other lines are vertical, except for those curving into the x axis and y = 15. A solution is drawn that crosses the y axis at about (0, 4) and asymptotically approaches y = 15.">
+<!-- Alt text revised by AI (score: 0.5898 -> 0.6406) --><media id="fs-id1170572455347" alt="A direction field composed of many small, teal line segments representing various slopes across the x and y axes. A red solution curve begins in the lower left, passes through the y-axis at a positive value, and curves upward, becoming increasingly horizontal as it asymptotically approaches a dashed teal horizontal line.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_04_005.jpg"/>
 </media></para>
 </item>
@@ -347,7 +347,7 @@ This equation is graphed in <link target-id="CNX_Calc_Figure_08_04_005"/>.<newli
 <para id="fs-id1170571780641"><emphasis effect="bold">[T]</emphasis> For the preceding problem, use software to generate a directional field for the value <m:math><m:mrow><m:mi>f</m:mi><m:mo>=</m:mo><m:mn>400</m:mn><m:mo>.</m:mo></m:mrow></m:math> What are the stabilities of the equilibria?</para>
 </problem>
 <solution id="fs-id1170572481029"><para id="fs-id1170572481030"><newline/>
-<media id="fs-id1170572342242" alt="A direction field with arrows pointing down and to the right. Around y = 4,000, the arrows are more horizontal. The further the arrows are from this line, the more vertical the arrows become.">
+<!-- Alt text revised by AI (score: 0.5391 -> 0.7852) --><media id="fs-id1170572342242" alt="A direction field with Population on the vertical axis and Time on the horizontal axis. Around a population of 4,000, the arrows are nearly horizontal, pointing slightly downward to the right. For populations significantly above or below 4,000, the arrows become more vertical, pointing downward toward the 4,000 line.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_04_205.jpg"/>
 </media><newline/>
 <m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> semi-stable</para>
@@ -363,10 +363,10 @@ This equation is graphed in <link target-id="CNX_Calc_Figure_08_04_005"/>.<newli
 <para id="fs-id1170572228848"><emphasis effect="bold">[T]</emphasis> For the preceding problems, consider the case where a certain number of fish are added to the pond, or <m:math><m:mrow><m:mi>f</m:mi><m:mo>=</m:mo><m:mn>−200</m:mn><m:mo>.</m:mo></m:mrow></m:math> What are the nonnegative equilibria and their stabilities?</para>
 </problem>
 <solution id="fs-id1170572454229"><para id="fs-id1170572454230"><newline/>
-<media id="fs-id1170571599564" alt="A direction field with arrows pointing up for P &lt; 10,000 and arrows pointing down for P > 10,000.">
+<!-- Alt text revised by AI (score: 0.5859 -> 0.7461) --><media id="fs-id1170571599564" alt="A direction field plotted on a coordinate plane where the horizontal axis is Time (t) from 0 to 1,000 and the vertical axis is Population (P) from 0 to 12,000. All arrows in the field point upward, indicating that the population increases over time across the entire range shown.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_04_207.jpg"/>
 </media><newline/>
-<m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>2</m:mn></m:msub><m:mo>></m:mo><m:mn>0</m:mn></m:mrow></m:math> stable</para>
+<m:math><m:mrow><m:msub><m:mi>P</m:mi><m:mn>2</m:mn></m:msub><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math> stable</para>
 </solution>
 </exercise>
 <para id="fs-id1170572177641">It is more likely that the amount of fishing is governed by the current number of fish present, so instead of a constant number of fish being caught, the rate is proportional to the current number of fish present, with proportionality constant <m:math><m:mrow><m:mi>k</m:mi><m:mo>,</m:mo></m:mrow></m:math> as</para>

@@ -523,7 +523,7 @@ Then, we substitute <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−1</m:
 </problem>
 <solution id="fs-id1167793640051">
 <para id="fs-id1167793640054"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math><newline/>
-<media id="fs-id1167793640064" alt="An alternating series of hills and holes of amplitude 1 across xyz space.">
+<!-- Alt text revised by AI (score: 0.5664 -> 0.7539) --><media id="fs-id1167793640064" alt="A three-dimensional plot showing a periodic, wave-like surface over an xy plane. The z-axis ranges from negative one to one, while both the x and y axes range from negative five to five. The surface consists of alternating peaks and valleys, creating a grid-like pattern of hills and holes.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_08_203.jpg"/>
 </media></para>
 </solution>

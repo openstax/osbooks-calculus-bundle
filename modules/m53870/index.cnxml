@@ -189,7 +189,7 @@
 <title>Relationships between Lines</title>
 <para id="fs-id1163724035950">Given two lines in the two-dimensional plane, the lines are equal, they are parallel but not equal, or they intersect in a single point. In three dimensions, a fourth case is possible. If two lines in space are not parallel, but do not intersect, then the lines are said to be <term id="term-00005">skew lines</term> (<link target-id="CNX_Calc_Figure_12_05_005"/>).</para>
 <figure id="CNX_Calc_Figure_12_05_005">
-<media id="fs-id1163723995404" alt="This figure has two line segments. They are 3-dimensional, are not parallel, and do not intersect. The directions are different and one is above the other.">
+<!-- Alt text revised by AI (score: 0.5586 -> 0.7070) --><media id="fs-id1163723995404" alt="A blue line segment passes through a three-dimensional rectangular prism. The line segment enters near the bottom front edge and exits through the top back edge, traveling diagonally through the volume of the box.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_05_005.jpg"/>
 </media>
 <caption>In three dimensions, it is possible that two lines do not cross, even when they have different directions.</caption>
@@ -512,7 +512,7 @@ The angle between the two planes is <m:math><m:mrow><m:mn>1.27</m:mn></m:mrow></
 <note id="fs-id1163723325367" class="project">
 <title>Distance between Two Skew Lines</title>
 <figure id="CNX_Calc_Figure_12_05_SP">
-<media id="fs-id1163723210024" alt="This figure shows a system of pipes running in different directions in an industrial plant. Two skew pipes are highlighted in red.">
+<!-- Alt text revised by AI (score: 0.5859 -> 0.7266) --><media id="fs-id1163723210024" alt="An illustration of an industrial plant featuring a large vertical column surrounded by a network of pipes and structural beams. Two skew pipes, highlighted in red, run through the structure; they are positioned such that they are neither parallel nor intersecting.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_05_017.jpg"/>
 </media>
 <caption>Industrial pipe installations often feature pipes running in different directions. How can we find the distance between two skew pipes?</caption>
@@ -840,7 +840,7 @@ c.<newline/>
 <solution id="fs-id1163724066384">
 <para id="fs-id1163724066386">a. <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>n</m:mtext></m:mstyle><m:mo>=</m:mo><m:mn>3</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>−</m:mo><m:mn>2</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>4</m:mn><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>k</m:mtext></m:mstyle><m:mo>;</m:mo></m:mrow></m:math> b. <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>;</m:mo></m:mrow></m:math><newline/>
 c.<newline/>
-<media id="fs-id1163724022791" alt="This figure is the 3-dimensional coordinate system represented in a box. It has a tilted parallelogram inside the box representing a plane.">
+<!-- Alt text revised by AI (score: 0.5859 -> 0.6914) --><media id="fs-id1163724022791" alt="A three-dimensional coordinate system bounded by a box with axes ranging from negative ten to ten. A shaded, tilted plane is positioned within the box, passing through various points across the x, y, and z dimensions.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_05_203.jpg"/>
 </media></para>
 </solution>

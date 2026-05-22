@@ -124,7 +124,7 @@
 <problem id="fs-id1165043116556">
 <title>Chapter Opener: A Rocket Launch</title>
 <figure id="fs-id1167793475431">
-<media id="fs-id1165043116561" alt="A photo of a rocket lifting off.">
+<!-- Alt text revised by AI (score: 0.5469 -> 0.8086) --><media id="fs-id1165043116561" alt="A green rocket ascending vertically during liftoff, propelled by a bright flame. A large, dense cloud of white exhaust and smoke billows from the base of the launch, with rugged mountains visible in the background under a clear blue sky.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_04_01_007.jpg"/>
 </media>
 <caption>(credit: modification of work by Steve Jurvetson, Wikimedia Commons)</caption>
@@ -435,7 +435,7 @@
 <exercise id="fs-id1165043092244">
 <problem id="fs-id1165043092246">
 <para id="fs-id1165043092248">A trough has ends shaped like isosceles triangles, with width 3 m and height 4 m, and the trough is 10 m long. Water is being pumped into the trough at a rate of <m:math><m:mrow><m:mn>5</m:mn><m:mspace width="0.2em"/><m:msup><m:mrow><m:mtext>m</m:mtext></m:mrow><m:mn>3</m:mn></m:msup><m:mtext>/min</m:mtext><m:mo>.</m:mo></m:mrow></m:math> At what rate does the height of the water change when the water is 1 m deep?</para>
-<media id="fs-id1165043092271" alt="A trough is shown with ends shaped like isosceles triangles. These triangles have width 3 and height 4. The trough is made up of rectangles that are of length 10. There is some water in the trough.">
+<!-- Alt text revised by AI (score: 0.5430 -> 0.6445) --><media id="fs-id1165043092271" alt="A triangular prism trough with a length of 10. The triangular ends have a width of 3 and a height of 4. A volume of water is shown at the bottom of the trough, reaching a certain depth along the sides.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_04_01_204.jpg"/>
 </media>
 </problem>

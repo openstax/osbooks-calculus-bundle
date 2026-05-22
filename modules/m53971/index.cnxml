@@ -17,7 +17,7 @@
 <title>Center of Mass in Two Dimensions</title>
 <para id="fs-id1167794064730">The center of mass is also known as the center of gravity if the object is in a uniform gravitational field. If the object has uniform density, the center of mass is the geometric center of the object, which is called the centroid. <link target-id="CNX_Calc_Figure_15_06_001"/> shows a point <m:math><m:mi>P</m:mi></m:math> as the center of mass of a lamina. The lamina is perfectly balanced about its center of mass.</para>
 <figure id="CNX_Calc_Figure_15_06_001">
-<media id="fs-id1167794144101" alt="A surface is delicately balanced on a fine point.">
+<!-- Alt text revised by AI (score: 0.4219 -> 0.5664) --><media id="fs-id1167794144101" alt="A blue surface is supported at point P by the tip of a red cone.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_15_06_001.jpg"/>
 </media>
 <caption>A lamina is perfectly balanced on a spindle if the lamina’s center of mass sits on the spindle.</caption>
@@ -737,7 +737,7 @@ c.<newline/>
 </problem>
 <solution id="fs-id1167793571248">
 <para id="fs-id1167793571250">a. <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>9</m:mn><m:mi>π</m:mi></m:mrow><m:mn>8</m:mn></m:mfrac><m:mo>;</m:mo></m:mrow></m:math> b. <m:math><m:mrow><m:msub><m:mi>M</m:mi><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>π</m:mi></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo><m:msub><m:mi>M</m:mi><m:mrow><m:mi>x</m:mi><m:mi>z</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>9</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:msub><m:mi>M</m:mi><m:mrow><m:mi>y</m:mi><m:mi>z</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>9</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>;</m:mo></m:mrow></m:math> c. <m:math><m:mrow><m:mover><m:mi>x</m:mi><m:mtext>−</m:mtext></m:mover><m:mo>=</m:mo><m:mfrac><m:mn>4</m:mn><m:mi>π</m:mi></m:mfrac><m:mo>,</m:mo><m:mover><m:mi>y</m:mi><m:mtext>−</m:mtext></m:mover><m:mo>=</m:mo><m:mfrac><m:mn>4</m:mn><m:mi>π</m:mi></m:mfrac><m:mo>,</m:mo><m:mover><m:mi>z</m:mi><m:mtext>−</m:mtext></m:mover><m:mo>=</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>;</m:mo></m:mrow></m:math> d. the solid <m:math><m:mi>Q</m:mi></m:math> and its center of mass are shown in the following figure.<newline/>
-<media id="fs-id1167793395449" alt="A quarter cylinder in the first quadrant with height 1 and radius 3. A point is marked at (9/(2 pi), 9/(2 pi), 2/3).">
+<!-- Alt text revised by AI (score: 0.5586 -> 0.6133) --><media id="fs-id1167793395449" alt="A quarter cylinder in the first quadrant with height 1 and radius 3. A single point is marked within the volume of the cylinder at a z-coordinate of approximately 0.75.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_15_06_225.jpg"/>
 </media></para>
 </solution>
@@ -762,7 +762,7 @@ c.<newline/>
 </problem>
 <solution id="fs-id1167794171550">
 <para id="fs-id1167794171553">a. <m:math><m:mrow><m:mover><m:mi>x</m:mi><m:mtext>−</m:mtext></m:mover><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:mfrac><m:mo>,</m:mo><m:mover><m:mi>y</m:mi><m:mtext>−</m:mtext></m:mover><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>−</m:mo><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:mfrac><m:mo>,</m:mo><m:mover><m:mi>z</m:mi><m:mtext>−</m:mtext></m:mover><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo></m:mrow></m:math> b. the solid <m:math><m:mi>Q</m:mi></m:math> and its center of mass are shown in the following figure.<newline/>
-<media id="fs-id1167794210517" alt="A wedge from a cylinder in the first quadrant with height 2, radius 1, and angle roughly 45 degrees. A point is marked at (3 times the square root of 2/(2 pi), 3 times (2 minus the square root of 2)/(2 pi), 0).">
+<!-- Alt text revised by AI (score: 0.5977 -> 0.7148) --><media id="fs-id1167794210517" alt="A segment of a cylinder in the first quadrant, with its height along the z-axis ranging from -1 to 1. A black point is located at the coordinates (0.5, 0.5, 0). The x, y, and z axes are labeled with their respective numerical scales.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_15_06_226.jpg"/>
 </media></para>
 </solution>

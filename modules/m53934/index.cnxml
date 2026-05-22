@@ -352,7 +352,7 @@ To calculate <m:math><m:mrow><m:mrow><m:mrow><m:mo>∂</m:mo><m:mi>g</m:mi></m:m
 <equation id="fs-id1167793929398"><m:math><m:mrow><m:msub><m:mi>u</m:mi><m:mi>m</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mtext>−</m:mtext><m:msup><m:mi>π</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>m</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup><m:mi>t</m:mi></m:mrow></m:msup><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>m</m:mi><m:mi>π</m:mi><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></equation>
 <para id="fs-id1167793418189">where <m:math><m:mi>m</m:mi></m:math> is any positive integer. A graph of this solution using <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> appears in <link target-id="CNX_Calc_Figure_14_03_004"/>, where the initial temperature distribution over a wire of length <m:math><m:mn>1</m:mn></m:math> is given by <m:math><m:mrow><m:mi>u</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>π</m:mi><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> Notice that as time progresses, the wire cools off. This is seen because, from left to right, the highest temperature (which occurs in the middle of the wire) decreases and changes color from red to blue.</para>
 <figure id="CNX_Calc_Figure_14_03_004">
-<media id="fs-id1167793448997" alt="A curve in xtu space with a local maximum at (0.5, 0, 12). From this maximum, the values decrease with increasing t and for any value of x.">
+<!-- Alt text revised by AI (score: 0.5352 -> 0.7578) --><media id="fs-id1167793448997" alt="A 3D surface plot of u(x, t). The surface features a peak at approximately x equals 0.5 and t equals 0, with a height of nearly 12. From this maximum, the values of the surface decrease as t increases or as x moves away from 0.5. A color scale on the right maps values from 0.0 to 11.7, transitioning from dark blue to orange.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_03_004.jpg"/>
 </media>
 <caption>Graph of a solution of the heat equation in one dimension over time.</caption>
@@ -444,7 +444,7 @@ Now, we can verify through direct substitution for each equation that the soluti
 </solution>
 </exercise>
 <para id="fs-id1167794292191">For the following exercises, calculate the sign of the partial derivative using the graph of the surface.</para>
-<media id="fs-id1167794292195" alt="A partial paraboloid with vertex at the origin and pointing up.">
+<!-- Alt text revised by AI (score: 0.4766 -> 0.6719) --><media id="fs-id1167794292195" alt="A partial paraboloid with its vertex at the origin, opening upward along the z-axis. The surface is plotted in a 3D Cartesian coordinate system where the x-axis and y-axis both range from -2 to 2, and the z-axis ranges from 0 to approximately 7.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_03_201.jpg"/>
 </media>
 <exercise id="fs-id1167793515295">

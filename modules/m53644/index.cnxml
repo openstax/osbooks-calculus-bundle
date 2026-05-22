@@ -359,7 +359,7 @@
 <exercise id="fs-id1167793265929">
 <problem id="fs-id1167793265932">
 <para id="fs-id1167793265934">Find the surface area of the volume generated when the curve <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> revolves around the <m:math><m:mrow><m:mi>y</m:mi><m:mtext>-axis</m:mtext></m:mrow></m:math> from <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> to <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>9</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
-<media id="fs-id1167793883848" alt="This figure is a surface. It has an elliptical shape to the top, forming a “bowl”.">
+<!-- Alt text revised by AI (score: 0.5508 -> 0.5820) --><media id="fs-id1167793883848" alt="An image of an elliptic paraboloid, which is a smooth surface shaped like a bowl with an elliptical top.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_06_04_202.jpg"/>
 </media>
 </problem>

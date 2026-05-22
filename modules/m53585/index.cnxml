@@ -118,7 +118,7 @@
 <title>Finding the Equation of the Tangent Line to a Curve</title>
 <para id="fs-id1169737143587">Find an equation of the line tangent to the graph of <m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> (<link target-id="CNX_Calc_Figure_03_08_003"/>). This curve is known as the folium (or leaf) of Descartes.</para>
 <figure id="CNX_Calc_Figure_03_08_003">
-<media id="fs-id1169738095567" alt="A folium is shown, which is a line that creates a loop that crosses over itself. In this graph, it crosses over itself at (0, 0). Its tangent line from (3/2, 3/2) is shown.">
+<!-- Alt text revised by AI (score: 0.5898 -> 0.7500) --><media id="fs-id1169738095567" alt="A graph of the folium of Descartes, defined by the equation y cubed plus x cubed minus 3xy equals 0, on a Cartesian coordinate system with labeled x and y axes. The blue curve forms a loop that crosses itself at the origin (0, 0). An orange tangent line is shown passing through the point (3/2, 3/2) on the curve.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_03_08_003.jpg"/>
 </media>
 <caption>Finding the tangent line to the <term class="no-emphasis" id="term-00002">folium of Descartes</term> at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></caption>
@@ -292,7 +292,7 @@
 <exercise id="fs-id1169738221240">
 <problem id="fs-id1169738221242">
 <para id="fs-id1169738221244"><emphasis effect="bold">[T]</emphasis> The graph of a folium of Descartes with equation <m:math><m:mrow><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup><m:mo>−</m:mo><m:mn>9</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> is given in the following graph.</para>
-<media id="fs-id1169737145046" alt="A folium is graphed which has equation 2x3 + 2y3 – 9xy = 0. It crosses over itself at (0, 0).">
+<!-- Alt text revised by AI (score: 0.5742 -> 0.7266) --><media id="fs-id1169737145046" alt="A Cartesian coordinate system with x and y axes scaled from -3 to 3. A blue curve, representing the equation 2x cubed plus 2y cubed minus 9xy equals 0, forms a loop in the first quadrant. The curve crosses itself at the origin (0, 0) and extends into the second and fourth quadrants, appearing as two separate branches that move away from the origin.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_03_08_207.jpg"/>
 </media>
 <list id="fs-id1169737145054" list-type="enumerated" number-style="lower-alpha">

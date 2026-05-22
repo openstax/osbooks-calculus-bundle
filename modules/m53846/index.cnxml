@@ -278,7 +278,7 @@
 </problem>
 <solution id="fs-id1167793979522">
 <para id="fs-id1167793979524"><m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mn>9</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math> This is a vertical hyperbola. Asymptotes <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>±</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math><newline/>
-<media id="fs-id1167794159375" alt="A hyperbola is drawn with equation 4y2 – 9x2 + 16x + 18y – 29 = 0. It has center at (1, −2), and the hyperbolas are open to the top and bottom.">
+<!-- Alt text revised by AI (score: 0.5781 -> 0.6992) --><media id="fs-id1167794159375" alt="A hyperbola with equation 4y squared minus 9x squared plus 16y plus 18x minus 29 equals 0. The graph shows a hyperbola opening upwards and downwards, with two dashed lines representing the asymptotes intersecting at the center.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_11_05_014.jpg"/>
 </media></para>
 </solution>

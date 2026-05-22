@@ -882,7 +882,7 @@ The Bristol Motor Speedway is a NASCAR short track in Bristol, Tennessee. The tr
 <exercise id="fs-id1169737894430">
 <problem id="fs-id1169737894432">
 <para id="fs-id1169737894434">Given <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>t</m:mi><m:mo>−</m:mo><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle><m:mo>,</m:mo></m:mrow></m:math> find the velocity of a particle moving along this curve.</para>
-<media id="fs-id1169737817189" alt="This figure is a curve in the xy plane. The curve begins in the fourth quadrant towards the y-axis, intersects below 0 to the x axis, then bends around to intersect the positive y-axis and increasing through the first quadrant.">
+<!-- Alt text revised by AI (score: 0.5859 -> 0.6133) --><media id="fs-id1169737817189" alt="A curve in the xy plane that begins at the origin (0,0) and opens to the right into the first and fourth quadrants. The upper branch of the curve increases through the first quadrant, while the lower branch decreases through the fourth quadrant.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_13_04_205.jpg"/>
 </media>
 </problem>
@@ -1015,7 +1015,7 @@ The Bristol Motor Speedway is a NASCAR short track in Bristol, Tennessee. The tr
 </problem>
 </exercise>
 <para id="fs-id1169737168118">A projectile is shot in the air from ground level with an initial velocity of 500 m/sec at an angle of 60° with the horizontal. The graph is shown here:</para>
-<media id="fs-id1169737168123" alt="This figure is a curve in the fourth quadrant. The curve is decreasing. It begins at the origin and decreases into the fourth quadrant. Answer the following questions.">
+<!-- Alt text revised by AI (score: 0.4844 -> 0.8008) --><media id="fs-id1169737168123" alt="A graph of a downward-opening parabola in the first quadrant. The x-axis ranges from 0 to over 24,000 with increments labeled every 4,000. The y-axis ranges from 0 to 10,000 with increments labeled every 1,000. The curve starts at the origin (0, 0), increases to a peak near x equals 12,000 and y equals 9,500, and then decreases to cross the x-axis again near x equals 23,000.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_13_04_209.jpg"/>
 </media>
 <exercise id="fs-id1169737270309">

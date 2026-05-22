@@ -465,7 +465,7 @@ Therefore we need to wait an additional <m:math><m:mrow><m:mn>6.12</m:mn></m:mro
 </problem>
 <solution id="fs-id1170573762583">
 <para id="fs-id1170573762585"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>C</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mn>−2</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math><newline/>
-<media id="fs-id1170573762613" alt="A direction field with horizontal arrows pointing to the right at y = 0.5. Above 0.5, the arrows slope down and to the right and are increasingly vertical the further they are from y = 0.5 Below0.5, the arrows slope up and to the right and are increasingly vertical the further they are from y = 0.5.">
+<!-- Alt text revised by AI (score: 0.5898 -> 0.7070) --><media id="fs-id1170573762613" alt="A direction field plotted on a Cartesian coordinate system with x and y axes. A horizontal line of equilibrium exists at y equals 0, where arrows are horizontal and point to the right. Above the x-axis, the arrows slope downward and to the right, becoming increasingly vertical as y increases. Below the x-axis, the arrows slope upward and to the right, becoming increasingly vertical as y decreases.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_03_201.jpg"/>
 </media></para>
 </solution>

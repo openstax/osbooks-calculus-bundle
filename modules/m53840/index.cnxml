@@ -53,7 +53,7 @@
 <solution id="fs-id1167793966078">
 <para id="fs-id1167793970649">The graph of <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> follows.</para>
 <figure id="CNX_Calc_Figure_11_04_003">
-<media id="fs-id1167794201824" alt="A four-petaled rose with furthest extent 3 from the origin at π/4, 3π/4, 5π/4, and 7π/4.">
+<!-- Alt text revised by AI (score: 0.5781 -> 0.8242) --><media id="fs-id1167794201824" alt="A polar coordinate system displaying the graph of the equation r equals 3 sin(2 theta). The graph consists of four loops that extend to a distance of 3 from the origin.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_11_04_003.jpg"/>
 </media>
 <caption>The graph of <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></caption>

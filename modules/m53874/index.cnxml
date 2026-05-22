@@ -56,7 +56,7 @@
 </figure></item>
 <item>In this case, the equation contains all three variables <m:math><m:mrow><m:mo>—</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>—</m:mo></m:mrow></m:math> so none of the variables can vary arbitrarily. The easiest way to visualize this surface is to use a computer graphing utility (see the following figure).<newline/>
 <figure id="CNX_Calc_Figure_12_06_004">
-<media id="fs-id1163724075555" alt="This figure has a surface in the first octant. The cross section of the solid is a parabola.">
+<!-- Alt text revised by AI (score: 0.5820 -> 0.7031) --><media id="fs-id1163724075555" alt="A blue parabolic cylinder oriented along the y-axis. The surface extends along the y-axis, with its cross-sections parallel to the xz-plane being parabolas that open upward along the z-axis.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_006.jpg"/>
 </media>
 </figure></item>
@@ -289,7 +289,7 @@ This is an elliptic paraboloid centered at <m:math><m:mrow><m:mrow><m:mo>(</m:mo
 </problem>
 <solution id="fs-id1163723306338">
 <para id="fs-id1163723306340">The surface is a cylinder with rulings parallel to the <emphasis effect="italics">y</emphasis>-axis.<newline/>
-<media id="fs-id1163723281456" alt="This figure is a surface inside of a box. Its cross section parallel to the x z plane would be a cosine curve. The outside edges of the 3-dimensional box are scaled to represent the 3-dimensional coordinate system.">
+<!-- Alt text revised by AI (score: 0.5781 -> 0.7773) --><media id="fs-id1163723281456" alt="A three-dimensional plot of a surface within a coordinate box. The surface has a periodic wave shape, where cross-sections parallel to the x-y plane are cosine curves. The x-axis ranges from -5 to 5, the y-axis ranges from -2 to 2, and the z-axis ranges from -1.0 to 1.0.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_202.jpg"/>
 </media></para>
 </solution>
@@ -349,7 +349,7 @@ This is an elliptic paraboloid centered at <m:math><m:mrow><m:mrow><m:mo>(</m:mo
 </exercise>
 <exercise id="fs-id1163724119424">
 <problem id="fs-id1163724119426">
-<media id="fs-id1163724119428" alt="This figure is a surface in the 3-dimensional coordinate system. It is a parabolic surface with the x axis through the center.">
+<!-- Alt text revised by AI (score: 0.5508 -> 0.6875) --><media id="fs-id1163724119428" alt="A 3-dimensional coordinate system showing a parabolic surface that opens toward the positive x-axis. The x-axis is the central axis of the surface, with visible markings from 0 to 10. The y and z axes are shown, with scales ranging from -40 to 40.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_06_222.jpg"/>
 </media>
 </problem>
