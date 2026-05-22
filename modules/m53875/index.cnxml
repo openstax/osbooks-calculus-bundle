@@ -414,7 +414,7 @@ The equation describes a sphere centered at point <m:math><m:mrow><m:mrow><m:mo>
 <exercise id="fs-id1163723566663">
 <problem id="fs-id1163723566665">
 <para id="fs-id1163723566667">Which coordinate system is most appropriate for creating a star map, as viewed from Earth (see the following figure)?</para>
-<media id="fs-id1163723566671" alt="This figure is a circle with a star chart in the middle.">
+<!-- Alt text revised by AI (score: 0.5781 -> 0.8125) --><media id="fs-id1163723566671" alt="An all-sky celestial map shown as a circular projection. The cardinal directions are labeled North at the top, South at the bottom, East on the left, and West on the right. Constellation outlines and notable objects are visible against a dark blue background, including Polaris near the center, and labeled stars and planets such as Capella, Algol, Vega, Albireo, Altair, Formalhaut, Mira, Aldebaran, Venus, and Jupiter.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_07_022.jpg"/>
 </media>
 <para id="fs-id1163723566680">How should we orient the coordinate axes?</para>
@@ -684,7 +684,7 @@ The equation describes a sphere centered at point <m:math><m:mrow><m:mrow><m:mo>
 </problem>
 <solution id="fs-id1163724049550">
 <para id="fs-id1163724049552">Sphere of equation <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>z</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> centered at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> with radius <m:math><m:mn>1</m:mn><m:mo>,</m:mo></m:math><newline/>
-<media id="fs-id1163724049621" alt="This figure is a sphere of radius 1 centered in a box. The center of the sphere is the point (0, 0, 1).">
+<!-- Alt text revised by AI (score: 0.5703 -> 0.7109) --><media id="fs-id1163724049621" alt="A three-dimensional coordinate system with x, y, and z axes. A sphere of radius 1 is centered at the point (0, 0, 1), making it tangent to the xy-plane at the origin. The sphere is contained within a rectangular box that extends from -1 to 1 along the x and y axes, and from 0 to 2 along the z axis.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_07_031.jpg"/>
 </media></para>
 </solution>
@@ -1106,7 +1106,7 @@ c.<newline/>
 </problem>
 <solution id="fs-id1163724061028">
 <para id="fs-id1163724061030"><m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>k</m:mi></m:mrow></m:math> trace: <m:math><m:mrow><m:msup><m:mi>k</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> is a circle, <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>k</m:mi></m:mrow></m:math> trace: <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:msup><m:mi>k</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> is a hyperbola (or a pair of lines if <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mi>k</m:mi></m:mrow></m:math> trace: <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:msup><m:mi>k</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> is a hyperbola (or a pair of lines if <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> The surface is a cone.<newline/>
-<media id="fs-id1163724061164" alt="This figure is an elliptical cone on its side. It is inside of a box. The edges of the box represent the x, y, and z axes.">
+<!-- Alt text revised by AI (score: 0.5508 -> 0.6211) --><media id="fs-id1163724061164" alt="An elliptical cone lying on its side, centered at the origin of a three-dimensional coordinate system. The cone's axis is aligned with the x-axis. The x, y, and z axes are shown, with each axis labeled with values ranging from -2 to 2.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_07_218.jpg"/>
 </media></para>
 </solution>

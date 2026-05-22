@@ -457,7 +457,7 @@
 </exercise>
 <exercise id="fs-id1167793941446">
 <problem id="fs-id1167793941448">
-<media id="fs-id1167793941450" alt=" A sector of an annulus D is drawn between theta = 3 pi/4 and theta = 5 pi/4 with inner radius 3 and outer radius 5.">
+<!-- Alt text revised by AI (score: 0.5820 -> 0.6992) --><media id="fs-id1167793941450" alt="A shaded sector of an annulus, labeled D, is bounded by two concentric circles with radii 3 and 5. The sector is located between the lines y equals x and y equals negative x, spanning the angular interval from theta equals three pi divided by four to theta equals five pi divided by four.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_15_03_204.jpg"/>
 </media>
 </problem>
@@ -650,7 +650,7 @@
 <exercise id="fs-id1167793633950">
 <problem id="fs-id1167793633952">
 <para id="fs-id1167793633954">Determine the average value of the function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> over the region <m:math><m:mi>D</m:mi></m:math> bounded by the polar curve <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.2em"/><m:mn>2</m:mn><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> (see the following graph).</para>
-<media id="fs-id1167791545028" alt="The first/fourth-quadrant petal of the four-petal rose given by r = cos (2 theta) is shown.">
+<!-- Alt text revised by AI (score: 0.5430 -> 0.7109) --><media id="fs-id1167791545028" alt="A polar plot of a four-petal rose defined by r = cos(2 theta). The shaded region labeled D represents a single petal that spans across the first and fourth quadrants, centered on the positive x-axis.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_15_03_208.jpg"/>
 </media>
 </problem>
@@ -658,7 +658,7 @@
 <exercise id="fs-id1167791545055">
 <problem id="fs-id1167791545057">
 <para id="fs-id1167791545059">Determine the average value of the function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math> over the region <m:math><m:mi>D</m:mi></m:math> bounded by the polar curve <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mn>2</m:mn><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> (see the following graph).</para>
-<media id="fs-id1167793451034" alt="The first-quadrant petal of the four-petal rose given by r = 3sin (2 theta) is shown.">
+<!-- Alt text revised by AI (score: 0.5078 -> 0.6211) --><media id="fs-id1167793451034" alt="The first-quadrant petal of a four-petal rose curve defined by r equals 3 sin (2 theta) is shown, with the shaded region D representing the area enclosed within this petal.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_15_03_209.jpg"/>
 </media>
 </problem>

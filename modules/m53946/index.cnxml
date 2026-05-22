@@ -707,7 +707,7 @@ Since the radicand cannot be negative, this implies <m:math><m:mrow><m:mn>2</m:m
 <para id="fs-id1167793886686"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793957308"><para id="fs-id1167793957309"><newline/>
-<media id="fs-id1167793957313" alt="An upward facing, gently increasing paraboloid.">
+<!-- Alt text revised by AI (score: 0.4023 -> 0.7188) --><media id="fs-id1167793957313" alt="A 3D plot of an upward-facing, gently increasing paraboloid surface. The surface is plotted on x, y, and z axes, where x ranges from negative 100 to 100, y ranges from negative 50 to 50, and z ranges from 0 to 100.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_204.jpg"/>
 </media></para>
 </solution>
@@ -722,7 +722,7 @@ Since the radicand cannot be negative, this implies <m:math><m:mrow><m:mn>2</m:m
 <para id="fs-id1167793432483">Use technology to graph <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793393720"><para id="fs-id1167793393721"><newline/>
-<media id="fs-id1167793393726" alt="A twisted plane with corners at (1, –1, –1), (–1, –1, –1), (–1, 1, 0.5), and (1, 1, 0.5).">
+<!-- Alt text revised by AI (score: 0.5117 -> 0.7852) --><media id="fs-id1167793393726" alt="A 3D plot of a curved surface, likely a hyperbolic paraboloid, within a coordinate system. The surface is bounded by corners at (1, -1, -1), (-1, -1, -1), (-1, 1, 0.5), and (1, 1, 0.5). The axes are labeled with values ranging from -1.0 to 1.0.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_206.jpg"/>
 </media></para>
 </solution>
@@ -738,7 +738,7 @@ Since the radicand cannot be negative, this implies <m:math><m:mrow><m:mn>2</m:m
 <para id="fs-id1167793957976"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793468451"><para id="fs-id1167793468452"><newline/>
-<media id="fs-id1167793468455" alt="A downward facing, gently decreasing paraboloid.">
+<!-- Alt text revised by AI (score: 0.3926 -> 0.7578) --><media id="fs-id1167793468455" alt="A 3D plot of a downward-facing paraboloid over a rectangular domain where x and y both range from -4 to 4. The z-axis shows values ranging from -4 up to 2. The surface is centered at the origin and decreases in height as it moves away from the center along both the x and y axes.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_208.jpg"/>
 </media></para>
 </solution>
@@ -753,7 +753,7 @@ Since the radicand cannot be negative, this implies <m:math><m:mrow><m:mn>2</m:m
 <para id="fs-id1167793556986"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793603803"><para id="fs-id1167793603804"><newline/>
-<media id="fs-id1167793603807" alt="A hemisphere in the center with edges then swooping up at the four corners.">
+<!-- Alt text revised by AI (score: 0.2773 -> 0.7539) --><media id="fs-id1167793603807" alt="A 3D mathematical plot of a surface over a rectangular domain. A central, rounded dome-like shape rises from the origin and smooths into four peaks at the corners of the plot. The vertical z-axis is labeled with values ranging from negative one point zero to one point zero, while the x and y axes are labeled with integer values from negative one to one.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_14_01_210.jpg"/>
 </media></para>
 </solution>

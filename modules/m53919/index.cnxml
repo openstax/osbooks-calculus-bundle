@@ -330,7 +330,7 @@ Furthermore, the principal unit normal vector points toward the center of the ci
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_13_03_005.jpg"/>
 </media></item>
 <item>This function looks like this:<newline/>
-<media id="fs-id1169737295912" alt="This figure is a curve in 3 dimensions. It is inside of a box. The box represents the first octant. The curve starts at the bottom right of the box and curves through the box in a parabolic curve to the top.">
+<!-- Alt text revised by AI (score: 0.5977 -> 0.8320) --><media id="fs-id1169737295912" alt="A three-dimensional coordinate system with x, y, and z axes showing a space curve. The vector equation for the curve is r(t) equals (6t plus 2)i plus 5t squared j minus 8t k. The curve is shown passing through a rectangular prism.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_13_03_011.jpg"/>
 </media><newline/>
 To find the principal unit normal vector, we first find the unit tangent vector <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>T</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mtext>:</m:mtext></m:mrow></m:math><newline/>
@@ -629,7 +629,7 @@ Last, since <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mt
 </exercise>
 <exercise id="fs-id1169737538390">
 <problem id="fs-id1169737538392"><para id="fs-id1169737538393">Find the curvature of the curve <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>r</m:mtext></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mspace width="0.1em"/><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>i</m:mtext></m:mstyle><m:mo>+</m:mo><m:mn>4</m:mn><m:mspace width="0.1em"/><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>t</m:mi><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>j</m:mtext></m:mstyle></m:mrow></m:math> at <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mi>π</m:mi><m:mtext>/</m:mtext><m:mn>3</m:mn></m:mrow><m:mo>.</m:mo></m:mrow></m:math> (<emphasis effect="italics">Note:</emphasis> The graph is an ellipse.)</para>
-<media id="fs-id1169737293994" alt="This figure is the graph of an ellipse. The ellipse is oval along the x-axis. It is centered at the origin and intersects the y-axis at -4 and 4.">
+<!-- Alt text revised by AI (score: 0.5781 -> 0.8164) --><media id="fs-id1169737293994" alt="A graph of a circle centered at the origin. The circle intersects the y-axis at 4 and -4, and it intersects the x-axis at 4 and -4.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_13_03_209.jpg"/>
 </media>
 </problem>

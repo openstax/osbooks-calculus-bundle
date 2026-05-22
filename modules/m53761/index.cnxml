@@ -674,7 +674,7 @@ The approximation appears to stabilize quickly near both <m:math><m:mrow><m:mi>x
 </problem>
 <solution id="fs-id1170571715443">
 <para id="fs-id1170571715445"><newline/>
-<media id="fs-id1170571715448" alt="This figure is the graph of the partial sums of (-1)^n times x^(2n+1) divided by (2n+1)! For n=3,5,10. The curves approximate the sine curve close to the origin and then separate as the curves move away from the origin.">
+<!-- Alt text revised by AI (score: 0.4043 -> 0.5508) --><media id="fs-id1170571715448" alt="A graph showing three curves representing the partial sums of the power series for sine, where the terms are (-1) raised to the n, multiplied by x to the power of (2n + 1), all divided by (2n + 1) factorial. The curves correspond to n = 1, n = 3, and n = 5. All three curves follow the sine function through the center of the graph but diverge significantly as they move toward x = -6 and x = 6.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_10_01_205.jpg"/>
 </media><newline/>
 The polynomial curves have roots close to those of <m:math><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi></m:mrow></m:math> up to their degree and then the polynomials diverge from <m:math><m:mrow><m:mtext>sin</m:mtext><m:mspace width="0.1em"/><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>

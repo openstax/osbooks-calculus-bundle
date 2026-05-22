@@ -664,7 +664,7 @@ The number <m:math><m:mrow><m:mi>ϕ</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m
 </problem>
 <solution id="fs-id1169739094705">
 <para id="fs-id1169739094707">Terms oscillate above and below <m:math><m:mrow><m:mn>5</m:mn><m:mtext>/</m:mtext><m:mn>3</m:mn></m:mrow></m:math> and appear to converge to <m:math><m:mrow><m:mn>5</m:mn><m:mtext>/</m:mtext><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math><newline/>
-<media id="fs-id1169739094732" alt="This is a graph of an oscillating sequence. Terms oscillate above and below 5/3 and seem to converge to 5/3.">
+<!-- Alt text revised by AI (score: 0.4902 -> 0.7109) --><media id="fs-id1169739094732" alt="A line graph plotted on an x-y coordinate system where the x-axis ranges from 0 to 25 and the y-axis ranges from 1 to 2. The graph shows a sequence of points connected by lines that oscillate with decreasing amplitude between approximately 1.5 and 2. After the x-value of 10, the graph becomes a horizontal line at a constant y-value of approximately 1.67.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_09_01_203.jpg"/>
 </media></para>
 </solution>
@@ -680,7 +680,7 @@ The number <m:math><m:mrow><m:mi>ϕ</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m
 </problem>
 <solution id="fs-id1169736644208">
 <para id="fs-id1169736644210">Terms oscillate above and below <m:math><m:mrow><m:mi>y</m:mi><m:mo>≈</m:mo><m:mn>1.57</m:mn><m:mo>...</m:mo></m:mrow></m:math> and appear to converge to a limit.<newline/>
-<media id="fs-id1169736644226" alt="This is a graph of the oscillating sequence. Terms oscillate above and below y = 1.57 and seem to converse to 1.57.">
+<!-- Alt text revised by AI (score: 0.5039 -> 0.5977) --><media id="fs-id1169736644226" alt="This is a graph of the oscillating sequence. Terms oscillate above and below y = 1.57 and seem to converge to 1.57.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_09_01_205.jpg"/>
 </media></para>
 </solution>

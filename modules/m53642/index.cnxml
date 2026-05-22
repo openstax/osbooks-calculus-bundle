@@ -765,7 +765,7 @@
 <exercise id="fs-id1167793514600" class="material-set-2">
 <problem id="fs-id1167793514602">
 <para id="fs-id1167793514605">A better approximation of the volume of a football is given by the solid that comes from rotating <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mspace width="0.2em"/><m:mi>x</m:mi></m:mrow></m:math> around the <emphasis effect="italics">x</emphasis>-axis from <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> to <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:mo>.</m:mo></m:mrow></m:math> What is the volume of this football approximation, as seen here?</para>
-<media id="fs-id1167793414102" alt="This figure has a 3-dimensional oval shape. It is inside of a box parallel to the x axis on the bottom front edge of the box. The y-axis is vertical to the solid.">
+<!-- Alt text revised by AI (score: 0.5312 -> 0.6172) --><media id="fs-id1167793414102" alt="A three-dimensional solid with a smooth, rounded surface similar to an ellipsoid or a spindle, contained within a rectangular bounding box. The x-axis ranges from 0 to approximately 3.5, the y-axis ranges from -1.0 to 1.0, and the vertical z-axis ranges from -1.0 to 1.0. A dashed line representing depth is visible on the front face of the solid along the y-axis.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_06_02_244.jpg"/>
 </media>
 </problem>
@@ -811,13 +811,13 @@
 </media>
 </problem>
 <solution id="fs-id1167793544880">
-<para id="fs-id1167793544882"><m:math><m:mi>V</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi mathvariant="normal">&#x3C0;</m:mi></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>(</m:mo><m:mn>2</m:mn><m:mi>r</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>)</m:mo><m:msup><m:mfenced><m:mrow><m:mi>r</m:mi><m:mo>-</m:mo><m:mi>h</m:mi></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:math> units<sup>3</sup></para>
+<para id="fs-id1167793544882"><m:math><m:mi>V</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi mathvariant="normal">π</m:mi></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>(</m:mo><m:mn>2</m:mn><m:mi>r</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>)</m:mo><m:msup><m:mfenced><m:mrow><m:mi>r</m:mi><m:mo>-</m:mo><m:mi>h</m:mi></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:math> units<sup>3</sup></para>
 </solution>
 </exercise>
 <exercise id="fs-id1167793489568">
 <problem id="fs-id1167793489570">
 <para id="fs-id1167793564070">Find the volume of a spherical cap of height <m:math><m:mi>h</m:mi></m:math> and radius <m:math><m:mi>r</m:mi></m:math> where <m:math><m:mrow><m:mi>h</m:mi><m:mo>&lt;</m:mo><m:mi>r</m:mi><m:mo>,</m:mo></m:mrow></m:math> as seen here.</para>
-<media id="fs-id1167793366598" alt="This figure a portion of a sphere. This spherical cap has radius “r” and height “h”.">
+<!-- Alt text revised by AI (score: 0.5664 -> 0.6641) --><media id="fs-id1167793366598" alt="A geometric diagram of a spherical cap. A vertical line segment represents height h, extending from the center of a dashed horizontal line to the top of the sphere. A horizontal line segment represents radius r, extending from the center of the dashed line to the right edge. The dashed line indicates the circular base of the cap.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_06_02_248.jpg"/>
 </media>
 </problem>

@@ -371,14 +371,14 @@
 <para id="fs-id1169738189180">For the following exercises, use the graph of <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> to sketch the graph of its derivative <m:math><m:mrow><m:msup><m:mi>f</m:mi><m:mo>′</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
 <exercise id="fs-id1169738189221">
 <problem id="fs-id1169738189223">
-<media id="fs-id1169738189229" alt="The function f(x) starts at (−2, 20) and decreases to pass through the origin and achieve a local minimum at roughly (0.5, −1). Then, it increases and passes through (1, 0) and achieves a local maximum at (2.25, 2) before decreasing again through (3, 0) to (4, −20).">
+<!-- Alt text revised by AI (score: 0.5742 -> 0.7109) --><media id="fs-id1169738189229" alt="A graph of a continuous function. The function begins at approximately (-1.5, 20), decreases through the origin to a local minimum near x = 1, then increases to a local maximum near x = 2. After this peak, the function decreases again, passing through approximately (3, -1) and continuing downward toward (4.5, -20).">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_03_02_201.jpg"/>
 </media>
 </problem>
 </exercise>
 <exercise id="fs-id1169738189260">
 <problem id="fs-id1169738189262">
-<media id="fs-id1169738189268" alt="The function f(x) starts at (−1.5, 20) and decreases to pass through (0, 10), where it appears to have a derivative of 0. Then it further decreases, passing through (1.7, 0) and achieving a minimum at (3, −17), at which point it increases rapidly through (3.8, 0) to (4, 20).">
+<!-- Alt text revised by AI (score: 0.5469 -> 0.7383) --><media id="fs-id1169738189268" alt="A graph of a continuous function on the x-axis from approximately -1 to 4.5. The function decreases from near y equals 20, reaches a local maximum at approximately x equals 0, y equals 10, and then decreases through an x-intercept near x equals 1.5. It reaches a local minimum near x equals 3, y equals -17, before increasing sharply through another x-intercept near x equals 3.8 toward y equals 20.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_03_02_203.jpg"/>
 </media>
 </problem>
@@ -391,14 +391,14 @@
 </exercise>
 <exercise id="fs-id1169737927619">
 <problem id="fs-id1169737927621">
-<media id="fs-id1169737927627" alt="The function f(x) starts at (−2.25, −20) and increases rapidly to pass through (−2, 0) before achieving a local maximum at (−1.4, 8). Then the function decreases to the origin. The graph is symmetric about the y-axis, so the graph increases to (1.4, 8) before decreasing through (2, 0) and heading on down to (2.25, −20).">
+<!-- Alt text revised by AI (score: 0.5898 -> 0.7656) --><media id="fs-id1169737927627" alt="A graph of a continuous function that is symmetric about the y-axis. The curve passes through the origin, which is a local minimum. From the origin, the graph increases to a local maximum on both sides before decreasing toward negative infinity. The graph has x-intercepts at approximately -2 and 2, and y-intercept at 0.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_03_02_205.jpg"/>
 </media>
 </problem>
 </exercise>
 <exercise id="fs-id1169737927662">
 <problem id="fs-id1169737927664">
-<media id="fs-id1169737927670" alt="The function f(x) starts at (−3, −1) and increases to pass through (−1.5, 0) and achieve a local minimum at (1, 0). Then, it decreases and passes through (1.5, 0) and continues decreasing to (3, −1).">
+<!-- Alt text revised by AI (score: 0.5273 -> 0.6992) --><media id="fs-id1169737927670" alt="A graph of a function that begins at the point negative three, negative one. The curve increases, passing through the x-intercept negative two, zero, reaches a local maximum at the point zero, one, and then decreases, passing through the x-intercept two, zero, before ending at the point three, negative one.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_03_02_207.jpg"/>
 </media>
 </problem>
@@ -782,10 +782,10 @@ b. <m:math><m:mrow><m:munder><m:mrow><m:mtext>lim</m:mtext></m:mrow><m:mrow><m:m
 </problem>
 <solution id="fs-id1169737922910">
 <para id="fs-id1169737922912"><m:math><m:mrow><m:msup><m:mi>G</m:mi><m:mo>′</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2.858</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>0.0857</m:mn></m:mrow></m:math><newline/>
-<media id="fs-id1169737922941" alt="This graph has the points (0, 0), (1, 2), (2, 4), (3, 13), (4, 25), and (5, 32). There is a quadratic line fit to the points with y intercept near 0.">
+<!-- Alt text revised by AI (score: 0.5859 -> 0.7891) --><media id="fs-id1169737922941" alt="A graph of an exponential function G(t) plotted against time t. The vertical y-axis ranges from -10 to 40, and the horizontal t-axis ranges from 0 to 5. Several data points are shown, including approximately (0, 0), (1, 2), (2, 4), (3, 13), (4, 25), and (5, 32). A smooth curve represents the function G(t) passing through or near these points, showing rapid upward growth as t increases.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_03_02_229.jpg"/>
 </media><newline/>
-<media id="fs-id1169737922955" alt="This graph has a straight line with y intercept near 0 and slope slightly less than 3.">
+<!-- Alt text revised by AI (score: 0.5898 -> 0.8438) --><media id="fs-id1169737922955" alt="A graph of the function G prime of t, with the vertical axis labeled y and the horizontal axis labeled t. The graph is a straight line passing through the origin (0,0) with a slope of 3. The y-axis shows values from 0 to 15, and the t-axis shows values from 0 to 5.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_03_02_230.jpg"/>
 </media></para>
 </solution>

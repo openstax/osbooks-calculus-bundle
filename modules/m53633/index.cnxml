@@ -140,7 +140,7 @@
 <problem id="fs-id1170572420104">
 <title>Chapter Opener: Iceboats</title>
 <figure id="CNX_Calc_Figure_05_04_005">
-<media id="fs-id1170572108871" alt="An image of an iceboat in action.">
+<!-- Alt text revised by AI (score: 0.4922 -> 0.6875) --><media id="fs-id1170572108871" alt="A DN-class iceboat, number 5499 US, sailing across a frozen lake with a dense forest of coniferous trees in the background under a clear blue sky.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_05_01_018.jpg"/>
 </media>
 <caption>(credit: modification of work by Carter Brown, Flickr)</caption>
@@ -1108,7 +1108,7 @@ The total distance is <m:math><m:mrow><m:mi>d</m:mi><m:mo stretchy="false">(</m:
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_05_04_203.jpg"/>
 </media><newline/>
 b. Between 600 and 1000 the average decrease in vehicles per hour per lane is −0.0075. Between 1000 and 1500 it is −0.006 per vehicles per hour per lane, and between 1500 and 2100 it is −0.04 vehicles per hour per lane. c.<newline/>
-<media id="fs-id1170572129760" alt="A graph of given data, showing that minutes per mile increases dramatically as wehicles per hour reaches 2000.">
+<!-- Alt text revised by AI (score: 0.4727 -> 0.7930) --><media id="fs-id1170572129760" alt="A scatter plot with a line connecting the data points on a coordinate plane. The x-axis is labeled x and ranges from 0 to 2200 in increments of 400, with marked values at 600, 1000, 1400, 1800, and 2200. The y-axis is labeled y and ranges from 0 to 2 in increments of 0.1. The points show a relationship where the y-value increases at an accelerating rate as the x-value increases.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_05_04_204.jpg"/>
 </media><newline/>
 The graph is nonlinear, with minutes per mile increasing dramatically as vehicles per hour per lane reach 2000.</para>
@@ -1162,7 +1162,7 @@ The graph is nonlinear, with minutes per mile increasing dramatically as vehicle
 <exercise id="fs-id1170572330192">
 <problem id="fs-id1170572330194">
 <para id="fs-id1170572330196"><emphasis effect="bold">[T]</emphasis> The graph below plots the quadratic <m:math><m:mrow><m:mi>p</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6.48</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>80.3</m:mn></m:mrow><m:mspace width="0.2em"/><m:mrow><m:mn>1</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>585.69</m:mn></m:mrow></m:math> against the data in preceding table, normalized so that <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> corresponds to 1963. Estimate the average number of bald eagles per year present for the 37 years by computing the average value of <emphasis effect="italics">p</emphasis> over <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>37</m:mn></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
-<media id="fs-id1170572330276" alt="A graph of the data and a quadratic function that closely approximates it.">
+<!-- Alt text revised by AI (score: 0.4902 -> 0.7461) --><media id="fs-id1170572330276" alt="A graph showing a quadratic function passing through several plotted points. The labeled coordinates are (0, 487), (11, 791), (18, 1188), (23, 1875), (29, 3749), (33, 5094), and (37, 6471). The x-axis ranges from 0 to 40 and the y-axis ranges from 0 to 7000.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_05_04_205.jpg"/>
 </media>
 </problem>
@@ -1170,7 +1170,7 @@ The graph is nonlinear, with minutes per mile increasing dramatically as vehicle
 <exercise id="fs-id1170572129132">
 <problem id="fs-id1170572129134">
 <para id="fs-id1170572129136"><emphasis effect="bold">[T]</emphasis> The graph below plots the cubic <m:math><m:mrow><m:mi>p</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.07</m:mn><m:msup><m:mi>t</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>2.42</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>25.63</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>521.23</m:mn></m:mrow></m:math> against the data in the preceding table, normalized so that <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> corresponds to 1963. Estimate the average number of bald eagles per year present for the 37 years by computing the average value of <emphasis effect="italics">p</emphasis> over <m:math><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>37</m:mn></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
-<media id="fs-id1170572223539" alt="A graph of the data and a cubic function that closely approximates it.">
+<!-- Alt text revised by AI (score: 0.5430 -> 0.7227) --><media id="fs-id1170572223539" alt="A graph showing a cubic function that approximates a set of data points. The x-axis ranges from 0 to 40 and the y-axis ranges from 0 to 7000. The specific data points shown are: (0, 487), (11, 791), (18, 1188), (23, 1875), (29, 3749), (33, 5094), and (37, 6471).">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_05_04_206.jpg"/>
 </media>
 </problem>
@@ -1212,7 +1212,7 @@ The graph is nonlinear, with minutes per mile increasing dramatically as vehicle
 </tbody>
 </tgroup>
 </table>
-<media id="fs-id1170571547400" alt="A graph of the data and a curve meant to approximate it.">
+<!-- Alt text revised by AI (score: 0.4688 -> 0.7852) --><media id="fs-id1170571547400" alt="A graph showing four data points: (0, 50), (1, 40), (2, 50), and (3, 60). A smooth quadratic curve passes through the points, following a parabolic shape that dips at x equals 1.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_05_04_207.jpg"/>
 </media>
 </problem>
@@ -1279,13 +1279,13 @@ The graph is nonlinear, with minutes per mile increasing dramatically as vehicle
 <exercise id="fs-id1170572582602">
 <problem id="fs-id1170572582604">
 <para id="fs-id1170572582606"><emphasis effect="bold">[T]</emphasis> The accompanying graph plots the best quadratic fit, <m:math><m:mrow><m:mi>a</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>−0.70</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1.44</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>10.44</m:mn><m:mo>,</m:mo></m:mrow></m:math> to the data from the preceding table. Compute the average value of <m:math><m:mrow><m:mi>a</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> to estimate the average acceleration between <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>.</m:mo></m:mrow></m:math></para>
-<media id="fs-id1170572351508" alt="A graph of the data and a curve that closely approximates the data.">
+<!-- Alt text revised by AI (score: 0.5430 -> 0.7461) --><media id="fs-id1170572351508" alt="A graph with y-axis and x-axis showing a downward curve passing through several data points: (1, 11.2), (2, 10.6), (3, 8.1), (4, 5.4), and (5, 0).">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_05_04_208.jpg"/>
 </media>
 </problem>
 <solution id="fs-id1170572351520">
 <para id="fs-id1170572351522">Average acceleration is <m:math><m:mrow>
-<m:mo>&#8722;</m:mo>
+<m:mo>−</m:mo>
 <m:mfrac><m:mrow><m:mn>0.7</m:mn></m:mrow>
 <m:mrow><m:mn>3</m:mn></m:mrow>
 </m:mfrac>
@@ -1427,7 +1427,7 @@ The graph is nonlinear, with minutes per mile increasing dramatically as vehicle
 </tbody>
 </tgroup>
 </table>
-<media id="fs-id1170572503243" alt="A map of the data and a curve meant to approximate the data.">
+<!-- Alt text revised by AI (score: 0.4238 -> 0.7734) --><media id="fs-id1170572503243" alt="A scatter plot of five data points with an approximating curve. The points are labeled with their coordinates: (0, 3), (3, 28), (6, 20), (9, 30), and (12, 45). The y-axis ranges from 0 to 50, and the x-axis ranges from 0 to 12.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_05_04_209.jpg"/>
 </media>
 </problem>
@@ -1470,7 +1470,7 @@ The graph is nonlinear, with minutes per mile increasing dramatically as vehicle
 </tbody>
 </tgroup>
 </table>
-<media id="fs-id1170571814022" alt="A graph of the data and a line to approximate the data.">
+<!-- Alt text revised by AI (score: 0.4863 -> 0.7852) --><media id="fs-id1170571814022" alt="A scatter plot showing five data points: (0, 5), (10, 4.8), (20, 3.6), (30, 3), and (40, 2.5). A solid straight line passes through the points, representing a negative linear trend that decreases as x increases.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_05_04_210.jpg"/>
 </media>
 </problem>

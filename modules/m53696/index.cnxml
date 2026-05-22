@@ -10,7 +10,7 @@
 
 <content>
 <figure id="CNX_BMath_Figure_08_00_001" class="splash">
-<media id="fs-id1170571454128" alt="This is a photograph of a deer.">
+<!-- Alt text revised by AI (score: 0.5430 -> 0.7695) --><media id="fs-id1170571454128" alt="A photograph of several deer standing in a grassy foreground with a dense, wooded area of bare trees in the background.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_08_00_001.jpg"/>
 </media>
 <caption>The white-tailed deer (<emphasis effect="italics">Odocoileus virginianus</emphasis>) of the eastern United States. Differential equations can be used to study animal populations. (credit: modification of work by Rachel Kramer, Flickr)</caption>

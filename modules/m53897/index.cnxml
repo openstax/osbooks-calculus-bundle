@@ -139,7 +139,7 @@
 </figure>
 <para id="fs-id1163723763564">You can also have circles that are interconnected but have no points in common, as in <link target-id="CNX_Calc_Figure_12_02_014"/>.</para>
 <figure id="CNX_Calc_Figure_12_02_014">
-<media id="fs-id1163723904719" alt="This figure is the 3-dimensional coordinate system. There are two cirlces drawn. The first circle is centered around the z-axis, at z = 1. The second circle has the positive x-axis as its diameter. It intersects the x-axis at x = 0 and x = 6. It is vertical.">
+<!-- Alt text revised by AI (score: 0.5938 -> 0.6367) --><media id="fs-id1163723904719" alt="A three-dimensional coordinate system showing two circles. An orange circle is centered at the origin and lies in the x-y plane. A blue vertical circle is centered on the x-axis with a radius of 6, passing through the origin and the point x = 12.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_02_014.jpg"/>
 </media>
 <caption>These circles are interconnected, but have no points in common.</caption>
@@ -298,7 +298,7 @@
 <solution id="fs-id1163723659585">
 <para id="fs-id1163723659587">We must have either <m:math><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> or <m:math><m:mrow><m:mi>z</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> so the set of points forms the two planes <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> (<link target-id="CNX_Calc_Figure_12_02_017"/>).<newline/>
 <figure id="CNX_Calc_Figure_12_02_017">
-<media id="fs-id1163723283245" alt="This figure is the 3-dimensional coordinate system. It has two intersecting planes drawn. The first is the x y-plane. The second is the y z-plane. They are perpendicular to each other.">
+<!-- Alt text revised by AI (score: 0.5664 -> 0.7188) --><media id="fs-id1163723283245" alt="A three-dimensional coordinate system with three intersecting axes: x, y, and z. A teal plane representing the xz-plane intersects a vertical orange plane representing the yz-plane. The x-axis shows numerical labels 8 and 6, and the y-axis shows numerical labels 6 and 8.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_02_017.jpg"/>
 </media>
 <caption>The set of points satisfying <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>z</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> forms the two planes <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math></caption>
@@ -313,7 +313,7 @@
 </problem>
 <solution id="fs-id1163723757783">
 <para id="fs-id1163723757785">The set of points forms the two planes <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math><newline/>
-<media id="fs-id1163723288875" alt="This figure is the 3-dimensional coordinate system. It has two intersecting planes drawn. The first is the x z-plane. The second is parallel to the y z-plane at the value of z = 3. They are perpendicular to each other.">
+<!-- Alt text revised by AI (score: 0.5898 -> 0.6953) --><media id="fs-id1163723288875" alt="A three-dimensional coordinate system with x, y, and z axes including scale markings. A blue plane represents the x-y plane where z equals 0. An orange plane is parallel to the y-z plane at a value of x approximately equal to 4. The two planes intersect perpendicularly.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_02_018.jpg"/>
 </media></para>
 </solution>
@@ -962,7 +962,7 @@
 Express the answers using standard unit vectors.</item>
 </list>
 <figure id="CNX_Calc_Figure_12_02_030">
-<media id="fs-id1163724035859" alt="This figure shows a disco ball suspended from a ceiling.">
+<!-- Alt text revised by AI (score: 0.5234 -> 0.6328) --><media id="fs-id1163724035859" alt="A disco ball hangs from a dark ceiling, its surface covered in small square mirror tiles. The tiles reflect bright white light on the upper left side and warm yellow light on the lower right side, creating a high-contrast, glowing effect against the dark background.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_12_02_030.jpg"/>
 </media>
 <caption>(credit: modification of work by Kenneth Lu, Flickr)</caption>

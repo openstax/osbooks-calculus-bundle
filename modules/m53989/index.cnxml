@@ -415,7 +415,7 @@
 <para id="fs-id1167793953353">Sketch vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>G</m:mtext></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mi>z</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>〈</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mfrac><m:mi>z</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>〉</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1167793952375"><para id="fs-id1167793952376"><newline/>
-<media id="fs-id1167793952379" alt="A visual representation of the given vector field in three dimensions. The x and z components are always 2 and 1, respectively. The y component is z/2. The closer z comes to zero, the smaller the y component is, and the further away z is from zero, the larger the y component is.">
+<!-- Alt text revised by AI (score: 0.5820 -> 0.8125) --><media id="fs-id1167793952379" alt="A three-dimensional coordinate system with x, y, and z axes. A transparent blue cube is centered at the origin. Within the cube, numerous black arrows represent a vector field. All arrows point in a similar direction toward the upper right, indicating consistent x and z components, while their vertical tilt varies based on the z value.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_010.jpg"/>
 </media></para>
 </solution>
@@ -438,7 +438,7 @@
 <para id="fs-id1167793268303">This is an example of a radial vector field in <m:math><m:mrow><m:msup><m:mo>ℝ</m:mo><m:mn>3</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></para>
 <para id="fs-id1167793409039"><link target-id="CNX_Calc_Figure_16_01_009"/> shows what this gravitational field looks like for a large mass at the origin. Note that the magnitudes of the vectors increase as the vectors get closer to the origin.</para>
 <figure id="CNX_Calc_Figure_16_01_009">
-<media id="fs-id1167793409051" alt="A visual representation of the given gravitational vector field in three dimensions. The magnitudes of the vectors increase as the vectors get closer to the origin. The arrows point in, towards the mass at the origin.">
+<!-- Alt text revised by AI (score: 0.5625 -> 0.6289) --><media id="fs-id1167793409051" alt="A three-dimensional gravitational vector field within a bounding box defined by x, y, and z coordinate axes. A mass is located at the origin (0). The vectors point inward toward the mass at the origin, with their magnitudes increasing as they approach the center.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_16_01_011.jpg"/>
 </media>
 <caption>A visual representation of gravitational vector field <m:math><m:mrow><m:mstyle mathvariant="bold" mathsize="normal"><m:mtext>F</m:mtext></m:mstyle><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>G</m:mi><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>m</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>〈</m:mo><m:mrow><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mi>y</m:mi><m:mrow><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mi>z</m:mi><m:mrow><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>〉</m:mo></m:mrow></m:mrow></m:math> for a large mass at the origin.</caption>
