@@ -2,7 +2,8 @@
   "files.associations": {
     "*.embeddedhtml": "html",
     "*.env": "python",
-    "*.cnxml": "xml"
+    "*.cnxml": "xml",
+    "index.cnxml": "xml"
   },
   "xml.server.vmargs": "-Xmx1024m",
   "xml.server.preferBinary": true
