@@ -426,7 +426,7 @@
 <para id="fs-id1170571124877"><m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>x</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
 </solution>
 </exercise>
-<para id="fs-id1170571068221">For the following exercises, points <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1.5</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ϕ</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> are on the graph of the function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>ϕ</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>π</m:mi><m:mi>ϕ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170571068221">For the following exercises, points <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1.5</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>φ</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> are on the graph of the function <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>π</m:mi><m:mi>φ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para>
 <exercise id="fs-id1170573350763">
 <problem id="fs-id1170571118641">
 <para id="fs-id1170571118644"><emphasis effect="bold">[T]</emphasis> Complete the following table with the appropriate values: <emphasis effect="italics">y</emphasis>-coordinate of <emphasis effect="italics">Q</emphasis>, the point <m:math><m:mrow><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>φ</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> and the slope of the secant line passing through points <emphasis effect="italics">P</emphasis> and <emphasis effect="italics">Q</emphasis>. Round your answer to eight significant digits.</para><table id="fs-id1170570997485" summary="A table with four columns and five rows. The first row has the headings x, y, Q(phi,y), and msec, the slope of the secant line. The values under x are 1.4, 1.49, 1.499, and 1.4999. The values under y are a, b, c, and d. The values under Q(phi,y) are e, f, g, and h. The values under msec¬  are i, j, k, and l." class="unnumbered">
@@ -437,9 +437,9 @@
 <colspec colnum="4" colname="c4"/>
 <thead>
 <row valign="top">
-<entry align="left"><emphasis effect="italics">ϕ</emphasis></entry>
+<entry align="left"><emphasis effect="italics">φ</emphasis></entry>
 <entry align="left"><emphasis effect="italics">y</emphasis></entry>
-<entry align="left"><m:math><m:mrow><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>ϕ</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
+<entry align="left"><m:math><m:mrow><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>φ</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></entry>
 <entry align="left"><emphasis effect="italics">m</emphasis><sub>sec</sub></entry>
 </row>
 </thead>
