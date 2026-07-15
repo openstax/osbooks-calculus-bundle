@@ -414,7 +414,7 @@
 <para id="fs-id1170571275281"><m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo>∫</m:mo><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>11</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>−3</m:mn></m:mrow></m:msup><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1170573732553">
-<para id="fs-id1170573732555"><m:math><m:mo>∫</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mn>11</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn><m:mo>)</m:mo></m:mrow><m:mn>-2</m:mn></m:msup><m:mi>dx</m:mi><m:mo>=</m:mo>
+<para id="fs-id1170573732555"><m:math><m:mo>∫</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mn>11</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn><m:mo>)</m:mo></m:mrow><m:mn>−3</m:mn></m:msup><m:mi>dx</m:mi><m:mo>=</m:mo>
 
 <m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>22</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>11</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>C</m:mi></m:mrow></m:math></para>
 </solution>
