@@ -734,7 +734,7 @@ The equilibrium solutions are <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>
 <para id="fs-id1170571233752"><m:math><m:mrow><m:msup><m:mi>y</m:mi><m:mo>′</m:mo></m:msup><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math> Exact solution is <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:msup><m:mi>e</m:mi><m:mi>t</m:mi></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>t</m:mi></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1170571062216">
-<para id="fs-id1170571062219"><m:math><m:mrow><m:mn>7.739364</m:mn><m:mo>,</m:mo></m:mrow></m:math> exact: <m:math><m:mrow><m:mn>5</m:mn><m:mo stretchy="false">(</m:mo><m:mi>e</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170571062219"><m:math><m:mrow><m:mn>7.739264</m:mn><m:mo>,</m:mo></m:mrow></m:math> exact: <m:math><m:mrow><m:mn>5</m:mn><m:mo stretchy="false">(</m:mo><m:mi>e</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
 </solution>
 </exercise>
 <exercise id="fs-id1170571062249">
