@@ -870,7 +870,7 @@ Some jumpers wear “<term class="no-emphasis" id="term-00008">wingsuits</term>�
   <m:mstyle displaystyle="true"><m:mrow><m:msubsup><m:mo stretchy="true">∫</m:mo><m:mn>0</m:mn><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msubsup><m:mrow>
     
   <m:mfrac><m:mn>1</m:mn>
-  <m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:msqrt><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow>
+  <m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:msqrt><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mtext>cos</m:mtext><m:mspace width="0.1em"/><m:mi>θ</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow>
 </m:mfrac>
   
 <m:mi>d</m:mi><m:mi>θ</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></para>
