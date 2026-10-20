@@ -97,7 +97,7 @@ provided that <m:math><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:msubsup><
 <para id="fs-id1165043019959">In the chapter opener, we stated the following problem: Suppose that at a busy intersection, <term class="no-emphasis" id="term-00003">traffic accidents</term> occur at an average rate of one every three months. After residents complained, changes were made to the traffic lights at the intersection. It has now been ten months since the changes were made and there have been no accidents. Were the changes effective or is the 10-month interval without an accident a result of chance?</para>
 </problem>
 <solution id="fs-id1165043431382">
-<para id="fs-id1165042709787">Revise to: Let <m:math><m:mi>x</m:mi></m:math> represent the amount of time it takes for the next accident to occur. We want to know how likely it is that <m:math><m:mi>x</m:mi><m:mo>></m:mo><m:mn>10</m:mn></m:math>.
+<para id="fs-id1165042709787">Let <m:math><m:mi>x</m:mi></m:math> represent the amount of time it takes for the next accident to occur. We want to know how likely it is that <m:math><m:mi>x</m:mi><m:mo>></m:mo><m:mn>10</m:mn></m:math>.
 
 Define the rate parameter <m:math><m:mo>λ</m:mo></m:math> to be the average number of accidents per month. According to probability theory, for <m:math><m:mi>a</m:mi><m:mo>></m:mo><m:mn>0</m:mn></m:math>,</para>
 <equation id="fs-id1165043423045" class="unnumbered"><label/>
