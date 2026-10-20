@@ -191,7 +191,7 @@
 <example id="fs-id1167793949568">
 <exercise id="fs-id1167793949570"><problem id="fs-id1167793882625">
 <title>Finding a Volume Using a Double Integral</title>
-<para id="fs-id1167794054462">Find the volume of the solid that lies under the paraboloid <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> and above the unit circle on the <m:math><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:math>-plane (see the following figure).</para>
+<para id="fs-id1167794054462">Find the volume of the solid that lies under the paraboloid <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> and above the unit disk on the <m:math><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:math>-plane (see the following figure).</para>
 <figure id="CNX_Calc_Figure_15_03_007"><media id="fs-id1167793953924" alt="The paraboloid z = 1 minus x squared minus y squared is shown, which in this graph looks like a sheet with the middle gently puffed up and the corners anchored.">
 <image mime-type="image/jpeg" src="../../media/CNX_Calc_Figure_15_03_007.jpg"/>
 </media>
